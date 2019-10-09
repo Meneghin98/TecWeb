@@ -24,5 +24,4 @@ sito forum-vendita di videogiochi
         sistema di punteggio degli utenti (per determinare l'affidabilità)
     possibilità a collaboratori di inserire la loro pagina personalizzata
 
-
-
+il tema può cambiare

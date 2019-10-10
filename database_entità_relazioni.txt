@@ -1,0 +1,30 @@
+Entità:
+    Utente
+        *Username
+        Pwd
+        e-mail
+        Avatar (opt)
+        Biografia (opt)
+    Commento
+        *Utente(ext)
+        *Time/Data stamp
+        Test
+    Tag
+        *Utente(ext)
+        *Commento(ext)
+        *Utente(ext)
+    Like
+        *Utente(ext)
+        *Commento(ext)
+    Immagini
+        *Commento(ext)
+        alt
+        path
+    Topic
+        *id
+        titolo
+        time/data stamp
+        news
+    
+
+Relazioni:

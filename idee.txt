@@ -30,3 +30,4 @@ domande prof:
     quanto realistiche le notizie?
     numero parole per l'attributo alt delle immagini
     come aggiungere piu pagine per i commenti/topic
+    creare utente ban o tenerlo come attributo?

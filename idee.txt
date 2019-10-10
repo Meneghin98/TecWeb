@@ -1,28 +1,31 @@
-sito e-commerce
-    vendita disositivi
-    vendita vini
-    vendita videogiochi
+sito forum di videogiochi
+    varie sezioni
+    vari livelli di utente
+        guest
+        utente registrato
+        utente affidabile
+        collaboratore
+        admin
+    utente
+        admin low level del topic che apre 
+        seguire topic di altri utenti
+        scrivere sui topic
+        rating
+    sezione commenti
+    notifiche
+        admin
+            eventuali spam
+            segnalazini dagli utenti
+        utente
+            topic seguiti
+                nuovi commenti
+                segnalazioni
+            essere taggati
+    admin high level
+        componenti del gruppo
+    
 
-sito personale\aziendale
-    vetrina di un'azienda
 
-sito forum
-    discussione di news sui videogiochi
-
-sito di condivisine e download
-    upload/download di file
-
-
-<------------------------------------------------->
-idee più solide
-
-sito forum-vendita di videogiochi
-    vendita di un videogioco //probabile rimozione
-    recensione sul videogioco
-        recensione eseguibile solo da persone fidate(admin\utenti approvati\collaboratori)
-    sezione discussione sul videogioco
-        sistema di punteggio degli utenti (per determinare l'affidabilità)
-    possibilità a collaboratori di inserire la loro pagina personalizzata
-
-il tema può cambiare
-
+domande prof:
+    quanto realistiche le notizie?
+    

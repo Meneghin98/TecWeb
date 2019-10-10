@@ -29,3 +29,4 @@ sito forum di videogiochi
 domande prof:
     quanto realistiche le notizie?
     numero parole per l'attributo alt delle immagini
+    come aggiungere piu pagine per i commenti/topic

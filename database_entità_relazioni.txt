@@ -1,30 +1,32 @@
 Entità:
-    Utente
+    User
         *Username
         Pwd
         e-mail
         Avatar (opt)
-        Biografia (opt)
-    Commento
-        *Utente(ext)
-        *Time/Data stamp
-        Test
-    Tag
-        *Utente(ext)
-        *Commento(ext)
-        *Utente(ext)
+        name
+        surname
+        type
+        reference (opt)
+    Comment
+        *Id
+        Article(ext)
+        User(ext)
+        Time/Data stamp
+        Text
     Like
-        *Utente(ext)
-        *Commento(ext)
-    Immagini
-        *Commento(ext)
+        *User(ext)
+        *Comment(ext)
+    Img
+        *link
+        Article(ext)
         alt
-        path
-    Topic
+    Article
         *id
-        titolo
+        title
         time/data stamp
-        news
-    
-
-Relazioni:
+        Category
+        type
+        views
+    Category
+        *name

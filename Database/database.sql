@@ -62,7 +62,7 @@ CREATE TABLE Imgs
     (10) not null
 );
 
-    CREATE TABLE Category
-    (
-        names VARCHAR (50) not NULL
-    );
+CREATE TABLE Category
+(
+    names VARCHAR (50) not NULL
+);

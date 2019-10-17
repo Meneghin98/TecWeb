@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS Categories;
 CREATE TABLE Users
 (
     nickname VARCHAR (50) PRIMARY KEY,
-    password VARCHAR (50) NOT NULL,
+    pwd VARCHAR (50) NOT NULL,
     email VARCHAR (50) NOT NULL,
     username VARCHAR (50) NOT NULL,
     surname VARCHAR (50) NOT NULL,
@@ -16,11 +16,23 @@ CREATE TABLE Users
     ref VARCHAR (50)
 );
 
+CREATE TABLE Articles
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    link VARCHAR (50) NOT NULL,
+    creation_date TIMESTAMP DEFAULT CURRENT_DATE(),
+    title VARCHAR(50) NOT NULL,
+    article_type VARCHAR(50) NOT NULL,
+    views INT(10) NOT NULL,
+    category INT (5) REFERENCES Categories (id),
+    Editor VARCHAR(50) REFERENCES Users(nickname)
+);
+
 CREATE TABLE Comments
 (
     id INT (5) PRIMARY KEY AUTO_INCREMENT,
     creation_date CHAR (32) NOT NULL,
-    text VARCHAR (296) NOT NULL,
+    txt VARCHAR (296) NOT NULL,
     article INT (5) REFERENCES Articles (id)
 );
 
@@ -33,17 +45,6 @@ CREATE TABLE Likes
     FOREIGN KEY (nickname) REFERENCES Users(nickname),
     FOREIGN KEY (id) REFERENCES Comments (id)
 
-);
-
-CREATE TABLE Articles
-(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    link VARCHAR (50) NOT NULL,
-    creation_date TIMESTAMP DEFAULT CURRENT_DATE(),
-    title VARCHAR(50) NOT NULL,
-    article_type VARCHAR(50) NOT NULL,
-    views INT(10) NOT NULL,
-    category INT (5) REFERENCES Categories (id)
 );
 
 CREATE TABLE Images

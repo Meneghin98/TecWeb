@@ -1,60 +1,60 @@
 DROP TABLE IF EXISTS Users;
-DROP TABLE IF EXISTS Comment;
+DROP TABLE IF EXISTS Comments;
 DROP TABLE IF EXISTS Likes;
-DROP TABLE IF EXISTS Article;
-DROP TABLE IF EXISTS Imgs;
-DROP TABLE IF EXISTS Category;
+DROP TABLE IF EXISTS Articles;
+DROP TABLE IF EXISTS Images;
+DROP TABLE IF EXISTS Categories;
 
 CREATE TABLE Users
 (
     nickname VARCHAR (50) PRIMARY KEY,
-    pwd VARCHAR (50) not null,
-    email VARCHAR (50) not null,
-    username VARCHAR (50) not null,
-    surname VARCHAR (50) not null,
-    usertype VARCHAR (5) not null,
+    password VARCHAR (50) NOT NULL,
+    email VARCHAR (50) NOT NULL,
+    username VARCHAR (50) NOT NULL,
+    surname VARCHAR (50) NOT NULL,
+    usertype VARCHAR (5) NOT NULL,
     ref VARCHAR (50)
 );
 
-CREATE TABLE Article
+CREATE TABLE Comments
 (
-    id int PRIMARY KEY AUTO_INCREMENT,
-    link VARCHAR(50) not null,
-    creation_date CHAR(32) not null,
-    title VARCHAR(50) not null,
-    artType VARCHAR(50) not null,
-    views int(10) not null,
-    Editor varchar(50) REFERENCES Users(nickname)
-);
-
-CREATE TABLE Comment
-(
-    id int (5) PRIMARY KEY AUTO_INCREMENT,
-    creation_date CHAR(32) not null,
-    txt varchar(296) not null,
-    Article int(5) REFERENCES Article(id),
-    User varchar(50) REFERENCES Users(nickname)
+    id INT (5) PRIMARY KEY AUTO_INCREMENT,
+    creation_date CHAR (32) NOT NULL,
+    text VARCHAR (296) NOT NULL,
+    article INT (5) REFERENCES Articles (id)
 );
 
 CREATE TABLE Likes
 (
-    nickname VARCHAR(50) not null,
-    commID int (5) not null,
+    nickname VARCHAR(50) NOT NULL,
+    id INT (5) NOT NULL,
 
-    PRIMARY KEY (nickname, commID),
+    PRIMARY KEY (nickname, id),
     FOREIGN KEY (nickname) REFERENCES Users(nickname),
-    FOREIGN KEY (commID) REFERENCES Comment(id)
+    FOREIGN KEY (id) REFERENCES Comments (id)
 
 );
 
-CREATE TABLE Imgs
+CREATE TABLE Articles
 (
-    link VARCHAR (50) PRIMARY KEY,
-    Article int(5) REFERENCES Article(id),
-    alt VARCHAR(10) not null
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    link VARCHAR (50) NOT NULL,
+    creation_date TIMESTAMP DEFAULT CURRENT_DATE(),
+    title VARCHAR(50) NOT NULL,
+    article_type VARCHAR(50) NOT NULL,
+    views INT(10) NOT NULL,
+    category INT (5) REFERENCES Categories (id)
 );
 
-CREATE TABLE Category
+CREATE TABLE Images
 (
-    names VARCHAR (50) not NULL
+    link VARCHAR (50) PRIMARY KEY
+    article INT (5) REFERENCES Articles (id)
+    alt VARCHAR (10) NOT NULL
+);
+
+CREATE TABLE Categories
+(
+    id INT (5) PRIMARY KEY
+    names VARCHAR (50) UNIQUE NOT NULL
 );

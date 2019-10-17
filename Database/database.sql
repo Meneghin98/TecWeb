@@ -16,15 +16,24 @@ CREATE TABLE Users
     ref VARCHAR (50)
 );
 
-CREATE TABLE Comment(
+CREATE TABLE Article
+(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    link VARCHAR(50) not null,
+    creation_date CHAR(32) not null,
+    title VARCHAR(50) not null,
+    artType VARCHAR(50) not null,
+    views int(10) not null,
+    Editor varchar(50) REFERENCES Users(nickname)
+);
+
+CREATE TABLE Comment
+(
     id int (5) PRIMARY KEY AUTO_INCREMENT,
-    creation_date CHAR
-(32) not null,
-    txt varchar
-(296) not null,
-    Article int
-(5) REFERENCES Article
-(id)
+    creation_date CHAR(32) not null,
+    txt varchar(296) not null,
+    Article int(5) REFERENCES Article(id),
+    User varchar(50) REFERENCES Users(nickname)
 );
 
 CREATE TABLE Likes
@@ -38,31 +47,14 @@ CREATE TABLE Likes
 
 );
 
-CREATE TABLE Article(
-    id int PRIMARY KEY AUTO_INCREMENT,
-    link VARCHAR
-(50) not null,
-    creation_date CHAR
-(32) not null,
-    title VARCHAR
-(50) not null,
-    artType VARCHAR
-(50) not null,
-    views int
-(10) not null,
-);
-
 CREATE TABLE Imgs
 (
-    link VARCHAR (50) PRIMARY KEY
-    Article int
-    (5) REFERENCES Article
-    (id)
-    alt VARCHAR
-    (10) not null
+    link VARCHAR (50) PRIMARY KEY,
+    Article int(5) REFERENCES Article(id),
+    alt VARCHAR(10) not null
 );
 
-    CREATE TABLE Category
-    (
-        names VARCHAR (50) not NULL
-    );
+CREATE TABLE Category
+(
+    names VARCHAR (50) not NULL
+);

@@ -1,0 +1,32 @@
+Entità:
+    User
+        *Username
+        Pwd
+        e-mail
+        Avatar (opt)
+        name
+        surname
+        type
+        reference (opt)
+    Comment
+        *Id
+        Article(ext)
+        User(ext)
+        Time/Data stamp
+        Text
+    Like
+        *User(ext)
+        *Comment(ext)
+    Img
+        *link
+        Article(ext)
+        alt
+    Article
+        *id
+        title
+        time/data stamp
+        Category
+        type
+        views
+    Category
+        *name

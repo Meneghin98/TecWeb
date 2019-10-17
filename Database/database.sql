@@ -57,4 +57,8 @@ CREATE TABLE Imgs
 CREATE TABLE Category
 (
     names VARCHAR (50) not NULL
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> refs/remotes/origin/develop

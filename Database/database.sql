@@ -59,3 +59,13 @@ CREATE TABLE Categories
     id INT (5) PRIMARY KEY
     names VARCHAR (50) UNIQUE NOT NULL
 );
+
+CREATE TABLE Follows
+(
+    nickname VARCHAR(50) NOT NULL,
+    id INT (5) NOT NULL,
+
+    PRIMARY KEY (nickname, id),
+    FOREIGN KEY (nickname) REFERENCES Users(nickname),
+    FOREIGN KEY (id) REFERENCES Categories(id)
+);

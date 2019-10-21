@@ -13,7 +13,10 @@ CREATE TABLE Users
     username VARCHAR (50) NOT NULL,
     surname VARCHAR (50) NOT NULL,
     usertype VARCHAR (5) NOT NULL,
-    ref VARCHAR (50)
+    ref VARCHAR (50),
+
+    /*ON UPDATE CASCADE -----------SE SI VUOLE CAMBIARE IL NICKNAME CHE SUCCEDE?*/
+    ON DELETE CASCADE
 );
 
 CREATE TABLE Articles
@@ -33,6 +36,7 @@ CREATE TABLE Comments
     id INT (5) PRIMARY KEY AUTO_INCREMENT,
     creation_date CHAR (32) NOT NULL,
     txt VARCHAR (296) NOT NULL,
+    user VARCHAR(50) REFERENCES Users(nickname),
     article INT (5) REFERENCES Articles (id)
 );
 
@@ -49,15 +53,15 @@ CREATE TABLE Likes
 
 CREATE TABLE Images
 (
-    link VARCHAR (50) PRIMARY KEY
-    article INT (5) REFERENCES Articles (id)
+    link VARCHAR (50) PRIMARY KEY,
+    article INT (5) REFERENCES Articles (id),
     alt VARCHAR (10) NOT NULL
 );
 
 CREATE TABLE Categories
 (
-    id INT (5) PRIMARY KEY
-    names VARCHAR (50) UNIQUE NOT NULL
+    id INT (5) PRIMARY KEY,
+    names VARCHAR (50) UNIQUE NOT NULL,
 );
 
 CREATE TABLE Follows

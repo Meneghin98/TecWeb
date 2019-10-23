@@ -17,6 +17,7 @@ body {
 
 #header #logo{
     float: left;
+    width: 5%;
 }
 
 #utente{
@@ -26,9 +27,6 @@ body {
     width: 8%;
 }
 
-#utente li{
-
-}
 
 #header h1 { 
     font-size: 2em;
@@ -63,7 +61,13 @@ body {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
-
+#scheda_laterale{
+    list-style-type: none;
+    float: right;
+}
+#tlou2{
+    padding: 5em;
+}
 
 #footer {
     background-color: darkslateblue;

@@ -4,15 +4,34 @@
 }
 
 body { 
-    font-size:0.9em; 
+    font-size:0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
     font: italic small-caps bold, 0.8em/1.5 arial, Helvetica, sans-serif;
+    max-width: 1024;
+    margin: auto;
 }
 
-#header a{
+#header{
+    padding: 1.5em 0 ;
+    background-color: #00ff00;
+}
+
+#header #logo{
     float: left;
 }
+
+#utente{
+    display: block;
+    float: right;
+    list-style-type: none;
+    width: 8%;
+}
+
+#utente li{
+
+}
+
 #header h1 { 
-    font-size: 2em; 
+    font-size: 2em;
     text-align: center;
 }
 #header h2 { 
@@ -20,6 +39,34 @@ body {
     text-align: center;
 }
 
+#menu{
+    background-color: plum;
+    padding: 0.5em 0.5em 0em 0.5em;
+    list-style-type: none;
+    text-align: center;
+
+}
+/*
+
+    direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
+
+
+*/
+
 #menu li{
-    display:inline;
+    display:inline-block;
+    margin: 0% 7%;  /*0 sopra e sotto, 7% destra e sinistra*/
+}
+#menu #currentlink {
+    background-color: coral;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+
+#footer {
+    background-color: darkslateblue;
+    color: whitesmoke;
+    padding: 1em;
 }

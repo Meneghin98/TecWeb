@@ -1,0 +1,14 @@
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body {
+    max-width: 1024px;
+    margin: auto;
+}
+
+body {
+    border: 1px solid #000;
+    background-color: aqua;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+    <link rel="stylesheet" href="../css/Registrazione.css" type="text/css">
+    <meta http-equiv=" Content-Type" content="text/html; charset=utf-8" />
+    <title>N.e.s.e.'s</title>
+    <meta name="title" content="Sito interattivo sul gaming" />
+</head>
+
+<body>
+    <div id="header">
+        <p>Le nostre <span xml:lang="en">news</span></p>
+    </div>
+
+    <h2>Crea il tuo account</h2>
+    <div id="InfoPersonali">
+        <form action="php.txt">
+            <!--modificare il valore di action-->
+            <label for="nome">Nome:</label> <input name="nome" id="nome" maxlength=“20”></br></br>
+            <label for="cognome">Cognome:</label> <input name="cognome" id="cognome" maxlength=“20”></br></br>
+            <label for="username"><span xml:lang="en"></span xml:lang="en">Username:</span></label> <input
+                name="username" id="username" maxlength="20" /></br></br>
+            <label for="email"><span xml:lang="en">Email:</span></label> <input name="email" id="email"
+                maxlength=“30”></br></br>
+            <label for="password"><span xml:lang="en">Password</span>:</label> <input type="password" name="password"
+                id="password" maxlength="20" /></br></br>
+            <label for="avatar"><span xml:lang="en">Avatar</span></label> <input type="file" name="pic"
+                accept="immagini/"><br></br>
+        </form>
+    </div>
+    <div id="InfoNotifiche">
+        <form action="php.txt">
+            <label for="notificheSito">Richiesta di ricevere notifiche sul sito</label> <input type="checkbox"
+                name="notificheSito" id="notificheSito" value="notificheSito"></br></br>
+            <label for="notificheSito">Richiesta di ricevere notifiche sull'email</label> <input type="checkbox"
+                name="notificheEmail" id="notificheEmail" value="notificheEmail"></br></br>
+        </form>
+    </div>
+    <div id="ConfermaAccount">
+        <form action="php.txt">
+            <label for="conferma"></label> <input type="submit" value="Registrati">
+            <label for="Annulla"></label> <input type="reset" value="Annulla">
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
+    </div>
+</body>
+
+</html>

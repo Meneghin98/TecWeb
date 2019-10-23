@@ -26,6 +26,10 @@ body {
     list-style-type: none;
     width: 8%;
 }
+#utente li{
+    text-align: right;
+    display: inline;
+}
 
 
 #header h1 { 
@@ -63,14 +67,17 @@ body {
 }
 #scheda_laterale{
     list-style-type: none;
+    width: 10%;
     float: right;
 }
-#tlou2{
-    padding: 5em;
-}
-
-#footer {
+.footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;
+    
 }

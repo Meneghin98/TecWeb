@@ -17,24 +17,36 @@
     <h2>Crea il tuo account</h2>
     <div id="InfoPersonali">
         <form action="php.txt">  <!--modificare il valore di action-->       
-            <label for="nome">Nome:</label> <input name="nome" id="nome" maxlength=“20”></br></br>
-            <label for="cognome">Cognome:</label> <input name="cognome" id="cognome" maxlength=“20”></br></br>
-            <label for="username"><span xml:lang="en"></span xml:lang="en">Username:</span></label> <input name="username" id="username" maxlength="20"/></br></br>
-            <label for="email"><span xml:lang="en">Email:</span></label> <input name="email" id="email" maxlength=“30”></br></br>
-            <label for="password"><span xml:lang="en">Password</span>:</label> <input type="password" name="password" id="password" maxlength="20"/></br></br>
-            <label for="avatar"><span xml:lang="en">Avatar</span></label> <input type="file" name="pic" accept="immagini/"><br></br>
+            <label for="nome">Nome:</label> 
+                <input name="nome" id="nome" maxlength=“20”></br></br>
+            <label for="cognome">Cognome:</label> 
+                <input name="cognome" id="cognome" maxlength=“20”></br></br>
+            <label for="username"><span xml:lang="en"></span xml:lang="en">Username</span>:</label> 
+                <input name="username" id="username" maxlength="20"/></br></br>
+            <label for="email"><span xml:lang="en">Email</span>:</label> 
+                <input name="email" id="email" maxlength=“30”></br></br>
+            <label for="password"><span xml:lang="en">Password</span>:</label> 
+                <input type="password" name="password" id="password" maxlength="20"/></br></br>
+            <div id="IDavatar">
+                <label for="avatar"><span xml:lang="en">Avatar</span> (facoltativo):</label><br></br>
+                <img id="image" src="ImmagineUtente.jpg" alt="immagine utente vuota"> 
+                <input type="file" name="pic" accept="immagini/">
+            </div>
         </form>
     </div>
-    <div id="InfoNotifiche">
-        <form action="php.txt">
-            <label for="notificheSito">Richiesta di ricevere notifiche sul sito</label> <input type="checkbox" name="notificheSito" id="notificheSito" value="notificheSito"></br></br>
-            <label for="notificheSito">Richiesta di ricevere notifiche sull'email</label> <input type="checkbox" name="notificheEmail" id="notificheEmail" value="notificheEmail"></br></br>
-        </form>
-    </div>
+    <form id="GestioneNotifiche" action="php.txt">Selezionare modalità di ricevimento delle notifiche:
+        <select id="InfoNotifiche" name="InfoNotifiche">
+                <option>Nessuna notifica</option>
+                <option>Richiesta di ricevere notifiche sul sito</option>
+                <option>Richiesta di ricevere notifiche sull'email</option>
+        </select>
+    </form>
     <div id="ConfermaAccount">
-        <form action="php.txt">
-            <label for="conferma"></label> <input type="submit" value="Registrati">
-            <label for="Annulla"></label> <input type="reset" value="Annulla">    
+        <form id="Botton" action="php.txt">
+            <label for="conferma"></label> 
+            <input type="submit" value="Registrati">
+            <label for="Annulla"></label> 
+            <input type="reset" value="Annulla">    
         </form>
     </div>
     

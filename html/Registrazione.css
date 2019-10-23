@@ -10,5 +10,71 @@ html, body {
 
 body {
     border: 1px solid #000;
-    background-color: aqua;
+}
+
+body h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#InfoPersonali {
+    text-align: center;
+    padding-top: 2em;
+    margin-right: 10em;
+}
+
+#InfoPersonali input {
+    float: center;
+    margin-right: 3em;
+}
+
+#InfoPersonali label {
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-right: 1em;
+}
+
+#IDavatar {
+    margin-right: 17em;
+    margin-top: 6em;
+}
+
+#IDavatar img {
+    margin-top: -7em;
+    margin-left: 28em;
+}   
+
+#IDavatar input {
+    margin-left: 33em;
+    margin-top: 1em;
+}
+
+#ConfermaAccount {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#GestioneNotifiche {
+    margin: 3em 13em 8em 12em;
+}
+
+#InfoNotifiche {
+    margin-right: 2em;
+}
+
+#Botton {
+    text-align: center;
+    padding-right: 4em;
+}
+
+#Botton input{
+    margin-left: 5em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+#footer {
+    border: 1px solid #000;
+    padding : 1em 1em 1em 1em;
 }

@@ -1,0 +1,21 @@
+
+.articolo {
+    margin: auto;
+    margin-left: 1em;
+    padding: 0;
+    width: 20em;
+    position: relative;
+    text-align: center;
+    
+}
+
+.articolo img{
+    width: inherit;
+
+}
+.articolo div{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white; 
+}

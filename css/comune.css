@@ -71,10 +71,8 @@ body {
     float: right;
 }
 .footer {
-    
-    position: fixed;
-    left: 0;
-    bottom: 0;
+     
+    margin-top: 10em;
     width: 100%;
     background-color: darkslateblue;
     color: whitesmoke;

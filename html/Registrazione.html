@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
+    <link rel="stylesheet" href="../css/comune.css" type="text/css">
     <link rel="stylesheet" href="../css/Registrazione.css" type="text/css">
     <meta http-equiv=" Content-Type" content="text/html; charset=utf-8" />
     <title>N.e.s.e.'s</title>
@@ -11,46 +12,67 @@
 
 <body>
     <div id="header">
-        <p>Le nostre <span xml:lang="en">news</span></p>
+        <ul id="utente">
+            <li>utente</li> <!-- non visibile, da sostituire con un immagine-->
+            <li><a href="Registazione.html">Registrati</a></li>
+            <li><a href="">esci</a></li>
+            <!-- da tradure !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        </ul>
+        <!--immagine inserita via css-->
+        <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
+        <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
     </div>
 
-    <h2>Crea il tuo account</h2>
-    <div id="InfoPersonali">
-        <form action="php.txt">  <!--modificare il valore di action-->       
-            <label for="nome">Nome:</label> 
-                <input name="nome" id="nome" maxlength=“20”></br></br>
-            <label for="cognome">Cognome:</label> 
-                <input name="cognome" id="cognome" maxlength=“20”></br></br>
-            <label for="username"><span xml:lang="en"></span xml:lang="en">Username</span>:</label> 
-                <input name="username" id="username" maxlength="20"/></br></br>
-            <label for="email"><span xml:lang="en">Email</span>:</label> 
-                <input name="email" id="email" maxlength=“30”></br></br>
-            <label for="password"><span xml:lang="en">Password</span>:</label> 
-                <input type="password" name="password" id="password" maxlength="20"/></br></br>
-            <div id="IDavatar">
-                <label for="avatar"><span xml:lang="en">Avatar</span> (facoltativo):</label><br></br>
-                <img id="image" src="../images/ImmagineUtente.jpg" alt="immagine utente vuota"> 
-                <input type="file" name="pic" accept="immagini/">
-            </div>
-        </form>
-    </div>
-    <form id="GestioneNotifiche" action="php.txt">Selezionare modalità di ricevimento delle notifiche:
-        <select id="InfoNotifiche" name="InfoNotifiche">
-                <option>Nessuna notifica</option>
-                <option>Richiesta di ricevere notifiche sul sito</option>
-                <option>Richiesta di ricevere notifiche sull'email</option>
-        </select>
-    </form>
-    <div id="ConfermaAccount">
-        <form id="Botton" action="php.txt">
-            <label for="conferma"></label> 
-            <input type="submit" value="Registrati">
-            <label for="Annulla"></label> 
-            <input type="reset" value="Annulla">    
-        </form>
+    <div id="menu">
+        <ul>
+            <li id="currentlink"><span xml:lang="en">Home</span></li>
+            <li><a href="News.html"><span xml:lang="en">News</span></a></li>
+            <li>Recensioni</li>
+            <li>Eventi</li>
+            <li>Guide</li>
+        </ul>
     </div>
 
-    <div id="footer">
+    <div id="corpo">
+        <h2 id="Titolo">Crea il tuo account</h2>
+        <div id="InfoPersonali">
+            <form action="php.txt">  <!--modificare il valore di action-->       
+                <label for="nome">Nome:</label> 
+                    <input name="nome" id="nome" maxlength=“20”></br></br>
+                <label for="cognome">Cognome:</label> 
+                    <input name="cognome" id="cognome" maxlength=“20”></br></br>
+                <label for="username"><span xml:lang="en"></span xml:lang="en">Username</span>:</label> 
+                    <input name="username" id="username" maxlength="20"/></br></br>
+                <label for="email"><span xml:lang="en">Email</span>:</label> 
+                    <input name="email" id="email" maxlength=“30”></br></br>
+                <label for="password"><span xml:lang="en">Password</span>:</label> 
+                    <input type="password" name="password" id="password" maxlength="20"/></br></br>
+                <div id="IDavatar">
+                    <label for="avatar"><span xml:lang="en">Avatar</span> (facoltativo):</label><br></br>
+                    <img id="image" src="../images/ImmagineUtente.jpg" alt="immagine utente vuota"> 
+                    <input type="file" name="pic" accept="immagini/">
+                </div>
+            </form>
+        </div>
+        <form id="GestioneNotifiche" action="php.txt">Selezionare modalità di ricevimento delle notifiche:
+            <select id="InfoNotifiche" name="InfoNotifiche">
+                    <option>Nessuna notifica</option>
+                    <option>Richiesta di ricevere notifiche sul sito</option>
+                    <option>Richiesta di ricevere notifiche sull'email</option>
+            </select>
+        </form>
+        <div id="ConfermaAccount">
+            <form id="Button" action="php.txt">
+                <label for="conferma"></label> 
+                <input id="bottoneConferma" type="submit" value="Registrati">
+                <label for="Annulla"></label> 
+                <input type="reset" value="Annulla">    
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="footer">
         <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
     </div>
 </body>

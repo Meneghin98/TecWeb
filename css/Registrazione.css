@@ -3,24 +3,29 @@
     margin: 0em;
 }
 
-html, body {
-    max-width: 1024px;
-    margin: auto;
-}
-
 body {
-    border: 1px solid #000;
+    overflow-x: hidden; 
 }
 
 body h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#corpo {
+    padding-top: 2em;
+    margin-bottom: -10em;
 }
 
 #InfoPersonali {
     text-align: center;
     padding-top: 2em;
     margin-right: 10em;
+    font-size: 1.2em;
+}
+
+#Titolo {
+    margin-top: 1em;
 }
 
 #InfoPersonali input {
@@ -37,17 +42,17 @@ body h2 {
 }
 
 #IDavatar {
-    margin-right: 17em;
+    margin-right: 15em;
     margin-top: 6em;
 }
 
 #IDavatar img {
     margin-top: -7em;
-    margin-left: 28em;
+    margin-left: 30em;
 }   
 
 #IDavatar input {
-    margin-left: 33em;
+    margin-left: 43em;
     margin-top: 1em;
 }
 
@@ -57,24 +62,25 @@ body h2 {
 }
 
 #GestioneNotifiche {
-    margin: 3em 13em 8em 12em;
+    margin: 3em 13em 10em 28em;
+    font-size: 1.2em;
 }
 
 #InfoNotifiche {
     margin-right: 2em;
 }
 
-#Botton {
+#Button {
     text-align: center;
     padding-right: 4em;
 }
 
-#Botton input{
+#Button input{
     margin-left: 5em;
     padding: 0.3em 0.8em 0.3em 0.8em;
+    border-radius: 12em;
+    font-size: 1.2em;
+    color: black;
+    background-color: white;
 }
 
-#footer {
-    border: 1px solid #000;
-    padding : 1em 1em 1em 1em;
-}

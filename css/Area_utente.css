@@ -1,0 +1,113 @@
+.sfondo{
+    background-image: url(../images/Area_utente_background.jpg); /*immagine provvisoria*/
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+.content{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(173, 216, 230, 0.555);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    min-width: fit-content;
+}
+
+
+form div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.avatar{
+    float: left;
+    max-width: fit-content;
+    margin-top: 3em;
+    margin-left: 12%;
+}
+.avatar p{
+    margin-top: 3em;
+}
+
+.avatarimage {
+    background-image: url("../images/immagineUtente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3em 4.5em;
+}
+
+.editavatar{
+    display: none;
+}
+
+.dati {
+    margin: 1.2em 0em;
+    margin-left: 5em;
+    text-align: left;
+}
+.dati *{
+    display: block;
+    margin: 0;
+}
+
+.dati fieldset{
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.buttons {
+    float: right;
+    text-align: right;
+    max-width: fit-content;
+    margin: 0;
+}
+.buttons .reset{
+    display: inline;
+    color: whitesmoke;
+    background-color: indianred;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    margin: 0 .25em;
+}
+.buttons .save{
+    display: inline;
+    color: whitesmoke;
+    background-color: limegreen;
+    border-style: outset;
+    border-color: lime;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    margin: 0 .25em;
+}
+
+.fondo {
+    width: unset;
+}
+.fondo *{
+    width: unset;
+    display: unset;
+}
+
+.ref{
+    display: block;
+    margin-top: 2em;
+}
+.ref *{
+    display: block;
+}
+.notifiche{
+    display: block;
+    margin-top: 2em;
+}
+
+.checkbox{
+    display: block;
+    float: right;
+}
+
+.check{
+    display: block;
+}

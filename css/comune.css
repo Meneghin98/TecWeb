@@ -5,7 +5,7 @@
 
 body { 
     font-size:0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-    font: italic small-caps bold, 0.8em/1.5 arial, Helvetica, sans-serif;
+       font: italic small-caps bold, 0.8em/1.5 arial, Helvetica, sans-serif;
     max-width: 1024;
     margin: auto;
 }
@@ -65,19 +65,43 @@ body {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
-#scheda_laterale{
+.scheda_laterale{
+    background-color: white;
     list-style-type: none;
-    width: 10%;
+    width: 20%;
+    padding: 1.5em;
     float: right;
 }
+.top_column{
+ display: flex;
+   flex-direction: column;;
+   flex-wrap: no-wrap;
+  
+}
+.top_list{
+      width: 100%;
+  list-style-type: none;
+  padding: 0.2em 0em;
+  overflow: auto;
+}
+.top_list img{
+    float: left;
+    width: 50%;
+
+}
+.top_list {
+    font-size: 0.8em;
+}
+.scheda_laterale h1{
+    font-size: 1em;
+}
 .footer {
-    
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    clear: both;
     width: 100%;
+    padding: 10em;
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;
+    text-align: center;
     
 }

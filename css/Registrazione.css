@@ -1,14 +1,73 @@
-* {
-    padding: 0em;
-    margin: 0em;
+
+#corpo {
+    padding-top: 2em;
 }
 
-html, body {
-    max-width: 1024px;
-    margin: auto;
+.infoPersonali {
+    text-align: center;
+    padding-top: 2em;
+    margin-right: 10em;
+    font-size: 1.2em;
 }
 
-body {
-    border: 1px solid #000;
-    background-color: aqua;
+#corpo h2 {
+    margin-top: 1em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.infoPersonali .input {
+    float: center;
+    margin-right: 3em;
+}
+
+.infoPersonali label {
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.iDavatar {
+    margin-right: 10.5em;
+    margin-top: 5em;
+}
+
+.iDavatar img {
+    margin-top: -5em;
+    margin-left: 15.5em;
+}   
+
+.iDavatar input {
+    margin-left: 20em;
+}
+
+.gestioneNotifiche {
+    margin: 5em 35em 9em 38em;
+    font-size: 1.2em;
+}
+
+.infoNotifiche {
+    margin-right: 0em;
+}
+
+.confermaAccount {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.button {
+    text-align: center;
+    padding-right: 4em;
+    margin-bottom: 25em;
+}
+
+.button input{
+    margin-left: 5em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    border-radius: 12em;
+    font-size: 1.2em;
+    color: black;
+    background-color: white;
 }

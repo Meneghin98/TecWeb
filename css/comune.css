@@ -72,6 +72,7 @@ body {
     padding: 1.5em;
     float: right;
 }
+<<<<<<< HEAD
 .top_column{
  display: flex;
    flex-direction: column;;
@@ -99,6 +100,10 @@ body {
     clear: both;
     width: 100%;
     padding: 10em;
+=======
+
+.footer {
+>>>>>>> e5dc5f3c98213df2321cfe114deb03b9496d0735
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;

@@ -1,0 +1,42 @@
+.sfondo{
+    background-image: url(../images/Area_utente_background.jpg); /*immagine provvisoria*/
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+.content{
+    max-width: 1024px;
+    background-color: rgba(173, 216, 230, 0.281);
+    text-align: center;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+
+.avatar{
+    float: left;
+    margin-top: 3em;
+    margin-left: 15%;
+
+}
+.avatar p{
+    margin-top: 3em;
+}
+
+.avatarimage {
+    background-image: url("../images/immagineUtente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3em 4.5em;
+}
+
+.dati{
+    list-style-type: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.dati li{
+    padding: 1.2em 0em;
+    margin-left: 5em;
+    text-align: left;
+}

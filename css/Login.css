@@ -1,0 +1,42 @@
+#info .image {
+    width: 5em;
+    height: 5em;
+    display: block;
+    margin: 3em auto;
+}
+
+#info {
+    text-align: center;
+}
+
+#info form {
+    display: inline-block;
+    text-align: left;
+    margin-top: -2em;
+}
+
+#info form input {
+    margin-left: 2em;
+    float: right;
+}
+
+.confermaAccount {
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.button {
+    text-align: center;
+    padding-right: 6em;
+    margin-bottom: 10em;
+}
+
+.button input{
+    margin-left: 1.5em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    border-radius: 12em;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+}

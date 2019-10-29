@@ -4,8 +4,8 @@
 }
 
 body { 
-    font-size:0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-       font: italic small-caps bold, 0.8em/1.5 arial, Helvetica, sans-serif;
+    font-size: 0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
+    font: italic small-caps bold 0.8em/1.5 arial Helvetica sans-serif;
     max-width: 1024;
     margin: auto;
 }
@@ -72,7 +72,6 @@ body {
     padding: 1.5em;
     float: right;
 }
-<<<<<<< HEAD
 .top_column{
  display: flex;
    flex-direction: column;;
@@ -96,14 +95,8 @@ body {
 .scheda_laterale h1{
     font-size: 1em;
 }
-.footer {
-    clear: both;
-    width: 100%;
-    padding: 10em;
-=======
 
 .footer {
->>>>>>> e5dc5f3c98213df2321cfe114deb03b9496d0735
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;

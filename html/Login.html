@@ -16,12 +16,10 @@
 <body>
     <div id="header">
         <a href="Home.html" id="logo">Logo</a>
-        <!--immagine inserita via css-->
-        <ul class="utente">
+        <ul id="utente">
             <li><a href="Registrazione.html">Registrati</a></li>
             <li><a href="index.html">esci</a></li>
-            <li>utente</li> <!-- non visibile, da sostituire con un immagine-->
-            <!-- da tradure !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+            <li>utente</li>
         </ul>
         <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
         <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
@@ -37,23 +35,30 @@
         </ul>
     </div>
 
-    <div id="info">
-        <img class="image" src="../images/login.png" alt="Immagine di login">
-        <form action="php.txt">
-            <label for="email"><span xml:lang="en">Email:</span></label> <input name="email" id="email"
-                maxlength=“30”></br></br>
-            <label for="password"><span xml:lang="en">Password</span>:</label> <input type="password" name="password"
-                id="password" maxlength="20" /></br></br>
-        </form>
-    </div>
+    <div class="sfondo">
+        <div class="content">
+            <fieldset>
+                <legend>Accedi</legend>
+                <div id="info">
+                    <img class="image" src="../images/login.png" alt="Immagine di login">
+                    <form action="php.txt">
+                        <label for="email"><span xml:lang="en">Email:</span></label> <input name="email" id="email"
+                            maxlength=“30”></br></br>
+                        <label for="password"><span xml:lang="en">Password</span>:</label> <input type="password"
+                            name="password" id="password" maxlength="20" /></br></br>
+                    </form>
+                </div>
 
-    <div class="confermaAccount">
-        <form class="button" action="php.txt">
-            <label for="Accedi"></label> 
-            <input type="submit" value="Accedi">
-            <label for="Annulla"></label> 
-            <input type="reset" value="Annulla">
-        </form>
+                <div class="confermaAccount">
+                    <form class="button" action="php.txt">
+                        <label for="Accedi"></label>
+                        <input type="submit" value="Accedi">
+                        <label for="Annulla"></label>
+                        <input type="reset" value="Annulla">
+                    </form>
+                </div>
+            </fieldset>
+        </div>
     </div>
 
     <div class="footer">

@@ -8,7 +8,7 @@
 .sfondo {
     background: url(../images/sfondoLog.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-bottom: 3.1em;
     padding-top: 1em;
 }
@@ -39,6 +39,10 @@
     display: inline-block;
     text-align: left;
     margin-top: -2em;
+}
+
+p {
+    margin-top: 1.5em;
 }
 
 #info form input {

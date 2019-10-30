@@ -72,38 +72,8 @@ body {
     padding: 1.5em;
     float: right;
 }
-<<<<<<< HEAD
-.top_column{
- display: flex;
-   flex-direction: column;;
-   flex-wrap: no-wrap;
-  
-}
-.top_list{
-      width: 100%;
-  list-style-type: none;
-  padding: 0.2em 0em;
-  overflow: auto;
-}
-.top_list img{
-    float: left;
-    width: 50%;
-
-}
-.top_list {
-    font-size: 0.8em;
-}
-.scheda_laterale h1{
-    font-size: 1em;
-}
-.footer {
-    clear: both;
-    width: 100%;
-    padding: 10em;
-=======
 
 .footer {
->>>>>>> e5dc5f3c98213df2321cfe114deb03b9496d0735
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;

@@ -229,7 +229,6 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
 .hide{
     display: none;
 }
-
 @media screen and (max-width: 960px) {
     .scheda_laterale {
         display: none;

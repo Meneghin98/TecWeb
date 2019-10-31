@@ -5,8 +5,34 @@
     margin: 3em auto;
 }
 
+.sfondo {
+    background: url(../images/sfondoLog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3.1em;
+    padding-top: 1em;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    width: 25em;
+}
+
+.content fieldset {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: floralwhite;
+    padding-left: 2em;
+    border-radius: 2em;
+    padding-bottom: 2em;
+}
+
 #info {
     text-align: center;
+    margin-right: 2em;
 }
 
 #info form {
@@ -15,21 +41,25 @@
     margin-top: -2em;
 }
 
+p {
+    margin-top: 1.5em;
+}
+
 #info form input {
     margin-left: 2em;
+    padding-right: 2em;
     float: right;
 }
 
 .confermaAccount {
     text-align: center;
     margin-top: 2em;
-    margin-left: 5em;
+    margin-left: 3em;
 }
 
 .button {
     text-align: center;
     padding-right: 6em;
-    margin-bottom: 10em;
 }
 
 .button input{
@@ -39,4 +69,10 @@
     font-size: 1em;
     color: black;
     background-color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0em;
+    width: 100em;
 }

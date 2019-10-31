@@ -3,12 +3,19 @@
     padding: 0px;
 }
 
+<<<<<<< HEAD
 html,
 body {
+=======
+body { 
+    font-size: 0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
+    font: italic small-caps bold 0.8em/1.5 arial Helvetica sans-serif;
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     max-width: 1920px;
     margin: auto;
 }
 
+<<<<<<< HEAD
 body {
     font-family: Verdana;
     margin: auto;
@@ -21,22 +28,38 @@ body {
 }
 
 #header #logo {
+=======
+.header{
+    padding: 1.5em ;
+    background-color: #00ff00;
+}
+
+.header .logo{
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     float: left;
     width: 5%;
 }
 
+<<<<<<< HEAD
 #utente {
     display: block;
+=======
+.utente{
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     float: right;
     list-style-type: none;
-    width: 8%;
 }
+<<<<<<< HEAD
 
 #utente li {
+=======
+.utente li{
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     text-align: right;
-    display: inline;
+    padding: .3em;
 }
 
+<<<<<<< HEAD
 #header h1 {
     font-size: 2em;
     text-align: center;
@@ -44,7 +67,28 @@ body {
 
 #header h2 {
     font-size: 1.5em;
+=======
+.utente a:link{ /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
+    sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
+    text-decoration: none;
+    padding: .4em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    border-color: deepskyblue;
+    background-color: lightskyblue;
+}
+
+.utente a:hover{
+    background-color: deepskyblue;
+}
+
+.header .titolo{
+    width: 60%;
+    margin: 0 auto;
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     text-align: center;
+
 }
 
 .margine {
@@ -136,6 +180,22 @@ body {
     padding-right: 1.5em;
     float: right;
 }
+.top_column{
+ display: flex;
+   flex-direction: column;;
+   flex-wrap: no-wrap;
+  
+}
+.top_list{
+      width: 100%;
+  list-style-type: none;
+  padding: 0.2em 0em;
+  overflow: auto;
+}
+.top_list img{
+    float: left;
+    width: 50%;
+
 
 .top_column {
     display: flex;
@@ -155,9 +215,7 @@ body {
     width: 100%;
 }
 
-.scheda_laterale h1 {
-    font-size: 1em;
-}
+
 
 .categoria-hardware {
     background-color: green;
@@ -188,6 +246,8 @@ body {
     width: 100%;
     padding: 10em;
 }
+=======
+>>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
 
 .footer {
     background-color: darkslateblue;

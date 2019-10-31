@@ -6,8 +6,7 @@ Progetto di Tecnologie Web
 <p>Controllare le <a href="https://github.com/Meneghin98/TecWeb/issues">Issue</a> per conoscere a cosa si è stati assegnati o per assegnarsi ad un lavoro</p>
 
 <h2>Report</h2>
-  <ol>Report sulla situazione del Database:
-    <li>Trovare un modo per eseguire il DB.</li>
-    <li>Sintassi 'on update'.</li>
+  <ol>Report sulla situazione del Database
     <li>Valutare la creazione di un trigger/function, in modo da evitare l'inserimento di un nickname duplicato in fase di cambio nickname.</li>
   </ol>
+ 

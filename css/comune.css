@@ -1,21 +1,27 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body { 
-    font-size: 0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-    font: italic small-caps bold 0.8em/1.5 arial Helvetica sans-serif;
+body {
+    /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
+    font: 0.9em/1.5 arial Helvetica sans-serif;
     max-width: 1920px;
     margin: auto;
 }
 
-.header{
-    padding: 1.5em ;
+body {
+    font-family: Verdana;
+    margin: auto;
+    background-color: #262626;
+}
+
+#header {
+    padding: 1.5em 0;
     background-color: #00ff00;
 }
 
-.header .logo{
+.header .logo {
     float: left;
     width: 5%;
 }
@@ -27,14 +33,13 @@ body {
 .utente{
     float: right;
     list-style-type: none;
-}
-.utente li{
     text-align: right;
     padding: .3em;
 }
 
-.utente a:link{ /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
-    sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
+.utente a:link {
+    /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
+sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
     text-decoration: none;
     padding: .4em;
     border-style: solid;
@@ -44,70 +49,171 @@ body {
     background-color: lightskyblue;
 }
 
-.utente a:hover{
+.utente a:hover {
     background-color: deepskyblue;
 }
 
-.header .titolo{
+.header .titolo {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-
 }
 
-#menu{
+.margine {
+    margin: 0 auto;
+    max-width: 1140px;
+    background-color: white;
+}
+
+.menu {
     background-color: plum;
     padding: 0.5em 0.5em 0em 0.5em;
     list-style-type: none;
     text-align: center;
-
 }
+
+
 /*
 
-    direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
+direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
 
 
 */
 
-#menu li{
-    display:inline-block;
-    margin: 0% 7%;  /*0 sopra e sotto, 7% destra e sinistra*/
+.menu li {
+    display: inline-block;
+    margin: 0% 7%;
+    /*0 sopra e sotto, 7% destra e sinistra*/
 }
-#menu #currentlink {
-    background-color: coral;
+
+.menu a:link {
+    text-decoration: none;
+}
+
+.menu a:visited {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a:active {
+    text-decoration: underline;
+}
+
+.menu #link-home {
+    background-color: mediumblue;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: white;
+}
+
+.menu #link-news {
+    background-color: orangered;
     padding: 0.25em 0.5em;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
-.scheda_laterale{
+
+.menu #link-recensioni {
+    background-color: #109c09;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.menu #link-eventi {
+    background-color: yellow;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.menu #link-guide {
+    background-color: purple;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: white;
+}
+
+.scheda_laterale {
     background-color: white;
     list-style-type: none;
-    width: 20%;
-    padding: 1.5em;
+    width: 15%;
+    border-left: 1px solid #dddcdc;
+    padding-left: 1em;
+    padding-right: 1.5em;
     float: right;
 }
-.top_column{
- display: flex;
-   flex-direction: column;;
-   flex-wrap: no-wrap;
-  
+
+.top_column {
+    display: flex;
+    flex-direction: column;
+    ;
+    flex-wrap: no-wrap;
 }
-.top_list{
-      width: 100%;
-  list-style-type: none;
-  padding: 0.2em 0em;
-  overflow: auto;
+
+.top_list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0.2em 0em;
+    overflow: auto;
 }
-.top_list img{
+
+.top_list img {
     float: left;
     width: 50%;
+}
 
+.top_column {
+    display: flex;
+    flex-direction: column;
+    ;
+    flex-wrap: nowrap;
 }
+
 .top_list {
-    font-size: 0.8em;
+    width: 100%;
+    list-style-type: none;
+    padding: 1em 0em;
+    overflow: auto;
 }
-.scheda_laterale h1{
-    font-size: 1em;
+
+.top_list img {
+    width: 100%;
+}
+
+.categoria-hardware {
+    background-color: green;
+    color: white;
+    padding: .3em .5em;
+}
+
+.categoria-console {
+    background-color: chocolate;
+    color: white;
+    padding: .3em .5em;
+}
+
+.categoria-videogiochi {
+    background-color: red;
+    color: white;
+    padding: .3em .5em;
+}
+
+.categoria-altro {
+    background-color: aqua;
+    color: white;
+    padding: .3em .5em;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    padding: 10em;
 }
 
 .footer {
@@ -117,6 +223,13 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .hide{
     display: none;
+=======
+@media screen and (max-width: 960px) {
+    .scheda_laterale {
+        display: none;
+    }
+>>>>>>> ff7e3aa489f6bd72131104e09098239b72bf14aa
 }

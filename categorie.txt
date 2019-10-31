@@ -1,0 +1,8 @@
+Hardware Verde chiaro
+Software (se ne vogliamo parlare)
+Console Maroncino
+Vidoegiochi Rosso
+Altro(eventi) azzurrino
+queste sono delle macro categorie che possono fare riferimento a vari argomenti relativi alla categoria
+ad esempio console ha sia playstation in tutte le sue versioni si xbox, nintendo etc..
+Per i nomi delle classi da attribuire ai vari tag delle categorie fare vede alla classi implementate all'interno di comune.css

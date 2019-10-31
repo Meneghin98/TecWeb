@@ -1,13 +1,24 @@
-.breadcrumb {
-    background-color: teal;
-    color: yellow;
+#titolo-news {
+    background-color: orangered;
+}
+
+#titolo-recensioni {
+    background-color: #109c09;
+}
+
+#titolo-eventi {
+    background-color: yellow;
+}
+
+#titolo-guide {
+    background-color: purple;
+    color: white;
 }
 
 .column_list {
     width: 75%;
     display: flex;
     flex-direction: column;
-    ;
     flex-wrap: nowrap;
 }
 
@@ -35,7 +46,14 @@
     font-size: 1em;
 }
 
-img {
-    width: 75%;
-    margin-bottom: 1em;
+.titolo-schede {
+    font-size: 3em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 960px) {
+    .column_list {
+        width: 100%;
+    }
 }

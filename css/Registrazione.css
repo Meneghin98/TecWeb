@@ -1,73 +1,69 @@
-
-#corpo {
-    padding-top: 2em;
-}
-
-.infoPersonali {
+.titolo {
     text-align: center;
-    padding-top: 2em;
-    margin-right: 10em;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-#corpo h2 {
-    margin-top: 1em;
-    font-size: 3em;
+form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+fieldset {
+    padding: 1.5em;
+    margin: 3em;
+}
+
+.sf {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: aliceblue;
+}
+
+input[type="nome"],
+input[type="cognome"],
+input[type="username"],
+input[type="email"],
+input[type="password"] {
+    padding-right: 3em;
+    padding-top: 0.3em;
+    margin: 0.3em;
+}
+.titoloimmagine{
+    display: block;
+}
+.avatar {
     text-align: center;
+        margin: 2em;
 }
 
-.infoPersonali .input {
-    float: center;
-    margin-right: 3em;
+.notifiche {
+    text-align: center;
+    margin: 3em;
 }
 
-.infoPersonali label {
-    display: inline-block;
-    clear: left;
-    width: 250px;
-    text-align: right;
-    margin-right: 1em;
-}
-
-.iDavatar {
-    margin-right: 10.5em;
-    margin-top: 5em;
-}
-
-.iDavatar img {
-    margin-top: -5em;
-    margin-left: 15.5em;
-}   
-
-.iDavatar input {
-    margin-left: 20em;
-}
-
-.gestioneNotifiche {
-    margin: 5em 35em 9em 38em;
-    font-size: 1.2em;
-}
-
-.infoNotifiche {
-    margin-right: 0em;
+input[type="file"] {
+    padding-left: 3em;
 }
 
 .confermaAccount {
-    text-align: center;
-    padding-bottom: 2em;
+    margin-top: 8em;
+    margin-bottom: 50%;
 }
 
-.button {
-    text-align: center;
-    padding-right: 4em;
-    margin-bottom: 25em;
+input.bottoneConferma {
+    font-size: 1.5em;
+    padding: 0.4em;
+    border-radius: 2em;
+    margin-right: 5em;
 }
 
-.button input{
-    margin-left: 5em;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    border-radius: 12em;
-    font-size: 1.2em;
-    color: black;
-    background-color: white;
+input.bottoneIndietro {
+    font-size: 1.5em;
+    padding: 0.4em;
+    border-radius: 2em;
 }

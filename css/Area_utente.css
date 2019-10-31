@@ -1,7 +1,7 @@
 .sfondo{
     background-image: url(../images/Area_utente_background.jpg); /*immagine provvisoria*/
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: 100% 100%;
 }
 .content{
     max-width: 1024px;
@@ -9,6 +9,10 @@
     background-color: rgba(173, 216, 230, 0.555);
     padding: 3em 0;
     text-align: center;
+}
+
+.menu{
+    padding: 0.75em 0.75em 0.25em 0.75em;
 }
 
 
@@ -25,22 +29,29 @@ form .dati{
 .avatar input{
     display: none;
 }
+.avatar p{
+    clear: both;
+    position: relative;
+    bottom: 1.5em;
+}
 
 .avatarimage {
     background-image: url("../images/immagineUtente.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 3em 4.5em;
+    padding: 4em 5em;
     display: block;
 }
 
 .custom-file-upload {
     border: 1px solid #ccc;
-    display: inline-block;
-    padding: .3em;
+    padding: 0 .3em;
     cursor: pointer;
     background-color: steelblue;
     color: white;
+    float: right;
+    position: relative;
+    bottom: 1.6em;
 }
 
 

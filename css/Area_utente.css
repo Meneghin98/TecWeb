@@ -22,8 +22,8 @@ form .dati{
     margin-top: 3em;
     margin-left: 12%;
 }
-.avatar p{
-    margin-top: 3em;
+.avatar input{
+    display: none;
 }
 
 .avatarimage {
@@ -31,19 +31,21 @@ form .dati{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 3em 4.5em;
+    display: block;
 }
 
-.editavatar{
-    display: none;
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: .3em;
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
 }
 
-.groupbuttons{
-    float: right;
-    display: flex;
-    flex-direction: column;
-}
 
 .button {
+    float: right;
     text-align: right;
     margin: 0;
 }
@@ -66,10 +68,6 @@ form .dati{
     border-radius: 0.25em;
     padding: 0.2em;
     margin: 0 .25em;
-}
-
-.toBottom{
-    margin-top: 31.5em;
 }
 
 .dati {
@@ -101,8 +99,8 @@ form .dati{
 
 .checkboxes{
     float: right;
-    margin-top: -.5em;
-    margin-right: 38%;
+    position: relative;
+    right: 30%;
 }
 
 .inline{

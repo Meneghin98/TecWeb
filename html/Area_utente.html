@@ -14,18 +14,20 @@
 </head>
 
 <body>
-    <div id="header">
-        <a href="Home.html" id="logo">Logo</a>
+    <div class="header">
+        <a href="Home.html" class="logo hide">Logo</a>
         <!--immagine inserita via css-->
 
-        <ul id="utente">
+        <ul class="utente">
             <li><a href="Registrazione.html">Registrati</a></li>
             <li><a href="index.html">esci</a></li>
-            <li>utente</li> <!-- non visibile, da sostituire con un immagine-->
+            <li class="hide">utente</li> <!-- non visibile, da sostituire con un immagine-->
             <!-- da tradure !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
         </ul>
-        <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
-        <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
+        <div class="titolo">
+            <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
+            <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
+        </div>
     </div>
 
     <div id="menu">
@@ -44,24 +46,19 @@
 
                 <div class="avatar">
                     <span class="avatarimage"></span>
-                    <div class="editavatar">
-                        <label for="file"></label>
-                        <input type="file" id="file">
-                    </div>
+                    <label for="file" class="custom-file-upload">Edit</label>
+                    <input type="file" id="file">
+
                     <p>Tipologia utente:</p>
                     <!--aggiungere tipologia utente-->
                 </div>
                 <div>
-                    <div class="groupbuttons">
-                        <div class="button">
-                            <input type="reset" value="Reimposta" class="reset" />
-                            <input type="submit" value="Salva" class="save" />
-                        </div>
-                        <div class="button toBottom">
-                            <input type="reset" value="Reimposta" class="reset">
-                            <input type="submit" value="Salva" class="save">
-                        </div>
+
+                    <div class="button">
+                        <input type="reset" value="Reimposta" class="reset" />
+                        <input type="submit" value="Salva" class="save" />
                     </div>
+
                     <div class="dati">
                         <fieldset class="group">
                             <legend>Utente</legend>
@@ -99,8 +96,12 @@
 
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="button ">
+                        <input type="reset" value="Reimposta" class="reset">
+                        <input type="submit" value="Salva" class="save">
+                    </div>
                 </div>
             </form>
         </div>

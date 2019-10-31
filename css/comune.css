@@ -97,7 +97,17 @@ body {
     font-size: 1em;
 }
 .footer {
-    clear: both;
-    width: 100%;
-    padding: 10em;
+    background-color: darkslateblue;
+
+
+
+    color: whitesmoke;
+
+
+
+    padding: 1em;
+
+
+
+    text-align: center;
 }

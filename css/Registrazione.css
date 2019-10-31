@@ -16,8 +16,9 @@ fieldset {
 }
 
 .sf {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     background-color: aliceblue;
@@ -32,7 +33,9 @@ input[type="password"] {
     padding-top: 0.3em;
     margin: 0.3em;
 }
-
+.titoloimmagine{
+    display: block;
+}
 .avatar {
     text-align: center;
         margin: 2em;

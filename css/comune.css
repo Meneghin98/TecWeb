@@ -3,19 +3,13 @@
     padding: 0px;
 }
 
-<<<<<<< HEAD
-html,
 body {
-=======
-body { 
-    font-size: 0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-    font: italic small-caps bold 0.8em/1.5 arial Helvetica sans-serif;
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
+    /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
+    font: 0.9em/1.5 arial Helvetica sans-serif;
     max-width: 1920px;
     margin: auto;
 }
 
-<<<<<<< HEAD
 body {
     font-family: Verdana;
     margin: auto;
@@ -27,49 +21,20 @@ body {
     background-color: #00ff00;
 }
 
-#header #logo {
-=======
-.header{
-    padding: 1.5em ;
-    background-color: #00ff00;
-}
-
-.header .logo{
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
+.header .logo {
     float: left;
     width: 5%;
 }
 
-<<<<<<< HEAD
-#utente {
-    display: block;
-=======
-.utente{
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
-    float: right;
+.utente li {
     list-style-type: none;
-}
-<<<<<<< HEAD
-
-#utente li {
-=======
-.utente li{
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     text-align: right;
     padding: .3em;
 }
 
-<<<<<<< HEAD
-#header h1 {
-    font-size: 2em;
-    text-align: center;
-}
-
-#header h2 {
-    font-size: 1.5em;
-=======
-.utente a:link{ /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
-    sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
+.utente a:link {
+    /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
+sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
     text-decoration: none;
     padding: .4em;
     border-style: solid;
@@ -79,16 +44,14 @@ body {
     background-color: lightskyblue;
 }
 
-.utente a:hover{
+.utente a:hover {
     background-color: deepskyblue;
 }
 
-.header .titolo{
+.header .titolo {
     width: 60%;
     margin: 0 auto;
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
     text-align: center;
-
 }
 
 .margine {
@@ -107,7 +70,7 @@ body {
 
 /*
 
-    direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
+direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
 
 
 */
@@ -180,22 +143,25 @@ body {
     padding-right: 1.5em;
     float: right;
 }
-.top_column{
- display: flex;
-   flex-direction: column;;
-   flex-wrap: no-wrap;
-  
+
+.top_column {
+    display: flex;
+    flex-direction: column;
+    ;
+    flex-wrap: no-wrap;
 }
-.top_list{
-      width: 100%;
-  list-style-type: none;
-  padding: 0.2em 0em;
-  overflow: auto;
+
+.top_list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0.2em 0em;
+    overflow: auto;
 }
-.top_list img{
+
+.top_list img {
     float: left;
     width: 50%;
-
+}
 
 .top_column {
     display: flex;
@@ -214,8 +180,6 @@ body {
 .top_list img {
     width: 100%;
 }
-
-
 
 .categoria-hardware {
     background-color: green;
@@ -246,8 +210,6 @@ body {
     width: 100%;
     padding: 10em;
 }
-=======
->>>>>>> 2f526bf68d4411cfa8e1febbac45d1d3ee202689
 
 .footer {
     background-color: darkslateblue;

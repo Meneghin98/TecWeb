@@ -6,39 +6,49 @@
 body { 
     font-size: 0.9em;  /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
     font: italic small-caps bold 0.8em/1.5 arial Helvetica sans-serif;
-    max-width: 1024;
+    max-width: 1920px;
     margin: auto;
 }
 
-#header{
-    padding: 1.5em 0 ;
+.header{
+    padding: 1.5em ;
     background-color: #00ff00;
 }
 
-#header #logo{
+.header .logo{
     float: left;
     width: 5%;
 }
 
-#utente{
-    display: block;
+.utente{
     float: right;
     list-style-type: none;
-    width: 8%;
 }
-#utente li{
+.utente li{
     text-align: right;
-    display: inline;
+    padding: .3em;
 }
 
-
-#header h1 { 
-    font-size: 2em;
-    text-align: center;
+.utente a:link{ /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
+    sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
+    text-decoration: none;
+    padding: .4em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    border-color: deepskyblue;
+    background-color: lightskyblue;
 }
-#header h2 { 
-    font-size: 1.5em; 
+
+.utente a:hover{
+    background-color: deepskyblue;
+}
+
+.header .titolo{
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
+
 }
 
 #menu{

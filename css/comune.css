@@ -223,13 +223,11 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     text-align: center;
 }
 
-<<<<<<< HEAD
 .hide{
     display: none;
-=======
+}
 @media screen and (max-width: 960px) {
     .scheda_laterale {
         display: none;
     }
->>>>>>> ff7e3aa489f6bd72131104e09098239b72bf14aa
 }

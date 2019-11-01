@@ -1,0 +1,138 @@
+.titolo {
+    text-align: center;
+    margin-top: 4em;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+.shortDes {
+    color: rgb(141, 135, 135);
+}
+
+.proprietario {
+    color: chocolate;
+}
+
+.inizio {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.indice {
+    border: 1px solid #000;
+    float: right;
+    border-style: solid;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+.Tindice {
+    margin-bottom: 1em;
+}
+
+a {
+    color:red;
+}
+
+ol {
+    list-style: none;
+    counter-reset: contatore;
+}
+
+ol li {
+    counter-increment: contatore;
+}
+
+ol li::before {
+    content: counter(contatore) ". ";
+    color: red;
+    font-weight: bolder;
+}
+  
+p {
+    font-size: 1.4em;
+    margin: 1.5em 7em 1em 5em;
+}
+
+img {
+    max-width: 1024px;
+    margin: 0em 7em;
+}
+
+.img3 {
+    max-width: 1024px;
+    margin: 2em 7em;
+}
+  
+.sottotitolo {
+    border-top: solid;
+    border-color: chocolate;
+    padding-top: 0.5em;
+    border-top-width: thick;
+    margin-left: 4em;
+    margin-right: 20em;
+    margin-top: 3em;
+    font-size: 1.8em;
+}   
+  
+.titolocommento {
+    text-align: center; 
+    font-size: 2em;
+    color: black;
+    border-bottom: solid;
+    
+}
+
+.commento {
+    border: solid;
+    border-color: black;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+.pro {
+    margin: 1em 1em 1em 4em;
+    color: red;
+}
+
+.contro {
+    float: right;
+    margin: -6em 3em 0em 2em;
+    color: green;
+}
+
+.tabella {
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: -1em 7em 0em 7em;
+}
+
+.finale {
+    margin: 7em;
+}
+
+.voto {
+    text-align: center;
+    color: rgb(17, 61, 63);
+    font-size: 2em;
+}
+
+.titolovoto{
+    background-color: rgba(127, 255, 212, 0.5);
+    margin: 0em 10em 0em 10em;
+}
+
+p.votofin {
+    margin: auto;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: -webkit-xxx-large;
+}

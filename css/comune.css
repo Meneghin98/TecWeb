@@ -4,142 +4,11 @@
 }
 
 body {
-    /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-    font: 0.9em/1.5 arial Helvetica sans-serif;
-    max-width: 1920px;
-    margin: auto;
-}
-
-body {
-    font-family: Verdana;
-    margin: auto;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
     background-color: #262626;
-}
-
-.header {
-    padding: 1.5em 0;
-    background-color: #00ff00;
-}
-
-.header .logo {
-    float: left;
-    width: 5%;
-}
-
-.hamburger-menu{
-    display: none;
-}
-
-.utente{
-    float: right;
-    list-style-type: none;
-    text-align: right;
-    padding: .3em;
-}
-.utente li{
-    margin: .6em 0;
-}
-
-.utente a:link {
-    /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
-sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
-    text-decoration: none;
-    padding: .25em;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 1em;
-    border-color: deepskyblue;
-    background-color: lightskyblue;
-}
-
-.utente a:hover {
-    background-color: deepskyblue;
-}
-
-.header .titolo {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.margine {
-    margin: 0 auto;
-    max-width: 1140px;
-    background-color: white;
-}
-
-.menu {
-    background-color: lightseagreen;
-    padding: 0.5em 0.5em 0em 0.5em;
-    list-style-type: none;
-    text-align: center;
-}
-
-
-/*
-
-direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
-
-
-*/
-
-.menu li {
-    display: inline-block;
-    margin: 0% 7%;
-    /*0 sopra e sotto, 7% destra e sinistra*/
-}
-
-.menu a:link {
-    text-decoration: none;
-}
-
-.menu a:visited {
-    text-decoration: none;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-.menu a:active {
-    text-decoration: underline;
-}
-
-.menu #link-home {
-    background-color: mediumblue;
-    padding: 0.25em 0.5em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    color: white;
-}
-
-.menu #link-news {
-    background-color: orangered;
-    padding: 0.25em 0.5em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-}
-
-.menu #link-recensioni {
-    background-color: #109c09;
-    padding: 0.25em 0.5em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-}
-
-.menu #link-eventi {
-    background-color: yellow;
-    padding: 0.25em 0.5em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-}
-
-.menu #link-guide {
-    background-color: purple;
-    padding: 0.25em 0.5em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    color: white;
+    overflow-x: hidden;
 }
 
 .scheda_laterale {
@@ -213,23 +82,10 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     padding: .3em .5em;
 }
 
-.footer {
-    clear: both;
-    width: 100%;
-    padding: 10em;
-}
-
-.footer {
-    background-color: darkslateblue;
-    color: whitesmoke;
-    padding: 1em;
-    text-align: center;
-}
-
 .hide{
     display: none;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 100%) {
     .scheda_laterale {
         display: none;
     }

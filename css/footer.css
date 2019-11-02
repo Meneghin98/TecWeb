@@ -1,0 +1,47 @@
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: #191919;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    overflow: hidden;     /* Unica istruzione CSS 3, il resto è CSS 2 */
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.footer li{
+    list-style: none;
+    margin-bottom: 0.7em;
+}
+
+.footer_inline {
+    float: left;
+    width: 33.3%
+}
+
+.footer_inline p {
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+#imgs_footer {
+    clear: both;
+    padding-top: 3em;
+}
+
+#valid-xhtml {
+    height: 31px;
+    width: 88px;
+}
+
+#valid-css {
+    height: 31px;
+    width: 88px;
+}

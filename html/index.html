@@ -7,34 +7,39 @@
     <meta name='keywords' content='azione, console, news, gaming, eventi, cosplay' />
     <meta name="title" content="Sito interattivo sul gaming" />
     <link rel="stylesheet" href="../css/comune.css" />
-    <link rel="stylesheet" href="../css/comune_handheld.css" media="handheld">
+    <link rel="stylesheet" href="../css/comuneHandheld.css" media="handheld">
+    <link rel="stylesheet" href="../css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/breadcrumb.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/footer.css" type="text/css"/>
     <!--al momento uso questo per identificare i dispositivi mobile, poi dovremo discutere su quali query fare per ottenere più dispositivi possibili-->
     <link rel="stylesheet" href="../css/index.css" />
 </head>
 
 <body>
 
-    <div class="header">
-        <ul class="utente">
-            <li><a href="Registrazione.html">Registrati</a></li>
-            <li><a href="Login.html">Accedi</a></li>
-        </ul>
-        <!--immagine inserita via css-->
-        <div class="titolo">
-            <h1><span xml:lang="en">NESE</span></h1>
-            <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
-        </div>
-    </div>
+<div class="header">
+    <!--immagine inserita via css-->
+    <h1><span xml:lang="en">NESE's</span></h1>
+    <h2>L'eccelenza nel <span xml:lang="en">gaming</span></h2>
+</div>
+
+<div class="breadcrumb">
+    <ul class="log_in">
+        <li><a href="registrazione.html">Registrati</a></li>
+        <li><a href="login.html">Accedi</a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><span xml:lang="en">Home</span></li>
+        <li><a href="news.html"><span xml:lang="en">News</span></a></li>
+        <li><a href="recensioni.html">Recensioni</a></li>
+        <li><a href="eventi.html">Eventi</a></li>
+        <li><a href="guide.html">Guide</a></li>
+    </ul>
+</div>
+
     <div class="margine">
-        <div class="menu">
-            <ul>
-                <li id="link-home"><span xml:lang="en">Home</span></li>
-                <li><a href="News.html"><span xml:lang="en">News</span></a></li>
-                <li><a href="recensioni.html">Recensioni</a></li>
-                <li><a href="eventi.html">Eventi</a></li>
-                <li><a href="guide.html">Guide</a></li>
-            </ul>
-        </div>
+
         <div class="row">
             <div class="topArticles">
                 <img src="../images/codmw.png" alt="" />
@@ -196,10 +201,40 @@
 
     </div>
 
-    <div class="footer">
-        <p>
-            <span xml:lang="en">Copyright - All rights reservd</span></p>
+<div class="footer">
+        <div class="footer_inline" id="pagine">
+            <p>Torna a</p>
+            <ul>
+                <li><a href ="index.html" xml:lang="en">Home</a></li>
+                <li><a href ="news.html" xml:lang="en">News</a></li>
+                <li><a href ="recensioni.html">Recensioni</a></li>
+                <li><a href ="eventi.html">Eventi</a></li>
+                <li><a href ="guide.html">Guide</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_inline" id="unisciti">
+            <p>Unisciti</p>
+            <ul>
+                <li><a href ="login.html" xml:lang="en">Accedi</a></li>
+                <li><a href ="registrazione.html">Crea un account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_inline" id="contatti">
+            <p>Contatti</p>
+            <ul>
+                <li><a href ="chiSiamo.html">Chi siamo</a></li>
+                <li><a href ="">Lavora con noi</a></li>
+            </ul>
+        </div>
+
+        <p id="imgs_footer">
+            <img id="valid-xhtml" src="../images/footer/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict"/>
+            <img id="valid-css" src="../images/footer/valid-css2.png" alt="Valid CSS 2"/>
+        </p>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+.log_in {
+    float: right;
+    list-style-type: none;
+    text-align: center;
+    padding: 0.3em;
+    overflow: hidden;
+}
+
+.log_in li{
+    margin: .8em;
+}
+
+.log_in a {
+    text-decoration: none;
+    padding: .25em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3em;
+    border-color: #f5f5f5;
+    color: #f5f5f5;
+}
+
+.log_in a:hover {
+    background-color: #3f3f3f;
+}
+
+.menu {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #f5f5f5;
+    padding: 0.5em 0.5em 0em 0.5em;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu li, a {
+    display: inline-block;
+    margin: 0 4%;
+    padding: 0.25em 0.5em;
+    color: #f5f5f5;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover, a:active {
+    text-decoration: underline;
+}
+
+/*
+.menu #link-home {
+    background-color: mediumblue;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: white;
+}
+
+.menu #link-news {
+    background-color: orangered;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.menu #link-recensioni {
+    background-color: #109c09;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.menu #link-eventi {
+    background-color: yellow;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.menu #link-guide {
+    background-color: purple;
+    padding: 0.25em 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: white;
+}*/

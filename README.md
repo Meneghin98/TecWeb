@@ -10,3 +10,8 @@ Progetto di Tecnologie Web
     <li>Valutare la creazione di un trigger/function, in modo da evitare l'inserimento di un nickname duplicato in fase di cambio nickname.</li>
   </ol>
  
+ <dl>
+  <dt>Idee aggiuntive</dt>
+  <dd>Ho pensato (guardando su multiplayer.it) che nel bredcrumb si potrebbe aggiungere un'icona per andare alla pagina del login senza mettere i due link login e registrati nella sezione del titolo. </dd>
+  <dd>Poi ho pensato che potremmo allineare a sinistra il titolo come in questa pagina https://www.coralthemes.com/product/coral-dark-wordpress-theme/ , come vi sembra l'idea?</dd>
+ </dl>

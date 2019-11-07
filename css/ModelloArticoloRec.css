@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 4em;
     font-size: 1.5em;
+    padding-top: 5%;
     font-style: normal;
 }
 
@@ -10,12 +11,12 @@
 }
 
 .proprietario {
-    color: chocolate;
+    color: red;
 }
 
 .inizio {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 5% 5%;
+    
 }
 
 .indice {
@@ -51,9 +52,10 @@ ol li::before {
     font-weight: bolder;
 }
   
-p {
+
+p.testoCommento {
     font-size: 1.4em;
-    margin: 1.5em 7em 1em 5em;
+    margin: 5%;
 }
 
 img {
@@ -93,13 +95,14 @@ img {
 }
 
 .pro {
-    margin: 1em 1em 1em 4em;
+    margin: 1% 1% 1% 4%;
     color: red;
 }
 
 .contro {
     float: right;
-    margin: -6em 3em 0em 2em;
+    margin-top: -10.5%;
+    margin-right: 2%;
     color: green;
 }
 
@@ -112,25 +115,25 @@ img {
     margin: -1em 7em 0em 7em;
 }
 
-.finale {
-    margin: 7em;
-}
 
 .voto {
     text-align: center;
     color: rgb(17, 61, 63);
     font-size: 2em;
+    margin-top: 6%;
+    padding-bottom: 6%;
 }
 
 .titolovoto{
     background-color: rgba(127, 255, 212, 0.5);
-    margin: 0em 10em 0em 10em;
+    margin: 0.5em 1em ;
 }
 
-p.votofin {
-    margin: auto;
-    margin-bottom: 2em;
+.testo {
+    text-align: left;
+    margin: 5%;
     font-size: 2em;
+    font-size: 1.4em;
 }
 
 h1 {

@@ -215,11 +215,6 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
 
 .footer {
     clear: both;
-    width: 100%;
-    padding: 10em;
-}
-
-.footer {
     background-color: darkslateblue;
     color: whitesmoke;
     padding: 1em;

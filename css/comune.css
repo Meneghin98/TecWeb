@@ -209,10 +209,6 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
         margin-right: 1em;
     }
     
-    .article-list-text {
-        padding-left: 22%;
-    }
-    
     .article_list h1 {
         font-size: 1.5em;
     }
@@ -223,6 +219,8 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     
     .article_list a:link {
         color: black;
+        font-size: 1.5em;
+        font-weight: bold;
         text-decoration: none;
     }
     

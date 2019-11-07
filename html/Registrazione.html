@@ -2,37 +2,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv=" Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>N.e.s.e.'s</title>
     <meta name="title" content="Sito interattivo sul gaming" />
     <meta name="description" content="Pagina personale dell'utente" />
     <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale" />
     <meta name="language" content="italian it" />
     <meta name="author" content="Simone Meneghin" />
-    <link rel="stylesheet" href="../css/comune.css" type="text/css">
-    <link rel="stylesheet" href="../css/Registrazione.css" type="text/css">
+    <link rel="stylesheet" href="../css/comune.css" type="text/css" />
+    <link rel="stylesheet" href="../css/Registrazione.css" type="text/css" />
 </head>
 
 <body>
-    <div id="header">
-        <a href="Home.html" id="logo">Logo</a>
-        <ul id="utente">
+    <div class="header">
+        <ul class="utente">
             <li><a href="Registrazione.html">Registrati</a></li>
-            <li><a href="index.html">esci</a></li>
-            <li>utente</li>
+            <li><a href="Login.html">Accedi</a></li>
         </ul>
-        <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
-        <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
+        <!--immagine inserita via css-->
+        <div class="titolo">
+            <h1><span xml:lang="en">NESE</span></h1>
+            <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
+        </div>
     </div>
-
-    <div id="menu">
-        <ul>
-            <li><span xml:lang="en">Home</span></li>
-            <li><a href="News.html"><span xml:lang="en">News</span></a></li>
-            <li>Recensioni</li>
-            <li>Eventi</li>
-            <li>Guide</li>
-        </ul>
+    <div class="margine">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html"><span xml:lang="en">Home</span></a></li>
+                <li><a href="News.html"><span xml:lang="en">News</span></a></li>
+                <li><a href="recensioni.html">Recensioni</a></li>
+                <li><a href="eventi.html">Eventi</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="sfondo1">
@@ -45,28 +47,28 @@
                     <fieldset>
                         <legend>Info Personali</legend>
                         <label for="nome">Nome:</label>
-                        <input name="nome" type="nome" maxlength=“20”>
+                        <input name="nome" type="text" />
                         <label for="cognome">Cognome:</label>
-                        <input name="cognome" type="cognome" maxlength=“20”>
+                        <input name="cognome" type="text" />
                     </fieldset>
                     <fieldset>
                         <legend>Info Account</legend>
-                        <label for="username"><span xml:lang="en"></span xml:lang="en">Username</span>:</label>
-                        <input name="username" type="username" maxlength="20" />
+                        <label for="username"><span xml:lang="en"><span xml:lang="en">Username</span>:</span></label>
+                        <input name="username" type="text" />
                         <label for="email"><span xml:lang="en">Email</span>:</label>
-                        <input name="email" type="email" maxlength=“30”>
+                        <input name="email" type="text" />
                         <label for="password"><span xml:lang="en">Password</span>:</label>
-                        <input type="password" name="password" type="password" maxlength="20" />
+                        <input type="password" name="password" />
                     </fieldset>
                     <div class="avatar">
                         <label><span class="titoloimmagine"><span xml:lang="en">Avatar</span> (facoltativo):</span>
-                            <img src="../images/ImmagineUtente.jpg" alt="immagine Utente">
-                            <input type="file" name="pic" accept="immagini/">
+                            <img src="../images/ImmagineUtente.jpg" alt="immagine Utente" />
+                            <input type="file" name="pic" accept="immagini" />
                         </label>
                     </div>
 
                     <div class="notifiche">
-                        <label for="gestioneNotifiche" action="php.txt">Modalità di ricevimento delle notifiche:<select
+                        <label for="gestioneNotifiche">Modalità di ricevimento delle notifiche:<select
                                 class="infoNotifiche" name="InfoNotifiche">
                                 <option>Nessuna notifica</option>
                                 <option>Notifiche sul sito</option>
@@ -75,11 +77,11 @@
                         </label>
                     </div>
 
-                    <div class="confermaAccount" action="php.txt">
+                    <div class="confermaAccount">
                         <label for="conferma"></label>
-                        <input class="bottoneConferma" type="submit" value="Registrati">
+                        <input class="bottoneConferma" type="submit" value="Registrati" />
                         <label for="Annulla"></label>
-                        <input class="bottoneIndietro" type="reset" value="Annulla">
+                        <input class="bottoneIndietro" type="reset" value="Annulla" />
                     </div>
                 </form>
             </div>
@@ -89,7 +91,9 @@
     </div>
 
     <div class="footer">
-        <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
+        <p>
+            <span xml:lang="en">Copyright - All rights reservd</span>
+        </p>
     </div>
 </body>
 

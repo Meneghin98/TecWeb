@@ -237,4 +237,123 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     .top_column {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+    
+    .scheda_laterale dt {
+        font-weight: bold;
+    }
+    
+    .column_list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .article_list {
+        border-top: 1px solid #dddcdc;
+        padding-top: 1em;
+        margin: 0 1em 1em 1em;
+        list-style-type: none;
+        overflow: auto;
+    }
+    
+    .article_list:nth-of-type(1) {
+        border: 0;
+        padding-top: 1em;
+    }
+    
+    .article_list img {
+        float: left;
+        width: 20%;
+        margin-right: 1em;
+    }
+    
+    .article_list h1 {
+        font-size: 1.5em;
+    }
+    
+    .article_list h2 {
+        font-size: 1em;
+    }
+    
+    .article_list a:link {
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .article_list a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .article_list a:hover {
+        color: dimgray;
+        text-decoration: none;
+    }
+    
+    .article_list a:active {
+        outline: none;
+        text-decoration: none;
+    }
+    
+    .categoria-hardware {
+        float: right;
+        background-color: green;
+        color: white;
+        padding: .3em .5em;
+    }
+    
+    .categoria-console {
+        float: right;
+        background-color: chocolate;
+        color: white;
+        padding: .3em .5em;
+    }
+    
+    .categoria-videogiochi {
+        float: right;
+        background-color: red;
+        color: white;
+        padding: .3em .5em;
+    }
+    
+    .categoria-altro {
+        float: right;
+        background-color: aqua;
+        color: white;
+        padding: .3em .5em;
+    }
+    
+    .categoria-eventi {
+        float: right;
+        background-color: darkgoldenrod;
+        color: white;
+        padding: .3em .5em;
+    }
+    
+    .footer {
+        box-sizing: border-box;
+        clear: both;
+        background-color: darkslateblue;
+        color: whitesmoke;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    @media screen and (max-width: 960px) {
+        .scheda_laterale {
+            display: none;
+        }
+        .top_column {
+            width: 100%;
+        }
+    }
+>>>>>>> a9e3ada9dd0e7411ed884a8519903542f8dcfd36

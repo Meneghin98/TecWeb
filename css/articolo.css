@@ -1,17 +1,17 @@
-        .article-text {
+        .description {
             text-align: justify;
             margin: 0 auto;
         }
         
-        .article-text p {
+        .description p {
             padding: 0 20em 1em 3em;
         }
         
-        .article-text p:nth-of-type(1) {
+        .description p:nth-of-type(1) {
             padding-top: 2em;
         }
         
-        .article-text p:last-of-type {
+        .description p:last-of-type {
             padding-bottom: 2em;
         }
         
@@ -19,19 +19,19 @@
             margin: 0 1em 1em 1em;
         }
         
-        .titolo-articolo {
+        .articleTitle {
             font-size: 2em;
         }
         
-        .recensore {
+        .writer {
             font-size: 1.2em;
         }
         
-        .recensore span {
+        .writer span {
             font-weight: bold;
         }
         
-        .articolo img {
+        img {
             display: block;
             margin-left: auto;
             margin-right: auto;

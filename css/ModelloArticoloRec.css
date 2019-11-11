@@ -1,4 +1,4 @@
-.titolo {
+.titoloRec {
     text-align: center;
     margin-top: 4em;
     font-size: 1.5em;
@@ -97,12 +97,11 @@ img {
 .pro {
     margin: 1% 1% 1% 4%;
     color: red;
+    float: right;
 }
 
 .contro {
-    float: right;
-    margin-top: -10.5%;
-    margin-right: 2%;
+    
     color: green;
 }
 

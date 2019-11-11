@@ -1,83 +1,88 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
-    font: 0.9em/1.5 arial Helvetica sans-serif;
-    max-width: 1920px;
-    margin: auto;
-}
-
-body {
-    font-family: Verdana;
-    margin: auto;
-    background-color: #262626;
-}
-
-.header {
-    padding: 1.5em 0;
-    background-color: #00ff00;
-}
-
-.header .logo {
-    float: left;
-    width: 5%;
-}
-
-.hamburger-menu{
-    display: none;
-}
-
-.utente{
-    float: right;
-    list-style-type: none;
-    text-align: right;
-    padding: .3em;
-}
-.utente li{
-    margin: .6em 0;
-}
-
-.utente a:link {
-    /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 0.9em/1.5em;
+        max-width: 1920px;
+        margin: auto;
+        height: 100%;
+        background-color: #262626;
+        background-image: url(../images/pacmanhighresscreenshot300.jpg);
+        background-position: center;
+    }
+    
+    .header {
+        padding: 1.5em 0;
+        background-color: #262626;
+        color: #109c09;
+    }
+    
+    .header .logo {
+        float: left;
+        width: 5%;
+    }
+    
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .utente {
+        float: right;
+        list-style-type: none;
+        text-align: right;
+        padding: .3em;
+    }
+    
+    .utente li {
+        margin: .6em 0;
+    }
+    
+    .utente a:link {
+        /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
 sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
-    text-decoration: none;
-    padding: .25em;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 1em;
-    border-color: deepskyblue;
-    background-color: lightskyblue;
-}
-
-.utente a:hover {
-    background-color: deepskyblue;
-}
-
-.header .titolo {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.margine {
-    margin: 0 auto;
-    max-width: 1140px;
-    background-color: white;
-}
-
-.menu {
-    background-color: lightseagreen;
-    padding: 0.5em 0.5em 0em 0.5em;
-    list-style-type: none;
-    text-align: center;
-}
-
-
-/*
-
+        text-decoration: none;
+        padding: .25em;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1em;
+        border-color: deepskyblue;
+        background-color: lightskyblue;
+    }
+    
+    .utente a:hover {
+        background-color: deepskyblue;
+    }
+    
+    .header .titolo {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .margine {
+        margin: 0 auto;
+        max-width: 1140px;
+        background-color: white;
+    }
+    
+    .menu {
+        background-color: #131313;
+        list-style-type: none;
+        text-align: center;
+        color: white;
+    }
+    
+    input {
+        float: right;
+        align-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    /*
 direi di fare il link selezionato di un colore diverso con i bordi arrotondati sopra, in modo che sembri il selettore delle cartelline in un portadocumenti
 
 
@@ -228,5 +233,8 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
 @media screen and (max-width: 960px) {
     .scheda_laterale {
         display: none;
+    }
+    .top_column {
+        width: 100%;
     }
 }

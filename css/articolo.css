@@ -1,0 +1,35 @@
+.article-text {
+    width: 95%;
+    padding: 0 1.5em 1.5em 1.5em;
+    height: inherit;
+}
+
+.intestazione {
+    margin: 0 1em 1em 1em;
+}
+
+.titolo-articolo {
+    font-size: 2em;
+}
+
+.recensore {
+    font-size: 1.2em;
+}
+
+.articolo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 1.5em;
+}
+
+.articolo {
+    width: 82%;
+}
+
+@media screen and (max-width: 960px) {
+    .articolo {
+        width: 100%;
+    }
+}

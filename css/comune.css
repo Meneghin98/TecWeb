@@ -11,14 +11,19 @@
         margin: auto;
         height: 100%;
         background-color: #262626;
-        background-image: url(../images/pacmanhighresscreenshot300.jpg);
+        background-image: url(../images/horizon-zero-dawn-4k-game-on.jpg);
         background-position: center;
+        background-repeat: no-repeat;
     }
     
     .header {
         padding: 1.5em 0;
         background-color: #262626;
         color: #109c09;
+        text-align: center;
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 auto;
     }
     
     .header .logo {
@@ -63,17 +68,10 @@ sicuramente più volte e perchè non serve al miglioramento dell'esperienza di n
         text-align: center;
     }
     
-    .margine {
+    .content {
         margin: 0 auto;
         max-width: 1140px;
         background-color: white;
-    }
-    
-    .menu {
-        background-color: #131313;
-        list-style-type: none;
-        text-align: center;
-        color: white;
     }
     
     input {
@@ -88,7 +86,11 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
 
 */
     
-    .menu ul {
+    .menu {
+        background-color: #131313;
+        list-style-type: none;
+        text-align: center;
+        color: white;
         display: flex;
         flex-wrap: nowrap;
         width: 1140px;
@@ -98,13 +100,13 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     .menu li {
         width: 20%;
         display: inline-block;
-        border-right: 1px solid #dddcdc;
+        border-left: 1px solid #dddcdc;
         text-align: center;
-        padding: 0.5em 0;
+        margin: 0.5em 0;
     }
     
     .menu li:nth-of-type(1) {
-        border-left: 1px solid #dddcdc;
+        border-left: 0;
     }
     
     .menu a:link {
@@ -132,65 +134,46 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
         outline: none;
     }
     
-    .scheda_laterale {
+    .rightPannel {
         background-color: white;
         list-style-type: none;
         width: 20%;
         border-left: 1px solid #dddcdc;
         border-bottom: 1px solid #dddcdc;
-        padding-left: 1em;
-        padding-right: 1.5em;
-        padding-bottom: 1em;
+        padding: 0.5em 1em 1em 1em;
         float: right;
     }
     
-    .top_column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;
+    .rightPannel dt {
+        font-weight: bold;
     }
     
-    .top_list {
+    .rightPannel dd {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         width: 100%;
         list-style-type: none;
-        padding: 0.2em 0em;
+        padding: 0.5em 0em;
         overflow: auto;
         text-align: justify;
     }
     
-    .top_list img {
-        float: left;
-        width: 50%;
-    }
-    
-    .top_column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    
-    .top_list {
-        width: 100%;
-        list-style-type: none;
-        padding: 1em 0em;
-        overflow: auto;
-    }
-    
-    .top_list img {
+    .rightPannel dd img {
         width: 100%;
     }
     
-    .scheda_laterale dt {
+    .dt {
         font-weight: bold;
     }
     
-    .column_list {
+    .articleList {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     
-    .article_list {
+    .articleList li {
         border-top: 1px solid #dddcdc;
         padding-top: 1em;
         margin: 0 1em 1em 1em;
@@ -198,76 +181,68 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
         overflow: auto;
     }
     
-    .article_list:nth-of-type(1) {
+    .articleList li:nth-of-type(1) {
         border: 0;
         padding-top: 1em;
     }
     
-    .article_list img {
+    .articleList li img {
         float: left;
         width: 20%;
         margin-right: 1em;
     }
     
-    .article_list h1 {
-        font-size: 1.5em;
-    }
-    
-    .article_list h2 {
-        font-size: 1em;
-    }
-    
-    .article_list a:link {
+    .articleList li a:link {
         color: black;
         font-size: 1.5em;
         font-weight: bold;
         text-decoration: none;
     }
     
-    .article_list a:visited {
+    .articleList li a:visited {
         color: black;
         text-decoration: none;
     }
     
-    .article_list a:hover {
+    .articleList li a:hover {
         color: dimgray;
         text-decoration: none;
     }
     
-    .article_list a:active {
+    .articleList li a:active {
         outline: none;
         text-decoration: none;
     }
     
-    .categoria-hardware {
+    .categoriaHardware {
         float: right;
         background-color: green;
         color: white;
         padding: .3em .5em;
     }
     
-    .categoria-console {
+    .categoriaConsole {
         float: right;
         background-color: chocolate;
         color: white;
         padding: .3em .5em;
     }
     
-    .categoria-videogiochi {
+    .categoriaVideogiochi {
         float: right;
         background-color: red;
         color: white;
         padding: .3em .5em;
     }
     
-    .categoria-altro {
+    .categoriaAltro {
         float: right;
         background-color: aqua;
         color: white;
         padding: .3em .5em;
     }
     
-    .categoria-eventi {
+    .categoriaEventi {
         float: right;
         background-color: darkgoldenrod;
         color: white;
@@ -288,10 +263,10 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
     }
     
     @media screen and (max-width: 960px) {
-        .scheda_laterale {
+        .rightPannel {
             display: none;
         }
-        .top_column {
+        .articleList {
             width: 100%;
         }
     }

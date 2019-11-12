@@ -22,8 +22,6 @@
         color: #109c09;
         text-align: center;
         margin: 0 auto;
-        text-align: center;
-        margin: 0 auto;
     }
     
     .header .logo {
@@ -126,6 +124,10 @@ direi di fare il link selezionato di un colore diverso con i bordi arrotondati s
         text-decoration: none;
         color: white;
         outline-style: none;
+    }
+    
+    .menu a:focus {
+        outline: none;
     }
     
     .menu #currentlink {

@@ -1,0 +1,60 @@
+p {
+    padding: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.shortDes {
+    color: rgb(141, 135, 135);
+}
+
+.proprietario {
+    color: chocolate;
+}
+
+.index{
+    border-left: 2px solid #dddcdc;
+    max-width: 14.5em;
+    float: right;
+    margin-left: .9em;
+    margin-bottom: 2em;
+    padding: 2em .5em 2em 2em;
+}
+
+.index .Tindex{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.index .Lindex  a:link{
+    color: orangered;
+}
+
+.index .Lindex  a:visited{
+    color: indianred;
+}
+
+.index .Lindex a:hover{
+    color: darkred;
+}
+
+.index .Lindex {
+    list-style: none;
+    counter-reset: li;
+}
+
+.index .Lindex li::before {
+    content: counter(li) "."; 
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+}
+.index .Lindex li {
+    counter-increment: li;
+}
+

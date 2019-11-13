@@ -29,6 +29,9 @@
         width: 5%;
     }
     
+    .title h1 {
+        font-size: 3em;
+    }
     .hamburger-menu {
         display: none;
     }
@@ -60,11 +63,7 @@ sicuramente più volte e perchè non serve al miglioramento dell'esperienza di n
         background-color: deepskyblue;
     }
     
-    .header .titolo {
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-    }
+
     
     .content {
         margin: 0 auto;

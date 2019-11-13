@@ -1,18 +1,7 @@
-.sfondo{
-    background-image: url(../images/Area_utente_background.jpg); /*immagine provvisoria*/
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
 .content{
-    max-width: 1024px;
-    margin: 0 auto;
-    background-color: rgba(173, 216, 230, 0.555);
     padding: 3em 0;
+    background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
-}
-
-.menu{
-    padding: 0.75em 0.75em 0.25em 0.75em;
 }
 
 
@@ -44,14 +33,14 @@ form .dati{
 }
 
 .custom-file-upload {
-    border: 1px solid #ccc;
+    border: 1px solid #202020;
     padding: 0 .3em;
     cursor: pointer;
     background-color: steelblue;
     color: white;
     float: right;
     position: relative;
-    bottom: 1.6em;
+    bottom: 1.34em;
 }
 
 

@@ -4,9 +4,9 @@
     }
     
     body {
-        /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
         font-family: Verdana, Helvetica, sans-serif;
-        font-size: 0.9em/1.5em;
+        font-size: 0.9em;
+        /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
         max-width: 1920px;
         margin: auto;
         height: 100%;
@@ -32,6 +32,7 @@
     .title h1 {
         font-size: 3em;
     }
+    
     .hamburger-menu {
         display: none;
     }
@@ -46,31 +47,40 @@
     .utente li {
         margin: .6em 0;
     }
-    
-    .utente a:link {
-        /*è possibile cambiare il colore del link visitato (e lasciarlo normale) dato che verrà visitato 
-sicuramente più volte e perchè non serve al miglioramento dell'esperienza di navigaione?*/
+    /* modifiche non ancora applicabili*/
+    /*
+    .header .linkEntra{
+        font-size: 1.2em;
         text-decoration: none;
-        padding: .25em;
-        border-style: solid;
+        background-color: #454545;
         border-width: 1px;
-        border-radius: 1em;
-        border-color: deepskyblue;
-        background-color: lightskyblue;
+        border-color: red;
+        border-style: outset;
+        float: right;
+        padding: .3em;
+        position: relative;
+        bottom: 1em;
+    }*/
+    
+    .header .linkEntra:link {
+        color: #109c09;
     }
     
-    .utente a:hover {
-        background-color: deepskyblue;
+    .header .linkEntra:visited {
+        color: #109c09;
+        /*lasciamo che non si distingue?*/
     }
     
-
+    .header .linkEntra:hover {
+        color: lawngreen;
+    }
     
     .content {
         margin: 0 auto;
         max-width: 1140px;
         background-color: white;
     }
-    
+    /*
     input {
         float: right;
         align-content: center;

@@ -2,115 +2,107 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv=" Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv=" Content-Type" content="text/html; charset=utf-8"/>
     <title>N.e.s.e.'s</title>
-    <meta name="title" content="Sito interattivo sul gaming" />
-    <meta name="description" content="Pagina personale dell'utente" />
-    <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale" />
-    <meta name="language" content="italian it" />
-    <meta name="author" content="Simone Meneghin" />
+    <meta name="title" content="Sito interattivo sul gaming"/>
+    <meta name="description" content="Pagina personale dell'utente"/>
+    <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale"/>
+    <meta name="language" content="italian it"/>
+    <meta name="author" content="Simone Meneghin"/>
     <link rel="stylesheet" href="../css/comune.css" type="text/css">
     <link rel="stylesheet" href="../css/Area_utente.css" type="text/css">
 </head>
 
 <body>
-    <div class="header">
-        <a href="Home.html" class="logo hide">Logo</a>
-        <!--immagine inserita via css-->
-
-        <ul class="utente">
-            <li><a href="Registrazione.html">Registrati</a></li>
-            <li><a href="index.html">esci</a></li>
-            <li class="hide">utente</li> <!-- non visibile, da sostituire con un immagine-->
-            <!-- da tradure !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-        </ul>
-        <div class="titolo">
-            <h1><span xml:lang="en"><abbr title="Neses">N.E.S.E'S</abbr></span></h1>
-            <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
-        </div>
+<div class="header">
+    <!--immagine inserita via css-->
+    <div class="title">
+        <h1><span xml:lang="en">Crypt of Games</span></h1>
+        <h2>L'eccellenza del <span xml:lang="en">gaming</span></h2>
+        <a href="login.html" class="linkEntra">Entra<img src="../images/icons/open-door.png"/></a>
     </div>
+</div>
 
-    <div class="margine">
-        <div class="menu">
-            <ul>
-                <li><a href="index.html"> <span xml:lang="en">Home</span></a></li>
-                <li><a href="News.html"><span xml:lang="en">News</span></a></li>
-                <li><a href="recensioni.html">Recensioni</a></li>
-                <li><a href="eventi.html">Eventi</a></li>
-                <li><a href="guide.html">Guide</a></li>
-            </ul>
+<ul class="menu">
+    <li id="currentlink"><span xml:lang="en">Home</span></li>
+    <li><a href="news.html"><span xml:lang="en">News</span></a></li>
+    <li><a href="recensioni.html">Recensioni</a></li>
+    <li><a href="eventi.html">Eventi</a></li>
+    <li><a href="guide.html">Guide</a></li>
+</ul>
+<div class="content">
+
+    <form action="">
+
+        <div class="avatar">
+            <span class="avatarimage"></span>
+            <label for="file" class="custom-file-upload" xml:lang="en">Edit</label>
+            <input type="file" id="file">
+
+            <p>Tipologia utente:</p>
+            <!--aggiungere tipologia utente-->
         </div>
+        <div>
 
-        <div class="sfondo">
-            <div class="content">
-                <form action="">
+            <div class="button">
+                <input type="reset" value="Reimposta" class="reset"/>
+                <input type="submit" value="Salva" class="save"/>
+            </div>
 
-                    <div class="avatar">
-                        <span class="avatarimage"></span>
-                        <label for="file" class="custom-file-upload">Edit</label>
-                        <input type="file" id="file">
+            <div class="dati">
+                <fieldset class="group">
+                    <legend>Utente</legend>
+                    <label for="nickname">Nickname:</label>
+                    <input name="nickname" type="text" id="nickname"/>
+                    <label for="name">Nome:</label>
+                    <input name="name" type="text" id="name"/>
+                    <label for="surname">Cognome:</label>
+                    <input name="surname" type="text" id="surname"/>
+                    <label for="email">E-mail:</label>
+                    <input name="email" type="email" id="email"/>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Sicurezza</legend>
+                    <label for="old_pwd">Vecchia password:</label>
+                    <input name="old_pwd" type="password" id="old_pwd"/>
+                    <label for="new_pwd">Nuova password:</label>
+                    <input name="new_pwd" type="password" id="new_pwd"/>
+                    <label for="rep_pwd">Ripeti password:</label>
+                    <input name="rep_pwd" type="password" id="rep_pwd"/>
+                </fieldset>
+                <div class="group">
 
-                        <p>Tipologia utente:</p>
-                        <!--aggiungere tipologia utente-->
+                    <label for="ref">Riferimento:</label>
+                    <input name="ref" type="text" id="ref"/>
+
+                    <div class="extend">
+                        <div class="checkboxes">
+                            <span class="block">
+                                <input type="checkbox" name="notifica_email" id=""
+                                       class="inline">E-mail
+                            </span>
+                            <span class="block">
+                                <input type="checkbox" name="notifica_sito" id=""
+                                       class="inline">Sito
+                            </span>
+                        </div>
+                        <label for="notifiche">Ricevere notifiche via:</label>
+
                     </div>
-                    <div>
+                </div>
 
-                        <div class="button">
-                            <input type="reset" value="Reimposta" class="reset" />
-                            <input type="submit" value="Salva" class="save" />
-                        </div>
-
-                        <div class="dati">
-                            <fieldset class="group">
-                                <legend>Utente</legend>
-                                <label for="nickname">Nickname:</label>
-                                <input name="nickname" type="text" id="nickname" />
-                                <label for="name">Nome:</label>
-                                <input name="name" type="text" id="name" />
-                                <label for="surname">Cognome:</label>
-                                <input name="surname" type="text" id="surname" />
-                                <label for="email">E-mail:</label>
-                                <input name="email" type="email" id="email" />
-                            </fieldset>
-                            <fieldset class="group">
-                                <legend>Sicurezza</legend>
-                                <label for="old_pwd">Vecchia password:</label>
-                                <input name="old_pwd" type="password" id="old_pwd" />
-                                <label for="new_pwd">Nuova password:</label>
-                                <input name="new_pwd" type="password" id="new_pwd" />
-                                <label for="rep_pwd">Ripeti password:</label>
-                                <input name="rep_pwd" type="password" id="rep_pwd" />
-                            </fieldset>
-                            <div class="group">
-
-                                <label for="ref">Riferimento:</label>
-                                <input name="ref" type="text" id="ref" />
-
-                                <div class="extend">
-                                    <div class="checkboxes">
-                                        <span class="block"><input type="checkbox" name="notifica_email" id="notifiche"
-                                                class="inline">E-mail</span>
-                                        <span class="block"><input type="checkbox" name="notifica_sito" id="notifiche"
-                                                class="inline">Sito</span>
-                                    </div>
-                                    <label for="notifiche">Ricevere notifiche via:</label>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="button ">
-                            <input type="reset" value="Reimposta" class="reset">
-                            <input type="submit" value="Salva" class="save">
-                        </div>
-                    </div>
-                </form>
+            </div>
+            <div class="button ">
+                <input type="reset" value="Reimposta" class="reset">
+                <input type="submit" value="Salva" class="save">
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
-    </div>
+    </form>
+
+</div>
+<div class="footer">
+    <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
+</div>
 </body>
 
 </html>

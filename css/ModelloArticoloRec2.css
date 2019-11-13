@@ -2,19 +2,19 @@ p {
     padding: 1em;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.shortDes {
+.shortDesc {
     color: rgb(141, 135, 135);
 }
 
-.proprietario {
+.writer {
     color: chocolate;
 }
 
-.index{
+.index {
     border-left: 2px solid #dddcdc;
     max-width: 14.5em;
     float: right;
@@ -23,38 +23,25 @@ a{
     padding: 2em .5em 2em 2em;
 }
 
-.index .Tindex{
+.index h2 {
+    color: red;
     font-size: 1.3em;
     text-align: center;
     margin-bottom: 1em;
 }
+/*
+.index li {
+    list-style: none;
+}*/
 
-.index .Lindex  a:link{
+.index li a:link {
     color: orangered;
 }
 
-.index .Lindex  a:visited{
+.index li a:visited {
     color: indianred;
 }
 
-.index .Lindex a:hover{
+.index li a:hover {
     color: darkred;
 }
-
-.index .Lindex {
-    list-style: none;
-    counter-reset: li;
-}
-
-.index .Lindex li::before {
-    content: counter(li) "."; 
-    color: red;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    font-weight: bold;
-}
-.index .Lindex li {
-    counter-increment: li;
-}
-

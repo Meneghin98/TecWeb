@@ -1,49 +1,96 @@
-C=completato  NC=NonCompletato
-
-index(N):
-	class header			(NC)
-		class title			(C)
-	class menu			(C)
-	class content			(C)
-		class topArticles 	       	(NC) "motivare alt vuoto SU RELAZIONE"
-	    class rightPannel			(C)
-	    class articleList			(C)
-		    class categoriaEventi		(C)
-		    class articleListText		(C)
-	class footer			(C)
+index:
+	class header			
+		class title			
+	class menu			
+	class content		
+		class topArticles 	       	"motivare alt vuoto SU RELAZIONE"
+	    class rightPannel			
+	    class articleList			
+		    class categoriaEventi		
+		    class articleListText		
+	class footer			
 	
 ModelloArticolo(N):
-	class header				(NC)
-		class title				(NC)
-	class menu				(NC)
-	class content				(NC)
-		class intestazione			(NC)
-			class shortDesc		(NC)
-			class writer		(NC)
+	class header			
+		class title			
+	class menu				
+	class content			
+		class intestazione	
+			class shortDesc	
+			class writer	
+				class dataCorsivo
+		class index
 		class description
 			//id facoltativo su immagini rompipalle
 
 ModelloRew(N):
-	class header				(NC)
-		class title				(NC)
-	class menu				(NC)
-	class content				(NC)
-		class intestazione			(NC)
-			class shortDesc		(NC)
-			class writer		(NC)
-		class index			(NC)
+	class header			
+		class title			
+	class menu				
+	class content			
+		class intestazione	
+			class shortDesc	
+			class writer	
+				class dataCorsivo
+		class index			
 		class description
 			//id facoltativo su immagini rompipalle
 		class comment
 		class diffs
+			class pro
+			class contro
+		class voto
 
+footer(NC):
+	class footerInline
+	id imgsfooter
+		id validXhtml
+		id validCss
 
-		
+Login(NC)
+	class header				
+		class title				
+	class menu				
+	class content				
+		class signIn
+			id email
+			id password
+			id Accedi
+			id Annulla
 
+Registrazione(NC)
+	class header			
+		class title			
+	class menu				
+	class content			
+		class signIn
 
+Area Utente Esterna(NC)
+	class header				
+		class title				
+	class menu				
+	class content				
+		class avatarImage
+		class datiAccount
 
-
-
-
-
-	
+Area Utente Interna(NC)
+	class header				
+		class title				
+	class menu				
+	class content	
+		class avatar		
+			class avatarImage
+			id file
+		class datiAccount
+			class groupBox
+				id nickname
+				id name
+				id surname
+				id email
+				id oldPwd
+				id newPwd
+				id repPwd
+				id ref
+		class saveReset
+			id reset
+			id save

@@ -6,10 +6,10 @@ index(N):
 	class menu			(C)
 	class content			(C)
 		class topArticles 	       	(NC) "motivare alt vuoto SU RELAZIONE"
-	class rightPannel			(C)
-	class articleList			(C)
-		class categoriaEventi		(C)		
-		class articleListText		(C)
+	    class rightPannel			(C)
+	    class articleList			(C)
+		    class categoriaEventi		(C)
+		    class articleListText		(C)
 	class footer			(C)
 	
 ModelloArticolo(N):

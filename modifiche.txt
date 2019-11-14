@@ -1,0 +1,58 @@
+C=completato  NC=NonCompletato
+
+index(N):
+	class header			(NC)
+		class title			(C)
+	class menu			(C)
+	class content			(C)
+		class topArticles 	       	(NC) "motivare alt vuoto SU RELAZIONE"
+	class rightPannel			(C)
+	class articleList			(C)
+		class categoriaEventi		(C)		
+		class articleListText		(C)
+	class footer			(C)
+	
+ModelloArticolo(N):
+	class header				(NC)
+		class title				(NC)
+	class menu				(NC)
+	class content				(NC)
+		class intestazione			(NC)
+			class shortDesc		(NC)
+			class writer		(NC)
+				class dataCorsivo
+		class index
+		class description
+			//id facoltativo su immagini rompipalle
+
+ModelloRew(N):
+	class header				
+		class title				
+	class menu				
+	class content				
+		class intestazione			
+			class shortDesc		
+			class writer		
+				class dataCorsivo
+		class index			
+		class description
+			//id facoltativo su immagini rompipalle
+		class comment
+		class diffs
+			class pro
+			class contro
+		class voto
+
+New(N):
+	
+
+
+		
+
+
+
+
+
+
+
+	

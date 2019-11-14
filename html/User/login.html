@@ -16,8 +16,8 @@
 <body>
     <div class="header">
         <ul class="utente">
-            <li><a href="Registrazione.html">Registrati</a></li>
-            <li><a href="Login.html">Accedi</a></li>
+            <li><a href="registrazione.html">Registrati</a></li>
+            <li><a href="login.html">Accedi</a></li>
         </ul>
         <!--immagine inserita via css-->
         <div class="titolo">
@@ -36,33 +36,37 @@
         </ul>
     </div>
     </div>
+
     <div class="margine">
         <div class="sfondo">
-            <div class="content">
-                <fieldset>
-                    <legend>Accedi</legend>
-                    <div id="info">
-                        <img class="image" src="../images/login.png" alt="Immagine di login" />
-                        <form action="php.txt">
-                            <p><label for="email"><span xml:lang="en">Email:</span></label> <input name="email"
-                                    id="email" maxlength="30" /></p>
-                            <p><label for="password"><span xml:lang="en">Password</span>:</label> <input type="password"
-                                    name="password" id="password" maxlength="20" /></p>
-                        </form>
-                    </div>
 
-                    <div class="confermaAccount">
-                        <form class="button" action="php.txt">
-                            <p><label for="Accedi"></label>
-                                <input type="submit" value="Accedi" /></p>
-                            <p><label for="Annulla"></label>
-                                <input type="reset" value="Annulla" /></p>
+            <!--    --------------- --------------  -->
+
+            <div class="content">
+                <fieldset class="signIn">
+                    <legend>Accedi</legend>
+                        <!--  <img class="image" src="../images/login.png" alt="Immagine di login" /> -->
+                        <form action="php.txt">
+                            <label for="email" xml:lang="en">Email</label>
+                            <input name="email" id="email" maxlength="30"/>
+
+                            <label for="password" xml:lang="en">Password</label>
+                            <input type="password" name="password" id="password" maxlength="20"/>
+
+                            <label for="Accedi"></label>
+                            <input type="submit" value="Accedi" id="Accedi"/>
+
+                            <label for="Annulla"></label>
+                            <input type="reset" value="Annulla" id="Annulla"/>
                         </form>
-                    </div>
                 </fieldset>
             </div>
+
+            <!--    --------------- --------------  -->
+
         </div>
     </div>
+
     <div class="footer">
         <p>
             <span xml:lang="en">Copyright - All rights reservd</span></p>

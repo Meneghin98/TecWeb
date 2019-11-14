@@ -1,33 +1,24 @@
 .content{
     padding: 3em 0;
     background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
 }
 
-.avatar{
+
+.avatarImage {
     float: left;
     margin-top: 3em;
     margin-left: 15%;
-
-}
-.avatar p{
-    margin-top: 3em;
+    width: 10em;
+    height: 8em;
 }
 
-.avatarimage {
-    background-image: url("../images/immagineUtente.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 3em 4.5em;
-}
-
-.dati{
+.datiAccount{
     list-style-type: none;
     width: 50%;
     margin: 0 auto;
 }
 
-.dati li{
+.datiAccount li{
     padding: 1.2em 0;
     margin-left: 5em;
     text-align: left;

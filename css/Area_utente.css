@@ -5,7 +5,7 @@
 }
 
 
-form .dati{
+form .datiAccount{
     width: 50%;
     margin: 0 auto;
 }
@@ -18,13 +18,8 @@ form .dati{
 .avatar input{
     display: none;
 }
-.avatar p{
-    clear: both;
-    position: relative;
-    bottom: 1.5em;
-}
 
-.avatarimage {
+.avatarImage {
     background-image: url("../images/immagineUtente.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -44,12 +39,12 @@ form .dati{
 }
 
 
-.button {
+.saveResets {
     float: right;
     text-align: right;
     margin: 0;
 }
-.button .reset{
+.saveResets #reset{
     display: inline;
     color: whitesmoke;
     background-color: indianred;
@@ -59,7 +54,7 @@ form .dati{
     padding: 0.2em;
     margin: 0 .25em;
 }
-.button .save{
+.saveResets #save{
     display: inline;
     color: whitesmoke;
     background-color: limegreen;
@@ -70,39 +65,19 @@ form .dati{
     margin: 0 .25em;
 }
 
-.dati {
+.datiAccount {
     text-align: left;
 }
 
-.dati *{
+.datiAccount *{
     display: block;
     margin: 0;
 }
 
-.group{
+.groupBox{
     padding: 1em;
     margin: 1em 3em;
     border-style: solid;
     border-color: floralwhite;
     border-width: 2px
-}
-
-.block{
-    display: block;
-    margin-top: .5em;
-}
-
-.extend{
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-.checkboxes{
-    float: right;
-    position: relative;
-    right: 30%;
-}
-
-.inline{
-    display: inline;
 }

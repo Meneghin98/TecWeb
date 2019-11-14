@@ -20,6 +20,8 @@ ModelloArticolo(N):
 		class intestazione			(NC)
 			class shortDesc		(NC)
 			class writer		(NC)
+				class dataCorsivo
+		class index
 		class description
 			//id facoltativo su immagini rompipalle
 
@@ -31,11 +33,15 @@ ModelloRew(N):
 		class intestazione			(NC)
 			class shortDesc		(NC)
 			class writer		(NC)
+				class dataCorsivo
 		class index			(NC)
 		class description
 			//id facoltativo su immagini rompipalle
 		class comment
 		class diffs
+			class pro
+			class contro
+		class voto
 
 
 		

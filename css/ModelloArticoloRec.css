@@ -1,37 +1,48 @@
-.titoloRec {
+.intestazione h1 {
     text-align: center;
-    padding-top: 3em;
-    font-size: 1.5em;
-    padding-top: 5%;
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    font-size: 3em;
     font-style: normal;
 }
 
-.shortDes {
+.shortDesc {
     color: rgb(141, 135, 135);
 }
 
-.proprietario {
+.writer {
     color: red;
 }
 
-.inizio {
-    margin: 5% 5%;
-    
+.dataCorsivo {    
+    font-style: oblique;
 }
 
-.indice {
+.index {
     border: 1px solid #000;
     float: right;
     border-style: solid;
-    margin-left: 2em;
-    margin-right: 1em;
-    margin-bottom: 2em;
+    margin: 2.1em 1em 2em 2em;
     padding: 2em;
 }
 
-.Tindice {
-    margin-bottom: 1em;
+.index h3 {
+    padding-bottom: 0.5em;
 }
+
+.description p {
+    margin: 2em 6em;
+}
+
+.description h2 {
+    border-bottom: 0.1em solid ;
+    margin-left: 3.3em;
+    margin-top: 3em;
+    margin-right: 7em;
+    font-size: 1.8em;
+    color:#999966;
+}
+    
 
 a {
     color:red;
@@ -52,20 +63,10 @@ ol li::before {
     font-weight: bolder;
 }
   
-
-p.testoCommento {
-    font-size: 1.4em;
-    margin: 5%;
-}
-
 img {
-    max-width: 1024px;
-    margin: 0em 7em;
-}
-
-.img3 {
-    max-width: 1024px;
-    margin: 2em 7em;
+    width: 950px;
+    display: block;
+    margin: 0 auto;
 }
   
 .sottotitolo {
@@ -78,49 +79,32 @@ img {
     margin-top: 3em;
     font-size: 1.8em;
 }   
-  
-.titolocommento {
-    text-align: center; 
-    font-size: 2em;
-    color: black;
-    border-bottom: solid;
-    
+
+.comment {
+    background-color: lime;
+    padding: 0.5em 2em;
+    margin-top: 5em;
 }
 
-.commento {
-    border: solid;
-    border-color: black;
-    margin-left: 7em;
-    margin-right: 7em;
+.comment  h3 {
+    text-align: center;
+    font-size: 1.5em;
 }
 
-.pro {
-    margin: 1% 1% 1% 4%;
-    color: red;
-    float: right;
-}
-
-.contro {
-    
-    color: green;
-}
-
-.tabella {
-    border-left: solid;
-    border-right: solid;
-    border-bottom: solid;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    margin: -1em 7em 0em 7em;
+.comment p {
+    margin: 1em 15em;
 }
 
 
-.voto {
+.diffs {
     text-align: center;
     color: rgb(17, 61, 63);
-    font-size: 2em;
     margin-top: 6%;
     padding-bottom: 6%;
+}
+
+.contro ul {
+    float: right;
 }
 
 .titolovoto{

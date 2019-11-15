@@ -1,33 +1,17 @@
-#info .image {
-    width: 5em;
-    height: 5em;
-    display: block;
+#contentLogin {
+    background-color:rgba(0, 0, 0, 0);
     margin: 3em auto;
 }
 
-.sfondo {
-    background: url(../images/sfondoLog.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 3.1em;
-    padding-top: 1em;
-}
-
-.content {
-    max-width: 1024px;
-    margin: 0 auto;
-    margin-top: 3em;
-    margin-bottom: 5em;
-    width: 25em;
-}
-
-.content fieldset {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-style: solid;
-    border-color: floralwhite;
-    padding-left: 2em;
+.signIn {
+    margin: 0em 25em;
+    padding: 8em 2em;
+    background-color: white;
     border-radius: 2em;
-    padding-bottom: 2em;
+}
+
+#imageLogin {
+    background-image: url('/login.png');
 }
 
 #info {
@@ -40,10 +24,10 @@
     text-align: left;
     margin-top: -2em;
 }
-
+/*
 p {
     margin-top: 1.5em;
-}
+}*/
 
 #info form input {
     margin-left: 2em;

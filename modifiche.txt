@@ -53,7 +53,7 @@ Login(NC)
 	class menu				
 	class content				
 		class signIn
-			id email
+			id emailLogin
 			id password
 			id Accedi
 			id Annulla
@@ -86,7 +86,7 @@ Area Utente Interna(NC)
 				id nickname
 				id name
 				id surname
-				id email
+				id emailUtente
 				id oldPwd
 				id newPwd
 				id repPwd

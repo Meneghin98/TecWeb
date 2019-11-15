@@ -1,6 +1,6 @@
-.titolo {
+#contentRegistrazione h1 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.4em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -15,7 +15,7 @@ fieldset {
     margin: 3em;
 }
 
-.sf {
+#contentRegistrazione {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -24,46 +24,16 @@ fieldset {
     background-color: aliceblue;
 }
 
-input[type="nome"],
-input[type="cognome"],
-input[type="username"],
-input[type="email"],
-input[type="password"] {
-    padding-right: 3em;
-    padding-top: 0.3em;
-    margin: 0.3em;
-}
-.titoloimmagine{
-    display: block;
-}
-.avatar {
-    text-align: center;
-        margin: 2em;
-}
-
-.notifiche {
-    text-align: center;
-    margin: 3em;
-}
-
-input[type="file"] {
-    padding-left: 3em;
-}
-
 .confermaAccount {
-    margin-top: 8em;
-    margin-bottom: 50%;
+    margin: 4em auto;
+    padding-left: 4em;
 }
 
-input.bottoneConferma {
-    font-size: 1.5em;
-    padding: 0.4em;
-    border-radius: 2em;
-    margin-right: 5em;
+input#bottoneConferma {
+    font-size: 1.4em;
 }
 
-input.bottoneIndietro {
-    font-size: 1.5em;
-    padding: 0.4em;
-    border-radius: 2em;
+input#bottoneIndietro {
+    font-size: 1.4em;
+    margin-left: 2em;
 }

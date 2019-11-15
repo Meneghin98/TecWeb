@@ -6,11 +6,11 @@
     <title>N.e.s.e.'s</title>
     <meta name="title" content="Sito interattivo sul gaming" />
     <meta name="description" content="Pagina personale dell'utente" />
-    <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale" />
+    <meta name="keywords" content="Games Decrypting, gaming, utente, login, area personale" />
     <meta name="language" content="italian it" />
-    <meta name="author" content="Simone Meneghin" />
-    <link rel="stylesheet" href="../css/comune.css" type="text/css" />
-    <link rel="stylesheet" href="../css/Login.css" type="text/css" />
+    <meta name="author" content="Enrico Salmaso" />
+    <link rel="stylesheet" href="../../css/comune.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/Login.css" type="text/css" />
 </head>
 
 <body>
@@ -19,13 +19,14 @@
             <li><a href="registrazione.html">Registrati</a></li>
             <li><a href="login.html">Accedi</a></li>
         </ul>
-        <!--immagine inserita via css-->
+
         <div class="titolo">
             <h1><span xml:lang="en">NESE</span></h1>
             <h2>L'eccelenza del <span xml:lang="en">gaming</span></h2>
         </div>
     </div>
 
+    </div>
     <div class="menu">
         <ul>
             <li><a href="index.html"><span xml:lang="en">Home</span></a></li>
@@ -35,41 +36,34 @@
             <li><a href="guide.html">Guide</a></li>
         </ul>
     </div>
-    </div>
 
-    <div class="margine">
-        <div class="sfondo">
 
-            <!--    --------------- --------------  -->
+    <div class="content" id="contentLogin">
+        <fieldset class="signIn">
+            <legend>Accedi</legend>
+            <img class="imageLogin" src="" alt="">
+            <form action="php.txt">
+                <label for="email" xml:lang="en">Email:</label>
+                <input name="email" id="email" maxlength="30" />
 
-            <div class="content">
-                <fieldset class="signIn">
-                    <legend>Accedi</legend>
-                        <!--  <img class="image" src="../images/login.png" alt="Immagine di login" /> -->
-                        <form action="php.txt">
-                            <label for="email" xml:lang="en">Email</label>
-                            <input name="email" id="email" maxlength="30"/>
+                <label for="password" xml:lang="en">Password:</label>
+                <input type="password" name="password" id="password" maxlength="20" />
 
-                            <label for="password" xml:lang="en">Password</label>
-                            <input type="password" name="password" id="password" maxlength="20"/>
+                <p><a href="registrazione.html">Non sei ancra registrato? Registrati</a></p>
 
-                            <label for="Accedi"></label>
-                            <input type="submit" value="Accedi" id="Accedi"/>
+                <div class="pulsantiLogin">
+                    <label for="Accedi"></label>
+                    <input type="submit" value="Accedi" id="Accedi" />
 
-                            <label for="Annulla"></label>
-                            <input type="reset" value="Annulla" id="Annulla"/>
-                        </form>
-                </fieldset>
-            </div>
-
-            <!--    --------------- --------------  -->
-
-        </div>
+                    <label for="Annulla"></label>
+                    <input type="reset" value="Annulla" id="Annulla" />
+                </div>
+            </form>
+        </fieldset>
     </div>
 
     <div class="footer">
-        <p>
-            <span xml:lang="en">Copyright - All rights reservd</span></p>
+        <p><span xml:lang="en">Copyright - All rights reservd</span></p>
     </div>
     </div>
 </body>

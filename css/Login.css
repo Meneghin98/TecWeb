@@ -5,57 +5,33 @@
 
 .signIn {
     margin: 0em 25em;
-    padding: 8em 2em;
+    padding: 1em 2em;
     background-color: white;
     border-radius: 2em;
 }
 
-#imageLogin {
-    background-image: url('/login.png');
+.imageLogin {
+    background-image: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2em 2em;
+    width: 2%;
+    display: block;
+    margin: 0em auto;
 }
 
-#info {
+form {
+    display: block;
     text-align: center;
-    margin-right: 2em;
+    margin: 2em 5em;
 }
 
-#info form {
-    display: inline-block;
-    text-align: left;
-    margin-top: -2em;
-}
-/*
-p {
-    margin-top: 1.5em;
-}*/
-
-#info form input {
-    margin-left: 2em;
-    padding-right: 2em;
-    float: right;
-}
-
-.confermaAccount {
-    text-align: center;
+.signIn p {
     margin-top: 2em;
-    margin-left: 3em;
+    font-size: 70%;
 }
 
-.button {
-    text-align: center;
-    padding-right: 6em;
+.pulsantiLogin {
+    margin-top: 2em;
 }
 
-.button input{
-    float: right;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    border-radius: 12em;
-    font-size: 1em;
-    color: black;
-    background-color: white;
-}
-
-input[type="reset"] {
-    margin-right: 20%;
-    padding-right: 3;
-}

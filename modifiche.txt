@@ -47,23 +47,35 @@ footer(NC):
 		id validXhtml
 		id validCss
 
-Login(NC)
+Login(C)
 	class header				
 		class title				
 	class menu				
 	class content				
 		class signIn
+			class imageLogin
 			id emailLogin
-			id password
-			id Accedi
-			id Annulla
+			id passwordLogin
+			class pulsantiLogin
+				id AccediLogin
+				id AnnullaLogin
+	class footer
+		
 
-Registrazione(NC)
+Registrazione(C)
 	class header			
 		class title			
 	class menu				
 	class content			
-		class signIn
+		id nome
+		id cognome
+		id username
+		id email
+		id password
+		class confermaAccount
+			id bottoneConferma
+			id bottoneIndietro
+	class footer
 
 Area Utente Esterna(NC)
 	class header				

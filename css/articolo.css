@@ -27,8 +27,8 @@
             font-size: 1.2em;
         }
         
-        .writer span {
-            font-weight: bold;
+        .dataCorsivo {
+            font-style: italic;
         }
         
         img {

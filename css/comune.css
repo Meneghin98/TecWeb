@@ -15,24 +15,64 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    
+
     .header {
-        padding: 1.5em 0;
-        background-color: #262626;
-        color: #109c09;
+        position: relative;
+        width: 100%;
+        padding-bottom: 0.5em;
+        background-color: #0E9C09;
+        color: #0E9C09;
         text-align: center;
         margin: 0 auto;
+        list-style-type: none;
     }
-    
-    .header .logo {
-        float: left;
-        width: 5%;
+
+    .header li {
+        padding-bottom: 1.65em;
+        background-color: #262626;
     }
-    
-    .title h1 {
-        font-size: 3em;
+
+    .header li a {
+        position: absolute;
+        right: 2em;
+        bottom: 1.7em;
     }
-    
+
+    #login {
+        position: absolute;
+        right: 7em;
+        bottom: 1.7em;
+    }
+
+    #searchBar button {
+        position: absolute;
+        right: 29em;
+        bottom: 2.95em;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .header li input {
+        position: absolute;
+        right: 14em;
+        bottom: 2.75em;
+        height: 32%;
+        border-radius: 25px;
+        border: 3px solid #0E9C09;
+        padding-left: 2em;
+    }
+
+    .header li h1 {
+        position: absolute;
+        left: 0.5em;
+        width: max-content;
+        font-size: 2em;
+        background-image: url("../images/icons/fantasmino-logo75x75.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 1em 2em 1em 2.6em;
+    }
+
     .hamburger-menu {
         display: none;
     }

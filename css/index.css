@@ -10,7 +10,7 @@
   }
   
   .topArticles li {
-      flex: 33.33%;
+      flex: 50%;
       position: relative;
       text-align: center;
       overflow: hidden;
@@ -39,13 +39,12 @@
       background-color: rgba(33, 33, 33, 0.8);
       width: 100%;
       position: absolute;
-      bottom: 0em;
       color: white;
       text-align: center;
-      margin: auto;
       padding: 0.5em;
+      margin-bottom: 0em;
       font-weight: normal;
-      font-size: 0.9em;
+      bottom: 0em;
   }
   
   .topArticles p {

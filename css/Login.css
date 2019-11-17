@@ -1,6 +1,6 @@
 #contentLogin {
-    background-color:rgba(0, 0, 0, 0);
-    margin: 3em auto;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 7em 0em;
 }
 
 .signIn {
@@ -21,9 +21,15 @@
 }
 
 form {
+    padding: 2em;
     display: block;
     text-align: center;
-    margin: 2em 5em;
+    margin: 0em 3em;
+}
+
+label {
+    display: inline-block;
+    padding: 0.5em;
 }
 
 .signIn p {

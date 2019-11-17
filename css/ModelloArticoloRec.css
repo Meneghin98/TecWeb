@@ -1,18 +1,59 @@
 .intestazione h1 {
     text-align: center;
-    padding-top: 2.5em;
+    padding-top: 1.2em;
     padding-bottom: 0.5em;
     font-size: 3em;
     font-style: normal;
 }
 
+#img2Vampyr {
+    background-image: url(../images/Recensioni/vampyr2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15em 20em;
+    width: 2%;
+    display: block;
+    margin: 0em auto;
+}
+
+#img3Vampyr {
+    background-image: url(../images/Recensioni/vampyr3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15em 20em;
+    width: 2%;
+    display: block;
+    margin: 0em auto;
+}
+
+#img4Vampyr {
+    background-image: url(../images/Recensioni/vampyr4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15em 20em;
+    width: 2%;
+    display: block;
+    margin: 0em auto;
+}
+
+#img5Vampyr {
+    background-image: url(../images/Recensioni/vampyr5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15em 20em;
+    width: 2%;
+    display: block;
+    margin: 0em auto;
+}
+
 .shortDesc {
     color: rgb(141, 135, 135);
-
+    margin-left: 1em;
 }
 
 .writer {
     color: red;
+    margin-left: 1em;
 }
 
 .dataCorsivo {    
@@ -43,43 +84,27 @@
     font-size: 1.8em;
     color:#999966;
 }
-    
 
-a {
-    color:red;
-}
-
-ol {
+.index ol {
     list-style: none;
     counter-reset: contatore;
 }
 
-ol li {
+.index ol li {
     counter-increment: contatore;
 }
 
-ol li::before {
+.index ol li::before {
     content: counter(contatore) ". ";
-    color: red;
     font-weight: bolder;
 }
   
-img {
-    width: 950px;
+#img1Vampyr {
+    width: 60%;
     display: block;
+    padding-left: 10em;
     margin: 0 auto;
 }
-  
-.sottotitolo {
-    border-top: solid;
-    border-color: chocolate;
-    padding-top: 0.5em;
-    border-top-width: thick;
-    margin-left: 4em;
-    margin-right: 20em;
-    margin-top: 3em;
-    font-size: 1.8em;
-}   
 
 .comment {
     background-color: lime;
@@ -87,7 +112,7 @@ img {
     margin-top: 5em;
 }
 
-.comment  h3 {
+.comment h3 {
     text-align: center;
     font-size: 1.5em;
 }
@@ -96,16 +121,26 @@ img {
     margin: 1em 15em;
 }
 
-
 .diffs {
-    text-align: center;
-    color: rgb(17, 61, 63);
-    margin-top: 6%;
-    padding-bottom: 6%;
+    margin-top: 3em;
+    padding-bottom: 4em;
 }
 
-.contro ul {
+.pro {
+    float: left;
+    margin-left: 16em;
+}
+
+.contro {
     float: right;
+    margin-right: 12em;
+}
+
+.voto {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 2em;
+    margin-top: 3em;
 }
 
 .titolovoto{
@@ -113,13 +148,3 @@ img {
     margin: 0.5em 1em ;
 }
 
-.testo {
-    text-align: left;
-    margin: 5%;
-    font-size: 2em;
-    font-size: 1.4em;
-}
-
-h1 {
-    font-size: -webkit-xxx-large;
-}

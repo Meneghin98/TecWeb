@@ -9,26 +9,38 @@
     <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale" />
     <meta name="language" content="italian it" />
     <meta name="author" content="Enrico Salmaso" />
-    <link rel="stylesheet" href="../css/comune.css" type="text/css" />
-    <link rel="stylesheet" href="../css/ModelloArticoloRec.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/comune.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/ModelloArticoloRec.css" type="text/css" />
 </head>
 
 <body>
-    <div class="header">
-        <!--immagine inserita via css-->
-        <div class="title">
-            <h1><span xml:lang="en">Crypt of Games</span></h1>
-            <h2>L'eccellenza del <span xml:lang="en">gaming</span></h2>
-            <a href="login.html">Entra<img src="" /></a>
-        </div>
-    </div>
+
+    <ul class="header">
+        <li>
+            <h1><span xml:lang="en">Decrypted Games</span></h1>
+        </li>
+        <li id="searchBar">
+            <input type="text" placeholder="Search.." />
+            <button type="submit" style="border: 0; background: transparent">
+                <img src="../../images/icons/20x20-lente.png" alt="submit" />
+            </button>
+        </li>
+        <li>
+            <a id="login" title="Login" href="Login.html"><img src="../../images/icons/login-sito-web.png"
+                    alt="icona login" /></a>
+        </li>
+        <li>
+            <a title="Registrati" href="Registrazione.html"><img src="../../images/icons/Registrati-sito-web.png"
+                    alt="icona registrazione" /></a>
+        </li>
+    </ul>
 
     <ul class="menu">
         <li id="currentlink"><span xml:lang="en">Home</span></li>
-        <li><a href="news.html"><span xml:lang="en">News</span></a></li>
-        <li><a href="recensioni.html">Recensioni</a></li>
-        <li><a href="eventi.html">Eventi</a></li>
-        <li><a href="guide.html">Guide</a></li>
+        <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
+        <li><a href="../Recensioni/recensioni.html">Recensioni</a></li>
+        <li><a href="../Eventi/eventi.html">Eventi</a></li>
+        <li><a href="../Guide/guide.html">Guide</a></li>
     </ul>
 
     <div class="content">
@@ -43,12 +55,12 @@
         <div class="index">
             <h3>INDICE</h3>
             <ol>
-                <li><a href="#animali-notturni" title="Animali notturni"> Animali notturni</a></li>
-                <li><a href="#giovani-vampiri-crescono" title="Giovani vampiri crescono">Giovani vampiri
+                <li><a href="#animaliNotturni" title="Animali notturni"> Animali notturni</a></li>
+                <li><a href="#giovaniVampiriCrescono" title="Giovani vampiri crescono">Giovani vampiri
                         crescono</a></li>
-                <li><a href="#un-lupo-fra-le-pecore" title="Un lupo fra le pecore">Un lupo fra le
+                <li><a href="#unLupoFraLePecore" title="Un lupo fra le pecore">Un lupo fra le
                         pecore</a></li>
-                <li><a href="#intervista-con-il-vampiro" title="Intervista con il vampiro">Intervista con il
+                <li><a href="#intervistaConIlVampiro" title="Intervista con il vampiro">Intervista con il
                         vampiro</a></li>
                 <li><a href="#commento" title="Commento">Commento</a></li>
             </ol>
@@ -79,7 +91,7 @@
                 quello
                 sparso a terra o sui muri, segno evidente di un delitto.
             </p>
-            <img src="../images/vampyr2.jpg" alt="prima immagine di Vampyr" />
+            <img id="img1Vampyr" src="../../images/Recensioni/vampyr.jpg" alt="prima immagine di Vampyr" />
             <p>Le tracce lo portano a interrogare alcuni abitanti nella zona del porto, prendendo
                 confidenza con il
                 tradizionale sistema di dialoghi con opzioni a ruota, e quindi al suo primo combattimento contro uno
@@ -99,7 +111,7 @@
                 presso il Pembroke Hospital, utilizzando le proprie conoscenze di ematologo per studiare il morbo e
                 individuarne l'origine. Facendo, naturalmente, il turno di notte.
             </p>
-            <h2>Animali Notturni</h2>
+            <h2 id="animaliNotturni">Animali Notturni</h2>
             <p>Archiviate le prime fasi di gioco, che servono per introdurci ai meccanismi di base del
                 gameplay,
                 l'esperienza di Vampyr rivela le proprie carte nella forma di una struttura sandbox liberamente
@@ -115,7 +127,7 @@
                 condizione
                 generale del quartiere.
             </p>
-            <img src="../images/vampyr1.jpg" alt="seconda immagine di Vampyr" />
+            <img id="img2Vampyr" src="" alt="" />
             <p>Il peggioramento dello stato di una specifica zona moltiplica la presenza di nemici,
                 che si tratti di
                 Skal,
@@ -139,7 +151,7 @@
                 volta
                 tornati in vita non perderemo i punti esperienza raccolti fino a quel momento.
             </p>
-            <h2>Giovani vampiri crescono</h2>
+            <h2 id="giovaniVampiriCrescono">Giovani vampiri crescono</h2>
             <p>In giro per la buia, inquietante e fosca Londra notturna di Vampyr è possibile trovare
                 diversi rifugi
                 per
@@ -164,8 +176,8 @@
                 particolarmente efficaci ma in grado di stordire il nemico) o coltelli speciali, che a ogni fendente
                 raccolgono un po' di sangue.
             </p>
-            <img class="img3" src="../images/Vampyr3.jpg" alt="terza immagine di Vampyr" />
-            <h2>Un lupo fra le pecore</h2>
+            <img id="img3Vampyr" src="" alt="" />
+            <h2 id="unLupoFraLePecore">Un lupo fra le pecore</h2>
             <p>La crescita di Jonathan Reid nel corso della campagna di Vampyr è un fattore
                 fondamentale perché si
                 possano
@@ -186,7 +198,7 @@
                 con
                 successo qualche duello o portando a termine quest secondarie.
             </p>
-            <img src="../images/Vampyr4.jpg" alt="quarta immagine di Vampyr" />
+            <img id="img4Vampyr" src="" alt="" />
             <p>La tentazione di lasciarsi andare alla sete di sangue degli Ekon aumenta dunque di pari
                 passo con
                 l'incremento della sfida, e in tale frangente il titolo di Dontnod Entertainment ci consegna le
@@ -208,7 +220,7 @@
                 ha
                 saputo valorizzare a dovere.
             </p>
-            <h2>Intervista con il vampiro</h2>
+            <h2 id="intervistaConIlVampiro">Intervista con il vampiro</h2>
             <p>Non c'è dubbio che il comparto narrativo sia uno degli elementi fondamentali di Vampyr,
                 e da questo
                 punto
@@ -238,7 +250,7 @@
                 rapporto
                 talvolta sorprendente che lega alcuni cittadini.
             </p>
-            <img src="../images/Vampyr5.jpg" alt="quinta immagine di Vampyr" />
+            <img id="img5Vampyr" src="" alt="" />
             <p>
                 Ad accompagnare questo impianto nel migliore dei modi ci
                 sono ottimi dialoghi in inglese (sottotitolati in italiano), ben recitati e un audio design molto
@@ -253,7 +265,7 @@
         </div>
 
         <div class="comment">
-            <h3>COMMENTO FINALE</h3>
+            <h3 id="commento">COMMENTO FINALE</h3>
             <p>Vampyr è un action RPG in grado di offrire un'esperienza coinvolgente,
                 impegnativa, a tratti
                 inquietante,
@@ -275,19 +287,21 @@
         </div>
 
         <div class="diffs">
-            <div class="pro"></div>
-            <h3>PRO</h3>
-            <ul>
-                <li>Grande atmosfera, "lore" ricco e sfaccettato</li>
-                <li>Combattimenti molto impegnativi, belle abilità</li>
-                <li>Abbastanza lungo, discretamente ampio</li>
-            </ul>
-            <div class="contro"></div>
-            <h3>CONTRO</h3>
-            <ul>
-                <li>Diverse soluzioni visive appaiono datate</li>
-                <li>Resta la sensazione di un potenziale inespresso</li>
-            </ul>
+            <div class="pro">
+                <h3>PRO</h3>
+                <ul>
+                    <li>Grande atmosfera, "lore" ricco e sfaccettato</li>
+                    <li>Combattimenti molto impegnativi, belle abilità</li>
+                    <li>Abbastanza lungo, discretamente ampio</li>
+                </ul>
+            </div>
+            <div class="contro">
+                <h3>CONTRO</h3>
+                <ul>
+                    <li>Diverse soluzioni visive appaiono datate</li>
+                    <li>Resta la sensazione di un potenziale inespresso</li>
+                </ul>
+            </div>
         </div>
 
 

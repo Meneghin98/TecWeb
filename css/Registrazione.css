@@ -16,16 +16,13 @@ fieldset {
 }
 
 #contentRegistrazione {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    background-color: aliceblue;
+    padding-bottom: 9.4em;
+    background-color: rgba(255, 255, 255, 0.904)
 }
 
 .confermaAccount {
-    margin: 4em auto;
+    margin-top: 8em;
     padding-left: 4em;
 }
 

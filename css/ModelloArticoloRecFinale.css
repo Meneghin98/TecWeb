@@ -63,7 +63,6 @@
     text-decoration: none;
 }
 
-}
 .index li {
     color: #0E9C09;
 }
@@ -100,11 +99,12 @@
 
 .diffs {
     display: flex;
+    margin-left: 7em;
 }
 
 .diffs div {
     flex: 50%;
-    margin: 4em;
+    margin: 2em;
     text-align: justify;
 }
 
@@ -118,8 +118,7 @@
 }
 
 .diffs h3 {
-    margin: 1em;
-    text-align: center;
+    margin: 0.5em 0em;
 }
 
 .pro {

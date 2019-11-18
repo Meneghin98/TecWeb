@@ -1,9 +1,7 @@
-.intestazione h1 {
-    text-align: center;
-    padding-top: 1.2em;
-    padding-bottom: 0.5em;
-    font-size: 3em;
-    font-style: normal;
+#img1Vampyr {
+    width: 60%;
+    display: block;
+    margin-left: 7em;
 }
 
 #img2Vampyr {
@@ -13,18 +11,9 @@
     padding: 15em 20em;
     width: 2%;
     display: block;
-    margin: 0em auto;
+    margin-left: 7em;
 }
 
-#img3Vampyr {
-    background-image: url(../images/Recensioni/vampyr3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 15em 20em;
-    width: 2%;
-    display: block;
-    margin: 0em auto;
-}
 
 #img4Vampyr {
     background-image: url(../images/Recensioni/vampyr4.jpg);
@@ -33,7 +22,7 @@
     padding: 15em 20em;
     width: 2%;
     display: block;
-    margin: 0em auto;
+    margin-left: 7em;
 }
 
 #img5Vampyr {
@@ -43,29 +32,56 @@
     padding: 15em 20em;
     width: 2%;
     display: block;
-    margin: 0em auto;
+    margin-left: 7em;
+}
+
+.intestazione h1 {
+    text-align: center;
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+    font-size: 3em;
+    font-style: normal;
+    color: #0E9C09;
 }
 
 .shortDesc {
-    color: rgb(141, 135, 135);
-    margin-left: 1em;
+    padding-left: 2em;
 }
 
 .writer {
-    color: red;
-    margin-left: 1em;
+    color: #0E9C09;
+    padding-left: 2em;
 }
 
 .dataCorsivo {    
     font-style: oblique;
 }
 
+/*
 .index {
     border: 1px solid #000;
     float: right;
     border-style: solid;
     margin: 2.1em 1em 2em 2em;
     padding: 2em;
+}*/
+
+.index {
+    color: #0E9C09;
+    border: 2px solid #0E9C09;
+    float: right;
+    margin: 3em 2em 1em 2em;
+    padding: 2em;
+}
+
+.rightPanel {
+    background-color: white;
+    list-style-type: none;
+    width: 20%;
+    border-left: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
+    padding: 0.5em 1em 1em 1em;
+    float: right;
 }
 
 .index h3 {
@@ -73,16 +89,18 @@
 }
 
 .description p {
-    margin: 2em 6em;
+    margin: 2em 21em 2em 6em;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .description h2 {
-    border-bottom: 0.1em solid ;
+    border-bottom: 0.1em solid green;
     margin-left: 3.3em;
     margin-top: 3em;
-    margin-right: 7em;
+    margin-right: 13.5em;
     font-size: 1.8em;
-    color:#999966;
+    color: black;
 }
 
 .index ol {
@@ -98,53 +116,70 @@
     content: counter(contatore) ". ";
     font-weight: bolder;
 }
-  
-#img1Vampyr {
-    width: 60%;
-    display: block;
-    padding-left: 10em;
-    margin: 0 auto;
-}
+
 
 .comment {
-    background-color: lime;
+    background-color: limegreen;
     padding: 0.5em 2em;
-    margin-top: 5em;
 }
 
 .comment h3 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .comment p {
     margin: 1em 15em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
 }
 
 .diffs {
-    margin-top: 3em;
-    padding-bottom: 4em;
+    display: flex;
+    margin-left: 7em;
 }
 
+.diffs div {
+    flex: 50%;
+    margin: 2em;
+    text-align: justify;
+}
+
+.pro h3 {
+    color: green;
+
+}
+
+.contro h3 {
+    color: red;
+}
+
+.diffs h3 {
+    margin: 0.5em 0em;
+}
+
+
 .pro {
+    font-size: 1.2em;
+    line-height: 1.5em;
     float: left;
     margin-left: 16em;
 }
 
 .contro {
+    font-size: 1.2em;
+    line-height: 1.5em;
     float: right;
     margin-right: 12em;
 }
 
 .voto {
+    display: block;
+    margin: 0 auto;
+    background-color: lawngreen;
     text-align: center;
-    font-size: 1.8em;
-    padding-bottom: 2em;
     margin-top: 3em;
+    font-weight: bold;
+    font-size: 2em;
 }
-
-.titolovoto{
-    background-color: rgba(127, 255, 212, 0.5);
-    margin: 0.5em 1em ;
-}
-

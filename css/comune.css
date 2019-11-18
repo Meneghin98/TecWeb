@@ -142,7 +142,7 @@ body {
     outline: none;
 }
 
-.rightPannel {
+.rightPanel {
     background-color: white;
     list-style-type: none;
     width: 20%;
@@ -152,11 +152,11 @@ body {
     float: right;
 }
 
-.rightPannel dt {
+.rightPanel dt {
     font-weight: bold;
 }
 
-.rightPannel dd {
+.rightPanel dd {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -167,7 +167,7 @@ body {
     text-align: justify;
 }
 
-.rightPannel dd img {
+.rightPanel dd img {
     width: 100%;
 }
 
@@ -271,7 +271,7 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-    .rightPannel {
+    .rightPanel {
         display: none;
     }
 

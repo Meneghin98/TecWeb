@@ -6,44 +6,37 @@
     font-style: normal;
 }
 
-#img2Vampyr {
-    background-image: url(../images/Recensioni/vampyr2.jpg);
+img{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15em 20em;
     width: 2%;
     display: block;
-    margin: 0em auto;
+    margin: 0 auto;
+}
+
+#img1Vampyr {
+    padding: 0;
+    width: 60%;
+    display: block;
+    padding-left: 10em;
+    margin: 0 auto;
+}
+
+#img2Vampyr {
+    background-image: url(../images/Recensioni/vampyr2.jpg);
 }
 
 #img3Vampyr {
     background-image: url(../images/Recensioni/vampyr3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 15em 20em;
-    width: 2%;
-    display: block;
-    margin: 0em auto;
 }
 
 #img4Vampyr {
     background-image: url(../images/Recensioni/vampyr4.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 15em 20em;
-    width: 2%;
-    display: block;
-    margin: 0em auto;
 }
 
 #img5Vampyr {
     background-image: url(../images/Recensioni/vampyr5.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 15em 20em;
-    width: 2%;
-    display: block;
-    margin: 0em auto;
 }
 
 .shortDesc {
@@ -61,9 +54,9 @@
 }
 
 .index {
+    max-width: 16em;
     border: 1px solid #000;
     float: right;
-    border-style: solid;
     margin: 2.1em 1em 2em 2em;
     padding: 2em;
 }
@@ -98,13 +91,7 @@
     content: counter(contatore) ". ";
     font-weight: bolder;
 }
-  
-#img1Vampyr {
-    width: 60%;
-    display: block;
-    padding-left: 10em;
-    margin: 0 auto;
-}
+
 
 .comment {
     background-color: lime;

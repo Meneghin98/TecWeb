@@ -11,82 +11,66 @@
     <meta name="description"
           content="Pagina contente la Recensione di Call of Duty: Modern Warfare, videdogioco uscito nel 2019"/>
     <meta name="author" content="Simone Meneghin"/>
-    <link rel="stylesheet" href="../css/comune.css"/>
-    <link rel="stylesheet" href="../css/ModelloArticoloRec2.css"/>
+    <link rel="stylesheet" href="../../css/comune.css"/>
+    <link rel="stylesheet" href="../../css/ModelloArticoloRec.css"/>
 
 </head>
 
 <body>
-<div class="header">
-    <!--immagine inserita via css-->
-    <div class="title">
-        <h1><span xml:lang="en">Crypt of Games</span></h1>
-        <h2>L'eccellenza del <span xml:lang="en">gaming</span></h2>
-        <a href="login.html" class="linkEntra">Entra<img src="../images/icons/open-door.png"/></a>
-    </div>
+
+<ul class="header">
+    <li>
+        <h1><span xml:lang="en">Decrypted Games</span></h1>
+    </li>
+    <li id="searchBar">
+        <fieldset>
+            <label for="search">Ricerca</label>
+            <input type="text" placeholder="Search.." id="search"/>
+            <button type="submit" style="border: 0; background: transparent">
+                <img src="../../images/icons/20x20-lente.png" alt="submit"/>
+            </button>
+        </fieldset>
+    </li>
+    <li>
+        <a id="login" title="Login" href="../User/login.html"><img src="../../images/icons/login-sito-web.png"
+                                                                   alt="login"/></a>
+    </li>
+    <li>
+        <a title="Registrati" href="../User/registrazione.html"><img src="../../images/icons/Registrati-sito-web.png"
+                                                                     alt="registrazione"/></a>
+    </li>
+</ul>
+<!--menu_________________________________________________________________________________________________________-->
+<div class="menu">
+    <ul class="menu">
+        <li><a href="../Structure/index.html"><span xml:lang="en">Home</span></a></li>
+        <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
+        <li><a href="recensioni.html">Recensioni</a></li>
+        <li><a href="../Eventi/eventi.html">Eventi</a></li>
+        <li><a href="../Guide/guide.html">Guide</a></li>
+    </ul>
 </div>
+
 <!--corpo____________________________________________________________________________________________________________-->
 <div class="content">
-    <!--menu_________________________________________________________________________________________________________-->
-    <div class="menu">
-        <ul class="menu">
-            <li id="currentlink"><span xml:lang="en">Home</span></li>
-            <li><a href="news.html"><span xml:lang="en">News</span></a></li>
-            <li><a href="recensioni.html">Recensioni</a></li>
-            <li><a href="eventi.html">Eventi</a></li>
-            <li><a href="guide.html">Guide</a></li>
-        </ul>
-    </div>
-    <!--scheda articoli______________________________________________________________________________________________-->
-    <dl class="rightPannel">
-        <dt>
-            Top 3 - gli articoli più letti
-        </dt>
-        <dd>
-            <img src="../images/codmw.png" alt=""/>
-            <p>Call of Duty: Modern Warfare, la recensione</p>
-        </dd>
-        <dd><img src="../images/788051.jpg" alt=""/>
-            <p><span xml:lang="en">The Last of us 2 -
-                        primo gamplay</span></p>
-        </dd>
-        <dd><img src="../images/xbox_one_x_09.0.jpg" alt=""/>
-            <p><span xml:lang="en">Microsoft
-                        ecosistema Designed for Xbox espanso al mondo
-                        mobile</span></p>
-        </dd>
-        <dt>
-            La recensione del mese
-        </dt>
-        <dd>
-            <img src="../images/650463-radeon-5700-specs.jpg" alt=""/>
-            <p>Radeon RX 5700 XT e Radeon RX 5700 – Recensione
-            </p>
-        </dd>
-        <dt>
-            I giochi più attesi
-        </dt>
-    </dl>
-
 
     <!--Inizio recensione________________________________________________________________________________________________-->
     <div class="intestazione">
 
-        <h1 class="titolo-recensione">Recensione: <span xml:lang="en">Call of Duty: Modern Warfare</span></h1>
+        <h1>Recensione: <span xml:lang="en">Call of Duty: Modern Warfare</span></h1>
         <!--class titolo...-->
-        <h2 class="shortDesc">La recensione di <span xml:lang="en">Call of Duty: Modern Warfare</span>: ritorno al
+        <p class="shortDesc">La recensione di <span xml:lang="en">Call of Duty: Modern Warfare</span>: ritorno al
             passato certo, ma
             soprattutto un nuovo, grande inizio per la serie di <span xml:lang="en">Infinity Ward</span>!
-        </h2>
+        </p>
 
         <p class="writer">
-            RECENSIONE di Simone Meneghin - <span class="">05/06/2018</span>
-            <!--eventuale class_________________________________________________________________________________________-->
+            RECENSIONE di Simone Meneghin - <span class="dataCorsivo">05/06/2018</span>
         </p>
     </div>
     <!--indice________________________________________________________________________________________________________-->
     <div class="index">
-        <h2>INDICE</h2>
+        <h3>INDICE</h3>
         <ol>
             <li><a href="#campagna">Una campagna memorabile</a></li>
             <li><a href="#multiplayer">Modalità multiplayer: i nuovi contenuti</a></li>
@@ -117,7 +101,7 @@
             scommessa
             vinta quasi in scioltezza, non senza però qualche passo falso, di cui ovviamente parleremo più avanti.
         </p>
-        <img src="../images/cod-mw-2019/jugg.jpg"
+        <img src="../../images/cod-mw-2019/jugg.jpg"
              alt="soldato con armatura pesante da juggernaut che imbraccia un fucile a canne rotanti minigun">
         <h2 id="campagna">Una campagna memorabile</h2>
         <p>L'offerta di gioco del nuovo <span xml:lang="en">Call of Duty: Modern Warfare</span> è come al solito
@@ -181,7 +165,7 @@
             <span xml:lang="en">realpolitik</span> praticata a <span xml:lang="en">Washington</span> o a <span
                 xml:lang="en">Londra</span>.
         </p>
-        <img src="../images/cod-mw-2019/campagna.jpg"
+        <img src="../../images/cod-mw-2019/campagna.jpg"
              alt="immagine riguardante la campagna con in primo piano il capitano price">
         <p>
             Ecco se proprio volessimo trovare un difetto a questo affresco moderno è che c'è di tutto un po' e,
@@ -223,7 +207,7 @@
             intrigante da giocare.
         </p>
         <!--multiplayer_____________________________________________________________________________________________________-->
-        <img src="../images/cod-mw-2019/multi_1.jpg"
+        <img src="../../images/cod-mw-2019/multi_1.jpg"
              alt="due nemici si ingaggiano mentre due compagni fanno da supporto">
         <h2 id="multiplayer">Modalità <span xml:lang="en">multiplayer</span>: i nuovi contenuti</h2>
         <p>
@@ -293,7 +277,7 @@
             dinamiche degli scontri a fuoco.
         </p>
         <!--cross play_______________________________________________________________________________________________-->
-        <img src="../images/cod-mw-2019/multi_2.jpg"
+        <img src="../../images/cod-mw-2019/multi_2.jpg"
              alt="anteprima schermata multiplayer della modalità Cyberattack con dei compagni di squadra">
         <h2 id="cross-play"><span xml:lang="en">Cross play</span></h2>
         <p>
@@ -312,45 +296,54 @@
                 xml:lang="en">pad</span>. Niente
             sbilanciamenti insomma.
         </p>
-        <img src="../images/cod-mw-2019/sniper.jpg"
+        <img src="../../images/cod-mw-2019/sniper.jpg"
              alt="un soldato che imbraccia un fucile da cecchino mentre dei compagni dietro avanzano supportati da un carro armato">
         <!--commento______________________________________________________________________________________________________-->
-        <h2 id="commento">Commento</h2>
-        <p>
-            Alla fine della recensione scriviamo che <span xml:lang="en">Call of Duty: Modern Warfare</span> è il
-            <span xml:lang="en">reboot</span> che tutti i <span xml:lang="en">fan</span> della
-            serie aspettavano. La campagna strutturata da <span xml:lang="en">Infinity Ward</span> è per lunghi
-            tratti sontuosa: un nuovo
-            inizio e nuovi personaggi ben raccontati che si innestano alla perfezione nel canone della serie.
-            Peccato per le battute finali solo buone e per alcune parti dell'intreccio di grana grossa. Del
-            <span xml:lang="en">multiplayer</span> possiamo solo tessere le lodi, la modalità con i mezzi e il
-            "<span xml:lang="en">tuning</span> meccanico" delle armi
-            rimescolano con efficacia meccaniche consolidate, il tutto all'insegna di un ritmo un filo più lento e
-            ragionato e di un <span xml:lang="en">level design</span> stellare. Deciso pollice su per il <span
-                xml:lang="en">cross
+        <div class="comment">
+            <h3 id="commento">Commento</h3>
+            <p>
+                Alla fine della recensione scriviamo che <span xml:lang="en">Call of Duty: Modern Warfare</span> è il
+                <span xml:lang="en">reboot</span> che tutti i <span xml:lang="en">fan</span> della
+                serie aspettavano. La campagna strutturata da <span xml:lang="en">Infinity Ward</span> è per lunghi
+                tratti sontuosa: un nuovo
+                inizio e nuovi personaggi ben raccontati che si innestano alla perfezione nel canone della serie.
+                Peccato per le battute finali solo buone e per alcune parti dell'intreccio di grana grossa. Del
+                <span xml:lang="en">multiplayer</span> possiamo solo tessere le lodi, la modalità con i mezzi e il
+                "<span xml:lang="en">tuning</span> meccanico" delle armi
+                rimescolano con efficacia meccaniche consolidate, il tutto all'insegna di un ritmo un filo più lento e
+                ragionato e di un <span xml:lang="en">level design</span> stellare. Deciso pollice su per il <span
+                    xml:lang="en">cross
                     play</span> e per il supporto <span xml:lang="en">post</span> lancio gratuito, una prima volta per
-            il <span xml:lang="en">franchise</span>.
-        </p>
-
-        <h3>PRO</h3>
-        <ul>
-            <li>La campagna migliore dai tempi di <span xml:lang="en">Black Ops</span></li>
-            <li>Le nuove modalità non deludono</li>
-            <li>Personalizzazione delle armi</li>
-            <li><span xml:lang="en">Design</span> delle mappe di grande livello</li>
-            <li>Tecnicamente al top</li>
-        </ul>
-
-
-        <h3>CONTRO</h3>
-        <ul>
-            <li>Le nuove <span xml:lang="en">Spec Ops</span> sono una mezza delusione</li>
-            <li>La campagna è breve, tra le cinque e le sei ore</li>
-            <li>Intelligenza artificiale basilare</li>
-        </ul>
-
-        <p>VALUTAZIONE 9.0</p>
+                il <span xml:lang="en">franchise</span>.
+            </p>
+        </div>
     </div>
+    <div class="diffs">
+        <div class="pro">
+            <h3>PRO</h3>
+            <ul>
+                <li>La campagna migliore dai tempi di <span xml:lang="en">Black Ops</span></li>
+                <li>Le nuove modalità non deludono</li>
+                <li>Personalizzazione delle armi</li>
+                <li><span xml:lang="en">Design</span> delle mappe di grande livello</li>
+                <li>Tecnicamente al top</li>
+            </ul>
+        </div>
+        <div class="contro">
+            <h3>CONTRO</h3>
+            <ul>
+                <li>Le nuove <span xml:lang="en">Spec Ops</span> sono una mezza delusione</li>
+                <li>La campagna è breve, tra le cinque e le sei ore</li>
+                <li>Intelligenza artificiale basilare</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="voto">
+        <span class="titolovoto">VALUTAZIONE</span>
+        <p>9.0</p>
+    </div>
+
 </div>
 <div class="footer">
     <p><span xml:lang="en">Copyright - All rights reservd</span></p>

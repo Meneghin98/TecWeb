@@ -3,17 +3,15 @@
     display: block;
     margin-left: 7em;
 }
-
-img{
+/*
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15em 20em;
     width: 2%;
     display: block;
-<<<<<<< HEAD
     margin-left: 7em;
 }
-
+*/
 
 #img4Vampyr {
     background-image: url(../images/Recensioni/vampyr4.jpg);
@@ -23,34 +21,10 @@ img{
     width: 2%;
     display: block;
     margin-left: 7em;
-=======
-    margin: 0 auto;
-}
-
-#img1Vampyr {
-    padding: 0;
-    width: 60%;
-    display: block;
-    padding-left: 10em;
-    margin: 0 auto;
-}
-
-#img2Vampyr {
-    background-image: url(../images/Recensioni/vampyr2.jpg);
-}
-
-#img3Vampyr {
-    background-image: url(../images/Recensioni/vampyr3.jpg);
-}
-
-#img4Vampyr {
-    background-image: url(../images/Recensioni/vampyr4.jpg);
->>>>>>> 70f4a75c68b90fc4089f2b664c532efedb98aea4
 }
 
 #img5Vampyr {
     background-image: url(../images/Recensioni/vampyr5.jpg);
-<<<<<<< HEAD
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15em 20em;
@@ -66,8 +40,6 @@ img{
     font-size: 3em;
     font-style: normal;
     color: #0E9C09;
-=======
->>>>>>> 70f4a75c68b90fc4089f2b664c532efedb98aea4
 }
 
 .shortDesc {

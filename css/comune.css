@@ -1,12 +1,11 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 0.9em;
-    /*non ricordo perchè la prof aveva detto che era buona norma, ma se non ha senso o mi sbaglio lo eliminiamo*/
     max-width: 1920px;
     margin: auto;
     height: 100%;
@@ -14,6 +13,11 @@ body {
     background-image: url(../images/horizon-zero-dawn-4k-game-on.jpg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#noBackground {
+    background-image: none;
+    background-color: #262626;
 }
 
 .header {
@@ -45,23 +49,15 @@ body {
 }
 
 #searchBar button {
+    border: 0;
+    background: transparent;
     position: absolute;
-    right: 29em;
+    right: 27.7em;
     bottom: 2.95em;
-    background-color: white;
     cursor: pointer;
 }
 
-#searchBar fieldset{
-    border: none;
-}
-
-#searchBar label{
-    position: absolute;
-    right: 9999px;
-}
-
-.header #searchBar input {
+.header li input {
     position: absolute;
     right: 14em;
     bottom: 2.75em;
@@ -69,6 +65,17 @@ body {
     border-radius: 25px;
     border: 3px solid #0E9C09;
     padding-left: 2em;
+}
+
+#home {
+    position: absolute;
+    left: 0.5em;
+    width: max-content;
+    font-size: 2em;
+    background-image: url("../images/icons/fantasmino-logo75x75.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 1em 2em 1em 2.6em;
 }
 
 .header li h1 {
@@ -82,6 +89,24 @@ body {
     padding: 1em 2em 1em 2.6em;
 }
 
+.header li h1 a {
+    position: initial;
+    width: max-content;
+}
+
+.header li h1 a:link {
+    text-decoration: none;
+    color: #0E9C09;
+}
+
+.header li h1 a:visited {
+    text-decoration: none;
+    color: #0E9C09;
+}
+
+.hamburger-menu {
+    display: none;
+}
 
 .content {
     margin: 0 auto;
@@ -113,8 +138,8 @@ body {
 }
 
 .menu a:link {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 .menu a:visited {
@@ -123,7 +148,7 @@ body {
 }
 
 .menu a:hover {
-    color: lawngreen;
+    color: #0E9C09;
 }
 
 .menu a:active {
@@ -132,14 +157,9 @@ body {
     outline-style: none;
 }
 
-.menu a:focus {
-    outline: none;
-}
-
 .menu #currentlink {
-    color: #109c09;
+    color: lawngreen;
     font-weight: bold;
-    outline: none;
 }
 
 .rightPanel {
@@ -150,6 +170,7 @@ body {
     border-bottom: 1px solid #dddcdc;
     padding: 0.5em 1em 1em 1em;
     float: right;
+    margin-left: 2em;
 }
 
 .rightPanel dt {
@@ -162,7 +183,7 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     list-style-type: none;
-    padding: 0.5em 0em;
+    padding: 0.5em 0;
     overflow: auto;
     text-align: justify;
 }
@@ -274,7 +295,6 @@ body {
     .rightPanel {
         display: none;
     }
-
     .articleList {
         width: 100%;
     }

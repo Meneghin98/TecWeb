@@ -5,7 +5,7 @@
   .topArticles {
       display: flex;
       flex-wrap: wrap;
-      background-color: #109c09;
+      background-color: #0E9C09;
       padding-bottom: 2em;
   }
   
@@ -45,6 +45,21 @@
       margin-bottom: 0em;
       font-weight: normal;
       bottom: 0em;
+  }
+  
+  .topArticles a:link {
+      text-decoration: none;
+      color: white;
+  }
+  
+  .topArticles a:visited {
+      text-decoration: none;
+      color: white;
+  }
+  
+  .topArticles a:active {
+      text-decoration: none;
+      color: white;
   }
   
   .topArticles p {

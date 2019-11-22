@@ -165,12 +165,11 @@ body {
 .rightPanel {
     background-color: white;
     list-style-type: none;
-    width: 20%;
     border-left: 1px solid #dddcdc;
     border-bottom: 1px solid #dddcdc;
     padding: 0.5em 1em 1em 1em;
-    float: right;
     margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 .rightPanel dt {
@@ -192,8 +191,16 @@ body {
     width: 100%;
 }
 
-.dt {
-    font-weight: bold;
+.flexContainer {
+    display: flex;
+}
+
+.flexColumn:nth-of-type(1) {
+    flex: 15;
+}
+
+.flexColumn:last-of-type {
+    flex: 4;
 }
 
 .articleList {
@@ -241,6 +248,14 @@ body {
 .articleList li a:active {
     outline: none;
     text-decoration: none;
+}
+
+.articleListTitle {
+    font-size: 0.9em;
+}
+
+.articleListDesc {
+    font-weight: normal;
 }
 
 .categoriaHardware {

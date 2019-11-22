@@ -1,81 +1,84 @@
-  * {
-      box-sizing: border-box;
-  }
-  
-  .topArticles {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #0E9C09;
-      padding-bottom: 2em;
-  }
-  
-  .topArticles li {
-      flex: 50%;
-      position: relative;
-      text-align: center;
-      overflow: hidden;
-      background-color: white;
-  }
-  
-  .topArticles li img {
-      width: 100%;
-      height: 100%;
-      -webkit-transition: 0.8s;
-      -moz-transition: 0.8s;
-      -o-transition: 0.8s;
-      -ms-transition: 0.8s;
-      transition: 0.8s;
-  }
-  
-  .topArticles li img:hover {
-      -moz-transform: scale(1.4) rotate(0deg);
-      -webkit-transform: scale(1.4) rotate(0deg);
-      -o-transform: scale(1.4) rotate(0deg);
-      -ms-transform: scale(1.4) rotate(0deg);
-      transform: scale(1.4) rotate(0deg);
-  }
-  
-  .topArticles h3 {
-      background-color: rgba(33, 33, 33, 0.8);
-      width: 100%;
-      position: absolute;
-      color: white;
-      text-align: center;
-      padding: 0.5em;
-      margin-bottom: 0em;
-      font-weight: normal;
-      bottom: 0em;
-  }
-  
-  .topArticles a:link {
-      text-decoration: none;
-      color: white;
-  }
-  
-  .topArticles a:visited {
-      text-decoration: none;
-      color: white;
-  }
-  
-  .topArticles a:active {
-      text-decoration: none;
-      color: white;
-  }
-  
-  .topArticles p {
-      text-align: center;
-  }
-  
-  @media screen and (max-width: 960px) {
-      .topArticles li {
-          flex: 50%;
-      }
-  }
-  
-  @media screen and (max-width: 640px) {
-      .topArticles {
-          flex-direction: column;
-          flex: 100%;
-          max-width: 100%;
-      }
-  }
+* {
+    box-sizing: border-box;
+}
+
+.topArticles {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0E9C09;
+    padding-bottom: 2em;
+}
+
+.topArticles li {
+    flex: 50%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+.topArticles li h2 img {
+    width: 100%;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    -ms-transition: 0.8s;
+    transition: 0.8s;
+}
+
+.topArticles li img:hover {
+    -moz-transform: scale(1.4) rotate(0deg);
+    -webkit-transform: scale(1.4) rotate(0deg);
+    -o-transform: scale(1.4) rotate(0deg);
+    -ms-transform: scale(1.4) rotate(0deg);
+    transform: scale(1.4) rotate(0deg);
+}
+
+.topArticles a {
+    position: initial;
+}
+
+.topArticles a .topArticleTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.topArticles a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.topArticles a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.topArticles a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.topArticles p {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .topArticles li {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .topArticles {
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

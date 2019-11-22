@@ -47,7 +47,13 @@ body {
     right: 7em;
     bottom: 1.7em;
 }
-
+#searchBar fieldset{
+    border: none;
+}
+#searchBar label{
+    position: absolute;
+    left: -9999px;
+}
 #searchBar button {
     border: 0;
     background: transparent;
@@ -304,6 +310,10 @@ body {
 
 .hide {
     display: none;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 960px) {

@@ -312,6 +312,10 @@ body {
     display: none;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 @media screen and (max-width: 960px) {
     .rightPanel {
         display: none;

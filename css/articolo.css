@@ -4,7 +4,8 @@
         }
         
         .description p {
-            padding: 0 20em 1em 3em;
+            padding: 0 1em 1em 3em;
+            font-size: 1.2em;
         }
         
         .description p:nth-of-type(1) {

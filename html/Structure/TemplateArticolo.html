@@ -3,19 +3,18 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title xml:lang="en">Games Decrypted</title>
+    <title xml:lang="en">TITOLO ARTICOLO</title>
     <meta name='keywords' content='azione, console, news, gaming, eventi, cosplay' />
     <meta name="title" content="Sito interattivo sul gaming" />
     <link rel="stylesheet" href="../../css/comune.css" />
-    <link rel="stylesheet" href="../../css/articolo.css" />
     <link rel="stylesheet" href="../css/comune_handheld.css" media="handheld" />
     <!--al momento uso questo per identificare i dispositivi mobile, poi dovremo discutere su quali query fare per ottenere più dispositivi possibili-->
     <link rel="stylesheet" href="../../css/index.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="../../images/icons/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="../../images/icons/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="../../images/icons/favicon/favicon-16x16.png" />
     <link rel="manifest" href="../../images/icons/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="../../images/icons/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="mask-icon" href="../../images/icons/favicon/safari-pinned-tab.svg" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 </head>
@@ -24,19 +23,22 @@
 
     <ul class="header">
         <li>
-            <h1><span xml:lang="en">Decrypted Games</span></h1>
+            <h1 id="home"><span xml:lang="en">Decrypted Games</span></h1>
         </li>
         <li id="searchBar">
-            <input type="text" placeholder="Search..">
-            <button type="submit" style="border: 0; background: transparent" />
-            <img src="../../images/icons/20x20-lente.png" alt="submit" />
-            </button>
+            <fieldset>
+                <label for="search">Ricerca</label>
+                <input type="text" id="search" />
+                <button type="submit" style="border: 0; background: transparent">
+                    <img src="../../images/icons/20x20-lente.png" alt="submit" />
+                </button>
+            </fieldset>
         </li>
         <li>
-            <a id="login" title="Login" href="Login.html"><img src="../../images/icons/login-sito-web.png" alt="icona login" /></a>
+            <a id="login" title="Login" href="../User/login.html"><img src="../../images/icons/login-sito-web.png" alt="icona login" /></a>
         </li>
         <li>
-            <a title="Registrati" href="Registrazione.html"><img src="../../images/icons/Registrati-sito-web.png" alt="icona registrazione" /></a>
+            <a title="Registrati" href="../User/registrazione.html"><img src="../../images/icons/Registrati-sito-web.png" alt="icona registrazione" /></a>
         </li>
     </ul>
 
@@ -48,48 +50,53 @@
         <li><a href="../Guide/guide.html">Guide</a></li>
     </ul>
     <div class="content">
-        <dl class="rightPanel">
-            <dt>
-                Top 3 - gli articoli più letti
-            </dt>
-            <dd>
-                <img src="../../images/codmw.png" alt="" />
-                <p>Call of Duty: Modern Warfare, la recensione</p>
-            </dd>
-            <dd><img src="../../images/788051.jpg" alt="" />
-                <p><span xml:lang="en">The Last of us 2 -
-                        primo gamplay</span></p>
-            </dd>
-            <dd><img src="../../images/xbox_one_x_09.0.jpg" alt="" />
-                <p><span xml:lang="en">Microsoft
-                        ecosistema Designed for Xbox espanso al mondo
-                        mobile</span></p>
-            </dd>
-            <dt>
-                La recensione del mese
-            </dt>
-            <dd>
-                <img src="../../images/650463-radeon-5700-specs.jpg" alt="" />
-                <p>Radeon RX 5700 XT e Radeon RX 5700 – Recensione
-                </p>
-            </dd>
-            <dt>
-                I giochi più attesi
-            </dt>
-        </dl>
-        <div class="intestazione">
-            <h1 class="articleTitle"></h1>
-            <p class="writer">di , <span class="dataCorsivo"></span></p>
-        </div>
+        <div class="flexContainer">
+            <div class="flexColumn">
+                <div class="intestazione">
+                    <h1 class="articleTitle"></h1>
+                    <p class="writer">di , <span class="dataCorsivo"></span></p>
+                </div>
 
 
-        <div class="description">
-            <img src="../../images/" alt="" />
-            <p></p>
-            <p></p>
-            <p>
-            </p>
-            <p></p>
+                <div class="description">
+                    <img src="../../images/Articoli" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="flexColumn">
+                <dl class="rightPanel">
+                    <dt>
+                        Top 3 - gli articoli più letti
+                    </dt>
+                    <dd>
+                        <img src="../../images/codmw.png" alt="" />
+                        <p>Call of Duty: Modern Warfare, la recensione</p>
+                    </dd>
+                    <dd><img src="../../images/788051.jpg" alt="" />
+                        <p><span xml:lang="en">The Last of us 2 -
+                                primo gamplay</span></p>
+                    </dd>
+                    <dd><img src="../../images/xbox_one_x_09.0.jpg" alt="" />
+                        <p><span xml:lang="en">Microsoft
+                                ecosistema Designed for Xbox espanso al mondo
+                                mobile</span></p>
+                    </dd>
+                    <dt>
+                        La recensione del mese
+                    </dt>
+                    <dd>
+                        <img src="../../images/650463-radeon-5700-specs.jpg" alt="" />
+                        <p>Radeon RX 5700 XT e Radeon RX 5700 – Recensione
+                        </p>
+                    </dd>
+                    <dt>
+                        I giochi più attesi
+                    </dt>
+                </dl>
+            </div>
         </div>
     </div>
     <div class="footer">

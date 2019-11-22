@@ -11,17 +11,32 @@
     <meta name="author" content="Simone Meneghin"/>
     <link rel="stylesheet" href="../../css/comune.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/Area_utente.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
 </head>
 
 <body>
-<div class="header">
-    <!--immagine inserita via css-->
-    <div class="title">
-        <h1><span xml:lang="en">Crypt of Games</span></h1>
-        <h2>L'eccellenza del <span xml:lang="en">gaming</span></h2>
-        <a href="login.html" class="linkEntra">Entra<img src="../../images/icons/open-door.png"/></a>
-    </div>
-</div>
+<ul class="header">
+    <li>
+        <h1><span xml:lang="en">Decrypted Games</span></h1>
+    </li>
+    <li id="searchBar">
+        <fieldset>
+            <label for="search">Ricerca</label>
+            <input type="text" id="search"/>
+            <button type="submit" style="border: 0; background: transparent">
+                <img src="../../images/icons/20x20-lente.png" alt="submit"/>
+            </button>
+        </fieldset>
+    </li>
+    <li>
+        <a id="login" title="Login" href="../User/login.html"><img src="../../images/icons/login-sito-web.png"
+                                                                   alt="login"/></a>
+    </li>
+    <li>
+        <a title="Registrati" href="../User/registrazione.html"><img src="../../images/icons/Registrati-sito-web.png"
+                                                                     alt="registrazione"/></a>
+    </li>
+</ul>
 
 <ul class="menu">
     <li><a href="../Structure/index.html"><span xml:lang="en">Home</span></a></li>
@@ -83,7 +98,27 @@
 
 
 <div class="footer">
-    <p>Siamo un gruppo di ragazzi interessati al gaming che voglio far conscere meglio questo grande mondo</p>
+    <div class="footerInline">
+        <p>Unisciti</p>
+        <ul>
+            <li><a href="" xml:lang="en">Accedi</a></li>
+            <li><a href="">Crea un account</a></li>
+        </ul>
+    </div>
+
+    <div class="footerInline">
+        <p>Contatti</p>
+        <ul>
+            <li><a href="">Chi siamo</a></li>
+            <li><a href="">Lavora con noi</a></li>
+        </ul>
+    </div>
+
+    <div id="imgsFooter">
+        <img id="validXhtml" src="../../images/footer/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31"
+             width="88"/>
+        <img id="validCss" src="../../images/footer/valid-css2.png" alt="Valid CSS 2" height="31" width="88"/>
+    </div>
 </div>
 </body>
 

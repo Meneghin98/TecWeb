@@ -1,7 +1,6 @@
 # ARTICOLI 
 ## In progress
 #### Recensioni
-  - Vampyr 
   - Star wars 
 
 #### News
@@ -15,6 +14,7 @@
 ## Completed
 #### Recensioni
   - Call of duty 
+  - Vampyr
   
 #### News
 #### Eventi

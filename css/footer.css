@@ -1,11 +1,11 @@
 .footer {
+    max-width: 1140px;
+    margin: 0 auto;
     text-align: center;
     width: 100%;
     background-color: #19334d;
-    position: fixed;
     bottom: 0;
     padding: 1em 1em 1em 1em;
-    position: absolute;
 }
 
 .footer li {
@@ -14,7 +14,7 @@
 
 .footerInline {
     float: left;
-    width: 33.3%
+    width: 50%
 }
 
 .footer {

@@ -1,3 +1,9 @@
+/* --------------------------- */
+/*                             */
+/*  Impostazioni di default    */
+/*                             */
+/* --------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +13,99 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 0.9em;
     max-width: 1920px;
-    margin: auto;
     height: 100%;
     background-color: #262626;
-    background-image: url(../images/horizon-zero-dawn-4k-game-on.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------- */
+/*                             */
+/*            Fine             */
+/*                             */
+/* --------------------------- */
+
+
+
+
+/* --------------------------- */
+/*                             */
+/*            Header           */
+/*                             */
+/* --------------------------- */
+
+#header2 {
+    width: 100%;
+    color: white;
+    padding: 4px 4px 30px 4px;
+    background-color: black;
+}
+
+/* --------------------------------- */
+/*      Tools di Accessibilità      */
+
+.screenReaderHelper {
+    position: absolute;
+    left: -50000000px;
+    overflow: hidden;
+}
+
+/*     Fine Tools di Accessibilità   */
+/* --------------------------------- */
+
+
+#siteLogo {
+    float: left;
+    padding: 3px 4px 3px 3px;
+    width: 8%
+}
+
+#siteTitle {
+    text-align: left;
+    width: 60%;
+    margin-left: 10%;
+}
+
+#headerUtility {
+    text-align: right;
+}
+
+#accessUtilities a {
+    padding-right: 0.9em;
+}
+
+#header2 h1 {
+    font-size: 2.3em;
+    padding-bottom: 0.3em;
+}
+
+#header2 h2 {
+    font-size: 1.2em;
+}
+
+#searchUtility fieldset, input{
+    padding-top: 0.5em;
+    padding-right: 1em;
+    border: 0;
+}
+
+#searchUtility button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#searchUtility input {
+    border-radius: 25px;
+    border: 3px solid #0E9C09;
+    font-size: 80%;
+}
+
+/* --------------------------- */
+
+/*
 #noBackground {
     background-image: none;
     background-color: #262626;
@@ -113,21 +204,82 @@ body {
 .hamburger-menu {
     display: none;
 }
+*/
 
-.content {
+
+/* --------------------------- */
+/*                             */
+/*            Fine             */
+/*                             */
+/* --------------------------- */
+
+
+
+/* --------------------------- */
+/*                             */
+/*           Content           */
+/*                             */
+/* --------------------------- */
+
+
+#content {
     margin: 0 auto;
     max-width: 1140px;
     background-color: white;
 }
 
+
+/* --------------------------- */
+/*                             */
+/*            Fine             */
+/*                             */
+/* --------------------------- */
+
+
+
+
+/* --------------------------- */
+/*                             */
+/*            Menu             */
+/*                             */
+/* --------------------------- */
+
+#menu {
+    background-color: #131313;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 1em 0 1em;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0 6% 1em 6%;
+}
+
+#menu li a {
+    display: inline-block;
+}
+
+#menu li:nth-of-type(1) {
+    border-left: 0;
+}
+
+#menu a:hover {
+    color: #0E9C09;
+}
+
+#currentlink {
+    color: lawngreen;
+    font-weight: bold;
+}
+
+/*
 .menu {
     background-color: #131313;
-    list-style-type: none;
     text-align: center;
     color: white;
     display: flex;
     flex-wrap: nowrap;
-    width: 1140px;
     margin: 0 auto;
 }
 
@@ -138,35 +290,15 @@ body {
     text-align: center;
     margin: 0.5em 0;
 }
+ */
 
-.menu li:nth-of-type(1) {
-    border-left: 0;
-}
+/* --------------------------- */
+/*                             */
+/*            Fine             */
+/*                             */
+/* --------------------------- */
 
-.menu a:link {
-    text-decoration: none;
-    color: white;
-}
 
-.menu a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: #0E9C09;
-}
-
-.menu a:active {
-    text-decoration: none;
-    color: white;
-    outline-style: none;
-}
-
-.menu #currentlink {
-    color: lawngreen;
-    font-weight: bold;
-}
 
 .rightPanel {
     background-color: white;
@@ -297,15 +429,6 @@ body {
     background-color: darkgoldenrod;
     color: white;
     padding: .3em .5em;
-}
-
-.footer {
-    box-sizing: border-box;
-    clear: both;
-    background-color: darkslateblue;
-    color: whitesmoke;
-    padding: 1em;
-    text-align: center;
 }
 
 .hide {

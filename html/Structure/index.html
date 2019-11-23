@@ -7,8 +7,8 @@
     <meta name='keywords' content='azione, console, news, gaming, eventi, cosplay' />
     <meta name="title" content="Sito interattivo sul gaming" />
     <link rel="stylesheet" href="../../css/comune.css" />
-    <!--al momento uso questo per identificare i dispositivi mobile, poi dovremo discutere su quali query fare per ottenere più dispositivi possibili-->
     <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
     <link rel="apple-touch-icon" href="../../images/icons/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="../../images/icons/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" href="../../images/icons/favicon/favicon-16x16.png" />
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <!--
     <ul class="header">
         <li>
             <h1 id="home"><span xml:lang="en">Decrypted Games</span></h1>
@@ -40,8 +40,42 @@
             <a title="Registrati" href="../User/registrazione.html"><img src="../../images/icons/Registrati-sito-web.png" alt="icona registrazione" /></a>
         </li>
     </ul>
+    -->
 
-    <ul class="menu">
+    <div id="header2">
+        <a href="">
+            <img id="siteLogo" src="../../images/icons/fantasmino-logo75x75.png" alt="Decrypted Games Logo" />
+        </a>
+        <div id="headerContent">
+
+            <div id="headerUtility">
+                <span id="accessUtilities">
+                    <a id="signIn" title="Registrati" href="../User/registrazione.html">Registrati</a>
+                    <a id="login" title="Login" href="../User/login.html" xml:lang="en">Login</a>
+                </span>
+
+                <form id="searchUtility" action="http://www.google.com/search">
+                    <fieldset>
+                        <input type="text" title="search"/>
+                        <input type="submit" value="Cerca" />
+                    </fieldset>
+                </form>
+
+                <div class="screenReaderHelper">
+                    <a href="#content">Vai al contenuto</a>
+                </div>
+            </div>
+
+            <div id="siteTitle">
+                <h1>
+                    <span xml:lang="en">Decrypted Games</span>
+                </h1>
+                <h2>Trovare un sottotitolo d'effetto</h2>
+            </div>
+        </div>
+    </div>
+
+    <ul id="menu">
         <li id="currentlink"><span xml:lang="en">Home</span></li>
         <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
         <li><a href="../Recensioni/recensioni.html">Recensioni</a></li>
@@ -49,7 +83,7 @@
         <li><a href="../Guide/guide.html">Guide</a></li>
     </ul>
 
-    <div class="content">
+    <div id="content">
         <ul class="topArticles">
             <li>
                 <h2>
@@ -229,9 +263,39 @@
 
     </div>
 
-    <div class="footer ">
-        <p>
-            <span xml:lang="en ">Copyright - All rights reservd</span></p>
+
+    <div id="footer">
+        <div class="footerInline">
+            <p>Torna a</p>
+            <ul>
+                <li><a href ="" xml:lang="en">Home</a></li>
+                <li><a href ="" xml:lang="en">News</a></li>
+                <li><a href ="">Recensioni</a></li>
+                <li><a href ="">Eventi</a></li>
+                <li><a href ="">Guide</a></li>
+            </ul>
+        </div>
+
+        <div class="footerInline">
+            <p>Unisciti</p>
+            <ul>
+                <li><a href ="" xml:lang="en">Accedi</a></li>
+                <li><a href ="">Crea un account</a></li>
+            </ul>
+        </div>
+
+        <div class="footerInline">
+            <p>Contatti</p>
+            <ul>
+                <li><a href ="">Chi siamo</a></li>
+                <li><a href ="">Lavora con noi</a></li>
+            </ul>
+        </div>
+
+        <div id="imgsFooter">
+            <img id="validXhtml" src="../../images/footer/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+            <img id="validCss" src="../../images/footer/valid-css2.png" alt="Valid CSS 2" height="31" width="88" />
+        </div>
     </div>
 
 </body>

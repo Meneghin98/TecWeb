@@ -1,0 +1,75 @@
+/* ---------------------- */
+/*          Font          */
+/* ---------------------- */
+
+html body {
+    font-family: Helvetica, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+
+/* ---------------------- */
+/*          Header        */
+/* ---------------------- */
+
+#siteLogo, #headerUtility {
+    display: none;
+}
+
+#printLogo {
+    float: left;
+    padding: 2px 2px 2px 2px;
+    width: 8%
+}
+
+
+
+/* ---------------------- */
+/*          Menu        */
+/* ---------------------- */
+
+#menu {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 1em 0 1em;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0 6% 1em 6%;
+}
+
+#menu li a {
+    display: inline-block;
+}
+
+#menu li:nth-of-type(1) {
+    border-left: 0;
+}
+
+#currentlink {
+    font-weight: bold;
+}
+
+
+
+/* ---------------------------- */
+/*   Top Aticles (da rivedere)  */
+/* ---------------------------- */
+
+
+/* ----------------------------- */
+/*   Interno body (da rivedere)  */
+/* ----------------------------- */
+
+
+
+/* ---------------------- */
+/*          Footer        */
+/* ---------------------- */
+.footerInline {
+    display: none;
+}

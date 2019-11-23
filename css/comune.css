@@ -12,7 +12,6 @@
 body {
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 0.9em;
-    max-width: 1920px;
     height: 100%;
     background-color: #262626;
     background-image: linear-gradient(grey, #262626, #131313, black);
@@ -39,9 +38,8 @@ body {
 /* --------------------------- */
 
 #header2 {
-    width: 100%;
     color: white;
-    padding: 4px 4px 30px 4px;
+    padding: 2% 2% 6% 2%;
     background-color: black;
 }
 
@@ -60,14 +58,18 @@ body {
 
 #siteLogo {
     float: left;
-    padding: 3px 4px 3px 3px;
+    padding: 2px 2px 2px 2px;
     width: 8%
+}
+
+#printLogo {
+    display: none;
 }
 
 #siteTitle {
     text-align: left;
     width: 60%;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 #headerUtility {
@@ -112,13 +114,11 @@ body {
     background-color: #262626;
 }
 
-=======
     background-image: linear-gradient(grey, #262626, #131313, black);
     background-position: center;
     background-repeat: no-repeat;
 }
 
->>>>>>> 648080cc3639aef8c506501c171bf1a518d91791
 .header {
     position: relative;
     width: 100%;
@@ -234,9 +234,9 @@ body {
 
 
 #content {
-    margin: 0 auto;
-    max-width: 1140px;
+    margin: auto;
     background-color: white;
+    max-width: 1080px;
 }
 
 
@@ -374,7 +374,7 @@ body {
 .articleList li img {
     float: left;
     width: 20%;
-    margin-right: 1em;
+    padding-right: 1em;
 }
 
 .articleList li a:link {

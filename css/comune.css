@@ -111,6 +111,13 @@ body {
     background-color: #262626;
 }
 
+=======
+    background-image: linear-gradient(grey, #262626, #131313, black);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+>>>>>>> 648080cc3639aef8c506501c171bf1a518d91791
 .header {
     position: relative;
     width: 100%;
@@ -138,13 +145,16 @@ body {
     right: 7em;
     bottom: 1.7em;
 }
-#searchBar fieldset{
+
+#searchBar fieldset {
     border: none;
 }
-#searchBar label{
+
+#searchBar label {
     position: absolute;
     left: -9999px;
 }
+
 #searchBar button {
     border: 0;
     background: transparent;
@@ -435,7 +445,7 @@ body {
     display: none;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 

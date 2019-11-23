@@ -10,14 +10,9 @@ body {
     margin: auto;
     height: 100%;
     background-color: #262626;
-    background-image: url(../images/horizon-zero-dawn-4k-game-on.jpg);
+    background-image: linear-gradient(grey, #262626, #131313, black);
     background-position: center;
     background-repeat: no-repeat;
-}
-
-#noBackground {
-    background-image: none;
-    background-color: #262626;
 }
 
 .header {
@@ -47,13 +42,16 @@ body {
     right: 7em;
     bottom: 1.7em;
 }
-#searchBar fieldset{
+
+#searchBar fieldset {
     border: none;
 }
-#searchBar label{
+
+#searchBar label {
     position: absolute;
     left: -9999px;
 }
+
 #searchBar button {
     border: 0;
     background: transparent;
@@ -312,7 +310,7 @@ body {
     display: none;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 

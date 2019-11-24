@@ -6,7 +6,7 @@
 #### News
   - Lucca comics
   - Monitor xiaomi
-  - Death stranding pc
+  
 
 #### Eventi
 #### Guide
@@ -17,5 +17,6 @@
   - Vampyr
   
 #### News
+  - Death stranding pc
 #### Eventi
 #### Guide

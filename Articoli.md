@@ -1,11 +1,9 @@
 # ARTICOLI 
 ## In progress
 #### Recensioni
-  - Star wars 
+  
 
 #### News
-  - Lucca comics
-  - Monitor xiaomi
   
 
 #### Eventi
@@ -13,10 +11,14 @@
 
 ## Completed
 #### Recensioni
-  - Call of duty 
-  - Vampyr
+	- Call of duty 
+	- Vampyr
+	- Star wars Jedi: Fallen order PS4
   
 #### News
-  - Death stranding pc
+	- Death Stranding pc
+	- Lucca Comics
+	- Monitor Xiaomi
+	  
 #### Eventi
 #### Guide

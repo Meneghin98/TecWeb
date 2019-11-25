@@ -72,6 +72,13 @@
         bottom: 2.75em;
     }
     
+    .header #home {
+        background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+        padding: 1.5em 16em 2em 2em;
+    }
+    
     .header li h1 {
         position: absolute;
         left: 0.1em;

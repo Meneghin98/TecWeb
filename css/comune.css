@@ -234,9 +234,9 @@ body {
 
 
 #content {
+    background-color: transparent;
     margin: auto;
-    background-color: white;
-    max-width: 1080px;
+    max-width: 1200px;
 }
 
 
@@ -256,20 +256,18 @@ body {
 /* --------------------------- */
 
 #menu {
-    background-color: #131313;
     text-align: center;
     font-size: 1em;
-    padding: 1em 1em 0 1em;
+    float: left;
+    width: 17%;
 }
 
 #menu li {
-    display: inline-block;
-    padding: 0 6% 1em 6%;
+    padding: 12% 1.5em 12% 0;
+
+    list-style-type: none;
 }
 
-#menu li a {
-    display: inline-block;
-}
 
 #menu li:nth-of-type(1) {
     border-left: 0;
@@ -353,6 +351,7 @@ body {
 }
 
 .articleList {
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

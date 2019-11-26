@@ -12,6 +12,7 @@
 .topArticles li {
     flex: 50%;
     position: relative;
+    min-height: 4em;
     text-align: center;
     overflow: hidden;
     background-color: rgba(33, 33, 33, 0.8);

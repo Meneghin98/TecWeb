@@ -14,7 +14,7 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    
+    /*
     .header {
         position: relative;
         width: 100%;
@@ -66,6 +66,7 @@
         right: 12em;
         bottom: 2.75em;
     }
+
     
     .header #home {
         background-image: url("../images/icons/fantasmino-logo+scritta.png");
@@ -106,7 +107,60 @@
         text-decoration: none;
         color: #0E9C09;
     }
-    
+    */
+    .header{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        border-bottom: 0.5em solid #0E9C09;
+        color: #0E9C09;
+        background-color: black;
+        justify-content: space-between;
+    }
+    .headerChild:nth-of-type(1){
+        -webkit-box-flex: 20%;
+        -moz-box-flex:  20%;
+        -webkit-flex:  20%;
+        -ms-flex:  20%;
+        flex: 20%;
+        background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+        padding: 5em 16em 2em 2em;
+    }
+    .headerChild:nth-of-type(2){
+        margin-top: 2.2em;
+        margin-right: 1em;
+    }
+    .headerChild:last-of-type{
+        margin-right: 1em;
+        margin-top: 1.64em;
+    }
+    #searchBar fieldset {
+        border: none;
+    }
+
+    #searchBar label {
+        position: absolute;
+        left: -9999px;
+    }
+    #searchBar button {
+        position: relative;
+        right: 2.5em;
+        top: 0.4em;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+    #searchBar input{
+        position: relative;
+        border-radius: 25px;
+        border: 3px solid #0E9C09;
+        padding: .3em 2.1em 0.3em 1em;
+    }
+
     .hamburger-menu {
         display: none;
     }
@@ -197,12 +251,11 @@
     }
     
     .rightPanel dd {
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
         list-style-type: none;
-        padding: 0.5em 0;
+        padding: 1em 0;
         overflow: auto;
         text-align: justify;
         border-top: 1px solid #dddcdc;

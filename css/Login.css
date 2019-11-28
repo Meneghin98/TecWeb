@@ -4,7 +4,8 @@
 }
 
 .signIn {
-    margin: 0em 25em;
+    margin: 0em auto;
+    width: 25em;
     padding: 1em 2em;
     background-color: white;
     border: transparent;
@@ -19,6 +20,10 @@
     width: 2%;
     display: block;
     margin: 0em auto;
+}
+
+legend {
+    padding-top: 1em;
 }
 
 form {
@@ -38,7 +43,14 @@ label {
     font-size: 70%;
 }
 
+#AccediLogin {
+    font-size: x-large;
+    padding: 0em 2em;
+}
+
 .pulsantiLogin {
-    margin-top: 2em;
+    width: 13em;
+    display: block;
+    margin: 2em auto 0em auto;
 }
 

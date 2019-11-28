@@ -118,25 +118,32 @@
         color: #0E9C09;
         background-color: black;
         justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5em;
     }
     .headerChild:nth-of-type(1){
-        -webkit-box-flex: 20%;
-        -moz-box-flex:  20%;
+        -webkit-box-flex: 10;
+        -moz-box-flex:  10;
         -webkit-flex:  20%;
         -ms-flex:  20%;
         flex: 20%;
+        height: 6em;
         background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-size: contain;
         background-position: center left;
         background-repeat: no-repeat;
-        padding: 5em 16em 2em 2em;
+
+    }
+    #home {
+        text-indent:100%;
+        white-space:nowrap;
+        overflow:hidden;
     }
     .headerChild:nth-of-type(2){
-        margin-top: 2.2em;
         margin-right: 1em;
     }
     .headerChild:last-of-type{
         margin-right: 1em;
-        margin-top: 1.64em;
     }
     #searchBar fieldset {
         border: none;
@@ -402,10 +409,24 @@
     }
     
     @media screen and (max-width: 960px) {
+        .header {
+            flex-wrap: wrap;
+            padding-bottom: 0.5em;
+        }
+        .headerChild:nth-of-type(1){
+            flex: 100%;
+        }
+        .headerChild:nth-of-type(2){
+            margin-left: 1em;
+        }
         .flexColumn:last-of-type {
             display: none;
         }
+
         .flexColumn:nth-of-type(1) {
             flex: 100%;
         }
-    }
+    }background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-size: contain;
+        background-position: center left;
+        background-repeat: no-repeat;

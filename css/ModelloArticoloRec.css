@@ -48,7 +48,7 @@
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: justify;
+
 }
 
 .description p:nth-of-type(1) {
@@ -78,7 +78,7 @@
 }
 
 .comment {
-    background-color: limegreen;
+    background-color: #ACE0C699;
     padding: 0.5em 2em;
     margin: 0 2em;
     border-bottom-left-radius: 30px;
@@ -94,7 +94,6 @@
     margin: 1em 4em;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: justify;
 }
 
 .diffs {

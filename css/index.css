@@ -5,8 +5,8 @@
 .topArticles {
     display: flex;
     flex-wrap: wrap;
-    background-color: #0E9C09;
-    padding-bottom: 2em;
+    list-style-type: none;
+    border-bottom: 1.1em solid #0E9C09;
 }
 
 .topArticles li {
@@ -17,8 +17,9 @@
     background-color: rgba(33, 33, 33, 0.8);
 }
 
-.topArticles li h2 img {
+.topArticles li  img {
     width: 100%;
+    height: 100%;
     -webkit-transition: 0.8s;
     -moz-transition: 0.8s;
     -o-transition: 0.8s;

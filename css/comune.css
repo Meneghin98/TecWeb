@@ -18,8 +18,7 @@
     .header {
         position: relative;
         width: 100%;
-        padding-bottom: 0.5em;
-        background-color: #0E9C09;
+        border-bottom: 0.5em solid #0E9C09;
         color: #0E9C09;
         text-align: center;
         margin: 0 auto;
@@ -28,20 +27,16 @@
     
     .header li {
         padding-bottom: 1.65em;
-        background-color: #262626;
+        background-color: black;
     }
     
-    .header li a {
+    #login {
         position: absolute;
         right: 2em;
         bottom: 1.7em;
     }
     
-    #login {
-        position: absolute;
-        right: 7em;
-        bottom: 1.7em;
-    }
+
     
     #searchBar fieldset {
         border: none;
@@ -121,8 +116,8 @@
         max-width: 1140px;
         background-color: white;
     }
-    
-    .menu {
+
+    #menu-home {
         background-color: #131313;
         list-style-type: none;
         text-align: center;
@@ -131,18 +126,32 @@
         flex-wrap: nowrap;
         max-width: 1140px;
         margin: 0 auto;
+        border-right: 250px solid #131313;
+        border-left: 250px solid #131313;
+    }
+    .menu {
+        background-color: #131313;
+        list-style-type: none;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 640px;
+        margin: 0 auto;
+        border-right: 250px solid #131313;
+        border-left: 250px solid #131313;
     }
     
     .menu li {
-        width: 20%;
+        flex: 20%;
         display: inline-block;
         border-left: 1px solid #dddcdc;
         text-align: center;
         margin: 0.5em 0;
     }
     
-    .menu li:nth-of-type(1) {
-        border-left: 0;
+    .menu li:last-of-type {
+        border-right: 1px solid #dddcdc;
     }
     
     .menu a:link {

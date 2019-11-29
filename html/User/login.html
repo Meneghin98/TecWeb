@@ -2,70 +2,71 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Accedi - Decrypted Games</title>
-    <meta name="title" content="Sito interattivo sul gaming" />
-    <meta name="description" content="Pagina personale dell'utente" />
-    <meta name="keywords" content="Games Decrypting, gaming, utente, login, area personale" />
-    <meta name="language" content="italian it" />
-    <meta name="author" content="Enrico Salmaso" />
-    <link rel="stylesheet" href="../../css/comune.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/Login.css" type="text/css" />
+    <meta name="title" content="Sito interattivo sul gaming"/>
+    <meta name="description" content="Pagina personale dell'utente"/>
+    <meta name="keywords" content="Games Decrypting, gaming, utente, login, area personale"/>
+    <meta name="language" content="italian it"/>
+    <meta name="author" content="Enrico Salmaso"/>
+    <link rel="stylesheet" href="../../css/comune.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/Login.css" type="text/css"/>
 </head>
 
 <body>
-    <ul class="header">
-        <li>
-            <h1><span xml:lang="en">Decrypted Games</span></h1>
-        </li>
-        <li id="searchBar">
-            <input type="text" placeholder="Search.." />
-            <button type="submit" style="border: 0; background: transparent">
-                <img src="../../images/icons/20x20-lente.png" alt="submit" />
+<div id="header">
+    <div class="headerChild">
+        <h1><a href="../Structure/index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"
+                                                             alt="Decrypted Games"/></a></h1>
+    </div>
+    <div class="headerChild" id="searchBar">
+        <fieldset>
+            <label for="search">Ricerca</label>
+            <input type="text" id="search"/>
+            <button type="submit">
+                <img src="../../images/icons/20x20-lente.png" alt="submit"/>
             </button>
-        </li>
-        <li>
-            <a id="login" title="Login" href="Login.html"><img src="../../images/icons/login-sito-web.png"
-                    alt="icona login" /></a>
-        </li>
-        <li>
-            <a title="Registrati" href="Registrazione.html"><img src="../../images/icons/Registrati-sito-web.png"
-                    alt="icona registrazione" /></a>
-        </li>
-    </ul>
-
-    <ul class="menu">
-        <li id="currentlink"><span xml:lang="en">Home</span></li>
-        <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
-        <li><a href="../Recensioni/recensioni.html">Recensioni</a></li>
-        <li><a href="../Eventi/eventi.html">Eventi</a></li>
-        <li><a href="../Guide/guide.html">Guide</a></li>
-    </ul>
-    <div class="content" id="contentLogin">
-        <fieldset class="signIn">
-            <legend><strong>Accedi</strong></legend>
-            <img class="imageLogin" src="" alt="">
-            <form action="php.txt">
-                <label for="email" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
-                <input name="emailLogin" id="email" maxlength="30" />
-
-                <label for="password" xml:lang="en"><span xml:lang="en">Password</span>:</label>
-                <input type="passwordLogin" name="password" id="password" maxlength="20" />
-
-                <p><a href="registrazione.html">Non sei ancra registrato? Registrati</a></p>
-
-                <div class="pulsantiLogin">
-                    <label for="Accedi"></label>
-                    <input type="submit" value="Accedi" id="AccediLogin" />
-                </div>
-            </form>
         </fieldset>
     </div>
+    <div class="headerChild">
+        <a id="login" title="Login e registrazione" href="../User/login.html"><img
+                src="../../images/icons/Registrati-sito-web.png"
+                alt="login e registrazione"/></a>
+    </div>
+</div>
 
-    <div class="footer">
-        <p><span xml:lang="en">Copyright - All rights reservd</span></p>
-    </div>
-    </div>
+<ul class="menu">
+    <li id="currentlink"><span xml:lang="en">Home</span></li>
+    <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
+    <li><a href="../Recensioni/recensioni.html">Recensioni</a></li>
+    <li><a href="../Eventi/eventi.html">Eventi</a></li>
+    <li><a href="../Guide/guide.html">Guide</a></li>
+</ul>
+<div class="content" id="contentLogin">
+    <fieldset class="signIn">
+        <legend><strong>Accedi</strong></legend>
+        <img class="imageLogin" src="" alt="">
+        <form action="php.txt">
+            <label for="email" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
+            <input name="emailLogin" id="email" maxlength="30"/>
+
+            <label for="password" xml:lang="en"><span xml:lang="en">Password</span>:</label>
+            <input type="passwordLogin" name="password" id="password" maxlength="20"/>
+
+            <p><a href="registrazione.html">Non sei ancra registrato? Registrati</a></p>
+
+            <div class="pulsantiLogin">
+                <label for="Accedi"></label>
+                <input type="submit" value="Accedi" id="AccediLogin"/>
+            </div>
+        </form>
+    </fieldset>
+</div>
+
+<div class="footer">
+    <p><span xml:lang="en">Copyright - All rights reservd</span></p>
+</div>
+</div>
 </body>
 
 </html>

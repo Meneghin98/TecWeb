@@ -4,11 +4,11 @@
 }
 
 .pro {
-    list-style-image: url("../images/icon_correct_247100.png");
+    list-style-image: url("../images/icons/icon_correct_247100.png");
 }
 
 .contro {
-    list-style: url("../images/wrong_1275646.png");
+    list-style: url("../images/icons/wrong_1275646.png");
 }
 
 .intestazione h1 {
@@ -48,7 +48,7 @@
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: justify;
+
 }
 
 .description p:nth-of-type(1) {
@@ -78,11 +78,13 @@
 }
 
 .comment {
-    background-color: limegreen;
-    padding: 0.5em 2em;
+    background-color: 	#32cd3266;
     margin: 0 2em;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    padding: 0.5em 2em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid limegreen;
+    border-top: 0;
 }
 
 .comment h3 {
@@ -94,7 +96,6 @@
     margin: 1em 4em;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: justify;
 }
 
 .diffs {
@@ -105,7 +106,6 @@
 .diffs div {
     flex: 50%;
     margin: 2em;
-    text-align: justify;
 }
 
 .pro h3 {
@@ -136,14 +136,16 @@
 
 .voto {
     display: block;
-    margin: 0 auto;
-    background-color: lawngreen;
+    background-color: limegreen;
     text-align: center;
     margin: 0 1em;
     font-weight: bold;
     font-size: 2em;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.voto p{
+    margin: 0 1em;
 }
 
 .description img {
@@ -164,4 +166,11 @@
 
 .index a:visited {
     text-decoration: none;
+}
+.voto p:nth-of-type(1){
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+.voto p:nth-of-type(2){
+    padding-bottom: 0.5em;
 }

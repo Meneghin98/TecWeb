@@ -14,24 +14,100 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    /*
+    .header {
+        position: relative;
+        width: 100%;
+        border-bottom: 0.5em solid #0E9C09;
+        color: #0E9C09;
+        text-align: center;
+        margin: 0 auto;
+        list-style-type: none;
+    }
+    
+    .header li {
+        padding-bottom: 1.65em;
+        background-color: black;
+    }
+    
+    #login {
+        position: absolute;
+        right: 2em;
+        bottom: 1.7em;
+    }
+    
 
-    h1.headerChild a {
+    
+    #searchBar fieldset {
+        border: none;
+    }
+    
+    #searchBar label {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    #searchBar button {
+        border: 0;
+        background: transparent;
+        position: relative;
+        right: 2.6em;
+        cursor: pointer;
+    }
+    
+    .header li input {
+        border-radius: 25px;
+        border: 3px solid #0E9C09;
+        padding: .7em 2.1em 0 1em;
+    }
+    
+    .header fieldset {
+        position: absolute;
+        right: 12em;
+        bottom: 2.75em;
+    }
+
+    
+    .header #home {
+        background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+        padding: 1.5em 16em 2em 2em;
+    }
+    
+    .header li h1 {
+        position: absolute;
+        left: 0.1em;
+        padding-top: 0.2em;
+    }
+    
+    .header li h1 a {
         position: initial;
-
+        width: max-content;
     }
-
-    .h1.headerChild a img {
-        transition: 0.8s;
+    
+    .header li h1 a img {
+        transition: 0.4s;
     }
-
-    h1.headerChild a img:hover {
+    
+    .header li h1 a img:hover {
         -moz-transform: scale(0.9) rotate(0deg);
         -webkit-transform: scale(0.9) rotate(0deg);
         -o-transform: scale(0.9) rotate(0deg);
         -ms-transform: scale(0.9) rotate(0deg);
         transform: scale(0.9) rotate(0deg);
     }
-
+    
+    .header li h1 a:link {
+        text-decoration: none;
+        color: #0E9C09;
+    }
+    
+    .header li h1 a:visited {
+        text-decoration: none;
+        color: #0E9C09;
+    }
+    */
     .header{
         display: -webkit-box;
         display: -moz-box;
@@ -45,29 +121,28 @@
         align-items: center;
         padding-top: 0.5em;
     }
-    h1.headerChild {
+    .headerChild:nth-of-type(1){
         -webkit-box-flex: 10;
         -moz-box-flex:  10;
         -webkit-flex:  20%;
         -ms-flex:  20%;
         flex: 20%;
-        height: 3em;
-    }
-    h1#home{
+        height: 6em;
         background-image: url("../images/icons/fantasmino-logo+scritta.png");
         background-size: contain;
         background-position: center left;
         background-repeat: no-repeat;
+
     }
     #home {
         text-indent:100%;
         white-space:nowrap;
         overflow:hidden;
     }
-    .headerChild:nth-child(2){
+    .headerChild:nth-of-type(2){
         margin-right: 1em;
     }
-    .headerChild:last-child{
+    .headerChild:last-of-type{
         margin-right: 1em;
     }
     #searchBar fieldset {
@@ -132,7 +207,7 @@
     }
     
     .menu li {
-        flex: 25%;
+        flex: 20%;
         display: inline-block;
         border-left: 1px solid #dddcdc;
         text-align: center;
@@ -341,21 +416,17 @@
         .headerChild:nth-of-type(1){
             flex: 100%;
         }
-        #searchBar{
-            flex: 15;
-            margin-left: 1.5em;
-            margin-right: 0;
+        .headerChild:nth-of-type(2){
+            margin-left: 1em;
         }
-        #login{
-            flex: 1;
-
-        }
-
         .flexColumn:last-of-type {
-            display: none
+            display: none;
         }
 
         .flexColumn:nth-of-type(1) {
             flex: 100%;
         }
-    }
+    }background-image: url("../images/icons/fantasmino-logo+scritta.png");
+        background-size: contain;
+        background-position: center left;
+        background-repeat: no-repeat;

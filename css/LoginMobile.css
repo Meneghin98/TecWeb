@@ -1,0 +1,12 @@
+@media screen and (max-device-width: 480px) {
+    #header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    .menuMobile {
+        text-align: center;
+    }
+}

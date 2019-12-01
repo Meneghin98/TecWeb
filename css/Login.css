@@ -13,10 +13,10 @@
 }
 
 .imageLogin {
-    background-image: url(../images/icons/login100x100.png);
+    background-image: url(../images/icons/login.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20%;
+    /*background-size: 20%;*/
     padding: 3em 2em 2em 2em;
     display: block;
     margin: 0em auto;

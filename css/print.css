@@ -1,0 +1,254 @@
+/* ---------------------- */
+/*          Font          */
+/* ---------------------- */
+
+html body {
+    font-family: Helvetica, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+
+/* ---------------------- */
+/*          Header        */
+/* ---------------------- */
+
+.bgimage{
+    clear: both;
+}
+
+#home {
+    font-size: 2em;
+    text-align: center;
+}
+
+#searchBar, #login {
+    display: none;
+}
+
+/* ---------------------- */
+/*          Menu        */
+/* ---------------------- */
+
+.menu {
+    text-align: center;
+    font-size: 1em;
+    max-width: 60%;
+    margin: auto;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    flex: 20%;
+    padding: 0 6% 1em 6%;
+}
+
+#currentlink {
+    font-weight: bold;
+}
+
+/* ---------------------------- */
+/*          Top Aticles         */
+/* ---------------------------- */
+
+.topArticles {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+}
+
+.topArticles li {
+    flex: 50%;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    height: 25%;
+    padding-bottom: 1.3em;
+}
+
+.topArticles a {
+    display: inline-block;
+    color: black;
+}
+
+.topArticles li img {
+    width: 300px;
+    height: auto;
+    max-height: 170px;
+    overflow: hidden;
+}
+
+.topArticleTitle {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: white;
+}
+
+/* ----------------------------- */
+/*          Interno body         */
+/* ----------------------------- */
+
+.rightPanel {
+    display: none;
+}
+
+.articleList li {
+    clear: both;
+    padding-top: 1em;
+    margin: 0 1em 1em 1em;
+    list-style-type: none;
+    height: 25%;
+}
+
+.articleList li img {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    max-height: 140px;
+    max-width: 140px;
+    margin-right: 1em;
+}
+
+.articleList li a {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.articleListTitle {
+    font-size: 0.9em;
+}
+
+.articleListDesc {
+    font-weight: normal;
+}
+
+
+/* ---------------------- */
+/*          Content       */
+/* ---------------------- */
+
+.content, .content a {
+    color: black;
+}
+
+.intestazione h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.shortDesc, .writer {
+    padding-left: 2em;
+}
+
+.dataCorsivo {
+    font-style: italic;
+}
+
+.index {
+    border: 1px solid black;
+    float: right;
+    margin: 1em 0 1em 1em;
+    padding: 1em;
+}
+
+.index h3 {
+    padding-bottom: 0.5em;
+}
+
+.description {
+    text-align: justify;
+    margin: 0;
+}
+
+.description p {
+    padding: 0 2em;
+    font-size: 1.2em;
+}
+
+.index a {
+    text-decoration: none;
+}
+
+.description img {
+    width: 50%;
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
+.subtitle {
+    margin-top: 2em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.comment {
+    padding: 0.5em 2em;
+}
+
+.comment h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.comment p {
+    margin: 1em 15em;
+    text-align: justify;
+}
+
+.diffs {
+    display: flex;
+    margin-left: 7em;
+}
+
+.diffs div {
+    flex: 50%;
+    margin: 2em;
+    text-align: justify;
+}
+
+.diffs h3 {
+    margin: 0.5em 0;
+}
+
+.pro {
+    list-style-image: url("../images/icon_correct_247100.png");
+}
+
+.contro {
+    list-style: url("../images/wrong_1275646.png");
+}
+
+.voto {
+    display: block;
+    text-align: center;
+    margin: 3em auto 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+/* ---------------------- */
+/*          Footer        */
+/* ---------------------- */
+
+.footerInline {
+    display: none;
+}
+
+#imgsFooter {
+    clear: both;
+}

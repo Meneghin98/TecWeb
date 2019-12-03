@@ -6,8 +6,9 @@ DROP TABLE IF EXISTS Images;
 DROP TABLE IF EXISTS Categories;
 DROP TABLE IF EXISTS Follows;
 
-CREATE TABLE Users
-(
+SET storage_engine=InnoDB
+
+CREATE TABLE Users(
     nickname VARCHAR (50) PRIMARY KEY,
     pwd VARCHAR (50) NOT NULL,
     email VARCHAR (50) NOT NULL,

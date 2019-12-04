@@ -12,7 +12,7 @@
 }
 
 .intestazione h1 {
-    text-align: center;
+    margin-left: 1em;
     padding-top: 1.2em;
     padding-bottom: 0.5em;
     font-size: 3em;
@@ -21,9 +21,13 @@
 
 .shortDesc {
     padding-left: 2em;
+    margin-left: 1em;
+    margin-right: 5em;
 }
 
 .writer {
+    margin-top: 0.3em;
+    margin-left: 1em;
     color: #086605;
     padding-left: 2em;
 }

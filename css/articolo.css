@@ -19,13 +19,17 @@
         .intestazione {
             margin: 0 1em 1em 1em;
         }
-        
-        h1 {
+
+        .intestazione h1 {
+            margin-left: 1em;
+            padding-top: 1.2em;
+            padding-bottom: 0.2em;
             font-size: 2em;
         }
-        
         .writer {
-            font-size: 1.2em;
+            margin-top: 0.3em;
+            margin-bottom: 2.5em;
+            padding-left: 2em;
         }
         
         .dataCorsivo {

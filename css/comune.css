@@ -6,7 +6,6 @@
     body {
         font-family: Verdana, Helvetica, sans-serif;
         font-size: 0.9em;
-        max-width: 1920px;
         margin: auto;
         height: 100%;
         background-color: #262626;
@@ -126,6 +125,7 @@
         background-image: url("../images/icons/fantasmino-logo+scritta.png");
         background-position: center left;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     #home {
         text-indent:100%;
@@ -167,13 +167,13 @@
     
     .content {
         margin: 0 auto;
-        max-width: 1300px;
+        max-width: 1600px;
         background-color: white;
     }
 
     .menu{
         background-color: #131313;
-        max-width: 1300px;
+        max-width: 1600px;
         margin: 0 auto;
     }
     .menu ul {
@@ -388,12 +388,13 @@
     .hide {
         display: none;
     }
-    
+
     @media screen and (max-width: 960px) {
         #header {
             flex-wrap: wrap;
             padding-bottom: 0.5em;
             justify-content: flex-end;
+
         }
         .flexColumn:last-of-type {
             display: none;
@@ -401,5 +402,13 @@
 
         .flexColumn:nth-of-type(1) {
             flex: 100%;
+        }
+    }
+    @media screen and (max-device-width: 960px) {
+    .flexColumn:last-of-type{
+        display: none;
+    }
+        .menu{
+            display: none;
         }
     }

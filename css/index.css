@@ -71,16 +71,28 @@
     text-align: center;
 }
 
-@media screen and (max-width: 960px) {
-    .topArticles li {
-        flex: 50%;
-    }
-}
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-device-width: 640px) {
+    body{
+        font-size: 2em;
+    }
     .topArticles {
-        flex-direction: column;
         flex: 100%;
         max-width: 100%;
+        flex-wrap: wrap;
     }
+    .topArticles li:first-of-type{
+        flex:100%
+    }
+    .topArticles li:nth-of-type(2){
+        flex: 50%;
+    }
+    .topArticles li:nth-of-type(3){
+        flex:50%
+    }
+    .topArticles li:last-of-type{
+        display: none;
+    }
+
 }

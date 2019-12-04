@@ -18,18 +18,18 @@
     font-size: 3em;
     color: #088700
 }
-
+.shortDesc, .writer{
+    margin-left: 3em;
+}
 .shortDesc {
-    padding-left: 2em;
-    margin-left: 1em;
     margin-right: 5em;
 }
 
 .writer {
     margin-top: 0.3em;
-    margin-left: 1em;
+
     color: #086605;
-    padding-left: 2em;
+
 }
 
 

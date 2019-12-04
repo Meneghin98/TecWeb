@@ -32,6 +32,10 @@
     padding-left: 2em;
 }
 
+.dataCorsivo {
+    font-style: italic;
+}
+
 .index {
     color: #088700;
     border: 2px solid #0E9C09;
@@ -61,9 +65,18 @@
 
 .description h2 {
     border-bottom: 0.1em solid #088700;
-    margin-left: 2em;
+    margin-left: 3.3em;
     margin-top: 3em;
-    margin-right: 8.5em;
+    margin-right: 13.5em;
+    font-size: 1.8em;
+    color: black;
+}
+
+.description h2:nth-of-type(1) {
+    border-bottom: 0.1em solid #088700;
+    margin-left: 3.3em;
+    margin-top: 2em;
+    margin-right: 13.5em;
     font-size: 1.8em;
     color: black;
 }
@@ -150,14 +163,10 @@
 .index a:visited {
     text-decoration: none;
 }
-.voto p:first-of-type{
+.voto p:nth-of-type(1){
     padding-top: 0.5em;
     padding-bottom: 0.2em;
 }
 .voto p:nth-of-type(2){
     padding-bottom: 0.5em;
-}
-
-.tornasu {
-    float: right;
 }

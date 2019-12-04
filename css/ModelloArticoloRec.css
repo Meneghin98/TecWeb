@@ -32,7 +32,6 @@
 
 }
 
-
 .index {
     color: #088700;
     border: 2px solid #0E9C09;
@@ -62,13 +61,12 @@
 
 .description h2 {
     border-bottom: 0.1em solid #088700;
-    margin-left: 3.3em;
+    margin-left: 2em;
     margin-top: 3em;
-    margin-right: 13.5em;
+    margin-right: 8.5em;
     font-size: 1.8em;
     color: black;
 }
-
 
 .comment {
     background-color: 	#32cd3266;
@@ -159,93 +157,7 @@
 .voto p:nth-of-type(2){
     padding-bottom: 0.5em;
 }
-@media screen and (max-device-width: 640px){
-    .intestazione h1 {
-        margin-left: 0.5em;
-        font-size: 5em;
-        color: #088700
-    }
 
-    .shortDesc, .writer {
-        font-size: 2.5em;
-        padding-left: 0;
-    }
-
-    .writer {
-        color: #086605;
-    }
-
-    .index {
-        float: none;
-        margin-bottom: 0;
-        font-size: 2em;
-    }
-
-    .index h3{
-        font-size: 2em;
-    }
-    .description img{
-        width: 95%;
-        margin: 2em auto 0 auto;
-    }
-    .description p{
-        padding: 1em 1em 0 1em;
-        font-size: 3em;
-        line-height: 1.5em;
-    }
-    .description p:first-of-type{
-        margin-top: 0;
-    }
-    .description h2{
-        font-size: 5em;
-        border-bottom: none;
-        margin: 1em 0.5em 0 0.5em;
-        color: black;
-    }
-    .voto{
-        margin-top: 1em;
-    }
-    .voto p{
-        font-size: 4em;
-    }
-
-    .voto p:first-of-type{
-        margin: 0 auto;
-        padding-top: 0.5em;
-        padding-bottom: 0.2em;
-    }
-
-    .comment {
-        margin: 0 2em;
-        padding: 0.5em 2em:
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border: 2px solid limegreen;
-        border-top: 0;
-    }
-
-    .comment h3 {
-        text-align: center;
-        font-size: 5em;
-    }
-
-    .comment p {
-        margin: 0;
-        font-size: 3em;
-        line-height: 1.5em;
-    }
-
-    .diffs{
-        flex-wrap: wrap;
-    }
-    .diffs div{
-        flex: 100%;
-    }
-    .pro, .contro{
-        font-size: 3em;
-        margin: 0;
-    }
-    .diffs h3{
-        margin: 0;
-    }
+.tornasu {
+    float: right;
 }

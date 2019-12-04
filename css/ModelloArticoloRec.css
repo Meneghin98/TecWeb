@@ -161,15 +161,14 @@
 }
 @media screen and (max-device-width: 640px){
     .intestazione h1 {
-        padding-top: 1em;
-        padding-bottom: 0.5em;
+        margin-left: 0.5em;
         font-size: 5em;
         color: #088700
     }
 
     .shortDesc, .writer {
         font-size: 2.5em;
-        padding-left: 1em;
+        padding-left: 0;
     }
 
     .writer {

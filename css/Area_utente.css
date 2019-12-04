@@ -31,7 +31,7 @@ form .datiAccount{
     border: 1px solid #202020;
     padding: 0 .3em;
     cursor: pointer;
-    background-color: steelblue;
+    background-color: #0E9C09;
     color: white;
     float: right;
     position: relative;
@@ -46,30 +46,33 @@ form .datiAccount{
 }
 .saveResets #reset{
     display: inline;
-    color: whitesmoke;
-    background-color: indianred;
-    border-style: outset;
+    border-style: solid;
     border-color: orangered;
-    border-radius: 0.25em;
-    padding: 0.2em;
+    border-radius: 25px;
+    padding: 0.2em 0.5em;
     margin: 0 .25em;
+    cursor: pointer;
 }
 .saveResets #save{
     display: inline;
-    color: whitesmoke;
-    background-color: limegreen;
-    border-style: outset;
-    border-color: lime;
-    border-radius: 0.25em;
-    padding: 0.2em;
+    border-style: solid;
+    border-color: #0E9C09;
+    border-radius: 25px;
+    padding: 0.2em 0.5em;
     margin: 0 .25em;
+    cursor: pointer;
 }
 
 .datiAccount {
     text-align: left;
 }
 
-.datiAccount *{
+.datiAccount fieldset{
+    border-radius: 25px;
+    border: 3px solid #0E9C09;
+}
+
+.datiAccount fieldset label{
     display: block;
     margin: 0;
 }
@@ -77,7 +80,8 @@ form .datiAccount{
 .groupBox{
     padding: 1em;
     margin: 1em 3em;
+    border-radius: 25px;
     border-style: solid;
-    border-color: floralwhite;
-    border-width: 2px
+    border-color: #0E9C09;
+    border-width: 3px
 }

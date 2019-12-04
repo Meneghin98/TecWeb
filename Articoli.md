@@ -1,7 +1,6 @@
 # ARTICOLI 
 ## In progress
 #### Recensioni
-  	- Dead Stranding PS4
 
 #### News
 	- Cyberpunk 2077  
@@ -14,6 +13,7 @@
 	- Call of duty 
 	- Vampyr
 	- Star wars Jedi: Fallen order PS4
+	- Dead Stranding
 #### News
 	- Death Stranding pc
 	- Lucca Comics

@@ -29,11 +29,11 @@
 }
 
 .topArticles li img:hover {
-    -moz-transform: scale(1.4) rotate(0deg);
-    -webkit-transform: scale(1.4) rotate(0deg);
-    -o-transform: scale(1.4) rotate(0deg);
-    -ms-transform: scale(1.4) rotate(0deg);
-    transform: scale(1.4) rotate(0deg);
+    -moz-transform: scale(1.2) rotate(0deg);
+    -webkit-transform: scale(1.2) rotate(0deg);
+    -o-transform: scale(1.2) rotate(0deg);
+    -ms-transform: scale(1.2) rotate(0deg);
+    transform: scale(1.2) rotate(0deg);
 }
 
 .topArticles a {

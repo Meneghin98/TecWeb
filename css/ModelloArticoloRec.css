@@ -51,7 +51,7 @@
 
 }
 
-.description p:nth-of-type(1) {
+.description p:first-of-type {
     padding-top: 2em;
 }
 
@@ -111,18 +111,10 @@
     margin: 0.5em 0em;
 }
 
-.pro {
+.pro, .contro {
     font-size: 1.2em;
     line-height: 1.5em;
-    float: left;
-    margin-left: 16em;
-}
 
-.contro {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    float: right;
-    margin-right: 12em;
 }
 
 .voto {
@@ -158,8 +150,7 @@
 .index a:visited {
     text-decoration: none;
 }
-.voto p:nth-of-type(1){
-    margin-top: 1em;
+.voto p:first-of-type{
     padding-top: 0.5em;
     padding-bottom: 0.2em;
 }

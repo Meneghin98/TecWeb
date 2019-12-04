@@ -1,14 +1,15 @@
-DROP TABLE IF EXISTS Users;
-DROP TABLE IF EXISTS Comments;
-DROP TABLE IF EXISTS Likes;
-DROP TABLE IF EXISTS Articles;
-DROP TABLE IF EXISTS Images;
-DROP TABLE IF EXISTS Categories;
-DROP TABLE IF EXISTS Follows;
+CREATE DATABASE IF NOT EXISTS DecryptedGames;
 
-SET storage_engine=InnoDB
+DROP TABLE IF EXISTS images;
+DROP TABLE IF EXISTS articles;
+DROP TABLE IF EXISTS follows;
+DROP TABLE IF EXISTS likes;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS comments;
 
-CREATE TABLE Users(
+
+CREATE TABLE users(
     nickname VARCHAR (50) PRIMARY KEY,
     pwd VARCHAR (50) NOT NULL,
     email VARCHAR (50) NOT NULL,
@@ -18,7 +19,7 @@ CREATE TABLE Users(
     ref VARCHAR (50)
 );
 
-CREATE TABLE Articles
+CREATE TABLE articles
 (
     id INT PRIMARY KEY AUTO_INCREMENT,
     link VARCHAR (50) NOT NULL,
@@ -30,7 +31,7 @@ CREATE TABLE Articles
     editor VARCHAR(50) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Comments
+CREATE TABLE comments
 (
     id INT (5) PRIMARY KEY AUTO_INCREMENT,
     creation_date CHAR (32) NOT NULL,
@@ -39,7 +40,7 @@ CREATE TABLE Comments
     article INT (5) REFERENCES Articles (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Likes
+CREATE TABLE likes
 (
     nickname VARCHAR(50) NOT NULL,
     id INT (5) NOT NULL,
@@ -49,20 +50,20 @@ CREATE TABLE Likes
     FOREIGN KEY (id) REFERENCES Comments (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Images
+CREATE TABLE images
 (
     link VARCHAR (50) PRIMARY KEY,
     alt VARCHAR (10) NOT NULL,
     article INT (5) REFERENCES Articles (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Categories
+CREATE TABLE categories
 (
     id INT (5) PRIMARY KEY,
     names VARCHAR (50) UNIQUE NOT NULL
 );
 
-CREATE TABLE Follows
+CREATE TABLE follows
 (
     nickname VARCHAR(50) NOT NULL,
     id INT (5) NOT NULL,
@@ -71,3 +72,6 @@ CREATE TABLE Follows
     FOREIGN KEY (nickname) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (id) REFERENCES Categories(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+INSERT INTO users (nickname, pwd, email, username, surname, usertype, ref) VALUES ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', NULL);
+INSERT INTO users (nickname, pwd, email, username, surname, usertype, ref) VALUES ('user', 'user', 'user@user.it', 'user', 'user', 'user', NULL);

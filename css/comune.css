@@ -389,7 +389,7 @@
         display: none;
     }
     
-    @media screen and (max-width: 960px) {
+    @media screen and (max-device-width: 960px) {
         #header {
             flex-wrap: wrap;
             padding-bottom: 0.5em;

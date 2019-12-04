@@ -19,21 +19,18 @@
     color: #088700
 }
 
+.shortDesc,
+.writer {
+    margin-left: 3em;
+}
+
 .shortDesc {
-    padding-left: 2em;
-    margin-left: 1em;
     margin-right: 5em;
 }
 
 .writer {
     margin-top: 0.3em;
-    margin-left: 1em;
     color: #086605;
-    padding-left: 2em;
-}
-
-.dataCorsivo {
-    font-style: italic;
 }
 
 .index {
@@ -52,7 +49,6 @@
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
-
 }
 
 .description p:first-of-type {
@@ -65,24 +61,15 @@
 
 .description h2 {
     border-bottom: 0.1em solid #088700;
-    margin-left: 3.3em;
+    margin-left: 2em;
     margin-top: 3em;
-    margin-right: 13.5em;
-    font-size: 1.8em;
-    color: black;
-}
-
-.description h2:nth-of-type(1) {
-    border-bottom: 0.1em solid #088700;
-    margin-left: 3.3em;
-    margin-top: 2em;
-    margin-right: 13.5em;
+    margin-right: 8.5em;
     font-size: 1.8em;
     color: black;
 }
 
 .comment {
-    background-color: 	#32cd3266;
+    background-color: #32cd3266;
     margin: 0 2em;
     padding: 0.5em 2em;
     border-bottom-left-radius: 5px;
@@ -124,10 +111,10 @@
     margin: 0.5em 0em;
 }
 
-.pro, .contro {
+.pro,
+.contro {
     font-size: 1.2em;
     line-height: 1.5em;
-
 }
 
 .voto {
@@ -140,7 +127,8 @@
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.voto p{
+
+.voto p {
     margin: 0 1em;
 }
 
@@ -163,10 +151,100 @@
 .index a:visited {
     text-decoration: none;
 }
-.voto p:nth-of-type(1){
+
+.voto p:first-of-type {
+    margin-top: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.2em;
 }
-.voto p:nth-of-type(2){
+
+.voto p:nth-of-type(2) {
     padding-bottom: 0.5em;
+}
+
+@media screen and (max-device-width: 640px) {
+    .intestazione h1 {
+        margin-left: 0.5em;
+        font-size: 5em;
+        color: #088700
+    }
+    .shortDesc,
+    .writer {
+        font-size: 2.5em;
+        padding-left: 0;
+    }
+    .writer {
+        color: #086605;
+    }
+    .index {
+        float: none;
+        margin-bottom: 0;
+        font-size: 2em;
+    }
+    .index h3 {
+        font-size: 2em;
+    }
+    .description img {
+        width: 95%;
+        margin: 2em auto 0 auto;
+    }
+    .description p {
+        padding: 1em 1em 0 1em;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+    .description p:first-of-type {
+        margin-top: 0;
+    }
+    .description h2 {
+        font-size: 5em;
+        border-bottom: none;
+        margin: 1em 0.5em 0 0.5em;
+        color: black;
+    }
+    .voto {
+        margin-top: 1em;
+    }
+    .voto p {
+        font-size: 4em;
+    }
+    .voto p:first-of-type {
+        margin: 0 auto;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+    }
+    .comment {
+        margin: 0 2em;
+        padding: 0.5em 2em: border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 2px solid limegreen;
+        border-top: 0;
+    }
+    .comment h3 {
+        text-align: center;
+        font-size: 5em;
+    }
+    .comment p {
+        margin: 0;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+    .diffs {
+        flex-wrap: wrap;
+    }
+    .diffs div {
+        flex: 100%;
+    }
+    .pro,
+    .contro {
+        font-size: 3em;
+        margin: 0;
+    }
+    .diffs h3 {
+        margin: 0;
+    }
+}
+
+.tornasu {
+    float: right;
 }

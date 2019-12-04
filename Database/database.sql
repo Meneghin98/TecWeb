@@ -40,10 +40,10 @@ create TABLE articles
 (
     id INT PRIMARY KEY AUTO_INCREMENT,
     path VARCHAR(50) NOT NULL,
-    creation_date TIMESTAMP DEFAULT(CURRENT_TIMESTAMP()),
+    creation_date DATE DEFAULT(CURRENT_TIMESTAMP()),
     title VARCHAR(100) NOT NULL,
-    description VARCHAR(150),
-    category_title VARCHAR(25) NOT NULL,
+    description VARCHAR(300),
+    category_title VARCHAR(50) NOT NULL,
     article_type VARCHAR(50) NOT NULL,
     views INT(10) NOT NULL,
     category INT(5),
@@ -92,19 +92,49 @@ insert into users
 values
     ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
 
+
+
 insert into categories
     (id, names)
 values (null, 'categoriaHardware');
 insert into categories
     (id, names)
 values (null, 'categoriaEventi');
+insert into categories
+    (id, names)
+values (null, 'categoriaConsole');
+insert into categories
+    (id, names)
+values (null, 'categoriaVideogiochi');
+insert into categories
+    (id, names)
+values (null, 'categoriaAltro');
+
 
 insert into articles
     (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values
-    (null, 'html/News/news.html', '2019-11-03 00:00:00', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto', 'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019', 'Lucca C&amp;G 19','News', '0', '2', null);
+    (null, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto', 'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019', 'Lucca C&amp;G 19','News', '0', '2', null);
+insert into articles
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (null, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione', 'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie', 'Vampyr - recensione', 'Recensioni', '0', '4', null);
+insert into articles
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (null, 'html/News/Cyberpunk-2077.html', '2019-11-28', '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>', 'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento', '<span xml:lang="en">Cyberpunk 2077</span>','News', '0', '4', null);
+
+
 
 insert into images
     (src, alt, article)
 values
     ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
+insert into images
+    (src, alt, article)
+values
+    ('images/Recensioni/vampyr/vampyr.jpg', '', '2');
+insert into images
+    (src, alt, article)
+values
+    ('images/CP20771-lowRes.jpg', '', '3');

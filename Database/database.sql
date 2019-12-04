@@ -1,15 +1,16 @@
-CREATE DATABASE IF NOT EXISTS DecryptedGames;
+create DATABASE IF NOT EXISTS DecryptedGames;
 
-DROP TABLE IF EXISTS images;
-DROP TABLE IF EXISTS articles;
-DROP TABLE IF EXISTS follows;
-DROP TABLE IF EXISTS likes;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS comments;
+drop table IF EXISTS images;
+drop table IF EXISTS follows;
+drop table IF EXISTS likes;
+drop table IF EXISTS comments;
+drop table IF EXISTS articles;
+drop table IF EXISTS users;
+drop table IF EXISTS categories;
 
 
-CREATE TABLE users(
+create TABLE users
+(
     nickname VARCHAR (50) PRIMARY KEY,
     pwd VARCHAR (50) NOT NULL,
     email VARCHAR (50) NOT NULL,
@@ -19,59 +20,91 @@ CREATE TABLE users(
     ref VARCHAR (50)
 );
 
-CREATE TABLE articles
-(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    link VARCHAR (50) NOT NULL,
-    creation_date TIMESTAMP DEFAULT(CURRENT_TIMESTAMP()),
-    title VARCHAR(50) NOT NULL,
-    article_type VARCHAR(50) NOT NULL,
-    views INT(10) NOT NULL,
-    category INT (5) REFERENCES Categories (id),
-    editor VARCHAR(50) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE comments
+create TABLE categories
 (
     id INT (5) PRIMARY KEY AUTO_INCREMENT,
-    creation_date CHAR (32) NOT NULL,
-    txt VARCHAR (296) NOT NULL,
-    user VARCHAR(50) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE,
-    article INT (5) REFERENCES Articles (id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE likes
-(
-    nickname VARCHAR(50) NOT NULL,
-    id INT (5) NOT NULL,
-
-    PRIMARY KEY (nickname, id),
-    FOREIGN KEY (nickname) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (id) REFERENCES Comments (id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE images
-(
-    link VARCHAR (50) PRIMARY KEY,
-    alt VARCHAR (10) NOT NULL,
-    article INT (5) REFERENCES Articles (id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE categories
-(
-    id INT (5) PRIMARY KEY,
     names VARCHAR (50) UNIQUE NOT NULL
 );
 
-CREATE TABLE follows
+create TABLE follows
 (
     nickname VARCHAR(50) NOT NULL,
     id INT (5) NOT NULL,
 
     PRIMARY KEY (nickname, id),
-    FOREIGN KEY (nickname) REFERENCES Users(nickname) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (id) REFERENCES Categories(id) ON DELETE CASCADE ON UPDATE CASCADE
+    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES Categories(id) ON delete CASCADE ON update CASCADE
 );
 
-INSERT INTO users (nickname, pwd, email, username, surname, usertype, ref) VALUES ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', NULL);
-INSERT INTO users (nickname, pwd, email, username, surname, usertype, ref) VALUES ('user', 'user', 'user@user.it', 'user', 'user', 'user', NULL);
+create TABLE articles
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    path VARCHAR(50) NOT NULL,
+    creation_date TIMESTAMP DEFAULT(CURRENT_TIMESTAMP()),
+    title VARCHAR(100) NOT NULL,
+    description VARCHAR(150),
+    category_title VARCHAR(25) NOT NULL,
+    article_type VARCHAR(50) NOT NULL,
+    views INT(10) NOT NULL,
+    category INT(5),
+    editor VARCHAR(50),
+
+    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES Categories(id) ON delete CASCADE ON update CASCADE
+);
+
+create TABLE comments
+(
+    id INT (5) PRIMARY KEY AUTO_INCREMENT,
+    creation_date CHAR(32) NOT NULL,
+    txt VARCHAR(296) NOT NULL,
+    user VARCHAR(50),
+    article INT (5),
+
+    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_article FOREIGN KEY (article) REFERENCES articles(id) ON delete CASCADE ON update CASCADE
+);
+
+create TABLE likes
+(
+    nickname VARCHAR(50) NOT NULL,
+    id INT (5) NOT NULL,
+
+    PRIMARY KEY (nickname, id),
+    CONSTRAINT FK_nick_like FOREIGN KEY (nickname) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_comments FOREIGN KEY (id) REFERENCES Comments (id) ON delete CASCADE ON update CASCADE
+);
+
+create TABLE images
+(
+    src VARCHAR (50) PRIMARY KEY,
+    alt VARCHAR (10) NOT NULL,
+    article INT (5),
+    CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES Articles (id) ON delete CASCADE ON update CASCADE
+);
+
+insert into users
+    (nickname, pwd, email, username, surname, usertype, ref)
+values
+    ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', null);
+insert into users
+    (nickname, pwd, email, username, surname, usertype, ref)
+values
+    ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
+
+insert into categories
+    (id, names)
+values (null, 'categoriaHardware');
+insert into categories
+    (id, names)
+values (null, 'categoriaEventi');
+
+insert into articles
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (null, 'html/News/news.html', '2019-11-03 00:00:00', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto', 'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019', 'Lucca C&amp;G 19','News', '0', '2', null);
+
+insert into images
+    (src, alt, article)
+values
+    ('images/Lucca-Comics-Games-982x540.jpg', '', '1');

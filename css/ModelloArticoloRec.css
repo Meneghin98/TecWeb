@@ -215,7 +215,8 @@
     }
     .comment {
         margin: 0 2em;
-        padding: 0.5em 2em: border-bottom-left-radius: 5px;
+        padding: 0.5em 2em;
+        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 2px solid limegreen;
         border-top: 0;

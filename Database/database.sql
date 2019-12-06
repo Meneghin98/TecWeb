@@ -11,86 +11,84 @@ drop table IF EXISTS categories;
 
 create TABLE users
 (
-    nickname VARCHAR (50) PRIMARY KEY,
-    pwd VARCHAR (50) NOT NULL,
-    email VARCHAR (50) NOT NULL,
-    username VARCHAR (50) NOT NULL,
-    surname VARCHAR (50) NOT NULL,
-    usertype VARCHAR (5) NOT NULL,
-    ref VARCHAR (50)
+    nickname VARCHAR(50) PRIMARY KEY,
+    pwd      VARCHAR(50) NOT NULL,
+    email    VARCHAR(50) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    surname  VARCHAR(50) NOT NULL,
+    usertype VARCHAR(5)  NOT NULL,
+    ref      VARCHAR(50)
 );
 
 create TABLE categories
 (
-    id INT (5) PRIMARY KEY AUTO_INCREMENT,
-    names VARCHAR (50) UNIQUE NOT NULL
+    id    INT(5) PRIMARY KEY AUTO_INCREMENT,
+    names VARCHAR(50) UNIQUE NOT NULL
 );
 
 create TABLE follows
 (
     nickname VARCHAR(50) NOT NULL,
-    id INT (5) NOT NULL,
+    id       INT(5)      NOT NULL,
 
     PRIMARY KEY (nickname, id),
-    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES Categories(id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES Categories (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE articles
 (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    path VARCHAR(50) NOT NULL,
-    creation_date DATE DEFAULT(CURRENT_TIMESTAMP()),
-    title VARCHAR(100) NOT NULL,
-    description VARCHAR(300),
-    category_title VARCHAR(50) NOT NULL,
-    article_type VARCHAR(50) NOT NULL,
-    views INT(10) NOT NULL,
-    category INT(5),
-    editor VARCHAR(50),
+    id             INT PRIMARY KEY AUTO_INCREMENT,
+    path           VARCHAR(50)  NOT NULL,
+    creation_date  DATE DEFAULT (CURRENT_TIMESTAMP()),
+    title          VARCHAR(100) NOT NULL,
+    description    VARCHAR(300),
+    category_title VARCHAR(50)  NOT NULL,
+    article_type   VARCHAR(50)  NOT NULL,
+    views          INT(10)      NOT NULL,
+    category       INT(5),
+    editor         VARCHAR(50),
 
-    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES Categories(id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES Categories (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE comments
 (
-    id INT (5) PRIMARY KEY AUTO_INCREMENT,
-    creation_date CHAR(32) NOT NULL,
-    txt VARCHAR(296) NOT NULL,
-    user VARCHAR(50),
-    article INT (5),
+    id            INT(5) PRIMARY KEY AUTO_INCREMENT,
+    creation_date CHAR(32)     NOT NULL,
+    txt           VARCHAR(296) NOT NULL,
+    user          VARCHAR(50),
+    article       INT(5),
 
-    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_article FOREIGN KEY (article) REFERENCES articles(id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_article FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE likes
 (
     nickname VARCHAR(50) NOT NULL,
-    id INT (5) NOT NULL,
+    id       INT(5)      NOT NULL,
 
     PRIMARY KEY (nickname, id),
-    CONSTRAINT FK_nick_like FOREIGN KEY (nickname) REFERENCES Users(nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_nick_like FOREIGN KEY (nickname) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
     CONSTRAINT FK_comments FOREIGN KEY (id) REFERENCES Comments (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE images
 (
-    src VARCHAR (50) PRIMARY KEY,
-    alt VARCHAR (10) NOT NULL,
-    article INT (5),
+    src     VARCHAR(50) PRIMARY KEY,
+    alt     VARCHAR(10) NOT NULL,
+    article INT(5),
     CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES Articles (id) ON delete CASCADE ON update CASCADE
 );
 
 insert into users
     (nickname, pwd, email, username, surname, usertype, ref)
-values
-    ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', null);
+values ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', null);
 insert into users
     (nickname, pwd, email, username, surname, usertype, ref)
-values
-    ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
+values ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
 
 
 
@@ -112,29 +110,30 @@ values (null, 'categoriaAltro');
 
 
 insert into articles
-    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values
-    (null, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto', 'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019', 'Lucca C&amp;G 19','News', '0', '2', null);
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
+        'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
+        'Lucca C&amp;G 19', 'News', '0', '2', null);
 insert into articles
-    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values
-    (null, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione', 'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie', 'Vampyr - recensione', 'Recensioni', '0', '4', null);
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',
+        'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
+        'Vampyr - recensione', 'Recensioni', '0', '4', null);
 insert into articles
-    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values
-    (null, 'html/News/Cyberpunk-2077.html', '2019-11-28', '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>', 'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento', '<span xml:lang="en">Cyberpunk 2077</span>','News', '0', '4', null);
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/News/Cyberpunk-2077.html', '2019-11-28',
+        '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
+        'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento',
+        '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
 
 
 
 insert into images
     (src, alt, article)
-values
-    ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
+values ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
 insert into images
     (src, alt, article)
-values
-    ('images/Recensioni/vampyr/vampyr.jpg', '', '2');
+values ('images/Recensioni/vampyr/vampyr.jpg', '', '2');
 insert into images
     (src, alt, article)
-values
-    ('images/CP20771-lowRes.jpg', '', '3');
+values ('images/CP20771-lowRes.jpg', '', '3');

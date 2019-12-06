@@ -1,13 +1,18 @@
 .content{
     padding: 3em 0;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(52, 52, 52,1);
     text-align: center;
 }
 
 
 form .datiAccount{
-    width: 50%;
+    max-width: 650px;
+    min-width: min-content;
+    min-width: -moz-min-content;
+    min-width: -webkit-min-content;
+    color: whitesmoke;
     margin: 0 auto;
+    font-size: medium;
 }
 
 .avatar{
@@ -35,7 +40,7 @@ form .datiAccount{
     color: white;
     float: right;
     position: relative;
-    bottom: 1.34em;
+    bottom: 1.3em;
 }
 
 
@@ -52,6 +57,7 @@ form .datiAccount{
     padding: 0.2em 0.5em;
     margin: 0 .25em;
     cursor: pointer;
+    font-size: large;
 }
 .saveResets #save{
     display: inline;
@@ -61,6 +67,7 @@ form .datiAccount{
     padding: 0.2em 0.5em;
     margin: 0 .25em;
     cursor: pointer;
+    font-size: large;
 }
 
 .datiAccount {
@@ -74,6 +81,7 @@ form .datiAccount{
 
 .datiAccount fieldset label{
     display: block;
+    padding: 0.3em 0;
     margin: 0;
 }
 

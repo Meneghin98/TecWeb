@@ -89,42 +89,67 @@ values ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', null);
 insert into users
     (nickname, pwd, email, username, surname, usertype, ref)
 values ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
+insert into users
+(nickname, pwd, email, username, surname, usertype, ref)
+values ('Simone', 'user', 'simone.meneghin@studenti.unipd.it', 'Simone', 'Meneghin', 'admin', null);
+
 
 
 
 insert into categories
     (id, names)
-values (null, 'categoriaHardware');
+values (null, 'categoriaHardware'); /*1*/
 insert into categories
     (id, names)
-values (null, 'categoriaEventi');
+values (null, 'categoriaEventi');/*2*/
 insert into categories
     (id, names)
-values (null, 'categoriaConsole');
+values (null, 'categoriaConsole');/*3*/
 insert into categories
     (id, names)
-values (null, 'categoriaVideogiochi');
+values (null, 'categoriaVideogiochi');/*4*/
 insert into categories
     (id, names)
-values (null, 'categoriaAltro');
+values (null, 'categoriaAltro');/*5*/
 
 
-insert into articles
+insert into articles /*Lucca comics*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (null, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
         'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
         'Lucca C&amp;G 19', 'News', '0', '2', null);
-insert into articles
+insert into articles/*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (null, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',
         'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
         'Vampyr - recensione', 'Recensioni', '0', '4', null);
-insert into articles
+insert into articles/*Cyberpunk*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (null, 'html/News/Cyberpunk-2077.html', '2019-11-28',
         '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
         'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento',
         '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
+insert into articles/*Cod*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/Recensioni/Call-of-duty-MW-2019.html', '', '',
+        '',
+        '', '', '0', '', null);
+insert into articles/*monitor*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, '', '', '',
+        '',
+        '', '', '0', '', null);
+insert into articles/*star wars*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, '', '', '',
+        '',
+        '', '', '0', '2', null);
+insert into articles/*death stranding*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, '', '', '',
+        '',
+        '', '', '0', '', null);
+
 
 
 

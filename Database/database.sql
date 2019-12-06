@@ -131,9 +131,9 @@ values (null, 'html/News/Cyberpunk-2077.html', '2019-11-28',
         '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
 insert into articles/*Cod*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, 'html/Recensioni/Call-of-duty-MW-2019.html', '', '',
-        '',
-        '', '', '0', '', null);
+values (null, 'html/Recensioni/Call-of-duty-MW-2019.html', '2019-09-25', 'Recensione: <span xml:lang="en">Call of Duty: Modern Warfare',
+        'ritorno al passato certo, ma soprattutto un nuovo, grande inizio',
+        'Call of Duty MW', 'Recensioni', '0', '4', null);
 insert into articles/*monitor*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (null, '', '', '',

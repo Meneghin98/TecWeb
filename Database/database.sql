@@ -41,7 +41,7 @@ create TABLE articles
     id             INT PRIMARY KEY AUTO_INCREMENT,
     path           VARCHAR(50)  NOT NULL,
     creation_date  DATE DEFAULT (CURRENT_TIMESTAMP()),
-    title          VARCHAR(100) NOT NULL,
+    title          VARCHAR(300) NOT NULL,
     description    VARCHAR(300),
     category_title VARCHAR(50)  NOT NULL,
     article_type   VARCHAR(50)  NOT NULL,
@@ -136,19 +136,19 @@ values (null, 'html/Recensioni/Call-of-duty-MW-2019.html', '2019-09-25', 'Recens
         'Call of Duty MW', 'Recensioni', '0', '4', null);
 insert into articles/*monitor*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, '', '', '',
+values (null, 'html/News/Xiaomimonitor.html', '2019-10-18', 'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span></span>',
         '',
-        '', '', '0', '', null);
+        'Xiaomi Monitor', 'News', '0', '1', null);
 insert into articles/*star wars*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, '', '', '',
+values (null, 'html/Recensioni/recensioneStarWars.html', '2019-11-16', 'span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
         '',
-        '', '', '0', '2', null);
+        'Star Wars - PS4', 'Recensioni', '0', '4', null);
 insert into articles/*death stranding*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, '', '', '',
+values (null, 'html/News/DeathStrandingPC.html', '2019-10-30', '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
         '',
-        '', '', '0', '', null);
+        'Death Stranding PC', 'News', '0', '4', null);
 
 
 

@@ -96,17 +96,16 @@
     .hamburger-menu {
         display: none;
     }
-    
-    .content {
+    .content, .menu{
+        max-width: 1300px;
         margin: 0 auto;
-        max-width: 1600px;
+    }
+    .content {
         background-color: white;
     }
 
     .menu{
         background-color: #131313;
-        max-width: 1600px;
-        margin: 0 auto;
     }
     .menu ul {
         background-color: #131313;
@@ -343,4 +342,8 @@
         .menu{
             display: none;
         }
+        #search{
+            display: none;
+        }
+
     }

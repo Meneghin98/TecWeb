@@ -141,7 +141,7 @@ values (null, 'html/News/Xiaomimonitor.html', '2019-10-18', 'Xiaomi entra nel mo
         'Xiaomi Monitor', 'News', '0', '1', null);
 insert into articles/*star wars*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, 'html/Recensioni/recensioneStarWars.html', '2019-11-16', 'span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
+values (null, 'html/Recensioni/recensioneStarWars.html', '2019-11-16', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
         '',
         'Star Wars - PS4', 'Recensioni', '0', '4', null);
 insert into articles/*death stranding*/
@@ -161,4 +161,16 @@ insert into images
 values ('images/Recensioni/vampyr/vampyr.jpg', '', '2');
 insert into images
     (src, alt, article)
-values ('images/CP20771-lowRes.jpg', '', '3');
+values ('images/News/Cyberpunk/CP20771-lowRes.jpg', '', '3');
+insert into images
+(src, alt, article)
+values ('images/Recensioni/cod-mw-2019/codmw.png', '', '4');
+insert into images
+(src, alt, article)
+values ('images/mi-surface-display.jpg', '', '5');
+insert into images
+(src, alt, article)
+values ('images/Recensioni/Star-Wars/starwars.png', '', '6');
+insert into images
+(src, alt, article)
+values ('images/death-stranding-image.jpg', '', '7');

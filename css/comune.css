@@ -347,3 +347,102 @@
         }
 
     }
+
+    /*
+    ----------------------Area Utente ----------------------------------
+     */
+
+    #AreaUtente{
+        padding: 3em 0;
+        background-color: rgba(52, 52, 52,1);
+        text-align: center;
+    }
+
+    .datiAccount{
+        list-style-type: none;
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .datiAccount fieldset{
+        border-radius: 25px;
+        border: 3px solid #0E9C09;
+    }
+    .groupBox{
+        padding: 1em;
+        margin: 1em 3em;
+        border-radius: 25px;
+        border-style: solid;
+        border-color: #0E9C09;
+        border-width: 3px
+    }
+
+    form .datiAccount{
+        max-width: 650px;
+        min-width: min-content;
+        min-width: -moz-min-content;
+        min-width: -webkit-min-content;
+        color: whitesmoke;
+        margin: 0 auto;
+        font-size: medium;
+    }
+
+    .datiAccount fieldset label{
+        display: block;
+        padding: 0.3em 0;
+        margin: 0;
+    }
+
+    .datiAccount li {
+        padding: 1.2em 0;
+        margin-left: 5em;
+    }
+
+    .avatar{
+        float: left;
+        margin-top: 2em;
+        margin-left: 12%;
+    }
+    .avatar input{
+        display: none;
+    }
+    .custom-file-upload {
+        padding: 0 .3em;
+        cursor: pointer;
+        background-color: #0E9C09;
+        color: white;
+        /*border: 1px solid #202020;
+        position: relative;
+        bottom: 1.3em;*/
+    }
+
+    .saveResets {
+        float: right;
+        text-align: right;
+        margin: 0;
+    }
+    .saveResets #reset{
+        display: inline;
+        border-style: solid;
+        border-color: orangered;
+        border-radius: 25px;
+        padding: 0.2em 0.5em;
+        margin: 0 .25em;
+        cursor: pointer;
+        font-size: large;
+    }
+    .saveResets #save{
+        display: inline;
+        border-style: solid;
+        border-color: #0E9C09;
+        border-radius: 25px;
+        padding: 0.2em 0.5em;
+        margin: 0 .25em;
+        cursor: pointer;
+        font-size: large;
+    }
+
+    /*
+    ----------------------fine Area Utente-----------------------------------
+     */

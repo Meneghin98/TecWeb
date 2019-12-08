@@ -171,7 +171,8 @@
     .shortDesc,
     .writer {
         font-size: 2.5em;
-        padding-left: 0;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     .writer {
         color: #086605;
@@ -180,6 +181,7 @@
         float: none;
         margin-bottom: 0;
         font-size: 2em;
+        border: none;
     }
     .index h3 {
         font-size: 2em;
@@ -190,8 +192,8 @@
     }
     .description p {
         padding: 1em 1em 0 1em;
-        font-size: 3em;
-        line-height: 1.5em;
+        font-size: 2.5em;
+        line-height: 2em;
     }
     .description p:first-of-type {
         margin-top: 0;

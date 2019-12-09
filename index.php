@@ -1,5 +1,6 @@
 <?php
 require_once('php\connessione.php');
+require_once('php\replace.php');
 
 $index = file_get_contents("html/index.html");
 
@@ -33,5 +34,3 @@ mysqli_close($db);
 $index = str_replace('£top_articles', $top_articoli, $index);
 
 echo str_replace("£Articoli", $articoli, $index);
-
-?>

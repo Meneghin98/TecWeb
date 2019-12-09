@@ -9,7 +9,7 @@ body {
     margin: auto;
     height: 100%;
     background-color: black;
-    background-image: linear-gradient(#585858, #262626, #131313, black);
+    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
     background-position: center;
     background-repeat: no-repeat;
 }

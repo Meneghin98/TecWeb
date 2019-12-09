@@ -15,10 +15,12 @@
 - Vampyr
 - Star wars Jedi: Fallen order PS4
 - Dead Stranding
+- Asgard's Wrath
 #### News
 - Death Stranding pc
 - Lucca Comics
 - Monitor Xiaomi
+- Munster Hunter World:Iceborn
 - Star Wars vendite PC
 #### Eventi
 #### Guide

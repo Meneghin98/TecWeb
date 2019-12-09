@@ -1,5 +1,5 @@
 <?php
-require_once(".\php\connessione.php");
+require_once('php\connessione.php');
 
 $index = file_get_contents("html/index.html");
 

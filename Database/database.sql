@@ -32,8 +32,8 @@ create TABLE follows
     id       INT(5)      NOT NULL,
 
     PRIMARY KEY (nickname, id),
-    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES Categories (id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES categories (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE articles
@@ -49,8 +49,8 @@ create TABLE articles
     category       INT(5),
     editor         VARCHAR(50),
 
-    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES Categories (id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES categories (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE comments
@@ -61,7 +61,7 @@ create TABLE comments
     user          VARCHAR(50),
     article       INT(5),
 
-    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES users (nickname) ON delete CASCADE ON update CASCADE,
     CONSTRAINT FK_article FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
 
@@ -71,8 +71,8 @@ create TABLE likes
     id       INT(5)      NOT NULL,
 
     PRIMARY KEY (nickname, id),
-    CONSTRAINT FK_nick_like FOREIGN KEY (nickname) REFERENCES Users (nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_comments FOREIGN KEY (id) REFERENCES Comments (id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_nick_like FOREIGN KEY (nickname) REFERENCES users (nickname) ON delete CASCADE ON update CASCADE,
+    CONSTRAINT FK_comments FOREIGN KEY (id) REFERENCES comments (id) ON delete CASCADE ON update CASCADE
 );
 
 create TABLE images
@@ -80,7 +80,7 @@ create TABLE images
     src     VARCHAR(50) PRIMARY KEY,
     alt     VARCHAR(10) NOT NULL,
     article INT(5),
-    CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES Articles (id) ON delete CASCADE ON update CASCADE
+    CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
 
 insert into users

@@ -347,18 +347,18 @@ body {
 
 
 /*
-----------------------Area Utente ----------------------------------
+--------------------------------------------------------------------------Area Utente ----------------------------------
  */
 
 #AreaUtente {
     padding: 3em 0;
     background-color: rgba(52, 52, 52, 1);
     text-align: center;
+    color: white;
 }
 
 .datiAccount {
     list-style-type: none;
-    width: 50%;
     margin: 0 auto;
     text-align: left;
 }
@@ -366,22 +366,14 @@ body {
 .datiAccount fieldset {
     border-radius: 25px;
     border: 3px solid #0E9C09;
-}
 
-.groupBox {
-    padding: 1em;
-    margin: 1em 3em;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: #0E9C09;
-    border-width: 3px
 }
 
 form .datiAccount {
     max-width: 650px;
-    min-width: min-content;
-    min-width: -moz-min-content;
+    /*min-width: -moz-min-content;
     min-width: -webkit-min-content;
+    min-width: min-content;*/
     color: whitesmoke;
     margin: 0 auto;
     font-size: medium;
@@ -393,15 +385,33 @@ form .datiAccount {
     margin: 0;
 }
 
+.datiAccount .groupBox input{
+    width: 100%;
+}
+
 .datiAccount li {
     padding: 1.2em 0;
     margin-left: 5em;
 }
 
+.groupBox {
+    min-width: 15em;
+    padding: 1em;
+    margin: 1em 3em;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #0E9C09;
+    border-width: 3px
+}
+
 .avatar {
     float: left;
     margin-top: 2em;
-    margin-left: 12%;
+    margin-left: 10%;
+    margin-right: 1em;
+}
+.avatar *{
+    display: block;
 }
 
 .avatar input {
@@ -409,13 +419,9 @@ form .datiAccount {
 }
 
 .custom-file-upload {
-    padding: 0 .3em;
+    padding: .3em 0;
     cursor: pointer;
     background-color: #0E9C09;
-    color: white;
-    /*border: 1px solid #202020;
-    position: relative;
-    bottom: 1.3em;*/
 }
 
 .saveResets {
@@ -447,7 +453,7 @@ form .datiAccount {
 }
 
 /*
-----------------------fine Area Utente-----------------------------------
+---------------------------------------------------------------------fine Area Utente-----------------------------------
  */
 /*
  ---------------------- Recensione e articolo ----------------------------------

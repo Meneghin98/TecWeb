@@ -1,6 +1,6 @@
 <?php
-require_once("replace.php");
-require_once ("connessione.php");
+require_once("helps/replace.php");
+require_once("helps/connessione.php");
 
 $_news = file_get_contents("../html/News/news.html");
 $_news = str_replace('£footer', html::footer(), $_news);

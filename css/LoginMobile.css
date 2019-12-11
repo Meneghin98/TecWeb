@@ -1,12 +1,29 @@
-@media screen and (max-device-width: 480px) {
-    #header {
+@media screen and (max-device-width: 640px) {
+   #header {
         display: none;
+    }
+
+    body {
+        color: aliceblue;
     }
 
     .menu {
         display: none;
     }
-    .menuMobile {
+
+    .menuMobileLogin {
+        display: contents;
         text-align: center;
+        
+    }
+
+    .menuMobileLogin img {
+        float: left;
+        width: 5em;
+    }
+
+    .menuMobileLogin h1 {
+        margin-right: 2em;
+        padding: 0.5em;
     }
 }

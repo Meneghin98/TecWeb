@@ -25,9 +25,12 @@ class DBConnection
         return $connessione;
     }
 
-    public function getArticlesArray()
+    public function getArticlesArray($where)
     {
-        $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM Articles A join Categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
+        if (is_null($where))
+            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM Articles A join Categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
+        else
+            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM Articles A join Categories C on A.category=C.id left join images I on I.article=A.id WHERE A.article_type = '$where' ORDER BY data DESC";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult) {
             echo "Errore della query: " . mysqli_error($this->connection) . ".";

@@ -136,7 +136,7 @@ values (null, 'html/Recensioni/Call-of-duty-MW-2019.html', '2019-09-25', 'Recens
         'Call of Duty MW', 'Recensioni', '0', '4', null);
 insert into articles/*monitor*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (null, 'html/News/Xiaomimonitor.html', '2019-10-18', 'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span></span>',
+values (null, 'html/News/Xiaomimonitor.html', '2019-10-18', 'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display</span>, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span>',
         '',
         'Xiaomi Monitor', 'News', '0', '1', null);
 insert into articles/*star wars*/

@@ -22,18 +22,18 @@
     margin: 0em auto;
 }
 
-legend {
+.content legend {
     padding-top: 1em;
 }
 
-form {
+.content form {
     padding: 2em;
     display: block;
     text-align: center;
     margin: 0em 3em;
 }
 
-label {
+.content label {
     display: inline-block;
     padding: 0.5em;
 }
@@ -55,5 +55,9 @@ label {
 }
 
 .menuMobileLogin {
+    display: none;
+}
+
+.contentMobileLogin {
     display: none;
 }

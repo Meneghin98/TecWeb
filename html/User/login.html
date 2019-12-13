@@ -11,13 +11,14 @@
     <meta name="author" content="Enrico Salmaso" />
     <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
     <link rel="stylesheet" href="../../css/Login.css" type="text/css" />
+    <link rel="stylesheet" media="print" href="../../css/print.css" />
     <link rel="stylesheet" type="text/css" href="../../css/LoginMobile.css" />
 </head>
 
 <body>
     <div id="header">
         <div class="headerChild">
-            <h1><a href="../Structure/index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"
+            <h1><a href="../index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"
                         alt="Decrypted Games" /></a></h1>
         </div>
         <div class="headerChild" id="searchBar">
@@ -29,10 +30,7 @@
                 </button>
             </fieldset>
         </div>
-        <div class="headerChild">
-            <a id="login" title="Login e registrazione" href="../User/login.html"><img
-                    src="../../images/icons/Registrati-sito-web.png" alt="login e registrazione" /></a>
-        </div>
+
     </div>
 
     <div class="menu">
@@ -43,9 +41,43 @@
             <li><a href="../Eventi/eventi.html">Altro</a></li>
         </ul>
     </div>
-    <div class="menuMobile">
+
+    <!--PARTE MOBILE-->
+    <div class="menuMobileLogin">
+        <img src="../../images/icons/frecciaSinistra.png" alt="icona di una freccia sinistra">
         <h1>Account</h1>
     </div>
+
+    <div class="contentMobileLogin">
+        <div class="emailMobileLog">
+            <img src="../../images/icons/email1.png" alt="icona email">
+            <form action="php.txt">
+                <label for="email" xml:lang="en"></label>
+                <input type="text" name="emailLoginMobile" id="emailLoginMobile"
+                    placeholder="            Digitare E-mail" />
+            </form>
+        </div>
+        <div class="passwordMobileLog">
+            <img src="../../images/icons/lucchetto1.png" alt="icona password">
+            <form action="php.txt">
+                <label for="password" xml:lang="en"></label>
+                <input type="password" name="password" id="passwordMobile" placeholder="          Digitare Password" />
+            </form>
+            <!--IMMAGINE PASS NASCOSTA <img src="../../images/icons/occhioPassword.png" alt="icona email">-->
+        </div>
+        <p class="passwordScaduta"><a href="registrazione.html">Hai dimenticato la password? Clicca qui</a></p>
+        <div class="pulsantiLoginMobile">
+            <form action="php.txt">
+                <label for="Accedi"></label>
+                <input type="submit" value="Accedi" id="AccediLoginMobile" />
+                <p>Non hai l'account?</p>
+                <label for="Registrati"></label>
+                <input type="submit" value="Registrati" id="RegistratiLoginMobile" />
+            </form>
+        </div>
+    </div>
+    <!--PARTE MOBILE-->
+
     <div class="content" id="contentLogin">
         <fieldset class="signIn">
             <legend><strong>Accedi</strong></legend>

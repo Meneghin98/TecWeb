@@ -3,6 +3,188 @@
     padding: 0;
 }
 
+/*
+---------------------- mobile ----------------------------------
+ */
+@media screen and (max-width: 960px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* ------------------------------------ */
+    /* ------------ Header --------------- */
+    /*      Sistemare img dentro a h1      */
+
+    #header {
+        display: none;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* ------- Dichiarazione caratteristiche font -------- */
+
+    .articleListDesc, .shortDesc, .writer, .description p, .comment p {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .topArticles a .topArticleTitle, .categoriaGenerale {
+        font-size: 1em;
+    }
+
+    .intestazione h1 {
+        font-size: 2.2em;
+        color: #088700
+    }
+
+    .writer {
+        color: #086605;
+    }
+
+    .index h3 {
+        font-size: 1.1em;
+    }
+
+    .voto p {
+        font-size: 1.5em;
+    }
+
+    .comment h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .pro h3 {
+        color: green;
+    }
+
+    .contro h3 {
+        color: red;
+    }
+
+    /* ----------------------------------- */
+    /* ---------- Top-Articles ----------- */
+
+    .topArticles {
+        flex: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .topArticles li:first-of-type {
+        flex: 100%
+    }
+
+    .topArticles li:nth-of-type(2) {
+        flex: 50%;
+    }
+
+    .topArticles li:nth-of-type(3) {
+        flex: 50%
+    }
+
+    .topArticles li:last-of-type {
+        display: none;
+    }
+
+
+    .topArticles li img, .headerChild:nth-of-type(1) a img {
+        transition: none;
+    }
+
+    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+        transform: none;
+    }
+
+
+    /* ------------------------------------- */
+    /* -------------- Content -------------- */
+
+    .content {
+        width: 100%;
+    }
+
+    .flexColumn {
+        display: block;
+    }
+
+    .flexColumn:last-of-type, .menu, #search {
+        display: none;
+    }
+
+    .flexColumn img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .intestazione h1 {
+        margin: 3% 3% 0.7em 3%;
+    }
+    .shortDesc, .writer {
+        padding: 0 .8em 0.9em .8em;
+    }
+
+    .index {
+        font-size: 1.3em;
+        margin: 1em 1em 1em 1em;
+    }
+
+    .index ol {
+        list-style: none;
+    }
+
+    .index li {
+        margin-bottom: 7px;
+    }
+
+
+    .description p, h2 {
+        padding: 1em 0.5em 0 0.5em;
+    }
+
+    .description h2 {
+        font-size: 1.9em;
+        color: black;
+    }
+
+    .voto {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        background-color: limegreen;
+    }
+
+    .comment {
+        margin: 0 1em;
+        padding: 0.5em 1em;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 2px solid limegreen;
+        background-color: #32cd3266;
+        border-top: 0;
+    }
+
+    .pro, .contro {
+        font-size: 1.3em;
+        margin: 1em 1em 1em 1em;
+    }
+
+    .pro ul, .contro ul {
+        list-style: none;
+    }
+
+}
+
+/*
+---------------------- fine mobile ----------------------------------
+ */
+
+
+@media screen and (min-width: 960px) {
+
 body {
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 0.9em;
@@ -707,169 +889,4 @@ form .datiAccount {
 ---------------------- fine index ----------------------------------
  */
 
-/*
----------------------- mobile ----------------------------------
- */
-@media screen and (max-device-width: 960px) {
-
-    /* Dichiarazione dimensione font*/
-    .articleListDesc, .shortDesc, .writer, .description p, .comment p {
-        font-size: 2.5em;
-        line-height: 2em;
-    }
-
-    .topArticles a .topArticleTitle, .categoriaGenerale {
-        font-size: 2em;
-    }
-
-    /*fine dichiarazione dimensione font*/
-    .flexColumn:last-of-type {
-        display: none;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #search {
-        display: none;
-    }
-
-    .topArticles {
-        flex: 100%;
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .topArticles li:first-of-type {
-        flex: 100%
-    }
-
-    .topArticles li:nth-of-type(2) {
-        flex: 50%;
-    }
-
-    .topArticles li:nth-of-type(3) {
-        flex: 50%
-    }
-
-    .topArticles li:last-of-type {
-        display: none;
-    }
-
-    .intestazione h1 {
-        margin-left: 0.5em;
-        font-size: 3em;
-        color: #088700
-    }
-
-    .shortDesc,
-    .writer {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
-    .writer {
-        color: #086605;
-    }
-
-    .index {
-        float: none;
-        border: none;
-        margin-bottom: 0;
-        font-size: 2em;
-
-    }
-
-    .index h3 {
-        font-size: 2em;
-    }
-
-    .description img {
-        width: 95%;
-        margin: 2em auto 0 auto;
-    }
-
-    .description p {
-        padding: 1em 1em 0 1em;
-
-    }
-
-    .description p:first-of-type {
-        margin-top: 0;
-    }
-
-    .description h2 {
-        font-size: 5em;
-        border-bottom: none;
-        margin: 1em 0.5em 0 0.5em;
-        color: black;
-    }
-
-    .voto {
-        margin-top: 1em;
-    }
-
-    .voto p {
-        font-size: 4em;
-    }
-
-    .voto p:first-of-type {
-        margin: 0 auto;
-        padding-top: 0.5em;
-        padding-bottom: 0.2em;
-    }
-
-    .comment {
-        margin: 0 2em;
-        padding: 0.5em 2em;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border: 2px solid limegreen;
-        border-top: 0;
-    }
-
-    .comment h3 {
-        text-align: center;
-        font-size: 5em;
-    }
-
-    .comment p {
-        margin: 0;
-
-    }
-
-    .diffs {
-        flex-wrap: wrap;
-    }
-
-    .diffs div {
-        flex: 100%;
-    }
-
-    .pro,
-    .contro {
-        font-size: 3em;
-        margin: 0;
-    }
-
-    .diffs h3 {
-        margin: 0;
-    }
-
-    .topArticles li img, .headerChild:nth-of-type(1) a img {
-
-        transition: none;
-    }
-
-    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
-
-        transform: none;
-    }
-
-
 }
-
-/*
----------------------- fine mobile ----------------------------------
- */

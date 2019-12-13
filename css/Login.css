@@ -16,24 +16,24 @@
     background-image: url(../images/icons/login.png);
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: 20%;*/
+    background-size: 20%;
     padding: 3em 2em 2em 2em;
     display: block;
     margin: 0em auto;
 }
 
-legend {
+.content legend {
     padding-top: 1em;
 }
 
-form {
+.content form {
     padding: 2em;
     display: block;
     text-align: center;
     margin: 0em 3em;
 }
 
-label {
+.content label {
     display: inline-block;
     padding: 0.5em;
 }
@@ -54,3 +54,10 @@ label {
     margin: 2em auto 0em auto;
 }
 
+.menuMobileLogin {
+    display: none;
+}
+
+.contentMobileLogin {
+    display: none;
+}

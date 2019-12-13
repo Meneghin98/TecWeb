@@ -1,0 +1,122 @@
+@media screen and (max-device-width: 960px) {
+
+    /* romozione transizioni*/
+    .topArticles li img, .headerChild:nth-of-type(1) a img {
+
+        transition: none;
+    }
+
+    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+
+        transform: none;
+    }
+    /*--------------------fine----------------------------------------------------*/
+    /* Dichiarazione dimensione font*/
+    .articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro {
+        font-size: 2.5em;
+        line-height: 2em;
+    }
+
+    .topArticles a .topArticleTitle, .categoriaGenerale, .index, .articleListTitle {
+        font-size: 2em;
+    }
+
+    .voto p {
+        font-size: 3em;
+    }
+
+    .intestazione h1, .description h2, .comment h3 {
+        font-size: 5em;
+    }
+
+    /*fine dichiarazione dimensione font*/
+    /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
+    .flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
+        display: none;
+    }
+    /*-------------------------------------------------------------------------*/
+
+    .topArticles, .diffs {
+        flex-wrap: wrap;
+    }
+
+    .topArticles li:first-of-type, .diffs div {
+        flex: 100%
+    }
+
+    .topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
+        flex: 50%;
+    }
+
+    .intestazione h1 {
+        margin-left: 0.3em;
+        padding-top: 0.5em;
+    }
+
+    .shortDesc,
+    .writer {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .index, .description h2 {
+        border: none;
+    }
+
+
+    .index {
+        float: none;
+        margin-bottom: 0;
+
+    }
+
+
+    .description img {
+        width: 95%;
+        margin: 2em auto 0 auto;
+    }
+
+    .description p {
+        padding: 1em 1em 0 1em;
+
+    }
+
+    .description h2 {
+        margin: 1em 0.5em 0 0.5em;
+    }
+
+    .voto {
+        margin-top: 1em;
+    }
+
+
+    .voto p:first-of-type {
+        margin: 0 auto;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+    }
+
+    .comment {
+        margin: 0 2em;
+        padding: 0.5em 2em;
+    }
+
+    .comment h3 {
+        text-align: center;
+    }
+
+    .comment p, .pro, .contro, .diffs h3 {
+        margin: 0;
+
+    }
+
+
+
+
+
+
+}
+
+/*
+---------------------- fine mobile ----------------------------------
+ */ 

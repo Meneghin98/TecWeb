@@ -11,5 +11,8 @@ $articoliRecensioni = $DB->getArticlesArray("Recensioni");
 if (!is_null($articoliRecensioni)){
     $_recensioni = str_replace('£articoli', html::articoli($articoliRecensioni, 0), $_recensioni);
 }
+else{
+    $_recensioni = str_replace('£articoli', '', $_recensioni);
+}
 $DB->close();
 echo str_replace('£head', html::head(), $_recensioni);

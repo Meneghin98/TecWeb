@@ -11,5 +11,8 @@ $articoliNews = $DB->getArticlesArray("News");
 if (!is_null($articoliNews)){
     $_news = str_replace('£articoli', html::articoli($articoliNews, 0), $_news);
 }
+else{
+    $_news = str_replace('£articoli', '', $_news);
+}
 $DB->close();
 echo str_replace('£head', html::head(), $_news);

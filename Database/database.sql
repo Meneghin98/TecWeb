@@ -83,6 +83,15 @@ create TABLE images
     CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
 
+DELIMITER ]
+CREATE PROCEDURE IncrementaVisualizzazioni(_id int)
+BEGIN
+
+    UPDATE articles a  SET a.views = a.views+1 WHERE a.id = _id;
+
+END ]
+DELIMITER ;
+
 insert into users
     (nickname, pwd, email, username, surname, usertype, ref)
 values ('admin', 'admin', 'admin@admin.it', 'admin', 'admin', 'admin', null);

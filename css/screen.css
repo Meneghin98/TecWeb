@@ -6,7 +6,7 @@
 /*
 ---------------------- mobile ----------------------------------
  */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 900px) {
 
     * {
         margin: 0;
@@ -130,6 +130,7 @@
     .index {
         font-size: 1.3em;
         margin: 1em 1em 1em 1em;
+        border: 2px solid green;
     }
 
     .index ol {
@@ -138,6 +139,11 @@
 
     .index li {
         margin-bottom: 7px;
+    }
+
+    .index a {
+        color: black;
+        text-decoration: none;
     }
 
 
@@ -169,11 +175,23 @@
 
     .pro, .contro {
         font-size: 1.3em;
-        margin: 1em 1em 1em 1em;
+        margin: 2em 8% 2em 8%;
     }
 
-    .pro ul, .contro ul {
-        list-style: none;
+    .pro {
+        list-style-image: url("../images/icons/icon_correct_247100.png")
+    }
+
+    .contro {
+        list-style-image: url("../images/icons/wrong_1275646.png");
+    }
+
+
+    /* ------------------------------ */
+    /* ---------- Footer ------------ */
+
+    #footer {
+        display: none;
     }
 
 }
@@ -183,7 +201,7 @@
  */
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
 
 body {
     font-family: Verdana, Helvetica, sans-serif;
@@ -750,7 +768,7 @@ form .datiAccount {
 }
 
 .diffs h3 {
-    margin: 0.5em 0em;
+    margin: 0.5em 0;
 }
 
 .pro,
@@ -884,6 +902,42 @@ form .datiAccount {
     color: white;
 }
 
+/* ------------------------------ */
+/* ---------- Footer ------------ */
+
+    #footer {
+        text-align: center;
+        background-color: black;
+        bottom: 0;
+        padding: 1em 0 1em 0;
+        color: white;
+    }
+
+    #footer li {
+        list-style: none;
+        padding-bottom: 0.7em;
+    }
+
+    #footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footerInline {
+        float: left;
+        width: 33.33%;
+    }
+
+    .footerInline p {
+        font-size: 1.25em;
+        margin-bottom: 0.8em;
+        padding-bottom: 0.4em;
+        border-bottom: 3px solid green;
+    }
+
+    #imgsFooter {
+        clear: both;
+    }
 
 /*
 ---------------------- fine index ----------------------------------

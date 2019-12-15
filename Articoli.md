@@ -1,26 +1,20 @@
 # ARTICOLI 
-## In progress
+  - [ ] non completato
+  - [x] completato
+
 #### Recensioni
-- Munster Hunter World:Iceborn
+ - [x] Call of duty 
+ - [x] Vampyr
+ - [x] Star wars Jedi: Fallen order PS4
+ - [x] Dead Stranding
+ - [x] Asgard's Wrath
+ - [ ] Munster Hunter World:Iceborn
 
 #### News
-- Cyberpunk 2077  
-
-#### Eventi
-#### Guide
-
-## Completed
-#### Recensioni
-- Call of duty 
-- Vampyr
-- Star wars Jedi: Fallen order PS4
-- Dead Stranding
-- Asgard's Wrath
-#### News
-- Death Stranding pc
-- Lucca Comics
-- Monitor Xiaomi
-- Munster Hunter World:Iceborn
-- Star Wars vendite PC
-#### Eventi
-#### Guide
+ - [x] Death Stranding pc
+ - [x] Lucca Comics
+ - [x] Monitor Xiaomi
+ - [x] Munster Hunter World:Iceborn
+ - [x] Star Wars vendite PC
+ - [x] Cyberpunk 2077  
+#### Altro

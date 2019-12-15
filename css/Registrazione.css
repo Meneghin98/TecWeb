@@ -5,12 +5,12 @@
     margin-bottom: 2em;
 }
 
-form {
+.content form {
     margin: 0 auto;
     width: 23em;
 }
 
-fieldset {
+.content fieldset {
     padding: 1.5em;
     margin: 3em;
 }
@@ -33,4 +33,13 @@ input#bottoneConferma {
 input#bottoneIndietro {
     font-size: 1.4em;
     margin-left: 2em;
+}
+
+/*PARTE MOBILE*/
+.menuMobileReg {
+    display: none;
+}
+
+.contentMobileReg {
+    display: none;
 }

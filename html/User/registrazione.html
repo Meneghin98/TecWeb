@@ -11,9 +11,38 @@
     <meta name="author" content="Simone Meneghin" />
     <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
     <link rel="stylesheet" href="../../css/Registrazione.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../css/RegistrazioneMobile.css" />
 </head>
 
 <body>
+    <!--PARTE MOBILE-->
+    <div class="menuMobileReg">
+        <img src="../../images/icons/frecciaSinistra.png" alt="icona di una freccia sinistra">
+        <h1>Account</h1>
+    </div>
+    <div class="contentMobileReg">
+        <form action="php.txt">
+            <label for="nome"><span xml:lang="en"><span xml:lang="en">Nome</span>:</span></label>
+            <input id="nomeMobReg" placeholder="nome" type="text" />
+            <label for="cognome"><span xml:lang="en"><span xml:lang="en">Cognome</span>:</span></label>
+            <input id="cognomeMobReg" placeholder="cognome" type="text" />
+            <label for="username"><span xml:lang="en">Username</span>:</label>
+            <input id="usernameMobReg" placeholder="username" type="text" />
+            <label for="email"><span xml:lang="en">E-mail</span>:</label>
+            <input id="emailMobReg" type="password" placeholder="e-mail" />
+            <p>L'indirizzo E-mail viene utilizzato per il login e la ricerca della password, perciò assicurati che sia
+                valida
+            </p>
+            <label for="password"><span xml:lang="en">Password</span>:</label>
+            <input id="passwordMobReg" type="password" placeholder="scegli una password" />
+        <div class="pulsantiMobileReg">
+                <label for="RegistratiLoginMobile"></label>
+                <input type="submit" value="CREA UN ACCOUNT" id="RegistratiLoginMobile" />
+        </div>
+        </form>
+
+    </div>
+    <!--PARTE MOBILE-->
     <div id="header">
         <div class="headerChild">
             <h1><a href="../index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"

@@ -81,8 +81,10 @@ class DBConnection
                     'riferimento'=>$utenteTrovato['ref']
                 );
             }
+            else if (mysqli_num_rows($queryResult) > 1)
+                echo "ERRORE: Più utenti con lo stesso nickname";
             else
-                echo "ERRORE: più utenti con lo stesso nickname";
+                echo "ERRORE: Nessun utente trovato";
         }
     }
 

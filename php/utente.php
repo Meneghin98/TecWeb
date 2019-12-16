@@ -1,7 +1,4 @@
 <?php
-//moc
-$_GET['nick'] = "Simone";
-//fine moc
 
 require_once("helps/connessione.php");
 require_once("helps/replace.php");

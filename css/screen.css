@@ -6,7 +6,11 @@
 /*
 ---------------------- mobile ----------------------------------
  */
+<<<<<<< HEAD
+@media screen and (max-device-width: 960px) {
+=======
 @media only screen and (max-width: 900px) {
+>>>>>>> b3f0264e0fa052d4b3090109aff1c35de741b74f
 
     * {
         margin: 0;

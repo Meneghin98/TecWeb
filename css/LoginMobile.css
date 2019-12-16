@@ -1,4 +1,4 @@
-    @media screen and (max-device-width: 640px) {
+        @media screen and (max-device-width: 640px) {
    #header {
         display: none;
     }
@@ -60,17 +60,17 @@
 
     .passwordMobileLog input {
         padding-bottom: 0.5em;
-        padding-right: 2em;
+
     }
 
     .passwordMobileLog input[type="password"] {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 
     .passwordMobileLog img {
-        width: 4em;
+        width: 8em;
         margin: 3em 2em 3em 0em;
-        padding-bottom: 1em;
+        padding-bottom: 4.2em;
     }
 
     .emailMobileLog {
@@ -79,31 +79,22 @@
 
     .emailMobileLog input {
         padding-bottom: 0.5em;
-        padding-right: 2em;
     }
 
     .emailMobileLog input[type="text"] {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 
     .emailMobileLog img {
-        width: 4em;
+        width: 8em;
         margin: 3em 2em 2.5em 0em;
     }
 
-    .passwordScaduta {
-        text-align: center;
-    }
-
-    .passwordScaduta a {
-        color: aliceblue;
-        font-size: 1.7em;
-    }
 
     /*PARTE PULSANTI MOBILE*/
     .pulsantiLoginMobile {
         text-align: center;
-        margin-top: 5em;
+        margin-top: 3em;
         font-size: 1.6em;
     }
 

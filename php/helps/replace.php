@@ -13,6 +13,7 @@ class html
 
     public static function footer()
     {
+        //Rendere dinamica tramite risoluzione dei link circolari
         return file_get_contents("../html/footer.html");
     }
 

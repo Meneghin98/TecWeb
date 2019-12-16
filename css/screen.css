@@ -552,12 +552,7 @@ body {
     background-color: rgba(52, 52, 52, 1);
     text-align: center;
     color: white;
-}
-
-.datiAccount {
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: left;
+    min-height: 300px;
 }
 
 .datiAccount fieldset {
@@ -566,13 +561,12 @@ body {
 
 }
 
-form .datiAccount {
+.datiAccount {
     max-width: 650px;
-    /*min-width: -moz-min-content;
-    min-width: -webkit-min-content;
-    min-width: min-content;*/
-    color: whitesmoke;
+    list-style-type: none;
     margin: 0 auto;
+    text-align: left;
+    color: whitesmoke;
     font-size: medium;
 }
 

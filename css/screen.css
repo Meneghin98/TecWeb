@@ -311,6 +311,7 @@ body {
 
 .content {
     background-color: white;
+    padding-bottom: 1em;
 }
 
 .menu {
@@ -712,7 +713,7 @@ body {
     padding-bottom: 2em;
 }
 
-.description h2 {
+.description h2, #ListaCommenti {
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -818,6 +819,22 @@ body {
 
 .tornasu {
     float: right;
+}
+
+.commento{
+    list-style-type: none;
+    border: 2px solid #088700;
+    margin: 1em 15.2em 1em 3.6em;
+    padding: 1em;
+}
+.commento a:link{
+    color: black;
+}
+.commento a:hover{
+color: blue;
+}
+.commento p{
+    padding-top: 1em;
 }
 
 /*

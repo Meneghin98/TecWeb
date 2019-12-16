@@ -1055,14 +1055,15 @@ body {
         margin: 0;
 
     }
-}
-/*fine articoli + recensioni*/
-/*--------footer--------*/
-#footer {
-    display: none;
-}
-/*--------fine footer------*/
+    /*fine articoli + recensioni*/
+    /*--------footer--------*/
+    #footer {
+        display: none;
+    }
+    /*--------fine footer------*/
 
+
+}
 
 /*
 ---------------------- fine mobile ----------------------------------

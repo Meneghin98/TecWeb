@@ -57,6 +57,34 @@ class DBConnection
         else
             return null;
     }
+    public function getUtenteArray($nickname){
+        if (is_null($nickname)) {
+            echo "ERRORE: L'utente deve essere specificato";
+            exit();
+        }
+        else{
+            $query = "SELECT * FROM users WHERE users.nickname='$nickname'";
+            $queryResult = mysqli_query($this->connection, $query);
+            if (!$queryResult) {
+                echo "Errore della query: " . mysqli_error($this->connection) . ".";
+                exit();
+            }
+            if (mysqli_num_rows($queryResult) == 1) {
+                $utenteTrovato = mysqli_fetch_assoc($queryResult);
+                return array(
+                    'nick'=>$utenteTrovato['nickname'],
+                    'password'=>$utenteTrovato['pwd'],
+                    'email'=>$utenteTrovato['email'],
+                    'nome'=>$utenteTrovato['username'],
+                    'cognome'=>$utenteTrovato['surname'],
+                    'tipologia'=>$utenteTrovato['usertype'],
+                    'riferimento'=>$utenteTrovato['ref']
+                );
+            }
+            else
+                echo "ERRORE: più utenti con lo stesso nickname";
+        }
+    }
 
     public function close(){
         mysqli_close($this->connection);

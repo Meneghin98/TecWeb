@@ -6,11 +6,7 @@
 /*
 ---------------------- mobile ----------------------------------
  */
-<<<<<<< HEAD
-@media screen and (max-device-width: 960px) {
-=======
 @media only screen and (max-width: 900px) {
->>>>>>> b3f0264e0fa052d4b3090109aff1c35de741b74f
 
     * {
         margin: 0;
@@ -203,9 +199,6 @@
 /*
 ---------------------- fine mobile ----------------------------------
  */
-
-
-@media only screen and (min-width: 900px) {
 
 body {
     font-family: Verdana, Helvetica, sans-serif;
@@ -946,5 +939,3 @@ form .datiAccount {
 /*
 ---------------------- fine index ----------------------------------
  */
-
-}

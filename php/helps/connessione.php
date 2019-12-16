@@ -71,6 +71,7 @@ class DBConnection
             }
             if (mysqli_num_rows($queryResult) == 1) {
                 $utenteTrovato = mysqli_fetch_assoc($queryResult);
+                mysqli_free_result($queryResult);
                 return array(
                     'nick'=>$utenteTrovato['nickname'],
                     'password'=>$utenteTrovato['pwd'],

@@ -7,6 +7,7 @@ drop table IF EXISTS comments;
 drop table IF EXISTS articles;
 drop table IF EXISTS users;
 drop table IF EXISTS categories;
+drop procedure IF EXISTS IncrementaVisualizzazioni;
 
 
 create TABLE users
@@ -158,6 +159,9 @@ insert into articles/*death stranding*/
 values (null, 'html/News/DeathStrandingPC.html', '2019-10-30', '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
         '',
         'Death Stranding PC', 'News', '0', '4', null);
+insert into articles/*StarWars vendite*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/News/StarWarsPCSell.html', '2019-11-27', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record', 'Vendite PC, battuti molti record','Star Wars vendite PC','News', '0', '4', null);
 
 
 
@@ -183,3 +187,6 @@ values ('images/Recensioni/Star-Wars/starwars.png', '', '6');
 insert into images
 (src, alt, article)
 values ('images/death-stranding-image.jpg', '', '7');
+insert into images
+(src, alt, article)
+values ('images/News/StarWars/StarWarsNews2.png', '', '8');

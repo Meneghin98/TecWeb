@@ -26,5 +26,8 @@ $articoli = $DB->getArticlesArray($where);
 if (!is_null($articoli)) {
     $file = str_replace('£articoli', html::articoli($articoli, 0), $file);
 }
+else{
+    $file = str_replace('£articoli', '', $file);
+}
 $DB->close();
 echo str_replace('£head', html::head(), $file);

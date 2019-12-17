@@ -3,14 +3,135 @@
     padding: 0;
 }
 
+@media only screen and (max-device-width: 640px) {
+    #header {
+         display: none;
+     }
+ 
+     body {
+         color: aliceblue;
+     }
+ 
+      /*PARTE DEL MENU*/
+      .menu {
+         display: none;
+     }
+ 
+      .menuMobileLogin img {
+         float: left;
+         width: 7em;
+     }
+ 
+     .menuMobileLogin {
+         display: contents;
+         text-align: center;  
+     }
+ 
+     .menuMobileLogin h1 {
+         margin-right: 2em;
+         margin-bottom: 2em;
+         padding: 0.2em;
+         font-size: 4em;
+     }
+ 
+     
+     /*PARTE DEL CONTENT*/
+     .contentLog {
+         display: none;
+     }
+ 
+     .contentMobileLogin {
+         display: contents;
+     }
+ 
+     .contentMobileLogin form {
+         display: inline;
+         padding: 0em;
+     }
+ 
+     .contentMobileLogin img {
+         vertical-align: middle;
+         width: 3em;
+         margin-left: 5em;
+     }
+ 
+     .lucchettoMobileImg {
+         margin: 0em;
+     }   
+ 
+     .passwordMobileLog {
+         text-align: center;
+     }
+ 
+     .passwordMobileLog input {
+         padding-bottom: 0.5em;
+ 
+     }
+ 
+     .passwordMobileLog input[type="password"] {
+         font-size: 3em;
+     }
+ 
+     .passwordMobileLog img {
+         width: 8em;
+         margin: 3em 2em 3em 0em;
+         padding-bottom: 4.2em;
+     }
+ 
+     .emailMobileLog {
+         text-align: center;
+     }
+ 
+     .emailMobileLog input {
+         padding-bottom: 0.5em;
+     }
+ 
+     .emailMobileLog input[type="text"] {
+         font-size: 3em;
+     }
+ 
+     .emailMobileLog img {
+         width: 8em;
+         margin: 3em 2em 2.5em 0em;
+     }
+ 
+ 
+     /*PARTE PULSANTI MOBILE*/
+     .pulsantiLoginMobile {
+         text-align: center;
+         margin-top: 3em;
+         font-size: 1.6em;
+     }
+ 
+     .pulsantiLoginMobile p {
+         margin-bottom: 0.3em;
+     }
+ 
+     #AccediLoginMobile {
+         font-size: 2em;   
+         margin-bottom: 1.5em;
+         padding-left: 2em;
+         padding-right: 2em;
+     }
+ 
+     #RegistratiLoginMobile {
+         font-size: 2em;   
+         padding-left: 1.4em;
+         padding-right: 1.4em;
+     }
+ 
+     .footer {
+         display: none;
+     }
+ 
+ 
+ 
+ }
+
 /*
 ---------------------- mobile ----------------------------------
  */
-<<<<<<< HEAD
-@media screen and (max-device-width: 960px) {
-=======
 @media only screen and (max-width: 900px) {
->>>>>>> b3f0264e0fa052d4b3090109aff1c35de741b74f
 
     * {
         margin: 0;
@@ -553,6 +674,132 @@ body {
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
  */
+
+
+/*--------------------------------------------LOGIN----------------------------------------------*/
+
+#contentLogin {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 7em 0em;
+}
+
+.signIn {
+    margin: 0em auto;
+    width: 25em;
+    padding: 1em 2em;
+    background-color: white;
+    border: transparent;
+    border-radius: 2em;
+}
+
+.imageLogin {
+    background-image: url(../images/icons/login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    padding: 3em 2em 2em 2em;
+    display: block;
+    margin: 0em auto;
+}
+
+
+.contentLog legend {
+    padding-top: 1em;
+}
+
+
+.contentLog form {
+    padding: 2em;
+    display: block;
+    text-align: center;
+    margin: 0em 3em;
+}
+
+
+.contentLog label {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.signIn p {
+    margin-top: 2em;
+    font-size: 70%;
+}
+
+#AccediLogin {
+    font-size: x-large;
+    padding: 0em 2em;
+}
+
+.pulsantiLogin {
+    width: 13em;
+    display: block;
+    margin: 2em auto 0em auto;
+}
+
+.menuMobileLogin {
+    display: none;
+}
+
+.contentMobileLogin {
+    display: none;
+}
+
+
+/*--------------------------------------------FINE LOGIN--------------------------------------------*/
+
+
+/*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
+
+#contentRegistrazione h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contentReg form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+.contentReg fieldset {
+    padding: 1.5em;
+    margin: 3em;
+}
+
+#contentRegistrazione {
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(255, 255, 255, 0.904)
+}
+
+.confermaAccountReg {
+    margin-top: 6em;
+}
+
+.confermaAccountReg input {
+    padding: 0.2em;
+    font-size: 2em;
+}
+
+input#bottoneIndietroReg {
+    margin-left: 2em;
+}
+
+/*PARTE MOBILE*/
+.menuMobileReg {
+    display: none;
+}
+
+.contentMobileReg {
+    display: none;
+}
+
+/*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
+
+
+
 
 #AreaUtente {
     padding: 3em 0;

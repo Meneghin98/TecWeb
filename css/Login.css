@@ -22,18 +22,21 @@
     margin: 0em auto;
 }
 
-.content legend {
+
+.contentLog legend {
     padding-top: 1em;
 }
 
-.content form {
+
+.contentLog form {
     padding: 2em;
     display: block;
     text-align: center;
     margin: 0em 3em;
 }
 
-.content label {
+
+.contentLog label {
     display: inline-block;
     padding: 0.5em;
 }

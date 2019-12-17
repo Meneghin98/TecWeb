@@ -15,7 +15,7 @@ else {
 
     $commenti = $DB->getCommentsArrayOfArtile($_GET['id']);
     if (is_null($commenti))
-        $paginaArticolo = str_replace('£commenti', '<p>non ci sono commenti al momento</p>', $paginaArticolo);
+        $paginaArticolo = str_replace('£commenti', '<p>Non ci sono commenti al momento</p>', $paginaArticolo);
     else {
         $paginaArticolo = str_replace('£commenti', "<ul>£commenti</ul>", $paginaArticolo);
         $paginaArticolo = str_replace('£commenti', html::commenti($commenti), $paginaArticolo);

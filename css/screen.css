@@ -831,7 +831,10 @@ body {
 #ListaCommenti{
     margin: 0 5em;
 }
-
+#ListaCommenti p{
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
 .commento{
     list-style-type: none;
     border: 2px solid #088700;

@@ -876,10 +876,13 @@ color: blue;
 #ScriviCommento input{
     float: right;
     border-radius: 25px;
-    border: 2px solid #0E9C09;
+    border: 2px solid darkgreen;
     font-size: 1.2em;
-    padding: .1em .3em;
+    padding: .2em .5em;
     margin: 0.3em;
+    cursor: pointer;
+    background-color: green;
+    color: white;
 }
 
 /*

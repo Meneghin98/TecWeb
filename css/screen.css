@@ -844,11 +844,16 @@ body {
 }
 .commento a:link, .commento a:visited{
     color: black;
+    font-size: 1.3em;
+
 }
 .commento a:hover{
 color: blue;
 }
-.commento p{
+
+#ListaCommenti .commento p{
+    font-size: unset;
+    padding-top: .2em;
     padding-bottom: 1em;
 }
 .commento pre{

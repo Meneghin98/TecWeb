@@ -11,6 +11,10 @@ switch ($_GET['t']) {
         $path = "Recensioni/recensioni";
         $where = "Recensioni";
         break;
+    case 'a':
+        $path = "Altro/altro";
+        $where = "Altro";
+        break;
 }
 
 $file = file_get_contents("../html/$path.html");

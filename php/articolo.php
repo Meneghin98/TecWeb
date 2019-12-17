@@ -8,7 +8,10 @@ if(is_null($ArticoloDB))
     //redirect
     ;
 else{
-$articolo = file_get_contents("../" . $ArticoloDB['path']);
+$paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
+$paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
+$paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
+$paginaArticolo = str_replace('£footer', html::footer(), $paginaArticolo);
 $DB->close();
 }
-echo $articolo;
+echo $paginaArticolo;

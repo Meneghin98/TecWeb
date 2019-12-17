@@ -30,4 +30,4 @@ else{
     $file = str_replace('£articoli', '', $file);
 }
 $DB->close();
-echo str_replace('£head', html::head(), $file);
+echo str_replace('£head_', html::head(), $file);

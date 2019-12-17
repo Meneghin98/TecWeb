@@ -713,7 +713,7 @@ body {
     padding-bottom: 2em;
 }
 
-.description h2, #ListaCommenti {
+.description h2{
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -723,7 +723,7 @@ body {
 }
 
 .comment {
-    background-color: #32cd3266;
+    background-color: rgba(50, 205, 50, 0.4);
     margin: 0 2em;
     padding: 0.5em 2em;
     border-bottom-left-radius: 5px;
@@ -778,8 +778,8 @@ body {
     margin: 0 1em;
     font-weight: bold;
     font-size: 2em;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .voto p {
@@ -821,13 +821,24 @@ body {
     float: right;
 }
 
+#TitoloCommenti{
+    border-bottom: 0.1em solid #088700;
+    font-size: 1.8em;
+    color: black;
+}
+
+#ListaCommenti, #TitoloCommenti{
+    margin: 0 3em;
+}
+
 .commento{
     list-style-type: none;
     border: 2px solid #088700;
-    margin: 1em 15.2em 1em 3.6em;
+    border-radius: 8px;
+    margin: 1em 0;
     padding: 1em;
 }
-.commento a:link{
+.commento a:link, .commento a:visited{
     color: black;
 }
 .commento a:hover{

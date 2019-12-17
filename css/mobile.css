@@ -1,0 +1,245 @@
+/*----------------login--------------*/
+
+
+.menu {
+    display: none;
+}
+
+ .menuMobileLogin img {
+    float: left;
+    width: 7em;
+}
+
+.menuMobileLogin {
+    display: inherit;
+    background-color:rgba(0, 0, 0, 0.5);    
+    text-align: center;  
+}
+
+.menuMobileLogin h1 {
+    color: white;
+    margin-right: 2em;
+    padding: 0.2em;
+    font-size: 4em;
+}
+
+.signIn {
+    background-color:transparent;    
+}
+
+.contentLog form {
+    margin: 0em;
+    padding: 0em;
+}
+
+.signIn strong{
+    display: none;
+}
+
+.signIn p {
+    display: none;
+}
+
+.imageLogin {
+    display: none;
+}
+
+.passwordLog {
+    text-align: center;
+}
+
+.passwordLog input[type="password"] {
+    font-size: 2em;
+}
+
+.passwordLog label {
+    display: none;
+}
+
+.passwordLog {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.passwordLog input {
+    padding-bottom: 0.2em;
+    margin-left: 0.7em;
+    align-self: flex-end;
+}
+
+.passwordLog img {
+    display: inherit;
+    margin: 1em 0em 0em 1em;
+}
+
+.passwordLog input[type="password"] {
+    font-size: 2.5em;
+}
+
+.emailLog {
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+.emailLog label {
+    display: none;
+}
+
+.emailLog input {
+    padding-bottom: 0.2em;  
+}
+
+.emailLog input[type="text"] {
+    font-size: 2.5em;
+}
+
+.emailLog img {
+    display: block;
+    width: 15%;
+    margin-right: 1em;
+}
+
+.contentLog input {
+    text-align: center;
+}
+
+#AccediLogin {
+    margin-top: 2em;
+    margin-left: 1.5em;
+}
+
+#AccediLogin, #RegistratiLoginMobile {
+    font-size: 3.5em;
+    padding: 0em 2em;   
+    
+}
+
+#RegistratiLoginMobile {
+    display: inherit;
+    margin-left: 0.8em;
+    margin-top: 2em;
+}
+
+.pulsantiLogin {
+    width: 0em;
+    margin-left: 2em;
+}
+
+.pulsantiLogin p {
+    display: contents;
+    color: white;
+    font-size: 2em;
+}
+
+.pulsantiLogin p a {
+    color: white;
+    margin-top: 3em;
+}
+
+
+/*----------------registrazione--------------*/
+
+
+.menuMobileReg {
+    display: inherit;
+    text-align: center;  
+    background-color: #525252;
+}
+
+.menuMobileReg img {
+    float: left;
+    width: 7em;
+}
+
+.menuMobileReg h1 {
+    color: white;
+    margin-right: 1em;
+    padding: 0.2em;
+    font-size: 4em;
+}
+
+input#bottoneIndietroReg {
+    display: none;
+}
+
+.confermaAccountReg input {
+    padding: 0.2em 3.6em;
+    font-size: 2em;
+    margin-left: 2.5em;;
+}
+
+#contentRegistrazione h1 {
+    display: none;
+}
+
+#contentRegistrazione {
+    padding-top: 2em;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contentReg {
+    padding-top: 3em;
+    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
+}
+
+.contentReg fieldset legend {
+    /*display: none;*/
+    color: white;
+}
+
+.contentReg fieldset {
+    padding: 1em;
+}
+
+#secondReg {
+    margin-top: 3em;
+}
+
+.contentMobileReg form {
+   margin: 0em auto;
+   text-align: left;
+   width: 18em;
+}
+
+.ManageReg input {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 2em;
+    float: right;
+}
+
+.contentReg label {
+    color: white;
+}
+
+.contentReg form {
+    margin-left: 3em;
+}
+
+.ManageReg {
+    display: inline-flex;
+    margin-top: 1em;
+    float: right;
+}
+
+.pulsantiMobileReg input {
+   font-size: 2em;
+   margin-top: 2em;
+   padding: 0.2em;
+   border-radius: 0.2em;
+}
+
+.footer {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 2em;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    padding: 1em;
+    text-align: center;
+}
+
+/*----------------FINE registrazione--------------*/

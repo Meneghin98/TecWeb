@@ -3,9 +3,6 @@
          display: none;
      }
  
-     body {
-         color: aliceblue;
-     }
  
       /*PARTE DEL MENU*/
     .menu {
@@ -29,13 +26,10 @@
          font-size: 4em;
      }
 
-     .content {
+     .contentMobileReg {
          display: none;
      }
 
-     .footer {
-         display: none;
-     }
 
      .contentMobileReg {
          display: contents;
@@ -47,14 +41,23 @@
         width: 18em;
      }
 
-     .contentMobileReg input {
+     .cc input {
          text-align: center;
-         margin-top: 2em;
+         /* margin-top: 2em; */
+         margin-left: 3em;
      }
 
-    input#RegistratiLoginMobile {
-        margin: 2em auto;
+     .cc {
+         display: inline-flex;
+         float: right;
+         margin-bottom: 1.5em;
+     }
 
+    .pulsantiMobileReg input {
+        font-size: 2em;
+        margin-top: 2em;
+        padding: 0.2em;
+        border-radius: 0.2em;
     }
 
 }

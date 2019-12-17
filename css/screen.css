@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /*
 ---------------------- mobile ----------------------------------
 
@@ -549,6 +550,147 @@ body {
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
  */
+
+
+/*--------------------------------------------LOGIN----------------------------------------------*/
+
+.menuMobileLogin {
+    display: none;
+}
+
+#contentLogin {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 7em 0em;
+}
+
+.pulsantiLogin p {
+    display: none;
+}
+
+#RegistratiLoginMobile {
+    display: none;
+}
+
+.emailLog img {
+    display: none;
+}
+
+.passwordLog img {
+    display: none;
+}
+
+.signIn {
+    margin: 0em auto;
+    width: 25em;
+    padding: 1em 2em;
+    background-color: white;
+    border: transparent;
+    border-radius: 2em;
+}
+
+.imageLogin {
+    background-image: url(../images/icons/login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    padding: 3em 2em 2em 2em;
+    display: block;
+    margin: 0em auto;
+}
+
+
+.contentLog legend {
+    padding-top: 1em;
+}
+
+
+.contentLog form {
+    padding: 2em;
+    display: block;
+    text-align: center;
+    margin: 0em 3em;
+}
+
+
+.contentLog label {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.signIn p {
+    margin-top: 2em;
+    font-size: 70%;
+}
+
+#AccediLogin {
+    font-size: x-large;
+    padding: 0em 2em;
+}
+
+.pulsantiLogin {
+    width: 13em;
+    display: block;
+    margin: 2em auto 0em auto;
+}
+
+
+/*--------------------------------------------FINE LOGIN--------------------------------------------*/
+
+
+/*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
+
+.menuMobileReg {
+    display: none;
+}
+
+#contentRegistrazione h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contentReg label {
+    color: black;
+}
+
+.contentReg form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+.contentReg fieldset {
+    padding: 1.5em;
+    margin: 3em;
+}
+
+#contentRegistrazione {
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(255, 255, 255, 0.904)
+}
+
+.confermaAccountReg {
+    margin-top: 6em;
+}
+
+.confermaAccountReg input {
+    padding: 0.2em;
+    font-size: 2em;
+}
+
+input#bottoneIndietroReg {
+    margin-left: 2em;
+}
+
+.contentMobileReg {
+    display: none;
+}
+
+/*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
+
+
+
 
 #AreaUtente {
     padding: 3em 0;
@@ -1142,6 +1284,9 @@ color: blue;
     /*--------fine footer------*/
 
 
+    #header {
+        display: none;
+    }
 }
 
 /*

@@ -34,9 +34,8 @@ class DBConnection
     {
         $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.id = '$id'";
         $result = mysqli_query($this->connection, $query);
-        if (!$result) {
-            echo "Errore della query: " . mysqli_error($this->connection) . ".";
-            exit();
+        if (is_null($result)) {
+            return null;
         }
         $row = mysqli_fetch_assoc($result);
         $articolo = array(
@@ -96,8 +95,7 @@ class DBConnection
             $query = "SELECT * FROM users WHERE users.nickname='$nickname'";
             $queryResult = mysqli_query($this->connection, $query);
             if (!$queryResult) {
-                echo "Errore della query: " . mysqli_error($this->connection) . ".";
-                exit();
+                return null;
             }
             if (mysqli_num_rows($queryResult) == 1) {
                 $utenteTrovato = mysqli_fetch_assoc($queryResult);
@@ -114,7 +112,7 @@ class DBConnection
             } else if (mysqli_num_rows($queryResult) > 1)
                 echo "ERRORE: Più utenti con lo stesso nickname";
             else
-                echo "ERRORE: Nessun utente trovato";
+                echo "ERRORE: Nessun utente trovato"; //implementare redirect
         }
     }
 

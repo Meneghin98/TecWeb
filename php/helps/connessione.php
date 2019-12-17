@@ -25,9 +25,35 @@ class DBConnection
         return $connessione;
     }
 
-    public function putComment($text, $user) {
+    public function putComment($text, $user)
+    {
         $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', 1)";
         mysqli_query($this->connection, $query);
+    }
+
+    public function getCommentsArrayOfArtile($idArticle)
+    {
+        $query = "SELECT * FROM comments c WHERE c.article='$idArticle' ORDER BY c.creation_date";
+        $queryResult = mysqli_query($this->connection, $query);
+        if (!$queryResult)
+            return null;
+        if (mysqli_num_rows($queryResult) > 0) {
+            $commentArray = array();
+            while ($row = mysqli_fetch_assoc($queryResult)) {
+                $comment = array(
+                    'id' => $row['id'],
+                    'data' => $row['creation_date'],
+                    'testo' => $row['txt'],
+                    'utente' => $row['user'],
+                    'id_articolo' => $row['article']
+                );
+                array_push($commentArray, $comment);
+            }
+            mysqli_free_result($queryResult);
+            return $commentArray;
+        }
+        else return null;
+
     }
 
     public function getArticleByID($id)

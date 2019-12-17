@@ -25,4 +25,11 @@ class html
         }
         return $articoli;
     }
+    public static function commenti($commenti_array){
+        $commenti="";
+        foreach($commenti_array as $commento){
+            $commenti .= "<li class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre></li>";
+        }
+        return $commenti;
+    }
 }

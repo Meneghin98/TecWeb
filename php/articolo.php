@@ -4,14 +4,22 @@ require_once("helps/replace.php");
 
 $DB = new DBConnection();
 $ArticoloDB = $DB->getArticleByID($_GET['id']);
-if(is_null($ArticoloDB))
+if (is_null($ArticoloDB))
     //redirect
     ;
-else{
-$paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
-$paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
-$paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
-$paginaArticolo = str_replace('£footer', html::footer(), $paginaArticolo);
-$DB->close();
+else {
+    $paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
+    $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
+    $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
+    $paginaArticolo = str_replace('£footer', html::footer(), $paginaArticolo);
+
+    $commenti = $DB->getCommentsArrayOfArtile($_GET['id']);
+    if (is_null($commenti))
+        $paginaArticolo = str_replace('£commenti', '<p>non ci sono commenti al momento</p>', $paginaArticolo);
+    else {
+        $paginaArticolo = str_replace('£commenti', "<ul>£commenti</ul>", $paginaArticolo);
+        $paginaArticolo = str_replace('£commenti', html::commenti($commenti), $paginaArticolo);
+    }
+    $DB->close();
 }
 echo $paginaArticolo;

@@ -25,71 +25,125 @@ class DBConnection
         return $connessione;
     }
 
+    public function putComment($text, $user, $article)
+    {
+        $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', '$article')";
+        mysqli_query($this->connection, $query);
+    }
+
+    public function getCommentsArrayOfArtile($idArticle)
+    {
+        $query = "SELECT * FROM comments c WHERE c.article='$idArticle' ORDER BY c.creation_date DESC ";
+        $queryResult = mysqli_query($this->connection, $query);
+        if (!$queryResult)
+            return null;
+        if (mysqli_num_rows($queryResult) > 0) {
+            $commentArray = array();
+            while ($row = mysqli_fetch_assoc($queryResult)) {
+                $comment = array(
+                    'id' => $row['id'],
+                    'data' => $row['creation_date'],
+                    'testo' => $row['txt'],
+                    'utente' => $row['user'],
+                    'id_articolo' => $row['article']
+                );
+                array_push($commentArray, $comment);
+            }
+            mysqli_free_result($queryResult);
+            return $commentArray;
+        }
+        else return null;
+
+    }
+
+    public function getArticleByID($id)
+    {
+        $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.id = '$id'";
+        $result = mysqli_query($this->connection, $query);
+        if (is_null($result)) {
+            return null;
+        }
+        $row = mysqli_fetch_assoc($result);
+        $articolo = array(
+            'ID' => $row['id'],
+            'data' => $row['data'],
+            'path' => $row['path'],
+            'titolo' => $row['title'],
+            'descrizione' => $row['description'],
+            'titolo_categoria' => $row['c_title'],
+            'categoria' => $row['category'],
+            'img' => $row['img_src'],
+            'alt' => $row['img_alt'],
+        );
+        mysqli_free_result($result);
+        return $articolo;
+    }
+
     public function getArticlesArray($where)
     {
         if (is_null($where))
-            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
+            $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
         else
-            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.article_type = '$where' ORDER BY data DESC";
+            $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.article_type = '$where' ORDER BY data DESC";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult) {
             echo "Errore della query: " . mysqli_error($this->connection) . ".";
             exit();
         }
-        if(mysqli_num_rows($queryResult) > 0) {
+        if (mysqli_num_rows($queryResult) > 0) {
             $articleArray = array();
-            while ($row = mysqli_fetch_assoc($queryResult)){
+            while ($row = mysqli_fetch_assoc($queryResult)) {
                 $articolo = array(
-                    'data'=>$row['data'],
-                    'path'=>$row['path'],
-                    'titolo'=>$row['title'],
-                    'descrizione'=>$row['description'],
-                    'titolo_categoria'=>$row['c_title'],
-                    'categoria'=>$row['category'],
-                    'img'=>$row['img_src'],
-                    'alt'=>$row['img_alt'],
+                    'pathID' => "articolo.php?id=$row[id]",
+                    'data' => $row['data'],
+                    'path' => $row['path'],
+                    'titolo' => $row['title'],
+                    'descrizione' => $row['description'],
+                    'titolo_categoria' => $row['c_title'],
+                    'categoria' => $row['category'],
+                    'img' => $row['img_src'],
+                    'alt' => $row['img_alt'],
                 );
                 array_push($articleArray, $articolo);
             }
             mysqli_free_result($queryResult);
             return $articleArray;
-        }
-        else
+        } else
             return null;
     }
-    public function getUtenteArray($nickname){
+
+    public function getUtenteArray($nickname)
+    {
         if (is_null($nickname)) {
             echo "ERRORE: L'utente deve essere specificato";
             exit();
-        }
-        else{
+        } else {
             $query = "SELECT * FROM users WHERE users.nickname='$nickname'";
             $queryResult = mysqli_query($this->connection, $query);
             if (!$queryResult) {
-                echo "Errore della query: " . mysqli_error($this->connection) . ".";
-                exit();
+                return null;
             }
             if (mysqli_num_rows($queryResult) == 1) {
                 $utenteTrovato = mysqli_fetch_assoc($queryResult);
                 mysqli_free_result($queryResult);
                 return array(
-                    'nick'=>$utenteTrovato['nickname'],
-                    'password'=>$utenteTrovato['pwd'],
-                    'email'=>$utenteTrovato['email'],
-                    'nome'=>$utenteTrovato['username'],
-                    'cognome'=>$utenteTrovato['surname'],
-                    'tipologia'=>$utenteTrovato['usertype'],
-                    'riferimento'=>$utenteTrovato['ref']
+                    'nick' => $utenteTrovato['nickname'],
+                    'password' => $utenteTrovato['pwd'],
+                    'email' => $utenteTrovato['email'],
+                    'nome' => $utenteTrovato['username'],
+                    'cognome' => $utenteTrovato['surname'],
+                    'tipologia' => $utenteTrovato['usertype'],
+                    'riferimento' => $utenteTrovato['ref']
                 );
-            }
-            else if (mysqli_num_rows($queryResult) > 1)
+            } else if (mysqli_num_rows($queryResult) > 1)
                 echo "ERRORE: Più utenti con lo stesso nickname";
             else
-                echo "ERRORE: Nessun utente trovato";
+                echo "ERRORE: Nessun utente trovato"; //implementare redirect
         }
     }
 
-    public function close(){
+    public function close()
+    {
         mysqli_close($this->connection);
     }
 }

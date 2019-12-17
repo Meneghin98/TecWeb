@@ -346,7 +346,7 @@ body {
     text-decoration: none;
 }
 
-.menu a:hover {
+.menu a:hover, .menu #currentlink:hover {
     color: #0E9C09;
 }
 

@@ -18,5 +18,5 @@ if (is_null($utente['riferimento']))
     $file = str_replace('£ref','',$file);
 else
     $file = str_replace('£ref',"<li>Riferimento: $utente[riferimento]</li>",$file);
-
+$DB->close();
 echo $file;

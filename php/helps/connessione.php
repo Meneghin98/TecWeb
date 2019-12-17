@@ -25,6 +25,11 @@ class DBConnection
         return $connessione;
     }
 
+    public function putComment($text, $user){
+        $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', 1)";
+        mysqli_query($this->connection, $query);
+    }
+
     public function getArticlesArray($where)
     {
         if (is_null($where))

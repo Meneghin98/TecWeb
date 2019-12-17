@@ -890,6 +890,9 @@ color: blue;
     background-color: green;
     color: white;
 }
+#commenta img{
+    float: right;
+}
 
 /*
 ---------------------- fine Recensione e articolo ----------------------------------

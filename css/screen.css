@@ -874,6 +874,9 @@ color: blue;
     display: inline;
 }
 #ScriviCommento input{
+    display: none;
+}
+#ScriviCommento #commenta{
     float: right;
     border-radius: 25px;
     border: 2px solid darkgreen;

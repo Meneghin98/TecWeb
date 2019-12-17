@@ -33,9 +33,9 @@ class DBConnection
     public function getArticlesArray($where)
     {
         if (is_null($where))
-            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
+            $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY data DESC";
         else
-            $query = "SELECT A.creation_date as data, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.article_type = '$where' ORDER BY data DESC";
+            $query = "SELECT A.creation_date as data, A.id as id, A.path as path, A.title as title, A.category_title as c_title, C.names as category, I.src as img_src, I.alt as img_alt, A.description as description FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id WHERE A.article_type = '$where' ORDER BY data DESC";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult) {
             echo "Errore della query: " . mysqli_error($this->connection) . ".";
@@ -45,6 +45,7 @@ class DBConnection
             $articleArray = array();
             while ($row = mysqli_fetch_assoc($queryResult)){
                 $articolo = array(
+                    'pathID'=>"articolo.php?id=$row[id]",
                     'data'=>$row['data'],
                     'path'=>$row['path'],
                     'titolo'=>$row['title'],

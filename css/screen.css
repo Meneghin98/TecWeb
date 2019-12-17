@@ -3,134 +3,11 @@
     padding: 0;
 }
 
-@media only screen and (max-device-width: 640px) {
-    #header {
-         display: none;
-     }
- 
-     body {
-         color: aliceblue;
-     }
- 
-      /*PARTE DEL MENU*/
-      .menu {
-         display: none;
-     }
- 
-      .menuMobileLogin img {
-         float: left;
-         width: 7em;
-     }
- 
-     .menuMobileLogin {
-         display: contents;
-         text-align: center;  
-     }
- 
-     .menuMobileLogin h1 {
-         margin-right: 2em;
-         margin-bottom: 2em;
-         padding: 0.2em;
-         font-size: 4em;
-     }
- 
-     
-     /*PARTE DEL CONTENT*/
-     .contentLog {
-         display: none;
-     }
- 
-     .contentMobileLogin {
-         display: contents;
-     }
- 
-     .contentMobileLogin form {
-         display: inline;
-         padding: 0em;
-     }
- 
-     .contentMobileLogin img {
-         vertical-align: middle;
-         width: 3em;
-         margin-left: 5em;
-     }
- 
-     .lucchettoMobileImg {
-         margin: 0em;
-     }   
- 
-     .passwordMobileLog {
-         text-align: center;
-     }
- 
-     .passwordMobileLog input {
-         padding-bottom: 0.5em;
- 
-     }
- 
-     .passwordMobileLog input[type="password"] {
-         font-size: 3em;
-     }
- 
-     .passwordMobileLog img {
-         width: 8em;
-         margin: 3em 2em 3em 0em;
-         padding-bottom: 4.2em;
-     }
- 
-     .emailMobileLog {
-         text-align: center;
-     }
- 
-     .emailMobileLog input {
-         padding-bottom: 0.5em;
-     }
- 
-     .emailMobileLog input[type="text"] {
-         font-size: 3em;
-     }
- 
-     .emailMobileLog img {
-         width: 8em;
-         margin: 3em 2em 2.5em 0em;
-     }
- 
- 
-     /*PARTE PULSANTI MOBILE*/
-     .pulsantiLoginMobile {
-         text-align: center;
-         margin-top: 3em;
-         font-size: 1.6em;
-     }
- 
-     .pulsantiLoginMobile p {
-         margin-bottom: 0.3em;
-     }
- 
-     #AccediLoginMobile {
-         font-size: 2em;   
-         margin-bottom: 1.5em;
-         padding-left: 2em;
-         padding-right: 2em;
-     }
- 
-     #RegistratiLoginMobile {
-         font-size: 2em;   
-         padding-left: 1.4em;
-         padding-right: 1.4em;
-     }
- 
-     .footer {
-         display: none;
-     }
- 
- 
- 
- }
 
 /*
 ---------------------- mobile ----------------------------------
- */
+
+
 @media only screen and (max-width: 900px) {
 
     * {
@@ -139,17 +16,17 @@
     }
 
 
-    /* ------------------------------------ */
-    /* ------------ Header --------------- */
-    /*      Sistemare img dentro a h1      */
+    /* ------------------------------------
+    /* ------------ Header ---------------
+    /*      Sistemare img dentro a h1
 
     #header {
         display: none;
     }
 
 
-    /* --------------------------------------------------- */
-    /* ------- Dichiarazione caratteristiche font -------- */
+    /* ---------------------------------------------------
+    /* ------- Dichiarazione caratteristiche font --------
 
     .articleListDesc, .shortDesc, .writer, .description p, .comment p {
         font-size: 1.5em;
@@ -190,8 +67,8 @@
         color: red;
     }
 
-    /* ----------------------------------- */
-    /* ---------- Top-Articles ----------- */
+    /* -----------------------------------
+    /* ---------- Top-Articles -----------
 
     .topArticles {
         flex: 100%;
@@ -225,8 +102,8 @@
     }
 
 
-    /* ------------------------------------- */
-    /* -------------- Content -------------- */
+    /* -------------------------------------
+    /* -------------- Content --------------
 
     .content {
         width: 100%;
@@ -312,8 +189,8 @@
     }
 
 
-    /* ------------------------------ */
-    /* ---------- Footer ------------ */
+    /* ------------------------------
+    /* ---------- Footer ------------
 
     #footer {
         display: none;
@@ -325,8 +202,6 @@
 ---------------------- fine mobile ----------------------------------
  */
 
-
-@media only screen and (min-width: 900px) {
 
 body {
     font-family: Verdana, Helvetica, sans-serif;
@@ -437,6 +312,7 @@ body {
 
 .content {
     background-color: white;
+    padding-bottom: 1em;
 }
 
 .menu {
@@ -678,9 +554,29 @@ body {
 
 /*--------------------------------------------LOGIN----------------------------------------------*/
 
+.menuMobileLogin {
+    display: none;
+}
+
 #contentLogin {
     background-color:rgba(0, 0, 0, 0.5);
     padding: 7em 0em;
+}
+
+.pulsantiLogin p {
+    display: none;
+}
+
+#RegistratiLoginMobile {
+    display: none;
+}
+
+.emailLog img {
+    display: none;
+}
+
+.passwordLog img {
+    display: none;
 }
 
 .signIn {
@@ -737,25 +633,25 @@ body {
     margin: 2em auto 0em auto;
 }
 
-.menuMobileLogin {
-    display: none;
-}
-
-.contentMobileLogin {
-    display: none;
-}
-
 
 /*--------------------------------------------FINE LOGIN--------------------------------------------*/
 
 
 /*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
 
+.menuMobileReg {
+    display: none;
+}
+
 #contentRegistrazione h1 {
     text-align: center;
     font-size: 2.8em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.contentReg label {
+    color: black;
 }
 
 .contentReg form {
@@ -787,11 +683,6 @@ input#bottoneIndietroReg {
     margin-left: 2em;
 }
 
-/*PARTE MOBILE*/
-.menuMobileReg {
-    display: none;
-}
-
 .contentMobileReg {
     display: none;
 }
@@ -806,12 +697,7 @@ input#bottoneIndietroReg {
     background-color: rgba(52, 52, 52, 1);
     text-align: center;
     color: white;
-}
-
-.datiAccount {
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: left;
+    min-height: 300px;
 }
 
 .datiAccount fieldset {
@@ -820,13 +706,12 @@ input#bottoneIndietroReg {
 
 }
 
-form .datiAccount {
+.datiAccount {
     max-width: 650px;
-    /*min-width: -moz-min-content;
-    min-width: -webkit-min-content;
-    min-width: min-content;*/
-    color: whitesmoke;
+    list-style-type: none;
     margin: 0 auto;
+    text-align: left;
+    color: whitesmoke;
     font-size: medium;
 }
 
@@ -970,7 +855,7 @@ form .datiAccount {
     padding-bottom: 2em;
 }
 
-.description h2 {
+.description h2, #ListaCommenti {
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -1076,6 +961,22 @@ form .datiAccount {
 
 .tornasu {
     float: right;
+}
+
+.commento{
+    list-style-type: none;
+    border: 2px solid #088700;
+    margin: 1em 15.2em 1em 3.6em;
+    padding: 1em;
+}
+.commento a:link{
+    color: black;
+}
+.commento a:hover{
+color: blue;
+}
+.commento p{
+    padding-top: 1em;
 }
 
 /*
@@ -1193,5 +1094,139 @@ form .datiAccount {
 /*
 ---------------------- fine index ----------------------------------
  */
+/*---------------------------*/
+/*----------Mobile----------*/
+/*---------------------------*/
+@media only screen and (max-width: 992px) {
 
+    /* rimozione transizioni*/
+    .topArticles li img, .headerChild:nth-of-type(1) a img {
+
+        transition: none;
+    }
+
+    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+
+        transform: none;
+    }
+    /*--------------------fine----------------------------------------------------*/
+    /* Dichiarazione dimensione font*/
+    .articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro {
+        font-size: 2.5em;
+        line-height: 2em;
+    }
+
+    .topArticles a .topArticleTitle, .categoriaGenerale, .index, .articleListTitle {
+        font-size: 2em;
+    }
+
+    .voto p {
+        font-size: 3em;
+    }
+
+    .intestazione h1, .description h2, .comment h3 {
+        font-size: 5em;
+    }
+
+    /*fine dichiarazione dimensione font*/
+    /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
+    .flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
+        display: none;
+    }
+    /*-------------------------------------------------------------------------*/
+    /*---------Header-----------*/
+    /*Da impelementare da meglio con js non usando i display none*/
+    /*---------Menu-----------*/
+    /*Da impelementare da meglio con js non usando i display none*/
+    /*-------- Menu --------*/
+    /*-------- fine Header --------*/
+
+    .topArticles, .diffs {
+        flex-wrap: wrap;
+    }
+
+    .topArticles li:first-of-type, .diffs div {
+        flex: 100%
+    }
+
+    .topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
+        flex: 50%;
+    }
+    /*--------- Articoli + recensioni -------*/
+    .intestazione h1 {
+        margin-left: 0.3em;
+        padding-top: 0.5em;
+    }
+
+    .shortDesc,
+    .writer {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .index, .description h2 {
+        border: none;
+    }
+
+
+    .index {
+        float: none;
+        margin-bottom: 0;
+
+    }
+
+
+    .description img {
+        width: 95%;
+        margin: 2em auto 0 auto;
+    }
+
+    .description p {
+        padding: 1em 1em 0 1em;
+
+    }
+
+    .description h2 {
+        margin: 1em 0.5em 0 0.5em;
+    }
+
+    .voto {
+        margin-top: 1em;
+    }
+
+
+    .voto p:first-of-type {
+        margin: 0 auto;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+    }
+
+    .comment {
+        margin: 0 2em;
+        padding: 0.5em 2em;
+    }
+
+    .comment h3 {
+        text-align: center;
+    }
+
+    .comment p, .pro, .contro, .diffs h3 {
+        margin: 0;
+
+    }
+    /*fine articoli + recensioni*/
+    /*--------footer--------*/
+    #footer {
+        display: none;
+    }
+    /*--------fine footer------*/
+
+
+    #header {
+        display: none;
+    }
 }
+
+/*
+---------------------- fine mobile ----------------------------------
+ */

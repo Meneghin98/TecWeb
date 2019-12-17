@@ -25,6 +25,19 @@ class DBConnection
         return $connessione;
     }
 
+    //converte la data e l'ora presente nel database (che quindi è in un formato non italiano) nella sequenza hh:mm gg/mm/aaaa
+    private function convert_data_ora($data){
+        $data = str_replace(':', '', $data);
+        $data = str_replace('-', '', $data);
+        $data = str_replace(' ', '', $data);
+        $anno = substr($data, 0, 4);
+        $mese = substr($data, 4,2);
+        $giorno = substr($data, 6,2);
+        $ora = substr($data, 8,2);
+        $minuti = substr($data,10,2);
+        return "$ora:$minuti $giorno/$mese/$anno";
+
+    }
     public function putComment($text, $user, $article)
     {
         $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', '$article')";
@@ -42,7 +55,7 @@ class DBConnection
             while ($row = mysqli_fetch_assoc($queryResult)) {
                 $comment = array(
                     'id' => $row['id'],
-                    'data' => $row['creation_date'],
+                    'data' => $this->convert_data_ora($row['creation_date']),
                     'testo' => $row['txt'],
                     'utente' => $row['user'],
                     'id_articolo' => $row['article']

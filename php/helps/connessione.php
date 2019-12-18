@@ -25,6 +25,34 @@ class DBConnection
         return $connessione;
     }
 
+    //converte la data e l'ora presente nel database (che quindi è in un formato non italiano) nella sequenza hh:mm gg/mm/aaaa
+    private function convert_data_ora($data)
+    {
+        $data = str_replace(':', '', $data);
+        $data = str_replace('-', '', $data);
+        $data = str_replace(' ', '', $data);
+        $anno = substr($data, 0, 4);
+        $mese = substr($data, 4, 2);
+        $giorno = substr($data, 6, 2);
+        $ora = substr($data, 8, 2);
+        $minuti = substr($data, 10, 2);
+        return "$ora:$minuti $giorno/$mese/$anno";
+
+    }
+
+    public function addLike($nickname, $idCommento)
+    {
+        $query = "INSERT INTO likes VALUES ('$nickname', '$idCommento')";
+        mysqli_query($query);
+    }
+
+    public function removeLike($nickname, $idCommento)
+    {
+        $query = "DELETE FROM likes WHERE likes.nickname = '$nickname' AND likes.id = '$idCommento'";
+        mysqli_query($query);
+    }
+
+
     public function putComment($text, $user, $article)
     {
         $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', '$article')";
@@ -33,7 +61,7 @@ class DBConnection
 
     public function getCommentsArrayOfArtile($idArticle)
     {
-        $query = "SELECT * FROM comments c WHERE c.article='$idArticle' ORDER BY c.creation_date DESC ";
+        $query = "SELECT *, COUNT(l.id) as likes FROM comments c LEFT JOIN likes l ON l.id=c.id WHERE c.article = '$idArticle' GROUP BY c.id";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult)
             return null;
@@ -42,17 +70,17 @@ class DBConnection
             while ($row = mysqli_fetch_assoc($queryResult)) {
                 $comment = array(
                     'id' => $row['id'],
-                    'data' => $row['creation_date'],
+                    'data' => $this->convert_data_ora($row['creation_date']),
                     'testo' => $row['txt'],
                     'utente' => $row['user'],
-                    'id_articolo' => $row['article']
+                    'id_articolo' => $row['article'],
+                    'likes' => $row['likes']
                 );
                 array_push($commentArray, $comment);
             }
             mysqli_free_result($queryResult);
             return $commentArray;
-        }
-        else return null;
+        } else return null;
 
     }
 

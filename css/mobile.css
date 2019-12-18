@@ -107,23 +107,32 @@
 
 #AccediLogin {
     margin-top: 2em;
-    margin-left: 1.5em;
+    padding: 0em 2.7em;
 }
 
 #AccediLogin, #RegistratiLoginMobile {
-    font-size: 3.5em;
-    padding: 0em 2em;   
-    
+    font-size: 3.5em;   
+}
+
+#scrittaReg {
+    display: none;
+}
+
+#scrittaLog {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
 }
 
 #RegistratiLoginMobile {
-    display: inherit;
-    margin-left: 0.8em;
-    margin-top: 2em;
+    display: block;
+    padding: 0em 2em;
+    margin: 0em auto;
 }
 
-.pulsantiLogin {
-    width: 0em;
+.pulsantiLogin {    
     margin-left: 2em;
 }
 
@@ -231,6 +240,7 @@ input#bottoneIndietroReg {
    padding: 0.2em;
    border-radius: 0.2em;
 }
+
 
 .footer {
     box-sizing: border-box;

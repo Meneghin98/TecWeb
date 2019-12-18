@@ -994,12 +994,42 @@ color: blue;
 }
 
 #ListaCommenti .commento p{
-    font-size: unset;
+    font-size: 1em;
     padding-top: .2em;
     padding-bottom: 1em;
 }
 .commento pre{
     font-size: 1.5em;
+}
+.numeroLike{
+    margin-top: 1em;
+    display: inline;
+    margin-left: .6em;
+    vertical-align: sub;
+}
+.miPiace{
+    margin-top: 1em;
+    padding: 0.2em;
+    background-image: url("../images/up.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upBlack{
+    background-position: left;
+}
+.upGray{
+    background-position: right;
+}
+.upBlue{
+    background-position: center;
+}
+.bottoneMiPiace{
+    display: none;
 }
 
 #ScriviCommento{

@@ -2,6 +2,9 @@
 require_once("helps/connessione.php");
 require_once("helps/replace.php");
 
+session_start();
+$_SESSION['nickname'] = "user"; //fake session
+
 $DB = new DBConnection();
 $ArticoloDB = $DB->getArticleByID($_GET['id']);
 if (is_null($ArticoloDB))

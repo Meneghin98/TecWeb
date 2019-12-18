@@ -43,13 +43,13 @@ class DBConnection
     public function addLike($nickname, $idCommento)
     {
         $query = "INSERT INTO likes VALUES ('$nickname', '$idCommento')";
-        mysqli_query($query);
+        mysqli_query($this->connection,$query);
     }
 
     public function removeLike($nickname, $idCommento)
     {
         $query = "DELETE FROM likes WHERE likes.nickname = '$nickname' AND likes.id = '$idCommento'";
-        mysqli_query($query);
+        mysqli_query($this->connection,$query);
     }
 
 

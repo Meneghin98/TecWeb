@@ -21,27 +21,44 @@ function miPiaceOut(id) {
     }
 }
 function miPiace(id) {
-    let xhttp = new XMLHttpRequest();
     let classList = document.getElementById(id).classList;
     if (classList.contains("upBlue")){
         classList.remove("upBlue");
         classList.add("upBlack");
 
-        //rimuovo mi piace al database
-        /* non funziona.... non so perchè
-        xhttp.open("GET", "../php/like.php?add=false&id="+id, true)
-        xhttp.send();
+        $.ajax({
+            type: "GET",
+            url: "../php/like.php?add=false&id="+id,
+            success: function(response)
+            {
+                console.log('dati ricevuti : '+response);
 
-         */
+                // qui viene gestita la risposta
+            },
+            error: function(errore)
+            {
+                alert('ERRORE : il server non risponde o lo ha fatto in modo anomalo '+errore);
+            }
+        })
 
     }
     else{
         classList.remove("upBlack");
-        /*non funziona.... non so perchè
-        console.log("inizio query");
-        xhttp.open("GET", "../php/like.php?add=true&id="+id, true)
-        xhttp.send();
-        console.log("inviata query");*/
         classList.add("upBlue");
+
+        $.ajax({
+            type: "GET",
+            url: "../php/like.php?add=true&id="+id,
+            success: function(response)
+            {
+                console.log('dati ricevuti : '+response);
+
+                // qui viene gestita la risposta
+            },
+            error: function(errore)
+            {
+                alert('ERRORE : il server non risponde o lo ha fatto in modo anomalo '+errore);
+            }
+        })
     }
 }

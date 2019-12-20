@@ -189,4 +189,4 @@ insert into images
 values ('images/death-stranding-image.jpg', '', '7');
 insert into images
 (src, alt, article)
-values ('images/News/StarWars/StarWarsNews2.png', '', '8');
+values ('images/News/StarWars/StarWarsNews.jpg', '', '8');

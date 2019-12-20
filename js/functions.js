@@ -28,7 +28,7 @@ function miPiace(id) {
 
         $.ajax({
             type: "GET",
-            url: "../php/like.php?add=false&id="+id,
+            url: "like.php?add=false&id="+id,
             success: function(response)
             {
                 console.log('dati ricevuti : '+response);
@@ -48,7 +48,7 @@ function miPiace(id) {
 
         $.ajax({
             type: "GET",
-            url: "../php/like.php?add=true&id="+id,
+            url: "like.php?add=true&id="+id,
             success: function(response)
             {
                 console.log('dati ricevuti : '+response);

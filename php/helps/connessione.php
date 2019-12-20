@@ -61,7 +61,7 @@ class DBConnection
 
     public function getCommentsArrayOfArtile($idArticle)
     {
-        $query = "SELECT *, COUNT(l.id) as likes FROM comments c LEFT JOIN likes l ON l.id=c.id WHERE c.article = '$idArticle' GROUP BY c.id";
+        $query = "SELECT c.*, COUNT(l.id) as likes FROM comments c LEFT JOIN likes l ON l.id=c.id WHERE c.article = '$idArticle' GROUP BY c.id";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult)
             return null;

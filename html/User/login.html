@@ -10,9 +10,8 @@
     <meta name="language" content="italian it" />
     <meta name="author" content="Enrico Salmaso" />
     <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/Login.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css" media="only screen and (max-width: 990px)" />
     <link rel="stylesheet" media="print" href="../../css/print.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/LoginMobile.css" />
 </head>
 
 <body>
@@ -48,51 +47,30 @@
         <h1>Account</h1>
     </div>
 
-    <div class="contentMobileLogin">
-        <div class="emailMobileLog">
-            <img src="../../images/icons/email1.png" alt="icona email">
-            <form action="php.txt">
-                <label for="email" xml:lang="en"></label>
-                <input type="text" name="emailLoginMobile" id="emailLoginMobile"
-                    placeholder="            Digitare E-mail" />
-            </form>
-        </div>
-        <div class="passwordMobileLog">
-            <img src="../../images/icons/lucchetto1.png" alt="icona password">
-            <form action="php.txt">
-                <label for="password" xml:lang="en"></label>
-                <input type="password" name="password" id="passwordMobile" placeholder="          Digitare Password" />
-            </form>
-            <!--IMMAGINE PASS NASCOSTA <img src="../../images/icons/occhioPassword.png" alt="icona email">-->
-        </div>
-        <div class="pulsantiLoginMobile">
-            <form action="php.txt">
-                <label for="Accedi"></label>
-                <input type="submit" value="Accedi" id="AccediLoginMobile" />
-                <p>Non hai l'account?</p>
-                <label for="Registrati"></label>
-                <input type="submit" value="Registrati" id="RegistratiLoginMobile" />
-            </form>
-        </div>
-    </div>
-    <!--PARTE MOBILE-->
 
-    <div class="content" id="contentLogin">
+    <div class="contentLog" id="contentLogin">
         <fieldset class="signIn">
             <legend><strong>Accedi</strong></legend>
             <img class="imageLogin" src="" alt="">
             <form action="php.txt">
-                <label for="email" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
-                <input name="emailLogin" id="email" maxlength="30" />
-
-                <label for="password" xml:lang="en"><span xml:lang="en">Password</span>:</label>
-                <input type="passwordLogin" name="password" id="password" maxlength="20" />
-
-                <p><a href="registrazione.html">Non sei ancra registrato? Registrati</a></p>
+                <div class="emailLog">
+                    <img src="../../images/icons/email1.png" alt="icona email">
+                    <label for="emailLogin" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
+                    <input type="text" name="emailLogin" id="emailLogin" maxlength="30" />
+                </div>
+                <div class="passwordLog">
+                    <img src="../../images/icons/lucchetto1.png" alt="icona password">
+                    <label for="passwordLogin" xml:lang="en"><span xml:lang="en">Password</span>:</label>
+                    <input type="password" name="password" id="passwordLogin" maxlength="20" />
+                </div>
+                <a id="scrittaReg" href="registrazione.html">Non sei ancora registrato? Registrati</a>
 
                 <div class="pulsantiLogin">
-                    <label for="Accedi"></label>
+                    <label id="pulsanteLogin" for="AccediLogin">Accedi</label>
                     <input type="submit" value="Accedi" id="AccediLogin" />
+                    <a id="scrittaLog" href="registrazione.html">Non hai l'account?</a>
+                    <label id="pulsanteRegistrati" for="RegistratiLoginMobile">Registrati</label>
+                    <input type="submit" value="Registrati" id="RegistratiLoginMobile" />
                 </div>
             </form>
         </fieldset>

@@ -5,7 +5,7 @@ require_once("helps/replace.php");
 
 $file = file_get_contents("../html/User/areaUtenteExt.html");
 $file = str_replace('£header', html::header(), $file);
-$file = str_replace('£head',html::head(), $file);
+$file = str_replace('£head_',html::head(), $file);
 $file = str_replace('£footer', html::footer(), $file);
 
 $DB = new DBConnection();
@@ -18,5 +18,5 @@ if (is_null($utente['riferimento']))
     $file = str_replace('£ref','',$file);
 else
     $file = str_replace('£ref',"<li>Riferimento: $utente[riferimento]</li>",$file);
-
+$DB->close();
 echo $file;

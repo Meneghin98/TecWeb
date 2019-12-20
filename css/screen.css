@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /*
 ---------------------- mobile ----------------------------------
 
@@ -346,7 +347,7 @@ body {
     text-decoration: none;
 }
 
-.menu a:hover {
+.menu a:hover, .menu #currentlink:hover {
     color: #0E9C09;
 }
 
@@ -485,16 +486,11 @@ body {
 }
 
 .categoriaHardware {
-
     background-color: green;
-
-
 }
 
 .categoriaConsole {
-
     background-color: chocolate;
-
 }
 
 .categoriaVideogiochi {
@@ -558,6 +554,162 @@ body {
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
  */
+
+
+/*--------------------------------------------LOGIN----------------------------------------------*/
+
+.menuMobileLogin {
+    display: none;
+}
+
+#contentLogin {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 7em 0em;
+}
+
+.pulsantiLogin p {
+    display: none;
+}
+
+#pulsanteLogin {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px;
+}
+
+#pulsanteRegistrati {
+    display: none;
+}
+
+#scrittaLog {
+    display: none;
+}
+
+#RegistratiLoginMobile {
+    display: none;
+}
+
+.emailLog img {
+    display: none;
+}
+
+.passwordLog img {
+    display: none;
+}
+
+.signIn {
+    margin: 0em auto;
+    width: 25em;
+    padding: 1em 2em;
+    background-color: white;
+    border: transparent;
+    border-radius: 2em;
+}
+
+.imageLogin {
+    background-image: url(../images/icons/login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    padding: 3em 2em 2em 2em;
+    display: block;
+    margin: 0em auto;
+}
+
+
+.contentLog legend {
+    padding-top: 1em;
+}
+
+
+.contentLog form {
+    padding: 2em;
+    display: block;
+    text-align: center;
+    margin: 0em 3em;
+    
+}
+
+
+.contentLog label {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+#scrittaReg {
+    display: block;
+    margin-top: 3em;
+    font-size: 0.8em;
+}
+
+#AccediLogin {
+    font-size: x-large;
+    padding: 0em 2em;
+}
+
+.pulsantiLogin {
+    display: block;
+    margin: 2em auto 0em auto;
+}
+
+
+/*--------------------------------------------FINE LOGIN--------------------------------------------*/
+
+
+/*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
+
+.menuMobileReg {
+    display: none;
+}
+
+#contentRegistrazione h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contentReg label {
+    color: black;
+}
+
+.contentReg form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+.contentReg fieldset {
+    padding: 1.5em;
+    margin: 3em;
+}
+
+#contentRegistrazione {
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(255, 255, 255, 0.904)
+}
+
+.confermaAccountReg {
+    margin-top: 6em;
+}
+
+.confermaAccountReg input {
+    padding: 0.2em;
+    font-size: 2em;
+}
+
+input#bottoneIndietroReg {
+    margin-left: 2em;
+}
+
+.contentMobileReg {
+    display: none;
+}
+
+/*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
+
+
+
 
 #AreaUtente {
     padding: 3em 0;
@@ -722,7 +874,7 @@ body {
     padding-bottom: 2em;
 }
 
-.description h2, #ListaCommenti {
+.description h2{
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -732,7 +884,7 @@ body {
 }
 
 .comment {
-    background-color: #32cd3266;
+    background-color: rgba(50, 205, 50, 0.4);
     margin: 0 2em;
     padding: 0.5em 2em;
     border-bottom-left-radius: 5px;
@@ -787,8 +939,8 @@ body {
     margin: 0 1em;
     font-weight: bold;
     font-size: 2em;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .voto p {
@@ -830,20 +982,112 @@ body {
     float: right;
 }
 
+#TitoloCommenti{
+    border-bottom: 0.1em solid #088700;
+    font-size: 1.8em;
+    color: black;
+    margin: 0 2em;
+}
+
+#ListaCommenti{
+    margin: 0 5em;
+}
+#ListaCommenti p{
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
 .commento{
     list-style-type: none;
     border: 2px solid #088700;
-    margin: 1em 15.2em 1em 3.6em;
+    border-radius: 8px;
+    margin: 1em 0;
     padding: 1em;
 }
-.commento a:link{
+.commento a:link, .commento a:visited{
     color: black;
+    font-size: 1.3em;
+
 }
 .commento a:hover{
 color: blue;
 }
-.commento p{
-    padding-top: 1em;
+
+#ListaCommenti .commento p{
+    font-size: 1em;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+.commento pre{
+    font-size: 1.5em;
+}
+.numeroLike{
+    margin-top: 1em;
+    display: inline;
+    margin-left: .6em;
+    vertical-align: sub;
+}
+.miPiace{
+    margin-top: 1em;
+    padding: 0.2em;
+    background-image: url("../images/up.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upBlack{
+    background-position: left;
+}
+.upGray{
+    background-position: right;
+}
+.upBlue{
+    background-position: center;
+}
+.bottoneMiPiace{
+    display: none;
+}
+
+#ScriviCommento{
+    margin: 1em 0 4em;
+}
+#ScriviCommento fieldset{
+    border: none;
+}
+#ScriviCommento label{
+    font-size: 1.5em;
+}
+#ScriviCommento textarea{
+    display: block;
+    resize: none;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.5em;
+    border: 2px solid #088700;
+    border-radius: 8px;
+}
+#ScriviCommento p{
+    display: inline;
+}
+#ScriviCommento input{
+    display: none;
+}
+#ScriviCommento #commenta{
+    float: right;
+    border-radius: 25px;
+    border: 2px solid darkgreen;
+    font-size: 1.2em;
+    padding: .2em .5em;
+    margin: 0.3em;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+#commenta img{
+    float: right;
 }
 
 /*
@@ -1089,6 +1333,9 @@ color: blue;
     /*--------fine footer------*/
 
 
+    #header {
+        display: none;
+    }
 }
 
 /*

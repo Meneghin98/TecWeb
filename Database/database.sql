@@ -57,8 +57,8 @@ create TABLE articles
 create TABLE comments
 (
     id            INT(5) PRIMARY KEY AUTO_INCREMENT,
-    creation_date CHAR(32)     NOT NULL,
-    txt           VARCHAR(296) NOT NULL,
+    creation_date DATETIME DEFAULT CURRENT_TIMESTAMP(),
+    txt           VARCHAR(300) NOT NULL,
     user          VARCHAR(50),
     article       INT(5),
 

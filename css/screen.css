@@ -528,7 +528,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
     #header {
         flex-wrap: wrap;
         padding-bottom: 0.5em;
@@ -545,6 +545,15 @@ body {
     }
 }
 
+@media only screen and (max-width: 640px)
+{
+    .topArticles{
+        flex-direction: column;
+    }
+    .topArticles li{
+        flex: 100%;
+    }
+}
 
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
@@ -955,7 +964,7 @@ color: blue;
 /*---------------------------*/
 /*----------Mobile----------*/
 /*---------------------------*/
-@media only screen and (max-width: 992px) {
+@media screen and (max-device-width: 990px) {
 
     /* rimozione transizioni*/
     .topArticles li img, .headerChild:nth-of-type(1) a img {

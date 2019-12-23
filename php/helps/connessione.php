@@ -43,13 +43,13 @@ class DBConnection
     public function addLike($nickname, $idCommento)
     {
         $query = "INSERT INTO likes VALUES ('$nickname', '$idCommento')";
-        mysqli_query($query);
+        mysqli_query($this->connection, $query);
     }
 
     public function removeLike($nickname, $idCommento)
     {
         $query = "DELETE FROM likes WHERE likes.nickname = '$nickname' AND likes.id = '$idCommento'";
-        mysqli_query($query);
+        mysqli_query($this->connection, $query);
     }
 
 
@@ -59,9 +59,21 @@ class DBConnection
         mysqli_query($this->connection, $query);
     }
 
+    public function getLikesOfUser($nickname, $idArticolo)
+    {
+        $query = "SELECT c.id FROM comments c JOIN likes l ON c.id=l.id WHERE l.nickname='$nickname' AND c.article='$idArticolo'";
+        $queryResult = mysqli_query($this->connection, $query);
+        $likes = array();
+        while ($row = mysqli_fetch_assoc($queryResult)) {
+            array_push($likes, $row['id']);
+        }
+        mysqli_free_result($queryResult);
+        return $likes;
+    }
+
     public function getCommentsArrayOfArtile($idArticle)
     {
-        $query = "SELECT *, COUNT(l.id) as likes FROM comments c LEFT JOIN likes l ON l.id=c.id WHERE c.article = '$idArticle' GROUP BY c.id";
+        $query = "SELECT c.*, COUNT(l.id) as likes FROM comments c LEFT JOIN likes l ON l.id=c.id WHERE c.article = '$idArticle' GROUP BY c.id";
         $queryResult = mysqli_query($this->connection, $query);
         if (!$queryResult)
             return null;

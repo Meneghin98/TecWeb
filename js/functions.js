@@ -1,47 +1,52 @@
+function trimText(id) {
+    let element = document.getElementById(id);
+    element.innerHTML = element.textContent.trim();
+}
 
 
-
+function updateNum() {//funziona su edge ma non su chrome, WTF?!?!?!?
+    let numChar = document.getElementById("textarea").textContent.length;
+    document.getElementById("MaxChar").innerHTML = (300 - numChar).toString();
+}
 
 function miPiaceOver(id) {
     let classList = document.getElementById(id).classList;
-    if(classList.contains("upBlue"))
+    if (classList.contains("upBlue"))
         return;
     if (classList.contains("upGray")) {
         classList.remove("upGray");
         classList.add("upBlack");
     }
 }
+
 function miPiaceOut(id) {
     let classList = document.getElementById(id).classList;
-    if(classList.contains("upBlue"))
+    if (classList.contains("upBlue"))
         return;
-    if (classList.contains("upBlack")){
+    if (classList.contains("upBlack")) {
         classList.remove("upBlack");
         classList.add("upGray")
     }
 }
+
 function miPiace(id) {
-    let xhttp = new XMLHttpRequest();
     let classList = document.getElementById(id).classList;
-    if (classList.contains("upBlue")){
+    if (classList.contains("upBlue")) {
         classList.remove("upBlue");
         classList.add("upBlack");
 
-        //rimuovo mi piace al database
-        /* non funziona.... non so perchè
-        xhttp.open("GET", "../php/like.php?add=false&id="+id, true)
-        xhttp.send();
+        $.ajax({
+            type: "GET",
+            url: "like.php?add=false&id=" + id
+        })
 
-         */
-
-    }
-    else{
+    } else {
         classList.remove("upBlack");
-        /*non funziona.... non so perchè
-        console.log("inizio query");
-        xhttp.open("GET", "../php/like.php?add=true&id="+id, true)
-        xhttp.send();
-        console.log("inviata query");*/
         classList.add("upBlue");
+
+        $.ajax({
+            type: "GET",
+            url: "like.php?add=true&id=" + id
+        })
     }
 }

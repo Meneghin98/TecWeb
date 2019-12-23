@@ -1,4 +1,8 @@
 <?php
 
+$stringa="numero";
+$numero="123";
 
-echo "Da implementare";
+echo $stringa;
+
+?>

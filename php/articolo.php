@@ -19,7 +19,7 @@ else {
     //$paginaArticolo = str_replace('£id', $idArticolo, $paginaArticolo);
     if ($_SESSION['loggato']) //utente loggato
     {
-        $scriviCommento = "<form action=\"commento.php?id=$idArticolo\" id=\"ScriviCommento\" method=\"post\"><fieldset><label for=\"textarea\">Scrivi il tuo commento:</label><textarea name=\"commentoUtente\" id=\"textarea\" rows=\"6\" cols=\"0\" onkeyup=\"updateNum()\"></textarea><p id=\"MaxChar\">300</p><label for=\"Invia\" id=\"commenta\" >Commenta</label><input type=\"submit\" name=\"InviaCommento\" id=\"Invia\" /></fieldset></form>";
+        $scriviCommento = "<form action=\"commento.php?id=$idArticolo\" id=\"ScriviCommento\" method=\"post\" onsubmit=\"return commentoVuoto()\"><fieldset><label for=\"textarea\">Scrivi il tuo commento:</label><textarea name=\"commentoUtente\" id=\"textarea\" rows=\"6\" cols=\"0\" onkeyup=\"updateNum()\"></textarea><p id=\"MaxChar\">300</p><label for=\"Invia\" id=\"commenta\" >Commenta</label><input type=\"submit\" name=\"InviaCommento\" id=\"Invia\" /></fieldset></form>";
     } else //utente non loggato
     {
         $scriviCommento = "<p><a href=\"login.php\">Accedi</a> o <a href=\"registrazione.php\">registrati</a> per poter commentare</p>";

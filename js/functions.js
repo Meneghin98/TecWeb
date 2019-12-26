@@ -3,6 +3,14 @@ function trimText(id) {
     element.innerHTML = element.textContent.trim();
 }
 
+function commentoVuoto() {
+    let commentText = document.getElementById("textarea").textContent.toString();
+    if (commentText.length === 0) {
+        alert("Il commento non può essere vuoto");
+        return false;
+    }
+    return true;
+}
 
 function updateNum() {//funziona su edge ma non su chrome, WTF?!?!?!?
     let numChar = document.getElementById("textarea").textContent.length;

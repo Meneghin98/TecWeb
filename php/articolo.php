@@ -3,7 +3,9 @@ require_once("helps/connessione.php");
 require_once("helps/replace.php");
 
 session_start();
-
+//se non viene inserito questo if e l'utente accede come prima volta alla pagina di un articolo (invece che prima passare dall'index) viene mostrato un errore(di php) a inizio pagina
+if (!isset($_SESSION['loggato']))//utente entra per la prima volta, rimane false finchè non accede
+    $_SESSION['loggato'] = false;
 
 $DB = new DBConnection();
 $idArticolo = $_GET['id'];
@@ -18,7 +20,7 @@ else {
     $paginaArticolo = str_replace('£footer', html::footer(), $paginaArticolo);
 
     $likes = null;
-    if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) //utente loggato
+    if ($_SESSION['loggato'] == true) //utente loggato
     {
         $scriviCommento = "<form action=\"commento.php?id=$idArticolo\" id=\"ScriviCommento\" method=\"post\" onsubmit=\"return commentoVuoto()\"><fieldset><label for=\"textarea\">Scrivi il tuo commento:</label><textarea name=\"commentoUtente\" id=\"textarea\" rows=\"6\" cols=\"0\" onkeyup=\"updateNum()\"></textarea><p id=\"MaxChar\">300</p><label for=\"Invia\" id=\"commenta\" >Commenta</label><input type=\"submit\" name=\"InviaCommento\" id=\"Invia\" /></fieldset></form>";
         $likes = $DB->getLikesOfUser($_SESSION['nickname'], $idArticolo);

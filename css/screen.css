@@ -627,7 +627,7 @@ body {
     display: block;
     text-align: center;
     margin: 0em 3em;
-    
+
 }
 
 
@@ -1026,8 +1026,9 @@ color: blue;
     margin-left: .6em;
     vertical-align: sub;
 }
-.miPiace{
-    margin-top: 1em;
+.commento .miPiace{
+    font-size: 1em;
+    margin-top: .7em;
     padding: 0.2em;
     background-image: url("../images/up.png");
     background-repeat: no-repeat;
@@ -1080,14 +1081,14 @@ color: blue;
     border-radius: 25px;
     border: 2px solid darkgreen;
     font-size: 1.2em;
-    padding: .2em .5em;
     margin: 0.3em;
     cursor: pointer;
     background-color: green;
     color: white;
-}
-#commenta img{
-    float: right;
+    background-image: url("../images/sendW.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: .2em 25px .2em .5em;
 }
 
 /*

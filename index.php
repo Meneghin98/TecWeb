@@ -3,7 +3,8 @@ require_once('php/helps/connessione.php');
 require_once('php/helps/replace.php');
 
 session_start();
-$_SESSION['loggato']=false;
+if (!isset($_SESSION['loggato']))//utente entra per la prima volta, rimane false finchè non accede
+    $_SESSION['loggato']=false;
 
 $index = file_get_contents("html/index.html");
 

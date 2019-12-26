@@ -2,6 +2,9 @@
 require_once('php/helps/connessione.php');
 require_once('php/helps/replace.php');
 
+session_start();
+$_SESSION['loggato']=false;
+
 $index = file_get_contents("html/index.html");
 
 $db = new DBConnection();

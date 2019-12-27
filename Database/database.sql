@@ -18,7 +18,8 @@ create TABLE users
     username VARCHAR(50) NOT NULL,
     surname  VARCHAR(50) NOT NULL,
     usertype VARCHAR(5)  NOT NULL,
-    ref      VARCHAR(50)
+    ref      VARCHAR(50),
+    img_src  VARCHAR(50) default 'default.jpg'
 );
 
 create TABLE categories

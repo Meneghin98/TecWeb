@@ -167,13 +167,14 @@ class DBConnection
                 $utenteTrovato = mysqli_fetch_assoc($queryResult);
                 mysqli_free_result($queryResult);
                 return array(
-                    'nick' => $utenteTrovato['nickname'],
+                    'nickname' => $utenteTrovato['nickname'],
                     'password' => $utenteTrovato['pwd'],
                     'email' => $utenteTrovato['email'],
                     'nome' => $utenteTrovato['username'],
                     'cognome' => $utenteTrovato['surname'],
                     'tipologia' => $utenteTrovato['usertype'],
-                    'riferimento' => $utenteTrovato['ref']
+                    'riferimento' => $utenteTrovato['ref'],
+                    'img' => $utenteTrovato['img_src']
                 );
             } else if (mysqli_num_rows($queryResult) > 1)
                 echo "ERRORE: Più utenti con lo stesso nickname";

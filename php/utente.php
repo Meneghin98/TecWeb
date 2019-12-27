@@ -11,7 +11,8 @@ $file = str_replace('£footer', html::footer(), $file);
 $DB = new DBConnection();
 $utente = $DB->getUtenteArray($_GET['nick']);
 
-$file = str_replace('£nick',$utente['nick'],$file);
+$file = str_replace('£immgaine_utente£', $utente['img'], $file);
+$file = str_replace('£nick',$utente['nickname'],$file);
 $file = str_replace('£nome',$utente['nome'],$file);
 $file = str_replace('£cognome',$utente['cognome'],$file);
 if (is_null($utente['riferimento']))

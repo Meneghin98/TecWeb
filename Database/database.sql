@@ -27,16 +27,6 @@ create TABLE categories
     names VARCHAR(50) UNIQUE NOT NULL
 );
 
-create TABLE follows
-(
-    nickname VARCHAR(50) NOT NULL,
-    id       INT(5)      NOT NULL,
-
-    PRIMARY KEY (nickname, id),
-    CONSTRAINT FK_nick FOREIGN KEY (nickname) REFERENCES users (nickname) ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category FOREIGN KEY (id) REFERENCES categories (id) ON delete CASCADE ON update CASCADE
-);
-
 create TABLE articles
 (
     id             INT PRIMARY KEY AUTO_INCREMENT,

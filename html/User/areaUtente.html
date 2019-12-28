@@ -4,7 +4,7 @@
 <head>
     £head_
     <title>Account personale - Decrypted Games</title>
-    <meta name="title" content="Pagina utente" />
+    <meta name="title" content="Pagina utente"/>
     <meta name="description" content="Pagina personale dell'utente"/>
 </head>
 
@@ -28,19 +28,43 @@
     </div>
 
 
-    <form action="personal.php" method="post" id="personal">
+    <form action="personal.php" method="post">
         <div class="datiAccount">
+            <fieldset class="groupBox">
+                <legend>Utente</legend>
+                <label for="nickname" xml:lang="en">Nickname</label>
+                <input name="nickname" type="text" id="nickname"/>
+                <label for="name">Nome:</label>
+                <input name="name" type="text" id="name"/>
+                <label for="surname">Cognome:</label>
+                <input name="surname" type="text" id="surname"/>
+                <label for="email" xml:lang="en">E-mail:</label>
+                <input name="email" type="text" id="email"/>
+            </fieldset>
 
-            £form
+            <fieldset class="groupBox">
+                <legend>Generale</legend>
+                <p>Riferimento ad una pagina esterna come facebook, twitter, instagram</p>
+                <label for="ref">Riferimento:</label>
+                <input name="ref" type="text" id="ref"/>
+            </fieldset>
+            <fieldset class="groupBox">
+                <legend>Sicurezza</legend>
+                <p>Se vuoi cambiare password, inserisci la password vecchia e quella nuova</p>
+                <label for="oldPwd">Vecchia <span xml:lang="en">password</span>:</label>
+                <input name="oldPwd" type="password" id="oldPwd"/>
+                <label for="newPwd">Nuova <span xml:lang="en">password</span>:</label>
+                <input name=newPwd" type="password" id="newPwd"/>
+                <label for="repPwd">Ripeti <span xml:lang="en">password</span>:</label>
+                <input name="repPwd" type="password" id="repPwd"/>
+            </fieldset>
 
         </div>
+        <fieldset id="save">
+            <label for="bSave">Salva</label>
+            <input type="submit" value="Salva" id="bSave"/>
+        </fieldset>
     </form>
-    <div class="saveResets">
-        <input form="personal" type="reset" value="Reimposta" id="reset"/>
-        <input form="personal" type="submit" value="Salva" id="save"/>
-    </div>
-
-
 </div>
 
 £footer

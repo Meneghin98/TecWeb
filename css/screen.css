@@ -801,6 +801,28 @@ input#bottoneIndietroReg {
     color: black;
 }
 
+#buonFine{
+    background-color: rgba(50, 205, 50, 0.3);
+    border-style: solid;
+    border-color: #0E9C09;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+#errori{
+    background-color: rgba(205, 50, 50, 0.3);
+    border-style: solid;
+    border-color: #9C0E09;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+#errori li{
+    list-style: inside;
+}
+
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */

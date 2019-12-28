@@ -20,34 +20,17 @@
 </div>
 
 <div class="content" id="AreaUtente">
-
-    <div class="avatar">
-        <img src="../images/Users/£immgaine_utente£" alt="immagine del profilo"/>
-        <label for="file" class="custom-file-upload">Modifica</label>
-        <input type="file" id="file"/>
-    </div>
-
-
+    £messaggio
     <form action="personal.php" method="post">
-        <div class="datiAccount">
-            <fieldset class="groupBox">
-                <legend>Utente</legend>
-                <label for="nickname" xml:lang="en">Nickname</label>
-                <input name="nickname" type="text" id="nickname"/>
-                <label for="name">Nome:</label>
-                <input name="name" type="text" id="name"/>
-                <label for="surname">Cognome:</label>
-                <input name="surname" type="text" id="surname"/>
-                <label for="email" xml:lang="en">E-mail:</label>
-                <input name="email" type="text" id="email"/>
-            </fieldset>
 
-            <fieldset class="groupBox">
-                <legend>Generale</legend>
-                <p>Riferimento ad una pagina esterna come facebook, twitter, instagram</p>
-                <label for="ref">Riferimento:</label>
-                <input name="ref" type="text" id="ref"/>
-            </fieldset>
+        <div class="avatar">
+            <img src="../images/Users/£immgaine_utente£" alt="immagine del profilo"/>
+            <label for="file" class="custom-file-upload">Modifica</label>
+            <input type="file" id="file"/>
+        </div>
+
+        <div class="datiAccount">
+            £form
             <fieldset class="groupBox">
                 <legend>Sicurezza</legend>
                 <p>Se vuoi cambiare password, inserisci la password vecchia e quella nuova</p>
@@ -58,11 +41,11 @@
                 <label for="repPwd">Ripeti <span xml:lang="en">password</span>:</label>
                 <input name="repPwd" type="password" id="repPwd"/>
             </fieldset>
-
         </div>
+
         <fieldset id="save">
             <label for="bSave">Salva</label>
-            <input type="submit" value="Salva" id="bSave"/>
+            <input name="salva" type="submit" value="Salva" id="bSave"/>
         </fieldset>
     </form>
 </div>

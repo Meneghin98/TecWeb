@@ -182,6 +182,22 @@ class DBConnection
                 echo "ERRORE: Nessun utente trovato"; //implementare redirect
         }
     }
+    public function updateUser($nickname, $valuesArray){
+        if ($valuesArray['newPwd'] === "")
+            $query = "UPDATE users SET nickname = $valuesArray[nickname], email = $valuesArray[email], username = $valuesArray[nome], surname = $valuesArray[cognome], ref = $valuesArray[riferimento] WHERE users.nickname = $nickname";
+        else
+            $query = "UPDATE users SET pwd = $valuesArray[newPwd], nickname = $valuesArray[nickname], email = $valuesArray[email], username = $valuesArray[nome], surname = $valuesArray[cognome], ref = $valuesArray[riferimento] WHERE users.nickname = $nickname";
+
+        mysqli_query($this->connection, $query);
+    }
+
+    function existsNickname($nickname){
+        $query = "Select * from users where nickname = $nickname";
+        $queryResult = mysqli_query($this->connection, $query);
+        if (mysqli_num_rows($queryResult)> 0)
+            return true; //il nickname inserito è già presente
+        return false;
+    }
 
     public function close()
     {

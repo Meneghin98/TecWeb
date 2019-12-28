@@ -1,7 +1,11 @@
 <div id="header">
     <div class="headerChild">
-        <h1><a href="../index.php"><img src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
-        </h1>
+        <a href="../index.php"><img src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
+        <h1>Decrypted Games</h1>
+        <div class="screenReaderHelper">
+            <a href="#content" tabindex="0">Vai al contenuto</a>
+            <a href="#menu" tabindex="0">Vai al menu</a>
+        </div>
     </div>
     <div class="headerChild" id="searchBar">
         <form action="">
@@ -9,13 +13,13 @@
                 <label for="search">Ricerca</label>
                 <input type="text" id="search" />
                 <button type="submit">
-                    <img src="../images/icons/20x20-lente.png" alt="submit" />
+                    <img src="../images/icons/20x20-lente.png" alt="submit" tabindex="0"/>
                 </button>
             </fieldset>
         </form>
     </div>
     <div class="headerChild">
-        <a id="login" title="Login e registrazione" href="../php/login.php"><img
+        <a id="login" title="Login e registrazione" href="../php/login.php" tabindex="0"><img
                 src="../images/icons/Registrati-sito-web.png" alt="login e registrazione" /></a>
     </div>
 </div>

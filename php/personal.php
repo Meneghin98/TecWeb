@@ -4,7 +4,6 @@ require_once("helps/replace.php");
 require_once("helps/checks.php");
 
 session_start();
-$_SESSION['nickname'] = "Simone";
 
 
 $file = str_replace('£footer', html::footer(),

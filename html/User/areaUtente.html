@@ -2,134 +2,56 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Utente - Decrypted Games</title>
-
-    <meta name="title" content="Sito interattivo sul gaming"/>
+    £head_
+    <title>Account personale - Decrypted Games</title>
+    <meta name="title" content="Pagina utente"/>
     <meta name="description" content="Pagina personale dell'utente"/>
-    <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale"/>
-    <meta name="language" content="italian it"/>
-    <meta name="author" content="Simone Meneghin"/>
-    <link rel="stylesheet" href="../../css/screen.css" type="text/css"/>
-    <link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
-
 </head>
 
 <body>
-<div id="header">
-    <div class="headerChild">
-        <h1><a href="../index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"
-                                         alt="Decrypted Games"/></a></h1>
-    </div>
-    <div class="headerChild" id="searchBar">
-        <fieldset>
-            <label for="search">Ricerca</label>
-            <input type="text" id="search"/>
-            <button type="submit">
-                <img src="../../images/icons/20x20-lente.png" alt="submit"/>
-            </button>
-        </fieldset>
-    </div>
-    <div class="headerChild">
-        <a id="login" title="Login e registrazione" href="../User/login.html"><img
-                src="../../images/icons/Registrati-sito-web.png" alt="login e registrazione"/></a>
-    </div>
-</div>
-
+£header
 <div class="menu">
     <ul>
-        <li><a href="../index.html" xml:lang="en">Home</a></li>
-        <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
-        <li><a href="../Recensioni/recensioni.html">Recensioni</a></li>
-        <li><a href="../Eventi/eventi.html">Altro</a></li>
+        <li><a href="../index.php" xml:lang="en">Home</a></li>
+        <li><a href="page.php?t=n"><span xml:lang="en">News</span></a></li>
+        <li><a href="page.php?t=r">Recensioni</a></li>
+        <li><a href="page.php?t=a">Altro</a></li>
     </ul>
 </div>
 
 <div class="content" id="AreaUtente">
+    £messaggio
+    <form action="personal.php" method="post">
 
-    <div class="avatar">
-        <img src="../../images/ImmagineUtente.jpg" alt=""/>
-        <label for="file" class="custom-file-upload" xml:lang="en">Edit</label>
-        <input type="file" id="file"/>
-    </div>
+        <div class="avatar">
+            <img src="../images/Users/£immgaine_utente£" alt="immagine del profilo"/>
+            <label for="file" class="custom-file-upload">Modifica</label>
+            <input type="file" id="file"/>
+        </div>
 
-
-    <form action="">
         <div class="datiAccount">
-
-            <fieldset class="groupBox">
-                <legend>Utente</legend>
-                <label for="nickname"><span xml:lang="en">Nickname</span></label>
-                <input name="nickname" type="text" id="nickname"/>
-                <label for="name">Nome:</label>
-                <input name="name" type="text" id="name"/>
-                <label for="surname">Cognome:</label>
-                <input name="surname" type="text" id="surname"/>
-                <label for="email"><span xml:lang="en">E-mail</span>:</label>
-                <input name="email" type="text" id="email"/>
-            </fieldset>
-
+            £form
             <fieldset class="groupBox">
                 <legend>Sicurezza</legend>
+                <p>Se vuoi cambiare password, inserisci la password vecchia e quella nuova</p>
                 <label for="oldPwd">Vecchia <span xml:lang="en">password</span>:</label>
                 <input name="oldPwd" type="password" id="oldPwd"/>
                 <label for="newPwd">Nuova <span xml:lang="en">password</span>:</label>
-                <input name="newPwd" type="password" id="newPwd"/>
+                <input name=newPwd" type="password" id="newPwd"/>
                 <label for="repPwd">Ripeti <span xml:lang="en">password</span>:</label>
                 <input name="repPwd" type="password" id="repPwd"/>
             </fieldset>
-
-            <div class="groupBox">
-                <label for="ref">Riferimento:</label>
-                <input name="ref" type="text" id="ref"/>
-            </div>
-
         </div>
+
+        <fieldset id="save">
+            <label for="bSave">Salva</label>
+            <input name="salva" type="submit" value="Salva" id="bSave"/>
+        </fieldset>
     </form>
-    <div class="saveResets">
-        <input type="reset" value="Reimposta" id="reset"/>
-        <input type="submit" value="Salva" id="save"/>
-    </div>
-
-
 </div>
 
+£footer
 
-<div id="footer">
-    <div class="footerInline">
-        <p>Torna a</p>
-        <ul>
-            <li><a href="" xml:lang="en">Home</a></li>
-            <li><a href="" xml:lang="en">News</a></li>
-            <li><a href="">Recensioni</a></li>
-            <li><a href="">Eventi</a></li>
-            <li><a href="">Guide</a></li>
-        </ul>
-    </div>
-
-    <div class="footerInline">
-        <p>Unisciti</p>
-        <ul>
-            <li><a href="" xml:lang="en">Accedi</a></li>
-            <li><a href="">Crea un account</a></li>
-        </ul>
-    </div>
-
-    <div class="footerInline">
-        <p>Contatti</p>
-        <ul>
-            <li><a href="">Chi siamo</a></li>
-            <li><a href="">Lavora con noi</a></li>
-        </ul>
-    </div>
-
-    <div id="imgsFooter">
-        <img id="validXhtml" src="../../images/footer/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict"
-             height="31" width="88"/>
-        <img id="validCss" src="../../images/footer/valid-css2.png" alt="Valid CSS 2" height="31"
-             width="88"/>
-    </div>
-</div>
 </body>
 
 </html>

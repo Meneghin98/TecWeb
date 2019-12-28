@@ -560,7 +560,10 @@ input#bottoneIndietroReg {
     padding: 1.2em 0;
     margin-left: 5em;
 }
-
+.groupBox p{
+    font-size: .8em;
+    margin: .8em 0;
+}
 .groupBox {
     min-width: 15em;
     padding: 1em;
@@ -590,25 +593,15 @@ input#bottoneIndietroReg {
     cursor: pointer;
     background-color: #0E9C09;
 }
-
-.saveResets {
-    float: right;
-    text-align: right;
-    margin: 0;
+#save{
+    border: none;
+}
+#save input{
+    display: none;
 }
 
-.saveResets #reset {
-    display: inline;
-    border-style: solid;
-    border-color: orangered;
-    border-radius: 25px;
-    padding: 0.2em 0.5em;
-    margin: 0 .25em;
-    cursor: pointer;
-    font-size: large;
-}
-
-.saveResets #save {
+#save label {
+    background-color: white;
     display: inline;
     border-style: solid;
     border-color: #0E9C09;
@@ -617,6 +610,29 @@ input#bottoneIndietroReg {
     margin: 0 .25em;
     cursor: pointer;
     font-size: large;
+    color: black;
+}
+
+#buonFine{
+    background-color: rgba(50, 205, 50, 0.3);
+    border-style: solid;
+    border-color: #0E9C09;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+#errori{
+    background-color: rgba(205, 50, 50, 0.3);
+    border-style: solid;
+    border-color: #9C0E09;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+#errori li{
+    list-style: inside;
 }
 
 /*

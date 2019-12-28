@@ -51,7 +51,7 @@
     -webkit-flex: 20%;
     -ms-flex: 20%;*/
     flex: 20%;
-    height: 90px;   /* tradurre in percentuale */
+    height: 90px;
 }
 
 /*.bgimage {
@@ -120,20 +120,9 @@ body {
 
 /* Menu */
 
-/*
-.hamburger-menu {
-    display: none;
-}
-*/
-
 #content, #menu {
     max-width: 1300px;
     margin: 0 auto;
-}
-
-#content {
-    background-color: white;
-    padding-bottom: 1em;
 }
 
 #menu {
@@ -181,6 +170,12 @@ body {
 #menu #currentlink {
     color: lawngreen;
     font-weight: bold;
+}
+
+
+#content {
+    background-color: white;
+    padding-bottom: 1em;
 }
 
 .rightPanel {

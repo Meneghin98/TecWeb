@@ -1,4 +1,7 @@
 <?php
+function checkNickname($nickname){
+    return true; //implementare
+}
 
 function checkNome($nome){
     if (!preg_match ('/^([a-zA-Z]{3,15})$/', $nome))
@@ -8,12 +11,12 @@ function checkNome($nome){
 function checkCognome($cognome){
     return true;//implementare
 }
-function checkEmail($cognome){
+function checkEmail($email){
     return true;//implementare
 }
-function checkPassword($cognome){
+function checkPassword($password){
     return true;//implementare
 }
-function checkRiferimento($cognome){
+function checkRiferimento($riferimento){
     return true;//implementare
 }

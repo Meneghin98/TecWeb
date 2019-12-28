@@ -40,13 +40,18 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     $errori = "";
     if ($DB->existsNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito è già in uso</li>";
+    if (!checkNickname($_POST['nickname']))
+        $errori .= "<li>Il nickname inserito contiene caratteri non consentiti</li>";
     if (!checkNome($_POST['nome']))
         $errori .= "<li>Verifica che il nome inserito sia corretto</li>";
     if (!checkCognome($_POST['cognome']))
         $errori .= "<li>Verifica che il cognome inserito sia corretto</li>";
     if (!checkEmail($_POST['email']))
         $errori .= "<li>Verifica che l'e-mail inserita sia valida</li>";
-    if ($_POST['oldPwd'] != "") {
+    if (!checkRiferimento($_POST['riferimento']))
+        $errori .= "<li>Il riferimento inserito non è valido</li>";
+
+    if ($_POST['oldPwd'] != "") { //se è stata inserita la password vuol dire che voglio modificarla
         if ($_POST['oldPwd'] === $utente['password'])
             $errori .= "<li>La password inserita non è corretta</li>";
         if (!checkPassword($_POST['newPwd']))

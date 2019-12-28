@@ -20,6 +20,7 @@ switch ($_GET['t']) {
 $file = file_get_contents("../html/$path.html");
 $file = str_replace('£footer', html::footer(), $file);
 $file = str_replace('£header', html::header(), $file);
+$file = str_replace('£menu_', html::menu(), $file);
 
 $DB = new DBConnection();
 $articoli = $DB->getArticlesArray($where);

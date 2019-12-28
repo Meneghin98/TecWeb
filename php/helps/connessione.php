@@ -3,7 +3,7 @@
 class DBConnection
 {
     const HOST = 'localhost';
-    const USER = 'root';
+    const USER = 'user';
     const PWD = '';
     const DB = 'DecryptedGames';
 

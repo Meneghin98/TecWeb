@@ -14,6 +14,12 @@ class html
         return file_get_contents("../html/header.html");
     }
 
+    public static function menu()
+    {
+        // Implementare selettore link
+        return file_get_contents("../html/menu.html");
+    }
+
     public static function footer()
     {
         //Rendere dinamica tramite risoluzione dei link circolari
@@ -67,4 +73,5 @@ class html
         }
         return $commenti;
     }
+
 }

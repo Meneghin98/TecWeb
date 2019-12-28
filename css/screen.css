@@ -51,16 +51,16 @@
     -webkit-flex: 20%;
     -ms-flex: 20%;*/
     flex: 20%;
-    height: 90px;   /* tradurre in percentuale */
+    height: 90px;
 }
 
-/*.bgimage {
+.bgimage {
     background-image: url("../images/icons/fantasmino-logo+scritta.png");
     background-position: center left;
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+/*
 #home {
     text-indent: 100%;
     white-space: nowrap;

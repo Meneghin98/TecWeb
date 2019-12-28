@@ -3,219 +3,19 @@
     padding: 0;
 }
 
+/* Oggetti da nascondere */
 
-/*
----------------------- mobile ----------------------------------
-
-
-@media only screen and (max-width: 900px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-
-    /* ------------------------------------
-    /* ------------ Header ---------------
-    /*      Sistemare img dentro a h1
-
-    #header {
-        display: none;
-    }
-
-
-    /* ---------------------------------------------------
-    /* ------- Dichiarazione caratteristiche font --------
-
-    .articleListDesc, .shortDesc, .writer, .description p, .comment p {
-        font-size: 1.5em;
-        line-height: 1em;
-    }
-
-    .topArticles a .topArticleTitle, .categoriaGenerale {
-        font-size: 1em;
-    }
-
-    .intestazione h1 {
-        font-size: 2.2em;
-        color: #088700
-    }
-
-    .writer {
-        color: #086605;
-    }
-
-    .index h3 {
-        font-size: 1.1em;
-    }
-
-    .voto p {
-        font-size: 1.5em;
-    }
-
-    .comment h3 {
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    .pro h3 {
-        color: green;
-    }
-
-    .contro h3 {
-        color: red;
-    }
-
-    /* -----------------------------------
-    /* ---------- Top-Articles -----------
-
-    .topArticles {
-        flex: 100%;
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .topArticles li:first-of-type {
-        flex: 100%
-    }
-
-    .topArticles li:nth-of-type(2) {
-        flex: 50%;
-    }
-
-    .topArticles li:nth-of-type(3) {
-        flex: 50%
-    }
-
-    .topArticles li:last-of-type {
-        display: none;
-    }
-
-
-    .topArticles li img, .headerChild:nth-of-type(1) a img {
-        transition: none;
-    }
-
-    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
-        transform: none;
-    }
-
-
-    /* -------------------------------------
-    /* -------------- Content --------------
-
-    .content {
-        width: 100%;
-    }
-
-    .flexColumn {
-        display: block;
-    }
-
-    .flexColumn:last-of-type, .menu, #search {
-        display: none;
-    }
-
-    .flexColumn img {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .intestazione h1 {
-        margin: 3% 3% 0.7em 3%;
-    }
-    .shortDesc, .writer {
-        padding: 0 .8em 0.9em .8em;
-    }
-
-    .index {
-        font-size: 1.3em;
-        margin: 1em 1em 1em 1em;
-        border: 2px solid green;
-    }
-
-    .index ol {
-        list-style: none;
-    }
-
-    .index li {
-        margin-bottom: 7px;
-    }
-
-    .index a {
-        color: black;
-        text-decoration: none;
-    }
-
-
-    .description p, h2 {
-        padding: 1em 0.5em 0 0.5em;
-    }
-
-    .description h2 {
-        font-size: 1.9em;
-        color: black;
-    }
-
-    .voto {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        text-align: center;
-        background-color: limegreen;
-    }
-
-    .comment {
-        margin: 0 1em;
-        padding: 0.5em 1em;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border: 2px solid limegreen;
-        background-color: #32cd3266;
-        border-top: 0;
-    }
-
-    .pro, .contro {
-        font-size: 1.3em;
-        margin: 2em 8% 2em 8%;
-    }
-
-    .pro {
-        list-style-image: url("../images/icons/icon_correct_247100.png")
-    }
-
-    .contro {
-        list-style-image: url("../images/icons/wrong_1275646.png");
-    }
-
-
-    /* ------------------------------
-    /* ---------- Footer ------------
-
-    #footer {
-        display: none;
-    }
-
+.screenReaderHelper, .headerChild h1, .headerChild label {
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
 }
 
-/*
----------------------- fine mobile ----------------------------------
- */
 
-
-body {
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 0.9em;
-    margin: auto;
-    height: 100%;
-    background-color: black;
-    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+/* Head */
 
 .headerChild:nth-of-type(1) a {
-
     position: initial;
 }
 
@@ -224,19 +24,18 @@ body {
 }
 
 .headerChild:nth-of-type(1) a img:hover {
-    -moz-transform: scale(0.9) rotate(0deg);
+    /*-moz-transform: scale(0.9) rotate(0deg);
     -webkit-transform: scale(0.9) rotate(0deg);
     -o-transform: scale(0.9) rotate(0deg);
-    -ms-transform: scale(0.9) rotate(0deg);
+    -ms-transform: scale(0.9) rotate(0deg);*/
     transform: scale(0.9) rotate(0deg);
 }
 
-
 #header {
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -webkit-flex;*/
     display: flex;
     border-bottom: 0.5em solid #0E9C09;
     color: #0E9C09;
@@ -247,15 +46,15 @@ body {
 }
 
 .headerChild:nth-of-type(1) {
-    -webkit-box-flex: 10;
+    /*-webkit-box-flex: 10;
     -moz-box-flex: 10;
     -webkit-flex: 20%;
-    -ms-flex: 20%;
+    -ms-flex: 20%;*/
     flex: 20%;
-    height: 90px;
+    height: 90px;   /* tradurre in percentuale */
 }
 
-.bgimage {
+/*.bgimage {
     background-image: url("../images/icons/fantasmino-logo+scritta.png");
     background-position: center left;
     background-repeat: no-repeat;
@@ -266,23 +65,14 @@ body {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-}
+}*/
 
-.headerChild:nth-of-type(2) {
-    margin-right: 1em;
-}
-
-.headerChild:last-of-type {
+.headerChild {
     margin-right: 1em;
 }
 
 #searchBar fieldset {
     border: none;
-}
-
-#searchBar label {
-    position: absolute;
-    left: -9999px;
 }
 
 #searchBar button {
@@ -301,25 +91,56 @@ body {
     padding: .3em 2.1em 0.3em 1em;
 }
 
+
+/* Articoli migliori */
+
+.topArticles li img, .headerChild:nth-of-type(1) a img {
+    transition: none;
+}
+
+.topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+    transform: none;
+}
+
+
+/* Body */
+
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+
+
+
+/* Menu */
+
+/*
 .hamburger-menu {
     display: none;
 }
+*/
 
-.content, .menu {
+#content, #menu {
     max-width: 1300px;
     margin: 0 auto;
 }
 
-.content {
+#content {
     background-color: white;
     padding-bottom: 1em;
 }
 
-.menu {
+#menu {
     background-color: #131313;
 }
 
-.menu ul {
+#menu ul {
     background-color: #131313;
     list-style-type: none;
     text-align: center;
@@ -329,7 +150,7 @@ body {
     max-width: 650px;
 }
 
-.menu li {
+#menu li {
     flex: 20%;
     display: inline-block;
     border-right: 1px solid #dddcdc;
@@ -337,27 +158,27 @@ body {
     margin: 0.5em 0;
 }
 
-.menu a:link {
+#menu a:link {
     text-decoration: none;
     color: white;
 }
 
-.menu a:visited {
+#menu a:visited {
     color: inherit;
     text-decoration: none;
 }
 
-.menu a:hover, .menu #currentlink:hover {
+#menu a:hover, #menu #currentlink:hover {
     color: #0E9C09;
 }
 
-.menu a:active {
+#menu a:active {
     text-decoration: none;
     color: white;
     outline-style: none;
 }
 
-.menu #currentlink {
+#menu #currentlink {
     color: lawngreen;
     font-weight: bold;
 }
@@ -511,15 +332,6 @@ body {
 
 }
 
-.footer {
-    box-sizing: border-box;
-    clear: both;
-    background-color: darkslateblue;
-    color: whitesmoke;
-    padding: 1em;
-    text-align: center;
-}
-
 .hide {
     display: none;
 }
@@ -562,7 +374,7 @@ body {
     display: none;
 }
 
-#contentLogin {
+#Login {
     background-color:rgba(0, 0, 0, 0.5);
     padding: 7em 0em;
 }
@@ -1242,7 +1054,7 @@ color: blue;
 
     /*fine dichiarazione dimensione font*/
     /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
-    .flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
+    .flexColumn:last-of-type, #menu, #search, .topArticles li:last-of-type {
         display: none;
     }
     /*-------------------------------------------------------------------------*/

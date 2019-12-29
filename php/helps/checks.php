@@ -20,20 +20,10 @@ function checkEmail($email){
 }
 
 function checkPassword($password){
-    $errors = true;
-    if(strlen($password) < 8) {
-        $errors = "La password deve contenere almeno otto caratteri";
+    if(strlen($password) < 3) {
+       return false;
     }
-
-    if(!preg_match('/^[A-Za-z]{8,16}$/', $password)) {
-        $errors = "La password deve contenere almeno un numero";
-    }
-
-    if(!preg_match('/^[0-9]{8,16}$/', $password)) {
-        $errors = "La password deve contenere almeno un carattere";
-    }
-
-    return $errors;
+    return true;
 }
 
 function checkRiferimento($riferimento){

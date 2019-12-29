@@ -10,8 +10,23 @@ class html
 
     public static function header()
     {
-        //bisogna implementare il passaggio da utente registrato a non
-        return file_get_contents("../html/header.html");
+        $rep = file_get_contents("../html/header.html");
+        if(isset($_SESSION['loggato']) && $_SESSION['loggato']==true) { //verifico che un'utente è loggato oppure no
+            $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/personal.php\"><img
+                src=\"../images/icons/login-sito-web.png\" alt=\"area utente\" /></a>";
+            $rep = str_replace("£utente", $change, $rep);
+        }
+        else {
+            $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
+                src=\"../images/icons/Registrati-sito-web.png\" alt=\"login e registrazione\" /></a>";
+            $rep = str_replace("£utente", $change, $rep);
+        }
+        return $rep;
+    }
+
+    public static function registrazione()
+    {
+        return file_get_contents( "../html/User/registrazione.html");
     }
 
     public static function footer()

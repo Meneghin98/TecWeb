@@ -59,6 +59,10 @@ class DBConnection
         mysqli_query($this->connection, $query);
     }
 
+    public function newUser($nome,$cognome,$username,$email,$password) {
+        $query = '';
+    }
+
     public function getLikesOfUser($nickname, $idArticolo)
     {
         $query = "SELECT c.id FROM comments c JOIN likes l ON c.id=l.id WHERE l.nickname='$nickname' AND c.article='$idArticolo'";

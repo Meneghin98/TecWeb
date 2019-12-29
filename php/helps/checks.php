@@ -8,15 +8,34 @@ function checkNome($nome){
         return false;
     return true;
 }
+
 function checkCognome($cognome){
-    return true;//implementare
+    if(!preg_match('/^([A-Za-z]{2,15})$/', $cognome))
+        return false;
+    return true;
 }
+
 function checkEmail($email){
-    return true;//implementare
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
+
 function checkPassword($password){
-    return true;//implementare
+    $errors = true;
+    if(strlen($password) < 8) {
+        $errors = "La password deve contenere almeno otto caratteri";
+    }
+
+    if(!preg_match('/^[A-Za-z]{8,16}$/', $password)) {
+        $errors = "La password deve contenere almeno un numero";
+    }
+
+    if(!preg_match('/^[0-9]{8,16}$/', $password)) {
+        $errors = "La password deve contenere almeno un carattere";
+    }
+
+    return $errors;
 }
+
 function checkRiferimento($riferimento){
     return true;//implementare
 }

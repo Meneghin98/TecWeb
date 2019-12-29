@@ -14,10 +14,44 @@ class html
         return file_get_contents("../html/header.html");
     }
 
-    public static function menu()
+    public static function menu($type_of_menu, $type_page = 'n')
     {
-        // Implementare selettore link
-        return file_get_contents("../html/menu.html");
+        $menu = file_get_contents("../html/menu.html");
+
+        if($type_of_menu == 'article') {
+            $menu = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $menu);
+            $menu = str_replace('£link2', '<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
+            $menu = str_replace('£link3', '<li><a href="../../php/page.php?t=r">Recensioni</a></li>', $menu);
+            $menu = str_replace('£link4', '<li><a href="../../php/page.php?t=a">Altro</a></li>', $menu);
+        }
+
+        /*
+        if($type_of_menu == 'home') {
+            $menu = str_replace('£link1', '<li><span xml:lang="en">Home</span></li>', $menu);
+            $menu = str_replace('£link2', '<li><a href="php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
+            $menu = str_replace('£link3', '<li><a href="php/page.php?t=r">Recensioni</a></li>', $menu);
+            $menu = str_replace('£link4', '<li><a href="php/page.php?t=a">Altro</a></li>', $menu);
+        }*/
+
+        if($type_of_menu == 'page') {
+            $menu = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $menu);
+            $menu = str_replace('£link2', '<li><a href="page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
+            $menu = str_replace('£link3', '<li><a href="page.php?t=r">Recensioni</a></li>', $menu);
+            $menu = str_replace('£link4', '<li><a href="page.php?t=a">Altro</a></li>', $menu);
+
+            switch ($type_page) {
+                case 'n':
+                    $menu = str_replace('<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a>', '<li id="currentlink"><span xml:lang="en">News</span>', $menu);
+                    break;
+                case 'r':
+                    $menu = str_replace('<li><a href="../../php/page.php?t=r">Recensioni</a>', '<li id="currentlink">Recensioni', $menu);
+                    break;
+                case 'a':
+                    $menu = str_replace('<l><a href="../../php/page.php?t=a">Altro</a>', '<li id="currentlink">Altro', $menu);
+                    break;
+            }
+        }
+        return $menu;
     }
 
     public static function footer()

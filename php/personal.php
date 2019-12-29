@@ -5,7 +5,6 @@ require_once("helps/checks.php");
 
 session_start();
 
-
 $file = str_replace('£footer', html::footer(),
     str_replace('£header', html::header(),
         str_replace('£head_', html::head(),
@@ -37,7 +36,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
 } else { //l'utente ha premuto salva
     //controllo se ci sono errori negli input
     $errori = "";
-    if ($DB->existsNickname($_POST['nickname']))
+    if ($_POST['nickname']!=$utente['nickname'] && $DB->existsNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito è già in uso</li>";
     if (!checkNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito contiene caratteri non consentiti</li>";
@@ -89,3 +88,5 @@ $file = str_replace('£form', $form, $file);
 
 $DB->close();
 echo $file;
+
+

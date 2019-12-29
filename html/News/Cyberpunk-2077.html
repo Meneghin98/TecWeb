@@ -13,7 +13,7 @@
 
     £header
 
-    <div class="menu">
+    <div id="menu">
         <ul>
             <li><a href="../index.html" xml:lang="en">Home</a></li>
             <li><a id="currentlink" href="news.html" xml:lang="en">News</a></li>
@@ -21,7 +21,7 @@
             <li><a href="../Eventi/eventi.html">Altro</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div id="content">
         <div class="flexContainer">
             <div class="flexColumn">
                 <div class="intestazione">
@@ -135,15 +135,7 @@
         </div>
         <h2 id="TitoloCommenti">Commenti:</h2>
         <div id="ListaCommenti">
-            <form action="commento.php?id=£id" id="ScriviCommento" method="post">
-                <fieldset>
-                    <label for="textarea">Scrivi il tuo commento:</label>
-                    <textarea name="commentoUtente" id="textarea" rows="6" cols="0" onkeyup="updateNum()"></textarea>
-                    <p id="MaxChar">300</p>
-                    <label for="Invia" id="commenta" >Commenta</label>
-                    <input type="submit" name="InviaCommento" id="Invia" />
-                </fieldset>
-            </form>
+            £scriviCommento
             £commenti
         </div>
     </div>

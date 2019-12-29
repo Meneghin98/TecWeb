@@ -120,7 +120,7 @@ body {
 
 /* Menu */
 
-#content, #menu {
+#content, #menu, #AreaUtente {
     max-width: 1300px;
     margin: 0 auto;
 }

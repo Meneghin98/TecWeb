@@ -2,22 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    £head_
     <title>Registrazione - Decrypted Games</title>
     <meta name="title" content="Sito interattivo sul gaming" />
     <meta name="description" content="Pagina personale dell'utente" />
     <meta name="keywords" content="NESES, neses, gaming, News, Recensioni, Eventi, Guide, utente, area personale" />
-    <meta name="language" content="italian it" />
-    <meta name="author" content="Enrico Salmaso" />
-    <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/mobile.css" type="text/css" media="only screen and (max-width: 990px)" />
 </head>
 
 <body>
 
-    $header
+    £header
 
-    <div class="menu">
+    <div id="menu">
         <ul>
             <li><a href="../Structure/index.html" xml:lang="en">Home</a></li>
             <li><a href="../News/news.html"><span xml:lang="en">News</span></a></li>
@@ -33,43 +29,20 @@
 
     <div class="contentReg" id="contentRegistrazione">
         <h1>Crea un nuovo utente</h1>
-        <form action="php.txt">
-            <fieldset>
-                <legend>Info Personali</legend>
-                <div class="ManageReg">
-                    <label for="nomeReg">Nome:</label>
-                    <input id="nomeReg" name="nome" type="text" />
-                </div>
-                <div class="ManageReg">
-                    <label for="cognomeReg">Cognome:</label>
-                    <input id="cognomeReg" name="cognome" type="text" />
-                </div>
-            </fieldset>
-            <fieldset id="secondReg">
-                <legend>Info Account</legend>
-                <div class="ManageReg">
-                    <label for="usernameReg"><span xml:lang="en"><span xml:lang="en">Username</span>:</span></label>
-                    <input id="usernameReg" name="username" type="text" />
-                </div>
-                <div class="ManageReg">
-                    <label for="emailReg"><span xml:lang="en">Email</span>:</label>
-                    <input id="emailReg" name="email" type="text" />
-                </div>
-                <div class="ManageReg">
-                    <label for="passwordReg"><span xml:lang="en">Password</span>:</label>
-                    <input id="passwordReg" type="password" name="password" />
-                </div>
-            </fieldset>
+        <form action="../../php/registrazione.php" method="post">
+            £form
+
+            £ErroriRegistrazine
 
             <div class="confermaAccountReg">
                 <label for="bottoneConfermaReg"></label>
-                <input id="bottoneConfermaReg" type="submit" value="Registrati" />
+                <input id="bottoneConfermaReg" type="submit" value="Registrati" name="conferma" />
                 <label for="bottoneIndietroReg"></label>
-                <input id="bottoneIndietroReg" type="reset" value="Annulla" />
+                <input id="bottoneIndietroReg" type="reset" value="Annulla"/>
             </div>
         </form>
     </div>
-    $footer
+    £footer
 </body>
 
 </html>

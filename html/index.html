@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/screen.css" media="screen" />
+    <link rel="stylesheet" media="screen" href="css/footer.css" />
     <link rel="icon" type="image/png" href="images/icons/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" href="images/icons/favicon/favicon-16x16.png" />
     <link rel="manifest" href="images/icons/favicon/site.webmanifest" />
@@ -11,44 +12,52 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="apple-touch-icon" href="images/icons/favicon/apple-touch-icon.png" />
-
+    <link rel="stylesheet" media="print" href="css/print.css" />
     <title xml:lang="en">Decrypted Games</title>
     <meta name='keywords' content='azione, console, news, gaming, eventi, cosplay' />
     <meta name="title" content="Sito interattivo sul gaming" />
-    <link rel="stylesheet" media="print" href="css/print.css" />
+
 </head>
+
 
 <body>
 
     <div id="header">
-        <div class="headerChild bgimage">
-            <h1 id="home">Decrypted Games</h1>
+        <div class="headerChild">
+            <a href="../index.php"><img src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
+            <h1>Decrypted Games</h1>
+            <div class="screenReaderHelper">
+                <a href="#content" tabindex="0">Vai al contenuto</a>
+                <a href="#menu" tabindex="0">Vai al menu</a>
+            </div>
         </div>
         <div class="headerChild" id="searchBar">
-            <fieldset>
-                <label for="search">Ricerca</label>
-                <input type="text" id="search" />
-                <button type="submit">
-                    <img src="images/icons/20x20-lente.png" alt="submit" />
-                </button>
-            </fieldset>
+            <form action="">
+                <fieldset>
+                    <label for="search">Ricerca</label>
+                    <input type="text" id="search" />
+                    <button type="submit">
+                        <img src="../images/icons/20x20-lente.png" alt="submit" tabindex="0"/>
+                    </button>
+                </fieldset>
+            </form>
         </div>
         <div class="headerChild">
-            <a id="login" title="Login e registrazione" href="../php/login.php"><img
-                    src="images/icons/Registrati-sito-web.png" alt="login e registrazione" /></a>
+            <a id="login" title="Login e registrazione" href="../php/login.php" tabindex="0"><img
+                src="../images/icons/Registrati-sito-web.png" alt="login e registrazione" /></a>
         </div>
     </div>
-    <div class="menu">
+
+    <div id="menu">
         <ul>
             <li id="currentlink"><span xml:lang="en">Home</span></li>
-            <li><a href="php/page.php?t=n"><span xml:lang="en">News</span></a></li>
-            <li><a href="php/page.php?t=r">Recensioni</a></li>
-            <li><a href="php/page.php?t=a">Altro</a></li>
+            <li><a href="../php/page.php?t=n"><span xml:lang="en">News</span></a></li>
+            <li><a href="../php/page.php?t=r">Recensioni</a></li>
+            <li><a href="../php/page.php?t=a">Altro</a></li>
         </ul>
     </div>
 
-
-    <div class="content">
+    <div id="content">
         <ul class="topArticles">
             £top_articles
         </ul>

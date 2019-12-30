@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-button.button{
+#button{
     position: fixed;
     border: none;
     background-color: transparent;
@@ -730,11 +730,11 @@ input#bottoneIndietroReg {
 }
 
 .pro {
-    list-style-image: url("../images/icons/icon_correct_247100.png");
+    list-style-image: url("../images/icons/correct.png");
 }
 
 .contro {
-    list-style: url("../images/icons/wrong_1275646.png");
+    list-style: url("../images/icons/wrong.png");
 }
 
 .intestazione h1 {

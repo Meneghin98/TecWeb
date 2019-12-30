@@ -1,0 +1,28 @@
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" width="48.85" height="48.85" viewBox="0 0 48.85 48.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.7;
+      }
+
+      .cls-2 {
+        fill: #0e9c09;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #0e9c09;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>topArrowB</title>
+  <g>
+    <circle class="cls-1" cx="24.43" cy="24.43" r="23.43"/>
+    <path class="cls-2" d="M25.34,49.11A24.43,24.43,0,1,1,49.77,24.68,24.45,24.45,0,0,1,25.34,49.11Zm0-46.85A22.43,22.43,0,1,0,47.77,24.68,22.45,22.45,0,0,0,25.34,2.26Z" transform="translate(-0.92 -0.26)"/>
+  </g>
+  <polyline class="cls-3" points="13.54 28.36 24.28 17.59 35.04 28.34"/>
+</svg>

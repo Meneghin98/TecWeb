@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#button{
+#button {
     position: fixed;
     border: none;
     background-color: transparent;
@@ -100,6 +100,7 @@
     width: 0;
     overflow: hidden;
 }
+
 .headerChild:nth-of-type(1) a {
     position: initial;
 }
@@ -138,6 +139,7 @@
     flex: 20%;
     height: 90px;
 }
+
 /*
 .bgimage {
     background-image: url("../images/icons/fantasmino-logo+scritta.png");
@@ -200,7 +202,6 @@ body {
     /* background-position: center;
     background-repeat: no-repeat; */
 }
-
 
 
 /* Menu */
@@ -416,6 +417,7 @@ body {
     display: none;
 }
 
+/*
 @media only screen and (max-width: 960px) {
     #header {
         flex-wrap: wrap;
@@ -433,16 +435,16 @@ body {
     }
 }
 
-@media only screen and (max-width: 640px)
-{
-    .topArticles{
+@media only screen and (max-width: 640px) {
+    .topArticles {
         flex-direction: column;
     }
-    .topArticles li{
+
+    .topArticles li {
         flex: 100%;
     }
 }
-
+*/
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
  */
@@ -455,7 +457,7 @@ body {
 }
 
 #Login {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 7em 0em;
 }
 
@@ -601,8 +603,6 @@ input#bottoneIndietroReg {
 /*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
 
 
-
-
 #AreaUtente {
     padding: 3em 0;
     background-color: rgba(52, 52, 52, 1);
@@ -632,7 +632,7 @@ input#bottoneIndietroReg {
     margin: 0;
 }
 
-.datiAccount .groupBox input{
+.datiAccount .groupBox input {
     width: 100%;
 }
 
@@ -640,10 +640,12 @@ input#bottoneIndietroReg {
     padding: 1.2em 0;
     margin-left: 5em;
 }
-.groupBox p{
+
+.groupBox p {
     font-size: .8em;
     margin: .8em 0;
 }
+
 .groupBox {
     min-width: 15em;
     padding: 1em;
@@ -660,7 +662,8 @@ input#bottoneIndietroReg {
     margin-left: 10%;
     margin-right: 1em;
 }
-.avatar *{
+
+.avatar * {
     display: block;
 }
 
@@ -673,10 +676,12 @@ input#bottoneIndietroReg {
     cursor: pointer;
     background-color: #0E9C09;
 }
-#save{
+
+#save {
     border: none;
 }
-#save input{
+
+#save input {
     display: none;
 }
 
@@ -693,7 +698,7 @@ input#bottoneIndietroReg {
     color: black;
 }
 
-#buonFine{
+#buonFine {
     background-color: rgba(50, 205, 50, 0.3);
     border-style: solid;
     border-color: #0E9C09;
@@ -702,7 +707,8 @@ input#bottoneIndietroReg {
     max-width: 650px;
     padding: .5em;
 }
-#errori{
+
+#errori {
     background-color: rgba(205, 50, 50, 0.3);
     border-style: solid;
     border-color: #9C0E09;
@@ -711,7 +717,8 @@ input#bottoneIndietroReg {
     max-width: 650px;
     padding: .5em;
 }
-#errori li{
+
+#errori li {
     list-style: inside;
 }
 
@@ -782,7 +789,7 @@ input#bottoneIndietroReg {
     padding-bottom: 2em;
 }
 
-.description h2{
+.description h2 {
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -890,51 +897,58 @@ input#bottoneIndietroReg {
     float: right;
 }
 
-#TitoloCommenti{
+#TitoloCommenti {
     border-bottom: 0.1em solid #088700;
     font-size: 1.8em;
     color: black;
     margin: 0 2em;
 }
 
-#ListaCommenti{
+#ListaCommenti {
     margin: 0 5em;
 }
-#ListaCommenti p{
+
+#ListaCommenti p {
     font-size: 1.3em;
     padding-bottom: 1em;
 }
-.commento{
+
+.commento {
     list-style-type: none;
     border: 2px solid #088700;
     border-radius: 8px;
     margin: 1em 0;
     padding: 1em;
 }
-.commento a:link, .commento a:visited{
+
+.commento a:link, .commento a:visited {
     color: black;
     font-size: 1.3em;
 
 }
-.commento a:hover{
-color: blue;
+
+.commento a:hover {
+    color: blue;
 }
 
-#ListaCommenti .commento p{
+#ListaCommenti .commento p {
     font-size: 1em;
     padding-top: .2em;
     padding-bottom: 1em;
 }
-.commento pre{
+
+.commento pre {
     font-size: 1.5em;
 }
-.numeroLike{
+
+.numeroLike {
     margin-top: 1em;
     display: inline;
     margin-left: .6em;
     vertical-align: sub;
 }
-.commento .miPiace{
+
+.commento .miPiace {
     font-size: 1em;
     margin-top: .7em;
     padding: 0.2em;
@@ -947,29 +961,36 @@ color: blue;
     overflow: hidden;
     cursor: pointer;
 }
-.upBlack{
+
+.upBlack {
     background-position: left;
 }
-.upGray{
+
+.upGray {
     background-position: right;
 }
-.upBlue{
+
+.upBlue {
     background-position: center;
 }
-.bottoneMiPiace{
+
+.bottoneMiPiace {
     display: none;
 }
 
-#ScriviCommento{
+#ScriviCommento {
     margin: 1em 0 4em;
 }
-#ScriviCommento fieldset{
+
+#ScriviCommento fieldset {
     border: none;
 }
-#ScriviCommento label{
+
+#ScriviCommento label {
     font-size: 1.5em;
 }
-#ScriviCommento textarea{
+
+#ScriviCommento textarea {
     display: block;
     resize: none;
     width: 100%;
@@ -978,13 +999,16 @@ color: blue;
     border: 2px solid #088700;
     border-radius: 8px;
 }
-#ScriviCommento p{
+
+#ScriviCommento p {
     display: inline;
 }
-#ScriviCommento input{
+
+#ScriviCommento input {
     display: none;
 }
-#ScriviCommento #commenta{
+
+#ScriviCommento #commenta {
     float: right;
     border-radius: 25px;
     border: 2px solid darkgreen;
@@ -1077,47 +1101,36 @@ color: blue;
 /* ------------------------------ */
 /* ---------- Footer ------------ */
 
-    #footer {
-        text-align: center;
-        background-color: black;
-        bottom: 0;
-        padding: 1em 0 1em 0;
-        color: white;
-    }
+#footer {
+    text-align: center;
+    background-color: black;
+    bottom: 0;
+    padding: 1em 0 1em 0;
+    color: white;
+}
 
-    #footer li {
-        list-style: none;
-        padding-bottom: 0.7em;
-    }
+#footer li {
+    list-style: none;
+    padding-bottom: 0.7em;
+}
 
-    #footer a {
-        text-decoration: none;
-        color: white;
-    }
+#footer a {
+    text-decoration: none;
+    color: white;
+}
 
-    .footerInline {
-        float: left;
-        width: 33.33%;
-    }
+.footerInline {
+    float: left;
+    width: 33.33%;
+}
 
-    .footerInline p {
-        font-size: 1.25em;
-        margin-bottom: 0.8em;
-        padding-bottom: 0.4em;
-        border-bottom: 3px solid green;
-    }
+.footerInline p {
+    font-size: 1.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid green;
+}
 
-    #imgsFooter {
-        clear: both;
-    }
-
-/*
----------------------- fine index ----------------------------------
- */
-/*---------------------------*/
-/*----------Mobile----------*/
-/*---------------------------*/
-
-
-
-
+#imgsFooter {
+    clear: both;
+}

@@ -665,6 +665,7 @@ input#bottoneIndietroReg {
 
 .avatar * {
     display: block;
+    max-width: 220px;
 }
 
 .avatar input {

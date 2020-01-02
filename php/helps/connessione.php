@@ -123,7 +123,10 @@ class DBConnection
         mysqli_free_result($result);
         return $articolo;
     }
-
+    public function viewArticle($id){
+        $query = "CALL IncrementaVisualizzazioni($id)";
+        mysqli_query($this->connection, $query);
+    }
     public function getArticlesArray($where)
     {
         if (is_null($where))

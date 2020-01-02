@@ -93,16 +93,13 @@
         flex: 50%;
     }
 
+/* Head */
 .screenReaderHelper, .headerChild h1, .headerChild label {
     display: block;
     height: 0;
     width: 0;
     overflow: hidden;
 }
-
-
-/* Head */
-
 .headerChild:nth-of-type(1) a {
     position: initial;
 }

@@ -643,7 +643,7 @@ input#bottoneIndietroReg {
 
 .groupBox p {
     font-size: .8em;
-    margin: .8em 0;
+    margin: .3em 0 .8em;
 }
 
 .groupBox {
@@ -722,6 +722,15 @@ input#bottoneIndietroReg {
     list-style: inside;
 }
 
+#logout:link{
+    color: white;
+}
+#logout:visited{
+    color: white;
+}
+#logout:hover{
+    color: rgba(255,255,255,0.7);
+}
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */

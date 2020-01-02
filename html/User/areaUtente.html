@@ -21,12 +21,12 @@
 
 <div id="AreaUtente">
     £messaggio
-    <form action="personal.php" method="post">
+    <form action="personal.php" method="post" enctype="multipart/form-data">
 
         <div class="avatar">
             <img src="../images/Users/£immgaine_utente£" alt="immagine del profilo"/>
             <label for="file" class="custom-file-upload">Modifica</label>
-            <input type="file" id="file"/>
+            <input name="userImg" type="file" id="file"/>
         </div>
 
         <div class="datiAccount">

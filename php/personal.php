@@ -11,9 +11,10 @@ $file = str_replace('£footer', html::footer(),
             file_get_contents("../html/User/areaUtente.html"))));
 $DB = new DBConnection();
 $utente = $DB->getUtenteArray($_SESSION['nickname']);
-$file = str_replace('£immgaine_utente£', $utente['img'], $file);
+
 
 if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
+    $file = str_replace('£immgaine_utente£', $utente['img'], $file);
     $file = str_replace('£messaggio', '', $file);//rimuovo il segnaposto
     //riempio i campi con i suoi dati
     $form = "<fieldset class=\"groupBox\">
@@ -57,9 +58,26 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
         if ($_POST['newPwd'] === $_POST['repPwd'])
             $errori .= "<li>Le passwrod inserite non combaciano</li>";
     }
+    if ($_FILES['userImg']['size'] != 0) {
+        if ($_FILES['userImg']['error']>0)
+            $errori .= "<li>Ci sono stati dei problemi con il file, non è stato possibile modificare l'immagine utente</li>";
+        else if (!move_uploaded_file($_FILES['userImg']["tmp_name"], "../images/Users/" . basename( $_FILES['userImg']["name"])))
+            $errori .= "<li>Ci sono stati dei problemi con l'upload, non è stato possibile modificare l'immagine utente</li>";
+    }
 
     if (!$errori) { //non c'è nessun errore, procedo a salvare i nuovi dati
-        $DB->updateUser($_SESSION['nickname'], $_POST);
+        $values = array(
+            'nickname' => $_POST['nickname'],
+            'email' => $_POST['email'],
+            'nome' => $_POST['nome'],
+            'cognome' => $_POST['cognome'],
+            'riferimento' => $_POST['riferimento'],
+            'newPwd' => $_POST['newPwd'],
+            'oldPwd' => $_POST['oldPwd'],
+            'img' => basename($_FILES['userImg']['name'])
+        );
+        $DB->updateUser($_SESSION['nickname'],$values);
+        $file = str_replace('£immgaine_utente£', $values['img'], $file);
         $file = str_replace('£messaggio', '<p id="buonFine">I dati sono stati aggiornati correttamente</p>', $file);
     }
     else{ // ho trovato degli errori
@@ -84,6 +102,8 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
                 <input name=\"riferimento\" type=\"text\" id=\"ref\" value=\"$_POST[riferimento]\"/>
             </fieldset>";
 }
+
+
 $file = str_replace('£form', $form, $file);
 
 $DB->close();

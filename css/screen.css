@@ -620,9 +620,9 @@ input#bottoneIndietroReg {
 .datiAccount {
     max-width: 650px;
     list-style-type: none;
-    margin: 0 auto;
+    margin: 2em auto 0;
     text-align: left;
-    color: whitesmoke;
+    color: white;
     font-size: medium;
 }
 
@@ -656,24 +656,22 @@ input#bottoneIndietroReg {
     border-width: 3px
 }
 
-.avatar {
-    float: left;
-    margin-top: 2em;
-    margin-left: 10%;
-    margin-right: 1em;
-}
-
-.avatar * {
-    display: block;
+#avatar {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 200px;
     min-width: 50px;
-    max-width: 220px;
 }
 
-.avatar input {
+#avatar * {
+    display: block;
+}
+
+#avatar input {
     display: none;
 }
 
-.custom-file-upload {
+#custom-file-upload {
     padding: .3em 0;
     cursor: pointer;
     background-color: #0E9C09;

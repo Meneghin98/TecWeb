@@ -13,13 +13,13 @@ if (isset($_POST['Accedi'])) {
 
     $db = new DBConnection();
 
-    $email = trim($_POST["emailLogin"]);
+    $nickname = trim($_POST["emailLogin"]);
     $password = trim($_POST["password"]);
 
     $errori = "";
 
-    if (!$db->exitsEmail($email))
-        $errori .= "<li>Verifica che l'e-mail inserita sia valida</li>";
+    if (!$db->existsNickname($nickname))
+        $errori .= "<li>Verifica che il nickname inserito sia valido</li>";
     if (!$db->exitsPassword($password))
         $errori .= "<li>La password inserita è errata</li>";
 
@@ -27,7 +27,7 @@ if (isset($_POST['Accedi'])) {
         $form = '<div class="emailLog">
                     <img src="../../images/icons/email1.png" alt="icona email">
                     <label for="emailLogin" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
-                    <input type="text" name="emailLogin" id="emailLogin" value=\'$_POST["emailLogin"]\' />
+                    <input type="text" name="emailLogin" id="emailLogin" value=\'$nickname\' />
              </div>
              <div class="passwordLog">
                     <img src="../../images/icons/lucchetto1.png" alt="icona password">
@@ -40,7 +40,7 @@ if (isset($_POST['Accedi'])) {
         $file = str_replace('£erroriLogin', $beginList, $file);
         echo $file;
     } else {
-        $nickname = "SELECT 'nickname' FROM 'users' WHERE 'email'=$email AND 'password'=$password";
+        $nickname = "SELECT 'nickname' FROM 'users' WHERE 'nickname'=$nickname AND 'password'=$password";
 
         $db->close();
 
@@ -53,7 +53,7 @@ if (isset($_POST['Accedi'])) {
 } else { //è la prima volta che accedo
     $form = '<div class="emailLog">
                     <img src="../../images/icons/email1.png" alt="icona email">
-                    <label for="emailLogin" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
+                    <label for="emailLogin" xml:lang="en"><span xml:lang="en">Nickname</span>:</label>
                     <input type="text" name="emailLogin" id="emailLogin" value=""/>
              </div>
              <div class="passwordLog">

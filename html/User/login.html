@@ -2,36 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Accedi - Decrypted Games</title>
+    £head_
     <meta name="title" content="Sito interattivo sul gaming" />
     <meta name="description" content="Pagina personale dell'utente" />
     <meta name="keywords" content="Games Decrypting, gaming, utente, login, area personale" />
-    <meta name="language" content="italian it" />
-    <meta name="author" content="Enrico Salmaso" />
-    <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/mobile.css" type="text/css" media="only screen and (max-width: 990px)" />
-    <link rel="stylesheet" media="print" href="../../css/print.css" />
 </head>
 
 <body>
-    <div id="header">
-        <div class="headerChild">
-            <h1><a href="../index.html"><img src="../../images/icons/fantasmino-logo+scritta.png"
-                        alt="Decrypted Games" /></a></h1>
-        </div>
-        <div class="headerChild" id="searchBar">
-            <fieldset>
-                <label for="search">Ricerca</label>
-                <input type="text" id="search" />
-                <button type="submit">
-                    <img src="../../images/icons/20x20-lente.png" alt="submit" />
-                </button>
-            </fieldset>
-        </div>
-
-    </div>
-
+£header
     <div id="menu">
         <ul>
             <li><a href="../Structure/index.html" xml:lang="en">Home</a></li>
@@ -47,37 +25,28 @@
         <h1>Account</h1>
     </div>
 
-    $ErroreLogin
-
     <div class="contentLog" id="contentLogin">
         <fieldset class="signIn">
             <legend><strong>Accedi</strong></legend>
             <img class="imageLogin" src="" alt="">
             <form action="../../php/registrazione.php" method="post">
-                <div class="emailLog">
-                    <img src="../../images/icons/email1.png" alt="icona email">
-                    <label for="emailLogin" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
-                    <input type="text" name="emailLogin" id="emailLogin" maxlength="30" />
-                </div>
-                <div class="passwordLog">
-                    <img src="../../images/icons/lucchetto1.png" alt="icona password">
-                    <label for="passwordLogin" xml:lang="en"><span xml:lang="en">Password</span>:</label>
-                    <input type="password" name="password" id="passwordLogin" maxlength="20" />
-                </div>
+                £form
                 <a id="scrittaReg" href="registrazione.html">Non sei ancora registrato? Registrati</a>
 
                 <div class="pulsantiLogin">
                     <label id="pulsanteLogin" for="AccediLogin">Accedi</label>
-                    <input type="submit" value="Accedi" id="AccediLogin" />
+                    <input type="submit" value="Accedi" id="AccediLogin" name="Accedi" />
                     <a id="scrittaLog" href="registrazione.html">Non hai l'account?</a>
                     <label id="pulsanteRegistrati" for="RegistratiLoginMobile">Registrati</label>
                     <input type="submit" value="Registrati" id="RegistratiLoginMobile" />
                 </div>
+                £erroriLogin
             </form>
         </fieldset>
     </div>
 
-    </div>
+    £footer
+
 </body>
 
 </html>

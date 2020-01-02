@@ -51,7 +51,6 @@ class DBConnection
         mysqli_query($this->connection, $query);
     }
 
-
     public function putComment($text, $user, $article)
     {
         $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', '$article')";
@@ -59,7 +58,7 @@ class DBConnection
     }
 
     public function newUser($nome,$cognome,$username,$email,$password) {
-        $query = '';
+        $query = "INSERT INTO users VALUES ('$username','$cognome','$email','$nome','$password')";
     }
 
     public function getLikesOfUser($nickname, $idArticolo)
@@ -211,6 +210,22 @@ class DBConnection
         $queryResult = mysqli_query($this->connection, $query);
         if ($queryResult)
             return true; //il nickname inserito è già presente
+        return false;
+    }
+
+    function exitsEmail($email) {
+        $query = "Select * from users where email = '$email'";
+        $queryResult = mysqli_query($this->connection, $query);
+        if ($queryResult)
+            return true;
+        return false;
+    }
+
+    function exitsPassword($password) {
+        $query = "Select * from users where email = '$password'";
+        $queryResult = mysqli_query($this->connection, $query);
+        if ($queryResult)
+            return true;
         return false;
     }
 

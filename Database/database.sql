@@ -157,6 +157,9 @@ values
     (null, 'categoriaAltro');/*5*/
 
 
+
+/*                1° VERSIONE         */
+
 insert into articles
     /*Lucca comics*/
     (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -240,6 +243,80 @@ insert into articles
     (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values
     (null, 'html/News/StarWarsPCSell.html', '2019-11-27', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record', 'Vendite PC, battuti molti record', 'Star Wars vendite PC', 'News', '0', '4', null);
+
+
+/*           2° VERSIONE       */
+
+
+insert into articles
+    /*Lucca comics*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (1, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
+        'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
+        'Lucca C&amp;G 19', 'News', '0', '2', null);
+insert into articles
+    /*PokemonGO Guida*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (2, 'html/Altro/guidaPokemonGo.html', '2019-12-30', 'Pokémon GO, come sconfiggere Sierra del Team Rocketcon un solo Pokémon',
+        'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pokémon GO utilizzando uno ed un solo Pokémon, ecco la guida.',
+        'Pokemon Go', 'Altro', '0', '3', null);
+insert into articles
+    /*Dead Stranding Recensione*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (3, 'html/Recensione/recensioneDeadStranding.html', '2019-12-04', 'Dead Stranding, la recensione - PS4',
+        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
+        'Dead Stranding - recensione', 'Recensione', '0', '4', null);
+insert into articles
+    /*Vampyr*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (4, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',
+        'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
+        'Vampyr - recensione', 'Recensioni', '0', '4', null);
+insert into articles
+    /*Cyberpunk*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (5, 'html/News/Cyberpunk-2077.html', '2019-11-28',
+        '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
+        'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento',
+        '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
+insert into articles
+    /*Cod*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (6, 'html/Recensioni/Call-of-duty-MW-2019.html', '2019-09-25', 'Recensione: <span xml:lang="en">Call of Duty: Modern Warfare</span>',
+        'ritorno al passato certo, ma soprattutto un nuovo, grande inizio',
+        'Call of Duty MW', 'Recensioni', '0', '4', null);
+insert into articles
+    /*monitor*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (7, 'html/News/Xiaomimonitor.html', '2019-10-18', 'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display</span>, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span>',
+        '',
+        'Xiaomi Monitor', 'News', '0', '1', null);
+insert into articles
+    /*star wars*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (8, 'html/Recensioni/recensioneStarWars.html', '2019-11-16', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
+        '',
+        'Star Wars - PS4', 'Recensioni', '0', '4', null);
+insert into articles
+    /*death stranding*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (9, 'html/News/DeathStrandingPC.html', '2019-10-30', '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
+        '',
+        'Death Stranding PC', 'News', '0', '4', null);
+insert into articles
+    /*StarWars vendite*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (10, 'html/News/StarWarsPCSell.html', '2019-11-27', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record', 'Vendite PC, battuti molti record', 'Star Wars vendite PC', 'News', '0', '4', null);
 
 
 

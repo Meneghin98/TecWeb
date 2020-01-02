@@ -14,6 +14,7 @@
  $DB = new DBConnection();
  $idArticolo = $_GET['id'];
  $ArticoloDB = $DB->getArticleByID($idArticolo);
+ $DB->viewArticle($idArticolo);
  if (is_null($ArticoloDB))
     /* redirect */;
  else {

@@ -28,4 +28,5 @@
     $index = str_replace("£Articoli", $articoli, $index);
  }
  $db->close();
+ $index = str_replace('£head_', file_get_contents("html/head.html"), $index);
  echo str_replace('£top_articles', $top_articoli, $index);

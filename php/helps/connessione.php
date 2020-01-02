@@ -123,7 +123,10 @@ class DBConnection
         mysqli_free_result($result);
         return $articolo;
     }
-
+    public function viewArticle($id){
+        $query = "CALL IncrementaVisualizzazioni($id)";
+        mysqli_query($this->connection, $query);
+    }
     public function getArticlesArray($where)
     {
         if (is_null($where))
@@ -193,15 +196,12 @@ class DBConnection
         }
     }
     public function updateUser($nickname, $valuesArray){
-        if ($valuesArray['oldPwd'] === "")
-            $query = "UPDATE users SET nickname = '$valuesArray[nickname]', email = '$valuesArray[email]', 
-                username = '$valuesArray[nome]', surname = '$valuesArray[cognome]', ref = '$valuesArray[riferimento]' 
-                WHERE users.nickname = '$nickname'";
-        else
-            $query = "UPDATE users SET pwd = '$valuesArray[newPwd]', nickname = '$valuesArray[nickname]', 
-            email = '$valuesArray[email]', username = '$valuesArray[nome]', surname = '$valuesArray[cognome]', 
-            ref = '$valuesArray[riferimento]' WHERE users.nickname = '$nickname'";
-
+        $query = "UPDATE users SET";
+        $query .= $valuesArray['oldPwd'] != "" ? " pwd = '$valuesArray[newPwd]'," : " ";
+        $query .= "nickname = '$valuesArray[nickname]', email = '$valuesArray[email]', username = '$valuesArray[nome]', surname = '$valuesArray[cognome]'";
+        $query .= $valuesArray['riferimento'] != "" ? ", ref = '$valuesArray[riferimento]'" : '';
+        $query .= $valuesArray['img'] !="" ? ", img_src = '$valuesArray[img]' ": ' ';
+        $query .= "WHERE users.nickname = '$nickname'";
         mysqli_query($this->connection, $query);
     }
 

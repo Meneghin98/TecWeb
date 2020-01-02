@@ -29,50 +29,80 @@ class html
         return file_get_contents( "../html/User/registrazione.html");
     }
 
-    public static function menu($type_of_menu, $type_page = 'n')
+    public static function linked_obj($type_linked_obj, $type_obj, $type_page = 'not_a_page')
     {
-        $menu = file_get_contents("../html/menu.html");
-
-        if($type_of_menu == 'article') {
-            $menu = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $menu);
-            $menu = str_replace('£link2', '<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
-            $menu = str_replace('£link3', '<li><a href="../../php/page.php?t=r">Recensioni</a></li>', $menu);
-            $menu = str_replace('£link4', '<li><a href="../../php/page.php?t=a">Altro</a></li>', $menu);
-        }
-
         /*
-        if($type_of_menu == 'home') {
-            $menu = str_replace('£link1', '<li><span xml:lang="en">Home</span></li>', $menu);
-            $menu = str_replace('£link2', '<li><a href="php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
-            $menu = str_replace('£link3', '<li><a href="php/page.php?t=r">Recensioni</a></li>', $menu);
-            $menu = str_replace('£link4', '<li><a href="php/page.php?t=a">Altro</a></li>', $menu);
+        if($type_obj == 'home') {
+
+            if($type_linked_obj == 'menu')
+                $obj = file_get_contents("html/menu.html");
+            else
+                $obj = file_get_contents("html/footer.html");
+
+            $obj = str_replace('£link1', '<li id="currentlink"><span xml:lang="en">Home</span></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="php/page.php?t=r">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="php/page.php?t=a">Altro</a></li>', $obj);
+
+            return $obj;
         }*/
 
-        if($type_of_menu == 'page') {
-            $menu = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $menu);
-            $menu = str_replace('£link2', '<li><a href="page.php?t=n"><span xml:lang="en">News</span></a></li>', $menu);
-            $menu = str_replace('£link3', '<li><a href="page.php?t=r">Recensioni</a></li>', $menu);
-            $menu = str_replace('£link4', '<li><a href="page.php?t=a">Altro</a></li>', $menu);
+        if($type_linked_obj == "menu")
+            $obj = file_get_contents("../html/menu.html");
+        else if($type_linked_obj == "footer")
+            $obj = file_get_contents("../html/footer.html");
+        else
+            return 0;
+
+        if($type_obj == 'article') {
+            $obj = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="../../php/page.php?t=r">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="../../php/page.php?t=a">Altro</a></li>', $obj);
+        }
+
+        if($type_obj == 'page') {
+            $obj = str_replace('£link1', '<li><a href="../../index.php"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="page.php?t=n"><span xml:lang="en">News</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="page.php?t=r">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="page.php?t=a">Altro</a></li>', $obj);
 
             switch ($type_page) {
                 case 'n':
-                    $menu = str_replace('<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a>', '<li id="currentlink"><span xml:lang="en">News</span>', $menu);
+                    $obj = str_replace('<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a>', '<li id="currentlink"><span xml:lang="en">News</span>', $obj);
                     break;
                 case 'r':
-                    $menu = str_replace('<li><a href="../../php/page.php?t=r">Recensioni</a>', '<li id="currentlink">Recensioni', $menu);
+                    $obj = str_replace('<li><a href="../../php/page.php?t=r">Recensioni</a>', '<li id="currentlink">Recensioni', $obj);
                     break;
                 case 'a':
-                    $menu = str_replace('<l><a href="../../php/page.php?t=a">Altro</a>', '<li id="currentlink">Altro', $menu);
+                    $obj = str_replace('<l><a href="../../php/page.php?t=a">Altro</a>', '<li id="currentlink">Altro', $obj);
                     break;
             }
         }
-        return $menu;
-    }
 
-    public static function footer()
-    {
-        //Rendere dinamica tramite risoluzione dei link circolari
-        return file_get_contents("../html/footer.html");
+        if($type_linked_obj == 'footer') {
+            $obj = str_replace('£link5', '<li><a href="../../php/login.php" xml:lang="en">Accedi</a></li>', $obj);
+            $obj = str_replace('£link6', '<li><a href="../../php/registrazione.php">Crea un account</a></li>', $obj);
+            $obj = str_replace('£link7', '<li><a href="">Chi siamo</a></li>', $obj);
+            $obj = str_replace('£link8', '<li><a href="">Lavora con noi</a></li>', $obj);
+
+            switch ($type_page) {
+                case 'accedi':
+                    $obj = str_replace('<a href="../../php/login.php" xml:lang="en">Accedi</a>', 'Accedi', $obj);
+                    break;
+                case 'registrazione':
+                    $obj = str_replace('<a href="../../php/registrazione.php">Crea un account</a>', 'Crea un account', $obj);
+                    break;
+                case 'chi_siamo':
+                    $obj = str_replace('<a href="">Chi siamo</a>', 'Chi siamo', $obj);
+                    break;
+                case 'lavora':
+                    $obj = str_replace('<a href="">Lavora con noi</a>', 'Lavora con noi', $obj);
+                    break;
+            }
+        }
+
+        return $obj;
     }
 
     public static function articoli($articoli_array, $first_index)

@@ -21,8 +21,8 @@
     $paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
     $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
     $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
-    $paginaArticolo = str_replace('£footer', html::footer(), $paginaArticolo);
-    $paginaArticolo = str_replace('£menu_', html::menu('article'), $paginaArticolo);
+    $paginaArticolo = str_replace('£footer', html::linked_obj('footer', 'article'), $paginaArticolo);
+    $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', 'article'), $paginaArticolo);
 
     $likes = null;
     if ($_SESSION['loggato'] == true) // utente loggato

@@ -3,24 +3,59 @@
 require_once("helps/connessione.php");
 require_once("helps/replace.php");
 
-$login = file_get_contents("../html/User/login.html");
+session_start();
+$file = file_get_contents("../html/User/login.html");
+$file = str_replace('£head_', html::head(), $file);
+$file = str_replace('£footer', html::footer(), $file);
+$file = str_replace('£header', html::header(), $file);
 
-$db = new DBConnection();
+if(isset($_POST['Accedi'])) {
 
-$email = $_POST["email"];
-$password = $_POST["password"];
+    $db = new DBConnection();
 
-if(!isset($_SESSION))
-    session_start();
-if(isset($_SESSION['login']) && !$_SESSION['login']) {
+    $email = trim($_POST["emailLogin"]);
+    $password = trim($_POST["password"]);
 
-    $MessaggioErrore = "<div id=ErrLog><p>Sono state inserite delle credenziali errate</p>";
+    $errori = "";
 
-    $login = str_replace('$ErroreLogin',$MessaggioErrore, $login);
+    if (!$db->exitsEmail($email))
+        $errori .= "<li>Verifica che l'e-mail inserita sia valida</li>";
+    if (!$db->exitsPassword($password))
+        $errori .= "<li>La password inserita è errata</li>";
 
-    session_destroy();
+    if($errori!="") {
+        $beginList = '<ul>'.$errori.'</ul>';
+        $file = str_replace('£erroriLogin', $beginList, $file );
+    }
+    else {
+        $nickname = "SELECT 'nickname' FROM 'users' WHERE 'email'=$email AND 'password'=$password";
+
+        $db->close();
+
+        $_SESSION['loggato']=true;
+        $_SESSION["nickname"]=$nickname;
+        header("Location: ../index.php");
+    }
+
+    echo $file;
+
 }
+else { //è la prima volta che accedo
+    $form = '<div class="emailLog">
+                    <img src="../../images/icons/email1.png" alt="icona email">
+                    <label for="emailLogin" xml:lang="en"><span xml:lang="en">E-mail</span>:</label>
+                    <input type="text" name="emailLogin" id="emailLogin" maxlength="30" />
+             </div>
+             <div class="passwordLog">
+                    <img src="../../images/icons/lucchetto1.png" alt="icona password">
+                    <label for="passwordLogin" xml:lang="en"><span xml:lang="en">Password</span>:</label>
+                    <input type="password" name="password" id="passwordLogin" maxlength="20" />
+             </div>';
+    $file = str_replace('£form', $form, $file);
+    $file = str_replace('£erroriLogin',"", $file);
 
-echo $login;
+    echo $file;
+
+}
 
 ?>

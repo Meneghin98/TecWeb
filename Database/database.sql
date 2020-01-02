@@ -119,6 +119,16 @@ insert into articles /*Lucca comics*/
 values (null, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
         'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
         'Lucca C&amp;G 19', 'News', '0', '2', null);
+insert into articles /*PokemonGO Guida*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/Altro/guidaPokemonGo.html', '2019-12-30','Pokémon GO, come sconfiggere Sierra del Team Rocketcon un solo Pokémon',
+        'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pokémon GO utilizzando uno ed un solo Pokémon, ecco la guida.',
+        'Pokemon Go', 'Altro', '0', '3', null);
+insert into articles /*Dead Stranding Recensione*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (null, 'html/Recensione/recensioneDeadStranding.html', '2019-12-04','Dead Stranding, la recensione - PS4',
+        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
+        'Dead Stranding - recensione', 'Recensione', '0', '4', null);
 insert into articles/*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (null, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',

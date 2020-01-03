@@ -76,12 +76,13 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
             'riferimento' => $_POST['riferimento'],
             'newPwd' => $_POST['newPwd'],
             'oldPwd' => $_POST['oldPwd'],
-            'img' => basename($_FILES['userImg']['name'])
+            'img' => $_FILES['userImg']['name'] == "" ? $utente['img']:basename($_FILES['userImg']['name'])
         );
         $DB->updateUser($_SESSION['nickname'], $values);
         $file = str_replace('£immgaine_utente£', $values['img'], $file);
         $file = str_replace('£messaggio', '<p id="buonFine">I dati sono stati aggiornati correttamente</p>', $file);
     } else { // ho trovato degli errori
+        $file = str_replace('£immgaine_utente£', $utente['img'], $file);
         $file = str_replace('£messaggio', "<ul id='errori'>$errori</ul>", $file);
     }
     //riempio i campi della form con i valori inseriti dall'utente, anche se c'erano degli errori

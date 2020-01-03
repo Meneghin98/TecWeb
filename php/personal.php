@@ -5,10 +5,11 @@ require_once("helps/checks.php");
 
 session_start();
 
-$file = str_replace('£footer', html::footer(),
-    str_replace('£header', html::header(),
-        str_replace('£head_', html::head(),
-            file_get_contents("../html/User/areaUtente.html"))));
+$file = str_replace('£footer', html::linked_obj('footer', 'page'),
+    str_replace('£menu_', html::linked_obj('menu', 'page'),
+        str_replace('£header', html::header(),
+            str_replace('£head_', html::head(),
+                file_get_contents("../html/User/areaUtente.html")))));
 $DB = new DBConnection();
 $utente = $DB->getUtenteArray($_SESSION['nickname']);
 
@@ -38,7 +39,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
 } else { //l'utente ha premuto salva
     //controllo se ci sono errori negli input
     $errori = "";
-    if ($_POST['nickname']!=$utente['nickname'] && $DB->existsNickname($_POST['nickname']))
+    if ($_POST['nickname'] != $utente['nickname'] && $DB->existsNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito è già in uso</li>";
     if (!checkNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito contiene caratteri non consentiti</li>";
@@ -60,9 +61,9 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
             $errori .= "<li>Le passwrod inserite non combaciano</li>";
     }
     if ($_FILES['userImg']['size'] != 0) {
-        if ($_FILES['userImg']['error']>0)
+        if ($_FILES['userImg']['error'] > 0)
             $errori .= "<li>Ci sono stati dei problemi con il file, non è stato possibile modificare l'immagine utente</li>";
-        else if (!move_uploaded_file($_FILES['userImg']["tmp_name"], "../images/Users/" . basename( $_FILES['userImg']["name"])))
+        else if (!move_uploaded_file($_FILES['userImg']["tmp_name"], "../images/Users/" . basename($_FILES['userImg']["name"])))
             $errori .= "<li>Ci sono stati dei problemi con l'upload, non è stato possibile modificare l'immagine utente</li>";
     }
 
@@ -75,13 +76,13 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
             'riferimento' => $_POST['riferimento'],
             'newPwd' => $_POST['newPwd'],
             'oldPwd' => $_POST['oldPwd'],
-            'img' => basename($_FILES['userImg']['name'])
+            'img' => $_FILES['userImg']['name'] == "" ? $utente['img']:basename($_FILES['userImg']['name'])
         );
-        $DB->updateUser($_SESSION['nickname'],$values);
+        $DB->updateUser($_SESSION['nickname'], $values);
         $file = str_replace('£immgaine_utente£', $values['img'], $file);
         $file = str_replace('£messaggio', '<p id="buonFine">I dati sono stati aggiornati correttamente</p>', $file);
-    }
-    else{ // ho trovato degli errori
+    } else { // ho trovato degli errori
+        $file = str_replace('£immgaine_utente£', $utente['img'], $file);
         $file = str_replace('£messaggio', "<ul id='errori'>$errori</ul>", $file);
     }
     //riempio i campi della form con i valori inseriti dall'utente, anche se c'erano degli errori

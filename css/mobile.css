@@ -1,143 +1,142 @@
-@media screen and (max-device-width: 990px) {
+/* rimozione transizioni*/
+.topArticles li img, .headerChild:nth-of-type(1) a img {
 
-    /* rimozione transizioni*/
-    .topArticles li img, .headerChild:nth-of-type(1) a img {
+    transition: none;
+}
 
-        transition: none;
-    }
+.topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
 
-    .topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+    transform: none;
+}
 
-        transform: none;
-    }
-    /*--------------------fine----------------------------------------------------*/
-    /* Dichiarazione dimensione font*/
-    .articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro {
-        font-size: 2.5em;
-        line-height: 2em;
-    }
+/*--------------------fine----------------------------------------------------*/
+/* Dichiarazione dimensione font*/
+.articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro {
+    font-size: 2.5em;
+    line-height: 2em;
+}
 
-    .topArticles a .topArticleTitle, .categoriaGenerale, .index, .articleListTitle {
-        font-size: 2em;
-    }
+.topArticles a .topArticleTitle, .categoriaGenerale, .index, .articleListTitle {
+    font-size: 2em;
+}
 
-    .voto p {
-        font-size: 3em;
-    }
+.voto p {
+    font-size: 3em;
+}
 
-    .intestazione h1, .description h2, .comment h3 {
-        font-size: 5em;
-    }
+.intestazione h1, .description h2, .comment h3 {
+    font-size: 5em;
+}
 
-    /*fine dichiarazione dimensione font*/
-    /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
-    .flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
-        display: none;
-    }
-    /*-------------------------------------------------------------------------*/
-    /*---------Header-----------*/
-    /*Da impelementare da meglio con js non usando i display none*/
-    /*---------Menu-----------*/
-    /*Da impelementare da meglio con js non usando i display none*/
-    /*-------- Menu --------*/
-    /*-------- fine Header --------*/
+/*fine dichiarazione dimensione font*/
+/*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
+.flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
+    display: none;
+}
 
-    .topArticles, .diffs {
-        flex-wrap: wrap;
-    }
+/*-------------------------------------------------------------------------*/
+/*---------Header-----------*/
+/*Da impelementare da meglio con js non usando i display none*/
+/*---------Menu-----------*/
+/*Da impelementare da meglio con js non usando i display none*/
+/*-------- Menu --------*/
+/*-------- fine Header --------*/
 
-    .topArticles li:first-of-type, .diffs div {
-        flex: 100%
-    }
+.topArticles, .diffs {
+    flex-wrap: wrap;
+}
 
-    .topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
-        flex: 50%;
-    }
-    /*--------- Articoli + recensioni -------*/
-    .intestazione h1 {
-        margin-left: 0.3em;
-        padding-top: 0.5em;
-    }
+.topArticles li:first-of-type, .diffs div {
+    flex: 100%
+}
 
-    .shortDesc,
-    .writer {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+.topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
+    flex: 50%;
+}
 
-    .index, .description h2 {
-        border: none;
-    }
+/*--------- Articoli + recensioni -------*/
+.intestazione h1 {
+    margin-left: 0.3em;
+    padding-top: 0.5em;
+}
 
+.shortDesc,
+.writer {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
-    .index {
-        float: none;
-        margin-bottom: 0;
-
-    }
-
-
-    .description img {
-        width: 95%;
-        margin: 2em auto 0 auto;
-    }
-
-    .description p {
-        padding: 1em 1em 0 1em;
-
-    }
-
-    .description h2 {
-        margin: 1em 0.5em 0 0.5em;
-    }
-
-    .voto {
-        margin-top: 1em;
-    }
-
-
-    .voto p:first-of-type {
-        margin: 0 auto;
-        padding-top: 0.5em;
-        padding-bottom: 0.2em;
-    }
-
-    .comment {
-        margin: 0 2em;
-        padding: 0.5em 2em;
-    }
-
-    .comment h3 {
-        text-align: center;
-    }
-
-    .comment p, .pro, .contro, .diffs h3 {
-        margin: 0;
-
-    }
-    .pro {
-        list-style-image: url("../images/icons/correctMobile.png");
-    }
-
-    .contro {
-        list-style: url("../images/icons/wrongMobile.png");
-    }
-    /*fine articoli + recensioni*/
-    /*--------footer--------*/
-    #footer {
-        display: none;
-    }
-    /*--------fine footer------*/
-
-
-    #header {
-        display: none;
-    }
+.index, .description h2 {
+    border: none;
 }
 
 
+.index {
+    float: none;
+    margin-bottom: 0;
+
+}
 
 
+.description img {
+    width: 95%;
+    margin: 2em auto 0 auto;
+}
+
+.description p {
+    padding: 1em 1em 0 1em;
+
+}
+
+.description h2 {
+    margin: 1em 0.5em 0 0.5em;
+}
+
+.voto {
+    margin-top: 1em;
+}
+
+
+.voto p:first-of-type {
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+.comment {
+    margin: 0 2em;
+    padding: 0.5em 2em;
+}
+
+.comment h3 {
+    text-align: center;
+}
+
+.comment p, .pro, .contro, .diffs h3 {
+    margin: 0;
+
+}
+
+.pro {
+    list-style-image: url("../images/icons/correctMobile.png");
+}
+
+.contro {
+    list-style: url("../images/icons/wrongMobile.png");
+}
+
+/*fine articoli + recensioni*/
+/*--------footer--------*/
+#footer {
+    display: none;
+}
+
+/*--------fine footer------*/
+
+
+#header {
+    display: none;
+}
 
 /*----------------login--------------*/
 
@@ -146,14 +145,14 @@
     display: none;
 }
 
-#menuMobileLogin img {
-    display: inherit;
+.menuMobileLogin img {
     float: left;
     width: 1em;
 }
 
-#menuMobileLogin {
-    background-color:rgba(0, 0, 0, 0.5);
+.menuMobileLogin {
+    display: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -165,7 +164,7 @@
 }
 
 .signIn {
-    background-color:transparent;    
+    background-color: transparent;
 }
 
 .contentLog form {
@@ -173,7 +172,7 @@
     padding: 0em;
 }
 
-.signIn strong{
+.signIn strong {
     display: none;
 }
 
@@ -229,7 +228,7 @@
 }
 
 .emailLog input {
-    padding-bottom: 0.2em;  
+    padding-bottom: 0.2em;
 }
 
 .emailLog input[type="text"] {
@@ -252,7 +251,7 @@
 }
 
 #AccediLogin, #RegistratiLoginMobile {
-    font-size: 3.5em;   
+    font-size: 3.5em;
 }
 
 #scrittaReg {
@@ -273,7 +272,7 @@
     margin: 0em auto;
 }
 
-.pulsantiLogin {    
+.pulsantiLogin {
     margin-left: 2em;
 }
 
@@ -294,7 +293,7 @@
 
 .menuMobileReg {
     display: inherit;
-    text-align: center;  
+    text-align: center;
     background-color: #525252;
 }
 
@@ -349,9 +348,9 @@ input#bottoneIndietroReg {
 }
 
 .contentMobileReg form {
-   margin: 0em auto;
-   text-align: left;
-   width: 18em;
+    margin: 0em auto;
+    text-align: left;
+    width: 18em;
 }
 
 .ManageReg input {
@@ -376,10 +375,10 @@ input#bottoneIndietroReg {
 }
 
 .pulsantiMobileReg input {
-   font-size: 2em;
-   margin-top: 2em;
-   padding: 0.2em;
-   border-radius: 0.2em;
+    font-size: 2em;
+    margin-top: 2em;
+    padding: 0.2em;
+    border-radius: 0.2em;
 }
 
 
@@ -394,3 +393,34 @@ input#bottoneIndietroReg {
 }
 
 /*----------------FINE registrazione--------------*/
+/*----------------Area Utente---------------------*/
+#avatar{
+    max-width: 350px;
+}
+
+.datiAccount{
+    max-width: unset;
+    margin: 1em 0;
+    font-size: 2.5em;
+}
+
+.groupBox{
+    margin: 1em;
+}
+.datiAccount fieldset label {
+    margin: .2em 0;
+}
+.datiAccount .groupBox input {
+    padding: .2em;
+    font-size: 1.5em;
+}
+
+#save label{
+    display: block;
+    font-size: 3em;
+    margin: 1em 5em;
+}
+#buonFine, #errori{
+    font-size: 1.8em;
+}
+/*------------------------------------------------*/

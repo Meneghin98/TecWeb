@@ -4,7 +4,7 @@ function trimText(id) {
 }
 
 function commentoVuoto() {
-    let commentText = document.getElementById("textarea").textContent.toString();
+    let commentText = document.getElementById("textarea").value;
     if (commentText.length === 0) {
         alert("Il commento non può essere vuoto");
         return false;
@@ -12,9 +12,9 @@ function commentoVuoto() {
     return true;
 }
 
-function updateNum() {//funziona su edge ma non su chrome, WTF?!?!?!?
-    let numChar = document.getElementById("textarea").textContent.length;
-    document.getElementById("MaxChar").innerHTML = (300 - numChar).toString();
+function updateNum() {
+    let textarea = document.getElementById("textarea").value;
+    document.getElementById("MaxChar").innerHTML = (300-textarea.length).toString();
 }
 
 function miPiaceOver(id) {

@@ -659,12 +659,14 @@ input#bottoneIndietroReg {
 #avatar {
     text-align: center;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 220px;
     min-width: 50px;
+    width: 100%;
 }
 
 #avatar * {
     display: block;
+    width: 100%;
 }
 
 #avatar input {

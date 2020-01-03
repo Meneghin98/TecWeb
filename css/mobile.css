@@ -142,22 +142,22 @@
 /*----------------login--------------*/
 
 
-.menu {
+#menu {
     display: none;
 }
 
- .menuMobileLogin img {
-    float: left;
-    width: 7em;
-}
-
-.menuMobileLogin {
+#menuMobileLogin img {
     display: inherit;
-    background-color:rgba(0, 0, 0, 0.5);    
-    text-align: center;  
+    float: left;
+    width: 1em;
 }
 
-.menuMobileLogin h1 {
+#menuMobileLogin {
+    background-color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#menuMobileLogin h1 {
     color: white;
     margin-right: 2em;
     padding: 0.2em;

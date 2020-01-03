@@ -208,7 +208,7 @@ class DBConnection
     function existsNickname($nickname){
         $query = "Select * from users where nickname = '$nickname'";
         $queryResult = mysqli_query($this->connection, $query);
-        if ($queryResult)
+        if (mysqli_num_rows($queryResult)==1)
             return true; //il nickname inserito è già presente
         return false;
     }
@@ -216,15 +216,15 @@ class DBConnection
     function exitsEmail($email) {
         $query = "Select * from users where email = '$email'";
         $queryResult = mysqli_query($this->connection, $query);
-        if ($queryResult)
+        if (mysqli_num_rows($queryResult)==1)
             return true;
         return false;
     }
 
-    function exitsPassword($password) {
-        $query = "Select * from users where email = '$password'";
+    function exitsUser($nickname,$password) {
+        $query = "Select * from users where nickname = '$nickname' AND pwd = '$password'";
         $queryResult = mysqli_query($this->connection, $query);
-        if ($queryResult)
+        if (mysqli_num_rows($queryResult)==1)
             return true;
         return false;
     }

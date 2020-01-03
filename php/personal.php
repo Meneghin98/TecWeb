@@ -87,6 +87,13 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     }
     //riempio i campi della form con i valori inseriti dall'utente, anche se c'erano degli errori
     $form = "<fieldset class=\"groupBox\">
+                <legend>Generale</legend>
+                <a id=\"logout\" href=\"logout.php\">Esci dall'account</a>
+                <p>Riferimento ad una pagina esterna come facebook, twitter, instagram</p>
+                <label for=\"ref\">Riferimento:</label>
+                <input name=\"riferimento\" type=\"text\" id=\"ref\" value=\"$_POST[riferimento]\"/>
+            </fieldset
+            <fieldset class=\"groupBox\">
                 <legend>Utente</legend>
                 <label for=\"nickname\" xml:lang=\"en\">Nickname:</label>
                 <input name=\"nickname\" type=\"text\" id=\"nickname\" value=\"$_POST[nickname]\"/>
@@ -96,13 +103,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
                 <input name=\"cognome\" type=\"text\" id=\"surname\" value=\"$_POST[cognome]\"/>
                 <label for=\"email\" xml:lang=\"en\">E-mail:</label>
                 <input name=\"email\" type=\"text\" id=\"email\" value=\"$_POST[email]\"/>
-            </fieldset>
-            <fieldset class=\"groupBox\">
-                <legend>Generale</legend>
-                <p>Riferimento ad una pagina esterna come facebook, twitter, instagram</p>
-                <label for=\"ref\">Riferimento:</label>
-                <input name=\"riferimento\" type=\"text\" id=\"ref\" value=\"$_POST[riferimento]\"/>
-            </fieldset>";
+            </fieldset>>";
 }
 
 

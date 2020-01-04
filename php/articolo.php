@@ -24,6 +24,8 @@
     $paginaArticolo = str_replace('£footer', html::linked_obj('footer', 'article'), $paginaArticolo);
     $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', 'article'), $paginaArticolo);
 
+    $paginaArticolo = str_replace('£current_URI_ ', $_SERVER['REQUEST_URI'], $paginaArticolo);
+
     $likes = null;
     if ($_SESSION['loggato'] == true) // utente loggato
     {

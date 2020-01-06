@@ -248,6 +248,11 @@ insert into articles
 values
     (13, 'html/Altro/guidaStarWars.html', '2019-11-24', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>', 'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.', 'gaming', 'Altro', '0', '5', null);
 
+insert into articles
+    /*Monster Hunter News*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (14, 'html/News/newsMonsterHunterIceborn.html', '2019-12-7', '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novità dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>', '', 'gaming', 'News', '0', '5', null);
 
 
 
@@ -304,3 +309,8 @@ insert into images
 (src, alt, article)
 values
     ('images/Altro/StarWars/Copertina.jpg', '', '13');
+
+insert into images
+(src, alt, article)
+values
+    ('images/News/monsterHunterWorld/monsterHunter.jpg', '', '14');

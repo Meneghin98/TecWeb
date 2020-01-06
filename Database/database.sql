@@ -263,11 +263,11 @@ values
 insert into images
     (src, alt, article)
 values
-    ('images/guide/fortniteDeltaplano.jpg', '', '3');
+    ('images/Altro/fortnite/fortniteDeltaplano.jpg', '', '3');
 insert into images
     (src, alt, article)
 values
-    ('images/guide/sierra.jpg', '', '4');
+    ('images/Altro/pokemon/sierra.jpg', '', '4');
 insert into images
     (src, alt, article)
 values
@@ -303,4 +303,4 @@ values
 insert into images
 (src, alt, article)
 values
-    ('images/Altro/guide/StarWars/Copertina.jpg', '', '13');
+    ('images/Altro/StarWars/Copertina.jpg', '', '13');

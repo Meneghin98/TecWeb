@@ -242,6 +242,12 @@ insert into articles
 values
     (12, 'html/News/StarWarsPCSell.html', '2019-11-27', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record', 'Vendite PC, battuti molti record', 'Star Wars vendite PC', 'News', '0', '4', null);
 
+insert into articles
+    /*StarWars guida*/
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (13, 'html/Altro/guidaStarWars.html', '2019-11-24', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>', 'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.', 'gaming', 'Altro', '0', '5', null);
+
 
 
 
@@ -294,3 +300,7 @@ insert into images
     (src, alt, article)
 values
     ('images/News/StarWars/StarWarsNews.jpg', '', '12');
+insert into images
+(src, alt, article)
+values
+    ('images/Altro/guide/StarWars/Copertina.jpg', '', '13');

@@ -254,6 +254,12 @@ insert into articles
 values
     (14, 'html/News/newsMonsterHunterIceborn.html', '2019-12-7', '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novità dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>', '', 'gaming', 'News', '0', '5', null);
 
+insert into articles
+    /*Asgard Wrath review*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (15, 'html/Recensioni/recensioneAsgardWrath.html', '2019-12-7', '<span xml:lang="en">Asgard''s Wrath</span>, la recensione', 'Loki dice che c''è una nuova divinità in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
+
 
 
 insert into images
@@ -309,8 +315,12 @@ insert into images
 (src, alt, article)
 values
     ('images/Altro/StarWars/Copertina.jpg', '', '13');
-
 insert into images
 (src, alt, article)
 values
     ('images/News/monsterHunterWorld/monsterHunter.jpg', '', '14');
+insert into images
+(src, alt, article)
+values
+('images/Recensioni/asgardsWrath/asgardsWrath.jpeg', '', '15');
+

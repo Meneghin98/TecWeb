@@ -303,4 +303,4 @@ values
 insert into images
 (src, alt, article)
 values
-    ('images/Altro/guide/StarWars/Copertina.jpg', '', '13');
+    ('images/Altro/StarWars/Copertina.jpg', '', '13');

@@ -14,24 +14,23 @@
 
     <!--PARTE MOBILE-->
     <div id="menuMobileLogin">
-        <img src="../../images/icons/frecciaSinistra.png" alt="icona di una freccia sinistra">
+        <a href="../index.php"><img src="../../images/icons/frecciaSinistra1.png" alt="icona di una freccia sinistra"></a>
         <h1>Account</h1>
     </div>
 
     <div class="contentLog" id="contentLogin">
         <fieldset class="signIn">
             <legend><strong>Accedi</strong></legend>
-            <img class="imageLogin" src="" alt="">
+            <span class="imageLogin"></span>
             <form action="login.php" method="post">
                 £form
-                <a id="scrittaReg" href="registrazione.html">Non sei ancora registrato? Registrati</a>
+                <a id="scrittaReg" href="registrazione.php">Non sei ancora registrato? Registrati</a>
 
                 <div class="pulsantiLogin">
                     <label id="pulsanteLogin" for="AccediLogin">Accedi</label>
                     <input type="submit" value="Accedi" id="AccediLogin" name="Accedi" />
-                    <a id="scrittaLog" href="registrazione.html">Non hai l'account?</a>
-                    <label id="pulsanteRegistrati" for="RegistratiLoginMobile">Registrati</label>
-                    <input type="submit" value="Registrati" id="RegistratiLoginMobile" />
+                    <p id="scrittaLog">Non hai l'account?</p>
+                    <a href="registrazione.php">Registrati</a>
                 </div>
                 £erroriLogin
             </form>

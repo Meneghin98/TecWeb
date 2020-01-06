@@ -6,7 +6,8 @@ session_start();
 
 $file = html::registrazione();
 $file = str_replace('£head_', html::head(), $file);
-$file = str_replace('£footer', html::footer(), $file);
+$file = str_replace('£footer', html::linked_obj("footer","page"), $file);
+$file = str_replace('£menu_', html::linked_obj("menu","page"), $file);
 $file = str_replace('£header', html::header(), $file);
 
 function checkInput($nome, $cognome, $username, $email, $password) {

@@ -260,6 +260,12 @@ insert into articles
 values
     (15, 'html/Recensioni/recensioneAsgardWrath.html', '2019-12-7', '<span xml:lang="en">Asgard''s Wrath</span>, la recensione', 'Loki dice che c''è una nuova divinità in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
 
+insert into articles
+    /*Clash Royale guida*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+(16, 'html/Altro/guidaClashRoyale.html', '2020-5-1', '<span xml:lang="en">Clash Royale</span>, come creare un mazzo vincente</h1>', 'Come creare un mazzo vincente? Scopriamolo assieme', 'gaming', 'Altro', '0', '3', null);
+
 
 
 insert into images
@@ -323,4 +329,7 @@ insert into images
 (src, alt, article)
 values
 ('images/Recensioni/asgardsWrath/asgardsWrath.jpeg', '', '15');
-
+insert into images
+(src, alt, article)
+values
+('images/Altro/clash_royale.jpg', '', '16');

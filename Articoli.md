@@ -9,6 +9,7 @@
  - [x] Dead Stranding
  - [x] Asgard's Wrath
  - [ ] Munster Hunter World:Iceborn
+ - [ ] GTA V
 
 #### News
  - [x] Death Stranding pc
@@ -17,4 +18,6 @@
  - [x] Munster Hunter World:Iceborn
  - [x] Star Wars vendite PC
  - [x] Cyberpunk 2077  
+ - [ ] Ryzen 4000, rx 5600 e threadripper 3990x
 #### Altro
+ - [x] Star Wars Jedi: fallen order, guida

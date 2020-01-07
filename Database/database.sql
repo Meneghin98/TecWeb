@@ -149,7 +149,7 @@ values (4, 'html/Altro/guidaPokemonGo.html', '2019-12-30',
 insert into articles
     /*Dead Stranding Recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (5, 'html/Recensione/recensioneDeadStranding.html', '2019-12-04', 'Dead Stranding, la recensione - PS4',
+values (5, 'html/Recensioni/recensioneDeathStranding.html', '2019-12-04', 'Death Stranding, la recensione - PS4',
         'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
         'Dead Stranding - recensione', 'Recensione', '18', '4', null);
 insert into articles

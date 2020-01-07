@@ -85,8 +85,8 @@ class html
         }
 
         if($type_linked_obj == 'footer') {
-            $obj = str_replace('£link5', '<li><a href="php/login.php" tabindex="0">Accedi</a></li>', $obj);
-            $obj = str_replace('£link6', '<li><a href="php/registrazione.php" tabindex="0">Crea un account</a></li>', $obj);
+            $obj = str_replace('£link5', '<li><a href="login.php" tabindex="0">Accedi</a></li>', $obj);
+            $obj = str_replace('£link6', '<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', $obj);
             $obj = str_replace('£link7', '<li><a href="" tabindex="0">Chi siamo</a></li>', $obj);
             $obj = str_replace('£link8', '<li><a href="" tabindex="0">Lavora con noi</a></li>', $obj);
 

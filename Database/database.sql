@@ -43,7 +43,7 @@ create TABLE articles
     description    VARCHAR
 (300),
     category_title VARCHAR
-(50)  NOT NULL,
+(75)  NOT NULL,
     article_type   VARCHAR
 (50)  NOT NULL,
     views          INT
@@ -265,6 +265,11 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values
 (16, 'html/Altro/guidaClashRoyale.html', '2020-5-1', '<span xml:lang="en">Clash Royale</span>, come creare un mazzo vincente</h1>', 'Come creare un mazzo vincente? Scopriamolo assieme', 'gaming', 'Altro', '0', '3', null);
+insert into articles
+    /*PS5 news*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+(17, 'html/News/ps5.html', '2020-7-1', '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>: le nuove informazioni del 2020', 'supporto al <span xml:lang="en">Ray Tracing</span> e finestra di lancio confermata', '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);
 
 
 
@@ -333,3 +338,7 @@ insert into images
 (src, alt, article)
 values
 ('images/Altro/clash_royale.jpg', '', '16');
+insert into images
+(src, alt, article)
+values
+('images/News/PS5/logo-ps5.png', '', '17');

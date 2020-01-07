@@ -8,6 +8,7 @@ $file = file_get_contents("../html/User/login.html");
 $file = str_replace('£head_', html::head(), $file);
 $file = str_replace('£footer', html::linked_obj("footer","page", "accedi"), $file);
 $file = str_replace('£menu_', html::linked_obj("menu","page", "accedi"), $file);
+
 $file = str_replace('£header', html::header(), $file);
 
 if (isset($_POST['Accedi'])) {

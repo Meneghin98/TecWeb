@@ -20,6 +20,7 @@ switch ($_GET['t']) {
 $file = file_get_contents("../html/$path.html");
 $file = str_replace('£footer', html::linked_obj('footer', 'page', $_GET['t']), $file);
 $file = str_replace('£header', html::header(), $file);
+$file = str_replace('£rightPanel', html::rightPanel(), $file);
 $file = str_replace('£menu_', html::linked_obj('menu', 'page', $_GET['t']), $file);
 
 $DB = new DBConnection();

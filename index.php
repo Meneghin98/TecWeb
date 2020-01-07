@@ -30,5 +30,7 @@
  $db->close();
  $index = str_replace('£head_', file_get_contents("html/head.html"), $index);
  $index = str_replace('£top_articles', $top_articoli, $index);
+ $index = str_replace('£rightPanel', file_get_contents("html/rightPanel.html"), $index);
 
- echo str_replace('../', '', $index);
+
+echo str_replace('../', '', $index);

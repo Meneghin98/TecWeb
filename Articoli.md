@@ -9,6 +9,7 @@
  - [x] Dead Stranding
  - [x] Asgard's Wrath
  - [ ] Munster Hunter World:Iceborn
+ - [x] Code Vein
 
 #### News
  - [x] Death Stranding pc
@@ -16,5 +17,6 @@
  - [x] Monitor Xiaomi
  - [x] Munster Hunter World:Iceborn
  - [x] Star Wars vendite PC
- - [x] Cyberpunk 2077  
+ - [x] Cyberpunk 2077
+ - [x] PS5 le ultime novità
 #### Altro

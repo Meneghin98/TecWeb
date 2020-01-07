@@ -147,11 +147,11 @@ values (4, 'html/Altro/guidaPokemonGo.html', '2019-12-30',
         'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pokémon GO utilizzando uno ed un solo Pokémon, ecco la guida.',
         'Pokemon Go', 'Altro', '0', '4', null);
 insert into articles
-    /*Dead Stranding Recensione*/
+    /*Death Stranding Recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (5, 'html/Recensione/recensioneDeadStranding.html', '2019-12-04', 'Dead Stranding, la recensione - PS4',
+values (5, 'html/Recensioni/recensioneDeathStranding.html', '2019-12-04', 'Death Stranding, la recensione - PS4',
         'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
-        'Dead Stranding - recensione', 'Recensione', '18', '4', null);
+        'Death Stranding - recensione', 'Recensioni', '18', '4', null);
 insert into articles
     /*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -184,8 +184,8 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (10, 'html/Recensioni/recensioneStarWars.html', '2019-11-16',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
-        '',
-        'Star Wars - PS4', 'Recensioni', '20', '4', null);
+        'La recensione di Star Wars Jedi: Fallen Order. Con vari prodotti altalenanti all''attivo e i frutti della scommessa Motive ancora ignoti, EA affida a Respawn la licenza Star Wars. Riuscirà il team a rendere giustizia al marchio? Scopriamolo insieme',
+        '<span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>', 'Recensioni', '20', '4', null);
 insert into articles
     /*death stranding*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -283,7 +283,7 @@ insert into images
 values ('images/mi-surface-display.jpg', '', '9');
 insert into images
     (src, alt, article)
-values ('images/Recensioni/Star-Wars/starwars.png', '', '10');
+values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', '', '10');
 insert into images
     (src, alt, article)
 values ('images/death-stranding-image.jpg', '', '11');

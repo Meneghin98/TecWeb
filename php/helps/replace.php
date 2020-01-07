@@ -28,6 +28,10 @@ class html
     {
         return file_get_contents( "../html/User/registrazione.html");
     }
+    public static function rightPanel()
+    {
+        return file_get_contents( "../html/rightPanel.html");
+    }
 
     public static function linked_obj($type_linked_obj, $type_obj, $type_page = 'not_a_page')
     {

@@ -145,13 +145,13 @@ insert into articles
 values (4, 'html/Altro/guidaPokemonGo.html', '2019-12-30',
         'Pokémon GO, come sconfiggere Sierra del Team Rocketcon un solo Pokémon',
         'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pokémon GO utilizzando uno ed un solo Pokémon, ecco la guida.',
-        'Pokemon Go', 'Altro', '0', '3', null);
+        'Pokemon Go', 'Altro', '0', '4', null);
 insert into articles
     /*Dead Stranding Recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (5, 'html/Recensione/recensioneDeadStranding.html', '2019-12-04', 'Dead Stranding, la recensione - PS4',
         'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
-        'Dead Stranding - recensione', 'Recensione', '0', '4', null);
+        'Dead Stranding - recensione', 'Recensione', '18', '4', null);
 insert into articles
     /*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -185,7 +185,7 @@ insert into articles
 values (10, 'html/Recensioni/recensioneStarWars.html', '2019-11-16',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
         '',
-        'Star Wars - PS4', 'Recensioni', '0', '4', null);
+        'Star Wars - PS4', 'Recensioni', '20', '4', null);
 insert into articles
     /*death stranding*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -202,11 +202,9 @@ values (12, 'html/News/StarWarsPCSell.html', '2019-11-27',
 
 insert into articles
     /*StarWars guida*/
-(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (13, 'html/Altro/guidaStarWars.html', '2019-11-24',
-        '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>',
-        'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.',
-        'gaming', 'Altro', '0', '5', null);
+    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values
+    (13, 'html/Altro/guidaStarWars.html', '2019-11-24', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>', 'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.', 'gaming', 'Altro', '27', '4', null);
 
 insert into articles
     /*Monster Hunter News*/

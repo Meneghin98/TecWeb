@@ -1,26 +1,28 @@
 <?php
- require_once("helps/connessione.php");
- require_once("helps/replace.php");
+require_once("helps/connessione.php");
+require_once("helps/replace.php");
 
- session_start();
+session_start();
 
- /* se non viene inserito questo if e l'utente accede come prima volta alla pagina di un articolo (invece che prima passare
- dall'index) viene mostrato un errore(di php) a inizio pagina
- utente entra per la prima volta, rimane false finchè non accede */
+/* se non viene inserito questo if e l'utente accede come prima volta alla pagina di un articolo (invece che prima passare
+dall'index) viene mostrato un errore(di php) a inizio pagina
+utente entra per la prima volta, rimane false finchè non accede */
 
- if (!isset($_SESSION['loggato']))
+if (!isset($_SESSION['loggato']))
     $_SESSION['loggato'] = false;
 
- $DB = new DBConnection();
- $idArticolo = $_GET['id'];
- $ArticoloDB = $DB->getArticleByID($idArticolo);
- $DB->viewArticle($idArticolo);
- if (is_null($ArticoloDB))
-    /* redirect */;
- else {
+$DB = new DBConnection();
+$idArticolo = $_GET['id'];
+$ArticoloDB = $DB->getArticleByID($idArticolo);
+$DB->viewArticle($idArticolo);
+if (is_null($ArticoloDB))
+    /* redirect */
+    ;
+else {
     $paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
     $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
     $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
+    $paginaArticolo = str_replace('£rightPanel',html::rightPanel(), $paginaArticolo);
     $paginaArticolo = str_replace('£footer', html::linked_obj('footer', 'article'), $paginaArticolo);
     $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', 'article'), $paginaArticolo);
 
@@ -44,8 +46,7 @@
             </form>";
 
         $likes = $DB->getLikesOfUser($_SESSION['nickname'], $idArticolo);
-    }
-    else // utente non loggato
+    } else // utente non loggato
     {
         $scriviCommento = "
             <p><a href=\"login.php\">Accedi</a> o <a href=\"registrazione.php\">registrati</a> per poter commentare</p>";

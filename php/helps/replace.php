@@ -59,43 +59,43 @@ class html
             return 0;
 
         if($type_obj == 'article') {
-            $obj = str_replace('£link1', '<li><a href="../../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
-            $obj = str_replace('£link2', '<li><a href="../../php/page.php?t=n" tabindex="0"><span xml:lang="en">News</span></a></li>', $obj);
-            $obj = str_replace('£link3', '<li><a href="../../php/page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
-            $obj = str_replace('£link4', '<li><a href="../../php/page.php?t=a" tabindex="0">Altro</a></li>', $obj);
+            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">News</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
         }
 
         if($type_obj == 'page') {
-            $obj = str_replace('£link1', '<li><a href="../../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
             $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">News</span></a></li>', $obj);
             $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
             $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
 
             switch ($type_page) {
                 case 'n':
-                    $obj = str_replace('<li><a href="../../php/page.php?t=n"><span xml:lang="en">News</span></a>', '<li id="currentlink"><span xml:lang="en">News</span>', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">News</span></a>', '<li id="currentlink"><span xml:lang="en">News</span>', $obj);
                     break;
                 case 'r':
-                    $obj = str_replace('<li><a href="../../php/page.php?t=r">Recensioni</a>', '<li id="currentlink">Recensioni', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">Recensioni</a>', '<li id="currentlink">Recensioni', $obj);
                     break;
                 case 'a':
-                    $obj = str_replace('<l><a href="../../php/page.php?t=a">Altro</a>', '<li id="currentlink">Altro', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">Altro</a>', '<li id="currentlink">Altro', $obj);
                     break;
             }
         }
 
         if($type_linked_obj == 'footer') {
-            $obj = str_replace('£link5', '<li><a href="../../php/login.php" tabindex="0">Accedi</a></li>', $obj);
-            $obj = str_replace('£link6', '<li><a href="../../php/registrazione.php" tabindex="0">Crea un account</a></li>', $obj);
+            $obj = str_replace('£link5', '<li><a href="login.php" tabindex="0">Accedi</a></li>', $obj);
+            $obj = str_replace('£link6', '<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', $obj);
             $obj = str_replace('£link7', '<li><a href="" tabindex="0">Chi siamo</a></li>', $obj);
             $obj = str_replace('£link8', '<li><a href="" tabindex="0">Lavora con noi</a></li>', $obj);
 
             switch ($type_page) {
                 case 'accedi':
-                    $obj = str_replace('<a href="../../php/login.php" tabindex="0">Accedi</a>', 'Accedi', $obj);
+                    $obj = str_replace('<a href="php/login.php" tabindex="0">Accedi</a>', 'Accedi', $obj);
                     break;
                 case 'registrazione':
-                    $obj = str_replace('<a href="../../php/registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
+                    $obj = str_replace('<a href="php/registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
                     break;
                 case 'chi_siamo':
                     $obj = str_replace('<a href="" tabindex="0">Chi siamo</a>', 'Chi siamo', $obj);

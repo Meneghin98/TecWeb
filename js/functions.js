@@ -4,7 +4,7 @@ function trimText(id) {
 }
 
 function commentoVuoto() {
-    let commentText = document.getElementById("textarea").value;
+    let commentText = document.getElementById("textarea").value.trim();
     if (commentText.length === 0) {
         alert("Il commento non può essere vuoto");
         return false;

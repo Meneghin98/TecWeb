@@ -27,9 +27,22 @@ $DB = new DBConnection();
 $articoli = $DB->getArticlesArray($where);
 if (!is_null($articoli)) {
     $file = str_replace('£articoli', html::articoli($articoli, 0), $file);
-}
-else{
+} else {
     $file = str_replace('£articoli', '', $file);
+}
+
+$top3 = $DB->getTop3();
+if (!is_null($top3)) {
+    $file = str_replace('£top3', html::top3($top3,), $file);
+} else {
+    $file = str_replace('£top3', '', $file);
+}
+
+$lastRew = $DB->getLastRew();
+if (!is_null($lastRew)) {
+    $file = str_replace('£lastRew', html::lastRew($lastRew), $file);
+} else {
+    $file = str_replace('£lastRew', '', $file);
 }
 $DB->close();
 echo str_replace('£head_', html::head(), $file);

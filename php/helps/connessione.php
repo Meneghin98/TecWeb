@@ -57,7 +57,8 @@ class DBConnection
         mysqli_query($this->connection, $query);
     }
 
-    public function newUser($nome,$cognome,$username,$email,$password) {
+    public function newUser($nome, $cognome, $username, $email, $password)
+    {
         $query = "INSERT INTO users VALUES ('$username','$cognome','$email','$nome','$password')";
     }
 
@@ -123,10 +124,13 @@ class DBConnection
         mysqli_free_result($result);
         return $articolo;
     }
-    public function viewArticle($id){
+
+    public function viewArticle($id)
+    {
         $query = "CALL IncrementaVisualizzazioni($id)";
         mysqli_query($this->connection, $query);
     }
+
     public function getArticlesArray($where)
     {
         if (is_null($where))
@@ -195,38 +199,87 @@ class DBConnection
                 echo "ERRORE: Nessun utente trovato"; //implementare redirect
         }
     }
-    public function updateUser($nickname, $valuesArray){
+
+    public function updateUser($nickname, $valuesArray)
+    {
         $query = "UPDATE users SET";
         $query .= $valuesArray['oldPwd'] != "" ? " pwd = '$valuesArray[newPwd]'," : " ";
         $query .= "nickname = '$valuesArray[nickname]', email = '$valuesArray[email]', username = '$valuesArray[nome]', surname = '$valuesArray[cognome]'";
         $query .= $valuesArray['riferimento'] != "" ? ", ref = '$valuesArray[riferimento]'" : '';
-        $query .= $valuesArray['img'] !="" ? ", img_src = '$valuesArray[img]' ": ' ';
+        $query .= $valuesArray['img'] != "" ? ", img_src = '$valuesArray[img]' " : ' ';
         $query .= "WHERE users.nickname = '$nickname'";
         mysqli_query($this->connection, $query);
     }
 
-    function existsNickname($nickname){
+    function existsNickname($nickname)
+    {
         $query = "Select * from users where nickname = '$nickname'";
         $queryResult = mysqli_query($this->connection, $query);
-        if (mysqli_num_rows($queryResult)==1)
+        if (mysqli_num_rows($queryResult) == 1)
             return true; //il nickname inserito è già presente
         return false;
     }
 
-    function exitsEmail($email) {
+    function exitsEmail($email)
+    {
         $query = "Select * from users where email = '$email'";
         $queryResult = mysqli_query($this->connection, $query);
-        if (mysqli_num_rows($queryResult)==1)
+        if (mysqli_num_rows($queryResult) == 1)
             return true;
         return false;
     }
 
-    function exitsUser($nickname,$password) {
+    function exitsUser($nickname, $password)
+    {
         $query = "Select * from users where nickname = '$nickname' AND pwd = '$password'";
         $queryResult = mysqli_query($this->connection, $query);
-        if (mysqli_num_rows($queryResult)==1)
+        if (mysqli_num_rows($queryResult) == 1)
             return true;
         return false;
+    }
+
+    public function getTop3()
+    {
+        $query = "SELECT A.id as id, A.path as path, A.title as title, I.src as img_src, I.alt as img_alt FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY A.views DESC LIMIT 3";
+        $queryResult = mysqli_query($this->connection,$query);
+        if (mysqli_num_rows($queryResult) > 0) {
+            $top3Array = array();
+            while ($row = mysqli_fetch_assoc($queryResult)) {
+                $top3 = array(
+                    'pathID' => "articolo.php?id=$row[id]",
+                    'path' => $row['path'],
+                    'titolo' => $row['title'],
+                    'img' => $row['img_src'],
+                    'alt' => $row['img_alt'],
+                );
+                array_push($top3Array, $top3);
+            }
+            mysqli_free_result($queryResult);
+            return $top3Array;
+        } else
+            return null;
+    }
+
+    public  function getLastRew()
+    {
+        $query = "SELECT A.id as id, A.path as path, A.title as title, I.src as img_src, I.alt as img_alt FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id  WHERE A.article_type = 'Recensioni' ORDER BY A.creation_date DESC LIMIT 1";
+        $queryResult = mysqli_query($this->connection, $query);
+        if (mysqli_num_rows($queryResult) > 0) {
+            $lastRewArray = array();
+            while ($row = mysqli_fetch_assoc($queryResult)) {
+                $lastRew = array(
+                    'pathID' => "articolo.php?id=$row[id]",
+                    'path' => $row['path'],
+                    'titolo' => $row['title'],
+                    'img' => $row['img_src'],
+                    'alt' => $row['img_alt'],
+                );
+                array_push($lastRewArray, $lastRew);
+            }
+            mysqli_free_result($queryResult);
+            return $lastRewArray;
+        } else
+            return null;
     }
 
     public function close()

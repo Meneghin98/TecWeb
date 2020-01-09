@@ -346,6 +346,8 @@ body {
 }
 
 .articleList li img {
+    height: 5.6em;
+    width: 10em;
     float: left;
     width: 20%;
     margin-right: 1em;

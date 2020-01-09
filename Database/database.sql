@@ -259,7 +259,7 @@ values ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
 
 insert into images
     (src, alt, article)
-values ('images/News/whatsapp.jpg', '', '2');
+values ('images/News/Whatsapp/whatsapp.jpg', '', '2');
 insert into images
     (src, alt, article)
 values ('images/Altro/fortnite/fortniteDeltaplano.jpg', '', '3');

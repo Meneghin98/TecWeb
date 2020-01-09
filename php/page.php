@@ -33,7 +33,7 @@ if (!is_null($articoli)) {
 
 $top3 = $DB->getTop3();
 if (!is_null($top3)) {
-    $file = str_replace('£top3', html::top3($top3,), $file);
+    $file = str_replace('£top3', html::top3($top3), $file);
 } else {
     $file = str_replace('£top3', '', $file);
 }

@@ -268,7 +268,7 @@ insert into images
 values ('images/Altro/pokemon/sierra.jpg', '', '4');
 insert into images
     (src, alt, article)
-values ('images/Recensioni/dead-stranding/img0.jpg', '', '5');
+values ('images/Recensioni/death-stranding/img0.jpg', '', '5');
 insert into images
     (src, alt, article)
 values ('images/Recensioni/vampyr/vampyr.jpg', '', '6');

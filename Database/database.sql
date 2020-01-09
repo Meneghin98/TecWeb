@@ -226,6 +226,7 @@ insert into articles
 values (16, 'html/Altro/guidaClashRoyale.html', '2020-1-5',
         '<span xml:lang="en">Clash Royale</span>, come creare un mazzo vincente',
         'Come creare un mazzo vincente? Scopriamolo assieme', 'gaming', 'Altro', '0', '3', null);
+
 insert into articles
     /*PS5 news*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -233,6 +234,7 @@ values (17, 'html/News/ps5.html', '2020-1-7',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>: le nuove informazioni del 2020',
         'supporto al <span xml:lang="en">Ray Tracing</span> e finestra di lancio confermata',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);
+
 insert into articles
     /*Code vein recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
@@ -241,6 +243,14 @@ values (18, 'html/Recensioni/code-vein.html', '2019-10-26',
         'La recensione di <span xml:lang="en">Code Vein</span> per <span xml:lang="en">PlayStation 4</span>: Vampiri, <span xml:lang="en">Soulslike</span> ed <abbr xml:lang="en" title="Role play game">RPG</abbr> nel nuovo gioco targato <span xml:lang="en">Bandai Namco</span>',
         '<span xml:lang="en">Code Vein</span>', 'Recensioni', '0', '4', null);
 
+insert into articles
+    /*Witcher guida*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
+        '<span xml:lang="en">The Witche 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
+        'Dopo aver visto lo <span xml:lang="en">show</span> su <span xml:lang="en">Netflix</span> vi siete
+                    precipitati su <span xml:lang="en">The Witcher 3</span> ma non sapete cosa aspettarvi? Ecco alcuni
+                    utili consigli per i neofiti', 'gaming', 'Altro', '0', '3', null);
 
 
 insert into images
@@ -298,3 +308,6 @@ values ('images/News/PS5/logo-ps5.png', '', '17');
 insert into images
 (src, alt, article)
 values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
+insert into images
+(src, alt, article)
+values ('images/Altro/witcher1.jpeg', '', '19');

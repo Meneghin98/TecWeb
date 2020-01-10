@@ -259,7 +259,7 @@ values ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
 
 insert into images
     (src, alt, article)
-values ('images/News/whatsapp.jpg', '', '2');
+values ('images/News/Whatsapp/whatsapp.jpg', '', '2');
 insert into images
     (src, alt, article)
 values ('images/Altro/fortnite/fortniteDeltaplano.jpg', '', '3');
@@ -268,7 +268,7 @@ insert into images
 values ('images/Altro/pokemon/sierra.jpg', '', '4');
 insert into images
     (src, alt, article)
-values ('images/Recensioni/dead-stranding/img0.jpg', '', '5');
+values ('images/Recensioni/death-stranding/img0.jpg', '', '5');
 insert into images
     (src, alt, article)
 values ('images/Recensioni/vampyr/vampyr.jpg', '', '6');

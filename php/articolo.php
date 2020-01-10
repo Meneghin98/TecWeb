@@ -22,7 +22,7 @@ else {
     $paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
     $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
     $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
-    $paginaArticolo = str_replace('£rightPanel',html::rightPanel(), $paginaArticolo);
+    $paginaArticolo = str_replace('£rightPanel', html::rightPanel(), $paginaArticolo);
     $paginaArticolo = str_replace('£footer', html::linked_obj('footer', 'article'), $paginaArticolo);
     $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', 'article'), $paginaArticolo);
 
@@ -61,6 +61,19 @@ else {
         $paginaArticolo = str_replace('£commenti', "<ul>£commenti</ul>", $paginaArticolo);
         $paginaArticolo = str_replace('£commenti', html::commenti($commenti, $likes, $_SESSION['loggato']), $paginaArticolo);
     }
+    $top3 = $DB->getTop3();
+    if (!is_null($top3)) {
+        $paginaArticolo = str_replace('£top3', html::top3($top3), $paginaArticolo);
+    } else {
+        $paginaArticolo = str_replace('£top3', '', $paginaArticolo);
+        $DB->close();
+    }
+    $lastRew = $DB->getLastRew();
+    if (!is_null($lastRew)) {
+        $paginaArticolo = str_replace('£lastRew', html::lastRew($lastRew), $paginaArticolo);
+    } else {
+        $paginaArticolo = str_replace('£lastRew', '', $paginaArticolo);
+    }
     $DB->close();
+    echo $paginaArticolo;
 }
-echo $paginaArticolo;

@@ -10,9 +10,10 @@
     $_SESSION['loggato']=false;
 
  $index = file_get_contents("html/index.html");
+ $index = str_replace('£rightPanel', file_get_contents("html/rightPanel.html"), $index);
 
- $db = new DBConnection();
- $queryArticoli = $db->getArticlesArray(null);
+ $DB = new DBConnection();
+ $queryArticoli = $DB->getArticlesArray(null);
 
  if (!is_null($queryArticoli)) {
     $top_articoli = "";
@@ -27,10 +28,28 @@
     $articoli = str_replace('articolo.php', 'php/articolo.php', $articoli);
     $index = str_replace("£Articoli", $articoli, $index);
  }
- $db->close();
+$top3 = $DB->getTop3();
+if (!is_null($top3)) {
+    $top3articolo=html::top3($top3);
+    $top3articolo = str_replace('articolo.php', 'php/articolo.php', $top3articolo);
+
+    $index = str_replace('£top3', $top3articolo, $index);
+} else {
+    $index = str_replace('£top3', '', $index);
+
+}
+$lastRew = $DB->getLastRew();
+if (!is_null($lastRew)) {
+    $lastRewarticolo=html::lastRew($lastRew);
+    $lastRewarticolo = str_replace('articolo.php', 'php/articolo.php', $lastRewarticolo);
+
+    $index = str_replace('£lastRew', $lastRewarticolo, $index);
+} else {
+    $index = str_replace('£lastRew', '', $index);
+}
+ $DB->close();
  $index = str_replace('£head_', file_get_contents("html/head.html"), $index);
  $index = str_replace('£top_articles', $top_articoli, $index);
- $index = str_replace('£rightPanel', file_get_contents("html/rightPanel.html"), $index);
 
 
 echo str_replace('../', '', $index);

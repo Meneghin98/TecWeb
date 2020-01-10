@@ -101,21 +101,11 @@
     overflow: hidden;
 }
 
-.headerChild:nth-of-type(1) a {
+#logo a {
     position: initial;
 }
 
-.headerChild:nth-of-type(1) a img {
-    transition: 0.4s;
-}
 
-.headerChild:nth-of-type(1) a img:hover {
-    /*-moz-transform: scale(0.9) rotate(0deg);
-    -webkit-transform: scale(0.9) rotate(0deg);
-    -o-transform: scale(0.9) rotate(0deg);
-    -ms-transform: scale(0.9) rotate(0deg);*/
-    transform: scale(0.9) rotate(0deg);
-}
 
 #header {
     /*display: -webkit-box;
@@ -129,6 +119,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5em;
+}
+#mobileMenu{
+    display: none;
 }
 
 .headerChild:nth-of-type(1) {
@@ -181,11 +174,11 @@
 
 /* Articoli migliori */
 
-.topArticles li img, .headerChild:nth-of-type(1) a img {
+.topArticles li img{
     transition: none;
 }
 
-.topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+.topArticles li img:hover{
     transform: none;
 }
 

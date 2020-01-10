@@ -1,10 +1,10 @@
 /* rimozione transizioni*/
-.topArticles li img, .headerChild:nth-of-type(1) a img {
+.topArticles li img{
 
     transition: none;
 }
 
-.topArticles li img:hover, .headerChild:nth-of-type(1) a img:hover {
+.topArticles li img:hover{
 
     transform: none;
 }
@@ -75,6 +75,22 @@
     float: none;
     margin-bottom: 0;
 
+}
+.articleList {
+    width: 100%;
+}
+.articleList li img{
+    width: 100%;
+    height: unset;
+    float: none;
+}
+.categoriaGenerale {
+    position: relative;
+    top: 1.75em;
+}
+
+#button{
+    display: none;
 }
 
 

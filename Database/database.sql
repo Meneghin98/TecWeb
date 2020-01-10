@@ -74,7 +74,7 @@ create TABLE likes
 create TABLE images
 (
     src     VARCHAR(50) PRIMARY KEY,
-    alt     VARCHAR(10) NOT NULL,
+    alt     VARCHAR(50) NOT NULL,
     article INT(5),
     CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
@@ -251,6 +251,14 @@ values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
         'Dopo aver visto lo <span xml:lang="en">show</span> su <span xml:lang="en">Netflix</span> vi siete
                     precipitati su <span xml:lang="en">The Witcher 3</span> ma non sapete cosa aspettarvi? Ecco alcuni
                     utili consigli per i neofiti', 'gaming', 'Altro', '0', '3', null);
+insert into articles
+    /*AMD CES 2020*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (20, 'html/News/AMDnews.html', '2020-1-10',
+        'Le novità AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
+                        xml:lang="en">Threadripper</span> 3990X',
+        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1', null);
+
 
 
 insert into images
@@ -311,3 +319,6 @@ values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
 insert into images
 (src, alt, article)
 values ('images/Altro/witcher1.jpeg', '', '19');
+insert into images
+(src, alt, article)
+values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore', '20');

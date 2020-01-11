@@ -53,12 +53,11 @@
 }
 
 #closeButton {
-    visibility: visible;
+    display: initial;
     position: absolute;
     top: -5.5em;
     left: 1em;
-    width: 3em;
-    height: 3em;
+    padding: 0 1em 1em 0;
     cursor: pointer;
 
     /* close icon elements */
@@ -99,6 +98,7 @@
 #mobileList a{
     text-decoration: none;
     color: white;
+    padding: 0.5em 30em 0.5em 0;
 }
 
 #mobileList #currentlink{
@@ -106,14 +106,7 @@
     font-weight: bolder;
 }
 
-.menu--offcanvas-1 {
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    left: -17em;
-    /* opened styles */
-}
+
 
 #menu--offcanvas-1-js-opened {
     transition-property: left;
@@ -123,14 +116,29 @@
     left: 0;
     opacity: 1;
     position: relative;
-    top: 0;
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
     background-color: #1c1c1c;
     visibility: visible;
 }
+#logo{
+    margin-left: 10em;
+}
 
+#mobileSearch input {
+    display: initial;
+    position: absolute;
+    border-radius: 0;
+    border: 3px solid #0E9C09;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 8em;
+}
+#searchBar button img {
+    width: 100%;
+}
 /*-------- fine Header --------*/
 
 
@@ -177,6 +185,9 @@
     width: 100%;
     height: unset;
     float: none;
+}
+.articleList li {
+    border-top: 5px solid #dddcdc;
 }
 
 .categoriaGenerale {

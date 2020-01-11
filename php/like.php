@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once ("helps/connessione.php");
+require_once("helps/connessione.php");
 
 $DB = new DBConnection();
 if ($_GET['add'] == "true"){

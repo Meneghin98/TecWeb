@@ -1,7 +1,7 @@
 <?php
-require_once("helps/connessione.php");
-require_once("helps/replace.php");
-require_once("helps/checks.php");
+require_once("connessione.php");
+require_once("replace.php");
+require_once("checks.php");
 
 session_start();
 

@@ -1,6 +1,6 @@
 <?php
- require_once('php/helps/connessione.php');
- require_once('php/helps/replace.php');
+ require_once('php/connessione.php');
+ require_once('php/replace.php');
 
  session_start();
 

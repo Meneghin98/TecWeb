@@ -123,13 +123,13 @@ values (5, 'categoriaAltro');/*5*/
 insert into articles
     /*Lucca comics*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (1, 'html/News/LuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
+values (1, 'html/News/newLuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
         'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
         'Lucca C&amp;G 19', 'News', '0', '2', null);
 insert into articles
     /*Whatsapp News*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (2, 'html/News/WhatsappNews.html', '2020-01-01',
+values (2, 'html/News/newWhatsapp.html', '2020-01-01',
         'Whatsapp: il virus di Capodanno con un messaggio ruba i dati dai telefoni iOs e Android',
         'Whatsapp: il virus di Capodanno si nasconde in un semplice messaggio, ma dopo un click ruba i dati dai telefoni iOS e Android.',
         'Whatsapp', 'News', '0', '5', null);
@@ -161,21 +161,21 @@ values (6, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la re
 insert into articles
     /*Cyberpunk*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (7, 'html/News/Cyberpunk-2077.html', '2019-11-28',
+values (7, 'html/News/newCyberpunk2077.html', '2019-11-28',
         '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
         'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento',
         '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
 insert into articles
     /*Cod*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (8, 'html/Recensioni/Call-of-duty-MW-2019.html', '2019-09-25',
+values (8, 'html/Recensioni/recensioneCallOfDutyMW.html', '2019-09-25',
         'Recensione: <span xml:lang="en">Call of Duty: Modern Warfare</span>',
         'ritorno al passato certo, ma soprattutto un nuovo, grande inizio',
         'Call of Duty MW', 'Recensioni', '0', '4', null);
 insert into articles
     /*monitor*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (9, 'html/News/Xiaomimonitor.html', '2019-10-18',
+values (9, 'html/News/newXiaomimonitor.html', '2019-10-18',
         'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display</span>, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span>',
         '',
         'Xiaomi Monitor', 'News', '0', '1', null);
@@ -189,14 +189,14 @@ values (10, 'html/Recensioni/recensioneStarWars.html', '2019-11-16',
 insert into articles
     /*death stranding*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (11, 'html/News/DeathStrandingPC.html', '2019-10-30',
+values (11, 'html/News/newDeathStrandingPC.html', '2019-10-30',
         '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
         '',
         'Death Stranding PC', 'News', '0', '4', null);
 insert into articles
     /*StarWars vendite*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (12, 'html/News/StarWarsPCSell.html', '2019-11-27',
+values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record',
         'Vendite PC, battuti molti record', 'Star Wars vendite PC', 'News', '0', '4', null);
 
@@ -209,7 +209,7 @@ values
 insert into articles
     /*Monster Hunter News*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (14, 'html/News/newsMonsterHunterIceborn.html', '2019-12-7',
+values (14, 'html/News/newMonsterHunterIceborn.html', '2019-12-7',
         '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novità dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
         '', 'gaming', 'News', '0', '5', null);
 
@@ -230,7 +230,7 @@ values (16, 'html/Altro/guidaClashRoyale.html', '2020-1-5',
 insert into articles
     /*PS5 news*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (17, 'html/News/ps5.html', '2020-1-7',
+values (17, 'html/News/newPS5.html', '2020-1-7',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>: le nuove informazioni del 2020',
         'supporto al <span xml:lang="en">Ray Tracing</span> e finestra di lancio confermata',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);    # category_type too long (Err. sql)
@@ -238,7 +238,7 @@ values (17, 'html/News/ps5.html', '2020-1-7',
 insert into articles
     /*Code vein recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (18, 'html/Recensioni/code-vein.html', '2019-10-26',
+values (18, 'html/Recensioni/recensioneCodeVein.html', '2019-10-26',
         'Recensione: <span xml:lang="en">Code Vein</span>',
         'La recensione di <span xml:lang="en">Code Vein</span> per <span xml:lang="en">PlayStation 4</span>: Vampiri, <span xml:lang="en">Soulslike</span> ed <abbr xml:lang="en" title="Role play game">RPG</abbr> nel nuovo gioco targato <span xml:lang="en">Bandai Namco</span>',
         '<span xml:lang="en">Code Vein</span>', 'Recensioni', '0', '4', null);
@@ -254,7 +254,7 @@ values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
 insert into articles
     /*AMD CES 2020*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (20, 'html/News/AMDnews.html', '2020-1-10',
+values (20, 'html/News/newAMD.html', '2020-1-10',
         'Le novità AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
                         xml:lang="en">Threadripper</span> 3990X',
         'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1', null);

@@ -1,5 +1,5 @@
 <?php
-require_once ("helps/connessione.php");
+require_once("helps/connessione.php");
 
 session_start();
 $txt = addslashes(trim($_POST['commentoUtente']));

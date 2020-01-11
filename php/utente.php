@@ -1,7 +1,7 @@
 <?php
 
-require_once("helps/connessione.php");
-require_once("helps/replace.php");
+require_once("connessione.php");
+require_once("replace.php");
 
 $file = file_get_contents("../html/User/areaUtenteExt.html");
 $file = str_replace('£header', html::header(), $file);

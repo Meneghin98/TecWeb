@@ -1,7 +1,7 @@
 <?php
 
-require_once("helps/connessione.php");
-require_once("helps/replace.php");
+require_once("connessione.php");
+require_once("replace.php");
 
 session_start();
 $file = file_get_contents("../html/User/login.html");

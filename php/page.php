@@ -1,6 +1,6 @@
 <?php
-require_once("helps/replace.php");
-require_once("helps/connessione.php");
+require_once("replace.php");
+require_once("connessione.php");
 
 switch ($_GET['t']) {
     case 'n':

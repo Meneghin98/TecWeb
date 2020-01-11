@@ -38,7 +38,7 @@
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog,
- .passwordLog, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento, .bottoneMiPiace
+.passwordLog, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento, .bottoneMiPiace
 {
     display: none;
 }
@@ -79,7 +79,6 @@
 .topArticles li img {
     transition: none;
 }
-
 .topArticles li img:hover {
     transform: none;
 }*/
@@ -363,15 +362,12 @@ body {
 #menuMobileLogin img {
     display: none;
 }
-
 #menuMobileLogin h1 {
     display: none;
 }
-
 .pulsantiLogin a {
     display: none;
 }
-
 .pulsantiLogin p {
     display: none;
 }
@@ -391,19 +387,15 @@ body {
 #pulsanteRegistrati {
     display: none;
 }
-
 #scrittaLog {
     display: none;
 }
-
 #RegistratiLoginMobile {
     display: none;
 }
-
 .emailLog img {
     display: none;
 }
-
 .passwordLog img {
     display: none;
 }
@@ -611,7 +603,6 @@ body {
 #save {
     border: none;
 }
-
 #save input {
     display: none;
 }*/
@@ -718,7 +709,7 @@ body {
     padding-bottom: 0.5em;
 }
 
-.description p, ul {
+.description p {
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;

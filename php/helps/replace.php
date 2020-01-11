@@ -59,27 +59,27 @@ class html
             return 0;
 
         if ($type_obj == 'article') {
-            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">HOME</span></a></li>', $obj);
-            $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">NOTIZIE</span></a></li>', $obj);
-            $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">RECENSIONI</a></li>', $obj);
-            $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">ALTRO</a></li>', $obj);
+            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
         }
 
         if ($type_obj == 'page') {
-            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">HOME</span></a></li>', $obj);
-            $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">NOTIZIE</span></a></li>', $obj);
-            $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">RECENSIONI</a></li>', $obj);
-            $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">ALTRO</a></li>', $obj);
+            $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
+            $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
+            $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
+            $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
 
             switch ($type_page) {
                 case 'n':
-                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">NOTIZIE</span></a>', '<li id="currentlink"><span xml:lang="en">NOTIZIE</span>', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a>', '<li id="currentlink"><span xml:lang="en">Notizie</span>', $obj);
                     break;
                 case 'r':
-                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">RECENSIONI</a>', '<li id="currentlink">RECENSONI', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">Recensioni</a>', '<li id="currentlink">Recensioni', $obj);
                     break;
                 case 'a':
-                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">ALTRO</a>', '<li id="currentlink">ALTRO', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">Altro</a>', '<li id="currentlink">Altro', $obj);
                     break;
             }
         }

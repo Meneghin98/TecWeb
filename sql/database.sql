@@ -318,7 +318,7 @@ insert into images
 values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
 insert into images
 (src, alt, article)
-values ('images/Altro/witcher1.jpeg', '', '19');
+values ('images/Altro/witcher1.jpg', '', '19');
 insert into images
 (src, alt, article)
 values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore', '20');

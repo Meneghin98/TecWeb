@@ -233,7 +233,7 @@ insert into articles
 values (17, 'html/News/ps5.html', '2020-1-7',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>: le nuove informazioni del 2020',
         'supporto al <span xml:lang="en">Ray Tracing</span> e finestra di lancio confermata',
-        '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);
+        '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);    # category_type too long (Err. sql)
 
 insert into articles
     /*Code vein recensione*/

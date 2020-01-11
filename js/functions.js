@@ -88,6 +88,85 @@ function togliErrore(input) {
 }
 
 
+function checkNickname(Nomeinput) {
+    var patt = new RegExp('^[a-zA-Z1-9]{3,15}$');
+    if(patt.test(Nomeinput.value)) {  //mi mostra il valore contenuto in input
+        togliErrore(Nomeinput);
+        return true;
+    }
+    else {
+        mostraErrore(Nomeinput,
+            "Nome inserito non corretto (almeno 3 lettere) ");
+        return false;
+    }
+}
+
+function checkPassword(NomeInput) {
+    var pass = new RegExp('^(?=.*[0-9])(?=.*[a-z])[a-zA-Z0-9!.@#$%^&*]{6,16}$');
+    if(pass.test(NomeInput.value)) {
+        togliErrore(NomeInput);
+        return true;
+    }
+
+    return false;
+}
+
+
+function loadAccount() {
+    var nickname = document.getElementById("emailLogin").value;
+    var password = document.getElementById("passwordLogin").value;
+
+    $.ajax()
+
+    var risultatoNickname = checkNickname();
+    var risultatopassword = checkPassword();
+
+    return risultatoNickname && risultatopassword;
+
+}
+
+/*
+<form action="insert.php" onsubmit="return validazioneForm()">
+    <p>
+        <label>
+        <input id="nome">
+        <span>Errore nellínserimento del nome</span>
+
+*/
+
+// --------------------- FINE LOGIN ---------------------------
+
+
+
+
+// ------------------- REGISISTRAZIONE --------------------------
+
+function mostraErrore(input,testoErrore) {
+
+    togliErrore(input);
+
+    var p = input.parentNode;
+    if(p.children.length == 2) {
+        var strong = document.createElement("strong");
+        //strong.className="corsivo";
+        strong.appendChild(document.createTextElement(testoErrore)); //span.innerHTML=testoErrore;
+        p.appendChild
+        p.appendChild(strong);
+    }
+}
+
+function togliErrore(input) {
+    var p = input.parentNode;
+
+    if(p.children.length > 2) {
+        p.removeChild(p.children[2]); //rimuovo il terzo figlio di p
+    }
+
+    /*var span = p.lastChild;
+    p.removeChild(span);*/
+}
+
+
 function checkNome(Nomeinput) {
     var patt = new RegExp('^[a-zA-Z]{3,}$');
     if(patt.tets(Nomeinput.value)) {  //mi mostra il valore contenuto in input
@@ -128,17 +207,7 @@ function validazioneForm() {
 
     return risultatoNome && risultatoColore &&  risultatoPeso && risultatoDescrizione;
 
+
 }
 
-/*
-<form action="insert.php" onsubmit="return validazioneForm()">
-    <p>
-        <label>
-        <input id="nome">
-        <span>Errore nellínserimento del nome</span>
-
-*/
-
-// --------------------- FINE LOGIN ---------------------------
-
-// ------------------- REGIS
+// ------------------- FINE REGISISTRAZIONE --------------------------

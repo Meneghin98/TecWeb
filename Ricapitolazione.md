@@ -2,7 +2,7 @@
 - ## Fare articoli
     - EDOARDO: 3 guide 
     - SIMONE: 1 new 1 rec
-    - JAKE: 1 rew 1 guida
+    - JAKE: 1 rew 
     - ENRICO: 1 new 2 guide
 - ## Aiuti alla navigazione
     - Bottoni torna su : diuscutere su slack
@@ -28,9 +28,9 @@
 # TO DO
  - [ ] *Enrico* finire login+registrazione PHP
  - [ ] *Simone* Finire pagina utente php
- - [ ] *Simone* Sistemare commenti
- - [ ] *Jake* Bottoni
- - [ ] *Jake* rightPannel dinamico  
+ - [X] *Simone* Sistemare commenti
+ - [X] *Jake* Bottoni
+ - [X] *Jake* rightPannel dinamico  
  - [ ] *Edoardo* Editor PHP
  - [ ] *Edoardo* Aiuti alla navigazione HTML
  - [ ] *Edoardo* Pagina 404 

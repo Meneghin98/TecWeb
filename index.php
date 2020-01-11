@@ -30,14 +30,20 @@
  }
 $top3 = $DB->getTop3();
 if (!is_null($top3)) {
-    $index = str_replace('£top3', html::top3($top3), $index);
+    $top3articolo=html::top3($top3);
+    $top3articolo = str_replace('articolo.php', 'php/articolo.php', $top3articolo);
+
+    $index = str_replace('£top3', $top3articolo, $index);
 } else {
     $index = str_replace('£top3', '', $index);
 
 }
 $lastRew = $DB->getLastRew();
 if (!is_null($lastRew)) {
-    $index = str_replace('£lastRew', html::lastRew($lastRew), $index);
+    $lastRewarticolo=html::lastRew($lastRew);
+    $lastRewarticolo = str_replace('articolo.php', 'php/articolo.php', $lastRewarticolo);
+
+    $index = str_replace('£lastRew', $lastRewarticolo, $index);
 } else {
     $index = str_replace('£lastRew', '', $index);
 }

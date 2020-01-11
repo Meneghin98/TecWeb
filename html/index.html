@@ -13,7 +13,10 @@
 <body>
 
     <div id="header">
-        <div class="headerChild">
+        <div class="headerChild" id="mobileMenu">
+            <img id="openButton" onclick="openMenu()" src="../images/icons/hamburger.png" alt="apri menu"/>
+        </div>
+        <div class="headerChild" id="logo">
             <a href="../index.php"><img src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
             <h1>Decrypted Games</h1>
             <div class="screenReaderHelper">
@@ -27,7 +30,7 @@
                     <label for="search">Ricerca</label>
                     <input type="text" id="search" />
                     <button type="submit">
-                        <img src="../images/icons/20x20-lente.png" alt="submit" />
+                        <img src="../images/icons/50x50-lente.png" alt="submit" />
                     </button>
                 </fieldset>
             </form>
@@ -39,11 +42,12 @@
     </div>
 
     <div id="menu">
-        <ul>
-            <li id="currentlink"><span xml:lang="en">Home</span></li>
-            <li><a href="../php/page.php?t=n"><span xml:lang="en">News</span></a></li>
-            <li><a href="../php/page.php?t=r">Recensioni</a></li>
-            <li><a href="../php/page.php?t=a">Altro</a></li>
+        <img  id="closeButton" onclick="closeMenu()" src="../images/icons/exit.png" alt="esci dal menu"/>
+        <ul id="mobileList">
+            <li id="currentlink"><span xml:lang="en">HOME</span></li>
+            <li><a href="../php/page.php?t=n"><span xml:lang="en">NOTIZIE</span></a></li>
+            <li><a href="../php/page.php?t=r">RECENSIONI</a></li>
+            <li><a href="../php/page.php?t=a">ALTRO</a></li>
         </ul>
     </div>
 
@@ -63,13 +67,13 @@
         </div>
 
     </div>
-    <p><a id="button" href="#header"><img src="images/icons/topArrow.svg" alt="Torna all'inizio"/></a></p>
+    <p><a id="button" href="#header"><img src="../images/icons/topArrow.svg" alt="Torna all'inizio"/></a></p>
     <div id="footer">
         <div class="footerInline">
             <p>Torna a</p>
             <ul>
                 <li><span xml:lang="en">Home</span></li>
-                <li><a href="php/page.php?t=n" xml:lang="en">News</a></li>
+                <li><a href="php/page.php?t=n" xml:lang="en">Notizie</a></li>
                 <li><a href="php/page.php?t=r">Recensioni</a></li>
                 <li><a href="php/page.php?t=a">Altro</a></li>
             </ul>

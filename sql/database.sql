@@ -259,6 +259,12 @@ values (20, 'html/News/newAMD.html', '2020-1-10',
                         xml:lang="en">Threadripper</span> 3990X',
         'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1', null);
 
+insert into articles
+    /*Skyrim guida*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (21, 'html/Altro/guidaSkyrim.html', '2020-1-9',
+        '<span xml:lang="en">Skyrim Mods</span>: Guida & Consigli',
+        'Come scaricare ed installare il miglior pacchetto di <span xml:lang="en">mod</span>', 'gaming', 'Altro', '0', '3', null);
 
 
 insert into images
@@ -268,57 +274,79 @@ values ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
 insert into images
     (src, alt, article)
 values ('images/News/Whatsapp/whatsapp.jpg', '', '2');
+
 insert into images
     (src, alt, article)
 values ('images/Altro/fortnite/fortniteDeltaplano.jpg', '', '3');
+
 insert into images
     (src, alt, article)
 values ('images/Altro/pokemon/sierra.jpg', '', '4');
+
 insert into images
     (src, alt, article)
 values ('images/Recensioni/death-stranding/img0.jpg', '', '5');
+
 insert into images
     (src, alt, article)
 values ('images/Recensioni/vampyr/vampyr.jpg', '', '6');
+
 insert into images
     (src, alt, article)
 values ('images/News/Cyberpunk/CP20771-lowRes.jpg', '', '7');
+
 insert into images
     (src, alt, article)
 values ('images/Recensioni/cod-mw-2019/codmw.png', '', '8');
+
 insert into images
     (src, alt, article)
 values ('images/mi-surface-display.jpg', '', '9');
+
 insert into images
     (src, alt, article)
 values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', '', '10');
+
 insert into images
     (src, alt, article)
 values ('images/death-stranding-image.jpg', '', '11');
+
 insert into images
     (src, alt, article)
 values ('images/News/StarWars/StarWarsNews.jpg', '', '12');
+
 insert into images
     (src, alt, article)
 values ('images/Altro/StarWars/Copertina.jpg', '', '13');
+
 insert into images
     (src, alt, article)
 values ('images/News/monsterHunterWorld/monsterHunter.jpg', '', '14');
+
 insert into images
     (src, alt, article)
 values ('images/Recensioni/asgardsWrath/asgardsWrath.jpeg', '', '15');
+
 insert into images
     (src, alt, article)
 values ('images/Altro/clash_royale.jpg', '', '16');
+
 insert into images
 (src, alt, article)
 values ('images/News/PS5/logo-ps5.png', '', '17');
+
 insert into images
 (src, alt, article)
 values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
+
 insert into images
 (src, alt, article)
 values ('images/Altro/witcher1.jpg', '', '19');
+
 insert into images
 (src, alt, article)
 values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore', '20');
+
+insert into images
+(src, alt, article)
+values ('images/Altro/skyrim1.jpg', '', '21');

@@ -4,7 +4,7 @@ function trimText(id) {
 }
 
 function commentoVuoto() {
-    let commentText = document.getElementById("textarea").value;
+    let commentText = document.getElementById("textarea").value.trim();
     if (commentText.length === 0) {
         alert("Il commento non può essere vuoto");
         return false;
@@ -14,7 +14,7 @@ function commentoVuoto() {
 
 function updateNum() {
     let textarea = document.getElementById("textarea").value;
-    document.getElementById("MaxChar").innerHTML = (300-textarea.length).toString();
+    document.getElementById("MaxChar").innerHTML = (300 - textarea.length).toString();
 }
 
 function miPiaceOver(id) {
@@ -62,12 +62,12 @@ function miPiace(id) {
 // ------------------------- LOGIN --------------------------
 
 
-function mostraErrore(input,testoErrore) {
+function mostraErrore(input, testoErrore) {
 
     togliErrore(input);
 
     var p = input.parentNode;
-    if(p.children.length == 2) {
+    if (p.children.length == 2) {
         var strong = document.createElement("strong");
         //strong.className="corsivo";
         strong.appendChild(document.createTextElement(testoErrore)); //span.innerHTML=testoErrore;
@@ -79,7 +79,7 @@ function mostraErrore(input,testoErrore) {
 function togliErrore(input) {
     var p = input.parentNode;
 
-    if(p.children.length > 2) {
+    if (p.children.length > 2) {
         p.removeChild(p.children[2]); //rimuovo il terzo figlio di p
     }
 
@@ -90,11 +90,10 @@ function togliErrore(input) {
 
 function checkNome(Nomeinput) {
     var patt = new RegExp('^[a-zA-Z]{3,}$');
-    if(patt.tets(Nomeinput.value)) {  //mi mostra il valore contenuto in input
+    if (patt.tets(Nomeinput.value)) {  //mi mostra il valore contenuto in input
         togliErrore(Nomeinput);
         return true;
-    }
-    else {
+    } else {
         mostraErrore(Nomeinput,
             "Nome inserito non corretto (almeno 3 lettere) ");
         return false;
@@ -126,7 +125,7 @@ function validazioneForm() {
     var risultatoPeso = checkPeso();
     var risultatoDescrizione = checkDescrizione();
 
-    return risultatoNome && risultatoColore &&  risultatoPeso && risultatoDescrizione;
+    return risultatoNome && risultatoColore && risultatoPeso && risultatoDescrizione;
 
 }
 
@@ -142,3 +141,20 @@ function validazioneForm() {
 // --------------------- FINE LOGIN ---------------------------
 
 // ------------------- REGIS
+/*----------------------HEADER MOBILE----------------------------*/
+
+function openMenu() {
+    var openButton = document.getElementById("openButton");
+    var menu = document.getElementById("menu");
+
+    openButton.classList.add('openButton-js-hidden');
+    menu.setAttribute('id', 'menu--offcanvas-1-js-opened');
+}
+
+function closeMenu() {
+    var openButton = document.getElementById("openButton");
+    var menu = document.getElementById("menu--offcanvas-1-js-opened");
+    openButton.classList.remove('openButton-js-hidden')
+    menu.setAttribute('id', 'menu');
+
+}

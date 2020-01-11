@@ -106,7 +106,6 @@
 }
 
 
-
 #header {
     /*display: -webkit-box;
     display: -moz-box;
@@ -120,11 +119,12 @@
     align-items: center;
     padding-top: 0.5em;
 }
-#mobileMenu{
+
+#mobileMenu {
     display: none;
 }
 
-.headerChild:nth-of-type(1) {
+#logo {
     /*-webkit-box-flex: 10;
     -moz-box-flex: 10;
     -webkit-flex: 20%;
@@ -174,11 +174,11 @@
 
 /* Articoli migliori */
 
-.topArticles li img{
+.topArticles li img {
     transition: none;
 }
 
-.topArticles li img:hover{
+.topArticles li img:hover {
     transform: none;
 }
 
@@ -236,7 +236,7 @@ body {
     text-decoration: none;
 }
 
-#menu a:hover, #menu #currentlink:hover {
+#menu a:hover {
     color: #0E9C09;
 }
 
@@ -251,6 +251,10 @@ body {
     font-weight: bold;
 }
 
+#closeButton {
+    visibility: hidden;
+    position: absolute;
+}
 
 #content {
     background-color: white;
@@ -413,14 +417,16 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
     .flexColumn:last-of-type {
         display: none;
     }
+
     .articleList {
         width: 95%;
     }
-    #button{
+
+    #button {
         right: 0.5em;
     }
 }
@@ -432,7 +438,6 @@ body {
         justify-content: flex-end;
 
     }
-
 
 
     .flexColumn:nth-of-type(1) {
@@ -596,11 +601,11 @@ body {
 }
 
 #contentRegistrazione {
-    max-width:1300px;
-    margin:auto;
+    max-width: 1300px;
+    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
-    background-color: rgba(52,52,52,1);
+    background-color: rgba(52, 52, 52, 1);
 }
 
 .confermaAccountReg {
@@ -748,15 +753,18 @@ body {
     list-style: inside;
 }
 
-#logout:link{
+#logout:link {
     color: white;
 }
-#logout:visited{
+
+#logout:visited {
     color: white;
 }
-#logout:hover{
-    color: rgba(255,255,255,0.7);
+
+#logout:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
+
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */

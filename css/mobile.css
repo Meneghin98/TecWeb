@@ -1,17 +1,17 @@
 /* rimozione transizioni*/
-.topArticles li img{
+.topArticles li img {
 
     transition: none;
 }
 
-.topArticles li img:hover{
+.topArticles li img:hover {
 
     transform: none;
 }
 
 /*--------------------fine----------------------------------------------------*/
 /* Dichiarazione dimensione font*/
-.articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro, #ListaCommenti p, #ScriviCommento label, #ScriviCommento textarea{
+.articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro, #ListaCommenti p, #ScriviCommento label, #ScriviCommento textarea {
     font-size: 2.5em;
     line-height: 2em;
 }
@@ -30,17 +30,109 @@
 
 /*fine dichiarazione dimensione font*/
 /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
-.flexColumn:last-of-type, .menu, #search, .topArticles li:last-of-type {
+.flexColumn:last-of-type, #search, .topArticles li:last-of-type {
     display: none;
 }
 
 /*-------------------------------------------------------------------------*/
 /*---------Header-----------*/
-/*Da impelementare da meglio con js non usando i display none*/
-/*---------Menu-----------*/
-/*Da impelementare da meglio con js non usando i display none*/
-/*-------- Menu --------*/
+#mobileMenu {
+    display: unset;
+    width: 3em;
+}
+
+#openButton {
+    margin-left: 1em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.openButton-js-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#closeButton {
+    visibility: visible;
+    position: absolute;
+    top: -5.5em;
+    left: 1em;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+
+    /* close icon elements */
+    /* hover effect */
+}
+
+.closeButton:before, .closeButton:after {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15em;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+    box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.14), 1px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 4px -1px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 500;
+}
+
+#mobileList {
+    padding: 0;
+    margin: 1em 0 0 0;
+    list-style-type: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#mobileList li {
+    margin-top: 1em;
+}
+#mobileList a{
+    text-decoration: none;
+    color: white;
+}
+
+#mobileList #currentlink{
+    color: lawngreen;
+    font-weight: bolder;
+}
+
+.menu--offcanvas-1 {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    left: -17em;
+    /* opened styles */
+}
+
+#menu--offcanvas-1-js-opened {
+    transition-property: left;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    left: 0;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+    visibility: visible;
+}
+
 /*-------- fine Header --------*/
+
 
 .topArticles, .diffs {
     flex-wrap: wrap;
@@ -76,20 +168,23 @@
     margin-bottom: 0;
 
 }
+
 .articleList {
     width: 100%;
 }
-.articleList li img{
+
+.articleList li img {
     width: 100%;
     height: unset;
     float: none;
 }
+
 .categoriaGenerale {
     position: relative;
     top: 1.75em;
 }
 
-#button{
+#button {
     display: none;
 }
 
@@ -128,7 +223,7 @@
     text-align: center;
 }
 
-.comment p, .pro, .contro, .diffs h3, #ListaCommenti{
+.comment p, .pro, .contro, .diffs h3, #ListaCommenti {
     margin: 0;
 
 }
@@ -150,15 +245,8 @@
 /*--------fine footer------*/
 
 
-#header {
-    display: none;
-}
-
 /*----------------login--------------*/
 
-#menu {
-    display: none;
-}
 
 #menuMobileLogin {
     display: flex;
@@ -260,6 +348,7 @@
     width: 100%;
 
 }
+
 /*
 .emailLog input[type="text"] {
     width: 100%;
@@ -416,60 +505,69 @@ input#bottoneIndietroReg {
 
 /*----------------FINE registrazione--------------*/
 /*----------------Area Utente---------------------*/
-#avatar{
+#avatar {
     max-width: 350px;
 }
 
-.datiAccount{
+.datiAccount {
     max-width: unset;
     margin: 1em 0;
     font-size: 2.5em;
 }
 
-.groupBox{
+.groupBox {
     margin: 1em;
 }
+
 .datiAccount fieldset label {
     margin: .2em 0;
 }
+
 .datiAccount .groupBox input {
     padding: .2em;
     font-size: 1.5em;
 }
 
-#save label{
+#save label {
     display: block;
     font-size: 3em;
     margin: 1em 5em;
 }
-#buonFine, #errori{
+
+#buonFine, #errori {
     font-size: 1.8em;
 }
+
 /*------------------------------------------------*/
 /*-----------------------Commenti-----------------
 si fa riferimento ai commenti anche fuori da questo
 blocco per evitare codice duplicato */
 
-#ScriviCommento{
+#ScriviCommento {
     margin: 1em 2.5em 4em;
 }
-#ScriviCommento p{
+
+#ScriviCommento p {
     padding: 0;
 }
-#ScriviCommento #commenta{
+
+#ScriviCommento #commenta {
     font-size: 2em;
 }
 
-.commento{
+.commento {
     margin: 1em 1em;
-    font-size:2.5em;
-    line-height:2em;
+    font-size: 2.5em;
+    line-height: 2em;
 }
-#ListaCommenti p{
+
+#ListaCommenti p {
     padding: 0;
 }
-.commento .miPiace{
+
+.commento .miPiace {
     background-size: 144px;
     width: 48px;
 }
+
 /*------------------------------------------------*/

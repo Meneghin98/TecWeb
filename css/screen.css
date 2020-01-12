@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+
+/* Body */
+
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
+    background-repeat: no-repeat;
+}
+
+
+/*  Torna su  */
+
 #button {
     position: fixed;
     border: none;
@@ -13,18 +29,13 @@
 
 }
 
-/* Head */
+/* Header */
 .screenReaderHelper, .headerChild h1, .headerChild label {
     display: block;
     height: 0;
     width: 0;
     overflow: hidden;
 }
-
-/*
-#logo a {
-    position: initial;
-}*/
 
 
 #header {
@@ -47,7 +58,6 @@
     flex: 20%;
     height: 90px;
 }
-
 
 .headerChild {
     margin-right: 1em;
@@ -74,28 +84,6 @@
 }
 
 
-/* Articoli migliori */
-/*
-.topArticles li img {
-    transition: none;
-}
-.topArticles li img:hover {
-    transform: none;
-}*/
-
-
-/* Body */
-
-body {
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 0.9em;
-    margin: auto;
-    height: 100%;
-    background-color: black;
-    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
-    background-repeat: no-repeat;
-}
-
 
 /* Menu */
 
@@ -109,13 +97,13 @@ body {
 }
 
 #menu ul {
-    background-color: #131313;
+    /*background-color: #131313;*/
     list-style-type: none;
     text-align: center;
     color: white;
     display: flex;
     flex-wrap: nowrap;
-    max-width: 650px;
+    max-width: 600px;
 }
 
 #menu li {
@@ -156,10 +144,16 @@ body {
     position: absolute;
 }
 
+
+/* Content */
+
 #content {
     background-color: white;
     padding-bottom: 1em;
 }
+
+
+/* Right Panel */
 
 .rightPanel {
     background-color: white;

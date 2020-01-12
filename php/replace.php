@@ -92,10 +92,10 @@ class html
 
             switch ($type_page) {
                 case 'accedi':
-                    $obj = str_replace('<a href="php/login.php" tabindex="0">Accedi</a>', 'Accedi', $obj);
+                    $obj = str_replace('<a href="login.php" tabindex="0">Accedi</a>', 'Accedi', $obj);
                     break;
                 case 'registrazione':
-                    $obj = str_replace('<a href="php/registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
+                    $obj = str_replace('<a href="registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
                     break;
                 case 'chi_siamo':
                     $obj = str_replace('<a href="" tabindex="0">Chi siamo</a>', 'Chi siamo', $obj);

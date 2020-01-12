@@ -130,7 +130,9 @@
     background-color: #1c1c1c;
     visibility: visible;
 }
-
+#logo {
+    margin-left: 10em;
+}
 /*-------- fine Header --------*/
 
 

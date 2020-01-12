@@ -41,9 +41,9 @@ create TABLE articles
     category       INT(5),
     editor         VARCHAR(50),
 
-    CONSTRAINT FK_editor FOREIGN KEY(editor) REFERENCES users(nickname)
+    CONSTRAINT FK_editor FOREIGN KEY (editor) REFERENCES users (nickname)
         ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_category_art FOREIGN KEY(category) REFERENCES categories(id)
+    CONSTRAINT FK_category_art FOREIGN KEY (category) REFERENCES categories (id)
         ON delete CASCADE ON update CASCADE
 );
 
@@ -55,9 +55,9 @@ create TABLE comments
     user          VARCHAR(50),
     article       INT(5),
 
-    CONSTRAINT FK_user FOREIGN KEY(user) REFERENCES users(nickname)
+    CONSTRAINT FK_user FOREIGN KEY (user) REFERENCES users (nickname)
         ON delete CASCADE ON update CASCADE,
-    CONSTRAINT FK_article FOREIGN KEY(article) REFERENCES articles(id)
+    CONSTRAINT FK_article FOREIGN KEY (article) REFERENCES articles (id)
         ON delete CASCADE ON update CASCADE
 );
 
@@ -202,9 +202,11 @@ values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
 
 insert into articles
     /*StarWars guida*/
-    (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values
-    (13, 'html/Altro/guidaStarWars.html', '2019-11-24', '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>', 'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.', 'gaming', 'Altro', '27', '4', null);
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (13, 'html/Altro/guidaStarWars.html', '2019-11-24',
+        '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>',
+        'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.',
+        'gaming', 'Altro', '27', '4', null);
 
 insert into articles
     /*Monster Hunter News*/
@@ -233,7 +235,8 @@ insert into articles
 values (17, 'html/News/newPS5.html', '2020-1-7',
         '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>: le nuove informazioni del 2020',
         'supporto al <span xml:lang="en">Ray Tracing</span> e finestra di lancio confermata',
-        '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3', null);    # category_type too long (Err. sql)
+        '<abbr xml:lang="en" title="Playstation 5">PS5</abbr>', 'News', '0', '3',
+        null); # category_type too long (Err. sql)
 
 insert into articles
     /*Code vein recensione*/
@@ -257,14 +260,24 @@ insert into articles
 values (20, 'html/News/newAMD.html', '2020-1-10',
         'Le novità AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
                         xml:lang="en">Threadripper</span> 3990X',
-        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1', null);
+        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1',
+        null);
 
 insert into articles
     /*Skyrim guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (21, 'html/Altro/guidaSkyrim.html', '2020-1-9',
         '<span xml:lang="en">Skyrim Mods</span>: Guida & Consigli',
-        'Come scaricare ed installare il miglior pacchetto di <span xml:lang="en">mod</span>', 'gaming', 'Altro', '0', '3', null);
+        'Come scaricare ed installare il miglior pacchetto di <span xml:lang="en">mod</span>', 'gaming', 'Altro', '0',
+        '3', null);
+insert into articles
+    /*GTA V Rew*/
+(id, path, creation_date, title, description, category_title, article_type, views, category, editor)
+values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
+        'GTA V, cinque volte GTA',
+        'Il titolo più atteso degli ultimi anni è finalmente arrivato. L''abbiamo giocato a
+                    lungo, senza un minuto di sosta e quello che segue è il nostro dettagliato giudizio',
+        '<span xml:lang="en"><abbr title="Play Station 3">PS3</abbr></span>', 'Recensioni', '200', '4', null);
 
 
 insert into images
@@ -332,21 +345,25 @@ insert into images
 values ('images/Altro/clash_royale.jpg', '', '16');
 
 insert into images
-(src, alt, article)
+    (src, alt, article)
 values ('images/News/PS5/logo-ps5.png', '', '17');
 
 insert into images
-(src, alt, article)
+    (src, alt, article)
 values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
 
 insert into images
-(src, alt, article)
+    (src, alt, article)
 values ('images/Altro/witcher1.jpg', '', '19');
 
 insert into images
-(src, alt, article)
+    (src, alt, article)
 values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore', '20');
 
 insert into images
-(src, alt, article)
+    (src, alt, article)
 values ('images/Altro/skyrim1.jpg', '', '21');
+
+insert into images
+(src, alt, article)
+values ('images/Recensioni/GTA-V/GTA5Copertina.jpg', 'Copertina del gioco', '22');

@@ -37,8 +37,8 @@
     padding-top: 0.5em;
 }
 
-#mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog,
-.passwordLog, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento, .bottoneMiPiace
+#mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
+.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento input, .bottoneMiPiace
 {
     display: none;
 }
@@ -937,10 +937,6 @@ body {
 #ScriviCommento p {
     display: inline;
 }
-/*
-#ScriviCommento input {
-    display: none;
-}*/
 
 #ScriviCommento #commenta {
     float: right;

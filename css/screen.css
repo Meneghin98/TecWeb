@@ -401,7 +401,7 @@ body {
 
 #Login {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 7em 0em;
+    padding: 7em 0;
 }
 
 #pulsanteLogin {
@@ -428,7 +428,7 @@ body {
 }
 */
 .signIn {
-    margin: 0em auto;
+    margin: 0 auto;
     width: 25em;
     /*background-color: white;
     border: transparent;*/
@@ -446,10 +446,9 @@ body {
 }
 
 .imageLogin {
-    background-image: url(../images/icons/login.png);
+    background-image: url(../images/icons/loginGreen.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100px;
     padding: 50px;
     display: block;
     margin: 4em auto;
@@ -470,7 +469,7 @@ body {
 .contentLog form {
     display: block;
     text-align: center;
-    margin: 0em 3em;
+    margin: 0 3em;
 
 }
 
@@ -503,7 +502,7 @@ body {
 
 .pulsantiLogin {
     display: block;
-    margin: 2em auto 0em auto;
+    margin: 2em auto 0 auto;
 }
 
 .pulsantiLogin a {

@@ -24,7 +24,7 @@
                 <span class=\"topArticleTitle\">$articolo[titolo]</span></a>
              </li>";
     }
-    $articoli = html::articoli($queryArticoli, $i);
+    $articoli = html::articoli($queryArticoli, $i-1);
     $articoli = str_replace('articolo.php', 'php/articolo.php', $articoli);
     $index = str_replace("£Articoli", $articoli, $index);
  }

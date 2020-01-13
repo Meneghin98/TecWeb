@@ -314,23 +314,23 @@ values ('images/Recensioni/cod-mw-2019/codmw.png', '', '8');
 
 insert into images
     (src, alt, article)
-values ('images/mi-surface-display.jpg', '', '9');
+values ('images/mi-surface-display.jpg', 'Viene mostrato il monitor', '9');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', '', '10');
+values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', 'Copertina del gioco', '10');
 
 insert into images
     (src, alt, article)
-values ('images/death-stranding-image.jpg', '', '11');
+values ('images/death-stranding-image.jpg', 'protagonista del gioco in primo piano', '11');
 
 insert into images
     (src, alt, article)
-values ('images/News/StarWars/StarWarsNews.jpg', '', '12');
+values ('images/News/StarWars/StarWarsNews.jpg', 'Il protagonista entra in un palazzo monumentale', '12');
 
 insert into images
     (src, alt, article)
-values ('images/Altro/StarWars/Copertina.jpg', '', '13');
+values ('images/Altro/StarWars/Copertina.jpg', 'Immagine di pubblicità di un gioco', '13');
 
 insert into images
     (src, alt, article)

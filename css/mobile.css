@@ -242,7 +242,7 @@
     margin: 2em auto 0 auto;
 }
 
-.description p, #ListaCommenti p {
+.description p{
     padding: 1em 1em 0 1em;
 
 }
@@ -271,7 +271,7 @@
     text-align: center;
 }
 
-.comment p, .pro, .contro, .diffs h3, #ListaCommenti {
+.comment p, .pro, .contro, .diffs h3{
     margin: 0;
 
 }
@@ -591,10 +591,6 @@ input#bottoneIndietroReg {
 si fa riferimento ai commenti anche fuori da questo
 blocco per evitare codice duplicato */
 
-#ScriviCommento {
-    margin: 1em 2.5em 4em;
-}
-
 #ScriviCommento p {
     padding: 0;
 }
@@ -603,14 +599,13 @@ blocco per evitare codice duplicato */
     font-size: 2em;
 }
 
-.commento {
-    margin: 1em 1em;
-    font-size: 2.5em;
-    line-height: 2em;
+#ListaCommenti p{
+    font-size: 3em;
 }
 
-#ListaCommenti p {
-    padding: 0;
+.commento {
+    font-size: 2.5em;
+    line-height: 2em;
 }
 
 .commento .miPiace {

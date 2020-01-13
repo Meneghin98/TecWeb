@@ -154,7 +154,26 @@ function openMenu() {
 function closeMenu() {
     var openButton = document.getElementById("openButton");
     var menu = document.getElementById("menu--offcanvas-1-js-opened");
-    openButton.classList.remove('openButton-js-hidden')
+    openButton.classList.remove('openButton-js-hidden');
     menu.setAttribute('id', 'menu');
 
+}
+function openSearch() {
+var openSearch = document.getElementById("mobileButton");
+var mobileBar = document.getElementById("searchBar");
+var exitButton = document.getElementById("closeSearch");
+
+openSearch.setAttribute('id','mobileButtonHidden');
+mobileBar.setAttribute('id','searchBarMobile');
+exitButton.setAttribute('id','closeSearchBar');
+}
+
+function closeSearch (){
+    var mobileButton = document.getElementById("mobileButtonHidden");
+    var mobileBarHiden = document.getElementById("searchBarMobile");
+    var closeSearchHidden = document.getElementById("closeSearchBar");
+
+    mobileButton.setAttribute('id','mobileButton');
+    mobileBarHiden.setAttribute('id','searchBar');
+    closeSearchHidden.setAttribute('id','closeSearch');
 }

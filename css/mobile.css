@@ -53,16 +53,13 @@
 }
 
 #closeButton {
-    visibility: visible;
+   display: initial;
     position: absolute;
     top: -5.5em;
     left: 1em;
     width: 3em;
     height: 3em;
     cursor: pointer;
-
-    /* close icon elements */
-    /* hover effect */
 }
 
 .closeButton:before, .closeButton:after {
@@ -88,17 +85,18 @@
 
 #mobileList {
     padding: 0;
-    margin: 1em 0 0 0;
+    margin: -1em 0 0 0;
     list-style-type: none;
     font-size: 1.5em;
-    font-weight: bold;
 }
 #mobileList li {
     margin-top: 1em;
+    text-align: center;
 }
 #mobileList a{
     text-decoration: none;
     color: white;
+    padding: 0 19em;
 }
 
 #mobileList #currentlink{
@@ -131,7 +129,47 @@
     visibility: visible;
 }
 #logo {
-    margin-left: 10em;
+    margin: 0 auto;
+    flex: none;
+}
+#mobileButton{
+    display: initial;
+    width: 100%;
+}
+#searchBarMobile button {
+    display: initial;
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 2em;
+    right: 6em;
+}
+#searchBarMobile input {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: unset;
+    height: 2.4em;
+    width: 100%;
+    font-size: 3em;
+}
+#searchBar button {
+    display: none;
+}
+
+#closeSearchBar {
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.8em 1em 2em 1em;
+}
+#mobileButtonHidden {
+    display: none;
+}
+.headerChild:last-of-type {
+    margin-left: 1em;
 }
 /*-------- fine Header --------*/
 
@@ -146,6 +184,10 @@
 
 .topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
     flex: 50%;
+}
+
+.articleList li {
+    border-top: 5px solid #dddcdc;
 }
 
 /*--------- Articoli + recensioni -------*/
@@ -179,6 +221,7 @@
     width: 100%;
     height: unset;
     float: none;
+    margin: 0;
 }
 
 .categoriaGenerale {

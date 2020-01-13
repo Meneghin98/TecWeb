@@ -38,8 +38,7 @@
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog,
-.passwordLog, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento, .bottoneMiPiace
-{
+.passwordLog, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento, .bottoneMiPiace {
     display: none;
 }
 
@@ -59,31 +58,31 @@
 
 #searchBar button {
     position: relative;
-    right: 2.5em;
-    top: 0.4em;
+    right: 3.5em;
+    top: 0.5em;
     border: 0;
     background: transparent;
     cursor: pointer;
 }
 
-#searchBar input {
+#search {
     position: relative;
     border-radius: 25px;
     border: 3px solid #0E9C09;
     padding: .3em 2.1em 0.3em 1em;
 }
 
-
-/* Articoli migliori */
-/*
-.topArticles li img {
-    transition: none;
+#mobileButton {
+    display: none;
 }
-.topArticles li img:hover {
-    transform: none;
-}*/
 
+#searchBar button img {
+    width: 40%;
+}
 
+#closeSearch {
+    display: none;
+}
 /* Body */
 
 body {
@@ -152,8 +151,7 @@ body {
 }
 
 #closeButton {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
 #content {
@@ -383,6 +381,7 @@ body {
     overflow: hidden;
     left: -9999px;
 }
+
 /*
 #pulsanteRegistrati {
     display: none;
@@ -589,6 +588,7 @@ body {
     display: block;
     width: 100%;
 }
+
 /*
 #avatar input {
     display: none;
@@ -599,6 +599,7 @@ body {
     cursor: pointer;
     background-color: #0E9C09;
 }
+
 /*
 #save {
     border: none;
@@ -907,6 +908,7 @@ body {
 .upBlue {
     background-position: center;
 }
+
 /*
 .bottoneMiPiace {
     display: none;
@@ -937,6 +939,7 @@ body {
 #ScriviCommento p {
     display: inline;
 }
+
 /*
 #ScriviCommento input {
     display: none;

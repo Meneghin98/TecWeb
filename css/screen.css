@@ -46,6 +46,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5em;
+   /* position: sticky;
+    top: 0;
+    z-index: 1;*/
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
@@ -108,6 +111,9 @@ body {
 
 #menu {
     background-color: #131313;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #menu ul {
@@ -177,7 +183,7 @@ body {
     margin-left: 2em;
     margin-bottom: 1em;
     position: sticky;
-    top: 0;
+    top: 2.20em;
 }
 
 .rightPanel dt {

@@ -223,6 +223,9 @@
     float: none;
     margin: 0;
 }
+.articleList li:first-of-type {
+    display: inherit;
+}
 
 .categoriaGenerale {
     position: relative;

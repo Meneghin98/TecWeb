@@ -36,6 +36,18 @@
 
 /*-------------------------------------------------------------------------*/
 /*---------Header-----------*/
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#logoDesktop {
+    display: none;
+}
+#logoMobile {
+    display: inherit;
+}
+
 #mobileMenu {
     display: unset;
     width: 3em;
@@ -55,10 +67,8 @@
 #closeButton {
    display: initial;
     position: absolute;
-    top: -5.5em;
+    top: -10.75em;
     left: 1em;
-    width: 3em;
-    height: 3em;
     cursor: pointer;
 }
 
@@ -92,11 +102,12 @@
 #mobileList li {
     margin-top: 1em;
     text-align: center;
+    font-size: 2em
 }
 #mobileList a{
     text-decoration: none;
     color: white;
-    padding: 0 19em;
+    padding: 0 8em;
 }
 
 #mobileList #currentlink{
@@ -120,8 +131,9 @@
     transition-delay: 0s;
     left: 0;
     opacity: 1;
-    position: relative;
-    top: 0;
+    position: sticky;
+    top: 10em;
+    z-index: 1;
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
@@ -129,8 +141,9 @@
     visibility: visible;
 }
 #logo {
-    margin: 0 auto;
+    margin: 1em auto 1.5em auto;
     flex: none;
+    height: inherit;
 }
 #mobileButton{
     display: initial;
@@ -141,8 +154,8 @@
     position: absolute;
     background: transparent;
     border: none;
-    top: 2em;
-    right: 6em;
+    top: 3.5em;
+    right: 9em;
 }
 #searchBarMobile input {
     display: inherit;
@@ -150,9 +163,10 @@
     top: 0;
     left: 0;
     border-radius: unset;
-    height: 2.4em;
+    height: 4.6em;
     width: 100%;
     font-size: 3em;
+    border: 3px solid #0E9C09;
 }
 #searchBar button {
     display: none;
@@ -163,13 +177,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1.8em 1em 2em 1em;
+    padding: 3em 1em 2em 1em;
 }
 #mobileButtonHidden {
     display: none;
 }
 .headerChild:last-of-type {
     margin-left: 1em;
+}
+.headerChild:last-of-type img {
+    width: 100%;
 }
 /*-------- fine Header --------*/
 
@@ -185,7 +202,9 @@
 .topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
     flex: 50%;
 }
-
+.topArticles li img {
+    height: unset;
+}
 .articleList li {
     border-top: 5px solid #dddcdc;
 }

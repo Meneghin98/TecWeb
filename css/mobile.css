@@ -223,6 +223,9 @@
     float: none;
     margin: 0;
 }
+.articleList li:first-of-type {
+    display: inherit;
+}
 
 .categoriaGenerale {
     position: relative;
@@ -588,8 +591,6 @@ input#bottoneIndietroReg {
 si fa riferimento ai commenti anche fuori da questo
 blocco per evitare codice duplicato */
 
-
-
 #ScriviCommento p {
     padding: 0;
 }
@@ -603,11 +604,9 @@ blocco per evitare codice duplicato */
 }
 
 .commento {
-    
     font-size: 2.5em;
     line-height: 2em;
 }
-
 
 .commento .miPiace {
     background-size: 144px;

@@ -46,6 +46,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5em;
+   /* position: sticky;
+    top: 0;
+    z-index: 1;*/
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
@@ -108,6 +111,9 @@ body {
 
 #menu {
     background-color: #131313;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #menu ul {
@@ -176,6 +182,8 @@ body {
     padding: 0.5em 1em 1em 1em;
     margin-left: 2em;
     margin-bottom: 1em;
+    position: sticky;
+    top: 2.20em;
 }
 
 .rightPanel dt {
@@ -235,7 +243,9 @@ body {
     flex: 20%;
 }
 
-
+.articleList li:first-of-type {
+    display: none;
+}
 .articleList li {
     border-top: 1px solid #dddcdc;
     padding-top: 1em;
@@ -318,7 +328,11 @@ body {
     background-color: darkgoldenrod;
 
 }
-
+@media screen and (max-width: 1600px) {
+    .rightPanel {
+        position: unset;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .flexColumn:last-of-type {
@@ -672,10 +686,7 @@ body {
 /*
  ---------------------- Recensione e articolo ----------------------------------
 */
-#sticky {
-    position: sticky;
-    top: 0;
-}
+
 
 .pro {
     list-style-image: url("../images/icons/correct.png");
@@ -992,7 +1003,7 @@ body {
 
 .topArticles li img {
     width: 100%;
-    height: 100%;
+    height: 366px;
     /*-webkit-transition: 0.8s;
     -moz-transition: 0.8s;
     -o-transition: 0.8s;

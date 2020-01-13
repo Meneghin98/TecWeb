@@ -32,7 +32,7 @@ create TABLE articles
 (
     id             INT PRIMARY KEY AUTO_INCREMENT,
     path           VARCHAR(50)  NOT NULL,
-    creation_date  DATE DEFAULT CURRENT_TIMESTAMP(),
+    creation_date  DATE,
     title          VARCHAR(300) NOT NULL,
     description    VARCHAR(300),
     category_title VARCHAR(75)  NOT NULL,

@@ -260,7 +260,7 @@ insert into articles
 values (20, 'html/News/newAMD.html', '2020-1-10',
         'Le novità AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
                         xml:lang="en">Threadripper</span> 3990X',
-        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'NEWS', '50', '1',
+        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'News', '50', '1',
         null);
 
 insert into articles

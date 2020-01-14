@@ -8,8 +8,8 @@
  - [x] Star wars Jedi: Fallen order PS4
  - [x] Dead Stranding
  - [x] Asgard's Wrath
- - [ ] Munster Hunter World:Iceborn
- - [ ] GTA V
+ - [ ] Munster Hunter World: Iceborn
+ - [X] GTA V
  - [x] Code Vein
 
 #### News

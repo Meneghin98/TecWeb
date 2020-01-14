@@ -2,7 +2,7 @@
 - ## Fare articoli
     - EDOARDO: 3 guide 
     - SIMONE: 1 new 1 rec
-    - JAKE: 1 rew 
+    - JAKE: 
     - ENRICO: 1 new 2 guide
 - ## Aiuti alla navigazione
     - Bottoni torna su : diuscutere su slack
@@ -18,10 +18,12 @@
 - Editori
 - Rendere dinamiche le pagine
 - Finire interazioni con il DB
-- Rendere dinamico rightPannel
+- Rendere dinamico rightPannel 
+    - fatto
 # JavaScript
 - Gestire form e controlli
-- Curare transizioni
+- Curare transizioni 
+    - Parte mobile fatta
 # MOBILE
 - Pagine utente *Simone*
 - Trigger parte mobile *Edoardo* *Jake*

@@ -242,7 +242,7 @@
     float: none;
     margin: 0;
 }
-.articleList li:first-of-type {
+#hiddenArticle li:first-of-type {
     display: inherit;
 }
 

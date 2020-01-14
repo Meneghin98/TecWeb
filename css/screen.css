@@ -52,7 +52,7 @@ body {
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
-.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento input, .bottoneMiPiace
+.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save input, #ScriviCommento input, .bottoneMiPiace
 {
     display: none;
 }
@@ -642,24 +642,15 @@ body {
     width: 100%;
 }
 
-/*
-#avatar input {
-    display: none;
-}*/
-
 #custom-file-upload {
     padding: .3em 0;
     cursor: pointer;
     background-color: #0E9C09;
 }
 
-/*
 #save {
     border: none;
 }
-#save input {
-    display: none;
-}*/
 
 #save label {
     background-color: white;

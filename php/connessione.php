@@ -65,7 +65,7 @@ class DBConnection
 
     public function newUser($nome, $cognome, $nickname, $email, $password)
     {
-        $query = "INSERT INTO users VALUES ('$nickname','$password','$email','$nome','$cognome','user','NULL','default.jpg')";
+        $query = "INSERT INTO users VALUES ('$nickname','$password','$email','$nome','$cognome','user',NULL,'default.jpg')";
         mysqli_query($this->connection, $query);
     }
 

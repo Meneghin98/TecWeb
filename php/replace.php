@@ -17,7 +17,7 @@ class html
             $rep = str_replace("£utente", $change, $rep);
         } else {
             $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
-                src=\"../images/icons/Registrati-sito-web.png\" alt=\"login e registrazione\" /></a>";
+                src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" /></a>";
             $rep = str_replace("£utente", $change, $rep);
         }
         return $rep;

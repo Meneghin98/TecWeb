@@ -3,7 +3,9 @@
         <img id="openButton" on onclick="openMenu()" src="../images/icons/hamburger.png" alt="apri menu"/>
     </div>
     <div class="headerChild" id="logo">
-        <a href="../index.php"><img src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
+        <a id="logoDesktop" href="../index.php"><img  src="../images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" /></a>
+        <a id="logoMobile" href="../index.php"><img src="../images/icons/fantasmino-logo+sigla.png" alt="Decrypted Games" /></a>
+
         <h1>Decrypted Games</h1>
         <div class="screenReaderHelper">
             <a href="#content" tabindex="0">Vai al contenuto</a>
@@ -11,13 +13,13 @@
         </div>
     </div>
     <div class="headerChild" id="searchBar">
-        <img id="mobileButton" onclick="openSearch()" src="../images/icons/lente50x50.svg" alt="apri barra di ricerca"/>
+        <img id="mobileButton" onclick="openSearch()" src="../images/icons/lente100x100.png" alt="apri barra di ricerca"/>
         <form action="ricerca.php" method="post">
             <fieldset>
                 <label for="search" tabindex="0">Ricerca</label>
                 <input type="text" name="searchInput" id="search" />
                 <button type="submit">
-                    <img src="../images/icons/lente50x50.svg" alt="submit"/>
+                    <img src="../images/icons/lente100x100.png" alt="submit"/>
                 </button>
             </fieldset>
         </form>

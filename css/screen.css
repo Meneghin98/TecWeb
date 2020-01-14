@@ -585,13 +585,13 @@ body {
     min-height: 300px;
 }
 
-.datiAccount fieldset {
+#datiAccount fieldset {
     border-radius: 25px;
     border: 3px solid #0E9C09;
 
 }
 
-.datiAccount {
+#datiAccount {
     max-width: 650px;
     list-style-type: none;
     margin: 2em auto 0;
@@ -600,22 +600,22 @@ body {
     font-size: medium;
 }
 
-.datiAccount fieldset label {
+#datiAccount fieldset label {
     display: block;
     padding: 0.3em 0;
     margin: 0;
 }
 
-.datiAccount .groupBox input {
+#datiAccount .groupBox input {
     width: 100%;
 }
 
-.datiAccount li {
+#datiAccount li {
     padding: 1.2em 0;
     margin-left: 5em;
 }
 
-.datiAccount li a:link, .datiAccount li a:visited{
+#datiAccount li a:link, #datiAccount li a:visited{
     color: yellow;
 }
 

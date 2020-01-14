@@ -593,23 +593,23 @@ input#bottoneIndietroReg {
     max-width: 350px;
 }
 
-.datiAccount {
+#datiAccount {
     max-width: unset;
     font-size: 2.5em;
     margin: 1em 1em 1em 2em;
 }
-.datiAccount li{
+#datiAccount li{
     margin: 0;
 }
 .groupBox {
     margin: 1em;
 }
 
-.datiAccount fieldset label {
+#datiAccount fieldset label {
     margin: .2em 0;
 }
 
-.datiAccount .groupBox input {
+#datiAccount .groupBox input {
     padding: .2em;
     font-size: 1.5em;
 }

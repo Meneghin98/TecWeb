@@ -268,7 +268,7 @@ html body {
 /* ---------------------- */
 /*      Area utente       */
 /* ---------------------- */
-.datiAccount fieldset label, #avatar img{
+#datiAccount fieldset label, #avatar img{
     display: block;
 }
 
@@ -280,7 +280,7 @@ html body {
     display: none;
 }
 
-.datiAccount fieldset {
+#datiAccount fieldset {
     margin: .5em 0;
 }
 .groupBox input{

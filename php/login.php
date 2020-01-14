@@ -30,12 +30,12 @@ if (isset($_POST['Accedi'])) {
                     <fieldset class='\FormLogin\'>
                     <legend>Accedi</legend> 
                         <div class=\"emailLog\">
-                            <img src=\"../../images/icons/email1.png\" alt=\"icona email\">
+                            <img src=\"../images/icons/email1.png\" alt=\"icona email\">
                             <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</label>
                             <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"$nickname\" />
                         </div>
                         <div class=\"passwordLog\">
-                             <img src=\"../../images/icons/lucchetto1.png\" alt=\"icona password\">
+                             <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
                              <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password</span>:</label>
                              <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\" />
                         </div> 
@@ -60,12 +60,12 @@ if (isset($_POST['Accedi'])) {
               <legend>Accedi</legend>
 
              <div class=\"emailLog\">
-                    <img src=\"../../images/icons/email1.png\" alt=\"icona email\">
+                    <img src=\"../images/icons/email1.png\" alt=\"icona email\">
                     <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</label>
                     <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"\"/>
              </div>
              <div class=\"passwordLog\">
-                    <img src=\"../../images/icons/lucchetto1.png\" alt=\"icona password\">
+                    <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
                     <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password</span>:</label>
                     <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\"/>
              </div>

@@ -459,8 +459,9 @@ body {
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
-    background-color: rgba(52, 52, 52, 1);}
+    background-color: rgba(52, 52, 52, 1);
 
+}
 .contentLog legend {
     color: white;
     font-size: 2em;

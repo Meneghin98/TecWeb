@@ -211,7 +211,7 @@ class DBConnection
         $query = "UPDATE users SET";
         $query .= $valuesArray['oldPwd'] != "" ? " pwd = '$valuesArray[newPwd]'," : " ";
         $query .= "nickname = '$valuesArray[nickname]', email = '$valuesArray[email]', username = '$valuesArray[nome]', surname = '$valuesArray[cognome]'";
-        $query .= $valuesArray['riferimento'] != "" ? ", ref = '$valuesArray[riferimento]'" : '';
+        $query .= $valuesArray['riferimento'] != "" ? ", ref = '$valuesArray[riferimento]'" : ', ref = NULL';
         $query .= $valuesArray['img'] != "" ? ", img_src = '$valuesArray[img]' " : ' ';
         $query .= "WHERE users.nickname = '$nickname'";
         mysqli_query($this->connection, $query);

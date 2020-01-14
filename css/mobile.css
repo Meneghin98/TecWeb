@@ -590,10 +590,12 @@ input#bottoneIndietroReg {
 
 .datiAccount {
     max-width: unset;
-    margin: 1em 0;
     font-size: 2.5em;
+    margin: 1em 1em 1em 2em;
 }
-
+.datiAccount li{
+    margin: 0;
+}
 .groupBox {
     margin: 1em;
 }

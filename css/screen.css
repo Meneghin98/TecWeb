@@ -614,6 +614,10 @@ body {
     margin-left: 5em;
 }
 
+.datiAccount li a:link, .datiAccount li a:visited{
+    color: yellow;
+}
+
 .groupBox p {
     font-size: .8em;
     margin: .3em 0 .8em;

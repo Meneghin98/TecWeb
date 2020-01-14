@@ -50,7 +50,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     if (!checkEmail($_POST['email']))
         $errori .= "<li>Verifica che l'e-mail inserita sia valida</li>";
     if (!checkRiferimento($_POST['riferimento']))
-        $errori .= "<li>Il riferimento inserito non è valido</li>";
+        $errori .= "<li>Il riferimento inserito non è valido. Rimuovere eventuali http o https</li>";
 
     if ($_POST['oldPwd'] != "") { //se è stata inserita la password vuol dire che voglio modificarla
         if ($_POST['oldPwd'] != $utente['password'])

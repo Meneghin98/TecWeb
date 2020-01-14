@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once("connessione.php");
 require_once("replace.php");
 
@@ -19,6 +21,6 @@ $file = str_replace('£cognome',$utente['cognome'],$file);
 if (is_null($utente['riferimento']))
     $file = str_replace('£ref','',$file);
 else
-    $file = str_replace('£ref',"<li>Riferimento: $utente[riferimento]</li>",$file);
+    $file = str_replace('£ref',"<li>Riferimento: <a href=\"http://$utente[riferimento]\">$utente[riferimento]</a></li>",$file);
 $DB->close();
 echo $file;

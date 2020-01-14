@@ -248,7 +248,7 @@ body {
     flex: 20%;
 }
 
-.articleList li:first-of-type {
+#hiddenArticle li:first-of-type {
     display: none;
 }
 .articleList li {

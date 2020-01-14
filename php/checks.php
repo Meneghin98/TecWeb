@@ -1,6 +1,8 @@
 <?php
 function checkNickname($nickname){
-    return true; //implementare
+    if(!preg_match('/^([a-zA-Z1-9]{3,15})$/', $nickname))
+        return false;
+    return true;
 }
 
 function checkNome($nome){

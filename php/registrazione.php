@@ -1,6 +1,7 @@
 <?php
 require_once("connessione.php");
 require_once("replace.php");
+require_once("checks.php");
 
 session_start();
 
@@ -10,23 +11,23 @@ $file = str_replace('£footer', html::linked_obj("footer","page", "registrazione
 $file = str_replace('£menu_', html::linked_obj("menu","page", "registrazione"), $file);
 $file = str_replace('£header', html::header(), $file);
 
-function checkInput($nome, $cognome, $username, $email, $password) {
+function checkInput($nome, $cognome, $nickname, $email, $password) {
 
     $messaggio = "";
 
-    if(!preg_match ('/^([a-zA-Z]{3,15})$/', $nome)) {
+    if(!checkNome($nome)) {
         $messaggio .= "<li>Il nome che è stato inserito non è conforme</li>";
     }
-    if(!preg_match ('/^([a-zA-Z]{3,15})$/', $cognome)) {
+    if(!checkCognome($cognome)) {
         $messaggio .= "<li>Il cognome che è stato inserito non è conforme</li>";
     }
-    if(!preg_match('/^([a-zA-Z1-9]{3,15})$/', $username)) {
-        $messaggio .= "<li>L'username che è stato inserito non è conforme</li>";
+    if(!checkNickname($nickname)) {
+    $messaggio .= "<li>L'username che è stato inserito non è conforme</li>";
     }
-    if(!preg_match ("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/", $email)) {
+    if(!checkEmail($email)) {
         $messaggio .= "<li>L'email che è stata inserita non è conforme</li>";
     }
-    if(!preg_match ("/^(?=.*[0-9])(?=.*[a-z])[a-zA-Z0-9!.@#$%^&*]{6,16}$/", $password)) {
+    if(!checkPassword($password)) {
         $messaggio .= "<li>La password che è stata inserita non è conforme</li>";
     }
     return $messaggio;

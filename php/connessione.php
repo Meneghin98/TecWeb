@@ -63,9 +63,10 @@ class DBConnection
         mysqli_query($this->connection, $query);
     }
 
-    public function newUser($nome, $cognome, $username, $email, $password)
+    public function newUser($nome, $cognome, $nickname, $email, $password)
     {
-        $query = "INSERT INTO users VALUES ('$username','$cognome','$email','$nome','$password')";
+        $query = "INSERT INTO users VALUES ('$nickname','$password','$email','$nome','$cognome','user','NULL','default.jpg')";
+        mysqli_query($this->connection, $query);
     }
 
     public function getLikesOfUser($nickname, $idArticolo)

@@ -52,7 +52,7 @@ body {
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
-.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save, #ScriviCommento input, .bottoneMiPiace
+.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save input, #ScriviCommento input, .commento input
 {
     display: none;
 }
@@ -643,24 +643,15 @@ body {
     width: 100%;
 }
 
-/*
-#avatar input {
-    display: none;
-}*/
-
 #custom-file-upload {
     padding: .3em 0;
     cursor: pointer;
     background-color: #0E9C09;
 }
 
-/*
 #save {
     border: none;
 }
-#save input {
-    display: none;
-}*/
 
 #save label {
     background-color: white;
@@ -948,6 +939,18 @@ body {
     cursor: pointer;
 }
 
+.delete{
+    font-size: 1em;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("../images/icons/delete.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    padding: .3em;
+}
+
 .upBlack {
     background-position: left;
 }
@@ -960,11 +963,6 @@ body {
     background-position: center;
 }
 
-/*
-.bottoneMiPiace {
-    display: none;
-}
-*/
 #ScriviCommento {
     margin: 1em 0 4em;
 }

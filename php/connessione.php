@@ -56,6 +56,12 @@ class DBConnection
         $query = "INSERT INTO comments VALUES (NULL, DEFAULT, '$text', '$user', '$article')";
         mysqli_query($this->connection, $query);
     }
+    public function removeComment($id){
+        $query = "DELETE FROM likes WHERE id='$id'";
+        mysqli_query($this->connection, $query);
+        $query = "DELETE FROM comments WHERE id='$id'";
+        mysqli_query($this->connection, $query);
+    }
 
     public function newUser($nome, $cognome, $username, $email, $password)
     {

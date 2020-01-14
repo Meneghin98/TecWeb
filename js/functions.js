@@ -3,6 +3,7 @@ function trimText(id) {
     element.innerHTML = element.textContent.trim();
 }
 
+//-----------Sezione commenti--------------------
 function commentoVuoto() {
     let commentText = document.getElementById("textarea").value.trim();
     if (commentText.length === 0) {
@@ -37,8 +38,9 @@ function miPiaceOut(id) {
     }
 }
 
-function miPiace(id) {
-    let classList = document.getElementById(id).classList;
+function miPiace(idstring) {
+    let classList = document.getElementById(idstring).classList;
+    let id = idstring.replace("Label", "");
     if (classList.contains("upBlue")) {
         classList.remove("upBlue");
         classList.add("upBlack");
@@ -58,6 +60,36 @@ function miPiace(id) {
         })
     }
 }
+
+function eliminaCommento(idstring) {
+    let id = idstring.replace("commento_", "");
+    if (confirm('Sei sicuro di voler rimuovere il commento?')) {
+        $.ajax({
+            type: "GET",
+            url: "delete.php?id=" + id,
+            success: function () {
+                let commento = document.getElementById(idstring);
+                let nodes = commento.parentNode.childNodes;
+                if (nodes.length === 1 ){
+                    let listacommenti = commento.parentNode.parentNode;
+                    listacommenti.removeChild(commento.parentNode);
+                    let p = document.createElement("P");
+                    p.appendChild(document.createTextNode("Non ci sono commenti al momento"));
+                    listacommenti.appendChild(p);
+                }
+                else{
+                    commento.parentNode.removeChild(commento);
+                }
+            },
+            error: function () {
+                alert("Non è stato possibile rimuovere il commento")
+            }
+        })
+    }
+}
+
+//-----------Fine sezione commenti--------------------
+
 
 // ------------------------- LOGIN --------------------------
 

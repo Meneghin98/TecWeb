@@ -46,9 +46,10 @@ if (isset($_POST['Accedi'])) {
         $file = str_replace('£erroriLogin', $beginList, $file);
         echo $file;
     } else {
-        $db->close();
         $_SESSION['loggato'] = true;
-        $_SESSION["nickname"] = $nickname;
+        $_SESSION['nickname'] = $nickname;
+        $_SESSION['level'] = $db->getUtenteArray($nickname)['tipologia'];
+        $db->close();
         header("Location: ../index.php");
     }
 

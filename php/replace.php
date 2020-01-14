@@ -136,20 +136,26 @@ class html
         $commenti = "";
         if (!$isLogged) { //sostituisce l'input del "mi piace" con un link al login (un utente non loggato non pùò inserire "mi piace")
             foreach ($commenti_array as $commento) {
-                $commenti .= "<li class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><a href=\"login.php\" class=\"miPiace upGray \" id=\"$commento[id]Label\" onmouseover=\"miPiaceOver('$commento[id]Label')\" onmouseout=\"miPiaceOut('$commento[id]Label')\">Mi piace</a><p class=\"numeroLike\">$commento[likes]</p></li>";
+                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><a href=\"login.php\" class=\"miPiace upGray \" id=\"Label$commento[id]\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</a><p class=\"numeroLike\">$commento[likes]</p></li>";
             }
-        } else if (is_null($id_commenti_con_like)) {
+        } else if (is_null($id_commenti_con_like)) { //non ci sono commenti con il "mi piace" dell'utente loggato
             foreach ($commenti_array as $commento) {
-                $commenti .= "<li class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><label class=\"miPiace upGray \" for=\"$commento[id]\" id=\"$commento[id]Label\" onclick=\"miPiace('$commento[id]Label')\" onmouseover=\"miPiaceOver('$commento[id]Label')\" onmouseout=\"miPiaceOut('$commento[id]Label')\">Mi piace</label><input class=\"bottoneMiPiace\" id=\"$commento[id]\" type=\"button\" value=\"up\" name=\"miPiace\" /><p class=\"numeroLike\">$commento[likes]</p></li>";
+                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre>";
+                if ($_SESSION['level'] == 'admin') //l'utente è un admin, aggiungo la possibilità di rimuovere il commento
+                    $commenti.= "<label onclick=\"eliminaCommento('commento_$commento[id]')\" class=\"delete\" title=\"Rimuovi commento\" for=\"delete_$commento[id]\">Elimina commento</label><input id=\"delete_$commento[id]\" type=\"button\" value=\"delete\" name=\"elimina commento\" />";
+                $commenti .= "<label title=\"Mi piace\" class=\"miPiace upGray \" for=\"input_$commento[id]\" id=\"Label$commento[id]\" onclick=\"miPiace('Label$commento[id]')\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</label><input  id=\"input_$commento[id]\" type=\"button\" value=\"up\" name=\"miPiace\" /><p class=\"numeroLike\">$commento[likes]</p></li>";
             }
         } else {
-            foreach ($commenti_array as $commento) {
-                $commenti .= "<li class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><label class=\"miPiace";
+            foreach ($commenti_array as $commento) { //ci sono commenti a cui ha messo mi piace
+                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre>";
+                if ($_SESSION['level'] == 'admin') //l'utente è un admin, aggiungo la possibilità di rimuovere il commento
+                    $commenti.= "<label onclick=\"eliminaCommento('commento_$commento[id]')\" class=\"delete\" title=\"Rimuovi commento\" for=\"delete_$commento[id]\">Elimina commento</label><input id=\"delete_$commento[id]\" type=\"button\" value=\"delete\" name=\"elimina commento\" />";
+                $commenti .= "<label title=\"Mi piace\" class=\"miPiace ";
                 if (self::array_contain($commento['id'], $id_commenti_con_like))
                     $commenti .= " upBlue";
                 else
                     $commenti .= " upGray";
-                $commenti .= " \" for=\"$commento[id]\" id=\"$commento[id]Label\" onclick=\"miPiace('$commento[id]Label')\" onmouseover=\"miPiaceOver('$commento[id]Label')\" onmouseout=\"miPiaceOut('$commento[id]Label')\">Mi piace</label><input class=\"bottoneMiPiace\" id=\"$commento[id]\" type=\"button\" value=\"up\" name=\"miPiace\" /><p class=\"numeroLike\">$commento[likes]</p></li>";
+                $commenti .= " \" for=\"input_$commento[id]\" id=\"Label$commento[id]\" onclick=\"miPiace('Label$commento[id]')\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</label><input  id=\"input_$commento[id]\" type=\"button\" value=\"up\" name=\"miPiace\" /><p class=\"numeroLike\">$commento[likes]</p></li>";
             }
         }
         return $commenti;

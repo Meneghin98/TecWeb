@@ -939,6 +939,7 @@ body {
 }
 
 .delete{
+    margin-top: .7em;
     font-size: 1em;
     float: right;
     text-indent: -9999px;

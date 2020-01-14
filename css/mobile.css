@@ -644,4 +644,9 @@ blocco per evitare codice duplicato */
     width: 48px;
 }
 
+.commento .delete{
+    width: 48px;
+    background-size: 100%;
+}
+
 /*------------------------------------------------*/

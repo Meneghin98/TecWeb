@@ -316,12 +316,24 @@
 
 
 #menuMobileLogin {
+    background-color: rgba(52, 52, 52, 1);
     display: flex;
     align-items: center;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.FormLogin {
+    border: none;
+}
+
+.FormLogin legend {
+    display: none;
 }
 
 #menuMobileLogin img {
-    display: block;
+    display: none;
+    /*display: block;   MOD1 */
     color: white;
     width: 150px;
     font-size: 4em;
@@ -330,7 +342,7 @@
 #menuMobileLogin h1 {
     display: block;
     color: white;
-    padding-right: 150px;
+    /*padding-right:150px;    MOD1 */
     margin: auto;
     font-size: 6em;
 }

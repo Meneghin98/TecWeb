@@ -22,7 +22,7 @@ html body {
     text-align: center;
 }
 
-#searchBar, #login {
+#searchBar, #login, #mobileMenu, #logo img, .screenReaderHelper, #menu img{
     display: none;
 }
 
@@ -263,3 +263,26 @@ html body {
 /* ---------------------- */
 /*      Registrazione     */
 /* ---------------------- */
+
+
+/* ---------------------- */
+/*      Area utente       */
+/* ---------------------- */
+.datiAccount fieldset label, #avatar img{
+    display: block;
+}
+
+#save{
+    border: none;
+}
+
+#save label{
+    display: none;
+}
+
+.datiAccount fieldset {
+    margin: .5em 0;
+}
+.groupBox input{
+    width: 100%;
+}

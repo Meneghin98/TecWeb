@@ -29,5 +29,7 @@ function checkPassword($password){
 }
 
 function checkRiferimento($riferimento){
-    return true;//implementare
+    if(!preg_match('%^(((?:(?!(https?://)).)|(www\.))([a-z0-9-].?)+(:[0-9]+)?(/.*)?)|$%i', $riferimento))
+        return false;
+    return true;
 }

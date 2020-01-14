@@ -1,7 +1,7 @@
 <?php
 require_once("replace.php");
 require_once("connessione.php");
-
+session_start();
 switch ($_GET['t']) {
     case 'n':
         $path = "News/news";

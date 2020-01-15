@@ -22,7 +22,7 @@ html body {
     text-align: center;
 }
 
-#searchBar, #login, #mobileMenu, #logo img, .screenReaderHelper, #menu img {
+#searchBar, #login, #mobileMenu, #logo img, .screenReaderHelper, #menu img, #button, #TitoloCommenti, #ListaCommenti , .emailLog img, .passwordLog img {
     display: none;
 }
 
@@ -250,9 +250,7 @@ html body {
     font-size: 2em;
 }
 
-#button, #TitoloCommenti, #ListaCommenti {
-    display: none;
-}
+
 
 /* ---------------------- */
 /*          Footer        */

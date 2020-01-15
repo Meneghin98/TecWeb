@@ -65,8 +65,21 @@ $file = str_replace('£rightPanel', html::rightPanel(), $file);
 $file = str_replace('£menu_', html::linked_obj('menu', 'page', null), $file);
 
 $file = str_replace('£articoli', html::articoli($listaArticoli_match, 0), $file);
+$DB = new DBConnection();
+$top3 = $DB->getTop3();
+if (!is_null($top3)) {
+    $file = str_replace('£top3', html::top3($top3), $file);
+} else {
+    $file = str_replace('£top3', '', $file);
 
-
+}
+$lastRew = $DB->getLastRew();
+if (!is_null($lastRew)) {
+    $file = str_replace('£lastRew', html::lastRew($lastRew), $file);
+} else {
+    $file = str_replace('£lastRew', '', $file);
+}
+$DB->close();
 // Mostra la pagina dei risultati
 
 echo $file;

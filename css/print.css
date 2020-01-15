@@ -13,7 +13,7 @@ html body {
 /*          Header        */
 /* ---------------------- */
 
-.bgimage{
+.bgimage {
     clear: both;
 }
 
@@ -22,26 +22,29 @@ html body {
     text-align: center;
 }
 
-#searchBar, #login, #mobileMenu, #logo img, .screenReaderHelper, #menu img{
+#searchBar, #login, #mobileMenu, #logo img, .screenReaderHelper, #menu img {
     display: none;
 }
 
 /* ---------------------- */
 /*          Menu        */
 /* ---------------------- */
-
-.menu {
+#menu {
+    display: none;
+}
+/*
+#menu {
     text-align: center;
     font-size: 1em;
     max-width: 60%;
     margin: auto;
 }
 
-.menu ul {
+#menu ul {
     display: flex;
 }
 
-.menu li {
+#menu li {
     display: inline-block;
     text-align: center;
     flex: 20%;
@@ -51,7 +54,7 @@ html body {
 #currentlink {
     font-weight: bold;
 }
-
+/
 /* ---------------------------- */
 /*          Top Aticles         */
 /* ---------------------------- */
@@ -134,6 +137,10 @@ html body {
     font-weight: normal;
 }
 
+.categoriaGenerale {
+    display: none;
+}
+
 
 /* ---------------------- */
 /*          Content       */
@@ -156,18 +163,22 @@ html body {
 .dataCorsivo {
     font-style: italic;
 }
-
+/*
 .index {
     border: 1px solid black;
     float: right;
     margin: 1em 0 1em 1em;
     padding: 1em;
 }
-
+*/
+ .index {
+     display: none;
+ }
+/*
 .index h3 {
     padding-bottom: 0.5em;
 }
-
+*/
 .description {
     text-align: justify;
     margin: 0;
@@ -177,11 +188,11 @@ html body {
     padding: 0 2em;
     font-size: 1.2em;
 }
-
+/*
 .index a {
     text-decoration: none;
 }
-
+*/
 .description img {
     width: 50%;
     display: block;
@@ -205,13 +216,12 @@ html body {
 }
 
 .comment p {
-    margin: 1em 15em;
+    margin: 1em auto;
     text-align: justify;
 }
 
 .diffs {
     display: flex;
-    margin-left: 7em;
 }
 
 .diffs div {
@@ -223,7 +233,7 @@ html body {
 .diffs h3 {
     margin: 0.5em 0;
 }
-
+/*
 .pro {
     list-style-image: url("../images/icon_correct_247100.png");
 }
@@ -231,7 +241,7 @@ html body {
 .contro {
     list-style: url("../images/wrong_1275646.png");
 }
-
+*/
 .voto {
     display: block;
     text-align: center;
@@ -240,6 +250,9 @@ html body {
     font-size: 2em;
 }
 
+#button, #TitoloCommenti, #ListaCommenti {
+    display: none;
+}
 
 /* ---------------------- */
 /*          Footer        */
@@ -259,7 +272,6 @@ html body {
 /* ---------------------- */
 
 
-
 /* ---------------------- */
 /*      Registrazione     */
 /* ---------------------- */
@@ -268,21 +280,22 @@ html body {
 /* ---------------------- */
 /*      Area utente       */
 /* ---------------------- */
-#datiAccount fieldset label, #avatar img{
+#datiAccount fieldset label, #avatar img {
     display: block;
 }
 
-#save{
+#save {
     border: none;
 }
 
-#save label{
+#save label {
     display: none;
 }
 
 #datiAccount fieldset {
     margin: .5em 0;
 }
-.groupBox input{
+
+.groupBox input {
     width: 100%;
 }

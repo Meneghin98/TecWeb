@@ -66,7 +66,6 @@ else {
         $paginaArticolo = str_replace('£top3', html::top3($top3), $paginaArticolo);
     } else {
         $paginaArticolo = str_replace('£top3', '', $paginaArticolo);
-        $DB->close();
     }
     $lastRew = $DB->getLastRew();
     if (!is_null($lastRew)) {

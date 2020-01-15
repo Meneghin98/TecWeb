@@ -50,7 +50,7 @@
 
 #mobileMenu {
     display: unset;
-    width: 3em;
+
 }
 
 #openButton {
@@ -248,7 +248,7 @@
 
 .categoriaGenerale {
     position: relative;
-    top: 1.75em;
+    top: 1.81em;
 }
 
 #button {

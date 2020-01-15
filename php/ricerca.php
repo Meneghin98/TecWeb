@@ -29,17 +29,17 @@ foreach($listaArticoli as $articolo)
 
     // Assegno indice di match
 
-    if(strpos($articolo['titolo_categoria'], $pattern) !== false)
+    if(stripos($articolo['titolo_categoria'], $pattern) !== false)
     {
         $indiceDiMatch = 1;
     }
 
-    if(strpos($articolo['descrizione'], $pattern) !== false)
+    if(stripos($articolo['descrizione'], $pattern) !== false)
     {
         $indiceDiMatch = 2;
     }
 
-    if(strpos($articolo['titolo'], $pattern) !== false)
+    if(stripos($articolo['titolo'], $pattern) !== false)
     {
         $indiceDiMatch = 3;
     }

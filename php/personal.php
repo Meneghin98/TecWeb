@@ -40,7 +40,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     //controllo se ci sono errori negli input
     $errori = "";
     if ($_POST['nickname'] != $utente['nickname'] && $DB->existsNickname($_POST['nickname']))
-        $errori .= "<li>Il nickname inserito è già in uso</li>";
+        $errori .= "<li>Il nickname inserito &egrave; gi&agrave; in uso</li>";
     if (!checkNickname($_POST['nickname']))
         $errori .= "<li>Il nickname inserito contiene caratteri non consentiti</li>";
     if (!checkNome($_POST['nome']))
@@ -50,11 +50,11 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     if (!checkEmail($_POST['email']))
         $errori .= "<li>Verifica che l'e-mail inserita sia valida</li>";
     if (!checkRiferimento($_POST['riferimento']))
-        $errori .= "<li>Il riferimento inserito non è valido. Rimuovere eventuali http o https</li>";
+        $errori .= "<li>Il riferimento inserito non &egrave; valido. Rimuovere eventuali http o https</li>";
 
-    if ($_POST['oldPwd'] != "") { //se è stata inserita la password vuol dire che voglio modificarla
+    if ($_POST['oldPwd'] != "") { //se &egrave; stata inserita la password vuol dire che voglio modificarla
         if ($_POST['oldPwd'] != $utente['password'])
-            $errori .= "<li>La password inserita non è corretta</li>";
+            $errori .= "<li>La password inserita non &egrave; corretta</li>";
         if (!checkPassword($_POST['newPwd']))
             $errori .= "<li>La password inserita contiene caratteri non consentiti</li>";
         if ($_POST['newPwd'] != $_POST['repPwd'])
@@ -62,12 +62,12 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
     }
     if ($_FILES['userImg']['size'] != 0) {
         if ($_FILES['userImg']['error'] > 0)
-            $errori .= "<li>Ci sono stati dei problemi con il file, non è stato possibile modificare l'immagine utente</li>";
+            $errori .= "<li>Ci sono stati dei problemi con il file, non &egrave; stato possibile modificare l'immagine utente</li>";
         else if (!move_uploaded_file($_FILES['userImg']["tmp_name"], "../images/Users/" . basename($_FILES['userImg']["name"])))
-            $errori .= "<li>Ci sono stati dei problemi con l'upload, non è stato possibile modificare l'immagine utente</li>";
+            $errori .= "<li>Ci sono stati dei problemi con l'upload, non &egrave; stato possibile modificare l'immagine utente</li>";
     }
 
-    if (!$errori) { //non c'è nessun errore, procedo a salvare i nuovi dati
+    if (!$errori) { //non c'&egrave; nessun errore, procedo a salvare i nuovi dati
         $values = array(
             'nickname' => $_POST['nickname'],
             'email' => $_POST['email'],

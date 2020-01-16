@@ -123,8 +123,8 @@ values (5, 'categoriaAltro');/*5*/
 insert into articles
     /*Lucca comics*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
-values (1, 'html/News/newLuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: è record assoluto',
-        'Nella giornata di ieri, 02/11/19, nonostante il maltempo, è stato record di biglietti per LuccaC&amp;G 2019',
+values (1, 'html/News/newLuccaRecord.html', '2019-11-03', 'Lucca Comics. Oltre 88mila biglietti: &egrave; record assoluto',
+        'Nella giornata di ieri, 02/11/19, nonostante il maltempo, &egrave; stato record di biglietti per LuccaC&amp;G 2019',
         'Lucca C&amp;G 19', 'News', '0', '2', null);
 insert into articles
     /*Whatsapp News*/
@@ -143,14 +143,14 @@ insert into articles
     /*PokemonGO Guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (4, 'html/Altro/guidaPokemonGo.html', '2019-12-30',
-        'Pokémon GO, come sconfiggere Sierra del Team Rocketcon un solo Pokémon',
-        'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pokémon GO utilizzando uno ed un solo Pokémon, ecco la guida.',
+        'Pok&eacute;mon GO, come sconfiggere Sierra del Team Rocketcon un solo Pok&eacute;mon',
+        'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pok&eacute;mon GO utilizzando uno ed un solo Pok&eacute;mon, ecco la guida.',
         'Pokemon Go', 'Altro', '0', '4', null);
 insert into articles
     /*Death Stranding Recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (5, 'html/Recensioni/recensioneDeathStranding.html', '2019-12-04', 'Death Stranding, la recensione - PS4',
-        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. È davvero rivoluzione?',
+        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. &Egrave; davvero rivoluzione?',
         'Death Stranding - recensione', 'Recensioni', '18', '4', null);
 insert into articles
     /*Vampyr*/
@@ -163,7 +163,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (7, 'html/News/newCyberpunk2077.html', '2019-11-28',
         '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
-        'Dopo che <span xml:lang="en">Keanu Reevs</span> è salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" è il tormentone del momento',
+        'Dopo che <span xml:lang="en">Keanu Reevs</span> &egrave; salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" &egrave; il tormentone del momento',
         '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
 insert into articles
     /*Cod*/
@@ -184,7 +184,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (10, 'html/Recensioni/recensioneStarWars.html', '2019-11-16',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
-        'La recensione di Star Wars Jedi: Fallen Order. Con vari prodotti altalenanti all''attivo e i frutti della scommessa Motive ancora ignoti, EA affida a Respawn la licenza Star Wars. Riuscirà il team a rendere giustizia al marchio? Scopriamolo insieme',
+        'La recensione di Star Wars Jedi: Fallen Order. Con vari prodotti altalenanti all''attivo e i frutti della scommessa Motive ancora ignoti, EA affida a Respawn la licenza Star Wars. Riuscir&agrave; il team a rendere giustizia al marchio? Scopriamolo insieme',
         '<span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>', 'Recensioni', '20', '4', null);
 insert into articles
     /*death stranding*/
@@ -212,7 +212,7 @@ insert into articles
     /*Monster Hunter News*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (14, 'html/News/newMonsterHunterIceborn.html', '2019-12-7',
-        '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novità dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
+        '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novit&agrave; dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
         '', 'gaming', 'News', '0', '5', null);
 
 insert into articles
@@ -220,7 +220,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (15, 'html/Recensioni/recensioneAsgardWrath.html', '2019-12-7',
         '<span xml:lang="en">Asgard''s Wrath</span>, la recensione',
-        'Loki dice che c''è una nuova divinità in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
+        'Loki dice che c''&egrave; una nuova divinit&agrave; in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
 
 insert into articles
     /*Clash Royale guida*/
@@ -258,16 +258,16 @@ insert into articles
     /*AMD CES 2020*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (20, 'html/News/newAMD.html', '2020-1-10',
-        'Le novità AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
+        'Le novit&agrave; AMD: <span xml:lang="en">Ryzen Mobile</span> 4000, RX 5600 XT e <span
                         xml:lang="en">Threadripper</span> 3990X',
-        'Le novità che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'News', '50', '1',
+        'Le novit&agrave; che AMD ha portato al CES 2020 di <span xml:lang="en">Las Vegas</span>', 'AMD', 'News', '50', '1',
         null);
 
 insert into articles
     /*Skyrim guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (21, 'html/Altro/guidaSkyrim.html', '2020-1-9',
-        '<span xml:lang="en">Skyrim Mods</span>: Guida & Consigli',
+        '<span xml:lang="en">Skyrim Mods</span>: Guida &amp; Consigli',
         'Come scaricare ed installare il miglior pacchetto di <span xml:lang="en">mod</span>', 'gaming', 'Altro', '0',
         '3', null);
 insert into articles
@@ -275,8 +275,8 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
         'GTA V, cinque volte GTA',
-        'Il titolo più atteso degli ultimi anni è finalmente arrivato. L''abbiamo giocato a
-                    lungo, senza un minuto di sosta e quello che segue è il nostro dettagliato giudizio',
+        'Il titolo pi&ugrave; atteso degli ultimi anni &egrave; finalmente arrivato. L''abbiamo giocato a
+                    lungo, senza un minuto di sosta e quello che segue &egrave; il nostro dettagliato giudizio',
         '<span xml:lang="en"><abbr title="Play Station 3">PS3</abbr></span>', 'Recensioni', '200', '4', null);
 
 
@@ -330,7 +330,7 @@ values ('images/News/StarWars/StarWarsNews.jpg', 'Il protagonista entra in un pa
 
 insert into images
     (src, alt, article)
-values ('images/Altro/StarWars/Copertina.jpg', 'Immagine di pubblicità di un gioco', '13');
+values ('images/Altro/StarWars/Copertina.jpg', 'Immagine di pubblicit&agrave; di un gioco', '13');
 
 insert into images
     (src, alt, article)

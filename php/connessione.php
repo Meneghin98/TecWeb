@@ -25,7 +25,7 @@ class DBConnection
         return $connessione;
     }
 
-    //converte la data e l'ora presente nel database (che quindi è in un formato non italiano) nella sequenza hh:mm gg/mm/aaaa
+    //converte la data e l'ora presente nel database (che quindi &egrave; in un formato non italiano) nella sequenza hh:mm gg/mm/aaaa
     private function convert_data_ora($data)
     {
         $data = str_replace(':', '', $data);
@@ -223,7 +223,7 @@ class DBConnection
         $query = "Select * from users where nickname = '$nickname'";
         $queryResult = mysqli_query($this->connection, $query);
         if (mysqli_num_rows($queryResult) == 1)
-            return true; //il nickname inserito è già presente
+            return true; //il nickname inserito &egrave; già presente
         return false;
     }
 

@@ -16,19 +16,19 @@ function checkInput($nome, $cognome, $nickname, $email, $password) {
     $messaggio = "";
 
     if(!checkNome($nome)) {
-        $messaggio .= "<li>Il nome che è stato inserito non è conforme</li>";
+        $messaggio .= "<li>Il nome che &egrave; stato inserito non &egrave; conforme</li>";
     }
     if(!checkCognome($cognome)) {
-        $messaggio .= "<li>Il cognome che è stato inserito non è conforme</li>";
+        $messaggio .= "<li>Il cognome che &egrave; stato inserito non &egrave; conforme</li>";
     }
     if(!checkNickname($nickname)) {
-    $messaggio .= "<li>L'username che è stato inserito non è conforme</li>";
+    $messaggio .= "<li>L'username che &egrave; stato inserito non &egrave; conforme</li>";
     }
     if(!checkEmail($email)) {
-        $messaggio .= "<li>L'email che è stata inserita non è conforme</li>";
+        $messaggio .= "<li>L'email che &egrave; stata inserita non &egrave; conforme</li>";
     }
     if(!checkPassword($password)) {
-        $messaggio .= "<li>La password che è stata inserita non è conforme</li>";
+        $messaggio .= "<li>La password che &egrave; stata inserita non &egrave; conforme</li>";
     }
     return $messaggio;
 }
@@ -96,7 +96,7 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
 }
 
 
-else { //è la prima volta che entro in registrazione
+else { //&egrave; la prima volta che entro in registrazione
     $Form = "<fieldset>
                 <legend>Info Personali</legend>
                 <div class=\"ManageReg\">

@@ -41,21 +41,36 @@
     top: 0;
     z-index: 1;
 }
-#logoDesktop {
+
+#logoDesktop, #mobileButtonHidden, #searchBar button {
     display: none;
 }
+
 #logoMobile {
     display: inherit;
 }
 
-#mobileMenu {
-    display: unset;
-
+#logo {
+    height: 58px;
+    width: auto;
 }
 
-#openButton {
+#logo img {
+    max-height: 58px;
+    width: auto;
+}
+
+#mobileMenu, #searchBar, #userArea {
+    display: unset;
     margin-left: 1em;
-    overflow: hidden;
+    max-height: 48px;
+    max-width: 48px;
+    margin-top: 1em;
+}
+
+#mobileMenu img, #searchBar img, #userArea img {
+    width: 100%;
+    height: auto;
     cursor: pointer;
 }
 
@@ -65,7 +80,7 @@
 }
 
 #closeButton {
-   display: initial;
+    display: initial;
     position: absolute;
     top: -10.75em;
     left: 1em;
@@ -99,11 +114,13 @@
     list-style-type: none;
     font-size: 1.5em;
 }
+
 #mobileList li {
     margin-top: 1em;
     text-align: center;
     font-size: 2em
 }
+
 #mobileList a{
     text-decoration: none;
     color: white;
@@ -140,54 +157,52 @@
     background-color: #1c1c1c;
     visibility: visible;
 }
-#logo {
-    margin: 1em auto 1.5em auto;
-    flex: none;
-    height: inherit;
-}
+
 #mobileButton{
     display: initial;
     width: 100%;
 }
-#searchBarMobile button {
-    display: initial;
-    position: absolute;
-    background: transparent;
-    border: none;
-    top: 3.5em;
-    right: 9em;
-}
-#searchBarMobile input {
-    display: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: unset;
-    height: 4.6em;
+
+#searchBarMobile {
+    height: 60px;
     width: 100%;
-    font-size: 3em;
+    top: 0.8em;
     border: 3px solid #0E9C09;
 }
-#searchBar button {
-    display: none;
+
+#searchBarMobile fieldset {
+    border: unset;
+    max-width: 70%;
+}
+
+#searchBarMobile img {
+    max-height: 48px;
+}
+
+#searchBar form {
+    display: block;
+}
+
+#searchBarMobile button {
+    display: initial;
+    background: white;
+    border: none;
+    height: 48px;
+    float: right;
+}
+
+#searchBarMobile input {
+    display: inherit;
+    font-size: 2em;
 }
 
 #closeSearchBar {
     display: initial;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 3em 1em 2em 1em;
+    background: white;
 }
-#mobileButtonHidden {
-    display: none;
-}
-.headerChild:last-of-type {
-    margin-left: 1em;
-}
-.headerChild:last-of-type img {
-    width: 100%;
-}
+
+
 /*-------- fine Header --------*/
 
 

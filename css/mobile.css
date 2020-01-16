@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* rimozione transizioni*/
 .topArticles li img {
 
@@ -56,7 +62,7 @@
 }
 
 #logo img {
-    max-height: 58px;
+    max-height: 50px;
     width: auto;
 }
 
@@ -98,7 +104,6 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 15em;
     padding: 30px;
     box-sizing: border-box;
     background-color: #1c1c1c;
@@ -166,42 +171,49 @@
 #searchBarMobile {
     height: 60px;
     width: 100%;
-    top: 0.8em;
+    top: 0;
+    right: 0;
+    background: white;
     border: 3px solid #0E9C09;
+}
+
+#searchBarMobile form {
+    display: block;
+    text-align: right;
 }
 
 #searchBarMobile fieldset {
     border: unset;
-    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#searchBarMobile input {
+    display: block;
+    border: none;
+    margin: 2px 2px 2px 2px;
+    font-size: 2em;
+    width: 100%;
+    overflow: hidden;
 }
 
 #searchBarMobile img {
     max-height: 48px;
-}
-
-#searchBar form {
     display: block;
 }
 
+#closeSearchBar {
+    background: white;
+    float: left;
+    cursor: pointer;
+}
+
 #searchBarMobile button {
-    display: initial;
     background: white;
     border: none;
-    height: 48px;
-    float: right;
+    display: block;
+    cursor: pointer;
 }
-
-#searchBarMobile input {
-    display: inherit;
-    font-size: 2em;
-}
-
-#closeSearchBar {
-    display: initial;
-    position: absolute;
-    background: white;
-}
-
 
 /*-------- fine Header --------*/
 

@@ -306,11 +306,11 @@ values ('images/Recensioni/vampyr/vampyr.jpg', '', '6');
 
 insert into images
     (src, alt, article)
-values ('images/News/Cyberpunk/CP20771-lowRes.jpg', '', '7');
+values ('images/News/Cyberpunk/CP20771-lowRes.jpg', 'copertina cyberpunk', '7');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/cod-mw-2019/codmw.png', '', '8');
+values ('images/Recensioni/cod-mw-2019/codmw.png', 'Gruppo di soldati dietro un riparo', '8');
 
 insert into images
     (src, alt, article)
@@ -346,11 +346,11 @@ values ('images/Altro/clash_royale.jpg', '', '16');
 
 insert into images
     (src, alt, article)
-values ('images/News/PS5/logo-ps5.png', '', '17');
+values ('images/News/PS5/logo-ps5.png', 'Logo della console, ps5', '17');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/code-vein/code-vein-low-res.jpg', '', '18');
+values ('images/Recensioni/code-vein/code-vein-low-res.jpg', 'immagine di copertina del videogioco', '18');
 
 insert into images
     (src, alt, article)

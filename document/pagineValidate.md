@@ -1,6 +1,6 @@
 # Pagine validate
 - [ ] pagine non ancora validate
-- [ ] pagine già validate
+- [x] pagine già validate
 ## Pagine principali
 - [ ] Index
 - [ ] Notizie

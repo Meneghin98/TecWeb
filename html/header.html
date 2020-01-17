@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="headerChild" id="searchBar">
-        <img id="mobileButton" onclick="openSearch()" src="../images/icons/lente100x100.png" alt="apri barra di ricerca"/>
+        <img id="closeSearch" onclick="closeSearch()" src="../images/icons/exit.png" alt="esci dalla ricerca"/>
         <form action="ricerca.php" method="post">
             <fieldset>
                 <label for="search" tabindex="0">Ricerca</label>
@@ -23,9 +23,9 @@
                 </button>
             </fieldset>
         </form>
-        <img id="closeSearch" onclick="closeSearch()" src="../images/icons/exit.png" alt="esci dalla ricerca"/>
+        <img id="mobileButton" onclick="openSearch()" src="../images/icons/lente100x100.png" alt="apri barra di ricerca"/>
     </div>
-    <div class="headerChild">
+    <div class="headerChild" id="userArea">
         £utente
     </div>
 </div>

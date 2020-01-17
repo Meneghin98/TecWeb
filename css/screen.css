@@ -569,6 +569,10 @@ body {
     font-size: 2.3em;
 }
 
+.ManageReg label {
+    padding-right: 1em;
+}
+
 /*
 .contentMobileReg {
     display: none;

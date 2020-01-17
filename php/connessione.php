@@ -113,10 +113,10 @@ class DBConnection
                     A.description as description FROM articles A join categories C on A.category=C.id left join images I 
                     on I.article=A.id WHERE A.id = '$id'";
         $result = mysqli_query($this->connection, $query);
-        if (is_null($result)) {
+        $row = mysqli_fetch_assoc($result);
+        if (is_null($row)) {
             return null;
         }
-        $row = mysqli_fetch_assoc($result);
         $articolo = array(
             'ID' => $row['id'],
             'data' => $row['data'],

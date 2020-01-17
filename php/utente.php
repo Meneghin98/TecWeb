@@ -13,7 +13,8 @@ $file = str_replace('£menu_', html::linked_obj('menu', 'page'), $file);
 
 $DB = new DBConnection();
 $utente = $DB->getUtenteArray($_GET['nick']);
-
+if (is_null($utente))
+    header('Location: notFound.php');
 $file = str_replace('£immgaine_utente£', $utente['img'], $file);
 $file = str_replace('£nick',$utente['nickname'],$file);
 $file = str_replace('£nome',$utente['nome'],$file);

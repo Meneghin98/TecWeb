@@ -14,11 +14,10 @@ if (!isset($_SESSION['loggato']))
 $DB = new DBConnection();
 $idArticolo = $_GET['id'];
 $ArticoloDB = $DB->getArticleByID($idArticolo);
-$DB->viewArticle($idArticolo);
 if (is_null($ArticoloDB))
-    /* redirect */
-    ;
+    header("Location: notFound.php");
 else {
+    $DB->viewArticle($idArticolo);
     $paginaArticolo = file_get_contents("../" . $ArticoloDB['path']);
     $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
     $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);

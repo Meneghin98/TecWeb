@@ -10,6 +10,15 @@
     $_SESSION['loggato']=false;
 
  $index = file_get_contents("html/index.html");
+if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente &egrave; loggato oppure no
+    $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/personal.php\"><img
+                src=\"../images/icons/login-sito-web.png\" alt=\"area utente\" /></a>";
+    $index = str_replace("£utente", $change, $index);
+} else {
+    $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
+                src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" /></a>";
+    $index = str_replace("£utente", $change, $index);
+}
  $index = str_replace('£rightPanel', file_get_contents("html/rightPanel.html"), $index);
 
  $DB = new DBConnection();

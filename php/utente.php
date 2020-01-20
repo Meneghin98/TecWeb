@@ -21,7 +21,15 @@ $file = str_replace('£nome',$utente['nome'],$file);
 $file = str_replace('£cognome',$utente['cognome'],$file);
 if (is_null($utente['riferimento']))
     $file = str_replace('£ref','',$file);
-else
-    $file = str_replace('£ref',"<li>Riferimento: <a href=\"http://$utente[riferimento]\">$utente[riferimento]</a></li>",$file);
+else {
+    $link = $utente['riferimento'];
+    if (!(strpos($utente['riferimento'], 'http') !== false)){
+        $link = 'http:\\\\' . $link;
+    }else{
+        $utente['riferimento'] = str_replace('http:\\\\', '', $utente['riferimento']);
+        $utente['riferimento'] = str_replace('https:\\\\', '', $utente['riferimento']); //solo uno dei due verrà eseguito
+    }
+    $file = str_replace('£ref', "<li>Riferimento: <a href=\"$link\">$utente[riferimento]</a></li>", $file);
+}
 $DB->close();
 echo $file;

@@ -73,7 +73,7 @@ if (!isset($_POST['salva'])) { //l'utente arriva sulla pagina da un link esterno
             'email' => $_POST['email'],
             'nome' => $_POST['nome'],
             'cognome' => $_POST['cognome'],
-            'riferimento' => $_POST['riferimento'],
+            'riferimento' => addslashes($_POST['riferimento']),
             'newPwd' => $_POST['newPwd'],
             'oldPwd' => $_POST['oldPwd'],
             'img' => $_FILES['userImg']['name'] == "" ? $utente['img']:basename($_FILES['userImg']['name'])

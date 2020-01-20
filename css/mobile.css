@@ -46,6 +46,8 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 #logoDesktop, #mobileButtonHidden, #searchBar button {
@@ -57,39 +59,36 @@
 }
 
 #logo {
-    height: 58px;
-    width: auto;
+    height: 8em;
+   margin-bottom: 1em;
+
+
 }
 
 #logo img {
-    max-height: 50px;
-    width: auto;
+    height: 8em;
+    margin: 0 auto;
+
 }
 
 #mobileMenu, #searchBar, #userArea {
     display: unset;
     margin-left: 1em;
-    max-height: 48px;
-    max-width: 48px;
-    margin-top: 1em;
+    width: 6em;
 }
 
 #mobileMenu img, #searchBar img, #userArea img {
-    width: 100%;
-    height: auto;
+    width: 6em;
     cursor: pointer;
 }
 
 .openButton-js-hidden {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 
-#closeButton {
+#closeButton.js-opened {
     display: initial;
-    position: absolute;
-    top: -10.75em;
-    left: 1em;
+    width: 6em;
     cursor: pointer;
 }
 
@@ -101,68 +100,35 @@
 }
 
 #menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: #1c1c1c;
-    box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.14), 1px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 4px -1px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 500;
+    display: none;
 }
 
-#mobileList {
-    padding: 0;
-    margin: -1em 0 0 0;
-    list-style-type: none;
-    font-size: 1.5em;
-}
-
-#mobileList li {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 2em
-}
-
-#mobileList a{
-    text-decoration: none;
-    color: white;
-    padding: 0 8em;
-}
-
-#mobileList #currentlink{
-    color: lawngreen;
-    font-weight: bolder;
-}
-
-.menu--offcanvas-1 {
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    left: -17em;
-    /* opened styles */
-}
-
-#menu--offcanvas-1-js-opened {
+#menu.js-opened {
+    display: unset;
     transition-property: left;
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transition-delay: 0s;
-    left: 0;
-    opacity: 1;
     position: sticky;
-    top: 10em;
+    top: 8em;
     z-index: 1;
     width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: #1c1c1c;
-    visibility: visible;
-}
 
+
+}
+#menu.js-opened ul {
+    flex-direction: column;
+    max-width: unset;
+    background-color: #131313;
+}
+#menu.js-opened li {
+    border: none;
+    font-size: 2em;
+
+}
+#menu.js-opened li a {
+    padding: 0.5em 14em;
+}
 #mobileButton{
     display: initial;
     width: 100%;
@@ -193,7 +159,7 @@
     border: none;
     margin: 2px 2px 2px 2px;
     font-size: 2em;
-    width: 100%;
+    width: 6em;
     overflow: hidden;
 }
 
@@ -213,6 +179,10 @@
     border: none;
     display: block;
     cursor: pointer;
+}
+#login img {
+    width: 6em;
+    margin-left: 1em;
 }
 
 /*-------- fine Header --------*/

@@ -177,7 +177,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (9, 'html/News/newXiaomimonitor.html', '2019-10-18',
         'Xiaomi entra nel mondo dei monitor con<span xml:lang="en"> Mi Surface Display</span>, un 34 pollici <span xml:lang="en"><abbr title="Wide Quad HD">WQHD</abbr></span> con <span xml:lang="en">FreeSync</span>',
-        '',
+        'Xiaomi non si ferma! Arrivano i primi monitor da gaming dell&apos;azienda cinese.',
         'Xiaomi Monitor', 'News', '0', '1', null);
 insert into articles
     /*star wars*/
@@ -191,14 +191,14 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (11, 'html/News/newDeathStrandingPC.html', '2019-10-30',
         '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
-        '',
+        'Annunciata la veriosne pc del gioco di <span xml:lang="jp">Hideo Kojima</span>, uscirà nell&apos;estate del 2020.',
         'Death Stranding PC', 'News', '0', '4', null);
 insert into articles
     /*StarWars vendite*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record',
-        'Vendite PC, battuti molti record', 'Star Wars vendite PC', 'News', '0', '4', null);
+        'Il titolo <span xml:lang="en">Respawn</span> ha già battuto molti record. Questo è un ottimo periodo per la saga di <span xml:lang="en">Star Wars</span>', '<span xml:lang="en">Star Wars</span>-vendite PC', 'News', '0', '4', null);
 
 insert into articles
     /*StarWars guida*/

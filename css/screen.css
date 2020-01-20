@@ -607,7 +607,7 @@ body {
 #datiAccount fieldset label {
     display: block;
     padding: 0.3em 0;
-    margin: 0;
+    margin: 0.2em 0;
 }
 
 #datiAccount .groupBox input {
@@ -698,16 +698,13 @@ body {
     list-style: inside;
 }
 
-#logout:link {
-    color: white;
-}
-
-#logout:visited {
-    color: white;
-}
-
-#logout:hover {
-    color: rgba(255, 255, 255, 0.7);
+#logout:link, #logout:visited {
+    border-style: solid;
+    border-color: #0E9C09;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
 }
 
 /*

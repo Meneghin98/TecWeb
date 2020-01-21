@@ -11,8 +11,8 @@
 
  $index = file_get_contents("html/index.html");
 if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente &egrave; loggato oppure no
-    $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/personal.php\"><img
-                src=\"../images/icons/login-sito-web.png\" alt=\"area utente\" /></a>";
+    $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
+                src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\" /></a>";
     $index = str_replace("£utente", $change, $index);
 } else {
     $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img

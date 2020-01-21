@@ -11,10 +11,10 @@
 
 
 <body>
-
     <div id="header">
         <div class="headerChild" id="mobileMenu">
             <img id="openButton"  onclick="openMenu()" src="../images/icons/hamburger.png" alt="apri menu"/>
+            <img id="closeButton" onclick="closeMenu()" src="../images/icons/exit.png" alt="esci dal menu"/>
         </div>
         <div class="headerChild" id="logo">
             <img id="logoDesktop" src="images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" />
@@ -44,8 +44,7 @@
     </div>
 
     <div title="menu" id="menu">
-        <img id="closeButton" onclick="closeMenu()" src="../images/icons/exit.png" alt="esci dal menu"/>
-        <ul id="mobileList">
+        <ul>
             <li id="currentlink"><span xml:lang="en">Home</span></li>
             <li><a href="../php/page.php?t=n"><span xml:lang="en">Notizie</span></a></li>
             <li><a href="../php/page.php?t=r">Recensioni</a></li>

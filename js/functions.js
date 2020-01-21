@@ -178,16 +178,21 @@ function validazioneForm() {
 function openMenu() {
     var openButton = document.getElementById("openButton");
     var menu = document.getElementById("menu");
+    var closeButton = document.getElementById("closeButton")
 
     openButton.classList.add('openButton-js-hidden');
-    menu.setAttribute('id', 'menu--offcanvas-1-js-opened');
-}
+    menu.classList.add('js-opened');
+    closeButton.classList.add('js-opened');
 
+}
 function closeMenu() {
     var openButton = document.getElementById("openButton");
-    var menu = document.getElementById("menu--offcanvas-1-js-opened");
+    var menu = document.getElementById("menu");
+    var closeButton = document.getElementById("closeButton")
+
     openButton.classList.remove('openButton-js-hidden');
-    menu.setAttribute('id', 'menu');
+    menu.classList.remove('js-opened');
+    closeButton.classList.remove('js-opened');
 
 }
 function openSearch() {

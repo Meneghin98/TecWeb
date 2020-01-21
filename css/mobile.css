@@ -70,6 +70,10 @@
     margin: 0 auto;
 
 }
+#logoMobile {
+    margin-left: 13.5em;
+}
+
 
 #mobileMenu, #searchBar, #userArea {
     display: unset;
@@ -109,9 +113,6 @@
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transition-delay: 0s;
-    position: sticky;
-    top: 8em;
-    z-index: 1;
     width: 100%;
 
 
@@ -120,20 +121,131 @@
     flex-direction: column;
     max-width: unset;
     background-color: #131313;
+    position: sticky;
+    top: 10em;
+    z-index: 1;
 }
 #menu.js-opened li {
     border: none;
-    font-size: 2em;
+    font-size: 3em;
 
 }
 #menu.js-opened li a {
-    padding: 0.5em 14em;
+    padding: 0.5em 8em;
 }
 #mobileButton{
     display: initial;
     width: 100%;
 }
+#searchBar.js-opened input {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: unset;
+    height: 3.3em;
+    width: 100%;
+    font-size: 3em;
+    border: 3px solid #0E9C09;
+}
 
+
+#searchBar.js-opened  button {
+    display: initial;
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 1.4em;
+    right: 9em;
+    width: 6.75em;
+}
+#searchBar.js-opened  button img {
+    width: 6.75em;
+}
+#closeSearch.js-opened {
+    display: initial;
+    position: absolute;
+    top: 1.4em;
+    right: 0.5em;
+    width: 6.75em;
+    /*padding: 3em 1em 2em 1em;*/
+}
+
+/*
+
+
+#searchBarMobile button {
+    display: initial;
+    position: absolute;
+    background: transparent;
+    background: white;
+    border: none;
+    top: 3.5em;
+    right: 9em;
+    height: 48px;
+    float: right;
+}
+
+#searchBarMobile input {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: unset;
+    height: 4.6em;
+    width: 100%;
+    font-size: 3em;
+    border: 3px solid #0E9C09;
+}
+#searchBar button {
+    display: none;
+    font-size: 2em;
+}
+
+#closeSearchBar {
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3em 1em 2em 1em;
+}
+#mobileButtonHidden {
+    display: none;
+}
+.headerChild:last-of-type {
+    margin-left: 1em;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #searchBarMobile {
     height: 60px;
     width: 100%;
@@ -179,7 +291,7 @@
     border: none;
     display: block;
     cursor: pointer;
-}
+}*/
 #login img {
     width: 6em;
     margin-left: 1em;

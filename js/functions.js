@@ -200,17 +200,17 @@ var openSearch = document.getElementById("mobileButton");
 var mobileBar = document.getElementById("searchBar");
 var exitButton = document.getElementById("closeSearch");
 
-openSearch.setAttribute('id','mobileButtonHidden');
-mobileBar.setAttribute('id','searchBarMobile');
-exitButton.setAttribute('id','closeSearchBar');
+openSearch.classList.add('js-opened');
+mobileBar.classList.add('js-opened');
+exitButton.classList.add('js-opened');
 }
 
 function closeSearch (){
-    var mobileButton = document.getElementById("mobileButtonHidden");
-    var mobileBarHiden = document.getElementById("searchBarMobile");
-    var closeSearchHidden = document.getElementById("closeSearchBar");
+    var openSearch = document.getElementById("mobileButton");
+    var mobileBar = document.getElementById("searchBar");
+    var exitButton = document.getElementById("closeSearch");
 
-    mobileButton.setAttribute('id','mobileButton');
-    mobileBarHiden.setAttribute('id','searchBar');
-    closeSearchHidden.setAttribute('id','closeSearch');
+    openSearch.classList.remove('js-opened');
+    mobileBar.classList.remove('js-opened');
+    exitButton.classList.remove('js-opened');
 }

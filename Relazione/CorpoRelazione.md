@@ -1,24 +1,3 @@
-![Decrypted Games](images/icons/fantasmino-logo+scritta.png "Logo")  
-
-__Progetto del corso di Tecnologie Web__  
-Anno 2019/2020
-
-| Membri |  |
-| --- | --- |
-| Giaccone | Nicolò |
-| Meneghin | Simone |
-| Salmaso | Enrico |
-| Tinto | Edoardo |
-
-__Referente:__ da decidere  
-_Sito web:_ http://tecweb.studenti.math.unipd.it/utente_referente/  
-
-_Utenti:_  
-
-| Nickname | Password |
-|---|---|
-| user | user |
-| admin | admin|
 ## Indice
 1. [Abstract](#Abstract)
 1. [Progettazione](#Progettazione)

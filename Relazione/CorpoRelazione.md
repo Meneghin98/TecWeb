@@ -22,6 +22,10 @@
 1. [Conclusioni](#Conclusioni)
 
 ## Abstract
+Il sito Decrypted Games è stato sviluppato per permettere la diffusione delle notizie riguardanti il mondo dei videogiochi e della tecnologia più in genreale.
+Il nome scelto è un gioco di parole che per appunto indica che i giochi vengono decriptati, ossia che vengono attentamente analizzati cosa da renderli di facile comprensione ai
+più. Cosi come si vuole rendere più comprensibile questo mondo, si è voluti rendere comprensibile  
+
 
 ## Progettazione
 

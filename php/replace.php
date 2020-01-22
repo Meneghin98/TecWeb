@@ -73,13 +73,13 @@ class html
 
             switch ($type_page) {
                 case 'n':
-                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a>', '<li id="currentlink"><span xml:lang="en">Notizie</span>', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a>', '<li class="currentlink"><span xml:lang="en">Notizie</span>', $obj);
                     break;
                 case 'r':
-                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">Recensioni</a>', '<li id="currentlink">Recensioni', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">Recensioni</a>', '<li class="currentlink">Recensioni', $obj);
                     break;
                 case 'a':
-                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">Altro</a>', '<li id="currentlink">Altro', $obj);
+                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">Altro</a>', '<li class="currentlink">Altro', $obj);
                     break;
             }
         }

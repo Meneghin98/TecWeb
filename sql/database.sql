@@ -282,7 +282,7 @@ values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
 
 insert into images
     (src, alt, article)
-values ('images/Lucca-Comics-Games-982x540.jpg', '', '1');
+values ('images/News/LuccaComics/LCcopertina.jpg', '', '1');
 
 insert into images
     (src, alt, article)
@@ -314,7 +314,7 @@ values ('images/Recensioni/cod-mw-2019/codmw.png', 'Gruppo di soldati dietro un 
 
 insert into images
     (src, alt, article)
-values ('images/mi-surface-display.jpg', 'Viene mostrato il monitor', '9');
+values ('images/News/Xiaomi/mi-surface-display.jpg', 'Viene mostrato il monitor', '9');
 
 insert into images
     (src, alt, article)
@@ -322,7 +322,7 @@ values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', 'Copertina del gioc
 
 insert into images
     (src, alt, article)
-values ('images/death-stranding-image.jpg', 'protagonista del gioco in primo piano', '11');
+values ('images/News/DeathStranding/DScopertina.jpg', 'protagonista del gioco in primo piano', '11');
 
 insert into images
     (src, alt, article)

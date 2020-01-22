@@ -2,10 +2,10 @@
 - [ ] pagine non ancora validate
 - [x] pagine già validate
 ## Pagine principali
-- [ ] Index
-- [ ] Notizie
-- [ ] Recensioni
-- [ ] Altro
+- [X] Index
+- [X] Notizie
+- [X] Recensioni
+- [X] Altro
 - [ ] Login
 - [ ] Registrazione
 - [ ] Resettapassword
@@ -15,29 +15,29 @@
 - [ ] not found
 ## Articoli 
 - ### NOTIZIE 
-- [ ] AMD 
+- [X] AMD 
 - [ ] Cyberpunk
-- [ ] Deatch stranding pc
-- [ ] Lucca record
+- [X] Deatch stranding pc
+- [X] Lucca record
 - [ ] Monster hunter
 - [ ] PS5
-- [ ] Star Wars sell
+- [X] Star Wars sell
 - [ ] Whatsapp
-- [ ] Xiaomi 
+- [X] Xiaomi 
 - ### RECENSIONI 
 - [ ] Asgard
 - [ ] COD
 - [ ] Code Vein
 - [ ] Death stranding
-- [ ] GTA V
-- [ ] Star Wars
+- [X] GTA V
+- [X] Star Wars
 - [ ] Vampyr
 - ### ALTRO
 - [ ] Clash Royal
 - [ ] Fortnite
 - [ ] Pokemon go
 - [ ] Skyrim
-- [ ] Star Wars
+- [X] Star Wars
 - [ ] The witcher
 
 

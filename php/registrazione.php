@@ -50,10 +50,11 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
 
         $db->newUser($nome,$cognome,$nickname,$email,$password);
 
-        $db->close();
 
         $_SESSION['loggato']=true;
         $_SESSION["nickname"]=$nickname;
+        $_SESSION['level'] = $db->getUtenteArray($nickname)['tipologia'];
+        $db->close();
         header("Location: ../index.php");
     }
 

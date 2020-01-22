@@ -128,7 +128,7 @@ function checkInput(NicknameInput, PasswordInput) {
         url: 'file.php?n=' + NicknameInput + '&p=' + PasswordInput,
         dataType: 'text',
         success: function (response) {
-            value=response;
+            value = response;
         }
     })
     return value;
@@ -138,12 +138,12 @@ function validazioneForm() {
     let nickname = document.getElementById("emailLogin").value;
     let password = document.getElementById("passwordLogin").value;
 
-    let resultCheck = checkInput(nickname,password);
+    let resultCheck = checkInput(nickname, password);
 
-    if(resultCheck==0) {
+    if (resultCheck == 0) {
         window.location.href = '../index.php';
     }
-    else if(resultCheck==2) {
+    else if (resultCheck == 2) {
         let padre = nickname.parentNode.parentNode;
         padre.createElement("div");
         let scritta = document.createElement("P");
@@ -182,19 +182,19 @@ function mostraErrore(input, testoErrore) {
 function togliErrore(input) {
     var p = input.parentNode;
 
-    if (input=="nome") {
+    if (input == "nome") {
         p.removeChild(input);
     }
-    else if (input=="cognome") {
+    else if (input == "cognome") {
         p.removeChild(input);
     }
-    else if (input=="nickname") {
+    else if (input == "nickname") {
         p.removeChild(input);
     }
-    else if (input=="email") {
+    else if (input == "email") {
         p.removeChild(input);
     }
-    else if (input=="password") {
+    else if (input == "password") {
         p.removeChild(input);
     }
 }
@@ -249,7 +249,7 @@ function checkEmail(emailInput) {
 
 function checkPassword(passwordInput) {
     var password = passwordInput.value.length;
-    if (password>=3) {
+    if (password >= 3) {
         togliErrore(passwordInput);
         return true;
     } else {
@@ -285,16 +285,21 @@ function validazioneReg() {
 function openMenu() {
     var openButton = document.getElementById("openButton");
     var menu = document.getElementById("menu");
+    var closeButton = document.getElementById("closeButton")
 
     openButton.classList.add('openButton-js-hidden');
-    menu.setAttribute('id', 'menu--offcanvas-1-js-opened');
-}
+    menu.classList.add('js-opened');
+    closeButton.classList.add('js-opened');
 
+}
 function closeMenu() {
     var openButton = document.getElementById("openButton");
-    var menu = document.getElementById("menu--offcanvas-1-js-opened");
+    var menu = document.getElementById("menu");
+    var closeButton = document.getElementById("closeButton")
+
     openButton.classList.remove('openButton-js-hidden');
-    menu.setAttribute('id', 'menu');
+    menu.classList.remove('js-opened');
+    closeButton.classList.remove('js-opened');
 
 }
 
@@ -303,17 +308,35 @@ function openSearch() {
     var mobileBar = document.getElementById("searchBar");
     var exitButton = document.getElementById("closeSearch");
 
+    /*
+    Non sapevo che modifiche accettare, quindi le ho messo quelle "scartate" qui su commento
+
     openSearch.setAttribute('id', 'mobileButtonHidden');
     mobileBar.setAttribute('id', 'searchBarMobile');
     exitButton.setAttribute('id', 'closeSearchBar');
+    }
+
+    function closeSearch() {
+        var mobileButton = document.getElementById("mobileButtonHidden");
+        var mobileBarHiden = document.getElementById("searchBarMobile");
+        var closeSearchHidden = document.getElementById("closeSearchBar");
+
+        mobileButton.setAttribute('id', 'mobileButton');
+        mobileBarHiden.setAttribute('id', 'searchBar');
+        closeSearchHidden.setAttribute('id', 'closeSearch');
+    */
+
+    openSearch.classList.add('js-opened');
+    mobileBar.classList.add('js-opened');
+    exitButton.classList.add('js-opened');
 }
 
 function closeSearch() {
-    var mobileButton = document.getElementById("mobileButtonHidden");
-    var mobileBarHiden = document.getElementById("searchBarMobile");
-    var closeSearchHidden = document.getElementById("closeSearchBar");
+    var openSearch = document.getElementById("mobileButton");
+    var mobileBar = document.getElementById("searchBar");
+    var exitButton = document.getElementById("closeSearch");
 
-    mobileButton.setAttribute('id', 'mobileButton');
-    mobileBarHiden.setAttribute('id', 'searchBar');
-    closeSearchHidden.setAttribute('id', 'closeSearch');
+    openSearch.classList.remove('js-opened');
+    mobileBar.classList.remove('js-opened');
+    exitButton.classList.remove('js-opened');
 }

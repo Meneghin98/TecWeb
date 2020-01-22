@@ -15,6 +15,9 @@ switch ($_GET['t']) {
         $path = "Altro/altro";
         $where = "Altro";
         break;
+    default:
+        header("Location: notFound.php");
+        break;
 }
 
 $file = file_get_contents("../html/$path.html");

@@ -159,7 +159,7 @@ body {
     outline-style: none;
 }
 
-#menu #currentlink {
+#menu .currentlink {
     color: lawngreen;
     font-weight: bold;
 }
@@ -465,7 +465,7 @@ body {
 }
 
 #contentLogin {
-    max-width: 90.3em;
+    max-width: 1300px;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
@@ -561,7 +561,7 @@ body {
 }
 
 #contentRegistrazione {
-    max-width: 90.3em;
+    max-width: 1300px;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
@@ -618,16 +618,17 @@ body {
 #datiAccount {
     max-width: 650px;
     list-style-type: none;
-    margin: 2em auto 0;
     text-align: left;
     color: white;
     font-size: medium;
 }
-
+form #datiAccount{
+    margin: 2em auto 0;
+}
 #datiAccount fieldset label {
     display: block;
     padding: 0.3em 0;
-    margin: 0;
+    margin: 0.2em 0;
 }
 
 #datiAccount .groupBox input {
@@ -640,7 +641,7 @@ body {
 }
 
 #datiAccount li a:link, #datiAccount li a:visited{
-    color: yellow;
+    color: white;
 }
 
 .groupBox p {
@@ -718,16 +719,13 @@ body {
     list-style: inside;
 }
 
-#logout:link {
-    color: white;
-}
-
-#logout:visited {
-    color: white;
-}
-
-#logout:hover {
-    color: rgba(255, 255, 255, 0.7);
+#logout:link, #logout:visited {
+    border-style: solid;
+    border-color: #0E9C09;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
 }
 
 /*

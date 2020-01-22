@@ -519,6 +519,11 @@
     background-color: #525252;
 }
 
+
+#primoReg {
+    padding-right: 1.2em;
+}
+
 .menuMobileReg img {
     float: left;
     width: 7em;

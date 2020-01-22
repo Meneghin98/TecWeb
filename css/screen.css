@@ -399,6 +399,15 @@ body {
 }
 */
 
+.ErroriForm {
+    color: white;
+    margin-top: 3em;
+}
+
+.ErroriForm li {
+    margin-top: 0.7em;
+}
+
 #Login {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 7em 0;
@@ -449,13 +458,14 @@ body {
     background-image: url(../images/icons/loginGG.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 50px;
+    /*padding: 50px;*/
+    padding: 4em;
     display: block;
-    margin: 4em auto;
+    margin: 3em auto;
 }
 
 #contentLogin {
-    max-width: 1300px;
+    max-width: 90.3em;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
@@ -510,6 +520,9 @@ body {
     display: none;
 }
 
+.emailLog input, .passwordLog input {
+    font-size: 1.3em;
+}
 
 /*--------------------------------------------FINE LOGIN--------------------------------------------*/
 
@@ -521,6 +534,8 @@ body {
     display: none;
 }
 */
+
+
 
 #contentRegistrazione h1 {
     color: #0E9C09;
@@ -541,12 +556,12 @@ body {
 
 .contentReg fieldset {
     border: 3px solid #0E9C09;
-    padding: 1.5em;
-    margin: 3em;
+    padding: 1.8em;
+    margin-top: 3em;
 }
 
 #contentRegistrazione {
-    max-width: 1300px;
+    max-width: 90.3em;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
@@ -571,6 +586,11 @@ body {
 
 .ManageReg label {
     padding-right: 1em;
+    font-size: 1.3em;
+}
+
+.ManageReg input {
+    font-size: 1.3em;
 }
 
 /*

@@ -22,7 +22,7 @@ function checkInput($nome, $cognome, $nickname, $email, $password) {
         $messaggio .= "<li>Il cognome che &egrave; stato inserito non &egrave; conforme</li>";
     }
     if(!checkNickname($nickname)) {
-    $messaggio .= "<li>L'username che &egrave; stato inserito non &egrave; conforme</li>";
+    $messaggio .= "<li>Il nickname che &egrave; stato inserito non &egrave; conforme</li>";
     }
     if(!checkEmail($email)) {
         $messaggio .= "<li>L'email che &egrave; stata inserita non &egrave; conforme</li>";
@@ -59,7 +59,7 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
 
     else { // ho premuto su conferma ma ho inserito dati sbagliati: visualizzo gli errori
 
-        $Form = "<fieldset>
+        $Form = "<fieldset id=\"primoReg\">
                 <legend>Info Personali</legend>
                 <div class=\"ManageReg\">
                     <label for=\"nomeReg\">Nome:</label>
@@ -73,7 +73,7 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Username</span>:</span></label>
+                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
                     <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value='$nickname'/>
                 </div>
                 <div class=\"ManageReg\">
@@ -97,7 +97,7 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
 
 
 else { //&egrave; la prima volta che entro in registrazione
-    $Form = "<fieldset>
+    $Form = "<fieldset id=\"primoReg\">
                 <legend>Info Personali</legend>
                 <div class=\"ManageReg\">
                     <label for=\"nomeReg\">Nome:</label>
@@ -111,7 +111,7 @@ else { //&egrave; la prima volta che entro in registrazione
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Username</span>:</span></label>
+                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
                     <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value=''/>
                 </div>
                 <div class=\"ManageReg\">

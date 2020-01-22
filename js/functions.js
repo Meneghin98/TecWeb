@@ -1,3 +1,4 @@
+
 function trimText(id) {
     let element = document.getElementById(id);
     element.innerHTML = element.textContent.trim();
@@ -34,7 +35,7 @@ function miPiaceOut(id) {
         return;
     if (classList.contains("upBlack")) {
         classList.remove("upBlack");
-        classList.add("upGray")
+        classList.add("upGray");
     }
 }
 
@@ -70,19 +71,18 @@ function eliminaCommento(idstring) {
             success: function () {
                 let commento = document.getElementById(idstring);
                 let nodes = commento.parentNode.childNodes;
-                if (nodes.length === 1 ){
+                if (nodes.length === 1) {
                     let listacommenti = commento.parentNode.parentNode;
                     listacommenti.removeChild(commento.parentNode);
                     let p = document.createElement("P");
                     p.appendChild(document.createTextNode("Non ci sono commenti al momento"));
                     listacommenti.appendChild(p);
-                }
-                else{
+                } else {
                     commento.parentNode.removeChild(commento);
                 }
             },
             error: function () {
-                alert("Non è stato possibile rimuovere il commento")
+                alert("Non è stato possibile rimuovere il commento");
             }
         })
     }
@@ -93,7 +93,7 @@ function eliminaCommento(idstring) {
 
 // ------------------------- LOGIN --------------------------
 
-
+/*
 function mostraErrore(input, testoErrore) {
 
     togliErrore(input);
@@ -116,63 +116,170 @@ function togliErrore(input) {
     }
 
     /*var span = p.lastChild;
-    p.removeChild(span);*/
+    p.removeChild(span);
 }
 
+*/
+function checkInput(NicknameInput, PasswordInput) {
 
-function checkNome(Nomeinput) {
-    var patt = new RegExp('^[a-zA-Z]{3,}$');
-    if (patt.tets(Nomeinput.value)) {  //mi mostra il valore contenuto in input
-        togliErrore(Nomeinput);
+    var value = 1;
+    $.ajax({
+        type: 'GET',
+        url: 'file.php?n=' + NicknameInput + '&p=' + PasswordInput,
+        dataType: 'text',
+        success: function (response) {
+            value=response;
+        }
+    })
+    return value;
+}
+
+function validazioneForm() {
+    let nickname = document.getElementById("emailLogin").value;
+    let password = document.getElementById("passwordLogin").value;
+
+    let resultCheck = checkInput(nickname,password);
+
+    if(resultCheck==0) {
+        window.location.href = '../index.php';
+    }
+    else if(resultCheck==2) {
+        let padre = nickname.parentNode.parentNode;
+        padre.createElement("div");
+        let scritta = document.createElement("P");
+        scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
+        padre.appendChild(scritta);
+    }
+    else {
+        let padre = nickname.parentNode.parentNode;
+        padre.createElement("div");
+        let scritta = document.createElement("P");
+        let scritta2 = document.createElement("P");
+        padre.appendChild(scritta);
+        padre.appendChild(scritta2);
+        scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
+        scritta2.appendChild(document.createTextNode("Verifica che il nickname e la password inserite siano valide"));
+    }
+    return false;
+}
+
+// --------------------- FINE LOGIN ---------------------------
+
+// ------------------- REGISTRAZIONE-----------------------
+
+function mostraErrore(input, testoErrore) {
+
+    togliErrore(input);
+
+    var fieldset = input.parentNode.parentNode.parentNode;
+    var element = document.createElement("P");
+    //strong.className="corsivo";
+    element.appendChild(document.createTextElement(testoErrore));
+    fieldset.appendChild(element);
+
+}
+
+function togliErrore(input) {
+    var p = input.parentNode;
+
+    if (input=="nome") {
+        p.removeChild(input);
+    }
+    else if (input=="cognome") {
+        p.removeChild(input);
+    }
+    else if (input=="nickname") {
+        p.removeChild(input);
+    }
+    else if (input=="email") {
+        p.removeChild(input);
+    }
+    else if (input=="password") {
+        p.removeChild(input);
+    }
+}
+
+function checkNome(nomeinput) {
+    var nome = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
+    if (nome.test(nomeinput.value)) {  //mi mostra il valore contenuto in input
+        togliErrore(nomeinput);
         return true;
     } else {
-        mostraErrore(Nomeinput,
-            "Nome inserito non corretto (almeno 3 lettere) ");
+        mostraErrore(nomeinput,
+            "Il nome che è stato inserito non è conforme");
         return false;
     }
 }
 
-function checkColore() {
-    return false;
+function checkCognome(cognomeInput) {
+    var cognome = new RegExp('/^([A-Za-z]{2,15})$/');
+    if (cognome.test(cognomeInput.value)) {
+        togliErrore(cognomeInput);
+        return true;
+    } else {
+        mostraErrore(cognomeInput,
+            "Il Cognome che è stato inserito non è conforme");
+        return false;
+    }
 }
 
-function checkPeso() {
-    var patt = new RegExp('^[1-9][0-9]{0,2}')
-    return false;
+function checkNickname(nicknameInput) {
+    var nickname = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
+    if (nickname.test(nicknameInput.value)) {
+        togliErrore(nicknameInput);
+        return true;
+    } else {
+        mostraErrore(nicknameInput,
+            "Il nickname che è stato inserito non è conforme");
+        return false;
+    }
 }
 
-function checkDescrizione() {
-    return false;
+function checkEmail(emailInput) {
+    var email = new RegExp('/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i');
+    if (email.test(emailInput.value)) {
+        togliErrore(emailInput);
+        return true;
+    } else {
+        mostraErrore(emailInput,
+            "L'email che è stato inserita non è conforme");
+        return false;
+    }
 }
 
+function checkPassword(passwordInput) {
+    var password = passwordInput.value.length;
+    if (password>=3) {
+        togliErrore(passwordInput);
+        return true;
+    } else {
+        mostraErrore(passwordInput,
+            "La password che è stato inserita non è conforme");
+        return false;
+    }
+}
 
-function validazioneForm() {
+function validazioneReg() {
     var nome = document.getElementById("nome");
-    var colore = document.getElementById("colore");
-    var peso = document.getElementById("peso");
-    var descrizione = document.getElementById("descrizione");
+    var cognome = document.getElementById("cognome");
+    var nickname = document.getElementById("nickname");
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
 
-    var risultatoNome = checkNome();
-    var risultatoColore = checkColore();
-    var risultatoPeso = checkPeso();
-    var risultatoDescrizione = checkDescrizione();
+    var risultatoNome = checkNome(nome);
+    var risultatoCognome = checkCognome(cognome);
+    var risultatoNickname = checkNickname(nickname);
+    var risultatoEmail = checkEmail(email);
+    var risultatoPassword = checkPassword(password);
 
-    return risultatoNome && risultatoColore && risultatoPeso && risultatoDescrizione;
+
+    return risultatoNome && risultatoCognome && risultatoNickname && risultatoEmail && risultatoPassword;
 
 }
 
-/*
-<form action="insert.php" onsubmit="return validazioneForm()">
-    <p>
-        <label>
-        <input id="nome">
-        <span>Errore nellínserimento del nome</span>
+//-------------- FINE REGISTRAZIONE ---------------------
 
-*/
 
-// --------------------- FINE LOGIN ---------------------------
-
-// ------------------- REGIS
 /*----------------------HEADER MOBILE----------------------------*/
 
 function openMenu() {
@@ -190,22 +297,23 @@ function closeMenu() {
     menu.setAttribute('id', 'menu');
 
 }
-function openSearch() {
-var openSearch = document.getElementById("mobileButton");
-var mobileBar = document.getElementById("searchBar");
-var exitButton = document.getElementById("closeSearch");
 
-openSearch.setAttribute('id','mobileButtonHidden');
-mobileBar.setAttribute('id','searchBarMobile');
-exitButton.setAttribute('id','closeSearchBar');
+function openSearch() {
+    var openSearch = document.getElementById("mobileButton");
+    var mobileBar = document.getElementById("searchBar");
+    var exitButton = document.getElementById("closeSearch");
+
+    openSearch.setAttribute('id', 'mobileButtonHidden');
+    mobileBar.setAttribute('id', 'searchBarMobile');
+    exitButton.setAttribute('id', 'closeSearchBar');
 }
 
-function closeSearch (){
+function closeSearch() {
     var mobileButton = document.getElementById("mobileButtonHidden");
     var mobileBarHiden = document.getElementById("searchBarMobile");
     var closeSearchHidden = document.getElementById("closeSearchBar");
 
-    mobileButton.setAttribute('id','mobileButton');
-    mobileBarHiden.setAttribute('id','searchBar');
-    closeSearchHidden.setAttribute('id','closeSearch');
+    mobileButton.setAttribute('id', 'mobileButton');
+    mobileBarHiden.setAttribute('id', 'searchBar');
+    closeSearchHidden.setAttribute('id', 'closeSearch');
 }

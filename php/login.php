@@ -6,8 +6,8 @@ require_once("replace.php");
 session_start();
 $file = file_get_contents("../html/User/login.html");
 $file = str_replace('£head_', html::head(), $file);
-$file = str_replace('£footer', html::linked_obj("footer","page", "accedi"), $file);
-$file = str_replace('£menu_', html::linked_obj("menu","page", "accedi"), $file);
+$file = str_replace('£footer', html::linked_obj("footer", "page", "accedi"), $file);
+$file = str_replace('£menu_', html::linked_obj("menu", "page", "accedi"), $file);
 
 $file = str_replace('£header', html::header(), $file);
 
@@ -22,27 +22,27 @@ if (isset($_POST['Accedi'])) {
     if (!$db->existsNickname($nickname))
         $errori .= '<li>Verifica che il nickname inserito sia valido</li>';
 
-    if (!$db->exitsUser($nickname,$password))
+    if (!$db->exitsUser($nickname, $password))
         $errori .= '<li>La password inserita è errata</li>';
 
     if ($errori) {
         $form = " <div>  
-                    <fieldset class='\FormLogin\'>
+                    <fieldset class=\"FormLogin\">
                     <legend>Accedi</legend> 
                         <div class=\"emailLog\">
                             <img src=\"../images/icons/email1.png\" alt=\"icona email\">
-                            <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</label>
+                            <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
                             <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"$nickname\" />
                         </div>
                         <div class=\"passwordLog\">
                              <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
-                             <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password</span>:</label>
+                             <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
                              <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\" />
                         </div> 
                     </fieldset>
                   </div>";
         $file = str_replace('£form', $form, $file);
-        $beginList = '<ul>' . $errori . '</ul>';
+        $beginList = '<div class="ErroriForm"><ul>' . $errori . '</ul></div>';
         $file = str_replace('£erroriLogin', $beginList, $file);
         echo $file;
     } else {
@@ -55,21 +55,22 @@ if (isset($_POST['Accedi'])) {
 
 
 } else { //è la prima volta che accedo
-    $form = "
-             <fieldset class=\"FormLogin\">
-              <legend>Accedi</legend>
-
-             <div class=\"emailLog\">
-                    <img src=\"../images/icons/email1.png\" alt=\"icona email\">
-                    <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</label>
-                    <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"\"/>
-             </div>
-             <div class=\"passwordLog\">
-                    <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
-                    <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password</span>:</label>
-                    <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\"/>
-             </div>
-             </fieldset>";
+    $form = " <div>
+                 <fieldset class=\"FormLogin\">
+                  <legend>Accedi</legend>
+    
+                 <div class=\"emailLog\">
+                        <img src=\"../images/icons/email1.png\" alt=\"icona email\">
+                        <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
+                        <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"\"/>
+                 </div>
+                 <div class=\"passwordLog\">
+                        <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
+                        <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
+                        <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\"/>
+                 </div>
+                 </fieldset>
+             </div>";
     $file = str_replace('£form', $form, $file);
     $file = str_replace('£erroriLogin', "", $file);
 

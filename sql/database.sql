@@ -322,11 +322,7 @@ values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', 'Copertina del gioc
 
 insert into images
     (src, alt, article)
-<<<<<<< HEAD
-values ('images/death-stranding-image.jpg', 'Il protagonista del gioco in primo piano', '11');
-=======
-values ('images/News/DeathStranding/DScopertina.jpg', 'protagonista del gioco in primo piano', '11');
->>>>>>> 47c7a63120b6fae0d7ed18453fb1a41fc0c4b76c
+values ('images/News/DeathStranding/DScopertina.jpg', 'Il protagonista del gioco in primo piano', '11');
 
 insert into images
     (src, alt, article)

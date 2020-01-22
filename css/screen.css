@@ -159,7 +159,7 @@ body {
     outline-style: none;
 }
 
-#menu #currentlink {
+#menu .currentlink {
     color: lawngreen;
     font-weight: bold;
 }

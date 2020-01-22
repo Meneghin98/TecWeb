@@ -308,24 +308,6 @@ function openSearch() {
     var mobileBar = document.getElementById("searchBar");
     var exitButton = document.getElementById("closeSearch");
 
-    /*
-    Non sapevo che modifiche accettare, quindi le ho messo quelle "scartate" qui su commento
-
-    openSearch.setAttribute('id', 'mobileButtonHidden');
-    mobileBar.setAttribute('id', 'searchBarMobile');
-    exitButton.setAttribute('id', 'closeSearchBar');
-    }
-
-    function closeSearch() {
-        var mobileButton = document.getElementById("mobileButtonHidden");
-        var mobileBarHiden = document.getElementById("searchBarMobile");
-        var closeSearchHidden = document.getElementById("closeSearchBar");
-
-        mobileButton.setAttribute('id', 'mobileButton');
-        mobileBarHiden.setAttribute('id', 'searchBar');
-        closeSearchHidden.setAttribute('id', 'closeSearch');
-    */
-
     openSearch.classList.add('js-opened');
     mobileBar.classList.add('js-opened');
     exitButton.classList.add('js-opened');

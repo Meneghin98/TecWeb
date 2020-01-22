@@ -601,9 +601,13 @@
     background-color: #525252;
 }
 
+.ManageReg label {
+    padding-right: 0em;
+}
 
 #primoReg {
     padding-right: 1.2em;
+    margin: 0 5em;
 }
 
 .menuMobileReg img {
@@ -624,8 +628,8 @@ input#bottoneIndietroReg {
 
 .confermaAccountReg input {
     padding: 0.3em;
-    margin-left: 1.5em;
-    width: 12em;
+    margin-left: 3.6em;
+    width: 10em;
 }
 
 #contentRegistrazione h1 {
@@ -653,7 +657,8 @@ input#bottoneIndietroReg {
 }
 
 #secondReg {
-    margin-top: 3em;
+    margin: 3em 5em;
+
 }
 
 .contentMobileReg form {
@@ -674,7 +679,7 @@ input#bottoneIndietroReg {
 }
 
 .contentReg form {
-    margin-left: 3em;
+    margin-left: 0em;
 }
 
 .ManageReg {

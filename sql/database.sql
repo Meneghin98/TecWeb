@@ -137,7 +137,7 @@ insert into articles
     /*Fortnite Guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (3, 'html/Altro/guidaFortnite.html', '2020-01-02', 'Fortnite: come ottenere il deltaplano 2020 gratis ',
-        'Epic Games sta regalando un deltaplano 2020 gratis a tutti i giocatori, per festeggiare l''anno nuovo: ecco come ottenerlo facilmente.',
+        'Epic Games sta regalando un deltaplano 2020 gratis a tutti i giocatori, per festeggiare l&apos;anno nuovo: ecco come ottenerlo facilmente.',
         'Fortnite', 'Altro', '0', '4', null);
 insert into articles
     /*PokemonGO Guida*/
@@ -150,20 +150,20 @@ insert into articles
     /*Death Stranding Recensione*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (5, 'html/Recensioni/recensioneDeathStranding.html', '2019-12-04', 'Death Stranding, la recensione - PS4',
-        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l''ultima opera, ma anche un po'' la rinascita di Hideo Kojima. &Egrave; davvero rivoluzione?',
+        'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l&apos;ultima opera, ma anche un po&apos; la rinascita di Hideo Kojima. &Egrave; davvero rivoluzione?',
         'Death Stranding - recensione', 'Recensioni', '18', '4', null);
 insert into articles
     /*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (6, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',
-        'L''atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
+        'L&apos;atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
         'Vampyr - recensione', 'Recensioni', '0', '4', null);
 insert into articles
     /*Cyberpunk*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (7, 'html/News/newCyberpunk2077.html', '2019-11-28',
         '<span xml:lang="en">Cyberpunk 2077 "You are breathtaking!"</span>',
-        'Dopo che <span xml:lang="en">Keanu Reevs</span> &egrave; salito sul palco dell''<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You''re Breathtaking</span>" &egrave; il tormentone del momento',
+        'Dopo che <span xml:lang="en">Keanu Reevs</span> &egrave; salito sul palco dell&apos;<span xml:lang="en">E3</span> 2019 per la presentazione di <span xml:lang="en">Cyberpunk 2077</span>, "<span xml:lang="en">You&apos;re Breathtaking</span>" &egrave; il tormentone del momento',
         '<span xml:lang="en">Cyberpunk 2077</span>', 'News', '0', '4', null);
 insert into articles
     /*Cod*/
@@ -184,7 +184,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (10, 'html/Recensioni/recensioneStarWars.html', '2019-11-16',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, la recensione - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>',
-        'La recensione di Star Wars Jedi: Fallen Order. Con vari prodotti altalenanti all''attivo e i frutti della scommessa Motive ancora ignoti, EA affida a Respawn la licenza Star Wars. Riuscir&agrave; il team a rendere giustizia al marchio? Scopriamolo insieme',
+        'La recensione di Star Wars Jedi: Fallen Order. Con vari prodotti altalenanti all&apos;attivo e i frutti della scommessa Motive ancora ignoti, EA affida a Respawn la licenza Star Wars. Riuscir&agrave; il team a rendere giustizia al marchio? Scopriamolo insieme',
         '<span xml:lang="en"><abbr title="Play Station 4">PS4</abbr></span>', 'Recensioni', '20', '4', null);
 insert into articles
     /*death stranding*/
@@ -212,15 +212,15 @@ insert into articles
     /*Monster Hunter News*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (14, 'html/News/newMonsterHunterIceborn.html', '2019-12-7',
-        '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novit&agrave; dell''aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
+        '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novit&agrave; dell&apos;aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
         '', 'gaming', 'News', '0', '5', null);
 
 insert into articles
     /*Asgard Wrath review*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (15, 'html/Recensioni/recensioneAsgardWrath.html', '2019-12-7',
-        '<span xml:lang="en">Asgard''s Wrath</span>, la recensione',
-        'Loki dice che c''&egrave; una nuova divinit&agrave; in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
+        '<span xml:lang="en">Asgard&apos;s Wrath</span>, la recensione',
+        'Loki dice che c&apos;&egrave; una nuova divinit&agrave; in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4', null);
 
 insert into articles
     /*Clash Royale guida*/
@@ -275,7 +275,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
         'GTA V, cinque volte GTA',
-        'Il titolo pi&ugrave; atteso degli ultimi anni &egrave; finalmente arrivato. L''abbiamo giocato a
+        'Il titolo pi&ugrave; atteso degli ultimi anni &egrave; finalmente arrivato. L&apos;abbiamo giocato a
                     lungo, senza un minuto di sosta e quello che segue &egrave; il nostro dettagliato giudizio',
         '<span xml:lang="en"><abbr title="Play Station 3">PS3</abbr></span>', 'Recensioni', '200', '4', null);
 

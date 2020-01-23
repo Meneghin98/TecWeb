@@ -227,14 +227,6 @@ class DBConnection
         return false;
     }
 
-    function exitsEmail($email)
-    {
-        $query = "Select * from users where email = '$email'";
-        $queryResult = mysqli_query($this->connection, $query);
-        if (mysqli_num_rows($queryResult) == 1)
-            return true;
-        return false;
-    }
 
     function exitsUser($nickname, $password)
     {

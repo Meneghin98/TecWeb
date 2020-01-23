@@ -131,7 +131,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (2, 'html/News/newWhatsapp.html', '2020-01-01',
         'Whatsapp: il virus di Capodanno con un messaggio ruba i dati dai telefoni iOs e Android',
-        'Whatsapp: il virus di Capodanno si nasconde in un semplice messaggio, ma dopo un click ruba i dati dai telefoni iOS e Android.',
+        'I virus di Capodanno si nasconde in un semplice messaggio, ma dopo un click ruba i dati dai telefoni iOS e Android.',
         'Whatsapp', 'News', '0', '5', null);
 insert into articles
     /*Fortnite Guida*/
@@ -143,7 +143,7 @@ insert into articles
     /*PokemonGO Guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category, editor)
 values (4, 'html/Altro/guidaPokemonGo.html', '2019-12-30',
-        'Pok&eacute;mon GO, come sconfiggere Sierra del Team Rocketcon un solo Pok&eacute;mon',
+        'Pok&eacute;mon GO, come sconfiggere Sierra del Team Rocket con un solo Pok&eacute;mon',
         'Questo video vi mostra come sconfiggere Sierra del Team GO Rocket di Pok&eacute;mon GO utilizzando uno ed un solo Pok&eacute;mon, ecco la guida.',
         'Pokemon Go', 'Altro', '0', '4', null);
 insert into articles
@@ -286,11 +286,11 @@ values ('images/News/LuccaComics/LCcopertina.jpg', '', '1');
 
 insert into images
     (src, alt, article)
-values ('images/News/Whatsapp/whatsapp.jpg', '', '2');
+values ('images/News/Whatsapp/whatsapp.jpg', 'Immagine del messaggio su whatsapp', '2');
 
 insert into images
     (src, alt, article)
-values ('images/Altro/fortnite/fortniteDeltaplano.jpg', '', '3');
+values ('images/Altro/fortnite/fortniteDeltaplano.jpg', 'Deltaplano di Fortnite', '3');
 
 insert into images
     (src, alt, article)
@@ -298,15 +298,15 @@ values ('images/Altro/pokemon/sierra.jpg', '', '4');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/death-stranding/img0.jpg', '', '5');
+values ('images/Recensioni/death-stranding/img0.jpg', 'Immagine di copertina del videogioco', '5');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/vampyr/vampyr.jpg', '', '6');
+values ('images/Recensioni/vampyr/vampyr.jpg', 'Immagine di copertina del videogioco', '6');
 
 insert into images
     (src, alt, article)
-values ('images/News/Cyberpunk/CP20771-lowRes.jpg', 'copertina cyberpunk', '7');
+values ('images/News/Cyberpunk/CP20771-lowRes.jpg', 'Copertina cyberpunk', '7');
 
 insert into images
     (src, alt, article)
@@ -322,7 +322,7 @@ values ('images/Recensioni/Star-Wars/StarWarsCopertina.jpg', 'Copertina del gioc
 
 insert into images
     (src, alt, article)
-values ('images/News/DeathStranding/DScopertina.jpg', 'protagonista del gioco in primo piano', '11');
+values ('images/News/DeathStranding/DScopertina.jpg', 'Il protagonista del gioco in primo piano', '11');
 
 insert into images
     (src, alt, article)
@@ -350,7 +350,7 @@ values ('images/News/PS5/logo-ps5.png', 'Logo della console, ps5', '17');
 
 insert into images
     (src, alt, article)
-values ('images/Recensioni/code-vein/code-vein-low-res.jpg', 'immagine di copertina del videogioco', '18');
+values ('images/Recensioni/code-vein/code-vein-low-res.jpg', 'Immagine di copertina del videogioco', '18');
 
 insert into images
     (src, alt, article)

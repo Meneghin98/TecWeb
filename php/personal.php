@@ -7,7 +7,7 @@ session_start();
 
 $file = str_replace('£footer', html::linked_obj('footer', 'page'),
     str_replace('£menu_', html::linked_obj('menu', 'page'),
-        str_replace('£header', html::header(),
+        str_replace('£header', html::header('utente'),
             str_replace('£head_', html::head(),
                 file_get_contents("../html/User/areaUtente.html")))));
 $DB = new DBConnection();

@@ -8,16 +8,24 @@ class html
         return file_get_contents("../html/head.html");
     }
 
-    public static function header()
+    public static function header($isOn = null)
     {
         $rep = file_get_contents("../html/header.html");
-        if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente &egrave; loggato oppure no
-            $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
+        if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente è loggato oppure no
+            if ($isOn=== 'utente') {
+                $change="<img src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\"/>";
+            }else{
+                $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
                 src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\" /></a>";
+            }
             $rep = str_replace("£utente", $change, $rep);
         } else {
-            $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
+            if ($isOn==='login'){
+                $change = "<img src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" />";
+            }else {
+                $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
                 src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" /></a>";
+            }
             $rep = str_replace("£utente", $change, $rep);
         }
         return $rep;

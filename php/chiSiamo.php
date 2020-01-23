@@ -2,6 +2,12 @@
 require_once ("connessione.php");
 require_once ("replace.php");
 
+session_start();
+
+if (!isset($_SESSION['loggato']))
+    $_SESSION['loggato']=false;
+
+
 $file = file_get_contents("../html/chiSiamo.html");
 $file = str_replace('£head_', html::head(), $file);
 $file = str_replace('£footer', html::linked_obj('footer', 'page', 'chi_siamo'), $file);

@@ -22,8 +22,8 @@ else {
     $paginaArticolo = str_replace('£head_', html::head(), $paginaArticolo);
     $paginaArticolo = str_replace('£header', html::header(), $paginaArticolo);
     $paginaArticolo = str_replace('£rightPanel', html::rightPanel(), $paginaArticolo);
-    $paginaArticolo = str_replace('£footer', html::linked_obj('footer', 'article'), $paginaArticolo);
-    $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', 'article'), $paginaArticolo);
+    $paginaArticolo = str_replace('£footer', html::linked_obj('footer', $ArticoloDB['tipo_articolo']), $paginaArticolo);
+    $paginaArticolo = str_replace('£menu_', html::linked_obj('menu', $ArticoloDB['tipo_articolo']), $paginaArticolo);
 
     /* Path all'articolo corrente
     $_string = $_SERVER['REQUEST_URI'];

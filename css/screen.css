@@ -617,14 +617,8 @@ body {
     min-height: 300px;
 }
 
-#datiAccount fieldset {
-    border-radius: 25px;
-    border: 3px solid #0E9C09;
-
-}
-
 #datiAccount {
-    max-width: 650px;
+    max-width: 41em;
     list-style-type: none;
     text-align: left;
     color: white;
@@ -652,7 +646,7 @@ form #datiAccount{
     color: white;
 }
 
-.groupBox p {
+.groupBox p, #critico p {
     font-size: .8em;
     margin: .3em 0 .8em;
 }
@@ -734,8 +728,31 @@ form #datiAccount{
     background-color: white;
     color: black;
     padding: .25em;
+    text-decoration: none;
 }
 
+#critico{
+    font-size: medium;
+    text-align: left;
+    max-width: 35em;
+    min-width: 15em;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 3px
+}
+
+#critico a:link, #critico a:visited {
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
+    text-decoration: none;
+}
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */

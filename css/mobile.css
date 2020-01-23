@@ -720,7 +720,7 @@ input#bottoneIndietroReg {
 #datiAccount li{
     margin: 0;
 }
-.groupBox {
+.groupBox, #critico {
     margin: 1em;
 }
 
@@ -741,6 +741,10 @@ input#bottoneIndietroReg {
 
 #buonFine, #errori {
     font-size: 1.8em;
+}
+#critico{
+    font-size: 2.5em;
+    max-width: unset;
 }
 
 /*------------------------------------------------*/

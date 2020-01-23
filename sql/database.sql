@@ -94,8 +94,8 @@ insert into users
     (nickname, pwd, email, username, surname, usertype, ref)
 values ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
 insert into users
-    (nickname, pwd, email, username, surname, usertype, ref)
-values ('Simone', 'user', 'simone.meneghin@studenti.unipd.it', 'Simone', 'Meneghin', 'admin', null);
+(nickname, pwd, email, username, surname, usertype, ref)
+values ('Simone', 'admin', 'simone.meneghin@studenti.unipd.it', 'Simone', 'Meneghin', 'admin', null);
 
 
 

@@ -423,6 +423,9 @@
 
 /*----------------login--------------*/
 
+.ErroriForm li {
+    margin-top: 1.5em;
+}
 
 #menuMobileLogin {
     background-color: #525252;
@@ -607,12 +610,25 @@
 
 #primoReg {
     padding-right: 1.2em;
-    margin: 0 5em;
+    margin: 2em 5em;
+}
+
+#ViewErrorReg {
+    font-size: 1.3em;
+    width: 25em;
+    display: block;
 }
 
 .menuMobileReg img {
     float: left;
     width: 7em;
+}
+
+#ViewErrorReg {
+    font-size: 1.3em;
+    width: 25em;
+    display: block;
+    margin: 0 4em;
 }
 
 .menuMobileReg h1 {

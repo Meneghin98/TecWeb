@@ -384,14 +384,19 @@ body {
     border-left: 3px solid #0E9C09;
     margin: 1.5em 0;
 }
-#chisiamo .admin *{
+#chisiamo .admin p, .admin a{
     margin: 0 1em;
     padding: 0;
 }
+
+
+
 #chisiamo .admin p, #chisiamo .admin a:last-of-type{
     margin-left: 2em;
     font-size: 1.1em;
 }
+
+
 
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
@@ -1152,7 +1157,14 @@ form #datiAccount{
     text-decoration: none;
     color: white;
 }
-
+/* ------------------------------ */
+/* ---------- 404------------ */
+div#404Error {
+    background-image: url(../images/icons/Errore404.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 7em 2em 7em 18em;
+}
 /* ------------------------------ */
 /* ---------- Footer ------------ */
 

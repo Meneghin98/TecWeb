@@ -8,16 +8,24 @@ class html
         return file_get_contents("../html/head.html");
     }
 
-    public static function header()
+    public static function header($isOn = null)
     {
         $rep = file_get_contents("../html/header.html");
-        if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente &egrave; loggato oppure no
-            $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
+        if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente è loggato oppure no
+            if ($isOn=== 'utente') {
+                $change="<img src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\"/>";
+            }else{
+                $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
                 src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\" /></a>";
+            }
             $rep = str_replace("£utente", $change, $rep);
         } else {
-            $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
+            if ($isOn==='login'){
+                $change = "<img src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" />";
+            }else {
+                $change = "<a id=\"login\" title=\"Login e registrazione\" href=\"../php/login.php\"><img
                 src=\"../images/icons/loginMobile.png\" alt=\"login e registrazione\" /></a>";
+            }
             $rep = str_replace("£utente", $change, $rep);
         }
         return $rep;
@@ -35,22 +43,6 @@ class html
 
     public static function linked_obj($type_linked_obj, $type_obj, $type_page = 'not_a_page')
     {
-        /*
-        if($type_obj == 'home') {
-
-            if($type_linked_obj == 'menu')
-                $obj = file_get_contents("html/menu.html");
-            else
-                $obj = file_get_contents("html/footer.html");
-
-            $obj = str_replace('£link1', '<li id="currentlink"><span xml:lang="en">Home</span></li>', $obj);
-            $obj = str_replace('£link2', '<li><a href="php/page.php?t=n"><span xml:lang="en">News</span></a></li>', $obj);
-            $obj = str_replace('£link3', '<li><a href="php/page.php?t=r">Recensioni</a></li>', $obj);
-            $obj = str_replace('£link4', '<li><a href="php/page.php?t=a">Altro</a></li>', $obj);
-
-            return $obj;
-        }*/
-
         if ($type_linked_obj == "menu")
             $obj = file_get_contents("../html/menu.html");
         else if ($type_linked_obj == "footer")
@@ -87,8 +79,7 @@ class html
         if ($type_linked_obj == 'footer') {
             $obj = str_replace('£link5', '<li><a href="login.php" tabindex="0">Accedi</a></li>', $obj);
             $obj = str_replace('£link6', '<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', $obj);
-            $obj = str_replace('£link7', '<li><a href="" tabindex="0">Chi siamo</a></li>', $obj);
-            $obj = str_replace('£link8', '<li><a href="" tabindex="0">Lavora con noi</a></li>', $obj);
+            $obj = str_replace('£link7', '<li><a href="chiSiamo.php" tabindex="0">Chi siamo</a></li>', $obj);
 
             switch ($type_page) {
                 case 'accedi':
@@ -98,10 +89,7 @@ class html
                     $obj = str_replace('<a href="registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
                     break;
                 case 'chi_siamo':
-                    $obj = str_replace('<a href="" tabindex="0">Chi siamo</a>', 'Chi siamo', $obj);
-                    break;
-                case 'lavora':
-                    $obj = str_replace('<a href="" tabindex="0">Lavora con noi</a>', 'Lavora con noi', $obj);
+                    $obj = str_replace('<a href="chiSiamo.php" tabindex="0">Chi siamo</a>', 'Chi siamo', $obj);
                     break;
             }
         }
@@ -138,20 +126,13 @@ class html
             foreach ($commenti_array as $commento) {
                 $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><a href=\"login.php\" class=\"miPiace upGray \" id=\"Label$commento[id]\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</a><p class=\"numeroLike\">$commento[likes]</p></li>";
             }
-        } else if (is_null($id_commenti_con_like)) { //non ci sono commenti con il "mi piace" dell'utente loggato
+        } else {
             foreach ($commenti_array as $commento) {
                 $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre>";
-                if ($_SESSION['level'] == 'admin') //l'utente &egrave; un admin, aggiungo la possibilità di rimuovere il commento
-                    $commenti.= "<label onclick=\"eliminaCommento('commento_$commento[id]')\" class=\"delete\" title=\"Rimuovi commento\" for=\"delete_$commento[id]\">Elimina commento</label><input id=\"delete_$commento[id]\" type=\"button\" value=\"delete\" name=\"elimina commento\" />";
-                $commenti .= "<label title=\"Mi piace\" class=\"miPiace upGray \" for=\"input_$commento[id]\" id=\"Label$commento[id]\" onclick=\"miPiace('Label$commento[id]')\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</label><input  id=\"input_$commento[id]\" type=\"button\" value=\"up\" name=\"miPiace\" /><p class=\"numeroLike\">$commento[likes]</p></li>";
-            }
-        } else {
-            foreach ($commenti_array as $commento) { //ci sono commenti a cui ha messo mi piace
-                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre>";
-                if ($_SESSION['level'] == 'admin') //l'utente &egrave; un admin, aggiungo la possibilità di rimuovere il commento
+                if ($_SESSION['level'] == 'admin' || $_SESSION['nickname'] == $commento['utente']) //l'utente è un admin oppure è un suo commento, aggiungo la possibilità di rimuovere il commento
                     $commenti.= "<label onclick=\"eliminaCommento('commento_$commento[id]')\" class=\"delete\" title=\"Rimuovi commento\" for=\"delete_$commento[id]\">Elimina commento</label><input id=\"delete_$commento[id]\" type=\"button\" value=\"delete\" name=\"elimina commento\" />";
                 $commenti .= "<label title=\"Mi piace\" class=\"miPiace ";
-                if (self::array_contain($commento['id'], $id_commenti_con_like))
+                if (self::array_contain($commento['id'], $id_commenti_con_like)) //controllo se il commento ha il mipiace dell'utente loggato
                     $commenti .= " upBlue";
                 else
                     $commenti .= " upGray";

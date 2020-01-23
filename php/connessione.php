@@ -281,6 +281,18 @@ class DBConnection
             return null;
     }
 
+    public function removeUser($nickname){
+        $query = "delete from likes where likes.nickname = '$nickname'";
+        mysqli_query($this->connection, $query);
+
+        $query = "delete from comments where comments.user = '$nickname'";
+        mysqli_query($this->connection, $query);
+
+        $query = "delete from users where users.nickname = '$nickname'";
+        mysqli_query($this->connection, $query);
+
+    }
+
     public function close()
     {
         mysqli_close($this->connection);

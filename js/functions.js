@@ -322,3 +322,8 @@ function closeSearch() {
     mobileBar.classList.remove('js-opened');
     exitButton.classList.remove('js-opened');
 }
+
+//--------------------Area Utente--------------
+function confermaRimozione() {
+    return confirm("Sei sicuro di voler rimuovere il tuo account?");
+}

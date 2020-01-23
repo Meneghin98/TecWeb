@@ -109,7 +109,7 @@ body {
 
 /* Menu */
 
-#content, #menu, #AreaUtente {
+#content, #menu, #AreaUtente, #chisiamo {
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -171,7 +171,7 @@ body {
 
 /* Content */
 
-#content {
+#content, #chisiamo {
     background-color: white;
     padding-bottom: 1em;
 }
@@ -375,6 +375,22 @@ body {
     .topArticles li {
         flex: 100%;
     }
+}
+
+/*-----------------------------------------------Chi siamo-------------------------------
+ */
+.admin{
+    list-style-type: none;
+    border-left: 3px solid #0E9C09;
+    margin: 1.5em 0;
+}
+#chisiamo .admin *{
+    margin: 0 1em;
+    padding: 0;
+}
+#chisiamo .admin p, #chisiamo .admin a:last-of-type{
+    margin-left: 2em;
+    font-size: 1.1em;
 }
 
 /*
@@ -623,14 +639,8 @@ body {
     min-height: 300px;
 }
 
-#datiAccount fieldset {
-    border-radius: 25px;
-    border: 3px solid #0E9C09;
-
-}
-
 #datiAccount {
-    max-width: 650px;
+    max-width: 41em;
     list-style-type: none;
     text-align: left;
     color: white;
@@ -658,7 +668,7 @@ form #datiAccount{
     color: white;
 }
 
-.groupBox p {
+.groupBox p, #critico p {
     font-size: .8em;
     margin: .3em 0 .8em;
 }
@@ -740,8 +750,31 @@ form #datiAccount{
     background-color: white;
     color: black;
     padding: .25em;
+    text-decoration: none;
 }
 
+#critico{
+    font-size: medium;
+    text-align: left;
+    max-width: 35em;
+    min-width: 15em;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 3px
+}
+
+#critico a:link, #critico a:visited {
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
+    text-decoration: none;
+}
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */
@@ -792,7 +825,7 @@ form #datiAccount{
     padding-bottom: 0.5em;
 }
 
-.description p {
+.description p, #chisiamo p, #chisiamo ul {
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -806,7 +839,7 @@ form #datiAccount{
     padding-bottom: 2em;
 }
 
-.description h2 {
+.description h2, #chisiamo h2 {
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -938,7 +971,7 @@ form #datiAccount{
     padding: 1em;
 }
 
-.commento a:link, .commento a:visited {
+.commento a:link, .commento a:visited, .admin a:first-of-type:link, .admin a:first-of-type:visited {
     color: black;
     font-size: 1.3em;
 

@@ -1159,7 +1159,7 @@ form #datiAccount{
 }
 /* ------------------------------ */
 /* ---------- 404------------ */
-div#404Error {
+#Error404 {
     background-image: url(../images/icons/Errore404.png);
     background-repeat: no-repeat;
     background-position: center left;

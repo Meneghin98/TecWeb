@@ -46,14 +46,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5em;
-   /* position: sticky;
-    top: 0;
-    z-index: 1;*/
+    /* position: sticky;
+     top: 0;
+     z-index: 1;*/
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
-.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save input, #ScriviCommento input, .commento input
-{
+.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save input, #ScriviCommento input, .commento input {
     display: none;
 }
 
@@ -61,6 +60,7 @@ body {
     flex: 20%;
     height: 90px;
 }
+
 #logoMobile {
     display: none;
 }
@@ -100,11 +100,10 @@ body {
 #closeSearch {
     display: none;
 }
-.headerChild:last-of-type img{
+
+.headerChild:last-of-type img {
     width: 50%;
 }
-
-
 
 
 /* Menu */
@@ -251,6 +250,7 @@ body {
 #hiddenArticle li:first-of-type {
     display: none;
 }
+
 .articleList li {
     border-top: 1px solid #dddcdc;
     padding-top: 1em;
@@ -333,6 +333,7 @@ body {
     background-color: darkgoldenrod;
 
 }
+
 @media screen and (max-width: 1600px) {
     .rightPanel {
         position: unset;
@@ -353,7 +354,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     #header {
         flex-wrap: wrap;
         padding-bottom: 0.5em;
@@ -361,9 +362,17 @@ body {
 
     }
 
-
-    .flexColumn:nth-of-type(1) {
+    #logo {
         flex: 100%;
+    }
+
+    #mobileButton {
+        margin-left: 4em;
+    }
+
+    .headerChild:last-of-type {
+        margin-right: 6em;
+        margin-left: 0;
     }
 }
 
@@ -375,23 +384,28 @@ body {
     .topArticles li {
         flex: 100%;
     }
+
 }
 
 /*-----------------------------------------------Chi siamo-------------------------------
  */
-.admin{
+.admin {
     list-style-type: none;
     border-left: 3px solid #0E9C09;
     margin: 1.5em 0;
 }
-#chisiamo .admin *{
+
+#chisiamo .admin p, .admin a {
     margin: 0 1em;
     padding: 0;
 }
-#chisiamo .admin p, #chisiamo .admin a:last-of-type{
+
+
+#chisiamo .admin p, #chisiamo .admin a:last-of-type {
     margin-left: 2em;
     font-size: 1.1em;
 }
+
 
 /*
 --------------------------------------------------------------------------Area Utente ----------------------------------
@@ -492,6 +506,7 @@ body {
     background-color: rgba(52, 52, 52, 1);
 
 }
+
 .contentLog legend {
     color: white;
     font-size: 2em;
@@ -646,9 +661,11 @@ body {
     color: white;
     font-size: medium;
 }
-form #datiAccount{
+
+form #datiAccount {
     margin: 2em auto 0;
 }
+
 #datiAccount fieldset label {
     display: block;
     padding: 0.3em 0;
@@ -664,7 +681,7 @@ form #datiAccount{
     margin-left: 5em;
 }
 
-#datiAccount li a:link, #datiAccount li a:visited{
+#datiAccount li a:link, #datiAccount li a:visited {
     color: white;
 }
 
@@ -753,7 +770,7 @@ form #datiAccount{
     text-decoration: none;
 }
 
-#critico{
+#critico {
     font-size: medium;
     text-align: left;
     max-width: 35em;
@@ -775,6 +792,7 @@ form #datiAccount{
     padding: .25em;
     text-decoration: none;
 }
+
 /*
 ---------------------------------------------------------------------fine Area Utente-----------------------------------
  */
@@ -1012,7 +1030,7 @@ form #datiAccount{
     cursor: pointer;
 }
 
-.delete{
+.delete {
     margin-top: .7em;
     font-size: 1em;
     float: right;
@@ -1151,6 +1169,23 @@ form #datiAccount{
 .topArticles a:active {
     text-decoration: none;
     color: white;
+}
+
+/* ------------------------------ */
+/* ---------- 404------------ */
+#Error404 {
+    background-image: url(../images/icons/Errore404.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 7em 2em 7em 18em;
+}
+#Error404 p {
+    font-size: 1.5em;
+}
+#codiceErrore{
+    font-size: 10em;
+    color: #0E9C09;
+    text-align: center;
 }
 
 /* ------------------------------ */

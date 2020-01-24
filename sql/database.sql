@@ -96,6 +96,9 @@ values ('user', 'user', 'user@user.it', 'user', 'user', 'user', null);
 insert into users
 (nickname, pwd, email, username, surname, usertype, ref)
 values ('Simone', 'admin', 'simone.meneghin@studenti.unipd.it', 'Simone', 'Meneghin', 'admin', null);
+insert into users
+(nickname, pwd, email, username, surname, usertype, ref)
+values ('JakeSun22', 'admin', 'nicolo.giaccone@studenti.unipd.it', 'Nicol&ograve;', 'Giaccone', 'admin', null);
 
 
 
@@ -210,7 +213,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (14, 'html/News/newMonsterHunterIceborn.html', '2019-12-7',
         '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novit&agrave; dell&apos;aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
-        '', 'gaming', 'News', '0', '5');
+        'Notizie novit&agrave; sulla nuova uscita di dicembre', 'gaming', 'News', '0', '5');
 
 insert into articles
     /*Asgard Wrath review*/

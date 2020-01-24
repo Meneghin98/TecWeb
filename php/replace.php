@@ -50,11 +50,23 @@ class html
         else
             return 0;
 
-        if ($type_obj == 'article') {
+        if ($type_obj == 'News' || $type_obj == 'Recensioni' || $type_obj == 'Altro') {
             $obj = str_replace('£link1', '<li><a href="../index.php" tabindex="0"><span xml:lang="en">Home</span></a></li>', $obj);
             $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
             $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
             $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
+
+            switch($type_obj)
+            {
+                case 'News':
+                    $obj = str_replace('<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', '<li class="currentlink"><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
+                    break;
+                case 'Recensioni':
+                    $obj = str_replace('<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', '<li class="currentlink"><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
+                    break;
+                case 'Altro':
+                    $obj = str_replace('<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', '<li class="currentlink"><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
+            }
         }
 
         if ($type_obj == 'page') {

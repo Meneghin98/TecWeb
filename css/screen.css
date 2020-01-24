@@ -1165,6 +1165,9 @@ form #datiAccount{
     background-position: center left;
     padding: 7em 2em 7em 18em;
 }
+#Error404 {
+    font-size: 1.5em;
+}
 /* ------------------------------ */
 /* ---------- Footer ------------ */
 

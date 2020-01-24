@@ -141,7 +141,11 @@ html body {
     display: none;
 }
 
-
+#logo h1 {
+    text-align: center;
+    color: #0E9C09;
+    font-size: 3em;
+}
 /* ---------------------- */
 /*          Content       */
 /* ---------------------- */
@@ -269,11 +273,208 @@ html body {
 /*          Login         */
 /* ---------------------- */
 
+.signIn {
+    margin: 0 auto;
+    width: 28em;
+    /*background-color: white;
+    border: transparent;*/
+
+}
+
+.passwordLog {
+    margin-top: 2em;
+}
+
+.FormLogin {
+    border: 3px solid #0E9C09;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.FormLogin span {
+    color: white;
+}
+
+#login img {
+    display: none;
+}
+
+.imageLogin {
+    padding: 0em;
+}
+
+#contentLogin {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    background-color: rgba(52, 52, 52, 1);
+}
+
+.contentLog legend {
+    color: white;
+    font-size: 2em;
+}
+
+.contentLog form {
+    display: block;
+    text-align: center;
+    margin: 0 3em;
+
+}
+
+.contentLog label {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+#scrittaReg {
+    display: block;
+    color: white;
+    margin-top: 3em;
+}
+
+
+#AccediLogin {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid #0E9C09;
+    display: block;
+    margin: 1em auto;
+    padding: 0.2em 2.5em;
+    font-size: 2.2em;
+}
+
+/*#passwordLogin {
+    margin-bottom: 1em;
+}*/
+
+#scrittaLog {
+    display: none;
+}
+
+.pulsantiLogin {
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
+.pulsantiLogin a {
+    display: none;
+}
+
+.emailLog input, .passwordLog input {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.ErroriForm {
+    color: white;
+    margin-right: 2em;
+}
+
+.ErroriForm li {
+    margin-top: 0.7em;
+}
+
+#Login {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7em 0;
+}
+
+#pulsanteLogin {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px;
+}
+
+#menuMobileLogin {
+    display: none;
+}
+#userArea {
+    display: none;
+}
+
+#logoDesktop img {
+    margin: 6em;
+}
+
 
 /* ---------------------- */
 /*      Registrazione     */
 /* ---------------------- */
 
+
+#ViewErrorReg {
+    font-size: 1.3em;
+    display: block;
+    width: 24em;
+    margin: 0 auto;
+}
+
+#ViewErrorReg li {
+    padding-top: 1em;
+}
+
+#contentRegistrazione h1 {
+    color: #0E9C09;
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+.contentReg {
+    color: white;
+}
+
+.contentReg form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+.contentReg fieldset {
+    border: 3px solid #0E9C09;
+    padding: 1.8em;
+    margin-top: 3em;
+}
+
+#contentRegistrazione {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 5em;
+    background-color: rgba(52, 52, 52, 1);
+}
+
+.confermaAccountReg {
+    margin-top: 6em;
+}
+
+.confermaAccountReg input {
+
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid #0E9C09;
+    display: block;
+    margin: 0 auto;
+    padding: 0.2em 2.5em;
+    font-size: 2.3em;
+}
+
+.ManageReg label {
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+.ManageReg input {
+    font-size: 1.3em;
+}
+
+.menuMobileReg {
+    display: none;
+}
 
 /* ---------------------- */
 /*      Area utente       */

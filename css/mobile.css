@@ -60,9 +60,7 @@
 
 #logo {
     height: 8em;
-    margin: 1em 8em 1.5em auto;
-
-
+    margin: 1em auto 1.5em auto;
 }
 
 #logo img {
@@ -70,8 +68,8 @@
     margin: 0 auto;
 
 }
-#logoMobile {
-    margin-left: 8.1em;
+#logo a {
+    text-align: center;
 }
 
 
@@ -168,130 +166,8 @@
     top: 1.4em;
     right: 0.5em;
     width: 6.75em;
-    /*padding: 3em 1em 2em 1em;*/
 }
 
-/*
-
-
-#searchBarMobile button {
-    display: initial;
-    position: absolute;
-    background: transparent;
-    background: white;
-    border: none;
-    top: 3.5em;
-    right: 9em;
-    height: 48px;
-    float: right;
-}
-
-#searchBarMobile input {
-    display: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: unset;
-    height: 4.6em;
-    width: 100%;
-    font-size: 3em;
-    border: 3px solid #0E9C09;
-}
-#searchBar button {
-    display: none;
-    font-size: 2em;
-}
-
-#closeSearchBar {
-    display: initial;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 3em 1em 2em 1em;
-}
-#mobileButtonHidden {
-    display: none;
-}
-.headerChild:last-of-type {
-    margin-left: 1em;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#searchBarMobile {
-    height: 60px;
-    width: 100%;
-    top: 0;
-    right: 0;
-    background: white;
-    border: 3px solid #0E9C09;
-}
-
-#searchBarMobile form {
-    display: block;
-    text-align: right;
-}
-
-#searchBarMobile fieldset {
-    border: unset;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#searchBarMobile input {
-    display: block;
-    border: none;
-    margin: 2px 2px 2px 2px;
-    font-size: 2em;
-    width: 6em;
-    overflow: hidden;
-}
-
-#searchBarMobile img {
-    max-height: 48px;
-    display: block;
-}
-
-#closeSearchBar {
-    background: white;
-    float: left;
-    cursor: pointer;
-}
-
-#searchBarMobile button {
-    background: white;
-    border: none;
-    display: block;
-    cursor: pointer;
-}*/
 #login img {
     width: 6em;
     margin-left: 1em;
@@ -796,42 +672,60 @@ blocco per evitare codice duplicato */
 }
 
 /*------------------------------------------------*/
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px) {
     #header {
         justify-content: end;
         align-content: flex-start;
     }
+
     #searchBar {
-       margin-left: 0;
+        margin-left: 0;
         margin-right: 1.5em;
     }
+
     #searchBar img {
         margin: 0;
     }
+
     #userArea {
         flex: 25%;
         margin: 0;
     }
+
     #searchBar.js-opened input {
         height: 2em;
     }
+
     #searchBar.js-opened button {
         right: 6em;
     }
+
     #searchBar.js-opened button img {
         width: 3.75em;
     }
+
     #closeSearch.js-opened {
         width: 3.75em;
         right: 0.5em;
     }
-    #logo  {
+
+    #logo {
         margin: 0
     }
+
     #menu.js-opened li a {
         padding: 0;
     }
-    #logoMobile {
-        margin-left: 15.35em;
+}
+@media screen and (max-width: 350px){
+    #userArea img, img#mobileButton, #mobileMenu img, #userArea, #mobileMenu, #searchBar{
+        width: 3.75em;
     }
+    #logo {
+        height: 4em;
+    }
+    #logo img {
+        height: 4em;
+    }
+
 }

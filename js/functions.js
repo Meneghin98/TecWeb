@@ -1,9 +1,3 @@
-
-function trimText(id) {
-    let element = document.getElementById(id);
-    element.innerHTML = element.textContent.trim();
-}
-
 //-----------Sezione commenti--------------------
 function commentoVuoto() {
     let commentText = document.getElementById("textarea").value.trim();

@@ -430,7 +430,8 @@ body {
 */
 
 .ErroriForm {
-    color: white;
+    color: orangered;
+    margin-top: 0.4em;
 
 }
 

@@ -33,18 +33,14 @@ if (isset($_POST['Accedi'])) {
                             <img src=\"../images/icons/email1.png\" alt=\"icona email\">
                             <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
                             <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"$nickname\" />
-                        </div>
-                        <div class=\"ErroriForm\">
-                            <ul><li>Verifica che il nickname inserito sia valido</li></ul>
+                            <p class=\"ErroriForm\">Verifica che il nickname inserito sia valido</p>
                         </div>
                         <div class=\"passwordLog\">
                              <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
                              <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
                              <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\" />
+                              <p class=\"ErroriForm\">Verifica che la password inserita sia valida</p>
                         </div> 
-                        <div class=\"ErroriForm\">
-                             <ul><li>Verifica che la password inserita sia valida</li></ul>
-                        </div>
                     </fieldset>
                   </div>";
         $file = str_replace('£form', $form, $file);

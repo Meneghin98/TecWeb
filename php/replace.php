@@ -101,6 +101,12 @@ class html
             }
         }
 
+        // Controllo utente autenticato
+        if($_SESSION['loggato'] == true) {
+            $obj = str_replace('<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', '<li>Crea un account</li>', $obj);
+            $obj = str_replace('<li><a href="login.php" tabindex="0">Accedi</a></li>', '<li>Accedi</li>', $obj);
+        }
+
         return $obj;
     }
 

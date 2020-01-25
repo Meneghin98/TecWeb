@@ -75,8 +75,8 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
-                    <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value='$nickname'/>
+                    <label for=\"nicknameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
+                    <input id=\"nicknameReg\" name=\"nickname\" type=\"text\" value='$nickname'/>
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"emailReg\"><span xml:lang=\"en\">Email</span>:</label>
@@ -113,8 +113,8 @@ else { //&egrave; la prima volta che entro in registrazione
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
-                    <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value=''/>
+                    <label for=\"nicknameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
+                    <input id=\"nicknameReg\" name=\"nickname\" type=\"text\" value=''/>
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"emailReg\"><span xml:lang=\"en\">Email</span>:</label>

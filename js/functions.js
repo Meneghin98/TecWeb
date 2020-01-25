@@ -163,11 +163,9 @@ function validazioneForm() {
 
 function mostraErrore(input, testoErrore) {
 
-    togliErrore(input);
-
-    var fieldset = input.parentNode.parentNode.parentNode;
+    var fieldset = input.parentNode;
     var element = document.createElement("P");
-    //strong.className="corsivo";
+    element.className="corsivo";
     element.appendChild(document.createTextElement(testoErrore));
     fieldset.appendChild(element);
 
@@ -176,29 +174,18 @@ function mostraErrore(input, testoErrore) {
 function togliErrore(input) {
     var p = input.parentNode;
 
-    if (input == "nome") {
-        p.removeChild(input);
-    }
-    else if (input == "cognome") {
-        p.removeChild(input);
-    }
-    else if (input == "nickname") {
-        p.removeChild(input);
-    }
-    else if (input == "email") {
-        p.removeChild(input);
-    }
-    else if (input == "password") {
-        p.removeChild(input);
+    if (p.childElementCount>2) {
+        p.removeChild(p.children[2]);
     }
 }
 
 function checkNome(nomeinput) {
     var nome = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
-    if (nome.test(nomeinput.value)) {  //mi mostra il valore contenuto in input
+    if (nome.test(nomeinput.value)) {
         togliErrore(nomeinput);
         return true;
     } else {
+        togliErrore(nomeinput);
         mostraErrore(nomeinput,
             "Il nome che è stato inserito non è conforme");
         return false;
@@ -211,6 +198,7 @@ function checkCognome(cognomeInput) {
         togliErrore(cognomeInput);
         return true;
     } else {
+        togliErrore(cognomeInput);
         mostraErrore(cognomeInput,
             "Il Cognome che è stato inserito non è conforme");
         return false;
@@ -223,6 +211,7 @@ function checkNickname(nicknameInput) {
         togliErrore(nicknameInput);
         return true;
     } else {
+        togliErrore(nicknameInput);
         mostraErrore(nicknameInput,
             "Il nickname che è stato inserito non è conforme");
         return false;
@@ -235,6 +224,7 @@ function checkEmail(emailInput) {
         togliErrore(emailInput);
         return true;
     } else {
+        togliErrore(emailInput);
         mostraErrore(emailInput,
             "L'email che è stato inserita non è conforme");
         return false;
@@ -247,6 +237,7 @@ function checkPassword(passwordInput) {
         togliErrore(passwordInput);
         return true;
     } else {
+        togliErrore(passwordInput);
         mostraErrore(passwordInput,
             "La password che è stato inserita non è conforme");
         return false;
@@ -254,11 +245,11 @@ function checkPassword(passwordInput) {
 }
 
 function validazioneReg() {
-    var nome = document.getElementById("nome");
-    var cognome = document.getElementById("cognome");
-    var nickname = document.getElementById("nickname");
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+    var nome = document.getElementById("nomeReg");
+    var cognome = document.getElementById("cognomeReg");
+    var nickname = document.getElementById("nicknameReg");
+    var email = document.getElementById("emailReg");
+    var password = document.getElementById("passwordReg");
 
     var risultatoNome = checkNome(nome);
     var risultatoCognome = checkCognome(cognome);

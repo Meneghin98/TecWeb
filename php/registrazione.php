@@ -64,7 +64,8 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
                 <legend>Info Personali</legend>
                 <div class=\"ManageReg\">
                     <label for=\"nomeReg\">Nome:</label>
-                    <input id=\"nomeReg\" name=\"nome\" type=\"text\" value='$nome'/>
+                    <input id=\"nomeReg\" name=\"nome\" type=\"text\" value='$nome'/>    
+                     
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"cognomeReg\">Cognome:</label>

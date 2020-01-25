@@ -31,11 +31,6 @@ class html
         return $rep;
     }
 
-    public static function registrazione()
-    {
-        return file_get_contents("../html/User/registrazione.html");
-    }
-
     public static function rightPanel()
     {
         return file_get_contents("../html/rightPanel.html");

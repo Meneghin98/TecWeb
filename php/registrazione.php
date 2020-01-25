@@ -5,7 +5,7 @@ require_once("checks.php");
 
 session_start();
 
-$file = html::registrazione();
+$file = file_get_contents("../html/User/registrazione.html");
 $file = str_replace('£head_', html::head(), $file);
 $file = str_replace('£footer', html::linked_obj("footer","page", "registrazione"), $file);
 $file = str_replace('£menu_', html::linked_obj("menu","page", "registrazione"), $file);

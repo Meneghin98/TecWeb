@@ -31,11 +31,6 @@ class html
         return $rep;
     }
 
-    public static function registrazione()
-    {
-        return file_get_contents("../html/User/registrazione.html");
-    }
-
     public static function rightPanel()
     {
         return file_get_contents("../html/rightPanel.html");
@@ -104,6 +99,12 @@ class html
                     $obj = str_replace('<a href="chiSiamo.php" tabindex="0">Chi siamo</a>', 'Chi siamo', $obj);
                     break;
             }
+        }
+
+        // Controllo utente autenticato
+        if($_SESSION['loggato'] == true) {
+            $obj = str_replace('<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', '<li>Crea un account</li>', $obj);
+            $obj = str_replace('<li><a href="login.php" tabindex="0">Accedi</a></li>', '<li>Accedi</li>', $obj);
         }
 
         return $obj;

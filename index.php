@@ -1,6 +1,7 @@
 <?php
  require_once('php/connessione.php');
  require_once('php/replace.php');
+ require_once ('php/replace.php');
 
  session_start();
 
@@ -60,5 +61,6 @@ if (!is_null($lastRew)) {
  $index = str_replace('£head_', file_get_contents("html/head.html"), $index);
  $index = str_replace('£top_articles', $top_articoli, $index);
 
+ $index = html::checkLoggedUser($index);
 
 echo str_replace('../', '', $index);

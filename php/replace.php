@@ -36,6 +36,19 @@ class html
         return file_get_contents("../html/rightPanel.html");
     }
 
+    public static function checkLoggedUser($obj = null) {
+        if($_SESSION['loggato'] == true) {
+            // Pagine generiche
+            $obj = str_replace('<a href="registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
+            $obj = str_replace('<a href="login.php" tabindex="0">Accedi</a>', 'Accedi', $obj);
+
+            // Index
+            $obj = str_replace('<a href="php/registrazione.php" tabindex="0">Crea un account</a>', 'Crea un account', $obj);
+            $obj = str_replace('<a href="php/login.php" xml:lang="en" tabindex="0">Accedi</a>', 'Accedi', $obj);
+        }
+        return $obj;
+    }
+
     public static function linked_obj($type_linked_obj, $type_obj, $type_page = 'not_a_page')
     {
         if ($type_linked_obj == "menu")
@@ -102,10 +115,7 @@ class html
         }
 
         // Controllo utente autenticato
-        if($_SESSION['loggato'] == true) {
-            $obj = str_replace('<li><a href="registrazione.php" tabindex="0">Crea un account</a></li>', '<li>Crea un account</li>', $obj);
-            $obj = str_replace('<li><a href="login.php" tabindex="0">Accedi</a></li>', '<li>Accedi</li>', $obj);
-        }
+        $obj = html::checkLoggedUser($obj);
 
         return $obj;
     }
@@ -173,4 +183,5 @@ class html
         }
         return $lastRewarticolo;
     }
+
 }

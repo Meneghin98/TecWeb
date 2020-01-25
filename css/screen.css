@@ -866,6 +866,16 @@ form #datiAccount {
     color: black;
 }
 
+.description ul{
+    margin-left: 10%;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+.description li {
+    font-size: 1.2em;
+}
+
 .comment {
     background-color: rgba(50, 205, 50, 0.4);
     margin: 0 2em;
@@ -1183,9 +1193,10 @@ form #datiAccount {
     font-size: 1.5em;
 }
 #codiceErrore{
-    font-size: 10em;
+    font-size: 5em;
     color: #0E9C09;
     text-align: center;
+    padding-top: 1.5em;
 }
 
 /* ------------------------------ */

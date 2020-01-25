@@ -466,6 +466,7 @@ html body {
 .ManageReg label {
     padding-right: 1em;
     font-size: 1.3em;
+    background-color: white;
 }
 
 .ManageReg input {

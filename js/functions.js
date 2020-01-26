@@ -163,18 +163,28 @@ function mostraErrore(input, testoErrore) {
 
     var fieldset = input.parentNode;
     var element = document.createElement("P");
-    element.className="corsivo";
+    element.className="messErroriReg";
     element.appendChild(document.createTextNode(testoErrore));
-    fieldset.appendChild(element);
+    insertAfter(element,fieldset);
+    //fieldset.appendChild(element);
 
 }
 
-function togliErrore(input) {
-    var p = input.parentNode;
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
 
-    if (p.childElementCount>2) {
-        p.removeChild(p.children[2]);
+function togliErrore(input) {
+    var p = input.parentNode.nextSibling;
+    var pSup = p.parentNode;
+    var name = p.tagName;
+    if(name=="P") {
+        pSup.removeChild(p);
     }
+
+    /*if (p.childElementCount>2) {
+        p.removeChild(p.children[2]);
+    }*/
 }
 
 function checkNome(nomeinput) {

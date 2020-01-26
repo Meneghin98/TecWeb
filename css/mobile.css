@@ -695,6 +695,9 @@ blocco per evitare codice duplicato */
     #menu.js-opened li a {
         padding: 0;
     }
+    #menu.js-opened ul {
+        top: 11em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -726,6 +729,9 @@ blocco per evitare codice duplicato */
         top: 2.5em;
         right: 4em;
     }
+    #menu.js-opened ul {
+        top: 8em;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -743,6 +749,9 @@ blocco per evitare codice duplicato */
 
     #searchBar.js-opened button, #closeSearch.js-opened {
         top: 1.4em;
+    }
+    #menu.js-opened ul {
+        top: 6.5em;
     }
 }
 

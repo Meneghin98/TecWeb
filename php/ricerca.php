@@ -56,7 +56,15 @@ foreach($listaArticoli as $articolo)
 
 // Costruisco la pagina dei risultati
 
-$file = file_get_contents("../html/ricerca.html");
+
+if(empty($listaArticoli_match))
+{
+    $file = file_get_contents("../html/notFound.html");
+}
+else
+{
+    $file = file_get_contents("../html/ricerca.html");
+}
 
 $file = str_replace('£head_', html::head(), $file);
 $file = str_replace('£footer', html::linked_obj('footer', 'page', null), $file);

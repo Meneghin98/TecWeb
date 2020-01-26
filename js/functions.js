@@ -1,9 +1,3 @@
-
-function trimText(id) {
-    let element = document.getElementById(id);
-    element.innerHTML = element.textContent.trim();
-}
-
 //-----------Sezione commenti--------------------
 function commentoVuoto() {
     let commentText = document.getElementById("textarea").value.trim();
@@ -122,45 +116,43 @@ function togliErrore(input) {
 */
 function checkInput(NicknameInput, PasswordInput) {
 
-    var value = 1;
-    $.ajax({
+    var value= $.ajax({
         type: 'GET',
-        url: 'file.php?n=' + NicknameInput + '&p=' + PasswordInput,
+        url: 'file.php?n=' + NicknameInput.value + '&p=' + PasswordInput.value,
         dataType: 'text',
         success: function (response) {
-            value = response;
+            return(response);
         }
     })
+    console.log(value);
     return value;
 }
 
 function validazioneForm() {
-    let nickname = document.getElementById("emailLogin").value;
-    let password = document.getElementById("passwordLogin").value;
+    let nickname = document.getElementById("emailLogin");
+    let password = document.getElementById("passwordLogin");
 
     let resultCheck = checkInput(nickname, password);
 
-    if (resultCheck == 0) {
-        window.location.href = '../index.php';
-    }
-    else if (resultCheck == 2) {
-        let padre = nickname.parentNode.parentNode;
-        padre.createElement("div");
+   if (resultCheck == '1') {
+        let padre = nickname.parentNode;
         let scritta = document.createElement("P");
         scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
         padre.appendChild(scritta);
+        return false;
     }
-    else {
-        let padre = nickname.parentNode.parentNode;
-        padre.createElement("div");
+    else if(resultCheck == '2'){
+        let padre = password.parentNode;
+        let padre2 = nickname.parentNode;
         let scritta = document.createElement("P");
         let scritta2 = document.createElement("P");
-        padre.appendChild(scritta);
-        padre.appendChild(scritta2);
         scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
         scritta2.appendChild(document.createTextNode("Verifica che il nickname e la password inserite siano valide"));
-    }
-    return false;
+        padre2.appendChild(scritta);
+        padre.appendChild(scritta2);
+       return false;
+   }
+    return true;
 }
 
 // --------------------- FINE LOGIN ---------------------------
@@ -169,12 +161,10 @@ function validazioneForm() {
 
 function mostraErrore(input, testoErrore) {
 
-    togliErrore(input);
-
-    var fieldset = input.parentNode.parentNode.parentNode;
+    var fieldset = input.parentNode;
     var element = document.createElement("P");
-    //strong.className="corsivo";
-    element.appendChild(document.createTextElement(testoErrore));
+    element.className="corsivo";
+    element.appendChild(document.createTextNode(testoErrore));
     fieldset.appendChild(element);
 
 }
@@ -182,29 +172,18 @@ function mostraErrore(input, testoErrore) {
 function togliErrore(input) {
     var p = input.parentNode;
 
-    if (input == "nome") {
-        p.removeChild(input);
-    }
-    else if (input == "cognome") {
-        p.removeChild(input);
-    }
-    else if (input == "nickname") {
-        p.removeChild(input);
-    }
-    else if (input == "email") {
-        p.removeChild(input);
-    }
-    else if (input == "password") {
-        p.removeChild(input);
+    if (p.childElementCount>2) {
+        p.removeChild(p.children[2]);
     }
 }
 
 function checkNome(nomeinput) {
     var nome = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
-    if (nome.test(nomeinput.value)) {  //mi mostra il valore contenuto in input
+    if (nome.test(nomeinput.value)) {
         togliErrore(nomeinput);
         return true;
     } else {
+        togliErrore(nomeinput);
         mostraErrore(nomeinput,
             "Il nome che è stato inserito non è conforme");
         return false;
@@ -217,6 +196,7 @@ function checkCognome(cognomeInput) {
         togliErrore(cognomeInput);
         return true;
     } else {
+        togliErrore(cognomeInput);
         mostraErrore(cognomeInput,
             "Il Cognome che è stato inserito non è conforme");
         return false;
@@ -229,6 +209,7 @@ function checkNickname(nicknameInput) {
         togliErrore(nicknameInput);
         return true;
     } else {
+        togliErrore(nicknameInput);
         mostraErrore(nicknameInput,
             "Il nickname che è stato inserito non è conforme");
         return false;
@@ -241,6 +222,7 @@ function checkEmail(emailInput) {
         togliErrore(emailInput);
         return true;
     } else {
+        togliErrore(emailInput);
         mostraErrore(emailInput,
             "L'email che è stato inserita non è conforme");
         return false;
@@ -253,6 +235,7 @@ function checkPassword(passwordInput) {
         togliErrore(passwordInput);
         return true;
     } else {
+        togliErrore(passwordInput);
         mostraErrore(passwordInput,
             "La password che è stato inserita non è conforme");
         return false;
@@ -260,11 +243,11 @@ function checkPassword(passwordInput) {
 }
 
 function validazioneReg() {
-    var nome = document.getElementById("nome");
-    var cognome = document.getElementById("cognome");
-    var nickname = document.getElementById("nickname");
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+    var nome = document.getElementById("nomeReg");
+    var cognome = document.getElementById("cognomeReg");
+    var nickname = document.getElementById("nicknameReg");
+    var email = document.getElementById("emailReg");
+    var password = document.getElementById("passwordReg");
 
     var risultatoNome = checkNome(nome);
     var risultatoCognome = checkCognome(cognome);

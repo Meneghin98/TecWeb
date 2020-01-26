@@ -5,7 +5,7 @@ require_once("checks.php");
 
 session_start();
 
-$file = html::registrazione();
+$file = file_get_contents("../html/User/registrazione.html");
 $file = str_replace('£head_', html::head(), $file);
 $file = str_replace('£footer', html::linked_obj("footer","page", "registrazione"), $file);
 $file = str_replace('£menu_', html::linked_obj("menu","page", "registrazione"), $file);
@@ -64,7 +64,8 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
                 <legend>Info Personali</legend>
                 <div class=\"ManageReg\">
                     <label for=\"nomeReg\">Nome:</label>
-                    <input id=\"nomeReg\" name=\"nome\" type=\"text\" value='$nome'/>
+                    <input id=\"nomeReg\" name=\"nome\" type=\"text\" value='$nome'/>    
+                     
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"cognomeReg\">Cognome:</label>
@@ -74,8 +75,8 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
-                    <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value='$nickname'/>
+                    <label for=\"nicknameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
+                    <input id=\"nicknameReg\" name=\"nickname\" type=\"text\" value='$nickname'/>
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"emailReg\"><span xml:lang=\"en\">Email</span>:</label>
@@ -112,8 +113,8 @@ else { //&egrave; la prima volta che entro in registrazione
             <fieldset id=\"secondReg\">
                 <legend>Info Account</legend>
                 <div class=\"ManageReg\">
-                    <label for=\"usernameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
-                    <input id=\"usernameReg\" name=\"nickname\" type=\"text\" value=''/>
+                    <label for=\"nicknameReg\"><span xml:lang=\"en\"><span xml:lang=\"en\">Nickname</span>:</span></label>
+                    <input id=\"nicknameReg\" name=\"nickname\" type=\"text\" value=''/>
                 </div>
                 <div class=\"ManageReg\">
                     <label for=\"emailReg\"><span xml:lang=\"en\">Email</span>:</label>

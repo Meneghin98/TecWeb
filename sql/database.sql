@@ -102,6 +102,9 @@ values ('JakeSun22', 'admin', 'nicolo.giaccone@studenti.unipd.it', 'Nicol&ograve
 insert into users
 (nickname, pwd, email, username, surname, usertype, ref)
 values ('Enrico', 'admin', 'enrico.salmaso.2@studenti.unipd.it', 'Enrico', 'Salmaso', 'admin', null);
+insert into users
+(nickname, pwd, email, username, surname, usertype, ref)
+values ('Edoardo', 'admin', 'edoardo.tinto@studenti.unipd.it', 'Edoardo', 'Tinto', 'admin', null);
 
 
 

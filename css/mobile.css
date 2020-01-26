@@ -59,8 +59,9 @@
 }
 
 #logo {
-    height: 8em;
-    margin: 1em auto 1.5em auto;
+
+    height: 10em;
+
 }
 
 #logo img {
@@ -720,6 +721,9 @@ blocco per evitare codice duplicato */
 @media screen and (max-width: 350px){
     #userArea img, img#mobileButton, #mobileMenu img, #userArea, #mobileMenu, #searchBar{
         width: 3.75em;
+    }
+    #logo {
+        height: 7em;
     }
 }
 @media screen and (max-width: 150px){

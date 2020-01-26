@@ -354,28 +354,6 @@ body {
     }
 }
 
-@media screen and (max-width: 960px) {
-    #header {
-        flex-wrap: wrap;
-        padding-bottom: 0.5em;
-        justify-content: flex-end;
-
-    }
-
-    #logo {
-        flex: 100%;
-    }
-
-    #mobileButton {
-        margin-left: 4em;
-    }
-
-    .headerChild:last-of-type {
-        margin-right: 6em;
-        margin-left: 0;
-    }
-}
-
 @media only screen and (max-width: 640px) {
     .topArticles {
         flex-direction: column;

@@ -5,24 +5,24 @@
 
 
 /* rimozione transizioni*/
-.topArticles li img {
+#topArticles li img {
 
     transition: none;
 }
 
-.topArticles li img:hover {
+#topArticles li img:hover {
 
     transform: none;
 }
 
 /*--------------------fine----------------------------------------------------*/
 /* Dichiarazione dimensione font*/
-.articleListDesc, .shortDesc, .writer, .description p, .comment p, .pro, .contro, #ListaCommenti p, #ScriviCommento label, #ScriviCommento textarea {
+.articleListDesc, #shortDesc, #writer, #description p, #comment p, #pro, #contro, #ListaCommenti p, #ScriviCommento label, #ScriviCommento textarea {
     font-size: 2.5em;
     line-height: 2em;
 }
 
-.topArticles a .topArticleTitle, .categoriaGenerale, .index, .articleListTitle {
+#topArticles a #topArticleTitle, .categoriaGenerale, #index, .articleListTitle {
     font-size: 2em;
 }
 
@@ -30,13 +30,13 @@
     font-size: 3em;
 }
 
-.intestazione h1, .description h2, .comment h3, #TitoloCommenti {
+#intestazione h1, #description h2, #comment h3, #TitoloCommenti {
     font-size: 5em;
 }
 
 /*fine dichiarazione dimensione font*/
-/*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
-.flexColumn:last-of-type, #search, .topArticles li:last-of-type {
+/*cerchero di fare una soluzione migliore con javascript(#topArticles li:last-of-type rimmarrà display none)*/
+.flexColumn:last-of-type, #searchBar.js-hidden input, #topArticles li:last-of-type {
     display: none;
 }
 
@@ -49,7 +49,7 @@
     justify-content: center;
 }
 
-#logoDesktop, #mobileButtonHidden, #searchBar button {
+#logoDesktop, #mobileButtonHidden, #searchBar.js-hidden button {
     display: none;
 }
 
@@ -66,6 +66,7 @@
 #userArea img {
     width: 6em;
 }
+
 
 
 #mobileMenu.js-show, #searchBar, #userArea {
@@ -87,7 +88,9 @@
     width: 6em;
     cursor: pointer;
 }
-
+img#logged {
+    cursor: unset;
+}
 .closeButton:before, .closeButton:after {
     transition-property: all;
     transition-duration: 0.2s;
@@ -148,7 +151,7 @@
     padding: 0.5em 8em;
 }
 
-#mobileButton {
+#mobileButton.js-show {
     display: initial;
     width: 100%;
 }
@@ -156,7 +159,16 @@
 #menu li:last-of-type {
     display: unset;
 }
-
+#searchBar input {
+    width: 100%;
+    padding: 0.5em;
+    top: 1em;
+}
+#searchBar button {
+    right: 8em;
+    top: 6em;
+    position: absolute;
+}
 #searchBar.js-opened input {
     display: inherit;
     position: absolute;
@@ -195,19 +207,19 @@
 /*-------- fine Header --------*/
 
 
-.topArticles, .diffs {
+#topArticles, #diffs {
     flex-wrap: wrap;
 }
 
-.topArticles li:first-of-type, .diffs div {
+#topArticles li:first-of-type, #diffs div {
     flex: 100%
 }
 
-.topArticles li:nth-of-type(2), .topArticles li:nth-of-type(3) {
+#topArticles li:nth-of-type(2), #topArticles li:nth-of-type(3) {
     flex: 50%;
 }
 
-.topArticles li img {
+#topArticles li img {
     height: unset;
 }
 
@@ -216,23 +228,23 @@
 }
 
 /*--------- Articoli + recensioni -------*/
-.intestazione h1 {
+#intestazione h1 {
     margin-left: 0.3em;
     padding-top: 0.5em;
 }
 
-.shortDesc,
-.writer {
+#shortDesc,
+#writer {
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.index, .description h2, #TitoloCommenti {
+#index, #description h2, #TitoloCommenti {
     border: none;
 }
 
 
-.index {
+#index {
     float: none;
     margin-bottom: 0;
 
@@ -263,18 +275,30 @@
 }
 
 
-.description img {
+#description img {
     width: 95%;
     margin: 2em auto 0 auto;
 }
 
-.description p {
+#description p {
     padding: 1em 1em 0 1em;
 
 }
 
-.description h2, #TitoloCommenti {
+#description h2, #TitoloCommenti {
     margin: 1em 0.5em 0 0.5em;
+}
+
+#description ul{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+#description li {
+    font-size: 1.7em;
 }
 
 .voto {
@@ -288,25 +312,25 @@
     padding-bottom: 0.2em;
 }
 
-.comment {
+#comment {
     margin: 0 2em;
     padding: 0.5em 2em;
 }
 
-.comment h3 {
+#comment h3 {
     text-align: center;
 }
 
-.comment p, .pro, .contro, .diffs h3 {
+#comment p, #pro, #contro, #diffs h3 {
     margin: 0;
 
 }
 
-.pro {
+#pro {
     list-style-image: url("../images/icons/correctMobile.png");
 }
 
-.contro {
+#contro {
     list-style: url("../images/icons/wrongMobile.png");
 }
 
@@ -714,6 +738,7 @@ blocco per evitare codice duplicato */
     #menu.js-opened ul {
         top: 11em;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -754,6 +779,10 @@ blocco per evitare codice duplicato */
     #menu {
         top: 8em;
     }
+    #searchBar button {
+        right: 7.5em;
+        top: 4.5em;
+    }
 }
 
 
@@ -778,7 +807,7 @@ blocco per evitare codice duplicato */
         top: 6.5em;
     }
 
-    #menu  {
+    #menu {
         top: 6.5em;
     }
 
@@ -787,8 +816,12 @@ blocco per evitare codice duplicato */
         width: 3.75em;
     }
 
-}
+    #searchBar button {
+        right: 5.5em;
+        top: 3.6em;
 
+    }
+}
 @media screen and (max-width: 450px) {
     #header {
         flex-wrap: wrap;
@@ -803,10 +836,24 @@ blocco per evitare codice duplicato */
     #menu {
         position: unset;
     }
-
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu li {
+        border: none;
+    }
     #searchBar.js-opened input {
         padding-right: 3.5em;
         padding-left: 0;
+    }
+    #searchBar input {
+        margin-bottom: 2em;
+        width: 50%
+    }
+    #searchBar button {
+        right: 5em;
+        top: 1.5em;
+        position: relative;
     }
 
 }
@@ -828,7 +875,19 @@ blocco per evitare codice duplicato */
     #searchBar.js-opened input {
         font-size: 2em;
     }
+    #searchBar input {
+        width: 12em;
+        margin-bottom: 0;
+    }
+    #searchBar button {
+        right: unset;
+        top: unset;
+        left: 7em;
+        bottom: 1em;
+        position: relative;
+    }
 }
+
 
 @media screen and (max-width: 190px) {
     #logo img {
@@ -859,6 +918,12 @@ blocco per evitare codice duplicato */
 
     #closeButton.js-opened {
         width: 3.75em;
+    }
+    #searchBar input {
+        width: 9em;
+    }
+    #searchBar button {
+        left: 4.3em;
     }
 }
 

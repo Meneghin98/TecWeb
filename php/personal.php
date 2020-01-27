@@ -5,6 +5,13 @@ require_once("checks.php");
 
 session_start();
 
+if (!isset($_SESSION['loggato']))
+    $_SESSION['loggato']=false;
+
+if ($_SESSION['loggato']==false){
+    header("Location: notFound.php");
+}
+
 $file = str_replace('£footer', html::linked_obj('footer', 'page'),
     str_replace('£menu_', html::linked_obj('menu', 'page'),
         str_replace('£header', html::header('utente'),

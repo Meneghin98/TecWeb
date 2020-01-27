@@ -30,7 +30,7 @@ body {
 }
 
 /* Header */
-.screenReaderHelper, .headerChild h1, .headerChild label {
+#screenReaderHelper, .headerChild h1, .headerChild label {
     display: block;
     height: 0;
     width: 0;
@@ -55,7 +55,7 @@ body {
 
 #logo {
     flex: 20%;
-    height: 90px;
+    height: 6em;
 }
 
 #logoMobile {
@@ -233,7 +233,7 @@ body {
     text-decoration: none;
 }
 
-.flexContainer {
+#flexContainer {
     display: flex;
 }
 
@@ -263,9 +263,8 @@ body {
 }
 
 .articleList li img {
-    height: 5.6em;
     float: left;
-    width: 20%;
+    width: 10em;
     margin-right: 1em;
 }
 
@@ -353,11 +352,11 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-    .topArticles {
+    #topArticles {
         flex-direction: column;
     }
 
-    .topArticles li {
+    #topArticles li {
         flex: 100%;
     }
 
@@ -390,6 +389,7 @@ body {
 
 /*--------------------------------------------LOGIN----------------------------------------------*/
 
+
 .ErroriForm {
     color: orangered;
     margin-top: 0.4em;
@@ -410,6 +410,7 @@ body {
     overflow: hidden;
     left: -9999px;
 }
+
 
 .signIn {
     margin: 0 auto;
@@ -483,6 +484,8 @@ body {
     font-size: 2.2em;
 }
 
+
+
 .pulsantiLogin {
     display: block;
     margin: 2em auto 0 auto;
@@ -501,6 +504,7 @@ body {
 
 
 /*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
+
 
 
 #ViewErrorReg {
@@ -589,7 +593,6 @@ body {
     background-color: rgba(52, 52, 52, 1);
     text-align: center;
     color: white;
-    min-height: 300px;
 }
 
 #datiAccount {
@@ -641,8 +644,8 @@ form #datiAccount {
 #avatar {
     text-align: center;
     margin: 0 auto;
-    max-width: 220px;
-    min-width: 50px;
+    max-width: 14em;
+    min-width: 3.75em;
     width: 100%;
 }
 
@@ -739,15 +742,15 @@ form #datiAccount {
 */
 
 
-.pro {
+#pro {
     list-style-image: url("../images/icons/correct.png");
 }
 
-.contro {
+#contro {
     list-style: url("../images/icons/wrong.png");
 }
 
-.intestazione h1 {
+#intestazione h1 {
     margin-left: 1em;
     padding-top: 1.2em;
     padding-bottom: 0.5em;
@@ -755,21 +758,21 @@ form #datiAccount {
     color: #088700
 }
 
-.shortDesc,
-.writer {
+#shortDesc,
+#writer {
     margin-left: 3em;
 }
 
-.shortDesc {
+#shortDesc {
     margin-right: 5em;
 }
 
-.writer {
+#writer {
     margin-top: 0.3em;
     color: #086605;
 }
 
-.index {
+#index {
     color: #088700;
     border: 2px solid #0E9C09;
     float: right;
@@ -777,25 +780,25 @@ form #datiAccount {
     padding: 1em 1em 1em 2em;
 }
 
-.index h3 {
+#index h3 {
     padding-bottom: 0.5em;
 }
 
-.description p, #chisiamo p, #chisiamo ul {
+#description p, #chisiamo p, #chisiamo ul {
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
 }
 
-.description p:first-of-type {
+#description p:first-of-type {
     padding-top: 2em;
 }
 
-.description p:last-of-type {
+#description p:last-of-type {
     padding-bottom: 2em;
 }
 
-.description h2, #chisiamo h2 {
+#description h2, #chisiamo h2 {
     border-bottom: 0.1em solid #088700;
     margin-left: 2em;
     margin-top: 3em;
@@ -804,17 +807,17 @@ form #datiAccount {
     color: black;
 }
 
-.description ul{
+#description ul{
     margin-left: 10%;
     margin-top: 1.4em;
     margin-bottom: 1em;
 }
 
-.description li {
+#description li {
     font-size: 1.2em;
 }
 
-.comment {
+#comment {
     background-color: rgba(50, 205, 50, 0.4);
     margin: 0 2em;
     padding: 0.5em 2em;
@@ -824,41 +827,41 @@ form #datiAccount {
     border-top: 0;
 }
 
-.comment h3 {
+#comment h3 {
     text-align: center;
     font-size: 2em;
 }
 
-.comment p {
+#comment p {
     margin: 1em 4em;
     font-size: 1.2em;
     line-height: 1.5em;
 }
 
-.diffs {
+#diffs {
     display: flex;
     margin-left: 7em;
 }
 
-.diffs div {
+#diffs div {
     flex: 50%;
     margin: 2em;
 }
 
-.pro h3 {
+#pro h3 {
     color: green;
 }
 
-.contro h3 {
+#contro h3 {
     color: red;
 }
 
-.diffs h3 {
+#diffs h3 {
     margin: 0.5em 0;
 }
 
-.pro,
-.contro {
+#pro,
+#contro {
     font-size: 1.2em;
     line-height: 1.5em;
 }
@@ -878,23 +881,23 @@ form #datiAccount {
     margin: 0 1em;
 }
 
-.description img {
+#description img {
     width: 50%;
     display: block;
     margin: 4em auto;
 }
 
-.index a:link {
+#index a:link {
     text-decoration: none;
     color: black;
 }
 
-.index a:hover {
+#index a:hover {
     text-decoration: none;
     color: blue;
 }
 
-.index a:visited {
+#index a:visited {
     text-decoration: none;
 }
 
@@ -968,7 +971,7 @@ form #datiAccount {
     font-size: 1em;
     margin-top: .7em;
     padding: 0.2em;
-    background-image: url("../images/up.png");
+    background-image: url("../images/icons/favicon/up.png");
     background-repeat: no-repeat;
     width: 24px;
     display: inline-block;
@@ -1038,10 +1041,10 @@ form #datiAccount {
     cursor: pointer;
     background-color: green;
     color: white;
-    background-image: url("../images/sendW.png");
+    background-image: url("../images/icons/sendW.png");
     background-repeat: no-repeat;
     background-position: right;
-    padding: .2em 25px .2em .5em;
+    padding: .2em 1.5em .2em .5em;
 }
 
 /*
@@ -1054,14 +1057,14 @@ form #datiAccount {
     box-sizing: border-box;
 }
 
-.topArticles {
+#topArticles {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     border-bottom: 1.1em solid #0E9C09;
 }
 
-.topArticles li {
+#topArticles li {
     flex: 50%;
     position: relative;
     min-height: 4em;
@@ -1070,21 +1073,21 @@ form #datiAccount {
     background-color: black;
 }
 
-.topArticles li img {
+#topArticles li img {
     width: 100%;
-    height: 366px;
+    height: 23em;
     transition: 0.8s;
 }
 
-.topArticles li img:hover {
+#topArticles li img:hover {
     transform: scale(1.2) rotate(0deg);
 }
 
-.topArticles a {
+#topArticles a {
     position: initial;
 }
 
-.topArticles a .topArticleTitle {
+#topArticles a #topArticleTitle {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1096,17 +1099,17 @@ form #datiAccount {
     font-size: 1em;
 }
 
-.topArticles a:link {
+#topArticles a:link {
     text-decoration: none;
     color: white;
 }
 
-.topArticles a:visited {
+#topArticles a:visited {
     text-decoration: none;
     color: white;
 }
 
-.topArticles a:active {
+#topArticles a:active {
     text-decoration: none;
     color: white;
 }

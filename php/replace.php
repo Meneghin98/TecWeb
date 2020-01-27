@@ -63,6 +63,8 @@ class html
             $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
             $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
             $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
+            $obj = str_replace('£link7', '<li><a href="chiSiamo.php" tabindex="0">Chi siamo</a></li>', $obj);
+
 
             switch($type_obj)
             {
@@ -82,6 +84,8 @@ class html
             $obj = str_replace('£link2', '<li><a href="page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>', $obj);
             $obj = str_replace('£link3', '<li><a href="page.php?t=r" tabindex="0">Recensioni</a></li>', $obj);
             $obj = str_replace('£link4', '<li><a href="page.php?t=a" tabindex="0">Altro</a></li>', $obj);
+            $obj = str_replace('£link7', '<li><a href="chiSiamo.php" tabindex="0">Chi siamo</a></li>', $obj);
+
 
             switch ($type_page) {
                 case 'n':

@@ -167,7 +167,9 @@ body {
     display: none;
 }
 
-
+#menu li:last-of-type {
+    display: none;
+}
 /* Content */
 
 #content, #chisiamo {

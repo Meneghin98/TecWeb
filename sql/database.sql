@@ -71,7 +71,7 @@ create TABLE likes
 create TABLE images
 (
     src     VARCHAR(50) PRIMARY KEY,
-    alt     VARCHAR(50) NOT NULL,
+    alt     VARCHAR(100) NOT NULL,
     article INT(5),
     CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
@@ -286,7 +286,7 @@ values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
 
 insert into images
     (src, alt, article)
-values ('images/News/LuccaComics/LCcopertina.jpg', '', '1');
+values ('images/News/LuccaComics/LCcopertina.jpg', 'Locandina della fiera con due personaggi che danzano', '1');
 
 insert into images
     (src, alt, article)
@@ -298,7 +298,7 @@ values ('images/Altro/fortnite/fortniteDeltaplano.jpg', 'Deltaplano di Fortnite'
 
 insert into images
     (src, alt, article)
-values ('images/Altro/pokemon/sierra.jpg', '', '4');
+values ('images/Altro/pokemon/sierra.jpg', 'viene mostrata Sierra', '4');
 
 insert into images
     (src, alt, article)

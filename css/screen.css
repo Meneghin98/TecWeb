@@ -557,6 +557,13 @@ body {
     margin: 0 auto;
 }
 
+.messErroriReg {
+    color: red;
+    font-size: 1.1em;
+    padding-top: 3.5em;
+    padding-left: 3em;
+}
+
 #ViewErrorReg li {
     padding-top: 1em;
 }

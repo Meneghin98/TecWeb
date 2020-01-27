@@ -64,11 +64,9 @@
     margin-left: 1em;
 }
 
-#userArea img{
+#userArea img {
     width: 6em;
 }
-
-
 
 
 #mobileMenu.js-show, #searchBar, #userArea {
@@ -97,19 +95,24 @@
     transition-timing-function: linear;
     transition-delay: 0s;
 }
+
 #menu {
     top: 11em;
 }
+
 #menu ul {
     max-width: unset;
 
 }
+
 #menu li {
     font-size: 2em;
 }
+
 #menu li:last-of-type {
     border-right: none;
 }
+
 #menu.js-hidden {
     display: none;
 }
@@ -150,9 +153,11 @@
     display: initial;
     width: 100%;
 }
+
 #menu li:last-of-type {
     display: unset;
 }
+
 #searchBar.js-opened input {
     display: inherit;
     position: absolute;
@@ -186,11 +191,6 @@
     top: 2.4em;
     right: 0.5em;
     width: 6.75em;
-}
-
-#login img {
-    width: 6em;
-    margin-left: 1em;
 }
 
 /*-------- fine Header --------*/
@@ -508,6 +508,7 @@
     display: block;
     width: 100%;
 }
+
 .menuMobileReg {
     display: inherit;
     text-align: center;
@@ -593,6 +594,7 @@ input#bottoneIndietroReg {
     text-align: left;
     width: 18em;
 }
+
 /*
 .ManageReg input {
     text-align: center;
@@ -726,6 +728,7 @@ blocco per evitare codice duplicato */
     #menu.js-opened li a {
         padding: 0;
     }
+
     #menu.js-opened ul {
         top: 11em;
     }
@@ -752,6 +755,7 @@ blocco per evitare codice duplicato */
 
         right: 1.5em;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
     }
@@ -760,10 +764,16 @@ blocco per evitare codice duplicato */
         top: 2.5em;
         right: 4em;
     }
+
     #menu.js-opened ul {
         top: 8em;
     }
+
+    #menu {
+        top: 8em;
+    }
 }
+
 
 @media screen and (max-width: 500px) {
     #logo img {
@@ -781,9 +791,20 @@ blocco per evitare codice duplicato */
     #searchBar.js-opened button, #closeSearch.js-opened {
         top: 1.4em;
     }
+
     #menu.js-opened ul {
         top: 6.5em;
     }
+
+    #menu  {
+        top: 6.5em;
+    }
+
+    #searchBar img, #userArea img {
+        max-width: unset;
+        width: 3.75em;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -792,7 +813,12 @@ blocco per evitare codice duplicato */
         justify-content: end;
         position: unset;
     }
+
     #menu.js-opened ul {
+        position: unset;
+    }
+
+    #menu {
         position: unset;
     }
 
@@ -802,6 +828,7 @@ blocco per evitare codice duplicato */
     }
 
 }
+
 @media screen and (max-width: 300px) {
     #closeSearch.js-opened, #searchBar.js-opened button img {
         width: 2.5em;
@@ -815,10 +842,12 @@ blocco per evitare codice duplicato */
 
         right: 1.5em;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
     }
 }
+
 @media screen and (max-width: 190px) {
     #logo img {
         width: 10em;
@@ -836,6 +865,7 @@ blocco per evitare codice duplicato */
 
         right: 0;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
         padding-right: 2em;
@@ -844,6 +874,7 @@ blocco per evitare codice duplicato */
     #closeSearch.js-opened, #searchBar.js-opened button img {
         width: 1.5em;
     }
+
     #closeButton.js-opened {
         width: 3.75em;
     }

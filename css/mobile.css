@@ -558,11 +558,16 @@ input#bottoneIndietroReg {
     margin-left: 3.6em;
     width: 10em; */
     display: block;
-    width: 40%;
-    margin-right: 30%;
-    margin-left: 30%;
+    width: 60%;
+    margin-left: 20%;
 }
 
+#bottoneConfermaReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.7em;
+}
 #contentRegistrazione h1 {
     display: none;
 }

@@ -18,34 +18,51 @@ if (isset($_POST['Accedi'])) {
     $nickname = trim($_POST["emailLogin"]);
     $password = trim($_POST["password"]);
 
-    $errori = '';
+    $errori = 'asd';
     if (!$db->existsNickname($nickname))
-        $errori .= '<li>Verifica che il nickname inserito sia valido</li>';
+        $errori = 'np';
+    else if ($db->getUtenteArray($nickname)['password'] != $password)
+        $errori = 'p';
 
-    if (!$db->exitsUser($nickname, $password))
-        $errori .= '<li>La password inserita è errata</li>';
-
-    if ($errori) {
+    if ($errori=='p') {
         $form = " <div>  
                     <fieldset class=\"FormLogin\">
                     <legend>Accedi</legend> 
                         <div class=\"emailLog\">
-                            <img src=\"../images/icons/email1.png\" alt=\"icona email\">
+                            <img src=\"../images/icons/email1.png\" alt=\"icona email\"/>
                             <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
                             <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"$nickname\" />
-                            <p class=\"ErroriForm\">Verifica che il nickname inserito sia valido</p>
                         </div>
                         <div class=\"passwordLog\">
-                             <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
+                             <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\"/>
                              <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
                              <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\" />
-                              <p class=\"ErroriForm\">Verifica che la password inserita sia valida</p>
                         </div> 
+                    <p class=\"ErroriForm\">Verifica che la pass inserito sia valido</p>
                     </fieldset>
                   </div>";
         $file = str_replace('£form', $form, $file);
-        /*$beginList = '<div class="ErroriForm"><ul>' . $errori . '</ul></div>';
-        $file = str_replace('£erroriLogin', $beginList, $file);*/
+        echo $file;
+    }
+    else if ($errori=='np')     {
+        $form = " <div>  
+                    <fieldset class=\"FormLogin\">
+                    <legend>Accedi</legend> 
+                        <div class=\"emailLog\">
+                            <img src=\"../images/icons/email1.png\" alt=\"icona email\" />
+                            <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
+                            <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"$nickname\" />
+                        </div>
+                        <p class=\"ErroriForm\">Verifica che il nickname inserito sia valido</p>
+                        <div class=\"passwordLog\">
+                             <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\" />
+                             <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
+                             <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\" />
+                        </div> 
+                        <p class=\"ErroriForm\">Verifica che la password inserita sia valida</p>
+                    </fieldset>
+                  </div>";
+        $file = str_replace('£form', $form, $file);
         echo $file;
     } else {
         $_SESSION['loggato'] = true;
@@ -62,12 +79,12 @@ if (isset($_POST['Accedi'])) {
                   <legend>Accedi</legend>
     
                  <div class=\"emailLog\">
-                        <img src=\"../images/icons/email1.png\" alt=\"icona email\">
+                        <img src=\"../images/icons/email1.png\" alt=\"icona email\" />
                         <label for=\"emailLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Nickname:</span></label>
                         <input type=\"text\" name=\"emailLogin\" id=\"emailLogin\" value=\"\"/>
                  </div>
                  <div class=\"passwordLog\">
-                        <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\">
+                        <img src=\"../images/icons/lucchetto1.png\" alt=\"icona password\" />
                         <label for=\"passwordLogin\" xml:lang=\"en\"><span xml:lang=\"en\">Password:</span></label>
                         <input type=\"password\" name=\"password\" id=\"passwordLogin\" value=\"\"/>
                  </div>

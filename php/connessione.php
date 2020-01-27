@@ -228,16 +228,6 @@ class DBConnection
         return false;
     }
 
-
-    function exitsUser($nickname, $password)
-    {
-        $query = "Select * from users where nickname = '$nickname' AND pwd = '$password'";
-        $queryResult = mysqli_query($this->connection, $query);
-        if (mysqli_num_rows($queryResult) == 1)
-            return true;
-        return false;
-    }
-
     public function getTop3()
     {
         $query = "SELECT A.id as id, A.path as path, A.title as title, I.src as img_src, I.alt as img_alt FROM articles A join categories C on A.category=C.id left join images I on I.article=A.id ORDER BY A.views DESC LIMIT 3";

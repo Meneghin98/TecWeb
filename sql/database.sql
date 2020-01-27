@@ -271,7 +271,7 @@ insert into articles
     /*Skyrim guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (21, 'html/Altro/guidaSkyrim.html', '2020-1-9',
-        '<span xml:lang="en">Skyrim Mods</span>: Guida &amp; Consigli',
+        '<span xml:lang="en">Skyrim Mods</span>: Guida e Consigli',
         'Come scaricare ed installare il miglior pacchetto di <span xml:lang="en">mod</span>', 'gaming', 'Altro', '0',
         '3');
 insert into articles

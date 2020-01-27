@@ -69,6 +69,7 @@
 }
 
 
+
 #mobileMenu.js-show, #searchBar, #userArea {
     display: unset;
     margin-left: 1em;
@@ -88,7 +89,9 @@
     width: 6em;
     cursor: pointer;
 }
-
+img#logged {
+    cursor: unset;
+}
 .closeButton:before, .closeButton:after {
     transition-property: all;
     transition-duration: 0.2s;
@@ -771,6 +774,7 @@ blocco per evitare codice duplicato */
     #menu.js-opened ul {
         top: 11em;
     }
+
 }
 
 @media screen and (max-width: 600px) {

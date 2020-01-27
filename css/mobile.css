@@ -46,7 +46,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     justify-content: center;
 }
 
@@ -64,14 +64,11 @@
 
 }
 
-#logo img {
-    margin: 0 auto;
-
+#userArea img{
+    width: 6em;
 }
 
-#logo a {
-    text-align: center;
-}
+
 
 
 #mobileMenu, #searchBar, #userArea {
@@ -766,10 +763,7 @@ blocco per evitare codice duplicato */
     #menu.js-opened ul {
         position: unset;
     }
-    #userArea {
-        flex: 25%;
-        margin: 0;
-    }
+
     #searchBar.js-opened input {
         padding-right: 3.5em;
         padding-left: 0;

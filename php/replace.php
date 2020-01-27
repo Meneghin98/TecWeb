@@ -13,7 +13,7 @@ class html
         $rep = file_get_contents("../html/header.html");
         if (isset($_SESSION['loggato']) && $_SESSION['loggato'] == true) { //verifico che un'utente è loggato oppure no
             if ($isOn=== 'utente') {
-                $change="<img id=\"logged\"src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\"/>";
+                $change="<img id=\"logged\" src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\"/>";
             }else{
                 $change = "<a id=\"login\" title=\"Area utente\" href=\"../php/personal.php\"><img
                 src=\"../images/icons/login-sito-web.png\" alt=\"Area utente\" /></a>";

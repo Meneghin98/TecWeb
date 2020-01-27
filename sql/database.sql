@@ -157,13 +157,13 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (5, 'html/Recensioni/recensioneDeathStranding.html', '2019-12-04', 'Death Stranding, la recensione - PS4',
         'La recensione di Death Stranding: dopo tre anni di misteri e domande arriva su PS4 l&apos;ultima opera, ma anche un po&apos; la rinascita di Hideo Kojima. &Egrave; davvero rivoluzione?',
-        'Death Stranding - recensione', 'Recensioni', '18', '4');
+        'Death Stranding', 'Recensioni', '18', '4');
 insert into articles
     /*Vampyr*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (6, 'html/Recensioni/recensioneVampyr.html', '2018-06-05', 'Vampyr: la recensione',
         'L&apos;atteso action RPG di <span xml:lang="en">Dontnod Entertainment</span> ci porta nella Londra del 1918, fra vampiri ed epidemie',
-        'Vampyr - recensione', 'Recensioni', '0', '4');
+        'Vampyr', 'Recensioni', '0', '4');
 insert into articles
     /*Cyberpunk*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
@@ -204,7 +204,7 @@ insert into articles
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, versione PC oltre le aspettative, battuti diversi record',
-        'Il titolo <span xml:lang="en">Respawn</span> ha gi&agrave; battuto molti record. Questo &egrave; un ottimo periodo per la saga di <span xml:lang="en">Star Wars</span>', '<span xml:lang="en">Star Wars</span>-vendite PC', 'News', '0', '4');
+        'Il titolo <span xml:lang="en">Respawn</span> ha gi&agrave; battuto molti record. Questo &egrave; un ottimo periodo per la saga di <span xml:lang="en">Star Wars</span>', '<span xml:lang="en">Star Wars</span>', 'News', '0', '4');
 
 insert into articles
     /*StarWars guida*/
@@ -212,28 +212,28 @@ insert into articles
 values (13, 'html/Altro/guidaStar-Wars.html', '2019-11-24',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>',
         'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.',
-        'gaming', 'Altro', '27', '4');
+        'Star Wars', 'Altro', '27', '4');
 
 insert into articles
     /*Monster Hunter News*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (14, 'html/News/newMonsterHunterIceborn.html', '2019-12-7',
         '<span xml:lang="en">Monster Hunter World: Iceborn</span>, le novit&agrave; dell&apos;aggiornamento di dicembre - <span xml:lang="en"><abbr title="Play Station 4">PS4</abbr>, Xbox One</span>',
-        'Notizie novit&agrave; sulla nuova uscita di dicembre', 'gaming', 'News', '0', '5');
+        'Notizie novit&agrave; sulla nuova uscita di dicembre', 'Monster Hunter', 'News', '0', '5');
 
 insert into articles
     /*Asgard Wrath review*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (15, 'html/Recensioni/recensioneAsgardWrath.html', '2019-12-7',
         '<span xml:lang="en">Asgard&apos;s Wrath</span>, la recensione',
-        'Loki dice che c&apos;&egrave; una nuova divinit&agrave; in giro, sei per caso tu?', 'gaming', 'Recensioni', '0', '4');
+        'Loki dice che c&apos;&egrave; una nuova divinit&agrave; in giro, sei per caso tu?', 'Asgard Wrath', 'Recensioni', '0', '4');
 
 insert into articles
     /*Clash Royale guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (16, 'html/Altro/guidaClashRoyale.html', '2020-1-5',
         '<span xml:lang="en">Clash Royale</span>, come creare un mazzo vincente',
-        'Come creare un mazzo vincente? Scopriamolo assieme', 'gaming', 'Altro', '0', '3');
+        'Come creare un mazzo vincente? Scopriamolo assieme', 'Clash royale', 'Altro', '0', '3');
 
 insert into articles
     /*PS5 news*/
@@ -258,7 +258,7 @@ values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
         '<span xml:lang="en">The Witcher 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
         'Dopo aver visto lo <span xml:lang="en">show</span> su <span xml:lang="en">Netflix</span> vi siete
                     precipitati su <span xml:lang="en">The Witcher 3</span> ma non sapete cosa aspettarvi? Ecco alcuni
-                    utili consigli per i neofiti', 'gaming', 'Altro', '0', '3');
+                    utili consigli per i neofiti', 'The Witcher', 'Altro', '0', '3');
 insert into articles
     /*AMD CES 2020*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
@@ -281,7 +281,7 @@ values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
         'GTA V, cinque volte GTA',
         'Il titolo pi&ugrave; atteso degli ultimi anni &egrave; finalmente arrivato. L&apos;abbiamo giocato a
                     lungo, senza un minuto di sosta e quello che segue &egrave; il nostro dettagliato giudizio',
-        '<span xml:lang="en"><abbr title="Play Station 3">PS3</abbr></span>', 'Recensioni', '200', '4');
+        'GTA <abbr title="cinque">V</abbr>', 'Recensioni', '200', '4');
 
 
 insert into images

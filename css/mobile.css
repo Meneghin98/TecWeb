@@ -121,7 +121,7 @@
     max-width: unset;
     background-color: #131313;
     position: sticky;
-    top: 10em;
+    top: 11em;
     z-index: 1;
 }
 
@@ -139,7 +139,9 @@
     display: initial;
     width: 100%;
 }
-
+#menu li:last-of-type {
+    display: unset;
+}
 #searchBar.js-opened input {
     display: inherit;
     position: absolute;

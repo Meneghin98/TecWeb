@@ -1018,7 +1018,7 @@ form #datiAccount {
     font-size: 1em;
     margin-top: .7em;
     padding: 0.2em;
-    background-image: url("../images/up.png");
+    background-image: url("../images/icons/favicon/up.png");
     background-repeat: no-repeat;
     width: 24px;
     display: inline-block;
@@ -1088,7 +1088,7 @@ form #datiAccount {
     cursor: pointer;
     background-color: green;
     color: white;
-    background-image: url("../images/sendW.png");
+    background-image: url("../images/icons/sendW.png");
     background-repeat: no-repeat;
     background-position: right;
     padding: .2em 25px .2em .5em;

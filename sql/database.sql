@@ -281,7 +281,7 @@ values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
         'GTA V, cinque volte GTA',
         'Il titolo pi&ugrave; atteso degli ultimi anni &egrave; finalmente arrivato. L&apos;abbiamo giocato a
                     lungo, senza un minuto di sosta e quello che segue &egrave; il nostro dettagliato giudizio',
-        '<span xml:lang="en"><abbr title="Play Station 3">PS3</abbr></span>', 'Recensioni', '200', '4');
+        'GTA <abbr title="cinque">V</abbr>', 'Recensioni', '200', '4');
 
 
 insert into images

@@ -40,8 +40,8 @@ body {
 
 #header {
     display: flex;
-    border-bottom: 0.5em solid #0E9C09;
-    color: #0E9C09;
+    border-bottom: 0.5em solid#2BE401;
+    color:#2BE401;
     background-color: black;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ body {
 #searchBar input {
     position: relative;
     border-radius: 25px;
-    border: 3px solid #0E9C09;
+    border: 3px solid#2BE401;
     padding: .3em 2.1em 0.3em 1em;
 }
 
@@ -145,7 +145,7 @@ body {
 }
 
 #menu a:hover {
-    color: #0E9C09;
+    color: yellow;
 }
 
 #menu a:active {
@@ -155,7 +155,7 @@ body {
 }
 
 #menu .currentlink {
-    color: lawngreen;
+    color: #2BE401;
     font-weight: bold;
 }
 
@@ -305,7 +305,7 @@ body {
 }
 
 .categoriaHardware {
-    background-color: green;
+    background-color: #2BE401;
 }
 
 .categoriaConsole {
@@ -366,7 +366,7 @@ body {
  */
 .admin {
     list-style-type: none;
-    border-left: 3px solid #0E9C09;
+    border-left: 3px solid#2BE401;
     margin: 1.5em 0;
 }
 
@@ -425,7 +425,7 @@ body {
 }
 
 .FormLogin {
-    border: 3px solid #0E9C09;
+    border: 3px solid#2BE401;
     padding: 1em 2em;
     border-radius: 5px;
 }
@@ -480,7 +480,7 @@ body {
     color: black;
     background-color: white;
     border-radius: 25px;
-    border: 3px solid #0E9C09;
+    border: 3px solid#2BE401;
     display: block;
     margin: 1em auto;
     padding: 0.2em 2.5em;
@@ -529,7 +529,7 @@ body {
 }
 
 #contentRegistrazione h1 {
-    color: #0E9C09;
+    color:#2BE401;
     text-align: center;
     font-size: 2.8em;
     margin-top: 2em;
@@ -546,7 +546,7 @@ body {
 }
 
 .contentReg fieldset {
-    border: 3px solid #0E9C09;
+    border: 3px solid#2BE401;
     padding: 1.8em;
     margin-top: 3em;
 }
@@ -568,7 +568,7 @@ body {
     color: black;
     background-color: white;
     border-radius: 25px;
-    border: 3px solid #0E9C09;
+    border: 3px solid#2BE401;
     display: block;
     margin: 0 auto;
     padding: 0.2em 2.5em;
@@ -638,7 +638,7 @@ form #datiAccount {
     margin: 1em 3em;
     border-radius: 25px;
     border-style: solid;
-    border-color: #0E9C09;
+    border-color:#2BE401;
     border-width: 3px
 }
 
@@ -658,7 +658,7 @@ form #datiAccount {
 #custom-file-upload {
     padding: .3em 0;
     cursor: pointer;
-    background-color: #0E9C09;
+    background-color:#2BE401;
 }
 
 #save {
@@ -669,7 +669,7 @@ form #datiAccount {
     background-color: white;
     display: inline;
     border-style: solid;
-    border-color: #0E9C09;
+    border-color:#2BE401;
     border-radius: 25px;
     padding: 0.2em 0.5em;
     margin: 0 .25em;
@@ -681,7 +681,7 @@ form #datiAccount {
 #buonFine {
     background-color: rgba(50, 205, 50, 0.3);
     border-style: solid;
-    border-color: #0E9C09;
+    border-color:#2BE401;
     border-radius: 25px;
     margin: auto;
     max-width: 650px;
@@ -704,7 +704,7 @@ form #datiAccount {
 
 #logout:link, #logout:visited {
     border-style: solid;
-    border-color: #0E9C09;
+    border-color:#2BE401;
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -756,7 +756,7 @@ form #datiAccount {
     padding-top: 1.2em;
     padding-bottom: 0.5em;
     font-size: 3em;
-    color: #088700
+    color: #136501;
 }
 
 #shortDesc,
@@ -770,12 +770,12 @@ form #datiAccount {
 
 #writer {
     margin-top: 0.3em;
-    color: #086605;
+    color: #136501;
 }
 
 #index {
-    color: #088700;
-    border: 2px solid #0E9C09;
+    color: #136501;
+    border: 2px solid #136501;
     float: right;
     margin: 3em 2em 1em 2em;
     padding: 1em 1em 1em 2em;
@@ -824,7 +824,7 @@ form #datiAccount {
     padding: 0.5em 2em;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 2px solid limegreen;
+    border: 2px solid #2BE401;
     border-top: 0;
 }
 
@@ -850,7 +850,7 @@ form #datiAccount {
 }
 
 #pro h3 {
-    color: green;
+    color: #136501;
 }
 
 #contro h3 {
@@ -869,7 +869,7 @@ form #datiAccount {
 
 .voto {
     display: block;
-    background-color: limegreen;
+    background-color: #2BE401;
     text-align: center;
     margin: 0 1em;
     font-weight: bold;
@@ -918,7 +918,7 @@ form #datiAccount {
 }
 
 #TitoloCommenti {
-    border-bottom: 0.1em solid #088700;
+    border-bottom: 0.1em solid #136501;
     font-size: 1.8em;
     color: black;
     margin: 0 2em;
@@ -1025,7 +1025,7 @@ form #datiAccount {
     width: 100%;
     padding: .5em;
     font-size: 1.5em;
-    border: 2px solid #088700;
+    border: 2px solid #136501;
     border-radius: 8px;
 }
 
@@ -1036,11 +1036,11 @@ form #datiAccount {
 #ScriviCommento #commenta {
     float: right;
     border-radius: 25px;
-    border: 2px solid darkgreen;
+    border: 2px solid #2BE401;
     font-size: 1.2em;
     margin: 0.3em;
     cursor: pointer;
-    background-color: green;
+    background-color: #136501;
     color: white;
     background-image: url("../images/icons/sendW.png");
     background-repeat: no-repeat;
@@ -1062,7 +1062,7 @@ form #datiAccount {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    border-bottom: 1.1em solid #0E9C09;
+    border-bottom: 1.1em solid#2BE401;
 }
 
 #topArticles li {
@@ -1128,7 +1128,7 @@ form #datiAccount {
 }
 #codiceErrore{
     font-size: 5em;
-    color: #0E9C09;
+    color:#2BE401;
     text-align: center;
     padding-top: 1.5em;
 }
@@ -1163,7 +1163,7 @@ form #datiAccount {
     font-size: 1.25em;
     margin-bottom: 0.8em;
     padding-bottom: 0.4em;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #2BE401;
 }
 
 #imgsFooter {

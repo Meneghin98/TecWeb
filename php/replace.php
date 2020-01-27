@@ -124,6 +124,36 @@ class html
         return $obj;
     }
 
+    public static function rightPanelBuilder($file) {
+        $DB = new DBConnection();
+        $top3 = $DB->getTop3();
+        if (!is_null($top3)) {
+            $file = str_replace('£top3', html::top3($top3), $file);
+        } else {
+            $file = str_replace('£top3', '', $file);
+        }
+        $lastRew = $DB->getLastRew();
+        if (!is_null($lastRew)) {
+            $file = str_replace('£lastRew', html::lastRew($lastRew), $file);
+        } else {
+            $file = str_replace('£lastRew', '', $file);
+        }
+        $DB->close();
+
+        return $file;
+    }
+
+    public static function pageBuilder($file, $page_type = null ) {
+        $file = str_replace('£head_', html::head(), $file);
+        $file = str_replace('£footer', html::linked_obj('footer', 'page', $page_type), $file);
+        $file = str_replace('£header', html::header(), $file);
+        $file = str_replace('£rightPanel', html::rightPanel(), $file);
+        $file = html::rightPanelBuilder($file);
+        $file = str_replace('£menu_', html::linked_obj('menu', 'page', $page_type), $file);
+
+        return $file;
+    }
+
     public static function articoli($articoli_array, $first_index)
     {
         $articoli = "";

@@ -60,6 +60,7 @@ else {
         $paginaArticolo = str_replace('£commenti', "<ul>£commenti</ul>", $paginaArticolo);
         $paginaArticolo = str_replace('£commenti', html::commenti($commenti, $likes, $_SESSION['loggato']), $paginaArticolo);
     }
+    /*
     $top3 = $DB->getTop3();
     if (!is_null($top3)) {
         $paginaArticolo = str_replace('£top3', html::top3($top3), $paginaArticolo);
@@ -71,7 +72,9 @@ else {
         $paginaArticolo = str_replace('£lastRew', html::lastRew($lastRew), $paginaArticolo);
     } else {
         $paginaArticolo = str_replace('£lastRew', '', $paginaArticolo);
-    }
+    }*/
+
+    $paginaArticolo = html::rightPanelBuilder($paginaArticolo);
     $DB->close();
     echo $paginaArticolo;
 }

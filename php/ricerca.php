@@ -66,13 +66,10 @@ else
     $file = file_get_contents("../html/ricerca.html");
 }
 
-$file = str_replace('£head_', html::head(), $file);
-$file = str_replace('£footer', html::linked_obj('footer', 'page', null), $file);
-$file = str_replace('£header', html::header(), $file);
-$file = str_replace('£rightPanel', html::rightPanel(), $file);
-$file = str_replace('£menu_', html::linked_obj('menu', 'page', null), $file);
+$file = html::pageBuilder($file);
 
 $file = str_replace('£articoli', html::articoli($listaArticoli_match, 0), $file);
+/*
 $DB = new DBConnection();
 $top3 = $DB->getTop3();
 if (!is_null($top3)) {
@@ -87,7 +84,7 @@ if (!is_null($lastRew)) {
 } else {
     $file = str_replace('£lastRew', '', $file);
 }
-$DB->close();
+$DB->close();*/
 // Mostra la pagina dei risultati
 
 echo $file;

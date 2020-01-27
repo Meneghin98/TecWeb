@@ -276,46 +276,42 @@ function validazioneReg() {
 
 
 /*----------------------HEADER MOBILE----------------------------*/
-
-function openMenu() {
+function mobileMenu () {
     var openButton = document.getElementById("openButton");
     var menu = document.getElementById("menu");
-    var closeButton = document.getElementById("closeButton")
-
-    openButton.classList.add('openButton-js-hidden');
-    menu.classList.add('js-opened');
-    closeButton.classList.add('js-opened');
-
-}
-function closeMenu() {
-    var openButton = document.getElementById("openButton");
-    var menu = document.getElementById("menu");
-    var closeButton = document.getElementById("closeButton")
-
-    openButton.classList.remove('openButton-js-hidden');
-    menu.classList.remove('js-opened');
-    closeButton.classList.remove('js-opened');
-
-}
-
-function openSearch() {
+    var closeButton = document.getElementById("closeButton");
     var openSearch = document.getElementById("mobileButton");
     var mobileBar = document.getElementById("searchBar");
     var exitButton = document.getElementById("closeSearch");
+    var jsmenu = document.getElementById("mobileMenu");
 
-    openSearch.classList.add('js-opened');
-    mobileBar.classList.add('js-opened');
-    exitButton.classList.add('js-opened');
-}
+    menu.classList.add('js-hidden');
+    jsmenu.classList.add('js-show');
+    openButton.addEventListener("click", function () {
+        openButton.classList.add('openButton-js-hidden');
+        menu.classList.add('js-opened');
+        closeButton.classList.add('js-opened');
 
-function closeSearch() {
-    var openSearch = document.getElementById("mobileButton");
-    var mobileBar = document.getElementById("searchBar");
-    var exitButton = document.getElementById("closeSearch");
+    });
+    closeButton.addEventListener("click", function () {
+        openButton.classList.remove('openButton-js-hidden');
+        menu.classList.remove('js-opened');
+        closeButton.classList.remove('js-opened');
 
-    openSearch.classList.remove('js-opened');
-    mobileBar.classList.remove('js-opened');
-    exitButton.classList.remove('js-opened');
+    });
+    openSearch.addEventListener("click", function () {
+
+        openSearch.classList.add('js-opened');
+        mobileBar.classList.add('js-opened');
+        exitButton.classList.add('js-opened');
+    });
+
+    exitButton.addEventListener("click", function () {
+
+        openSearch.classList.remove('js-opened');
+        mobileBar.classList.remove('js-opened');
+        exitButton.classList.remove('js-opened');
+    });
 }
 
 //--------------------Area Utente--------------

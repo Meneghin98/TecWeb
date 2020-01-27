@@ -10,12 +10,8 @@
 </head>
 
 
-<body>
+<body onload="mobileMenu()">
     <div id="header">
-        <div class="headerChild" id="mobileMenu">
-            <img id="openButton"  onclick="openMenu()" src="../images/icons/hamburger.png" alt="apri menu"/>
-            <img id="closeButton" onclick="closeMenu()" src="../images/icons/exit.png" alt="esci dal menu"/>
-        </div>
         <div class="headerChild" id="logo">
             <img id="logoDesktop" src="images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" />
             <img id="logoMobile" src="images/icons/logo130.png" alt="Decrypted Games" />
@@ -26,7 +22,7 @@
             </div>
         </div>
         <div class="headerChild" id="searchBar">
-            <img id="mobileButton" onclick="openSearch()" src="images/icons/lente100x100.png" alt="apri barra di ricerca"/>
+            <img id="mobileButton"  src="images/icons/lente100x100.png" alt="apri barra di ricerca"/>
             <form action="../php/ricerca.php" method="post">
                 <fieldset>
                     <label for="search">Ricerca</label>
@@ -36,10 +32,14 @@
                     </button>
                 </fieldset>
             </form>
-            <img id="closeSearch" onclick="closeSearch()" src="../images/icons/exit.png" alt="esci dalla ricerca"/>
+            <img id="closeSearch"  src="../images/icons/exit.png" alt="esci dalla ricerca"/>
         </div>
         <div class="headerChild" id="userArea">
             £utente
+        </div>
+        <div class="headerChild" id="mobileMenu">
+            <img id="openButton"  src="../images/icons/hamburger.png" alt="apri menu"/>
+            <img id="closeButton" src="../images/icons/exit.png" alt="esci dal menu"/>
         </div>
     </div>
 
@@ -49,6 +49,7 @@
             <li><a href="../php/page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>
             <li><a href="../php/page.php?t=r" tabindex="0">Recensioni</a></li>
             <li><a href="../php/page.php?t=a" tabindex="0">Altro</a></li>
+            <li><a href="../php/chiSiamo.php" tabindex="0">Chi siamo</a></li>
         </ul>
     </div>
 
@@ -96,7 +97,7 @@
         <div id="imgsFooter">
             <img id="validXhtml" src="images/icons/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31"
                 width="88" />
-            <img id="validCss" src="images/icons/valid-css2.png" alt="Valid CSS 2" height="31" width="88" />
+            <img id="validCss" src="images/icons/valid-css3.png" alt="Valid CSS 2" height="31" width="88" />
         </div>
     </div>
 

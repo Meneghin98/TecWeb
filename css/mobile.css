@@ -46,7 +46,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     justify-content: center;
 }
 
@@ -61,20 +61,15 @@
 #logo {
 
     height: 10em;
-
+    margin-left: 1em;
 }
 
-#logo img {
-    margin: 0 auto;
-
-}
-
-#logo a {
-    text-align: center;
+#userArea img {
+    width: 6em;
 }
 
 
-#mobileMenu, #searchBar, #userArea {
+#mobileMenu.js-show, #searchBar, #userArea {
     display: unset;
     margin-left: 1em;
 }
@@ -102,8 +97,26 @@
 }
 
 #menu {
+    top: 11em;
+}
+
+#menu ul {
+    max-width: unset;
+
+}
+
+#menu li {
+    font-size: 2em;
+}
+
+#menu li:last-of-type {
+    border-right: none;
+}
+
+#menu.js-hidden {
     display: none;
 }
+
 
 #menu.js-opened {
     display: unset;
@@ -121,8 +134,9 @@
     max-width: unset;
     background-color: #131313;
     position: sticky;
-    top: 10em;
+    top: 11em;
     z-index: 1;
+
 }
 
 #menu.js-opened li {
@@ -138,6 +152,10 @@
 #mobileButton {
     display: initial;
     width: 100%;
+}
+
+#menu li:last-of-type {
+    display: unset;
 }
 
 #searchBar.js-opened input {
@@ -173,11 +191,6 @@
     top: 2.4em;
     right: 0.5em;
     width: 6.75em;
-}
-
-#login img {
-    width: 6em;
-    margin-left: 1em;
 }
 
 /*-------- fine Header --------*/
@@ -349,40 +362,50 @@
     background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
 }
 
+.pulsantiLogin {
+    display: block;
+    width: 100%;
+}
+
 .pulsantiLogin a {
     display: block;
-    /* padding: 0.13em 2.6em; */
+    width: 45%;
+    margin-left: 27.5%;
     color: black;
-    font-size: 3.5em;
-    font-family: Arial;
     background-color: #F0F0F0;
-    border-radius: 25px;
     border: 3px solid #0E9C09;
+
+    font-size: 1.7em;
+    font-family: Arial;
+
+    border-radius: 25px;
     text-decoration: none;
 }
 
 .signIn {
     background-color: transparent;
     font-size: 2em;
+    display: block;
+    width: 100%;
 }
 
 .contentLog form {
-    margin: 0em;
-    padding: 0em;
+    margin: 0;
+    padding: 0;
 }
-
+/*
 .signIn strong {
     display: none;
-}
+}*/
 
-.signIn p {
+.signIn p, .imageLogin, #scrittaReg, .signIn strong  {
     display: none;
 }
-
-.imageLogin {
+/*
+.imageLogin{
     display: none;
 }
-
+*/
 .passwordLog {
     text-align: center;
 }
@@ -406,14 +429,14 @@
     margin-left: 0.7em;
     align-self: flex-end;
     width: 100%;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
-
+/*
 .passwordLog img {
     display: inherit;
     width: 150px;
     margin: 1em 0em 0em 0.7em;
-}
+}*/
 
 .emailLog {
     text-align: center;
@@ -428,7 +451,6 @@
 .emailLog input {
     padding-bottom: 0.2em;
     width: 100%;
-
 }
 
 /*
@@ -438,8 +460,20 @@
 */
 .emailLog img {
     display: block;
-    width: 150px;
+    max-height: 2em;
+    width: auto;
     margin-right: 1em;
+}
+
+.passwordLog img {
+    display: block;
+    max-height: 2.3em;
+    width: auto;
+    margin-left: 1em;
+}
+
+#emailLogin, #passwordLogin {
+    font-size: 1.3em;
 }
 
 .contentLog input {
@@ -449,16 +483,20 @@
 
 #AccediLogin {
     margin-top: 2em;
-    padding: 0.1em 2.6em;
+    display: block;
+    width: 50%;
+    margin-right: 25%;
 }
 
 #AccediLogin, #RegistratiLoginMobile {
-    font-size: 3em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
+/*
 #scrittaReg {
     display: none;
-}
+}*/
 
 #scrittaLog {
     display: block;
@@ -469,20 +507,23 @@
 
 #RegistratiLoginMobile {
     display: block;
-    padding: 0em 2em;
-    margin: 0em auto;
+    padding: 0 2em;
+    margin: 0 auto;
 }
-
 
 .pulsantiLogin p {
     display: contents;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
 /*----------------registrazione--------------*/
 
+#contentRegistrazione form {
+    display: block;
+    width: 100%;
+}
 
 .menuMobileReg {
     display: inherit;
@@ -494,9 +535,11 @@
     padding-right: 0em;
 }
 
-#primoReg {
-    padding-right: 1.2em;
-    margin: 2em 5em;
+#primoReg, #secondReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #ViewErrorReg {
@@ -529,11 +572,20 @@ input#bottoneIndietroReg {
 }
 
 .confermaAccountReg input {
-    padding: 0.3em;
+    /* padding: 0.3em;
     margin-left: 3.6em;
-    width: 10em;
+    width: 10em; */
+    display: block;
+    width: 60%;
+    margin-left: 20%;
 }
 
+#bottoneConfermaReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.7em;
+}
 #contentRegistrazione h1 {
     display: none;
 }
@@ -558,23 +610,19 @@ input#bottoneIndietroReg {
     padding: 1em;
 }
 
-#secondReg {
-    margin: 3em 5em;
-
-}
-
 .contentMobileReg form {
-    margin: 0em auto;
+    margin: 0 auto;
     text-align: left;
     width: 18em;
 }
 
+/*
 .ManageReg input {
     text-align: center;
     font-size: 1.5em;
     margin-left: 2em;
     float: right;
-}
+}*/
 
 .contentReg label {
     color: white;
@@ -585,9 +633,15 @@ input#bottoneIndietroReg {
 }
 
 .ManageReg {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: block;
     margin-top: 1em;
     float: right;
+}
+
+.ManageReg input {
+    display: block;
+    width: 90%;
 }
 
 .pulsantiMobileReg input {
@@ -615,9 +669,11 @@ input#bottoneIndietroReg {
 }
 
 #datiAccount {
-    max-width: unset;
-    font-size: 2.5em;
-    margin: 1em 1em 1em 2em;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.5em;
+    /* margin: 1em 1em 1em 1em; */
 }
 
 #datiAccount li {
@@ -625,32 +681,39 @@ input#bottoneIndietroReg {
 }
 
 .groupBox, #critico {
-    margin: 1em;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#critico {
+    font-size: 2em;
 }
 
 #datiAccount fieldset label {
+    display: block;
+    width: 80%;
     margin: .2em 0;
 }
 
 #datiAccount .groupBox input {
-    padding: .2em;
-    font-size: 1.5em;
+    display: block;
+    width: 90%;
+    font-size: 1em;
 }
 
 #save label {
     display: block;
+    width: 40%;
+    margin-left: 30%;
     font-size: 3em;
-    margin: 1em 5em;
+    /* margin: 1em 5em; */
 }
 
 #buonFine, #errori {
     font-size: 1.8em;
 }
 
-#critico {
-    font-size: 2.5em;
-    max-width: unset;
-}
 
 /*------------------------------------------------*/
 /*-----------------------Commenti-----------------
@@ -695,6 +758,10 @@ blocco per evitare codice duplicato */
     #menu.js-opened li a {
         padding: 0;
     }
+
+    #menu.js-opened ul {
+        top: 11em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -718,6 +785,7 @@ blocco per evitare codice duplicato */
 
         right: 1.5em;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
     }
@@ -726,7 +794,16 @@ blocco per evitare codice duplicato */
         top: 2.5em;
         right: 4em;
     }
+
+    #menu.js-opened ul {
+        top: 8em;
+    }
+
+    #menu {
+        top: 8em;
+    }
 }
+
 
 @media screen and (max-width: 500px) {
     #logo img {
@@ -744,6 +821,20 @@ blocco per evitare codice duplicato */
     #searchBar.js-opened button, #closeSearch.js-opened {
         top: 1.4em;
     }
+
+    #menu.js-opened ul {
+        top: 6.5em;
+    }
+
+    #menu  {
+        top: 6.5em;
+    }
+
+    #searchBar img, #userArea img {
+        max-width: unset;
+        width: 3.75em;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -752,19 +843,22 @@ blocco per evitare codice duplicato */
         justify-content: end;
         position: unset;
     }
+
     #menu.js-opened ul {
         position: unset;
     }
-    #userArea {
-        flex: 25%;
-        margin: 0;
+
+    #menu {
+        position: unset;
     }
+
     #searchBar.js-opened input {
         padding-right: 3.5em;
         padding-left: 0;
     }
 
 }
+
 @media screen and (max-width: 300px) {
     #closeSearch.js-opened, #searchBar.js-opened button img {
         width: 2.5em;
@@ -778,10 +872,12 @@ blocco per evitare codice duplicato */
 
         right: 1.5em;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
     }
 }
+
 @media screen and (max-width: 190px) {
     #logo img {
         width: 10em;
@@ -799,6 +895,7 @@ blocco per evitare codice duplicato */
 
         right: 0;
     }
+
     #searchBar.js-opened input {
         font-size: 2em;
         padding-right: 2em;
@@ -807,6 +904,7 @@ blocco per evitare codice duplicato */
     #closeSearch.js-opened, #searchBar.js-opened button img {
         width: 1.5em;
     }
+
     #closeButton.js-opened {
         width: 3.75em;
     }

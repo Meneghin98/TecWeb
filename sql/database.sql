@@ -71,7 +71,7 @@ create TABLE likes
 create TABLE images
 (
     src     VARCHAR(50) PRIMARY KEY,
-    alt     VARCHAR(50) NOT NULL,
+    alt     VARCHAR(100) NOT NULL,
     article INT(5),
     CONSTRAINT FK_art_img FOREIGN KEY (article) REFERENCES articles (id) ON delete CASCADE ON update CASCADE
 );
@@ -98,7 +98,7 @@ insert into users
 values ('Simone', 'admin', 'simone.meneghin@studenti.unipd.it', 'Simone', 'Meneghin', 'admin', null);
 insert into users
 (nickname, pwd, email, username, surname, usertype, ref)
-values ('JakeSun22', 'admin', 'nicolo.giaccone@studenti.unipd.it', 'Nicol&ograve;', 'Giaccone', 'admin', null);
+values ('Nicolo', 'admin', 'nicolo.giaccone@studenti.unipd.it', 'Nicol&ograve;', 'Giaccone', 'admin', null);
 insert into users
 (nickname, pwd, email, username, surname, usertype, ref)
 values ('Enrico', 'admin', 'enrico.salmaso.2@studenti.unipd.it', 'Enrico', 'Salmaso', 'admin', null);
@@ -209,7 +209,7 @@ values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
 insert into articles
     /*StarWars guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
-values (13, 'html/Altro/guidaStarWars.html', '2019-11-24',
+values (13, 'html/Altro/guidaStar-Wars.html', '2019-11-24',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>',
         'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.',
         'gaming', 'Altro', '27', '4');
@@ -255,7 +255,7 @@ insert into articles
     /*Witcher guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
-        '<span xml:lang="en">The Witche 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
+        '<span xml:lang="en">The Witcher 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
         'Dopo aver visto lo <span xml:lang="en">show</span> su <span xml:lang="en">Netflix</span> vi siete
                     precipitati su <span xml:lang="en">The Witcher 3</span> ma non sapete cosa aspettarvi? Ecco alcuni
                     utili consigli per i neofiti', 'gaming', 'Altro', '0', '3');
@@ -286,7 +286,7 @@ values (22, 'html/Recensioni/recensioneGTAV.html', '2013-9-27',
 
 insert into images
     (src, alt, article)
-values ('images/News/LuccaComics/LCcopertina.jpg', '', '1');
+values ('images/News/LuccaComics/LCcopertina.jpg', 'Locandina della fiera con due personaggi che danzano', '1');
 
 insert into images
     (src, alt, article)
@@ -298,7 +298,7 @@ values ('images/Altro/fortnite/fortniteDeltaplano.jpg', 'Deltaplano di Fortnite'
 
 insert into images
     (src, alt, article)
-values ('images/Altro/pokemon/sierra.jpg', '', '4');
+values ('images/Altro/pokemon/sierra.jpg', 'viene mostrata Sierra', '4');
 
 insert into images
     (src, alt, article)
@@ -346,7 +346,7 @@ values ('images/Recensioni/asgardsWrath/asgardsWrath.jpeg', 'Locandina del gioco
 
 insert into images
     (src, alt, article)
-values ('images/Altro/clash_royale.jpg', 'Scheletro gigante', '16');
+values ('images/Altro/ClashRoyale/clash_royale.jpg', 'Scheletro gigante', '16');
 
 insert into images
     (src, alt, article)
@@ -358,7 +358,7 @@ values ('images/Recensioni/code-vein/code-vein-low-res.jpg', 'Immagine di copert
 
 insert into images
     (src, alt, article)
-values ('images/Altro/witcher1.jpg', 'Immagine dalla serie', '19');
+values ('images/Altro/TheWitcher/witcher1.jpg', 'Immagine dalla serie', '19');
 
 insert into images
     (src, alt, article)
@@ -366,7 +366,7 @@ values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore
 
 insert into images
     (src, alt, article)
-values ('images/Altro/skyrim1.jpg', 'Immagine di una mod', '21');
+values ('images/Altro/Skyrim/skyrim1.jpg', 'Immagine di una mod', '21');
 
 insert into images
 (src, alt, article)

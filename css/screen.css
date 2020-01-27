@@ -101,8 +101,8 @@ body {
     display: none;
 }
 
-.headerChild:last-of-type img {
-    width: 50%;
+#userArea img {
+    width: 3.75em;
 }
 
 
@@ -167,7 +167,9 @@ body {
     display: none;
 }
 
-
+#menu li:last-of-type {
+    display: none;
+}
 /* Content */
 
 #content, #chisiamo {

@@ -209,7 +209,7 @@ values (12, 'html/News/newStarWarsPCSell.html', '2019-11-27',
 insert into articles
     /*StarWars guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
-values (13, 'html/Altro/guidaStarWars.html', '2019-11-24',
+values (13, 'html/Altro/guidaStar-Wars.html', '2019-11-24',
         '<span xml:lang="en">Star Wars Jedi: Fallen Order</span>, consigli per godersi il gioco <span xml:lang="en">Respawn</span>',
         'Ecco una manciata di piccoli consigli per chi ha appena cominciato o intende iniziare il suo viaggio in Star Wars Jedi: Fallen Order.',
         'gaming', 'Altro', '27', '4');
@@ -255,7 +255,7 @@ insert into articles
     /*Witcher guida*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (19, 'html/Altro/guidaTheWitcher.html', '2020-1-7',
-        '<span xml:lang="en">The Witche 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
+        '<span xml:lang="en">The Witcher 3</span>: guida per chi si avvicina dopo la serie <span xml:lang="en">Netflix</span>',
         'Dopo aver visto lo <span xml:lang="en">show</span> su <span xml:lang="en">Netflix</span> vi siete
                     precipitati su <span xml:lang="en">The Witcher 3</span> ma non sapete cosa aspettarvi? Ecco alcuni
                     utili consigli per i neofiti', 'gaming', 'Altro', '0', '3');

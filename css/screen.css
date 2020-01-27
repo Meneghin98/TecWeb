@@ -46,9 +46,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5em;
-    /* position: sticky;
-     top: 0;
-     z-index: 1;*/
 }
 
 #mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
@@ -121,7 +118,6 @@ body {
 }
 
 #menu ul {
-    /*background-color: #131313;*/
     list-style-type: none;
     text-align: center;
     color: white;
@@ -394,21 +390,6 @@ body {
 
 /*--------------------------------------------LOGIN----------------------------------------------*/
 
-/*
-#menuMobileLogin img {
-    display: none;
-}
-#menuMobileLogin h1 {
-    display: none;
-}
-.pulsantiLogin a {
-    display: none;
-}
-.pulsantiLogin p {
-    display: none;
-}
-*/
-
 .ErroriForm {
     color: orangered;
     margin-top: 0.4em;
@@ -430,29 +411,9 @@ body {
     left: -9999px;
 }
 
-/*
-#pulsanteRegistrati {
-    display: none;
-}
-#scrittaLog {
-    display: none;
-}
-#RegistratiLoginMobile {
-    display: none;
-}
-.emailLog img {
-    display: none;
-}
-.passwordLog img {
-    display: none;
-}
-*/
 .signIn {
     margin: 0 auto;
     width: 28em;
-    /*background-color: white;
-    border: transparent;*/
-
 }
 
 .passwordLog {
@@ -473,7 +434,6 @@ body {
     background-image: url(../images/icons/loginGG.png);
     background-repeat: no-repeat;
     background-position: center;
-    /*padding: 50px;*/
     padding: 4em;
     display: block;
     margin: 3em auto;
@@ -523,10 +483,6 @@ body {
     font-size: 2.2em;
 }
 
-/*#passwordLogin {
-    margin-bottom: 1em;
-}*/
-
 .pulsantiLogin {
     display: block;
     margin: 2em auto 0 auto;
@@ -546,28 +502,33 @@ body {
 
 /*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
 
-/*
-.menuMobileReg {
-    display: none;
-}
-*/
 
 #ViewErrorReg {
     font-size: 1.3em;
     display: block;
-    width: 24em;
     margin: 0 auto;
+    width: 100%;
+}
+
+#ViewErrorReg li {
+    padding-top: 1em;
+    color: red;
+    text-align: center;
+    list-style: inside;
 }
 
 .messErroriReg {
     color: red;
     font-size: 1.1em;
-    padding-top: 3.5em;
-    padding-left: 3em;
+    padding-top: 0.5em;
 }
 
-#ViewErrorReg li {
-    padding-top: 1em;
+#contentRegistrazione {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(52, 52, 52, 1);
 }
 
 #contentRegistrazione h1 {
@@ -593,14 +554,6 @@ body {
     margin-top: 3em;
 }
 
-#contentRegistrazione {
-    max-width: 1300px;
-    margin: auto;
-    padding-top: 0.5em;
-    padding-bottom: 10em;
-    background-color: rgba(52, 52, 52, 1);
-}
-
 .confermaAccountReg {
     margin-top: 6em;
 }
@@ -624,12 +577,9 @@ body {
 
 .ManageReg input {
     font-size: 1.3em;
+    text-align: center;
+    width: 100%;
 }
-
-/*
-.contentMobileReg {
-    display: none;
-}*/
 
 /*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
 
@@ -1123,18 +1073,10 @@ form #datiAccount {
 .topArticles li img {
     width: 100%;
     height: 366px;
-    /*-webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -o-transition: 0.8s;
-    -ms-transition: 0.8s;*/
     transition: 0.8s;
 }
 
 .topArticles li img:hover {
-    /*-moz-transform: scale(1.2) rotate(0deg);
-    -webkit-transform: scale(1.2) rotate(0deg);
-    -o-transform: scale(1.2) rotate(0deg);
-    -ms-transform: scale(1.2) rotate(0deg);*/
     transform: scale(1.2) rotate(0deg);
 }
 

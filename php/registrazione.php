@@ -13,6 +13,8 @@ $file = str_replace('£header', html::header(), $file);
 
 function checkInput($nome, $cognome, $nickname, $email, $password) {
 
+
+
     $messaggio = "";
 
     if(!checkNome($nome)) {
@@ -41,9 +43,12 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
     $nickname = $_POST["nickname"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-
+    $db = new DBConnection();
     $Messaggio = checkInput($nome,$cognome,$nickname,$email,$password);
-
+    if($db->existsNickname($nickname)){
+        $Messaggio .= "<li>Il nickname inserito &egrave; gi&agrave; presente</li>";
+    }
+    $db->close();
     if(!$Messaggio) { //devo inserire i valori inseriti (che non presentano errori) nel database
 
         $db = new DBConnection();
@@ -89,7 +94,7 @@ if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
             </fieldset>";
         $file = str_replace( '£form', $Form, $file);
 
-        $BeginList = "<div id='ViewErrorReg'><ul>$Messaggio</ul></div>";
+        $BeginList = "<ul id='ViewErrorReg'>$Messaggio</ul>";
 
 
         $file = str_replace('£ErroriRegistrazine', $BeginList, $file);

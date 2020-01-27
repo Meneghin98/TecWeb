@@ -1,4 +1,7 @@
 //-----------Sezione commenti--------------------
+
+var number = null;
+
 function commentoVuoto() {
     let commentText = document.getElementById("textarea").value.trim();
     if (commentText.length === 0) {
@@ -112,36 +115,33 @@ function togliErrore(input) {
     /*var span = p.lastChild;
     p.removeChild(span);
 }
-
 */
-function checkInput(NicknameInput, PasswordInput) {
+/*function checkInput(NicknameInput, PasswordInput) {
 
-    var value= $.ajax({
-        type: 'GET',
+    $.ajax({
+        type: "GET",
         url: 'file.php?n=' + NicknameInput.value + '&p=' + PasswordInput.value,
         dataType: 'text',
         success: function (response) {
-            return(response);
+            number=response;
         }
     })
-    console.log(value);
-    return value;
+
 }
 
 function validazioneForm() {
     let nickname = document.getElementById("emailLogin");
     let password = document.getElementById("passwordLogin");
+    checkInput(nickname, password);
 
-    let resultCheck = checkInput(nickname, password);
-
-   if (resultCheck == '1') {
+   if (number == '1') {
         let padre = nickname.parentNode;
         let scritta = document.createElement("P");
         scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
         padre.appendChild(scritta);
         return false;
     }
-    else if(resultCheck == '2'){
+    else if(number == '2'){
         let padre = password.parentNode;
         let padre2 = nickname.parentNode;
         let scritta = document.createElement("P");
@@ -154,7 +154,7 @@ function validazioneForm() {
    }
     return true;
 }
-
+*/
 // --------------------- FINE LOGIN ---------------------------
 
 // ------------------- REGISTRAZIONE-----------------------
@@ -188,7 +188,8 @@ function togliErrore(input) {
 }
 
 function checkNome(nomeinput) {
-    var nome = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
+    var nome = new RegExp('^([a-zA-Z]{3,15})$');
+    console.log(nome);
     if (nome.test(nomeinput.value)) {
         togliErrore(nomeinput);
         return true;
@@ -201,7 +202,7 @@ function checkNome(nomeinput) {
 }
 
 function checkCognome(cognomeInput) {
-    var cognome = new RegExp('/^([A-Za-z]{2,15})$/');
+    var cognome = new RegExp('^([A-Za-z]{2,15})$');
     if (cognome.test(cognomeInput.value)) {
         togliErrore(cognomeInput);
         return true;
@@ -214,7 +215,7 @@ function checkCognome(cognomeInput) {
 }
 
 function checkNickname(nicknameInput) {
-    var nickname = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
+    var nickname = new RegExp('^([a-zA-Z1-9]{3,15})$');
     if (nickname.test(nicknameInput.value)) {
         togliErrore(nicknameInput);
         return true;
@@ -227,8 +228,8 @@ function checkNickname(nicknameInput) {
 }
 
 function checkEmail(emailInput) {
-    var email = new RegExp('/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i');
-    if (email.test(emailInput.value)) {
+    var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (re.test(emailInput.value)) {
         togliErrore(emailInput);
         return true;
     } else {

@@ -415,9 +415,6 @@ body {
 .signIn {
     margin: 0 auto;
     width: 28em;
-    /*background-color: white;
-    border: transparent;*/
-
 }
 
 .passwordLog {
@@ -513,19 +510,29 @@ body {
 #ViewErrorReg {
     font-size: 1.3em;
     display: block;
-    width: 24em;
     margin: 0 auto;
+    width: 100%;
+}
+
+#ViewErrorReg li {
+    padding-top: 1em;
+    color: red;
+    text-align: center;
+    list-style: inside;
 }
 
 .messErroriReg {
     color: red;
     font-size: 1.1em;
-    padding-top: 3.5em;
-    padding-left: 3em;
+    padding-top: 0.5em;
 }
 
-#ViewErrorReg li {
-    padding-top: 1em;
+#contentRegistrazione {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(52, 52, 52, 1);
 }
 
 #contentRegistrazione h1 {
@@ -551,14 +558,6 @@ body {
     margin-top: 3em;
 }
 
-#contentRegistrazione {
-    max-width: 1300px;
-    margin: auto;
-    padding-top: 0.5em;
-    padding-bottom: 10em;
-    background-color: rgba(52, 52, 52, 1);
-}
-
 .confermaAccountReg {
     margin-top: 6em;
 }
@@ -582,9 +581,9 @@ body {
 
 .ManageReg input {
     font-size: 1.3em;
+    text-align: center;
+    width: 100%;
 }
-
-
 
 /*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
 

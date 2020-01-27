@@ -282,9 +282,14 @@ function mobileMenu () {
     var mobileBar = document.getElementById("searchBar");
     var exitButton = document.getElementById("closeSearch");
     var jsmenu = document.getElementById("mobileMenu");
+    var searchBar = document.getElementById("searchBar");
 
     menu.classList.add('js-hidden');
     jsmenu.classList.add('js-show');
+    searchBar.classList.add('js-hidden');
+    openSearch.classList.add('js-show');
+
+
     openButton.addEventListener("click", function () {
         openButton.classList.add('openButton-js-hidden');
         menu.classList.add('js-opened');

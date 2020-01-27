@@ -346,7 +346,7 @@ values ('images/Recensioni/asgardsWrath/asgardsWrath.jpeg', 'Locandina del gioco
 
 insert into images
     (src, alt, article)
-values ('images/Altro/clash_royale.jpg', 'Scheletro gigante', '16');
+values ('images/Altro/ClashRoyale/clash_royale.jpg', 'Scheletro gigante', '16');
 
 insert into images
     (src, alt, article)
@@ -358,7 +358,7 @@ values ('images/Recensioni/code-vein/code-vein-low-res.jpg', 'Immagine di copert
 
 insert into images
     (src, alt, article)
-values ('images/Altro/witcher1.jpg', 'Immagine dalla serie', '19');
+values ('images/Altro/TheWitcher/witcher1.jpg', 'Immagine dalla serie', '19');
 
 insert into images
     (src, alt, article)
@@ -366,7 +366,7 @@ values ('images/News/AMD-CES2020/Ryzen-4000.jpg', 'Immagine del nuovo processore
 
 insert into images
     (src, alt, article)
-values ('images/Altro/skyrim1.jpg', 'Immagine di una mod', '21');
+values ('images/Altro/Skyrim/skyrim1.jpg', 'Immagine di una mod', '21');
 
 insert into images
 (src, alt, article)

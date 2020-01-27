@@ -362,6 +362,11 @@
     background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
 }
 
+.pulsantiLogin {
+    display: block;
+    width: 100%;
+}
+
 .pulsantiLogin a {
     display: block;
     /* padding: 0.13em 2.6em; */
@@ -377,6 +382,8 @@
 .signIn {
     background-color: transparent;
     font-size: 2em;
+    display: block;
+    width: 100%;
 }
 
 .contentLog form {
@@ -451,7 +458,7 @@
 */
 .emailLog img {
     display: block;
-    width: 150px;
+    max-width: 6em;
     margin-right: 1em;
 }
 
@@ -462,7 +469,9 @@
 
 #AccediLogin {
     margin-top: 2em;
-    padding: 0.1em 2.6em;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 #AccediLogin, #RegistratiLoginMobile {
@@ -482,10 +491,9 @@
 
 #RegistratiLoginMobile {
     display: block;
-    padding: 0em 2em;
-    margin: 0em auto;
+    padding: 0 2em;
+    margin: 0 auto;
 }
-
 
 .pulsantiLogin p {
     display: contents;
@@ -496,7 +504,10 @@
 
 /*----------------registrazione--------------*/
 
-
+#contentRegistrazione form {
+    display: block;
+    width: 100%;
+}
 .menuMobileReg {
     display: inherit;
     text-align: center;
@@ -507,9 +518,11 @@
     padding-right: 0em;
 }
 
-#primoReg {
-    padding-right: 1.2em;
-    margin: 2em 5em;
+#primoReg, #secondReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #ViewErrorReg {
@@ -542,9 +555,13 @@ input#bottoneIndietroReg {
 }
 
 .confermaAccountReg input {
-    padding: 0.3em;
+    /* padding: 0.3em;
     margin-left: 3.6em;
-    width: 10em;
+    width: 10em; */
+    display: block;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
 }
 
 #contentRegistrazione h1 {
@@ -571,23 +588,18 @@ input#bottoneIndietroReg {
     padding: 1em;
 }
 
-#secondReg {
-    margin: 3em 5em;
-
-}
-
 .contentMobileReg form {
-    margin: 0em auto;
+    margin: 0 auto;
     text-align: left;
     width: 18em;
 }
-
+/*
 .ManageReg input {
     text-align: center;
     font-size: 1.5em;
     margin-left: 2em;
     float: right;
-}
+}*/
 
 .contentReg label {
     color: white;
@@ -598,9 +610,15 @@ input#bottoneIndietroReg {
 }
 
 .ManageReg {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: block;
     margin-top: 1em;
     float: right;
+}
+
+.ManageReg input {
+    display: block;
+    width: 90%;
 }
 
 .pulsantiMobileReg input {

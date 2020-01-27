@@ -115,9 +115,8 @@ function togliErrore(input) {
     /*var span = p.lastChild;
     p.removeChild(span);
 }
-
 */
-function checkInput(NicknameInput, PasswordInput) {
+/*function checkInput(NicknameInput, PasswordInput) {
 
     $.ajax({
         type: "GET",
@@ -155,7 +154,7 @@ function validazioneForm() {
    }
     return true;
 }
-
+*/
 // --------------------- FINE LOGIN ---------------------------
 
 // ------------------- REGISTRAZIONE-----------------------
@@ -191,7 +190,7 @@ function togliErrore(input) {
 function checkNome(nomeinput) {
     var nome = new RegExp('^([a-zA-Z]{3,15})$');
     console.log(nome);
-    if (nome.test(nomeinput.value.toString())) {
+    if (nome.test(nomeinput.value)) {
         togliErrore(nomeinput);
         return true;
     } else {
@@ -203,7 +202,7 @@ function checkNome(nomeinput) {
 }
 
 function checkCognome(cognomeInput) {
-    var cognome = new RegExp('/^([A-Za-z]{2,15})$/');
+    var cognome = new RegExp('^([A-Za-z]{2,15})$');
     if (cognome.test(cognomeInput.value)) {
         togliErrore(cognomeInput);
         return true;
@@ -216,7 +215,7 @@ function checkCognome(cognomeInput) {
 }
 
 function checkNickname(nicknameInput) {
-    var nickname = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
+    var nickname = new RegExp('^([a-zA-Z1-9]{3,15})$');
     if (nickname.test(nicknameInput.value)) {
         togliErrore(nicknameInput);
         return true;
@@ -229,8 +228,8 @@ function checkNickname(nicknameInput) {
 }
 
 function checkEmail(emailInput) {
-    var email = new RegExp('/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i');
-    if (email.test(emailInput.value)) {
+    var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (re.test(emailInput.value)) {
         togliErrore(emailInput);
         return true;
     } else {

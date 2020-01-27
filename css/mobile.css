@@ -369,13 +369,16 @@
 
 .pulsantiLogin a {
     display: block;
-    /* padding: 0.13em 2.6em; */
+    width: 45%;
+    margin-left: 27.5%;
     color: black;
-    font-size: 3.5em;
-    font-family: Arial;
     background-color: #F0F0F0;
-    border-radius: 25px;
     border: 3px solid #0E9C09;
+
+    font-size: 1.7em;
+    font-family: Arial;
+
+    border-radius: 25px;
     text-decoration: none;
 }
 
@@ -387,22 +390,22 @@
 }
 
 .contentLog form {
-    margin: 0em;
-    padding: 0em;
+    margin: 0;
+    padding: 0;
 }
-
+/*
 .signIn strong {
     display: none;
-}
+}*/
 
-.signIn p {
+.signIn p, .imageLogin, #scrittaReg, .signIn strong  {
     display: none;
 }
-
-.imageLogin {
+/*
+.imageLogin{
     display: none;
 }
-
+*/
 .passwordLog {
     text-align: center;
 }
@@ -426,14 +429,14 @@
     margin-left: 0.7em;
     align-self: flex-end;
     width: 100%;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
-
+/*
 .passwordLog img {
     display: inherit;
     width: 150px;
     margin: 1em 0em 0em 0.7em;
-}
+}*/
 
 .emailLog {
     text-align: center;
@@ -448,7 +451,6 @@
 .emailLog input {
     padding-bottom: 0.2em;
     width: 100%;
-
 }
 
 /*
@@ -458,8 +460,20 @@
 */
 .emailLog img {
     display: block;
-    max-width: 6em;
+    max-height: 2em;
+    width: auto;
     margin-right: 1em;
+}
+
+.passwordLog img {
+    display: block;
+    max-height: 2.3em;
+    width: auto;
+    margin-left: 1em;
+}
+
+#emailLogin, #passwordLogin {
+    font-size: 1.3em;
 }
 
 .contentLog input {
@@ -470,16 +484,19 @@
 #AccediLogin {
     margin-top: 2em;
     display: block;
-    width: 100%;
+    width: 50%;
+    margin-right: 25%;
 }
 
 #AccediLogin, #RegistratiLoginMobile {
-    font-size: 3em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
+/*
 #scrittaReg {
     display: none;
-}
+}*/
 
 #scrittaLog {
     display: block;
@@ -497,7 +514,7 @@
 .pulsantiLogin p {
     display: contents;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 

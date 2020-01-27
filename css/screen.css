@@ -366,7 +366,7 @@ body {
  */
 .admin {
     list-style-type: none;
-    border-left: 3px solid#2BE401;
+    border-left: 3px solid #136501;
     margin: 1.5em 0;
 }
 
@@ -800,7 +800,7 @@ form #datiAccount {
 }
 
 #description h2, #chisiamo h2 {
-    border-bottom: 0.1em solid #088700;
+    border-bottom: 0.1em solid #136501;
     margin-left: 2em;
     margin-top: 3em;
     margin-right: 8.5em;
@@ -935,7 +935,7 @@ form #datiAccount {
 
 .commento {
     list-style-type: none;
-    border: 2px solid #088700;
+    border: 2px solid #136501;
     border-radius: 8px;
     margin: 1em 0;
     padding: 1em;
@@ -1128,7 +1128,7 @@ form #datiAccount {
 }
 #codiceErrore{
     font-size: 5em;
-    color:#2BE401;
+    color:#136501;
     text-align: center;
     padding-top: 1.5em;
 }

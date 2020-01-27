@@ -281,9 +281,10 @@ function mobileMenu () {
     var openSearch = document.getElementById("mobileButton");
     var mobileBar = document.getElementById("searchBar");
     var exitButton = document.getElementById("closeSearch");
-    var header = document.getElementById("header");
+    var jsmenu = document.getElementById("mobileMenu");
 
-
+    menu.classList.add('js-hidden');
+    jsmenu.classList.add('js-show');
     openButton.addEventListener("click", function () {
         openButton.classList.add('openButton-js-hidden');
         menu.classList.add('js-opened');
@@ -291,7 +292,6 @@ function mobileMenu () {
 
     });
     closeButton.addEventListener("click", function () {
-
         openButton.classList.remove('openButton-js-hidden');
         menu.classList.remove('js-opened');
         closeButton.classList.remove('js-opened');

@@ -71,7 +71,7 @@
 
 
 
-#mobileMenu, #searchBar, #userArea {
+#mobileMenu.js-show, #searchBar, #userArea {
     display: unset;
     margin-left: 1em;
 }
@@ -97,10 +97,23 @@
     transition-timing-function: linear;
     transition-delay: 0s;
 }
-
 #menu {
+    top: 11em;
+}
+#menu ul {
+    max-width: unset;
+
+}
+#menu li {
+    font-size: 2em;
+}
+#menu li:last-of-type {
+    border-right: none;
+}
+#menu.js-hidden {
     display: none;
 }
+
 
 #menu.js-opened {
     display: unset;
@@ -120,6 +133,7 @@
     position: sticky;
     top: 11em;
     z-index: 1;
+
 }
 
 #menu.js-opened li {

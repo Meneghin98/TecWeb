@@ -456,7 +456,6 @@
 #AccediLogin {
     margin-top: 2em;
     display: block;
-    text-align: center;
     width: 100%;
 }
 
@@ -632,9 +631,11 @@ input#bottoneIndietroReg {
 }
 
 #datiAccount {
-    max-width: unset;
-    font-size: 2.5em;
-    margin: 1em 1em 1em 2em;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.5em;
+    /* margin: 1em 1em 1em 1em; */
 }
 
 #datiAccount li {
@@ -642,32 +643,39 @@ input#bottoneIndietroReg {
 }
 
 .groupBox, #critico {
-    margin: 1em;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#critico {
+    font-size: 2em;
 }
 
 #datiAccount fieldset label {
+    display: block;
+    width: 80%;
     margin: .2em 0;
 }
 
 #datiAccount .groupBox input {
-    padding: .2em;
-    font-size: 1.5em;
+    display: block;
+    width: 90%;
+    font-size: 1em;
 }
 
 #save label {
     display: block;
+    width: 40%;
+    margin-left: 30%;
     font-size: 3em;
-    margin: 1em 5em;
+    /* margin: 1em 5em; */
 }
 
 #buonFine, #errori {
     font-size: 1.8em;
 }
 
-#critico {
-    font-size: 2.5em;
-    max-width: unset;
-}
 
 /*------------------------------------------------*/
 /*-----------------------Commenti-----------------

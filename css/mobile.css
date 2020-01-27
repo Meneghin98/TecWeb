@@ -36,7 +36,7 @@
 
 /*fine dichiarazione dimensione font*/
 /*cerchero di fare una soluzione migliore con javascript(.topArticles li:last-of-type rimmarrà display none)*/
-.flexColumn:last-of-type, #search, .topArticles li:last-of-type {
+.flexColumn:last-of-type, #searchBar.js-hidden input, .topArticles li:last-of-type {
     display: none;
 }
 
@@ -50,7 +50,7 @@
     justify-content: center;
 }
 
-#logoDesktop, #mobileButtonHidden, #searchBar button {
+#logoDesktop, #mobileButtonHidden, #searchBar.js-hidden button {
     display: none;
 }
 
@@ -67,6 +67,7 @@
 #userArea img {
     width: 6em;
 }
+
 
 
 #mobileMenu.js-show, #searchBar, #userArea {
@@ -88,7 +89,9 @@
     width: 6em;
     cursor: pointer;
 }
-
+img#logged {
+    cursor: unset;
+}
 .closeButton:before, .closeButton:after {
     transition-property: all;
     transition-duration: 0.2s;
@@ -149,7 +152,7 @@
     padding: 0.5em 8em;
 }
 
-#mobileButton {
+#mobileButton.js-show {
     display: initial;
     width: 100%;
 }
@@ -157,7 +160,16 @@
 #menu li:last-of-type {
     display: unset;
 }
-
+#searchBar input {
+    width: 100%;
+    padding: 0.5em;
+    top: 1em;
+}
+#searchBar button {
+    right: 8em;
+    top: 6em;
+    position: absolute;
+}
 #searchBar.js-opened input {
     display: inherit;
     position: absolute;
@@ -762,6 +774,7 @@ blocco per evitare codice duplicato */
     #menu.js-opened ul {
         top: 11em;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -802,6 +815,10 @@ blocco per evitare codice duplicato */
     #menu {
         top: 8em;
     }
+    #searchBar button {
+        right: 7.5em;
+        top: 4.5em;
+    }
 }
 
 
@@ -826,7 +843,7 @@ blocco per evitare codice duplicato */
         top: 6.5em;
     }
 
-    #menu  {
+    #menu {
         top: 6.5em;
     }
 
@@ -835,8 +852,12 @@ blocco per evitare codice duplicato */
         width: 3.75em;
     }
 
-}
+    #searchBar button {
+        right: 5.5em;
+        top: 3.6em;
 
+    }
+}
 @media screen and (max-width: 450px) {
     #header {
         flex-wrap: wrap;
@@ -851,10 +872,24 @@ blocco per evitare codice duplicato */
     #menu {
         position: unset;
     }
-
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu li {
+        border: none;
+    }
     #searchBar.js-opened input {
         padding-right: 3.5em;
         padding-left: 0;
+    }
+    #searchBar input {
+        margin-bottom: 2em;
+        width: 50%
+    }
+    #searchBar button {
+        right: 5em;
+        top: 1.5em;
+        position: relative;
     }
 
 }
@@ -876,7 +911,19 @@ blocco per evitare codice duplicato */
     #searchBar.js-opened input {
         font-size: 2em;
     }
+    #searchBar input {
+        width: 12em;
+        margin-bottom: 0;
+    }
+    #searchBar button {
+        right: unset;
+        top: unset;
+        left: 7em;
+        bottom: 1em;
+        position: relative;
+    }
 }
+
 
 @media screen and (max-width: 190px) {
     #logo img {
@@ -907,6 +954,12 @@ blocco per evitare codice duplicato */
 
     #closeButton.js-opened {
         width: 3.75em;
+    }
+    #searchBar input {
+        width: 9em;
+    }
+    #searchBar button {
+        left: 4.3em;
     }
 }
 

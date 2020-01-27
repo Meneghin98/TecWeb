@@ -1,4 +1,7 @@
 //-----------Sezione commenti--------------------
+
+var number = null;
+
 function commentoVuoto() {
     let commentText = document.getElementById("textarea").value.trim();
     if (commentText.length === 0) {
@@ -116,32 +119,30 @@ function togliErrore(input) {
 */
 function checkInput(NicknameInput, PasswordInput) {
 
-    var value= $.ajax({
-        type: 'GET',
+    $.ajax({
+        type: "GET",
         url: 'file.php?n=' + NicknameInput.value + '&p=' + PasswordInput.value,
         dataType: 'text',
         success: function (response) {
-            return(response);
+            number=response;
         }
     })
-    console.log(value);
-    return value;
+
 }
 
 function validazioneForm() {
     let nickname = document.getElementById("emailLogin");
     let password = document.getElementById("passwordLogin");
+    checkInput(nickname, password);
 
-    let resultCheck = checkInput(nickname, password);
-
-   if (resultCheck == '1') {
+   if (number == '1') {
         let padre = nickname.parentNode;
         let scritta = document.createElement("P");
         scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
         padre.appendChild(scritta);
         return false;
     }
-    else if(resultCheck == '2'){
+    else if(number == '2'){
         let padre = password.parentNode;
         let padre2 = nickname.parentNode;
         let scritta = document.createElement("P");
@@ -188,8 +189,9 @@ function togliErrore(input) {
 }
 
 function checkNome(nomeinput) {
-    var nome = new RegExp('/^([a-zA-Z1-9]{3,15})$/');
-    if (nome.test(nomeinput.value)) {
+    var nome = new RegExp('^([a-zA-Z]{3,15})$');
+    console.log(nome);
+    if (nome.test(nomeinput.value.toString())) {
         togliErrore(nomeinput);
         return true;
     } else {

@@ -290,12 +290,6 @@ img#logged {
     margin: 1em 0.5em 0 0.5em;
 }
 
-.description a {
-    display: inline-block;
-    width: 80%;
-    font-size: 1.3;
-}
-
 .description ul{
     display: block;
     width: 80%;

@@ -10,9 +10,8 @@
 </head>
 
 
-<body>
+<body onload="mobileMenu()">
     <div id="header">
-
         <div class="headerChild" id="logo">
             <img id="logoDesktop" src="images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" />
             <img id="logoMobile" src="images/icons/logo130.png" alt="Decrypted Games" />
@@ -23,7 +22,7 @@
             </div>
         </div>
         <div class="headerChild" id="searchBar">
-            <img id="mobileButton" onclick="openSearch()" src="images/icons/lente100x100.png" alt="apri barra di ricerca"/>
+            <img id="mobileButton"  src="images/icons/lente100x100.png" alt="apri barra di ricerca"/>
             <form action="../php/ricerca.php" method="post">
                 <fieldset>
                     <label for="search">Ricerca</label>
@@ -33,14 +32,14 @@
                     </button>
                 </fieldset>
             </form>
-            <img id="closeSearch" onclick="closeSearch()" src="../images/icons/exit.png" alt="esci dalla ricerca"/>
+            <img id="closeSearch"  src="../images/icons/exit.png" alt="esci dalla ricerca"/>
         </div>
         <div class="headerChild" id="userArea">
             £utente
         </div>
         <div class="headerChild" id="mobileMenu">
-            <img id="openButton"  onclick="openMenu()" src="../images/icons/hamburger.png" alt="apri menu"/>
-            <img id="closeButton" onclick="closeMenu()" src="../images/icons/exit.png" alt="esci dal menu"/>
+            <img id="openButton"  src="../images/icons/hamburger.png" alt="apri menu"/>
+            <img id="closeButton" src="../images/icons/exit.png" alt="esci dal menu"/>
         </div>
     </div>
 

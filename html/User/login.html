@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+    £head_
+    <title>Login - Decrypted Games</title>
+    <meta name="title" content="Login - Decrypted Games"/>
+    <meta name="description" content="Login dell'utente"/>
+    <meta name="keywords" content="Decrypted Games, login, account, Registrati, Accedi"/>
+</head>
+
+<body onload="mobileMenu()" id="bodyLogin">
+£header
+£menu_
+<div class="AreaUtente"  id="content">
+    <!--PARTE MOBILE-->
+    <div id="menuMobileLogin">
+        <img src="../images/icons/frecciaSinistra1.png" alt="icona di una freccia sinistra"/>
+        <h1>Account</h1>
+    </div>
+
+    <div class="contentLog" id="contentLogin">
+        <div class="signIn">
+            <span class="imageLogin" title="icona del login"></span>
+            <form action="login.php" method="post">
+                £form
+                <p><a id="scrittaReg" href="registrazione.php">Non sei ancora registrato? Registrati</a></p>
+
+                <div class="pulsantiLogin">
+                    <label id="pulsanteLogin" for="AccediLogin">Accedi</label>
+                    <input type="submit" value="Accedi" id="AccediLogin" name="Accedi"/>
+                    <p id="scrittaLog">Non hai l'account?</p>
+                    <a href="registrazione.php">Registrati</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+£footer
+
+</body>
+
+</html>

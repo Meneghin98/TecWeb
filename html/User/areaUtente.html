@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+    £head_
+    <title>Account personale - Decrypted Games</title>
+    <meta name="title" content="Pagina utente"/>
+    <meta name="description" content="Pagina personale dell'utente"/>
+    <meta name="keywords" content="Decrypted Games, utente, sicurezza, profilo"/>
+    <meta name="author" content="Simone Meneghin"/>
+</head>
+
+<body onload="mobileMenu()">
+£header
+£menu_
+
+<div class="AreaUtente"  id="content">
+    £messaggio
+    <form action="personal.php" method="post" enctype="multipart/form-data">
+
+        <div id="datiAccount">
+            <div id="avatar">
+                <img src="../images/Users/£immgaine_utente£" alt="immagine del profilo"/>
+                <label for="file" id="custom-file-upload">Modifica</label>
+                <input name="userImg" type="file" id="file"/>
+            </div>
+            £form
+            <fieldset class="groupBox">
+                <legend>Sicurezza</legend>
+                <p>Se vuoi cambiare password, inserisci la password vecchia e quella nuova</p>
+                <label for="oldPwd">Vecchia <span xml:lang="en">password</span>:</label>
+                <input name="oldPwd" type="password" id="oldPwd"/>
+                <label for="newPwd">Nuova <span xml:lang="en">password</span>:</label>
+                <input name="newPwd" type="password" id="newPwd"/>
+                <label for="repPwd">Ripeti <span xml:lang="en">password</span>:</label>
+                <input name="repPwd" type="password" id="repPwd"/>
+            </fieldset>
+        </div>
+
+        <fieldset id="save">
+            <label for="bSave">Salva</label>
+            <input name="salva" type="submit" value="Salva" id="bSave"/>
+        </fieldset>
+    </form>
+    <fieldset id="critico">
+        <legend>Pericolo</legend>
+        <p>Vuoi rimuovere il tuo account?</p>
+        <a href="rimuoviAccount.php" onclick="return confermaRimozione()">Rimuovi account</a>
+    </fieldset>
+</div>
+
+£footer
+
+</body>
+
+</html>

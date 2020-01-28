@@ -1,0 +1,1172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+    margin: auto;
+    height: 100%;
+    background-color: #343434;
+    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
+    background-repeat: no-repeat;
+}
+
+
+/*  Torna su  */
+
+#button {
+    position: fixed;
+    border: none;
+    background-color: transparent;
+    bottom: 3em;
+    right: 1em;
+    cursor: pointer;
+
+}
+
+/* Header */
+#screenReaderHelper, .headerChild h1, .confermaAccountReg label, .headerChild label, .headerChild legend {
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+
+#header {
+    display: flex;
+    border-bottom: 0.5em solid#2BE401;
+    color:#2BE401;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+#mobileMenu, .hide, #menuMobileLogin, .pulsantiLogin, #pulsanteRegistrati, #scrittaLog, #RegistratiLoginMobile, .emailLog img,
+.passwordLog img, .menuMobileReg, .contentMobileReg, #avatar input, #save input, #ScriviCommento input, .commento input {
+    display: none;
+}
+
+#logo {
+    flex: 20%;
+    height: 6em;
+}
+
+#logoMobile {
+    display: none;
+}
+
+.headerChild {
+    margin-right: 1em;
+}
+
+#searchBar fieldset {
+    border: none;
+}
+
+#searchBar button {
+    position: relative;
+    right: 5em;
+    top: 0.5em;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+#searchBar input {
+    position: relative;
+    border-radius: 25px;
+    border: 3px solid#2BE401;
+    padding: .3em 2.1em 0.3em 1em;
+}
+
+#mobileButton {
+    display: none;
+}
+
+#searchBar button img {
+    width: 25%;
+}
+
+#closeSearch {
+    display: none;
+}
+
+#userArea img {
+    width: 3.75em;
+}
+
+
+/* Menu */
+
+#content, #menu, .AreaUtente, #content.chisiamo {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#menu {
+    background-color: #131313;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 650px;
+}
+
+#menu li {
+    flex: 20%;
+    display: inline-block;
+    border-right: 1px solid #dddcdc;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+#menu a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: yellow;
+}
+
+#menu a:active {
+    text-decoration: none;
+    color: white;
+    outline-style: none;
+}
+
+#menu .currentlink {
+    color: #2BE401;
+    font-weight: bold;
+}
+
+#closeButton {
+    display: none;
+}
+
+#menu li:last-of-type {
+    display: none;
+}
+/* Content */
+
+#content, #content.chisiamo {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+
+/* Right Panel */
+
+.rightPanel {
+    background-color: white;
+    list-style-type: none;
+    border-left: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
+    padding: 0.5em 1em 1em 1em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: sticky;
+    top: 2.20em;
+}
+
+.rightPanel dt {
+    font-weight: bold;
+}
+
+.rightPanel dd {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    list-style-type: none;
+    padding: 1em 0;
+    overflow: auto;
+    text-align: justify;
+    border-top: 1px solid #dddcdc;
+}
+
+.rightPanel dd:nth-of-type(1) {
+    border: none;
+}
+
+.rightPanel dd:nth-of-type(4) {
+    border: none;
+}
+
+.rightPanel dd:nth-of-type(5) {
+    border: none;
+}
+
+.rightPanel dd img {
+    width: 100%;
+}
+
+.rightPanel a {
+    font-weight: normal;
+}
+
+.rightPanel a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.rightPanel a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#flexContainer {
+    display: flex;
+}
+
+.flexColumn:nth-of-type(1) {
+    flex: 80%;
+}
+
+.flexColumn:last-of-type {
+    flex: 20%;
+}
+
+#hiddenArticle li:first-of-type {
+    display: none;
+}
+
+.articleList li {
+    border-top: 1px solid #dddcdc;
+    padding-top: 1em;
+    margin: 0 1em 1em 1em;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.articleList li:nth-of-type(1) {
+    border: 0;
+    padding-top: 1em;
+}
+
+.articleList li img {
+    float: left;
+    width: 10em;
+    margin-right: 1em;
+}
+
+.articleList li a:link {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.articleList li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.articleList li a:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+.articleList li a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+.articleListTitle {
+    font-size: 0.9em;
+}
+
+.articleListDesc {
+    font-weight: normal;
+}
+
+.categoriaGenerale {
+    float: right;
+    padding: .3em .5em;
+    color: white;
+}
+
+.categoriaHardware {
+    background-color: #136501;
+}
+
+.categoriaConsole {
+    background-color: blue;
+}
+
+.categoriaVideogiochi {
+
+    background-color: #9a0000;
+
+}
+
+.categoriaAltro {
+
+    background-color: yellow;
+    color: black;
+
+}
+
+.categoriaEventi {
+
+    background-color: #6b4c00;
+
+}
+
+@media screen and (max-width: 1600px) {
+    .rightPanel {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .flexColumn:last-of-type {
+        display: none;
+    }
+
+    .articleList {
+        width: 95%;
+    }
+
+    #button {
+        right: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #topArticles {
+        flex-direction: column;
+    }
+
+    #topArticles li {
+        flex: 100%;
+    }
+
+}
+
+/*-----------------------------------------------Chi siamo-------------------------------
+ */
+.admin {
+    list-style-type: none;
+    border-left: 3px solid #136501;
+    margin: 1.5em 0;
+}
+
+#content.chisiamo .admin p, .admin a {
+    margin: 0 1em;
+    padding: 0;
+}
+
+
+#content.chisiamo .admin p, #content.chisiamo .admin a:last-of-type {
+    margin-left: 2em;
+    font-size: 1.1em;
+}
+
+
+/*
+--------------------------------------------------------------------------Area Utente ----------------------------------
+ */
+
+
+/*--------------------------------------------LOGIN----------------------------------------------*/
+
+
+.ErroriForm {
+    color: orangered;
+    margin-top: 0.4em;
+
+}
+
+.ErroriForm li {
+    margin-top: 0.7em;
+}
+
+#Login {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7em 0;
+}
+
+#pulsanteLogin {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px;
+}
+
+
+.signIn {
+    margin: 0 auto;
+    width: 28em;
+}
+
+.passwordLog {
+    margin-top: 2em;
+}
+
+.FormLogin {
+    border: 3px solid#2BE401;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.FormLogin span {
+    color: white;
+}
+
+.imageLogin {
+    background-image: url(../images/icons/loginGG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4em;
+    display: block;
+    margin: 3em auto;
+}
+
+#contentLogin {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+}
+
+.contentLog legend {
+    color: white;
+    font-size: 2em;
+}
+
+.contentLog form {
+    display: block;
+    text-align: center;
+    margin: 0 3em;
+
+}
+
+.contentLog label {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+#scrittaReg {
+    display: block;
+    color: white;
+    margin-top: 3em;
+}
+
+
+#AccediLogin {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid#2BE401;
+    display: block;
+    margin: 1em auto;
+    padding: 0.2em 2.5em;
+    font-size: 2.2em;
+}
+
+
+
+.pulsantiLogin {
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
+.pulsantiLogin a {
+    display: none;
+}
+
+.emailLog input, .passwordLog input {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/*--------------------------------------------FINE LOGIN--------------------------------------------*/
+
+
+/*--------------------------------------------REGISTRAZIONE--------------------------------------------*/
+
+
+
+#ViewErrorReg {
+    font-size: 1.3em;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#ViewErrorReg li {
+    padding-top: 1em;
+    color: red;
+    text-align: center;
+    list-style: inside;
+}
+
+.messErroriReg {
+    color: red;
+    font-size: 1.1em;
+    padding-top: 0.5em;
+}
+
+#contentRegistrazione {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    background-color: rgba(52, 52, 52, 1);
+}
+
+#contentRegistrazione h1 {
+    color:#2BE401;
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.contentReg {
+    color: white;
+}
+
+.contentReg form {
+    margin: 0 auto;
+    width: 23em;
+}
+
+.contentReg fieldset {
+    border: 3px solid#2BE401;
+    padding: 1.8em;
+    margin-top: 3em;
+}
+
+.confermaAccountReg {
+    margin-top: 6em;
+}
+
+.confermaAccountReg input {
+
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid#2BE401;
+    display: block;
+    margin: 0 auto;
+    padding: 0.2em 2.5em;
+    font-size: 2.3em;
+}
+
+.ManageReg label {
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+.ManageReg input {
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+}
+
+/*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
+
+
+#content.AreaUtente {
+    padding: 3em 0;
+    background-color: rgba(52, 52, 52, 1);
+    text-align: center;
+    color: white;
+}
+
+#datiAccount {
+    max-width: 41em;
+    list-style-type: none;
+    text-align: left;
+    color: white;
+    font-size: medium;
+}
+
+form #datiAccount {
+    margin: 2em auto 0;
+}
+
+#datiAccount fieldset label {
+    display: block;
+    padding: 0.3em 0;
+    margin: 0.2em 0;
+}
+
+#datiAccount .groupBox input {
+    width: 100%;
+}
+
+#datiAccount li {
+    padding: 1.2em 0;
+    margin-left: 5em;
+}
+
+#datiAccount li a:link, #datiAccount li a:visited {
+    color: white;
+}
+
+.groupBox p, #critico p {
+    font-size: .8em;
+    margin: .3em 0 .8em;
+}
+
+.groupBox {
+    min-width: 15em;
+    padding: 1em;
+    margin: 1em 3em;
+    border-radius: 25px;
+    border-style: solid;
+    border-color:#2BE401;
+    border-width: 3px
+}
+
+#avatar {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 14em;
+    min-width: 3.75em;
+    width: 100%;
+}
+
+#avatar * {
+    display: block;
+    width: 100%;
+}
+
+#custom-file-upload {
+    padding: .3em 0;
+    cursor: pointer;
+    background-color: #136501;
+}
+
+#save {
+    border: none;
+}
+
+#save label {
+    background-color: white;
+    display: inline;
+    border-style: solid;
+    border-color:#2BE401;
+    border-radius: 25px;
+    padding: 0.2em 0.5em;
+    margin: 0 .25em;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+}
+
+#buonFine {
+    background-color: rgba(50, 205, 50, 0.3);
+    border-style: solid;
+    border-color:#2BE401;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+
+#errori {
+    background-color: rgba(205, 50, 50, 0.3);
+    border-style: solid;
+    border-color: #9C0E09;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 650px;
+    padding: .5em;
+}
+
+#errori li {
+    list-style: inside;
+}
+
+#logout:link, #logout:visited {
+    border-style: solid;
+    border-color:#2BE401;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
+    text-decoration: none;
+}
+
+#critico {
+    font-size: medium;
+    text-align: left;
+    max-width: 35em;
+    min-width: 15em;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 3px
+}
+
+#critico a:link, #critico a:visited {
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: .25em;
+    text-decoration: none;
+}
+
+/*
+---------------------------------------------------------------------fine Area Utente-----------------------------------
+ */
+/*
+ ---------------------- Recensione e articolo ----------------------------------
+*/
+
+
+#pro {
+    list-style-image: url("../images/icons/correct.png");
+}
+
+#contro {
+    list-style: url("../images/icons/wrong.png");
+}
+
+#intestazione h1 {
+    margin-left: 1em;
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+    font-size: 3em;
+    color: #136501;
+}
+
+#shortDesc,
+#writer {
+    margin-left: 3em;
+}
+
+#shortDesc {
+    margin-right: 5em;
+}
+
+#writer {
+    margin-top: 0.3em;
+    color: #136501;
+}
+
+#index {
+    color: #136501;
+    border: 2px solid #136501;
+    float: right;
+    margin: 3em 2em 1em 2em;
+    padding: 1em 1em 1em 2em;
+}
+
+#index h2 {
+    padding-bottom: 0.5em;
+}
+
+#description p, #content.chisiamo p, #content.chisiamo ul {
+    padding: 1em 1em 0 3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#description p:first-of-type {
+    padding-top: 2em;
+}
+
+#description p:last-of-type {
+    padding-bottom: 2em;
+}
+
+#description h3, #content.chisiamo h2 {
+    border-bottom: 0.1em solid #136501;
+    margin-left: 2em;
+    margin-top: 3em;
+    margin-right: 8.5em;
+    font-size: 1.8em;
+    color: black;
+}
+
+#description ul{
+    margin-left: 10%;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+#description li {
+    font-size: 1.2em;
+}
+
+#comment {
+    background-color: rgba(50, 205, 50, 0.4);
+    margin: 0 2em;
+    padding: 0.5em 2em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #2BE401;
+    border-top: 0;
+}
+
+#comment h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#comment p {
+    margin: 1em 4em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#diffs {
+    display: flex;
+    margin-left: 7em;
+}
+
+#diffs div {
+    flex: 50%;
+    margin: 2em;
+}
+
+#pro h3 {
+    color: #136501;
+}
+
+#contro h3 {
+    color: #9a0000;;
+}
+
+#diffs h3 {
+    margin: 0.5em 0;
+}
+
+#pro,
+#contro {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.voto {
+    display: block;
+    background-color: #2BE401;
+    text-align: center;
+    margin: 0 1em;
+    font-weight: bold;
+    font-size: 2em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.voto p {
+    margin: 0 1em;
+}
+
+#description img {
+    width: 50%;
+    display: block;
+    margin: 4em auto;
+}
+
+#index a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#index a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+#index a:visited {
+    text-decoration: none;
+}
+
+.voto p:first-of-type {
+    margin-top: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+.voto p:nth-of-type(2) {
+    padding-bottom: 0.5em;
+}
+
+
+.tornasu {
+    float: right;
+}
+
+#TitoloCommenti {
+    border-bottom: 0.1em solid #136501;
+    font-size: 1.8em;
+    color: black;
+    margin: 0 2em;
+}
+
+#ListaCommenti {
+    margin: 0 5em;
+}
+
+#ListaCommenti p {
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
+
+.commento {
+    list-style-type: none;
+    border: 2px solid #136501;
+    border-radius: 8px;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.commento a:link, .commento a:visited, .admin a:first-of-type:link, .admin a:first-of-type:visited {
+    color: black;
+    font-size: 1.3em;
+
+}
+
+.commento a:hover {
+    color: blue;
+}
+
+#ListaCommenti .commento p {
+    font-size: 1em;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+
+.commento pre {
+    font-size: 1.5em;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.numeroLike {
+    margin-top: 1em;
+    display: inline;
+    margin-left: .6em;
+    vertical-align: sub;
+}
+
+.commento .miPiace {
+    font-size: 1em;
+    margin-top: .7em;
+    padding: 0.2em;
+    background-image: url("../images/icons/up.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.delete {
+    margin-top: .7em;
+    font-size: 1em;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("../images/icons/delete.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    padding: .3em;
+}
+
+.upBlack {
+    background-position: left;
+}
+
+.upGray {
+    background-position: right;
+}
+
+.upBlue {
+    background-position: center;
+}
+
+#ScriviCommento {
+    margin: 1em 0 4em;
+}
+
+#ScriviCommento fieldset {
+    border: none;
+}
+
+#ScriviCommento label {
+    font-size: 1.5em;
+}
+
+#ScriviCommento textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.5em;
+    border: 2px solid #136501;
+    border-radius: 8px;
+}
+
+#ScriviCommento p {
+    display: inline;
+}
+
+#ScriviCommento #commenta {
+    float: right;
+    border-radius: 25px;
+    border: 2px solid #083a00;
+    font-size: 1.2em;
+    margin: 0.3em;
+    cursor: pointer;
+    background-color: #136501;
+    color: white;
+    background-image: url("../images/icons/sendW.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: .2em 1.5em .2em .5em;
+}
+
+/*
+---------------------- fine Recensione e articolo ----------------------------------
+ */
+/*
+---------------------- index ----------------------------------
+ */
+* {
+    box-sizing: border-box;
+}
+
+#topArticles {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border-bottom: 1.1em solid#2BE401;
+}
+
+#topArticles li {
+    flex: 50%;
+    position: relative;
+    min-height: 4em;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+#topArticles li img {
+    width: 100%;
+    height: 23em;
+    transition: 0.8s;
+}
+
+#topArticles li img:hover {
+    transform: scale(1.2) rotate(0deg);
+}
+
+#topArticles a {
+    position: initial;
+}
+
+#topArticles a .topArticleTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#topArticles a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#topArticles a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#topArticles a:active {
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------ */
+/* ---------- 404------------ */
+#Error404 {
+    background-image: url(../images/icons/Errore404.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 7em 2em 7em 18em;
+}
+#Error404 p {
+    font-size: 1.5em;
+}
+#codiceErrore{
+    font-size: 5em;
+    color:#136501;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+/* ------------------------------ */
+/* ---------- Footer ------------ */
+
+#footer {
+    text-align: center;
+    background-color: black;
+    bottom: 0;
+    padding: 1em 0 1em 0;
+    color: white;
+}
+
+#footer li {
+    list-style: none;
+    padding-bottom: 0.7em;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerInline {
+    float: left;
+    width: 33.33%;
+}
+
+.footerInline p {
+    font-size: 1.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid #2BE401;
+}
+
+#imgsFooter {
+    clear: both;
+}

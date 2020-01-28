@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+    £head_
+    <title>Registrazione - Decrypted Games</title>
+    <meta name="title" content="Registrazione - Decrypted Games" />
+    <meta name="description" content="Registrazione dell'utente" />
+    <meta name="keywords" content="Decrypted Games, utente, registrazione" />
+</head>
+
+<body onload="mobileMenu()">
+
+    £header
+
+    £menu_
+<div class="AreaUtente"  id="content">
+    <div class="menuMobileReg">
+        <h1>Account</h1>
+    </div>
+
+    <div class="contentReg" id="contentRegistrazione">
+        <h1>Crea un nuovo utente</h1>
+
+        £ErroriRegistrazine
+
+        <form action="registrazione.php" method="post" onsubmit="return validazioneReg()">
+
+            £form
+
+            <div class="confermaAccountReg">
+                <label for="bottoneConfermaReg">Registrati</label>
+                <input id="bottoneConfermaReg" type="submit" value="Registrati" name="conferma" />
+            </div>
+        </form>
+    </div>
+</div>
+    £footer
+</body>
+
+</html>

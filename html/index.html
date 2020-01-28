@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+    £head_
+    <title xml:lang="en">Decrypted Games</title>
+    <meta name='keywords' content='azione, console, news, gaming, eventi, cosplay' />
+    <meta name="title" content="Sito interattivo sul gaming" />
+
+</head>
+
+
+<body onload="mobileMenu()">
+    <div id="header">
+        <div class="headerChild" id="logo">
+            <img id="logoDesktop" src="images/icons/fantasmino-logo+scritta.png" alt="Decrypted Games" />
+            <img id="logoMobile" src="images/icons/logo130.png" alt="Decrypted Games" />
+            <h1>Decrypted Games</h1>
+            <div id="screenReaderHelper">
+                <a href="#content" tabindex="0">Vai al contenuto</a>
+                <a href="#menu" tabindex="0">Vai al menu</a>
+            </div>
+        </div>
+        <div class="headerChild" id="searchBar">
+            <img id="mobileButton"  src="images/icons/lente100x100.png" alt="apri barra di ricerca"/>
+            <form action="../php/ricerca.php" method="post">
+                <fieldset>
+                    <legend>Ricerca</legend>
+                    <label for="search">Ricerca</label>
+                    <input type="text" name="searchInput" id="search" tabindex="0"/>
+                    <button type="submit">
+                        <img src="images/icons/lente100x100W.png" alt="submit" />
+                    </button>
+                </fieldset>
+            </form>
+            <img id="closeSearch"  src="../images/icons/exitW.png" alt="esci dalla ricerca"/>
+        </div>
+        <div class="headerChild" id="userArea">
+            £utente
+        </div>
+        <div class="headerChild" id="mobileMenu">
+            <img id="openButton"  src="../images/icons/hamburger.png" alt="apri menu"/>
+            <img id="closeButton" src="../images/icons/exit.png" alt="esci dal menu"/>
+        </div>
+    </div>
+
+    <div title="menu" id="menu">
+        <ul>
+            <li class="currentlink"><span xml:lang="en">Home</span></li>
+            <li><a href="../php/page.php?t=n" tabindex="0"><span xml:lang="en">Notizie</span></a></li>
+            <li><a href="../php/page.php?t=r" tabindex="0">Recensioni</a></li>
+            <li><a href="../php/page.php?t=a" tabindex="0">Altro</a></li>
+            <li><a href="../php/chiSiamo.php" tabindex="0">Chi siamo</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <ul id="topArticles">
+            £top_articles
+        </ul>
+        <div id="flexContainer">
+            <div class="flexColumn">
+                <ul class="articleList" id="hiddenArticle">
+                    £Articoli
+                </ul>
+            </div>
+            <div class="flexColumn">
+                £rightPanel
+            </div>
+        </div>
+
+    </div>
+    <p><a id="button" href="#header"><img src="images/icons/topArrow.svg" alt="Torna all'inizio"/></a></p>
+    <div id="footer">
+        <div class="footerInline">
+            <p>Torna a</p>
+            <ul>
+                <li><span xml:lang="en">Home</span></li>
+                <li><a href="php/page.php?t=n" xml:lang="en" tabindex="0">Notizie</a></li>
+                <li><a href="php/page.php?t=r" tabindex="0">Recensioni</a></li>
+                <li><a href="php/page.php?t=a" tabindex="0">Altro</a></li>
+            </ul>
+        </div>
+        <div class="footerInline">
+            <p>Contatti</p>
+            <ul>
+                <li><a href="php/chiSiamo.php" tabindex="0">Chi siamo</a></li>
+            </ul>
+        </div>
+        <div class="footerInline">
+            <p>Unisciti</p>
+            <ul>
+                <li><a href="php/login.php" xml:lang="en" tabindex="0">Accedi</a></li>
+                <li><a href="php/registrazione.php" tabindex="0">Crea un account</a></li>
+            </ul>
+        </div>
+
+        <div id="imgsFooter">
+            <img id="validXhtml" src="images/icons/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31"
+                width="88" />
+            <img id="validCss" src="images/icons/valid-css3.png" alt="Valid CSS 2" height="31" width="88" />
+        </div>
+    </div>
+
+</body>
+
+</html>

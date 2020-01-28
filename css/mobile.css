@@ -1,0 +1,938 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* rimozione transizioni*/
+#topArticles li img {
+
+    transition: none;
+}
+
+#topArticles li img:hover {
+
+    transform: none;
+}
+
+/*--------------------fine----------------------------------------------------*/
+/* Dichiarazione dimensione font*/
+.articleListDesc, #shortDesc, #writer, #description p, #comment p, #pro, #contro, #ListaCommenti p, #ScriviCommento label, #ScriviCommento textarea {
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+#topArticles a #topArticleTitle, .categoriaGenerale, #index, .articleListTitle {
+    font-size: 2em;
+}
+
+.voto p {
+    font-size: 3em;
+}
+
+#intestazione h1, #description h3, #comment h3, #TitoloCommenti {
+    font-size: 5em;
+}
+
+/*fine dichiarazione dimensione font*/
+/*cerchero di fare una soluzione migliore con javascript(#topArticles li:last-of-type rimmarrà display none)*/
+.flexColumn:last-of-type, #searchBar.js-hidden input, #topArticles li:last-of-type {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------*/
+/*---------Header-----------*/
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+}
+
+#logoDesktop, #mobileButtonHidden, #searchBar.js-hidden button {
+    display: none;
+}
+
+#logoMobile {
+    display: inherit;
+}
+
+#logo {
+
+    height: 10em;
+    margin-left: 1em;
+}
+
+#userArea img {
+    width: 6em;
+}
+
+
+
+#mobileMenu.js-show, #searchBar, #userArea {
+    display: unset;
+    margin-left: 1em;
+}
+
+#mobileMenu img, #searchBar img, #userArea img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.openButton-js-hidden {
+    display: none;
+}
+
+#closeButton.js-opened {
+    display: initial;
+    width: 6em;
+    cursor: pointer;
+}
+img#logged {
+    cursor: unset;
+}
+.closeButton:before, .closeButton:after {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+#menu {
+    top: 11em;
+}
+
+#menu ul {
+    max-width: unset;
+
+}
+
+#menu li {
+    font-size: 2em;
+}
+
+#menu li:last-of-type {
+    border-right: none;
+}
+
+#menu.js-hidden {
+    display: none;
+}
+
+
+#menu.js-opened {
+    display: unset;
+    transition-property: left;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    width: 100%;
+
+
+}
+
+#menu.js-opened ul {
+    flex-direction: column;
+    max-width: unset;
+    background-color: #131313;
+    position: sticky;
+    top: 11em;
+    z-index: 1;
+
+}
+
+#menu.js-opened li {
+    border: none;
+    font-size: 3em;
+
+}
+
+#menu.js-opened li a {
+    padding: 0.5em 8em;
+}
+
+#mobileButton.js-show {
+    display: initial;
+    width: 100%;
+}
+
+#menu li:last-of-type {
+    display: unset;
+}
+#searchBar input {
+    width: 100%;
+    padding: 0.5em;
+    top: 1em;
+}
+#searchBar button {
+    right: 8em;
+    top: 6em;
+    position: absolute;
+}
+#searchBar.js-opened input {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: unset;
+    height: 3.8em;
+    width: 100%;
+    font-size: 3em;
+    border: 3px solid#2BE401;
+}
+
+
+#searchBar.js-opened button {
+    display: initial;
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 2.4em;
+    right: 9em;
+    width: 6.75em;
+}
+
+#searchBar.js-opened button img {
+    width: 6.75em;
+}
+
+#closeSearch.js-opened {
+    display: initial;
+    position: absolute;
+    top: 2.4em;
+    right: 0.5em;
+    width: 6.75em;
+}
+
+/*-------- fine Header --------*/
+
+
+#topArticles, #diffs {
+    flex-wrap: wrap;
+}
+
+#topArticles li:first-of-type, #diffs div {
+    flex: 100%
+}
+
+#topArticles li:nth-of-type(2), #topArticles li:nth-of-type(3) {
+    flex: 50%;
+}
+
+#topArticles li img {
+    height: unset;
+}
+
+.articleList li {
+    border-top: 5px solid #dddcdc;
+}
+
+/*--------- Articoli + recensioni -------*/
+#intestazione h1 {
+    margin-left: 0.3em;
+    padding-top: 0.5em;
+}
+
+#shortDesc,
+#writer {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#index, #description h3, #TitoloCommenti {
+    border: none;
+}
+
+
+#index {
+    float: none;
+    margin-bottom: 0;
+
+}
+
+.articleList {
+    width: 100%;
+}
+
+.articleList li img {
+    width: 100%;
+    height: unset;
+    float: none;
+    margin: 0;
+}
+
+#hiddenArticle li:first-of-type {
+    display: inherit;
+}
+
+.categoriaGenerale {
+    position: relative;
+    top: 1.81em;
+}
+
+#button {
+    display: none;
+}
+
+
+#description img {
+    width: 95%;
+    margin: 2em auto 0 auto;
+}
+
+#description p {
+    padding: 1em 1em 0 1em;
+
+}
+
+#description h3, #TitoloCommenti {
+    margin: 1em 0.5em 0 0.5em;
+}
+
+#description ul{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+#description li {
+    font-size: 1.7em;
+}
+
+.voto {
+    margin-top: 1em;
+}
+
+
+.voto p:first-of-type {
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+#comment {
+    margin: 0 2em;
+    padding: 0.5em 2em;
+}
+
+#comment h3 {
+    text-align: center;
+}
+
+#comment p, #pro, #contro, #diffs h3 {
+    margin: 0;
+
+}
+
+#pro {
+    list-style-image: url("../images/icons/correctMobile.png");
+}
+
+#contro {
+    list-style: url("../images/icons/wrongMobile.png");
+}
+
+/*fine articoli + recensioni*/
+/*--------footer--------*/
+#footer {
+    display: none;
+}
+
+/*--------fine footer------*/
+
+
+/*----------------login--------------*/
+
+.signIn .ErroriForm {
+    display: block;
+    color: orangered;
+    margin-top: 0.4em;
+}
+
+#menuMobileLogin {
+    display: flex;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.FormLogin {
+    border: none;
+}
+
+.FormLogin legend {
+    display: none;
+}
+
+#menuMobileLogin img {
+    display: none;
+}
+
+#menuMobileLogin h1 {
+    display: block;
+    color: white;
+    margin: auto;
+    font-size: 6em;
+}
+
+
+
+.pulsantiLogin {
+    display: block;
+    width: 100%;
+}
+
+.pulsantiLogin a {
+    display: block;
+    width: 45%;
+    margin-left: 27.5%;
+    color: black;
+    background-color: #F0F0F0;
+    border: 3px solid#2BE401;
+
+    font-size: 1.7em;
+    font-family: Arial;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.signIn {
+    background-color: transparent;
+    font-size: 2em;
+    display: block;
+    width: 100%;
+}
+
+.contentLog form {
+    margin: 0;
+    padding: 0;
+}
+
+
+.signIn p, .imageLogin, #scrittaReg, .signIn strong  {
+    display: none;
+}
+
+.passwordLog {
+    text-align: center;
+}
+
+.passwordLog input[type="password"] {
+    font-size: 2em;
+}
+
+.passwordLog label {
+    display: none;
+}
+
+.passwordLog {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.passwordLog input {
+    padding-bottom: 0.2em;
+    margin-left: 1.1em;
+    align-self: flex-end;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.emailLog {
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+.emailLog label {
+    display: none;
+}
+
+.emailLog input {
+    padding-bottom: 0.2em;
+    width: 100%;
+}
+
+.emailLog img {
+    display: block;
+    max-height: 2em;
+    width: auto;
+    margin-right: 1em;
+}
+
+.passwordLog img {
+    display: block;
+    max-height: 2.3em;
+    width: auto;
+    margin-left: 1em;
+}
+
+#emailLogin, #passwordLogin {
+    font-size: 1.3em;
+}
+
+.contentLog input {
+    font-size: 2em;
+    text-align: center;
+}
+
+#AccediLogin {
+    margin-top: 2em;
+    display: block;
+    width: 50%;
+    margin-right: 25%;
+}
+
+#AccediLogin, #RegistratiLoginMobile {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#scrittaLog {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 4em;
+}
+
+#RegistratiLoginMobile {
+    display: block;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.pulsantiLogin p {
+    display: contents;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/*----------------registrazione--------------*/
+
+.messErroriReg {
+    color: red;
+    font-size: 1.1em;
+    padding-top: 1em;
+}
+
+
+#contentRegistrazione form {
+    display: block;
+    width: 100%;
+}
+
+.menuMobileReg {
+    display: inherit;
+    text-align: center;
+}
+
+.ManageReg label {
+    padding-right: 0em;
+}
+
+#primoReg, #secondReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.menuMobileReg img {
+    float: left;
+    width: 7em;
+}
+
+
+.menuMobileReg h1 {
+    color: white;
+    padding-top: 1em;
+    font-size: 4em;
+}
+
+input#bottoneIndietroReg {
+    display: none;
+}
+
+.confermaAccountReg input {
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#bottoneConfermaReg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.7em;
+}
+#contentRegistrazione h1 {
+    display: none;
+}
+
+#contentRegistrazione {
+    padding-top: 2em;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contentReg {
+    padding-top: 3em;
+}
+
+.contentReg fieldset legend {
+    color: white;
+}
+
+.contentReg fieldset {
+    padding: 1em;
+}
+
+.contentMobileReg form {
+    margin: 0 auto;
+    text-align: left;
+    width: 18em;
+}
+
+
+.contentReg label {
+    color: white;
+}
+
+.contentReg form {
+    margin-left: 0em;
+}
+
+.ManageReg {
+    display: block;
+    margin-top: 1em;
+}
+
+.ManageReg input {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.pulsantiMobileReg input {
+    font-size: 2em;
+    margin-top: 2em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+
+.footer {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 2em;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    padding: 1em;
+    text-align: center;
+}
+
+/*----------------FINE registrazione--------------*/
+
+/*----------------Area Utente---------------------*/
+#avatar {
+    max-width: 350px;
+}
+
+#datiAccount {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.5em;
+}
+
+#datiAccount li {
+    margin: 0;
+}
+
+.groupBox, #critico {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#critico {
+    font-size: 2em;
+}
+
+#datiAccount fieldset label {
+    display: block;
+    width: 80%;
+    margin: .2em 0;
+}
+
+#datiAccount .groupBox input {
+    display: block;
+    width: 90%;
+    font-size: 1em;
+}
+
+#save label {
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 3em;
+}
+
+#buonFine, #errori {
+    font-size: 1.8em;
+}
+
+
+/*------------------------------------------------*/
+/*-----------------------Commenti-----------------
+si fa riferimento ai commenti anche fuori da questo
+blocco per evitare codice duplicato */
+
+#ScriviCommento p {
+    padding: 0;
+}
+
+#ScriviCommento #commenta {
+    font-size: 2em;
+}
+
+#ListaCommenti p {
+    font-size: 3em;
+}
+
+.commento {
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.commento .miPiace {
+    background-size: 144px;
+    width: 48px;
+}
+
+.commento .delete {
+    width: 48px;
+    background-size: 100%;
+}
+
+/*------------------------------------------------*/
+@media screen and (max-width: 950px) {
+    #footer {
+        display: inherit;
+    }
+}
+@media screen and (max-width: 750px) {
+
+    #logo img {
+
+        width: 20em;
+    }
+
+    #menu.js-opened li a {
+        padding: 0;
+    }
+
+    #menu.js-opened ul {
+        top: 11em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #logo img {
+        width: 15em;
+    }
+
+    #logo {
+        height: 7em;
+    }
+
+    #searchBar.js-opened input {
+        height: 2.7em;
+    }
+
+    #searchBar.js-opened button, #closeSearch.js-opened {
+        top: 1em;
+    }
+
+    #searchBar.js-opened button {
+
+        right: 1.5em;
+    }
+
+    #searchBar.js-opened input {
+        font-size: 2em;
+    }
+
+    #searchBar.js-opened button {
+        top: 2.5em;
+        right: 4em;
+    }
+
+    #menu.js-opened ul {
+        top: 8em;
+    }
+
+    #menu {
+        top: 8em;
+    }
+    #searchBar button {
+        right: 7.5em;
+        top: 4.5em;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #logo img {
+        width: 12em;
+    }
+
+    #logo {
+        height: 5.5em;
+    }
+
+    #searchBar.js-opened input {
+        height: 2.2em;
+    }
+
+    #searchBar.js-opened button, #closeSearch.js-opened {
+        top: 1.4em;
+    }
+
+    #menu.js-opened ul {
+        top: 6.5em;
+    }
+
+    #menu {
+        top: 6.5em;
+    }
+
+    #searchBar img, #userArea img {
+        max-width: unset;
+        width: 3.75em;
+    }
+
+    #searchBar button {
+        right: 5.5em;
+        top: 3.6em;
+
+    }
+}
+@media screen and (max-width: 450px) {
+    #header {
+        flex-wrap: wrap;
+        justify-content: end;
+        position: unset;
+    }
+
+    #menu.js-opened ul {
+        position: unset;
+    }
+
+    #menu {
+        position: unset;
+    }
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu li {
+        border: none;
+    }
+    #searchBar.js-opened input {
+        padding-right: 3.5em;
+        padding-left: 0;
+    }
+    #searchBar input {
+        margin-bottom: 2em;
+        width: 50%
+    }
+    #searchBar button {
+        right: 5em;
+        top: 1.5em;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    #closeSearch.js-opened, #searchBar.js-opened button img {
+        width: 2.5em;
+    }
+
+    #searchBar.js-opened button, #closeSearch.js-opened {
+        top: 1em;
+    }
+
+    #searchBar.js-opened button {
+
+        right: 1.5em;
+    }
+
+    #searchBar.js-opened input {
+        font-size: 2em;
+    }
+    #searchBar input {
+        width: 12em;
+        margin-bottom: 0;
+    }
+    #searchBar button {
+        right: unset;
+        top: unset;
+        left: 7em;
+        bottom: 1em;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 190px) {
+    #logo img {
+        width: 10em;
+    }
+
+    #logo {
+        height: 4.5em;
+    }
+
+    #searchBar.js-opened button, #closeSearch.js-opened {
+        top: 1.6em;
+    }
+
+    #searchBar.js-opened button {
+
+        right: 0;
+    }
+
+    #searchBar.js-opened input {
+        font-size: 2em;
+        padding-right: 2em;
+    }
+
+    #closeSearch.js-opened, #searchBar.js-opened button img {
+        width: 1.5em;
+    }
+
+    #closeButton.js-opened {
+        width: 3.75em;
+    }
+    #searchBar input {
+        width: 9em;
+    }
+    #searchBar button {
+        left: 4.3em;
+    }
+}
+#bodyLogin {
+    background-image: unset;
+}
+#errorbackground {
+    background-color: white;
+    background-image: unset;
+}
+
+

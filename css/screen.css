@@ -1087,7 +1087,7 @@ form #datiAccount {
     position: initial;
 }
 
-#topArticles a #topArticleTitle {
+#topArticles a .topArticleTitle {
     position: absolute;
     bottom: 0;
     left: 0;

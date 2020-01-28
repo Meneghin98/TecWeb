@@ -12,8 +12,11 @@ function commentoVuoto() {
 }
 
 function updateNum() {
-    let textarea = document.getElementById("textarea").value;
-    document.getElementById("MaxChar").innerHTML = (300 - textarea.length).toString();
+    let textarea = document.getElementById("textarea").value.trim();
+    let node = document.getElementById("MaxChar");
+    let textnode = node.firstChild;
+    node.removeChild(textnode);
+    node.appendChild(document.createTextNode((300 - textarea.length).toString()));
 }
 
 function miPiaceOver(id) {

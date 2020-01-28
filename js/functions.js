@@ -41,15 +41,10 @@ function miPiaceOut(id) {
 
 function miPiace(idstring) {
     let classList = document.getElementById(idstring).classList;
-    let likeNode = document.getElementById(idstring).parentNode.children[7].firstChild;
     let id = idstring.replace("Label", "");
     if (classList.contains("upBlue")) { //rimozione like
         classList.remove("upBlue");
         classList.add("upBlack");
-        let numLike = document.createTextNode((Number(likeNode.textContent)-1).toString());
-        let p = likeNode.parentNode;
-        p.removeChild(likeNode);
-        p.appendChild(numLike);
         $.ajax({
             type: "GET",
             url: "like.php?add=false&id=" + id
@@ -58,10 +53,6 @@ function miPiace(idstring) {
     } else { //aggiunta like
         classList.remove("upBlack");
         classList.add("upBlue");
-        let numLike = document.createTextNode((Number(likeNode.textContent)+1).toString());
-        let p = likeNode.parentNode;
-        p.removeChild(likeNode);
-        p.appendChild(numLike);
         $.ajax({
             type: "GET",
             url: "like.php?add=true&id=" + id

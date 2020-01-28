@@ -105,7 +105,7 @@ body {
 
 /* Menu */
 
-#content, #menu, .AreaUtente, #chisiamo {
+#content, #menu, .AreaUtente, #content.chisiamo {
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -168,7 +168,7 @@ body {
 }
 /* Content */
 
-#content, #chisiamo {
+#content, #content.chisiamo {
     background-color: white;
     padding-bottom: 1em;
 }
@@ -370,13 +370,13 @@ body {
     margin: 1.5em 0;
 }
 
-#chisiamo .admin p, .admin a {
+#content.chisiamo .admin p, .admin a {
     margin: 0 1em;
     padding: 0;
 }
 
 
-#chisiamo .admin p, #chisiamo .admin a:last-of-type {
+#content.chisiamo .admin p, #content.chisiamo .admin a:last-of-type {
     margin-left: 2em;
     font-size: 1.1em;
 }
@@ -778,11 +778,11 @@ form #datiAccount {
     padding: 1em 1em 1em 2em;
 }
 
-#index h3 {
+#index h2 {
     padding-bottom: 0.5em;
 }
 
-#description p, #chisiamo p, #chisiamo ul {
+#description p, #content.chisiamo p, #content.chisiamo ul {
     padding: 1em 1em 0 3em;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -796,7 +796,7 @@ form #datiAccount {
     padding-bottom: 2em;
 }
 
-#description h2, #chisiamo h2 {
+#description h2, #content.chisiamo h2 {
     border-bottom: 0.1em solid #136501;
     margin-left: 2em;
     margin-top: 3em;

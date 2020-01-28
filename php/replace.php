@@ -181,7 +181,7 @@ class html
         $commenti = "";
         if (!$isLogged) { //sostituisce l'input del "mi piace" con un link al login (un utente non loggato non pùò inserire "mi piace")
             foreach ($commenti_array as $commento) {
-                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><a href=\"login.php\" class=\"miPiace upGray \" id=\"Label$commento[id]\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</a><p class=\"numeroLike\">$commento[likes]</p></li>";
+                $commenti .= "<li id=\"commento_$commento[id]\" class=\"commento\"><h3><a href=\"utente.php?nick=$commento[utente]\">$commento[utente]</a></h3><p>$commento[data]</p><pre>$commento[testo]</pre><a href=\"login.php\" class=\"miPiace upGray\" id=\"Label$commento[id]\" onmouseover=\"miPiaceOver('Label$commento[id]')\" onmouseout=\"miPiaceOut('Label$commento[id]')\">Mi piace</a><p class=\"numeroLike\">$commento[likes]</p></li>";
             }
         } else {
             foreach ($commenti_array as $commento) {

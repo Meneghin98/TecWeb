@@ -30,7 +30,7 @@ body {
 }
 
 /* Header */
-#screenReaderHelper, .headerChild h1, .confermaAccountReg label, .headerChild label {
+#screenReaderHelper, .headerChild h1, .confermaAccountReg label, .headerChild label, .headerChild legend {
     display: block;
     height: 0;
     width: 0;
@@ -105,7 +105,7 @@ body {
 
 /* Menu */
 
-#content, #menu, #AreaUtente, #chisiamo {
+#content, #menu, .AreaUtente, #chisiamo {
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -586,7 +586,7 @@ body {
 /*--------------------------------------------FINE REGISTRAZIONE--------------------------------------------*/
 
 
-#AreaUtente {
+#content.AreaUtente {
     padding: 3em 0;
     background-color: rgba(52, 52, 52, 1);
     text-align: center;

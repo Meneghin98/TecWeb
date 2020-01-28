@@ -11,7 +11,7 @@ body {
     font-size: 0.9em;
     margin: auto;
     height: 100%;
-    background-color: black;
+    background-color: #343434;
     background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
     background-repeat: no-repeat;
 }
@@ -305,16 +305,16 @@ body {
 }
 
 .categoriaHardware {
-    background-color: #2BE401;
+    background-color: #136501;
 }
 
 .categoriaConsole {
-    background-color: chocolate;
+    background-color: blue;
 }
 
 .categoriaVideogiochi {
 
-    background-color: red;
+    background-color: #9a0000;
 
 }
 
@@ -327,7 +327,7 @@ body {
 
 .categoriaEventi {
 
-    background-color: darkgoldenrod;
+    background-color: #6b4c00;
 
 }
 
@@ -445,8 +445,6 @@ body {
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 10em;
-    background-color: rgba(52, 52, 52, 1);
-
 }
 
 .contentLog legend {
@@ -657,7 +655,7 @@ form #datiAccount {
 #custom-file-upload {
     padding: .3em 0;
     cursor: pointer;
-    background-color:#2BE401;
+    background-color: #136501;
 }
 
 #save {
@@ -853,7 +851,7 @@ form #datiAccount {
 }
 
 #contro h3 {
-    color: red;
+    color: #9a0000;;
 }
 
 #diffs h3 {

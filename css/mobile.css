@@ -352,7 +352,6 @@ img#logged {
 }
 
 #menuMobileLogin {
-    background-color: #525252;
     display: flex;
     align-items: center;
     padding-top: 3em;
@@ -378,9 +377,7 @@ img#logged {
     font-size: 6em;
 }
 
-#contentLogin {
-    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
-}
+
 
 .pulsantiLogin {
     display: block;
@@ -531,7 +528,6 @@ img#logged {
 .menuMobileReg {
     display: inherit;
     text-align: center;
-    background-color: #525252;
 }
 
 .ManageReg label {
@@ -585,7 +581,6 @@ input#bottoneIndietroReg {
 
 .contentReg {
     padding-top: 3em;
-    background-image: linear-gradient(#525252, #393939, #262626, #131313, black);
 }
 
 .contentReg fieldset legend {
@@ -725,8 +720,13 @@ blocco per evitare codice duplicato */
 }
 
 /*------------------------------------------------*/
-
+@media screen and (max-width: 950px) {
+    #footer {
+        display: unset;
+    }
+}
 @media screen and (max-width: 750px) {
+
     #logo img {
 
         width: 20em;
@@ -926,6 +926,13 @@ blocco per evitare codice duplicato */
     #searchBar button {
         left: 4.3em;
     }
+}
+#bodyLogin {
+    background-image: unset;
+}
+#errorbackground {
+    background-color: white;
+    background-image: unset;
 }
 
 

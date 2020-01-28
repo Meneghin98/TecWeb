@@ -30,7 +30,7 @@
     font-size: 3em;
 }
 
-#intestazione h1, #description h2, #comment h3, #TitoloCommenti {
+#intestazione h1, #description h3, #comment h3, #TitoloCommenti {
     font-size: 5em;
 }
 
@@ -239,7 +239,7 @@ img#logged {
     margin-right: 1em;
 }
 
-#index, #description h2, #TitoloCommenti {
+#index, #description h3, #TitoloCommenti {
     border: none;
 }
 
@@ -285,7 +285,7 @@ img#logged {
 
 }
 
-#description h2, #TitoloCommenti {
+#description h3, #TitoloCommenti {
     margin: 1em 0.5em 0 0.5em;
 }
 

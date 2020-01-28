@@ -796,7 +796,7 @@ form #datiAccount {
     padding-bottom: 2em;
 }
 
-#description h2, #content.chisiamo h2 {
+#description h3, #content.chisiamo h2 {
     border-bottom: 0.1em solid #136501;
     margin-left: 2em;
     margin-top: 3em;

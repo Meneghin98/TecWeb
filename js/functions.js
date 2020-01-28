@@ -38,20 +38,27 @@ function miPiaceOut(id) {
 
 function miPiace(idstring) {
     let classList = document.getElementById(idstring).classList;
+    let likeNode = document.getElementById(idstring).parentNode.children[7].firstChild;
     let id = idstring.replace("Label", "");
-    if (classList.contains("upBlue")) {
+    if (classList.contains("upBlue")) { //rimozione like
         classList.remove("upBlue");
         classList.add("upBlack");
-
+        let numLike = document.createTextNode((Number(likeNode.textContent)-1).toString());
+        let p = likeNode.parentNode;
+        p.removeChild(likeNode);
+        p.appendChild(numLike);
         $.ajax({
             type: "GET",
             url: "like.php?add=false&id=" + id
         })
 
-    } else {
+    } else { //aggiunta like
         classList.remove("upBlack");
         classList.add("upBlue");
-
+        let numLike = document.createTextNode((Number(likeNode.textContent)+1).toString());
+        let p = likeNode.parentNode;
+        p.removeChild(likeNode);
+        p.appendChild(numLike);
         $.ajax({
             type: "GET",
             url: "like.php?add=true&id=" + id
@@ -86,76 +93,6 @@ function eliminaCommento(idstring) {
 }
 
 //-----------Fine sezione commenti--------------------
-
-
-// ------------------------- LOGIN --------------------------
-
-/*
-function mostraErrore(input, testoErrore) {
-
-    togliErrore(input);
-
-    var p = input.parentNode;
-    if (p.children.length == 2) {
-        var strong = document.createElement("strong");
-        //strong.className="corsivo";
-        strong.appendChild(document.createTextElement(testoErrore)); //span.innerHTML=testoErrore;
-        p.appendChild
-        p.appendChild(strong);
-    }
-}
-
-function togliErrore(input) {
-    var p = input.parentNode;
-
-    if (p.children.length > 2) {
-        p.removeChild(p.children[2]); //rimuovo il terzo figlio di p
-    }
-
-    /*var span = p.lastChild;
-    p.removeChild(span);
-}
-*/
-/*function checkInput(NicknameInput, PasswordInput) {
-
-    $.ajax({
-        type: "GET",
-        url: 'file.php?n=' + NicknameInput.value + '&p=' + PasswordInput.value,
-        dataType: 'text',
-        success: function (response) {
-            number=response;
-        }
-    })
-
-}
-
-function validazioneForm() {
-    let nickname = document.getElementById("emailLogin");
-    let password = document.getElementById("passwordLogin");
-    checkInput(nickname, password);
-
-   if (number == '1') {
-        let padre = nickname.parentNode;
-        let scritta = document.createElement("P");
-        scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
-        padre.appendChild(scritta);
-        return false;
-    }
-    else if(number == '2'){
-        let padre = password.parentNode;
-        let padre2 = nickname.parentNode;
-        let scritta = document.createElement("P");
-        let scritta2 = document.createElement("P");
-        scritta.appendChild(document.createTextNode("Verifica che il nickname inserito sia valido"));
-        scritta2.appendChild(document.createTextNode("Verifica che il nickname e la password inserite siano valide"));
-        padre2.appendChild(scritta);
-        padre.appendChild(scritta2);
-       return false;
-   }
-    return true;
-}
-*/
-// --------------------- FINE LOGIN ---------------------------
 
 // ------------------- REGISTRAZIONE-----------------------
 

@@ -230,7 +230,6 @@ function mobileMenu () {
     searchBar.classList.add('js-hidden');
     openSearch.classList.add('js-show');
 
-
     openButton.addEventListener("click", function () {
         openButton.classList.add('openButton-js-hidden');
         menu.classList.add('js-opened');

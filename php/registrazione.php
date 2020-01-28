@@ -39,10 +39,10 @@ function checkInput($nome, $cognome, $nickname, $email, $password) {
 if(isset($_POST['conferma'])){ //dopo premuto pulsante conferma
 
     $nome = trim($_POST["nome"]);
-    $cognome = $_POST["cognome"];
-    $nickname = $_POST["nickname"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
+    $cognome = trim($_POST["cognome"]);
+    $nickname = trim($_POST["nickname"]);
+    $email = trim($_POST["email"]);
+    $password = trim($_POST["password"]);
     $db = new DBConnection();
     $Messaggio = checkInput($nome,$cognome,$nickname,$email,$password);
     if($db->existsNickname($nickname)){

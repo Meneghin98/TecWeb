@@ -1,5 +1,3 @@
-create DATABASE
-    IF NOT EXISTS DecryptedGames;
 
 drop table IF EXISTS images;
 drop table IF EXISTS likes;
@@ -196,8 +194,8 @@ insert into articles
     /*death stranding*/
 (id, path, creation_date, title, description, category_title, article_type, views, category)
 values (11, 'html/News/newDeathStrandingPC.html', '2019-10-30',
-        '<span xml:lang="en "> Death Stranding</span>: versione PC e periodo di uscita confermati',
-        'Annunciata la veriosne pc del gioco di <span xml:lang="jp">Hideo Kojima</span>, uscir&agrave; nell&apos;estate del 2020.',
+        '<span xml:lang="en"> Death Stranding</span>: versione PC e periodo di uscita confermati',
+        'Annunciata la veriosne pc del gioco di <span xml:lang="ja">Hideo Kojima</span>, uscir&agrave; nell&apos;estate del 2020.',
         'Death Stranding PC', 'News', '0', '4');
 insert into articles
     /*StarWars vendite*/

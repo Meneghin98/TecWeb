@@ -30,7 +30,7 @@ body {
 }
 
 /* Header */
-#screenReaderHelper, .headerChild h1, .headerChild label {
+#screenReaderHelper, .headerChild h1, .confermaAccountReg label, .headerChild label {
     display: block;
     height: 0;
     width: 0;

@@ -130,7 +130,7 @@ function togliErrore(input) {
 function checkNome(nomeinput) {
     var nome = new RegExp('^([a-zA-Z]{3,15})$');
     console.log(nome);
-    if (nome.test(nomeinput.value)) {
+    if (nome.test(nomeinput.value.trim())) {
         togliErrore(nomeinput);
         return true;
     } else {
@@ -143,7 +143,7 @@ function checkNome(nomeinput) {
 
 function checkCognome(cognomeInput) {
     var cognome = new RegExp('^([A-Za-z]{2,15})$');
-    if (cognome.test(cognomeInput.value)) {
+    if (cognome.test(cognomeInput.value.trim())) {
         togliErrore(cognomeInput);
         return true;
     } else {
@@ -156,7 +156,7 @@ function checkCognome(cognomeInput) {
 
 function checkNickname(nicknameInput) {
     var nickname = new RegExp('^([a-zA-Z1-9]{3,15})$');
-    if (nickname.test(nicknameInput.value)) {
+    if (nickname.test(nicknameInput.value.trim())) {
         togliErrore(nicknameInput);
         return true;
     } else {
@@ -169,7 +169,7 @@ function checkNickname(nicknameInput) {
 
 function checkEmail(emailInput) {
     var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if (re.test(emailInput.value)) {
+    if (re.test(emailInput.value.trim())) {
         togliErrore(emailInput);
         return true;
     } else {
@@ -181,7 +181,7 @@ function checkEmail(emailInput) {
 }
 
 function checkPassword(passwordInput) {
-    var password = passwordInput.value.length;
+    var password = passwordInput.value.trim().length;
     if (password >= 3) {
         togliErrore(passwordInput);
         return true;

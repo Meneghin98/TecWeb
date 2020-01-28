@@ -30,7 +30,7 @@ body {
 }
 
 /* Header */
-#screenReaderHelper, .headerChild h1, .headerChild label, .headerChild legend {
+#screenReaderHelper, .headerChild h1, .confermaAccountReg label, .headerChild label, .headerChild legend {
     display: block;
     height: 0;
     width: 0;
@@ -956,6 +956,10 @@ form #datiAccount {
 
 .commento pre {
     font-size: 1.5em;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .numeroLike {
